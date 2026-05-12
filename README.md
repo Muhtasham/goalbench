@@ -20,6 +20,25 @@ The ProgramBench images are published for `linux/amd64`. Docker Desktop on Apple
 Silicon can sometimes emulate them, but serious runs should happen on Linux
 `amd64`.
 
+## Isolation Model
+
+The target binary runs in a Docker container with `--network none`, so probes
+against the original program cannot reach the internet.
+
+Codex itself runs on the host because it must reach OpenAI. The generated prompt
+forbids internet use, package managers, upstream source lookup, decompilers, and
+the ProgramBench evaluator repository, and the launcher does not enable web
+search. If you need hard enforcement for host shell commands too, run this
+harness inside a VM or host environment with an egress policy that only permits
+Codex/OpenAI traffic.
+
+The Codex launcher uses YOLO mode:
+
+```bash
+codex --enable goals -m gpt-5.5 -c model_reasoning_effort='xhigh' \
+  -s danger-full-access -a never --no-alt-screen
+```
+
 ## Quickstart
 
 Prepare a `jq` run:
@@ -64,4 +83,3 @@ Evaluate from a ProgramBench checkout:
 2. `wfxr__csview.8ac4de0` or `sclevine__yj.8016400` for a realistic small CLI.
 3. `jqlang__jq.b33a763` for the serious long run.
 4. `ffmpeg__ffmpeg.360a402` only after the harness proves itself on smaller tasks.
-
