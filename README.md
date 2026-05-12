@@ -48,6 +48,37 @@ codex --enable goals -m gpt-5.5 -c model_reasoning_effort='xhigh' \
   -s danger-full-access -a never --no-alt-screen
 ```
 
+## Optional Host Egress Guard
+
+For a stronger run on Linux, create a dedicated user for the Codex process and
+apply the UID-scoped OpenAI egress guard:
+
+```bash
+sudo useradd -m codex-runner
+sudo scripts/linux-openai-egress-guard.sh apply codex-runner
+sudo scripts/linux-openai-egress-guard.sh status codex-runner
+```
+
+By default the guard allows DNS plus HTTPS to the currently resolved IPs for:
+
+```text
+api.openai.com auth.openai.com chatgpt.com ab.chatgpt.com persistent.oaistatic.com
+```
+
+This is intentionally simple and conservative. It is IP-based because Linux
+firewalls do not filter by domain name directly; if OpenAI/CDN IPs change during
+a long run, refresh the rules by running `apply` again. To remove the guard:
+
+```bash
+sudo scripts/linux-openai-egress-guard.sh delete codex-runner
+```
+
+For strict compliance, do not give the Codex user broad Docker socket access.
+Raw Docker access is effectively root-equivalent and can bypass network
+controls. The generated prompts require `docker exec -u agent ...`, but for a
+publishable run you should either supervise that boundary or expose only a
+narrow wrapper for target execution.
+
 ## Metrics
 
 Use ProgramBench's primary metric when reporting results: fully resolved
