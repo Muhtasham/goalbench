@@ -59,7 +59,7 @@ def prepare(args: argparse.Namespace) -> None:
     )
     (instance_dir / "GOAL_PROMPT.md").write_text(
         render_prompt(
-            PROMPT_TEMPLATE.read_text(),
+            Path(args.prompt_template).expanduser().read_text(),
             {
                 "instance_id": args.instance_id,
                 "image": image,
@@ -178,6 +178,11 @@ def main() -> None:
     prepare_parser.add_argument("instance_id")
     prepare_parser.add_argument("--run-root", default=str(DEFAULT_ROOT))
     prepare_parser.add_argument("--run-name", default="")
+    prepare_parser.add_argument(
+        "--prompt-template",
+        default=str(PROMPT_TEMPLATE),
+        help="Prompt template to render. Use this to pass an official ProgramBench prompt unchanged when available.",
+    )
     prepare_parser.set_defaults(func=prepare)
     args = parser.parse_args()
     args.func(args)

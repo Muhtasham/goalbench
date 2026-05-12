@@ -14,6 +14,12 @@ black-box observations of the executable plus documentation already present in
 the cleanroom container. It should not receive method signatures, skeletons,
 product requirements, hidden hints, or task-specific harness tuning.
 
+If ProgramBench publishes the exact mini-SWE-agent baseline prompt, use it via
+`--prompt-template` and keep only the local runtime substitutions needed for the
+container name and solution path. As of the last check, the public
+mini-SWE-agent repository only included SWE-bench prompts, which ask for git
+patches and are not a valid ProgramBench submission format.
+
 ## Requirements
 
 - Linux `amd64` host for real runs.
@@ -91,6 +97,13 @@ Prepare a `jq` run:
 
 ```bash
 python3 programbench_goal_runner.py prepare jqlang__jq.b33a763
+```
+
+Prepare with an official prompt template when one is available:
+
+```bash
+python3 programbench_goal_runner.py prepare jqlang__jq.b33a763 \
+  --prompt-template /path/to/official-programbench-prompt.md
 ```
 
 Start the no-network target container:

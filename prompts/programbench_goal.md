@@ -28,19 +28,11 @@ Hard rules:
 - `compile.sh` must build or copy the final executable to:
   `./executable`
 
-Recommended loop:
-1. Inventory what files and documentation exist in the target container.
-2. Probe the target binary behavior with many focused examples.
-3. Implement the smallest faithful replacement.
-4. Build with `./compile.sh`.
-5. Compare your executable against the target binary on your own generated cases.
-6. Keep expanding coverage and fixing mismatches.
-
 Run context:
 - Instance: `{{instance_id}}`
 - Target image: `{{image}}:task_cleanroom`
 - Target container: `{{container_name}}`
 - Solution directory: `{{solution_dir}}`
 
-Spend the long horizon on behavior, not explanations. Keep iterating until the
-implementation is ready to package as a ProgramBench submission.
+Complete the implementation in `{{solution_dir}}` so it is ready to package as a
+ProgramBench submission.
