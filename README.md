@@ -8,6 +8,12 @@ repo. It starts the target binary inside a no-network Docker container, gives
 Codex a clean writable solution directory, and produces the `submission.tar.gz`
 layout that `programbench eval` expects.
 
+ProgramBench is a free-form reimplementation benchmark. The agent should choose
+the language, architecture, source layout, abstractions, and build script from
+black-box observations of the executable plus documentation already present in
+the cleanroom container. It should not receive method signatures, skeletons,
+product requirements, hidden hints, or task-specific harness tuning.
+
 ## Requirements
 
 - Linux `amd64` host for real runs.
@@ -41,6 +47,12 @@ The Codex launcher uses YOLO mode:
 codex --enable goals -m gpt-5.5 -c model_reasoning_effort='xhigh' \
   -s danger-full-access -a never --no-alt-screen
 ```
+
+## Metrics
+
+Use ProgramBench's primary metric when reporting results: fully resolved
+instances. Almost-resolved and average pass rate are useful diagnostics, but
+they should not be the headline score.
 
 ## Quickstart
 

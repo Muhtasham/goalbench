@@ -4,6 +4,15 @@ Objective:
 Reimplement the target CLI from scratch by observing only the target binary and
 any documentation already present in the no-network target container.
 
+ProgramBench constraints:
+- This is a free-form reimplementation task. Choose the language, architecture,
+  source layout, abstractions, and build approach yourself.
+- There are no method signatures, skeletons, product requirements, hidden hints,
+  or natural-language implementation guidance beyond the executable behavior
+  and in-container documentation.
+- Do not tune the harness or solution for a known test suite. The final answer is
+  judged by fully resolved instances; partial pass rate is only diagnostic.
+
 Hard rules:
 - Do not use the internet, web search, package managers, GitHub, upstream source
   repositories, decompilers, disassemblers, or source-code recovery tools.
