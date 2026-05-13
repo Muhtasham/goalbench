@@ -133,7 +133,7 @@
     <h1>ProgramBench Goal Runner Results</h1>
     <p>Codex <code>/goal</code> scaffold results on ProgramBench tasks. These are scaffold measurements, not official mini-SWE-agent leaderboard submissions.</p>
     <div class="pill-row">
-      <span class="pill">Generated 2026-05-13T16:15:52.048811+00:00</span>
+      <span class="pill">Generated 2026-05-13T16:18:37.032214+00:00</span>
       <span class="pill">2 evaluated sample instances</span>
       <span class="pill">200 tasks in full ProgramBench</span>
       <span class="pill">Sorted Resolved → Almost → Avg. pass</span>
@@ -171,7 +171,7 @@
           <div><strong>100.0%</strong><span>resolved</span></div>
           <div><strong>100.0%</strong><span>almost</span></div>
           <div><strong>100.0%</strong><span>avg pass</span></div>
-          <div><strong>$11.80</strong><span>cost / task</span></div>
+          <div><strong>$11.80</strong><span>est. cost / task</span></div>
           <div><strong>188.0</strong><span>calls / task</span></div>
         </div>
       </section>
@@ -185,7 +185,7 @@
           <div><strong>0.0%</strong><span>resolved</span></div>
           <div><strong>100.0%</strong><span>almost</span></div>
           <div><strong>97.9%</strong><span>avg pass</span></div>
-          <div><strong>$4.85</strong><span>cost / task</span></div>
+          <div><strong>$4.85</strong><span>est. cost / task</span></div>
           <div><strong>80.0</strong><span>calls / task</span></div>
         </div>
       </section>
@@ -195,7 +195,7 @@
     <h2>Extended Results</h2>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Cost</th><th>Calls</th></tr></thead>
+        <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Est. cost</th><th>Calls</th></tr></thead>
         <tbody>
             <tr>
               <td>1</td>
@@ -220,7 +220,7 @@
             </tbody>
       </table>
     </div>
-    <p>Columns mirror ProgramBench's extended leaderboard: resolved and almost-resolved rates, average API cost per task instance, and average calls per task instance. Mode and compliance are shown in Run Disclosures and Per-Instance Results so the mirrored metric table stays close to ProgramBench's shape.</p>
+    <p>Columns mirror ProgramBench's extended leaderboard shape: resolved and almost-resolved rates, average estimated API cost per task instance, and average calls per task instance. Mode and compliance are shown in Run Disclosures and Per-Instance Results so the mirrored metric table stays close to ProgramBench's shape.</p>
 
     <h2>Run Disclosures</h2>
     <div class="table-wrap">
@@ -281,7 +281,7 @@
     <h2>Per-Instance Results</h2>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>#</th><th>Instance</th><th>Mode</th><th>Model</th><th>Compliance</th><th>Status</th><th>Score</th><th>Tests</th><th>Cost</th><th>Calls</th><th>Wall</th><th>Host</th><th>Docker</th><th>Evidence</th></tr></thead>
+        <thead><tr><th>#</th><th>Instance</th><th>Mode</th><th>Model</th><th>Compliance</th><th>Status</th><th>Score</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Host</th><th>Docker</th><th>Evidence</th></tr></thead>
         <tbody>
             <tr>
               <td>1</td>
@@ -352,7 +352,7 @@
     </div>
 
     <h2>Method Notes</h2>
-    <p>Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Resolved requires every scored test to pass with no evaluator errors. Local smoke runs are not ProgramBench-comparable until they run on Linux amd64 with 20 CPU / 60g and strict egress. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Cost is estimated from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths.</p>
+    <p>Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Resolved requires every scored test to pass with no evaluator errors. Local smoke runs are not ProgramBench-comparable until they run on Linux amd64 with 20 CPU / 60g and strict egress. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Estimated cost comes from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths.</p>
     <p>Sources: <a href="https://programbench.com/extended/">ProgramBench extended results</a>, <a href="https://programbench.com/run/gpt-5-5-xhigh/">GPT 5.5 xhigh run detail</a>, and this repository's generated CSV summaries.</p>
   </main>
 </body>

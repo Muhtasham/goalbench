@@ -304,7 +304,7 @@ def render_summary_cards(label: str, summary: dict) -> str:
           <div><strong>{percent(summary["resolved_rate"])}</strong><span>resolved</span></div>
           <div><strong>{percent(summary["almost_resolved_rate"])}</strong><span>almost</span></div>
           <div><strong>{percent(summary["average_pass_rate"])}</strong><span>avg pass</span></div>
-          <div><strong>{money(summary["average_cost_usd"])}</strong><span>cost / task</span></div>
+          <div><strong>{money(summary["average_cost_usd"])}</strong><span>est. cost / task</span></div>
           <div><strong>{summary["average_calls"]:.1f}</strong><span>calls / task</span></div>
         </div>
       </section>
@@ -479,11 +479,11 @@ def render_run_detail(group: dict, rows: list[ResultRow]) -> str:
   <p><a href="../../">← Back to summary</a></p>
   <h1>{cell(str(group["model"]))}</h1>
   <p class="muted">{cell(str(group["agent"]))} · {cell(str(group["mode"]))} · {cell(str(group["compliance"]))}</p>
-  <p>Resolved {result_count(group, "resolved")} · Almost {result_count(group, "almost_resolved")} · Avg. pass {percent(group["average_pass_rate"])} · Cost {money(group["average_cost_usd"])} · Calls {group["average_calls"]:.1f}</p>
+  <p>Resolved {result_count(group, "resolved")} · Almost {result_count(group, "almost_resolved")} · Avg. pass {percent(group["average_pass_rate"])} · Est. cost {money(group["average_cost_usd"])} · Calls {group["average_calls"]:.1f}</p>
   <h2>Score by Task</h2>
   <div class="heatmap">{heatmap}</div>
   <table>
-    <thead><tr><th>Instance</th><th>Score</th><th>Resolved</th><th>Almost</th><th>Tests</th><th>Cost</th><th>Calls</th><th>Evidence</th></tr></thead>
+    <thead><tr><th>Instance</th><th>Score</th><th>Resolved</th><th>Almost</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Evidence</th></tr></thead>
     <tbody>{table}</tbody>
   </table>
 </body>
@@ -707,11 +707,11 @@ def render_html(data: dict) -> str:
     <h2>Extended Results</h2>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Cost</th><th>Calls</th></tr></thead>
+        <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Est. cost</th><th>Calls</th></tr></thead>
         <tbody>{render_leaderboard(data["groups"])}</tbody>
       </table>
     </div>
-    <p>Columns mirror ProgramBench's extended leaderboard: resolved and almost-resolved rates, average API cost per task instance, and average calls per task instance. Mode and compliance are shown in Run Disclosures and Per-Instance Results so the mirrored metric table stays close to ProgramBench's shape.</p>
+    <p>Columns mirror ProgramBench's extended leaderboard shape: resolved and almost-resolved rates, average estimated API cost per task instance, and average calls per task instance. Mode and compliance are shown in Run Disclosures and Per-Instance Results so the mirrored metric table stays close to ProgramBench's shape.</p>
 
     <h2>Run Disclosures</h2>
     <div class="table-wrap">
@@ -727,7 +727,7 @@ def render_html(data: dict) -> str:
     <h2>Per-Instance Results</h2>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>#</th><th>Instance</th><th>Mode</th><th>Model</th><th>Compliance</th><th>Status</th><th>Score</th><th>Tests</th><th>Cost</th><th>Calls</th><th>Wall</th><th>Host</th><th>Docker</th><th>Evidence</th></tr></thead>
+        <thead><tr><th>#</th><th>Instance</th><th>Mode</th><th>Model</th><th>Compliance</th><th>Status</th><th>Score</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Host</th><th>Docker</th><th>Evidence</th></tr></thead>
         <tbody>{render_instances(instances)}</tbody>
       </table>
     </div>
@@ -742,7 +742,7 @@ def render_html(data: dict) -> str:
     </div>
 
     <h2>Method Notes</h2>
-    <p>Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Resolved requires every scored test to pass with no evaluator errors. Local smoke runs are not ProgramBench-comparable until they run on Linux amd64 with 20 CPU / 60g and strict egress. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Cost is estimated from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths.</p>
+    <p>Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Resolved requires every scored test to pass with no evaluator errors. Local smoke runs are not ProgramBench-comparable until they run on Linux amd64 with 20 CPU / 60g and strict egress. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Estimated cost comes from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths.</p>
     <p>Sources: <a href="https://programbench.com/extended/">ProgramBench extended results</a>, <a href="https://programbench.com/run/gpt-5-5-xhigh/">GPT 5.5 xhigh run detail</a>, and this repository's generated CSV summaries.</p>
   </main>
 </body>

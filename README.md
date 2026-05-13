@@ -169,11 +169,13 @@ ProgramBench results.
 ## Reporting
 
 Use ProgramBench's resolved, almost-resolved, average pass-rate, cost, and calls
-metrics so results are comparable in shape to the leaderboard. Label the scaffold
-explicitly, for example: `GPT-5.5 xhigh / Codex goal`, and disclose wall-clock
-time, inference mode, host/network enforcement, and any paper deviations. Treat
-this as a scaffold comparison against mini-SWE-agent, not an apples-to-apples
-model-only comparison.
+shape so results are comparable to the leaderboard. Label our cost column as
+estimated cost: Codex session logs expose token counts and call counts, but not
+authoritative billed dollars. Label the scaffold explicitly, for example:
+`GPT-5.5 xhigh / Codex goal`, and disclose wall-clock time, inference mode,
+host/network enforcement, and any paper deviations. Treat this as a scaffold
+comparison against mini-SWE-agent, not an apples-to-apples model-only
+comparison.
 
 ## Optional Host Egress Guard
 
@@ -446,9 +448,10 @@ uv run python scripts/build-report.py \
 `build-report.py` fetches the latest ProgramBench public baseline rows by
 default before rendering. Use `--no-refresh-baselines` only for offline rebuilds.
 
-The report keeps `paper`, `no-internet`, `no-internet-local-tools`, and `open-internet` tracks separate, includes the
-ProgramBench-style resolved/almost/average-pass/cost/calls metrics, and commits
-only sanitized aggregate rows. Local Codex session-log paths stay in
+The report keeps `paper`, `no-internet`, `no-internet-local-tools`, and
+`open-internet` tracks separate, includes ProgramBench-style
+resolved/almost/average-pass/estimated-cost/calls metrics, and commits only
+sanitized aggregate rows. Local Codex session-log paths stay in
 `local_state/` and are not published.
 
 ProgramBench's public usage guide documents the per-instance `.eval.json` files
