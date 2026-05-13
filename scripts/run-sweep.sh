@@ -121,6 +121,7 @@ fi
 
 if [[ -z "$PROGRAMBENCH_REPO" && ( "$FINALIZE" -eq 1 || "$REFRESH_TARGET_SET" -eq 1 ) ]]; then
   echo "ProgramBench repo not found. Set PROGRAMBENCH_REPO or pass --programbench-repo." >&2
+  echo "For the default sibling checkout, run: scripts/bootstrap-programbench.sh" >&2
   exit 1
 fi
 

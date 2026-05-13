@@ -10,8 +10,9 @@ not as mini-SWE-agent results.
 The harness keeps the solving workspace separate from the ProgramBench evaluator
 repo. It gives Codex a clean writable solution directory and produces the
 `submission.tar.gz` layout that `programbench eval` expects. The default mode is
-the full Codex harness (`open-internet`); use `--inference-mode paper` for the
-closest ProgramBench-cleanroom run.
+the no-internet Codex `/goal` harness; use `--inference-mode paper` for the
+closest ProgramBench-cleanroom run and `--inference-mode open-internet` only for
+the explicitly non-compliant open-web ablation.
 
 ProgramBench is a free-form reimplementation benchmark. The agent should choose
 the language, architecture, source layout, abstractions, and build script from
@@ -35,6 +36,18 @@ separate Codex `/goal` scaffold.
 - Codex CLI with `/goal` support.
 - `tmux`.
 - A separate ProgramBench checkout only for evaluation.
+
+For a fresh clone of this repo, bootstrap the ProgramBench evaluator as a
+sibling checkout:
+
+```bash
+scripts/bootstrap-programbench.sh
+```
+
+That clones or updates `../ProgramBench` and runs `uv sync --project` there.
+`scripts/run-sweep.sh` auto-detects that location. If you keep ProgramBench
+somewhere else, set `PROGRAMBENCH_REPO=/path/to/ProgramBench` or pass
+`--programbench-repo /path/to/ProgramBench`.
 
 The ProgramBench images are published for `linux/amd64`. Docker Desktop on Apple
 Silicon can sometimes emulate them, but serious runs should happen on Linux
@@ -323,7 +336,8 @@ scripts/run-sweep.sh
 ```
 
 By default, `run-sweep.sh` uses `PROGRAMBENCH_REPO` if set, otherwise it
-auto-detects a sibling `../ProgramBench` checkout.
+auto-detects a sibling `../ProgramBench` checkout. Run
+`scripts/bootstrap-programbench.sh` first if that checkout does not exist yet.
 
 The script refreshes `target_sets/all_tasks.txt`, runs the configured batch,
 refreshes the OpenAI pricing snapshot before scoring, finalizes completed
