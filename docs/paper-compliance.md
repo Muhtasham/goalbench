@@ -4,6 +4,8 @@ This runner is a Codex `/goal` scaffold for ProgramBench, not the paper's
 mini-SWE-agent baseline. Report it as a separate scaffold.
 
 The default `paper` inference mode is the cleanroom mode. The optional
+`no-internet` mode keeps internet/source/package access blocked but is reported
+as a Codex scaffold ablation rather than a paper-comparable run. The optional
 `open-internet` mode is intentionally non-compliant and exists only for
 ProgramBench-inspired exploratory runs.
 
@@ -33,6 +35,13 @@ Open-internet mode:
 - Uses a prompt that explicitly labels the run non-compliant.
 - Still forbids final wrappers around `/workspace/executable`.
 - Must be reported separately from cleanroom ProgramBench results.
+
+No-internet mode:
+
+- Uses the same target `--network none` and host-side guard wrappers as paper mode.
+- Blocks internet, package registries, external docs, source lookup, and target binary analysis.
+- Uses a lighter Codex ablation prompt and is labeled separately from paper-comparable rows.
+- Must not be reported as a ProgramBench paper-style result unless the run also used `paper` mode and passed the strict preflight/audit path.
 
 Minimum bar before public reporting:
 

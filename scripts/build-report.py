@@ -195,7 +195,11 @@ def model_display(row: ResultRow) -> str:
 
 
 def mode_label(row: ResultRow) -> str:
-    return "Open internet" if row.inference_mode == "open-internet" else "Paper / cleanroom"
+    return {
+        "paper": "Paper / cleanroom",
+        "no-internet": "No internet",
+        "open-internet": "Open internet",
+    }.get(row.inference_mode, row.inference_mode or "Unknown")
 
 
 def is_programbench_comparable(row: ResultRow) -> bool:
@@ -211,6 +215,8 @@ def is_programbench_comparable(row: ResultRow) -> bool:
 def compliance_label(row: ResultRow) -> str:
     if row.inference_mode == "open-internet":
         return "Non-compliant: internet allowed"
+    if row.inference_mode == "no-internet":
+        return "Codex no-internet ablation"
     if is_programbench_comparable(row):
         return "ProgramBench-style"
     return "Local smoke: host/resources differ"

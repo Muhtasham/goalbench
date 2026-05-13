@@ -13,6 +13,7 @@ from pathlib import Path
 
 DEFAULT_ROOT = Path.home() / "pb-goal-runs"
 PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal.md"
+NO_INTERNET_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal_no_internet.md"
 OPEN_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal_open.md"
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_REASONING_EFFORT = "xhigh"
@@ -266,6 +267,7 @@ def prepare(args: argparse.Namespace) -> None:
     guard_dir = instance_dir / "guard-bin"
     cache_dir = instance_dir / "tool-caches"
     paper_mode = args.inference_mode == "paper"
+    no_internet_mode = args.inference_mode in {"paper", "no-internet"}
     container_name = f"pb-goal-{slug(prepared_run_name)}-{slug(args.instance_id)}"
     session_name = f"pb-goal-{slug(prepared_run_name)}-{slug(args.instance_id)}"
     image = image_name(args.instance_id)
@@ -292,14 +294,21 @@ def prepare(args: argparse.Namespace) -> None:
             f"target executable at /workspace/executable with {target_command}. "
             "Use only documentation already present in the cleanroom container.\n"
         )
-        if paper_mode
+        if no_internet_mode
         else (
             "Open-internet research mode: this is not ProgramBench-compliant and must not be reported as a cleanroom "
             "benchmark result. You may use internet/package tooling to solve the task, but still write a packageable "
             f"solution and probe the target executable at /workspace/executable with {target_command}.\n"
         )
     )
-    prompt_template = args.prompt_template or (PROMPT_TEMPLATE if paper_mode else OPEN_PROMPT_TEMPLATE)
+    prompt_template = (
+        args.prompt_template
+        or {
+            "paper": PROMPT_TEMPLATE,
+            "no-internet": NO_INTERNET_PROMPT_TEMPLATE,
+            "open-internet": OPEN_PROMPT_TEMPLATE,
+        }[args.inference_mode]
+    )
     prompt_template_path = Path(prompt_template).expanduser()
     (instance_dir / "GOAL_PROMPT.md").write_text(
         render_prompt(
@@ -350,10 +359,10 @@ def prepare(args: argparse.Namespace) -> None:
 
     network_check = (
         f'test "$(docker inspect {shlex.quote(container_name)} --format \'{{{{.HostConfig.NetworkMode}}}}\')" = "none"'
-        if paper_mode
+        if no_internet_mode
         else "echo 'open-internet mode: target container network is intentionally not cleanroom-compliant'"
     )
-    network_arg = "--network none" if paper_mode else "--network bridge"
+    network_arg = "--network none" if no_internet_mode else "--network bridge"
     write_executable(
         instance_dir / "start-target.sh",
         f"""#!/usr/bin/env bash
@@ -402,7 +411,7 @@ docker exec -u agent {shlex.quote(container_name)} bash -lc '
     codex_env = (
         f"PATH={shlex.quote(str(guard_dir))}:$PATH GIT_CEILING_DIRECTORIES={shlex.quote(str(instance_dir))} "
         f"{tool_cache_exports(cache_dir)}"
-        if paper_mode
+        if no_internet_mode
         else f"GIT_CEILING_DIRECTORIES={shlex.quote(str(instance_dir))}"
     )
     write_executable(
@@ -489,7 +498,7 @@ def main() -> None:
     prepare_parser.add_argument("--run-name", default="")
     prepare_parser.add_argument("--docker-cpus", type=int, default=20)
     prepare_parser.add_argument("--docker-memory", default="60g")
-    prepare_parser.add_argument("--inference-mode", choices=["paper", "open-internet"], default="paper")
+    prepare_parser.add_argument("--inference-mode", choices=["paper", "no-internet", "open-internet"], default="paper")
     prepare_parser.add_argument(
         "--target-access",
         choices=["direct-docker", "wrapper"],
@@ -510,7 +519,7 @@ def main() -> None:
     batch_parser.add_argument("--run-root", default=str(DEFAULT_ROOT))
     batch_parser.add_argument("--docker-cpus", type=int, default=20)
     batch_parser.add_argument("--docker-memory", default="60g")
-    batch_parser.add_argument("--inference-mode", choices=["paper", "open-internet"], default="paper")
+    batch_parser.add_argument("--inference-mode", choices=["paper", "no-internet", "open-internet"], default="paper")
     batch_parser.add_argument(
         "--target-access",
         choices=["direct-docker", "wrapper"],

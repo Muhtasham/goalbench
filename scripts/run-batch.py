@@ -290,7 +290,7 @@ def add_common_run_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--poll-seconds", type=int, default=60)
     parser.add_argument("--docker-cpus", type=int, default=20)
     parser.add_argument("--docker-memory", default="60g")
-    parser.add_argument("--inference-mode", choices=["paper", "open-internet"], default="paper")
+    parser.add_argument("--inference-mode", choices=["paper", "no-internet", "open-internet"], default="paper")
     parser.add_argument("--target-access", choices=["direct-docker", "wrapper"], default="direct-docker")
     parser.add_argument("--target-wrapper-command", default="sudo -n /usr/local/bin/pb-target-exec")
     parser.add_argument("--model", default="gpt-5.5")
