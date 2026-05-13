@@ -99,6 +99,15 @@ Use ProgramBench's primary metric when reporting results: fully resolved
 instances. Almost-resolved and average pass rate are useful diagnostics, but
 they should not be the headline score.
 
+Evaluation may need internet access to fetch ProgramBench test blobs from
+Hugging Face. That is evaluator-side access, not inference-side access. For
+repeatable runs, prefetch the blobs from the ProgramBench checkout before
+evaluating:
+
+```bash
+uv run --project /path/to/ProgramBench programbench blob sync <instance_id>
+```
+
 ## Quickstart
 
 Prepare a `jq` run:
@@ -131,6 +140,11 @@ Check the compliance-critical container properties:
 ```bash
 ~/pb-goal-runs/gpt55-goal-jq/jqlang__jq.b33a763/check-compliance.sh
 ```
+
+Before running expensive inference, do a full evaluator preflight with a known
+bad stub on one small real task. The expected result is a clean evaluation with a
+low score, not a solved task. This verifies Docker image access, blob access,
+`submission.tar.gz` layout, eval JSON output, and the metrics summarizer.
 
 Launch Codex in `tmux` and inject `/goal`:
 

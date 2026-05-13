@@ -16,6 +16,8 @@ ProgramBench constraints:
 Hard rules:
 - Do not use the internet, web search, package managers, GitHub, upstream source
   repositories, decompilers, disassemblers, or source-code recovery tools.
+- Do not use tracing or instrumentation tools on the target executable, such as
+  `strace`, `ltrace`, debuggers, syscall tracers, profilers, or similar tools.
 - Do not inspect the ProgramBench evaluator repository or hidden tests.
 - Interact with the target only through this container:
   `docker exec -u agent {{container_name}} bash -lc '<command>'`

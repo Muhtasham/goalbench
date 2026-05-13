@@ -53,7 +53,8 @@ def prepare(args: argparse.Namespace) -> None:
     solution_dir.mkdir(parents=True, exist_ok=True)
     (solution_dir / "AGENT_RULES.md").write_text(
         "Do not use internet, package managers, upstream source, decompilers, "
-        "ProgramBench tests, or the ProgramBench evaluator repository. Probe the "
+        "disassemblers, tracing/instrumentation tools, ProgramBench tests, or "
+        "the ProgramBench evaluator repository. Probe the "
         f"target with docker exec -u agent {container_name} bash -lc '<command>'. "
         "Use only documentation already present in the cleanroom container.\n"
     )
