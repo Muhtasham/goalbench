@@ -17,6 +17,7 @@ ProgramBench-inspired exploratory runs.
 | No source lookup, package registries, external docs, or cached dependency source | Prompt forbids it, guard wrappers block source-acquisition commands, per-run empty tool caches are exported, and audit scans for package/cache lookup patterns. |
 | No wrapper/reuse of original binary | ProgramBench eval removes original-binary hashes. Runner packaging excludes harness-only rules, and audit scans solution files/archive for obvious target delegation patterns. |
 | Free-form implementation, any language | Prompt preserves free-form choice. Guard wrappers allow local build/test commands while blocking acquisition commands. |
+| Agent-created tools | Prompt allows black-box probes, fuzzers, generators, and comparison scripts, as long as they interact with the target only through normal runtime behavior and do not perform binary analysis. |
 | Paper resources | Defaults to 20 CPUs and 60GB RAM; `--strict-paper` audit flags deviations. |
 | Paper run limits | `/goal` is not mini-SWE-agent, so 1,000-step and 6-hour limits are not enforced identically. Report actual elapsed time and Codex call count from logs. |
 | Per-action timeout and output truncation | Codex CLI behavior is not identical to mini-SWE-agent's 3-minute action timeout and 10k-character output truncation. Disclose this as a scaffold difference. |
@@ -39,3 +40,8 @@ Minimum bar before public reporting:
 4. Run `scripts/audit-run.py --strict-paper <instance-dir>` after inference.
 5. Evaluate with ProgramBench and summarize with ProgramBench scoring logic.
 6. Report as "Codex GPT-5.5 `/goal` scaffold", not mini-SWE-agent.
+
+Report the same ProgramBench metrics as the leaderboard: resolved, almost
+resolved, average pass rate, cost, and calls. Add wall-clock time, scaffold,
+inference mode, host/network enforcement, and any paper deviations as disclosure
+fields. Keep `open-internet` runs in a separate table.

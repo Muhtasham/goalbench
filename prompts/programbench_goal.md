@@ -54,6 +54,9 @@ tools on binaries that you produce yourself during development.
 
 - Running the executable with any inputs, flags, and arguments to observe its behavior
 - Reading any documentation files bundled in the workspace
+- Writing your own black-box probes, fuzzers, generators, and comparison scripts
+  that interact with the target only through its normal CLI, stdin/stdout,
+  filesystem effects, or localhost behavior
 - Writing, building, and testing your own original replacement program
 </RULES>
 

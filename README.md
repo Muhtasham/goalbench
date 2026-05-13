@@ -73,9 +73,11 @@ commands, restricts `docker` to the allowed
 `docker exec -u agent <container> ...` target-probing form, and points common
 tool caches at an empty per-run directory. Local build commands such as
 `go build` and `cargo build` are still allowed; source-acquisition commands such
-as `go get`, `cargo install`, and `pip install` are blocked. This catches common
-mistakes, but it is not a replacement for a VM/container/user-level egress
-policy.
+as `go get`, `cargo install`, and `pip install` are blocked. Agent-created
+black-box probes, fuzzers, generators, and comparison scripts are allowed when
+they interact with the target only through normal runtime behavior. This catches
+common mistakes, but it is not a replacement for a VM/container/user-level
+egress policy.
 
 See `docs/paper-compliance.md` for the paper/FAQ compliance matrix.
 
@@ -100,6 +102,15 @@ uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763 \
 Open-internet runs still produce `submission.tar.gz` and can be evaluated with
 ProgramBench, but report them separately as open-internet Codex `/goal`
 experiments. Do not mix them with cleanroom ProgramBench results.
+
+## Reporting
+
+Use ProgramBench's resolved, almost-resolved, average pass-rate, cost, and calls
+metrics so results are comparable in shape to the leaderboard. Label the scaffold
+explicitly, for example: `GPT-5.5 xhigh / Codex goal`, and disclose wall-clock
+time, inference mode, host/network enforcement, and any paper deviations. Treat
+this as a scaffold comparison against mini-SWE-agent, not an apples-to-apples
+model-only comparison.
 
 ## Optional Host Egress Guard
 
