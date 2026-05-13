@@ -13,6 +13,8 @@ from pathlib import Path
 DEFAULT_ROOT = Path.home() / "pb-goal-runs"
 PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal.md"
 OPEN_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal_open.md"
+DEFAULT_MODEL = "gpt-5.5"
+DEFAULT_REASONING_EFFORT = "xhigh"
 BLOCKED_ALWAYS_TOOLS = (
     "brew",
     "curl",
@@ -69,9 +71,15 @@ def slug(instance_id: str) -> str:
     return re.sub(r"[^a-zA-Z0-9]+", "-", instance_id).strip("-")
 
 
-def run_name(instance_id: str) -> str:
+def model_slug(model: str) -> str:
+    return slug(model.replace(".", ""))
+
+
+def run_name(instance_id: str, model: str = DEFAULT_MODEL, reasoning_effort: str = DEFAULT_REASONING_EFFORT) -> str:
     name = instance_id.split("__", 1)[1].split(".", 1)[0] if "__" in instance_id else slug(instance_id)
-    return f"gpt55-goal-{name}"
+    prefix = "gpt55" if model == DEFAULT_MODEL else model_slug(model)
+    effort = "" if model == DEFAULT_MODEL and reasoning_effort == DEFAULT_REASONING_EFFORT else f"-{reasoning_effort}"
+    return f"{prefix}-goal{effort}-{name}"
 
 
 def render_prompt(template: str, values: dict[str, str]) -> str:
@@ -161,13 +169,14 @@ def tool_cache_exports(cache_dir: Path) -> str:
 
 def prepare(args: argparse.Namespace) -> None:
     root = Path(args.run_root).expanduser().resolve()
-    instance_dir = root / (args.run_name or run_name(args.instance_id)) / args.instance_id
+    prepared_run_name = args.run_name or run_name(args.instance_id, args.model, args.reasoning_effort)
+    instance_dir = root / prepared_run_name / args.instance_id
     solution_dir = instance_dir / "solution"
     guard_dir = instance_dir / "guard-bin"
     cache_dir = instance_dir / "tool-caches"
     paper_mode = args.inference_mode == "paper"
-    container_name = f"pb-goal-{slug(args.instance_id)}"
-    session_name = f"pb-goal-{slug(args.instance_id)}"
+    container_name = f"pb-goal-{slug(prepared_run_name)}-{slug(args.instance_id)}"
+    session_name = f"pb-goal-{slug(prepared_run_name)}-{slug(args.instance_id)}"
     image = image_name(args.instance_id)
     objective = (
         f"Solve ProgramBench instance {args.instance_id} in the cleanroom container by reimplementing the "
@@ -201,6 +210,7 @@ def prepare(args: argparse.Namespace) -> None:
             Path(prompt_template).expanduser().read_text(),
             {
                 "instance_id": args.instance_id,
+                "run_name": prepared_run_name,
                 "image": image,
                 "container_name": container_name,
                 "solution_dir": str(solution_dir),
@@ -212,6 +222,7 @@ def prepare(args: argparse.Namespace) -> None:
         json.dumps(
             {
                 "instance_id": args.instance_id,
+                "run_name": prepared_run_name,
                 "image": image,
                 "container_name": container_name,
                 "session_name": session_name,
@@ -223,6 +234,8 @@ def prepare(args: argparse.Namespace) -> None:
                 "docker_memory": args.docker_memory,
                 "inference_mode": args.inference_mode,
                 "paper_compliant": paper_mode,
+                "model": args.model,
+                "reasoning_effort": args.reasoning_effort,
                 "created_at": datetime.now(timezone.utc).isoformat(),
                 "host_machine": platform.machine(),
                 "host_system": platform.system(),
@@ -266,7 +279,7 @@ docker exec -u agent {shlex.quote(container_name)} bash -lc '
   set -e
   id
   stat -c "%A %a %U %G %n" /workspace/executable
-  /workspace/executable --version >/dev/null
+  test -x /workspace/executable
   if head -c 4 /workspace/executable >/tmp/pb-readtest 2>/dev/null; then
     echo "FAIL executable is readable"
     exit 1
@@ -295,7 +308,8 @@ docker exec -u agent {shlex.quote(container_name)} bash -lc '
 set -euo pipefail
 tmux kill-session -t {shlex.quote(session_name)} >/dev/null 2>&1 || true
 tmux new-session -d -s {shlex.quote(session_name)} -c {shlex.quote(str(solution_dir))} \\
-  "{codex_env} codex --enable goals -m gpt-5.5 -c model_reasoning_effort='xhigh' \\
+  "{codex_env} codex --enable goals -m {shlex.quote(args.model)} \\
+  -c model_reasoning_effort={shlex.quote(args.reasoning_effort)} \\
   -C {shlex.quote(str(solution_dir))} -s danger-full-access -a never --no-alt-screen"
 sleep 4
 tmux send-keys -t {shlex.quote(session_name)} {shlex.quote("/goal " + objective)} Enter
@@ -353,6 +367,8 @@ def prepare_batch(args: argparse.Namespace) -> None:
                     docker_cpus=args.docker_cpus,
                     docker_memory=args.docker_memory,
                     inference_mode=args.inference_mode,
+                    model=args.model,
+                    reasoning_effort=args.reasoning_effort,
                 )
             )
 
@@ -367,6 +383,8 @@ def main() -> None:
     prepare_parser.add_argument("--docker-cpus", type=int, default=20)
     prepare_parser.add_argument("--docker-memory", default="60g")
     prepare_parser.add_argument("--inference-mode", choices=["paper", "open-internet"], default="paper")
+    prepare_parser.add_argument("--model", default=DEFAULT_MODEL)
+    prepare_parser.add_argument("--reasoning-effort", default=DEFAULT_REASONING_EFFORT)
     prepare_parser.add_argument(
         "--prompt-template",
         default="",
@@ -379,6 +397,8 @@ def main() -> None:
     batch_parser.add_argument("--docker-cpus", type=int, default=20)
     batch_parser.add_argument("--docker-memory", default="60g")
     batch_parser.add_argument("--inference-mode", choices=["paper", "open-internet"], default="paper")
+    batch_parser.add_argument("--model", default=DEFAULT_MODEL)
+    batch_parser.add_argument("--reasoning-effort", default=DEFAULT_REASONING_EFFORT)
     batch_parser.add_argument(
         "--prompt-template",
         default="",

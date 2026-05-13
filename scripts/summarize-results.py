@@ -7,6 +7,7 @@ import json
 import os
 import sys
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 
 
@@ -18,6 +19,8 @@ class TokenUsage:
     output_tokens: int = 0
     reasoning_output_tokens: int = 0
     total_tokens: int = 0
+    started_at: str = ""
+    ended_at: str = ""
     session_logs: list[str] | None = None
 
     @property
@@ -33,6 +36,16 @@ class TokenUsage:
             + self.cached_input_tokens * float(cached_rate)
             + self.output_tokens * float(output_rate)
         ) / 1_000_000
+
+    @property
+    def wall_clock_seconds(self) -> int:
+        if not self.started_at or not self.ended_at:
+            return 0
+        return int((parse_timestamp(self.ended_at) - parse_timestamp(self.started_at)).total_seconds())
+
+
+def parse_timestamp(value: str) -> datetime:
+    return datetime.fromisoformat(value.replace("Z", "+00:00"))
 
 
 def load_programbench(programbench_repo: Path) -> tuple:
@@ -100,6 +113,9 @@ def token_usage(path: Path) -> TokenUsage:
                 event = json.loads(line)
             except json.JSONDecodeError:
                 continue
+            if event.get("timestamp"):
+                usage.started_at = usage.started_at or event["timestamp"]
+                usage.ended_at = event["timestamp"]
             payload = event.get("payload", {})
             if event.get("type") != "event_msg" or payload.get("type") != "token_count":
                 continue
@@ -124,6 +140,8 @@ def add_usage(left: TokenUsage, right: TokenUsage) -> TokenUsage:
         output_tokens=left.output_tokens + right.output_tokens,
         reasoning_output_tokens=left.reasoning_output_tokens + right.reasoning_output_tokens,
         total_tokens=left.total_tokens + right.total_tokens,
+        started_at=min(filter(None, [left.started_at, right.started_at]), default=""),
+        ended_at=max(filter(None, [left.ended_at, right.ended_at]), default=""),
         session_logs=[*(left.session_logs or []), *(right.session_logs or [])],
     )
 
@@ -150,11 +168,25 @@ def summarize(args: argparse.Namespace) -> None:
     for eval_json in sorted(run_dir.glob("**/*.eval.json")):
         instance_dir = eval_json.parent
         eval_row = score_eval(eval_json, programbench)
+        run = json.loads((instance_dir / "run.json").read_text()) if (instance_dir / "run.json").is_file() else {}
         usage = find_codex_usage(instance_dir, Path(args.codex_sessions).expanduser())
         rows.append(
             {
                 **eval_row,
+                "run_name": run.get("run_name", ""),
+                "model": run.get("model", ""),
+                "reasoning_effort": run.get("reasoning_effort", ""),
+                "inference_mode": run.get("inference_mode", ""),
+                "paper_compliant": run.get("paper_compliant", ""),
+                "host_system": run.get("host_system", ""),
+                "host_machine": run.get("host_machine", ""),
+                "docker_cpus": run.get("docker_cpus", ""),
+                "docker_memory": run.get("docker_memory", ""),
+                "created_at": run.get("created_at", ""),
                 "calls": usage.calls,
+                "wall_clock_seconds": usage.wall_clock_seconds,
+                "session_started_at": usage.started_at,
+                "session_ended_at": usage.ended_at,
                 "input_tokens": usage.input_tokens,
                 "cached_input_tokens": usage.cached_input_tokens,
                 "output_tokens": usage.output_tokens,
@@ -180,6 +212,7 @@ def summarize(args: argparse.Namespace) -> None:
     print(f"almost_resolved_rate,{almost / total if total else 0:.4f}")
     print(f"average_pass_rate,{avg_pass:.4f}")
     print(f"calls,{sum(row['calls'] for row in rows)}")
+    print(f"wall_clock_hours,{sum(row['wall_clock_seconds'] for row in rows) / 3600:.2f}")
     costs = [float(row["estimated_cost_usd"]) for row in rows if row["estimated_cost_usd"]]
     print(f"estimated_cost_usd,{sum(costs):.4f}" if costs else "estimated_cost_usd,")
 

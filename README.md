@@ -62,6 +62,12 @@ codex --enable goals -m gpt-5.5 -c model_reasoning_effort='xhigh' \
   -s danger-full-access -a never --no-alt-screen
 ```
 
+Override `--model` and `--reasoning-effort` when preparing runs if you want a
+separate high/xhigh sweep. These values are written into `run.json` and the
+metrics CSV. Container and `tmux` session names include the run name, so high
+and xhigh runs for the same instance can coexist. Default run names include
+non-default model or effort values.
+
 The generated target container defaults to the paper's resource setting of 20
 CPUs and 60GB RAM. For local smoke tests on smaller machines, pass
 `--docker-cpus` and `--docker-memory` to `prepare` or `prepare-batch`; do not
@@ -166,6 +172,13 @@ Prepare a `jq` run:
 uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763
 ```
 
+Prepare a high-effort comparison run:
+
+```bash
+uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763 \
+  --reasoning-effort high
+```
+
 Prepare with an official prompt template when one is available:
 
 ```bash
@@ -240,10 +253,12 @@ ProgramBench's scoring code. The runner itself stays separate from the evaluator
 repo.
 
 The summary reports fully resolved rate, almost-resolved rate (`score > 0.95`,
-matching ProgramBench's FAQ wording), average pass rate, Codex calls, token
-usage, and estimated cost. The CSV includes the exact Codex JSONL `session_logs`
-used for each instance, so usage numbers can be audited directly. Codex CLI
-session logs expose token counts and call counts, but not authoritative dollars.
+matching ProgramBench's FAQ wording), average pass rate, Codex calls,
+wall-clock hours, token usage, and estimated cost. The CSV includes model,
+reasoning effort, inference mode, host/resource disclosures, and the exact Codex
+JSONL `session_logs` used for each instance, so usage numbers can be audited
+directly. Codex CLI session logs expose token counts and call counts, but not
+authoritative dollars.
 Set these environment variables to estimate cost from current pricing:
 
 ```bash

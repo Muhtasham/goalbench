@@ -12,7 +12,7 @@ ProgramBench-inspired exploratory runs.
 | Agent receives compiled executable plus bundled documentation | Uses `task_cleanroom` images and points Codex at `/workspace/executable` plus `/workspace` docs through `docker exec -u agent`. |
 | No internet during inference | Target container runs with `--network none`; Codex host still needs OpenAI access, so a Linux host egress guard or equivalent VM policy is required for publishable runs. |
 | Loopback networking remains available for network-tool tasks | Docker `--network none` keeps container loopback. External egress is disabled. |
-| Execute-only target binary | `check-compliance.sh` verifies the `agent` user can execute but cannot read or inspect `/workspace/executable`. |
+| Execute-only target binary | `check-compliance.sh` verifies `/workspace/executable` is executable for the `agent` user but cannot be read or inspected. |
 | No decompilers, disassemblers, tracing, or instrumentation on target | Prompt forbids it, guard wrappers block common tools, and `scripts/audit-run.py` scans Codex JSONL commands. |
 | No source lookup, package registries, external docs, or cached dependency source | Prompt forbids it, guard wrappers block source-acquisition commands, per-run empty tool caches are exported, and audit scans for package/cache lookup patterns. |
 | No wrapper/reuse of original binary | ProgramBench eval removes original-binary hashes. Runner packaging excludes harness-only rules, and audit scans solution files/archive for obvious target delegation patterns. |
