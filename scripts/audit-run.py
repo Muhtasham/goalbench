@@ -51,7 +51,7 @@ SOURCE_LOOKUP_PATTERNS = (
 )
 LOCALHOSTS = {"127.0.0.1", "localhost", "::1", "[::1]", "0.0.0.0"}
 HOST_PATH_MARKERS = (
-    "/Users/",
+    "/" + "Users" + "/",
     "/Documents/" + "ProgramBench",
 )
 BINARY_ANALYSIS_TOOLS = (
@@ -102,24 +102,36 @@ class Finding:
 
 
 def session_meta(path: Path) -> dict | None:
-    for line in path.read_text(errors="replace").splitlines():
-        event = json.loads(line)
-        if event.get("type") == "session_meta":
-            return event["payload"]
-    return None
+    return next(
+        (
+            event["payload"]
+            for event in (json.loads(line) for line in path.read_text(errors="replace").splitlines())
+            if event.get("type") == "session_meta"
+        ),
+        None,
+    )
 
 
 def exec_calls(path: Path) -> list[tuple[int, dict, str]]:
-    calls = []
-    outputs = {}
-    for n, line in enumerate(path.read_text(errors="replace").splitlines(), start=1):
-        event = json.loads(line)
-        payload = event.get("payload", {})
-        if event.get("type") == "response_item" and payload.get("type") == "function_call":
-            if payload.get("name") == "exec_command":
-                calls.append((n, payload["call_id"], json.loads(payload["arguments"])))
-        if event.get("type") == "response_item" and payload.get("type") == "function_call_output":
-            outputs[payload["call_id"]] = payload.get("output", "")
+    events = [
+        (n, event, event.get("payload", {}))
+        for n, event in enumerate(
+            (json.loads(line) for line in path.read_text(errors="replace").splitlines()),
+            start=1,
+        )
+    ]
+    calls = [
+        (n, payload["call_id"], json.loads(payload["arguments"]))
+        for n, event, payload in events
+        if event.get("type") == "response_item"
+        and payload.get("type") == "function_call"
+        and payload.get("name") == "exec_command"
+    ]
+    outputs = {
+        payload["call_id"]: payload.get("output", "")
+        for _, event, payload in events
+        if event.get("type") == "response_item" and payload.get("type") == "function_call_output"
+    }
     return [(line, call, outputs.get(call_id, "")) for line, call_id, call in calls]
 
 
@@ -160,42 +172,51 @@ def find_session_logs(instance_dir: Path, sessions_root: Path) -> list[Path]:
 
 
 def text_files(root: Path) -> list[Path]:
-    files = []
-    for path in sorted(root.rglob("*")):
-        if path.is_file() and path.name != "AGENT_RULES.md" and path.stat().st_size < 2_000_000:
-            try:
-                path.read_text(errors="strict")
-            except UnicodeDecodeError:
-                continue
-            files.append(path)
-    return files
+    return [path for path in sorted(root.rglob("*")) if is_small_text_file(path)]
+
+
+def is_small_text_file(path: Path) -> bool:
+    if not (path.is_file() and path.name != "AGENT_RULES.md" and path.stat().st_size < 2_000_000):
+        return False
+    try:
+        path.read_text(errors="strict")
+    except UnicodeDecodeError:
+        return False
+    return True
 
 
 def audit_solution_files(solution_dir: Path) -> list[Finding]:
-    findings = []
-    for path in text_files(solution_dir):
-        text = path.read_text(errors="replace")
-        for pattern in WRAPPER_PATTERNS:
-            if re.search(pattern, text):
-                findings.append(Finding(str(path), f"solution file contains wrapper/evaluator pattern: {pattern}"))
-    return findings
+    return [
+        Finding(str(path), f"solution file contains wrapper/evaluator pattern: {pattern}")
+        for path in text_files(solution_dir)
+        for pattern in WRAPPER_PATTERNS
+        if re.search(pattern, path.read_text(errors="replace"))
+    ]
 
 
 def audit_submission_archive(instance_dir: Path) -> list[Finding]:
     archive = instance_dir / "submission.tar.gz"
     if not archive.exists():
         return []
-    findings = []
     with tarfile.open(archive) as tar:
         names = tar.getnames()
-    if not any(name.strip("./") == "compile.sh" for name in names):
-        findings.append(Finding(str(archive), "submission archive does not include compile.sh"))
-    if any(name.strip("./") == "AGENT_RULES.md" for name in names):
-        findings.append(Finding(str(archive), "submission archive includes harness-only AGENT_RULES.md"))
-    for name in names:
-        if name.startswith("/") or ".." in Path(name).parts:
-            findings.append(Finding(str(archive), f"submission archive contains unsafe path: {name}"))
-    return findings
+    return [
+        *(
+            []
+            if any(name.strip("./") == "compile.sh" for name in names)
+            else [Finding(str(archive), "submission archive does not include compile.sh")]
+        ),
+        *(
+            [Finding(str(archive), "submission archive includes harness-only AGENT_RULES.md")]
+            if any(name.strip("./") == "AGENT_RULES.md" for name in names)
+            else []
+        ),
+        *[
+            Finding(str(archive), f"submission archive contains unsafe path: {name}")
+            for name in names
+            if name.startswith("/") or ".." in Path(name).parts
+        ],
+    ]
 
 
 def audit_paper_settings(run: dict, instance_dir: Path) -> list[Finding]:
@@ -257,23 +278,26 @@ def audit_command(
     ):
         findings.append(Finding(line_source, "docker command does not use the allowed target exec form", command))
     if "/workspace/executable" in command and not allow_local_tools:
-        for tool in BINARY_ANALYSIS_TOOLS:
-            if uses_tool(command, tool):
-                findings.append(
-                    Finding(line_source, f"binary analysis tool used on target executable: {tool}", command)
-                )
-    for pattern in SOURCE_LOOKUP_PATTERNS:
-        if re.search(pattern, command):
-            findings.append(Finding(line_source, f"source/package lookup pattern: {pattern}", command))
-    for match in re.finditer(r"\b(?:curl|wget)\b[^;&|]*\bhttps?://([^/\s'\"]+)", command):
-        host = match.group(1).rsplit(":", 1)[0]
-        if host not in LOCALHOSTS:
-            findings.append(Finding(line_source, f"external URL fetch: {match.group(0)}", command))
-    for tool in FORBIDDEN_TOOLS:
-        if allow_local_tools and tool in BINARY_ANALYSIS_TOOLS:
-            continue
-        if uses_tool(command, tool) and tool != "docker":
-            findings.append(Finding(line_source, f"forbidden cleanroom host/tool command: {tool}", command))
+        findings.extend(
+            Finding(line_source, f"binary analysis tool used on target executable: {tool}", command)
+            for tool in BINARY_ANALYSIS_TOOLS
+            if uses_tool(command, tool)
+        )
+    findings.extend(
+        Finding(line_source, f"source/package lookup pattern: {pattern}", command)
+        for pattern in SOURCE_LOOKUP_PATTERNS
+        if re.search(pattern, command)
+    )
+    findings.extend(
+        Finding(line_source, f"external URL fetch: {match.group(0)}", command)
+        for match in re.finditer(r"\b(?:curl|wget)\b[^;&|]*\bhttps?://([^/\s'\"]+)", command)
+        if match.group(1).rsplit(":", 1)[0] not in LOCALHOSTS
+    )
+    findings.extend(
+        Finding(line_source, f"forbidden cleanroom host/tool command: {tool}", command)
+        for tool in FORBIDDEN_TOOLS
+        if not (allow_local_tools and tool in BINARY_ANALYSIS_TOOLS) and uses_tool(command, tool) and tool != "docker"
+    )
     return findings
 
 
@@ -297,30 +321,37 @@ def audit(args: argparse.Namespace) -> None:
     if not logs:
         findings.append(Finding(str(instance_dir), "no Codex JSONL session logs found for solution cwd"))
     blocked_attempts = 0
-    for log in logs:
-        for line, call, output in exec_calls(log):
-            blocked_attempts += was_blocked(output)
-            findings.extend(
-                audit_command(
-                    f"{log}:{line}",
-                    call,
-                    output,
-                    solution_dir,
-                    run["container_name"],
-                    run.get("inference_mode") == "no-internet-local-tools",
-                )
+    if run.get("inference_mode") != "open-internet":
+        calls = [(log, line, call, output) for log in logs for line, call, output in exec_calls(log)]
+        blocked_attempts = sum(was_blocked(output) for _, _, _, output in calls)
+        findings.extend(
+            finding
+            for log, line, call, output in calls
+            for finding in audit_command(
+                f"{log}:{line}",
+                call,
+                output,
+                solution_dir,
+                run["container_name"],
+                run.get("inference_mode") == "no-internet-local-tools",
             )
+        )
 
     findings = [finding for finding in findings if args.strict_paper or not finding.strict_only]
     if findings:
-        for finding in findings:
-            print(f"FAIL {finding.source}: {finding.message}")
-            if finding.command:
-                print(f"  cmd: {finding.command}")
+        print("\n".join(failure_text(finding) for finding in findings))
         raise SystemExit(1)
     print(f"OK audit passed for {instance_dir}")
     print(f"session_logs={';'.join(str(path) for path in logs)}")
     print(f"blocked_attempts={blocked_attempts}")
+
+
+def failure_text(finding: Finding) -> str:
+    return (
+        f"FAIL {finding.source}: {finding.message}\n  cmd: {finding.command}"
+        if finding.command
+        else f"FAIL {finding.source}: {finding.message}"
+    )
 
 
 def main() -> None:

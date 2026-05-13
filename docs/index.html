@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ProgramBench Goal Runner Results</title>
+  <title>ProgramBench Goal</title>
   <style>
     :root {
       color-scheme: light;
@@ -112,6 +112,14 @@
       border-radius: 6px;
       color: #134e4a;
     }
+    .empty-state {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 18px;
+      margin: 20px 0;
+    }
+    .empty-state h2 { margin-top: 0; }
     .mode-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -150,11 +158,11 @@
 </head>
 <body>
   <header>
-    <h1>ProgramBench Goal Runner Results</h1>
+    <h1>ProgramBench Goal</h1>
     <p>Codex <code>/goal</code> scaffold results on ProgramBench tasks. These are scaffold measurements, not official mini-SWE-agent leaderboard submissions.</p>
     <div class="pill-row">
-      <span class="pill">Generated 2026-05-13T18:51:21.961503+00:00</span>
-      <span class="pill">2 evaluated sample instances</span>
+      <span class="pill">Generated 2026-05-13T20:09:02.959734+00:00</span>
+      <span class="pill">0 evaluated instances</span>
       <span class="pill">200 tasks in full ProgramBench</span>
       <span class="pill">Sorted Resolved → Almost → Avg. pass</span>
     </div>
@@ -181,226 +189,32 @@
       </div>
     </div>
     <p><a href="data/results.json">Download results.json</a> · <a href="data/results.csv">Download results.csv</a></p>
-    <div class="cards">
-      
-      <section class="summary-card">
-        <div class="summary-title">GPT 5.5 (high) / Open internet</div>
-        <div class="summary-meta">Non-compliant: internet allowed</div>
-        <div class="metric-grid">
-          <div><strong>1</strong><span>instances</span></div>
-          <div><strong>100.0%</strong><span>resolved</span></div>
-          <div><strong>100.0%</strong><span>almost</span></div>
-          <div><strong>100.0%</strong><span>avg pass</span></div>
-          <div><strong>$11.80</strong><span>est. cost / task</span></div>
-          <div><strong>188.0</strong><span>calls / task</span></div>
+    
+    <section class="empty-state">
+      <h2>Clean Slate</h2>
+      <p>No Codex <code>/goal</code> results are published in this reset yet. The next full run will populate the leaderboard, run-detail pages, task pages, plots, and downloadable JSON/CSV artifacts.</p>
+      <div class="mode-grid">
+        <div class="mode-card">
+          <strong>Primary run</strong>
+          <p><code>configs/full-nointernet-xhigh.json</code> measures the Codex scaffold without internet and is the clean default for the Noam/Jake question.</p>
         </div>
-      </section>
-    
-
-      <section class="summary-card">
-        <div class="summary-title">GPT 5.5 (xhigh) / Paper / cleanroom</div>
-        <div class="summary-meta">Local smoke: host/resources differ</div>
-        <div class="metric-grid">
-          <div><strong>1</strong><span>instances</span></div>
-          <div><strong>0.0%</strong><span>resolved</span></div>
-          <div><strong>100.0%</strong><span>almost</span></div>
-          <div><strong>97.9%</strong><span>avg pass</span></div>
-          <div><strong>$4.85</strong><span>est. cost / task</span></div>
-          <div><strong>80.0</strong><span>calls / task</span></div>
+        <div class="mode-card">
+          <strong>Paper-comparable run</strong>
+          <p><code>configs/full-paper-xhigh.json</code> should run only on Linux amd64 with 20 CPU, 60g RAM, strict egress, and wrapper-only target access.</p>
         </div>
-      </section>
+        <div class="mode-card">
+          <strong>Open-internet ablation</strong>
+          <p><code>configs/full-open-xhigh.json</code> is intentionally non-compliant and stays separate from cleanroom results.</p>
+        </div>
+      </div>
+    </section>
     
-    </div>
-
-    
-    <h2>Efficiency Plots</h2>
-    <p>Each point is one evaluated task. Compute is shown as Codex calls because public results omit raw token logs; cost is estimated from local token logs and a pricing snapshot.</p>
-    <div class="plot-grid">
-      <section class="plot-card">
-        <h3>Pass vs. Est. Cost</h3>
-        
-      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Est. cost (USD)">
-        <line x1="42" y1="18" x2="42" y2="186" />
-        <line x1="42" y1="186" x2="342" y2="186" />
-        <text x="34" y="22" text-anchor="end">100%</text>
-        <text x="34" y="190" text-anchor="end">0%</text>
-        <text x="42" y="212">0</text>
-        <text x="342" y="212" text-anchor="end">$11.80</text>
-        <text x="180.0" y="212" text-anchor="middle">Est. cost (USD)</text>
-        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
-        <circle cx="342.0" cy="18.0" r="5.5" fill="#047857"><title>tomnomnom__gron.88a6234: 100.0% pass, est. cost (usd) $11.80, Open internet</title></circle><circle cx="165.2" cy="21.5" r="5.5" fill="#d97706"><title>wfxr__csview.8ac4de0: 97.9% pass, est. cost (usd) $4.85, Paper / cleanroom</title></circle>
-      </svg>
-    
-      </section>
-      <section class="plot-card">
-        <h3>Pass vs. Calls</h3>
-        
-      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Codex calls">
-        <line x1="42" y1="18" x2="42" y2="186" />
-        <line x1="42" y1="186" x2="342" y2="186" />
-        <text x="34" y="22" text-anchor="end">100%</text>
-        <text x="34" y="190" text-anchor="end">0%</text>
-        <text x="42" y="212">0</text>
-        <text x="342" y="212" text-anchor="end">188</text>
-        <text x="180.0" y="212" text-anchor="middle">Codex calls</text>
-        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
-        <circle cx="342.0" cy="18.0" r="5.5" fill="#047857"><title>tomnomnom__gron.88a6234: 100.0% pass, codex calls 188, Open internet</title></circle><circle cx="169.7" cy="21.5" r="5.5" fill="#d97706"><title>wfxr__csview.8ac4de0: 97.9% pass, codex calls 80, Paper / cleanroom</title></circle>
-      </svg>
-    
-      </section>
-      <section class="plot-card">
-        <h3>Pass vs. Latency</h3>
-        
-      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Wall-clock hours">
-        <line x1="42" y1="18" x2="42" y2="186" />
-        <line x1="42" y1="186" x2="342" y2="186" />
-        <text x="34" y="22" text-anchor="end">100%</text>
-        <text x="34" y="190" text-anchor="end">0%</text>
-        <text x="42" y="212">0</text>
-        <text x="342" y="212" text-anchor="end">0.62h</text>
-        <text x="180.0" y="212" text-anchor="middle">Wall-clock hours</text>
-        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
-        <circle cx="342.0" cy="18.0" r="5.5" fill="#047857"><title>tomnomnom__gron.88a6234: 100.0% pass, wall-clock hours 0.62h, Open internet</title></circle><circle cx="185.9" cy="21.5" r="5.5" fill="#d97706"><title>wfxr__csview.8ac4de0: 97.9% pass, wall-clock hours 0.30h, Paper / cleanroom</title></circle>
-      </svg>
-    
-      </section>
-    </div>
-    
-
-    <h2>Extended Results</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Est. cost</th><th>Calls</th></tr></thead>
-        <tbody>
-            <tr>
-              <td>1</td>
-              <td><a href="run/gpt-5-5--high--codex--goal-open-internet-non-compliant--internet-allowed/">GPT 5.5 (high)</a></td>
-              <td>Codex /goal</td>
-              <td>100.0% (1/1)</td>
-              <td>100.0% (1/1)</td>
-              <td>$11.80</td>
-              <td>188.0</td>
-            </tr>
-            
-
-            <tr>
-              <td>2</td>
-              <td><a href="run/gpt-5-5--xhigh--codex--goal-paper---cleanroom-local-smoke--host-resources-differ/">GPT 5.5 (xhigh)</a></td>
-              <td>Codex /goal</td>
-              <td>0.0% (0/1)</td>
-              <td>100.0% (1/1)</td>
-              <td>$4.85</td>
-              <td>80.0</td>
-            </tr>
-            </tbody>
-      </table>
-    </div>
-    <p>Columns mirror ProgramBench's extended leaderboard shape: resolved and almost-resolved rates, average estimated API cost per task instance, and average calls per task instance. Mode and compliance are shown in Run Disclosures and Per-Instance Results so the mirrored metric table stays close to ProgramBench's shape.</p>
-
-    <h2>Run Disclosures</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Model</th><th>Mode</th><th>Compliance</th><th>Tasks</th><th>Avg. pass</th><th>Wall</th></tr></thead>
-        <tbody>
-            <tr>
-              <td>1</td>
-              <td>GPT 5.5 (high)</td>
-              <td>Open internet</td>
-              <td>Non-compliant: internet allowed</td>
-              <td>1/200</td>
-              <td>100.0%</td>
-              <td>0.62h</td>
-            </tr>
-            
-
-            <tr>
-              <td>2</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td>Paper / cleanroom</td>
-              <td>Local smoke: host/resources differ</td>
-              <td>1/200</td>
-              <td>97.9%</td>
-              <td>0.30h</td>
-            </tr>
-            </tbody>
-      </table>
-    </div>
-    <p>These disclosure fields are intentionally outside the mirrored metric table because ProgramBench's public leaderboard does not mix scaffold deviations into the metric columns.</p>
-
-    
-    <h2>Model Comparison</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Y model</th><th>X model</th><th>Resolved Δ</th><th>Almost Δ</th><th>Avg. pass Δ</th></tr></thead>
-        <tbody>
-                <tr>
-                  <td>GPT 5.5 (high)</td>
-                  <td>GPT 5.5 (xhigh)</td>
-                  <td>100.0%</td>
-                  <td>0.0%</td>
-                  <td>2.1%</td>
-                </tr>
-                
-                <tr>
-                  <td>GPT 5.5 (xhigh)</td>
-                  <td>GPT 5.5 (high)</td>
-                  <td>-100.0%</td>
-                  <td>0.0%</td>
-                  <td>-2.1%</td>
-                </tr>
-                </tbody>
-      </table>
-    </div>
-    
-
-    <h2>Per-Instance Results</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Instance</th><th>Mode</th><th>Model</th><th>Compliance</th><th>Status</th><th>Score</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Host</th><th>Docker</th><th>Evidence</th></tr></thead>
-        <tbody>
-            <tr>
-              <td>1</td>
-              <td><code>tomnomnom__gron.88a6234</code></td>
-              <td>Open internet</td>
-              <td>GPT 5.5 (high)</td>
-              <td>Non-compliant: internet allowed</td>
-              <td><span class="status resolved">resolved</span></td>
-              <td>100.0%</td>
-              <td>224/224</td>
-              <td>$11.80</td>
-              <td>188</td>
-              <td>0.62h</td>
-              <td>Darwin/arm64</td>
-              <td>2 CPU / 2g</td>
-              <td><a href="evidence/gpt55-goal-high-open-gron/tomnomnom__gron.88a6234/manifest.json">manifest</a> · <a href="evidence/gpt55-goal-high-open-gron/tomnomnom__gron.88a6234/eval.json">eval json</a> · <a href="evidence/gpt55-goal-high-open-gron/tomnomnom__gron.88a6234/eval-summary.json">eval summary</a></td>
-            </tr>
-            
-
-            <tr>
-              <td>2</td>
-              <td><code>wfxr__csview.8ac4de0</code></td>
-              <td>Paper / cleanroom</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td>Local smoke: host/resources differ</td>
-              <td><span class="status almost">almost</span></td>
-              <td>97.9%</td>
-              <td>328/335</td>
-              <td>$4.85</td>
-              <td>80</td>
-              <td>0.30h</td>
-              <td>Darwin/arm64</td>
-              <td>2 CPU / 4g</td>
-              <td><a href="evidence/gpt55-goal-paper-csview/wfxr__csview.8ac4de0/manifest.json">manifest</a> · <a href="evidence/gpt55-goal-paper-csview/wfxr__csview.8ac4de0/eval.json">eval json</a> · <a href="evidence/gpt55-goal-paper-csview/wfxr__csview.8ac4de0/eval-summary.json">eval summary</a></td>
-            </tr>
-            </tbody>
-      </table>
-    </div>
 
     <h2>Official Baseline Context</h2>
     <p>For orientation only. ProgramBench's public extended table reports mini-SWE-agent over 200 tasks, sorted by resolved, almost-resolved, then average pass rate.</p>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Cost</th><th>Calls</th></tr></thead>
+        <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Avg. cost</th><th>Avg. calls</th></tr></thead>
         <tbody>
         <tr>
           <td>1</td>
@@ -427,7 +241,7 @@
     </div>
 
     <h2>Method Notes</h2>
-    <p>Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Resolved requires every scored test to pass with no evaluator errors. Local smoke runs are not ProgramBench-comparable until they run on Linux amd64 with 20 CPU / 60g and strict egress. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Estimated cost comes from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths.</p>
+    <p>Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Scoring is computed through ProgramBench's own <code>EvaluationResult</code> and <code>InstanceEvalSummary</code> logic after active-branch and ignored-test filtering. Resolved means the ProgramBench behavioral test pass rate is exactly 100%; evaluator warnings/errors are disclosed separately in evidence artifacts. Local smoke runs are not ProgramBench-comparable until they run on Linux amd64 with 20 CPU / 60g and strict egress. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Estimated cost comes from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths.</p>
     <p>Sources: <a href="https://programbench.com/extended/">ProgramBench extended results</a>, <a href="https://programbench.com/run/gpt-5-5-xhigh/">GPT 5.5 xhigh run detail</a>, and this repository's generated CSV summaries.</p>
   </main>
 </body>

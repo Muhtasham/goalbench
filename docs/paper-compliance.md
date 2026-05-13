@@ -27,8 +27,8 @@ target inspection.
 | Paper resources | Defaults to 20 CPUs and 60GB RAM; `--strict-paper` audit flags deviations. |
 | Paper run limits | `/goal` is not mini-SWE-agent, so 1,000-step and 6-hour limits are not enforced identically. Report actual elapsed time and Codex call count from logs. |
 | Per-action timeout and output truncation | Codex CLI behavior is not identical to mini-SWE-agent's 3-minute action timeout and 10k-character output truncation. Disclose this as a scaffold difference. |
-| Scoring | `scripts/summarize-results.py` imports ProgramBench scoring code, filters active branches/ignored tests, and reports resolved, almost-resolved, average pass rate, calls, tokens, and estimated cost. |
-| Usage audit | `usage-audit.json` records the Codex logs, token totals, pricing snapshot hash, and warnings behind cost/call reporting. |
+| Scoring | `scripts/summarize-results.py` imports ProgramBench scoring code, filters active branches/ignored tests the same way as `programbench info`, and reports resolved, almost-resolved, average pass rate, calls, tokens, and estimated cost. |
+| Usage audit | `usage-audit.json` records the Codex logs, token totals, pricing snapshot metadata/hash, freshness warnings, and warnings behind cost/call reporting. |
 | Evaluation | Uses ProgramBench's own `programbench eval` and `programbench info`; evaluation may fetch test blobs, which is evaluator-side, not inference-side. |
 
 Open-internet mode:

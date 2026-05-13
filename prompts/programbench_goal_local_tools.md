@@ -14,6 +14,8 @@ Task:
   binary-analysis tools, tracing/instrumentation tools, and tools you write
   yourself.
 - You may inspect the provided target binary with local tools in this mode.
+- Do not inspect files outside `{{solution_dir}}` on the host, except through
+  local target-inspection commands needed for this ablation.
 - You may not submit a wrapper around the provided target binary.
 - You may not make the final executable depend on `/workspace/executable` or any
   other prebuilt copy of the same tool.

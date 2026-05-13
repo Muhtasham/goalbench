@@ -7,6 +7,7 @@ import json
 import shutil
 import tarfile
 from datetime import datetime, timezone
+from functools import reduce
 from pathlib import Path
 
 HOME = str(Path.home())
@@ -15,10 +16,12 @@ REDACTIONS = [
     (str(Path.home() / "Documents" / "ProgramBench"), "$PROGRAMBENCH_REPO"),
     (str(Path.home() / "pb-goal-runs"), "$RUNS_ROOT"),
     (str(Path.home() / ".codex" / "sessions"), "$CODEX_SESSIONS"),
+    (str(Path.home() / ".codex" / "archived_sessions"), "$CODEX_ARCHIVED_SESSIONS"),
     (HOME, HOME_TOKEN),
     (f"{HOME_TOKEN}/Documents" + "/ProgramBench", "$PROGRAMBENCH_REPO"),
     (f"{HOME_TOKEN}/pb-goal-runs", "$RUNS_ROOT"),
     (f"{HOME_TOKEN}/.codex/sessions", "$CODEX_SESSIONS"),
+    (f"{HOME_TOKEN}/.codex/archived_sessions", "$CODEX_ARCHIVED_SESSIONS"),
 ]
 
 
@@ -61,9 +64,7 @@ def redact(value):
     if isinstance(value, list):
         return [redact(item) for item in value]
     if isinstance(value, str):
-        for source, target in REDACTIONS:
-            value = value.replace(source, target)
-        return value
+        return reduce(lambda text, pair: text.replace(pair[0], pair[1]), REDACTIONS, value)
     return value
 
 
@@ -85,12 +86,12 @@ def collect(args: argparse.Namespace) -> None:
 
     eval_path = instance_dir / f"{instance_id}.eval.json"
     eval_json = read_json(eval_path)
-    row = results_row(
-        Path(args.results_csv).expanduser() if args.results_csv else instance_dir.parent / "results.csv", instance_id
-    )
-    copied_logs = []
-    for session_log in filter(None, row.get("session_logs", "").split(";")):
-        copied_logs.append(copy_text_if_exists(Path(session_log), output_dir / "codex_logs" / Path(session_log).name))
+    results_csv_path = Path(args.results_csv).expanduser() if args.results_csv else instance_dir.parent / "results.csv"
+    row = results_row(results_csv_path, instance_id)
+    copied_logs = [
+        copy_text_if_exists(Path(session_log), output_dir / "codex_logs" / Path(session_log).name)
+        for session_log in filter(None, row.get("session_logs", "").split(";"))
+    ]
 
     manifest = {
         "collected_at": datetime.now(timezone.utc).isoformat(),
@@ -112,11 +113,9 @@ def collect(args: argparse.Namespace) -> None:
         "copied_files": {
             "run_json": copy_text_if_exists(instance_dir / "run.json", output_dir / "run.json"),
             "eval_json": copy_text_if_exists(eval_path, output_dir / eval_path.name),
-            "results_csv": copy_text_if_exists(instance_dir.parent / "results.csv", output_dir / "results.csv"),
+            "results_csv": copy_text_if_exists(results_csv_path, output_dir / "results.csv"),
             "usage_audit": copy_text_if_exists(
-                (
-                    Path(args.results_csv).expanduser() if args.results_csv else instance_dir.parent / "results.csv"
-                ).with_name("usage-audit.json"),
+                results_csv_path.with_name("usage-audit.json"),
                 output_dir / "usage-audit.json",
             ),
             "submission": copy_if_exists(instance_dir / "submission.tar.gz", output_dir / "submission.tar.gz"),

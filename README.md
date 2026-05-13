@@ -1,4 +1,4 @@
-# ProgramBench Goal Runner
+# ProgramBench Goal
 
 Small harness for running Codex GPT-5.5 `/goal` against ProgramBench tasks.
 
@@ -169,13 +169,24 @@ ProgramBench results.
 ## Reporting
 
 Use ProgramBench's resolved, almost-resolved, average pass-rate, cost, and calls
-shape so results are comparable to the leaderboard. Label our cost column as
+shape so results are comparable to the leaderboard. Scores are computed through
+ProgramBench's own `EvaluationResult` and `InstanceEvalSummary` logic after the
+same active-branch and ignored-test filtering used by `programbench info`.
+Resolved means the filtered behavioral test pass rate is exactly `1.0`; warning
+and evaluator-problem fields are disclosed separately. Label our cost column as
 estimated cost: Codex session logs expose token counts and call counts, but not
 authoritative billed dollars. Label the scaffold explicitly, for example:
 `GPT-5.5 xhigh / Codex goal`, and disclose wall-clock time, inference mode,
 host/network enforcement, and any paper deviations. Treat this as a scaffold
 comparison against mini-SWE-agent, not an apples-to-apples model-only
 comparison.
+
+Cost uses local Codex `token_count` events from both `~/.codex/sessions` and
+`~/.codex/archived_sessions`. The estimate prices uncached input, cached input,
+and output tokens. `reasoning_output_tokens` is kept in the audit file but is
+not added again because it is a subset of output tokens in the local logs. When
+OpenAI's model docs expose a long-context threshold, the summarizer applies
+that multiplier per Codex call using `last_token_usage.input_tokens`.
 
 ## Optional Host Egress Guard
 
@@ -214,6 +225,30 @@ Use ProgramBench's primary metric when reporting results: fully resolved
 instances. Almost-resolved and average pass rate are useful diagnostics, but
 they should not be the headline score.
 
+Metric formulas:
+
+- `resolved_rate = count(score == 1.0) / evaluated_instances`
+- `almost_resolved_rate = count(score >= 0.95) / evaluated_instances`
+- `total_cost_usd = sum(estimated_cost_usd per instance)`
+- `total_calls = sum(calls per instance)`
+- `average_cost_usd = total_cost_usd / evaluated_instances`
+- `average_calls = total_calls / evaluated_instances`
+
+ProgramBench run-detail pages display total cost and total calls. ProgramBench's
+extended leaderboard table displays average cost and average calls per instance.
+The generated report follows the same split.
+
+Before a serious run, check metric parity against ProgramBench's scoring code
+and bundled fixture runs:
+
+```bash
+uv run --project /path/to/ProgramBench python scripts/check-metric-parity.py \
+  --programbench-repo /path/to/ProgramBench
+```
+
+`scripts/run-sweep.sh` runs this check automatically whenever a ProgramBench
+checkout is supplied.
+
 Local state lives under `local_state/`, which is ignored by git. Use it for
 pricing snapshots, run manifests, copied Codex logs, eval JSON, result CSVs, and
 trace bundles that should be shareable locally but not committed.
@@ -225,6 +260,10 @@ uv run python scripts/refresh-openai-pricing.py
 ```
 
 This writes `local_state/openai_pricing.json` from official OpenAI model docs.
+OpenAI does not currently expose a supported structured pricing endpoint for
+these model price cards, so this repository stores an official-doc snapshot
+instead. The sweep script refreshes it before scoring. Offline rebuilds keep
+using the cached snapshot and `usage-audit.json` will flag it if it is stale.
 The summarizer reads that file by default; `CODEX_INPUT_USD_PER_MTOK`,
 `CODEX_CACHED_INPUT_USD_PER_MTOK`, and `CODEX_OUTPUT_USD_PER_MTOK` still
 override it when set.
@@ -253,6 +292,113 @@ uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763 \
   --reasoning-effort high
 ```
 
+## Full 200-Task Runs
+
+Do not start all 200 tasks from a laptop as the first serious run. Use the
+config runner so the command, mode, resource settings, and batch name are
+reproducible. Refresh the official 200-task target set from a ProgramBench
+checkout:
+
+```bash
+uv run python scripts/write-target-set.py /path/to/ProgramBench \
+  --output target_sets/all_tasks.txt
+uv run python scripts/validate-target-set.py target_sets/all_tasks.txt \
+  --programbench-repo /path/to/ProgramBench
+```
+
+The validator expects 200 real tasks by default: all ProgramBench task metadata
+entries except the bundled `testorg__` fixture. `scripts/run-sweep.sh` runs this
+validation automatically whenever the config uses `target_sets/all_tasks.txt`.
+
+For the Noam/Jake question, the cleanest primary answer is the no-internet
+Codex `/goal` scaffold: same task set, longer/autonomous Codex goal loop, and no
+external lookup. It is not the official mini-SWE-agent baseline, but it avoids
+the biggest confound from normal Codex internet access:
+
+```bash
+scripts/run-sweep.sh --programbench-repo /path/to/ProgramBench --dry-run
+scripts/run-sweep.sh --programbench-repo /path/to/ProgramBench
+```
+
+The script refreshes `target_sets/all_tasks.txt`, runs the configured batch,
+refreshes the OpenAI pricing snapshot before scoring, finalizes completed
+instances, exports sanitized evidence, rebuilds `docs/`, refreshes public
+ProgramBench baseline rows while rendering, checks report size, and runs the
+privacy scan. Add `--publish` to commit and push `docs/` after the site rebuild:
+
+```bash
+scripts/run-sweep.sh --programbench-repo /path/to/ProgramBench --skip-watch --publish
+```
+
+Use `--offline-report` only when you intentionally want cached pricing and
+cached ProgramBench baseline rows for a reproducible or offline rebuild.
+
+The equivalent lower-level commands are:
+
+```bash
+uv run python scripts/run-config.py watch configs/full-nointernet-xhigh.json --dry-run
+uv run python scripts/run-config.py watch configs/full-nointernet-xhigh.json
+```
+
+Run the matching high-effort sweep as a separate batch:
+
+```bash
+uv run python scripts/run-config.py watch configs/full-nointernet-high.json
+```
+
+Check status:
+
+```bash
+uv run python scripts/run-config.py status configs/full-nointernet-xhigh.json
+```
+
+Finalize completed instances, run ProgramBench evaluation, summarize metrics,
+and collect local evidence:
+
+```bash
+uv run python scripts/run-config.py finalize configs/full-nointernet-xhigh.json \
+  --programbench-repo /path/to/ProgramBench
+```
+
+That run is labeled `no-internet`: it blocks external lookup and target binary
+analysis, but still discloses that the scaffold is Codex `/goal`, not
+mini-SWE-agent.
+
+Run `open-internet` only as a separate ceiling experiment:
+
+```bash
+uv run python scripts/run-config.py watch configs/full-open-xhigh.json
+```
+
+Open-internet runs are intentionally non-compliant with ProgramBench cleanroom
+rules. They answer “how far does the full Codex harness get if normal external
+resources are allowed?” rather than “what is the official ProgramBench score?”
+
+For the banteg-style “tool-starved” criticism, run the no-internet local-tools
+ablation separately:
+
+```bash
+uv run python scripts/run-config.py watch configs/full-localtools-xhigh.json
+```
+
+For the closest ProgramBench-cleanroom run, use a Linux `amd64` host with the
+wrapper boundary and preflight first:
+
+```bash
+uv run python scripts/preflight-paper-host.py \
+  --codex-user codex-runner \
+  --check-egress-guard \
+  --instance-dir /path/to/prepared/paper/instance
+
+uv run python scripts/run-config.py watch configs/full-paper-xhigh.json
+```
+
+The committed full-run configs all use `gpt-5.5`, 20 CPUs, 60GB RAM, and
+`max_parallel=1`. There are separate `high` and `xhigh` configs for
+`no-internet`, `open-internet`, `no-internet-local-tools`, and `paper`. Increase
+parallelism only after confirming Codex rate limits and host capacity. Do not
+mix reasoning modes in one batch.
+
 Prepare with an official prompt template when one is available:
 
 ```bash
@@ -267,7 +413,8 @@ prompt, pin that file and report its hash with the run.
 Prepare the near-miss first batch:
 
 ```bash
-uv run python programbench_goal_runner.py prepare-batch target_sets/first_batch_near_miss.txt
+uv run python programbench_goal_runner.py prepare-batch target_sets/first_batch_near_miss.txt \
+  --inference-mode no-internet
 ```
 
 Prepare the same batch with wrapper-mode target access:
@@ -285,6 +432,7 @@ too many Codex `/goal` sessions at once:
 uv run python scripts/run-batch.py watch target_sets/first_batch_near_miss.txt \
   --batch-name first-near-miss-xhigh \
   --max-parallel 1 \
+  --inference-mode no-internet \
   --reasoning-effort xhigh
 ```
 
@@ -373,7 +521,7 @@ Summarize leaderboard-style metrics after evaluation:
 
 ```bash
 uv run --project /path/to/ProgramBench \
-  python /path/to/programbench-goal-runner/scripts/summarize-results.py ~/pb-goal-runs/gpt55-goal-open-jq \
+  python /path/to/programbench-goal/scripts/summarize-results.py ~/pb-goal-runs/gpt55-goal-open-jq \
   --programbench-repo /path/to/ProgramBench \
   --output results.csv
 ```
@@ -393,7 +541,9 @@ authoritative dollars.
 When an output CSV is written, the summarizer also writes `usage-audit.json`
 next to it. That file records matched Codex session logs, token totals, pricing
 source, pricing snapshot hash, cost estimates, and warnings for missing logs or
-pricing.
+pricing. It also records `long_context_calls` when a model's official pricing
+docs define a long-context multiplier. The audit includes the pricing snapshot
+metadata and a freshness warning when the snapshot is older than 24 hours.
 
 Set these environment variables to estimate cost from current pricing:
 
@@ -428,8 +578,11 @@ for line in open(sys.argv[1], errors="replace"):
     payload = event.get("payload", {})
     if event.get("type") == "event_msg" and payload.get("type") == "token_count" and payload.get("info"):
         calls += 1
-        last = payload["info"]["total_token_usage"]
-print({"calls": calls, "total_token_usage": last})
+        last = {
+            "total_token_usage": payload["info"]["total_token_usage"],
+            "last_token_usage": payload["info"].get("last_token_usage"),
+        }
+print({"calls": calls, **last})
 PY
 ```
 
@@ -453,9 +606,14 @@ The report keeps `paper`, `no-internet`, `no-internet-local-tools`, and
 resolved/almost/average-pass/estimated-cost/calls metrics, and commits only
 sanitized aggregate rows. Local Codex session-log paths stay in
 `local_state/` and are not published.
-The summary page also plots per-task pass rate against estimated cost, Codex
-calls, and wall-clock latency. Calls are the public compute proxy; raw token
-logs remain local unless explicitly exported.
+The summary page also plots ProgramBench-style behavioral pass-rate
+distributions (histogram and cumulative), plus per-task pass rate against
+estimated cost, Codex calls, and wall-clock latency. Calls are the public
+compute proxy; raw token logs remain local unless explicitly exported.
+For each evaluated instance, the report also writes `docs/task/<instance_id>/`
+with a ProgramBench-style task detail page: scored behavioral tests, best score,
+results by model/mode, cost, calls, wall time, evidence links, and a link to the
+official ProgramBench task page.
 
 ProgramBench's public usage guide documents the per-instance `.eval.json` files
 that `programbench eval` writes, including `test_results` and evaluator `log`

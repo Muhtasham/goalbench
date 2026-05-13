@@ -6,6 +6,7 @@ import json
 import subprocess
 import sys
 import time
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -14,6 +15,7 @@ DEFAULT_RUNS_ROOT = Path.home() / "pb-goal-runs"
 DEFAULT_STATE_ROOT = REPO / "local_state" / "batches"
 DONE_MARKERS = ("Goal achieved", "Goal marked complete")
 RATE_LIMIT_MARKERS = ("rate limit", "rate_limit", "429")
+FINALIZE_READY = {"goal_done", "finalize_failed"}
 
 
 def now() -> str:
@@ -68,6 +70,23 @@ def tmux_capture(session: str) -> str:
     return run(["tmux", "capture-pane", "-pt", session, "-S", "-220"], check=False).stdout
 
 
+def transcript_tail(record: dict) -> str:
+    path = Path(record.get("instance_dir", "")) / "tmux-transcript.log"
+    return path.read_text(errors="replace")[-12000:] if path.is_file() else ""
+
+
+def record_output(record: dict) -> str:
+    return tmux_capture(record["session_name"]) + "\n" + transcript_tail(record)
+
+
+def add_error(record: dict, error: str) -> dict:
+    return {
+        **record,
+        "last_error": error[-4000:],
+        "last_error_history": [*record.get("last_error_history", []), {"at": now(), "error": error[-4000:]}],
+    }
+
+
 def prepare_instance(args: argparse.Namespace, instance_id: str, run_root: Path) -> dict:
     cmd = [
         sys.executable,
@@ -105,6 +124,7 @@ def prepare_instance(args: argparse.Namespace, instance_id: str, run_root: Path)
         "container_name": run_json["container_name"],
         "inference_mode": run_json["inference_mode"],
         "prepared_at": now(),
+        "attempts": 0,
         "last_error": "",
     }
 
@@ -120,33 +140,39 @@ def start_instance(record: dict) -> dict:
 def refresh_record(record: dict) -> dict:
     if record["status"] != "running":
         return record
-    pane = tmux_capture(record["session_name"])
-    if any(marker in pane for marker in DONE_MARKERS):
-        return {**record, "status": "goal_done", "goal_done_at": now(), "last_pane_tail": pane[-4000:]}
-    if pane and any(marker in pane.lower() for marker in RATE_LIMIT_MARKERS):
-        return {**record, "last_rate_limit_seen_at": now(), "last_pane_tail": pane[-4000:]}
+    output = record_output(record)
+    if any(marker in output for marker in DONE_MARKERS):
+        return {**record, "status": "goal_done", "goal_done_at": now(), "last_pane_tail": output[-4000:]}
+    if output and any(marker in output.lower() for marker in RATE_LIMIT_MARKERS):
+        return {**record, "last_rate_limit_seen_at": now(), "last_pane_tail": output[-4000:]}
     if not tmux_has_session(record["session_name"]):
-        return {**record, "status": "failed", "failed_at": now(), "last_error": "tmux session ended before goal_done"}
-    return {**record, "last_pane_tail": pane[-4000:]}
+        return add_error({**record, "status": "failed", "failed_at": now()}, "tmux session ended before goal_done")
+    return {**record, "last_rate_limit_seen_at": "", "last_pane_tail": output[-4000:]}
 
 
 def update_targets(state: dict, targets: list[str]) -> None:
-    for instance_id in targets:
-        state["items"].setdefault(instance_id, {"instance_id": instance_id, "status": "pending", "last_error": ""})
+    state["items"] = {
+        **{instance_id: {"instance_id": instance_id, "status": "pending", "last_error": ""} for instance_id in targets},
+        **state["items"],
+    }
 
 
 def running_count(state: dict) -> int:
     return sum(record["status"] == "running" for record in state["items"].values())
 
 
-def active_rate_limit(state: dict) -> bool:
+def active_rate_limit(state: dict, cooldown_seconds: int) -> bool:
+    current = datetime.now(timezone.utc)
     return any(
-        record.get("last_rate_limit_seen_at") and record["status"] == "running" for record in state["items"].values()
+        record.get("last_rate_limit_seen_at")
+        and record["status"] == "running"
+        and (current - datetime.fromisoformat(record["last_rate_limit_seen_at"])).total_seconds() < cooldown_seconds
+        for record in state["items"].values()
     )
 
 
 def launch_ready(args: argparse.Namespace, state: dict, run_root: Path) -> None:
-    if active_rate_limit(state):
+    if active_rate_limit(state, args.rate_limit_cooldown_seconds):
         return
     for instance_id, record in state["items"].items():
         if running_count(state) >= args.max_parallel:
@@ -154,44 +180,41 @@ def launch_ready(args: argparse.Namespace, state: dict, run_root: Path) -> None:
         if record["status"] != "pending":
             continue
         try:
-            state["items"][instance_id] = start_instance(prepare_instance(args, instance_id, run_root))
+            prepared = prepare_instance(args, instance_id, run_root)
+            state["items"][instance_id] = start_instance({**prepared, "attempts": record.get("attempts", 0) + 1})
         except subprocess.CalledProcessError as e:
-            state["items"][instance_id] = {
-                **record,
-                "status": "failed",
-                "failed_at": now(),
-                "last_error": e.stdout[-4000:],
-            }
+            state["items"][instance_id] = add_error(
+                {**record, "status": "failed", "failed_at": now(), "attempts": record.get("attempts", 0) + 1},
+                e.stdout,
+            )
         save_state(state)
 
 
 def refresh_state(state: dict) -> None:
-    for instance_id, record in list(state["items"].items()):
-        state["items"][instance_id] = refresh_record(record)
+    state["items"] = {instance_id: refresh_record(record) for instance_id, record in state["items"].items()}
 
 
 def summarize_state(state: dict) -> dict[str, int]:
-    counts: dict[str, int] = {}
-    for record in state["items"].values():
-        counts[record["status"]] = counts.get(record["status"], 0) + 1
-    return counts
+    return dict(Counter(record["status"] for record in state["items"].values()))
+
+
+def status_line(record: dict) -> str:
+    return ",".join(
+        [
+            record["instance_id"],
+            record["status"],
+            record.get("run_name", ""),
+            record.get("session_name", ""),
+            f"attempts={record.get('attempts', 0)}",
+            record.get("last_error", "").replace("\n", "\\n")[:240],
+        ]
+    )
 
 
 def print_status(state: dict) -> None:
     counts = summarize_state(state)
     print(",".join(f"{key}={counts[key]}" for key in sorted(counts)))
-    for record in state["items"].values():
-        print(
-            ",".join(
-                [
-                    record["instance_id"],
-                    record["status"],
-                    record.get("run_name", ""),
-                    record.get("session_name", ""),
-                    record.get("last_error", "").replace("\n", "\\n")[:240],
-                ]
-            )
-        )
+    print("\n".join(status_line(record) for record in state["items"].values()))
 
 
 def watch(args: argparse.Namespace) -> None:
@@ -234,7 +257,7 @@ def finalize_one(args: argparse.Namespace, record: dict) -> dict:
             return {**record, "status": "evaluated", "evaluated_at": now(), "last_error": ""}
         return {**record, "status": "packaged", "packaged_at": now(), "last_error": ""}
     except subprocess.CalledProcessError as e:
-        return {**record, "status": "failed", "failed_at": now(), "last_error": e.stdout[-4000:]}
+        return add_error({**record, "status": "finalize_failed", "finalize_failed_at": now()}, e.stdout)
 
 
 def summarize_and_collect(args: argparse.Namespace, state: dict) -> None:
@@ -276,12 +299,43 @@ def finalize(args: argparse.Namespace) -> None:
     state = load_state(args.batch_name)
     refresh_state(state)
     for instance_id, record in list(state["items"].items()):
-        if record["status"] == "goal_done":
+        if record["status"] in FINALIZE_READY:
             state["items"][instance_id] = finalize_one(args, record)
             save_state(state)
     summarize_and_collect(args, state)
+    if not args.allow_partial:
+        incomplete = [
+            record["instance_id"]
+            for record in state["items"].values()
+            if record["status"] not in {"evaluated", "failed"}
+        ]
+        if incomplete:
+            raise SystemExit(
+                f"batch is incomplete ({len(incomplete)} remaining); pass --allow-partial to publish a partial run"
+            )
     save_state(state)
     print_status(state)
+
+
+def retry(args: argparse.Namespace) -> None:
+    state = load_state(args.batch_name)
+    wanted = set(args.instance or [])
+    state["items"] = {
+        instance_id: retry_record(record, args.failed) if not wanted or instance_id in wanted else record
+        for instance_id, record in state["items"].items()
+    }
+    save_state(state)
+    print_status(state)
+
+
+def retry_record(record: dict, failed: bool) -> dict:
+    return (
+        {**record, "status": "pending", "last_error": "", "retried_at": now()}
+        if failed and record["status"] == "failed"
+        else {**record, "status": "goal_done", "last_error": "", "retried_at": now()}
+        if failed and record["status"] == "finalize_failed"
+        else record
+    )
 
 
 def add_common_run_args(parser: argparse.ArgumentParser) -> None:
@@ -289,6 +343,7 @@ def add_common_run_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--run-root", default="")
     parser.add_argument("--max-parallel", type=int, default=1)
     parser.add_argument("--poll-seconds", type=int, default=60)
+    parser.add_argument("--rate-limit-cooldown-seconds", type=int, default=600)
     parser.add_argument("--docker-cpus", type=int, default=20)
     parser.add_argument("--docker-memory", default="60g")
     parser.add_argument(
@@ -321,7 +376,14 @@ def main() -> None:
     finalize_parser.add_argument("--batch-name", required=True)
     finalize_parser.add_argument("--programbench-repo", default="")
     finalize_parser.add_argument("--strict-paper", action="store_true")
+    finalize_parser.add_argument("--allow-partial", action="store_true")
     finalize_parser.set_defaults(func=finalize)
+
+    retry_parser = subparsers.add_parser("retry")
+    retry_parser.add_argument("--batch-name", required=True)
+    retry_parser.add_argument("--failed", action="store_true")
+    retry_parser.add_argument("--instance", action="append")
+    retry_parser.set_defaults(func=retry)
 
     args = parser.parse_args()
     args.func(args)

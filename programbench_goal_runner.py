@@ -70,7 +70,7 @@ HOST_INSPECTION_GUARDS = (
     "wc",
 )
 HOST_INSPECTION_PATTERNS = (
-    "/Users/",
+    "/" + "Users" + "/",
     "/home/",
     "/Documents/" + "ProgramBench",
     "ProgramBench",
@@ -331,7 +331,20 @@ def local_tools_offline_exports() -> str:
     return " ".join(f"{key}={shlex.quote(value)}" for key, value in values.items())
 
 
+def strict_paper_compliant(args: argparse.Namespace) -> bool:
+    return (
+        args.inference_mode == "paper"
+        and args.target_access == "wrapper"
+        and platform.system() == "Linux"
+        and platform.machine() in {"x86_64", "AMD64"}
+        and str(args.docker_cpus) == "20"
+        and args.docker_memory == "60g"
+    )
+
+
 def prepare(args: argparse.Namespace) -> None:
+    if args.inference_mode == "paper" and args.target_access != "wrapper":
+        raise SystemExit("paper mode requires --target-access wrapper; use no-internet for direct-docker ablations")
     root = Path(args.run_root).expanduser().resolve()
     prepared_run_name = args.run_name or run_name(
         args.instance_id,
@@ -437,7 +450,8 @@ def prepare(args: argparse.Namespace) -> None:
                 "docker_cpus": args.docker_cpus,
                 "docker_memory": args.docker_memory,
                 "inference_mode": args.inference_mode,
-                "paper_compliant": paper_mode,
+                "paper_mode": paper_mode,
+                "paper_compliant": strict_paper_compliant(args),
                 "model": args.model,
                 "reasoning_effort": args.reasoning_effort,
                 "created_at": datetime.now(timezone.utc).isoformat(),
@@ -520,6 +534,7 @@ tmux new-session -d -s {shlex.quote(session_name)} -c {shlex.quote(str(solution_
   "{codex_env} codex --enable goals -m {shlex.quote(args.model)} \\
   -c model_reasoning_effort={shlex.quote(args.reasoning_effort)} \\
   -C {shlex.quote(str(solution_dir))} --yolo --no-alt-screen"
+tmux pipe-pane -o -t {shlex.quote(session_name)} 'cat >> {shlex.quote(str(instance_dir / "tmux-transcript.log"))}'
 sleep 4
 tmux send-keys -t {shlex.quote(session_name)} {shlex.quote("/goal " + objective)} Enter
 sleep 2

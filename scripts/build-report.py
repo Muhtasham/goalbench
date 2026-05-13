@@ -7,13 +7,16 @@ import csv
 import html
 import json
 import re
+import shutil
 from dataclasses import dataclass, fields
 from datetime import datetime, timezone
 from html import unescape
+from itertools import groupby
 from pathlib import Path
 from urllib.request import Request, urlopen
 
 AGENT_NAME = "Codex /goal"
+SITE_NAME = "ProgramBench Goal"
 PROGRAMBENCH_TASKS = 200
 PROGRAMBENCH_EXTENDED = "https://programbench.com/extended/"
 TARGET_BASELINE_MODELS = {"GPT 5.5 (xhigh)", "GPT 5.5 (high)"}
@@ -72,7 +75,7 @@ def slug_text(value: str) -> str:
 
 
 def fetch(url: str) -> str:
-    with urlopen(Request(url, headers={"User-Agent": "programbench-goal-runner/0.1"}), timeout=30) as response:
+    with urlopen(Request(url, headers={"User-Agent": "programbench-goal/0.1"}), timeout=30) as response:
         return response.read().decode("utf-8", "replace")
 
 
@@ -154,7 +157,7 @@ def read_results(path: Path) -> list[ResultRow]:
                 model=row["model"],
                 reasoning_effort=row["reasoning_effort"],
                 inference_mode=row["inference_mode"],
-                paper_compliant=as_bool(row["paper_compliant"]),
+                paper_compliant=as_bool(row.get("paper_compliant", "")),
                 score=as_float(row["score"]),
                 resolved=as_bool(row["resolved"]),
                 almost_resolved=as_bool(row["almost_resolved"]),
@@ -167,7 +170,7 @@ def read_results(path: Path) -> list[ResultRow]:
                 host_machine=row["host_machine"],
                 docker_cpus=row["docker_cpus"],
                 docker_memory=row["docker_memory"],
-                pricing_source=row["pricing_source"],
+                pricing_source=row.get("pricing_source", ""),
             )
             for row in csv.DictReader(f)
         ]
@@ -195,8 +198,9 @@ def model_display(row: ResultRow) -> str:
 
 
 def mode_label(row: ResultRow) -> str:
+    if row.inference_mode == "paper":
+        return "Paper / cleanroom" if is_programbench_comparable(row) else "Paper-mode prompt"
     return {
-        "paper": "Paper / cleanroom",
         "no-internet": "No internet",
         "no-internet-local-tools": "No internet + local tools",
         "open-internet": "Open internet",
@@ -206,6 +210,7 @@ def mode_label(row: ResultRow) -> str:
 def is_programbench_comparable(row: ResultRow) -> bool:
     return (
         row.inference_mode == "paper"
+        and row.paper_compliant
         and row.host_system == "Linux"
         and row.host_machine in {"x86_64", "AMD64"}
         and row.docker_cpus == "20"
@@ -230,9 +235,7 @@ def group_key(row: ResultRow) -> tuple[str, str, str, str]:
 
 
 def result_groups(rows: list[ResultRow]) -> list[dict]:
-    grouped: dict[tuple[str, str, str, str], list[ResultRow]] = {}
-    for row in rows:
-        grouped.setdefault(group_key(row), []).append(row)
+    grouped = ((key, list(group_rows)) for key, group_rows in groupby(sorted(rows, key=group_key), key=group_key))
     groups = [
         {
             "slug": slug_text("-".join(key)),
@@ -240,9 +243,10 @@ def result_groups(rows: list[ResultRow]) -> list[dict]:
             "agent": key[1],
             "mode": key[2],
             "compliance": key[3],
+            "score_distribution": distribution_bins(group_rows),
             **aggregate(group_rows),
         }
-        for key, group_rows in grouped.items()
+        for key, group_rows in grouped
     ]
     return sorted(
         groups,
@@ -257,6 +261,7 @@ def row_to_dict(row: ResultRow) -> dict:
         "instance_id": row.instance_id,
         "run_name": row.run_name,
         "evidence_path": evidence_path if Path("docs", evidence_path).is_file() else "",
+        "task_path": f"task/{row.instance_id}/",
         "model": row.model,
         "model_display": model_display(row),
         "agent": AGENT_NAME,
@@ -282,12 +287,41 @@ def row_to_dict(row: ResultRow) -> dict:
     }
 
 
+def task_groups(rows: list[ResultRow]) -> list[dict]:
+    grouped = (
+        (instance_id, list(group_rows))
+        for instance_id, group_rows in groupby(
+            sorted(rows, key=lambda row: row.instance_id), key=lambda row: row.instance_id
+        )
+    )
+    return [
+        {
+            "instance_id": instance_id,
+            "task_path": f"task/{instance_id}/",
+            "official_task_url": f"https://programbench.com/task/{instance_id}/",
+            "result_count": len(task_rows),
+            "scored_tests": max((row.n_tests for row in task_rows), default=0),
+            "best_score": max((row.score for row in task_rows), default=0),
+            "best_model": model_display(max(task_rows, key=lambda row: row.score)) if task_rows else "",
+        }
+        for instance_id, task_rows in grouped
+    ]
+
+
 def percent(value: float) -> str:
     return f"{value * 100:.1f}%"
 
 
 def money(value: float) -> str:
     return f"${value:.2f}"
+
+
+def whole_money(value: float) -> str:
+    return f"${value:,.0f}" if value >= 100 else money(value)
+
+
+def integer(value: float | int) -> str:
+    return f"{value:,.0f}"
 
 
 def cell(value: str) -> str:
@@ -306,18 +340,6 @@ def plot_points(rows: list[ResultRow], x_value, x_label: str, x_format) -> str:
     values = [x_value(row) for row in rows]
     max_x = max(values) if values else 1
     max_x = max_x or 1
-    circles = []
-    for row in rows:
-        x = left + (x_value(row) / max_x) * plot_width
-        y = top + (1 - row.score) * plot_height
-        title = (
-            f"{row.instance_id}: {percent(row.score)} pass, "
-            f"{x_label.lower()} {x_format(x_value(row))}, {mode_label(row)}"
-        )
-        color = "#047857" if row.resolved else "#d97706" if row.almost_resolved else "#be123c"
-        circles.append(
-            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5.5" fill="{color}"><title>{cell(title)}</title></circle>'
-        )
     return f"""
       <svg class="plot" viewBox="0 0 {width} {height}" role="img" aria-label="Pass rate by {cell(x_label)}">
         <line x1="{left}" y1="{top}" x2="{left}" y2="{top + plot_height}" />
@@ -328,8 +350,97 @@ def plot_points(rows: list[ResultRow], x_value, x_label: str, x_format) -> str:
         <text x="{left + plot_width}" y="{height - 8}" text-anchor="end">{cell(x_format(max_x))}</text>
         <text x="{width / 2}" y="{height - 8}" text-anchor="middle">{cell(x_label)}</text>
         <text x="12" y="{height / 2}" transform="rotate(-90 12 {height / 2})" text-anchor="middle">pass rate</text>
-        {"".join(circles)}
+        {"".join(plot_circle(row, x_value, x_label, x_format, max_x, left, top, plot_width, plot_height) for row in rows)}
       </svg>
+    """
+
+
+def plot_circle(row: ResultRow, x_value, x_label: str, x_format, max_x, left, top, plot_width, plot_height) -> str:
+    x = left + (x_value(row) / max_x) * plot_width
+    y = top + (1 - row.score) * plot_height
+    title = (
+        f"{row.instance_id}: {percent(row.score)} pass, {x_label.lower()} {x_format(x_value(row))}, {mode_label(row)}"
+    )
+    color = "#047857" if row.resolved else "#d97706" if row.almost_resolved else "#be123c"
+    return f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5.5" fill="{color}"><title>{cell(title)}</title></circle>'
+
+
+def distribution_bins(rows: list[ResultRow]) -> list[dict]:
+    counts = [0] * 10
+    for row in rows:
+        counts[min(int(row.score * 10), 9)] += 1
+    return [
+        {
+            "lower": index / 10,
+            "upper": (index + 1) / 10,
+            "label": f"{index * 10}-{(index + 1) * 10}%",
+            "count": count,
+            "cumulative_at_least": sum(counts[index:]),
+            "cumulative_rate_at_least": sum(counts[index:]) / len(rows) if rows else 0,
+        }
+        for index, count in enumerate(counts)
+    ]
+
+
+def distribution_svg(rows: list[ResultRow], cumulative: bool) -> str:
+    width = 520
+    height = 240
+    left = 42
+    right = 14
+    top = 18
+    bottom = 46
+    plot_width = width - left - right
+    plot_height = height - top - bottom
+    bins = distribution_bins(rows)
+    values = [item["cumulative_at_least"] if cumulative else item["count"] for item in bins]
+    max_y = max(values) if values else 1
+    max_y = max_y or 1
+    bar_width = plot_width / len(bins)
+    bars = []
+    for index, item in enumerate(bins):
+        value = values[index]
+        bar_height = (value / max_y) * plot_height
+        x = left + index * bar_width + 2
+        y = top + plot_height - bar_height
+        title = (
+            f"{item['label']} pass: {value} task(s)"
+            if not cumulative
+            else f">= {item['lower']:.0%} pass: {value} task(s), {percent(item['cumulative_rate_at_least'])}"
+        )
+        bars.append(
+            f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar_width - 4:.1f}" height="{bar_height:.1f}" fill="#0f766e"><title>{cell(title)}</title></rect>'
+        )
+    return f"""
+      <svg class="plot" viewBox="0 0 {width} {height}" role="img" aria-label="Behavioral test pass rate {"cumulative distribution" if cumulative else "histogram"}">
+        <line x1="{left}" y1="{top}" x2="{left}" y2="{top + plot_height}" />
+        <line x1="{left}" y1="{top + plot_height}" x2="{left + plot_width}" y2="{top + plot_height}" />
+        <text x="{left - 8}" y="{top + 4}" text-anchor="end">{max_y}</text>
+        <text x="{left - 8}" y="{top + plot_height + 4}" text-anchor="end">0</text>
+        <text x="{left}" y="{height - 12}">0%</text>
+        <text x="{left + plot_width}" y="{height - 12}" text-anchor="end">100%</text>
+        <text x="{width / 2}" y="{height - 12}" text-anchor="middle">behavioral test pass rate</text>
+        <text x="12" y="{height / 2}" transform="rotate(-90 12 {height / 2})" text-anchor="middle">tasks</text>
+        {"".join(bars)}
+      </svg>
+    """
+
+
+def render_score_distribution(rows: list[ResultRow]) -> str:
+    if not rows:
+        return ""
+    return f"""
+    <h2>Behavioral Test Pass Rate Distribution</h2>
+    <p>These plots mirror ProgramBench's run-detail views: a score histogram and a cumulative count by behavioral test pass-rate bucket.</p>
+    <div class="plot-grid">
+      <section class="plot-card">
+        <h3>Histogram</h3>
+        {distribution_svg(rows, cumulative=False)}
+      </section>
+      <section class="plot-card">
+        <h3>Cumulative</h3>
+        {distribution_svg(rows, cumulative=True)}
+      </section>
+    </div>
     """
 
 
@@ -366,6 +477,8 @@ def render_summary_cards(label: str, summary: dict) -> str:
           <div><strong>{percent(summary["resolved_rate"])}</strong><span>resolved</span></div>
           <div><strong>{percent(summary["almost_resolved_rate"])}</strong><span>almost</span></div>
           <div><strong>{percent(summary["average_pass_rate"])}</strong><span>avg pass</span></div>
+          <div><strong>{whole_money(summary["total_cost_usd"])}</strong><span>total est. cost</span></div>
+          <div><strong>{integer(summary["total_calls"])}</strong><span>total calls</span></div>
           <div><strong>{money(summary["average_cost_usd"])}</strong><span>est. cost / task</span></div>
           <div><strong>{summary["average_calls"]:.1f}</strong><span>calls / task</span></div>
         </div>
@@ -375,6 +488,17 @@ def render_summary_cards(label: str, summary: dict) -> str:
 
 def result_count(summary: dict, key: str) -> str:
     return f"{percent(summary[key + '_rate'])} ({summary[key]}/{summary['instances']})"
+
+
+def run_metric_cards(group: dict) -> str:
+    return f"""
+    <div class="metric-grid">
+      <div><strong>{percent(group["resolved_rate"])}</strong><span>resolved</span></div>
+      <div><strong>{percent(group["almost_resolved_rate"])}</strong><span>almost resolved</span></div>
+      <div><strong>{whole_money(group["total_cost_usd"])}</strong><span>total est. cost</span></div>
+      <div><strong>{integer(group["total_calls"])}</strong><span>total calls</span></div>
+    </div>
+    """
 
 
 def render_leaderboard(groups: list[dict]) -> str:
@@ -421,7 +545,7 @@ def render_instances(rows: list[ResultRow]) -> str:
             f"""
             <tr>
               <td>{index}</td>
-              <td><code>{cell(row.instance_id)}</code></td>
+              <td><a href="task/{cell(row.instance_id)}/"><code>{cell(row.instance_id)}</code></a></td>
               <td>{cell(mode_label(row))}</td>
               <td>{cell(model_display(row))}</td>
               <td>{cell(compliance_label(row))}</td>
@@ -451,6 +575,10 @@ def evidence_links(row: ResultRow, prefix: str = "") -> str:
     return " · ".join(
         f'<a href="{cell(prefix + path)}">{label}</a>' for path, label in links if Path("docs", path).is_file()
     )
+
+
+def task_page_link(row: ResultRow, prefix: str = "") -> str:
+    return f"{prefix}task/{row.instance_id}/"
 
 
 def render_baselines(baselines: list[dict]) -> str:
@@ -484,6 +612,35 @@ def render_csv(rows: list[ResultRow]) -> str:
     return "\n".join(output) + "\n"
 
 
+def render_task_index(tasks: list[dict]) -> str:
+    if not tasks:
+        return ""
+    rows = "\n".join(
+        f"""
+        <tr>
+          <td>{index}</td>
+          <td><a href="{cell(str(task["task_path"]))}"><code>{cell(str(task["instance_id"]))}</code></a></td>
+          <td>{task["scored_tests"]}</td>
+          <td>{percent(float(task["best_score"]))}</td>
+          <td>{cell(str(task["best_model"]))}</td>
+          <td>{task["result_count"]}</td>
+          <td><a href="{cell(str(task["official_task_url"]))}">official</a></td>
+        </tr>
+        """
+        for index, task in enumerate(sorted(tasks, key=lambda item: item["best_score"], reverse=True), start=1)
+    )
+    return f"""
+    <h2>Task Details</h2>
+    <p>Task pages mirror ProgramBench's per-task view for this scaffold: scored behavioral tests, best score, and results by model/mode. The official ProgramBench task page is linked for baseline context.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Task</th><th>Scored tests</th><th>Best score</th><th>Best model</th><th>Rows</th><th>ProgramBench</th></tr></thead>
+        <tbody>{rows}</tbody>
+      </table>
+    </div>
+    """
+
+
 def heat_color(score: float) -> str:
     if score >= 1:
         return "#047857"
@@ -501,13 +658,13 @@ def render_run_detail(group: dict, rows: list[ResultRow]) -> str:
         row for row in rows if group_key(row) == (group["model"], group["agent"], group["mode"], group["compliance"])
     ]
     heatmap = "\n".join(
-        f'<a class="heat-cell" style="background:{heat_color(row.score)}" title="{cell(row.instance_id)}: {percent(row.score)}" href="../../{evidence_link_path(row)}"></a>'
+        f'<a class="heat-cell" style="background:{heat_color(row.score)}" title="{cell(row.instance_id)}: {percent(row.score)}" href="../../{task_page_link(row)}"></a>'
         for row in sorted(matching, key=lambda item: item.instance_id)
     )
     table = "\n".join(
         f"""
         <tr>
-          <td><code>{cell(row.instance_id)}</code></td>
+          <td><a href="../../{task_page_link(row)}"><code>{cell(row.instance_id)}</code></a></td>
           <td>{percent(row.score)}</td>
           <td>{"yes" if row.resolved else "no"}</td>
           <td>{"yes" if row.almost_resolved else "no"}</td>
@@ -534,6 +691,11 @@ def render_run_detail(group: dict, rows: list[ResultRow]) -> str:
     code {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }}
     .heatmap {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(14px, 1fr)); gap: 3px; max-width: 780px; margin: 16px 0; }}
     .heat-cell {{ display: block; aspect-ratio: 1; border-radius: 3px; }}
+    .plot-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 14px 0 18px; }}
+    .plot-card {{ border: 1px solid #d9e0e6; border-radius: 8px; padding: 12px; }}
+    .plot {{ width: 100%; height: auto; display: block; }}
+    .plot line {{ stroke: #d9e0e6; stroke-width: 1.5; }}
+    .plot text {{ fill: #61707d; font-size: 11px; }}
     .muted {{ color: #61707d; }}
   </style>
 </head>
@@ -541,7 +703,9 @@ def render_run_detail(group: dict, rows: list[ResultRow]) -> str:
   <p><a href="../../">← Back to summary</a></p>
   <h1>{cell(str(group["model"]))}</h1>
   <p class="muted">{cell(str(group["agent"]))} · {cell(str(group["mode"]))} · {cell(str(group["compliance"]))}</p>
-  <p>Resolved {result_count(group, "resolved")} · Almost {result_count(group, "almost_resolved")} · Avg. pass {percent(group["average_pass_rate"])} · Est. cost {money(group["average_cost_usd"])} · Calls {group["average_calls"]:.1f}</p>
+  {run_metric_cards(group)}
+  <p>Avg. pass {percent(group["average_pass_rate"])} · Avg. est. cost / task {money(group["average_cost_usd"])} · Avg. calls / task {group["average_calls"]:.1f}</p>
+  {render_score_distribution(matching)}
   <h2>Score by Task</h2>
   <div class="heatmap">{heatmap}</div>
   <table>
@@ -555,6 +719,67 @@ def render_run_detail(group: dict, rows: list[ResultRow]) -> str:
 
 def evidence_link_path(row: ResultRow) -> str:
     return f"evidence/{row.run_name}/{row.instance_id}/manifest.json"
+
+
+def render_task_detail(instance_id: str, rows: list[ResultRow]) -> str:
+    matching = sorted([row for row in rows if row.instance_id == instance_id], key=lambda row: row.score, reverse=True)
+    best_score = max((row.score for row in matching), default=0)
+    scored_tests = max((row.n_tests for row in matching), default=0)
+    official_task_url = f"https://programbench.com/task/{instance_id}/"
+    result_rows = "\n".join(
+        f"""
+        <tr>
+          <td>{index}</td>
+          <td>{cell(model_display(row))}</td>
+          <td>{cell(AGENT_NAME)}</td>
+          <td>{cell(mode_label(row))}</td>
+          <td>{percent(row.score)}</td>
+          <td>{row.n_resolved_tests}/{row.n_tests}</td>
+          <td>{money(row.estimated_cost_usd)}</td>
+          <td>{row.calls}</td>
+          <td>{row.wall_clock_seconds / 3600:.2f}h</td>
+          <td>{evidence_links(row, "../../")}</td>
+        </tr>
+        """
+        for index, row in enumerate(matching, start=1)
+    )
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{cell(instance_id)} ProgramBench Task</title>
+  <style>
+    body {{ font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 24px; color: #182026; }}
+    a {{ color: #075985; }}
+    table {{ border-collapse: collapse; width: 100%; margin-top: 16px; }}
+    th, td {{ border-bottom: 1px solid #d9e0e6; padding: 9px 10px; text-align: left; font-size: 13px; }}
+    th {{ background: #f5f7f8; }}
+    code {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }}
+    .metric-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; max-width: 780px; margin: 16px 0; }}
+    .metric {{ border: 1px solid #d9e0e6; border-radius: 8px; padding: 14px; }}
+    .metric strong {{ display: block; font-size: 24px; }}
+    .metric span {{ color: #61707d; font-size: 13px; }}
+    .muted {{ color: #61707d; }}
+  </style>
+</head>
+<body>
+  <p><a href="../../">← Back to summary</a> · <a href="{cell(official_task_url)}">Official ProgramBench task page</a></p>
+  <h1><code>{cell(instance_id)}</code></h1>
+  <p class="muted">Task-level results for this Codex <code>/goal</code> scaffold. Scored tests are after ProgramBench active-branch and ignored-test filtering.</p>
+  <div class="metric-grid">
+    <div class="metric"><strong>{scored_tests}</strong><span>scored behavioral tests</span></div>
+    <div class="metric"><strong>{percent(best_score)}</strong><span>best score</span></div>
+    <div class="metric"><strong>{len(matching)}</strong><span>result rows</span></div>
+  </div>
+  <h2>Results by Model</h2>
+  <table>
+    <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Mode</th><th>Score</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Evidence</th></tr></thead>
+    <tbody>{result_rows}</tbody>
+  </table>
+</body>
+</html>
+"""
 
 
 def render_comparison(groups: list[dict]) -> str:
@@ -587,14 +812,74 @@ def render_comparison(groups: list[dict]) -> str:
     """
 
 
+def render_empty_state() -> str:
+    return """
+    <section class="empty-state">
+      <h2>Clean Slate</h2>
+      <p>No Codex <code>/goal</code> results are published in this reset yet. The next full run will populate the leaderboard, run-detail pages, task pages, plots, and downloadable JSON/CSV artifacts.</p>
+      <div class="mode-grid">
+        <div class="mode-card">
+          <strong>Primary run</strong>
+          <p><code>configs/full-nointernet-xhigh.json</code> measures the Codex scaffold without internet and is the clean default for the Noam/Jake question.</p>
+        </div>
+        <div class="mode-card">
+          <strong>Paper-comparable run</strong>
+          <p><code>configs/full-paper-xhigh.json</code> should run only on Linux amd64 with 20 CPU, 60g RAM, strict egress, and wrapper-only target access.</p>
+        </div>
+        <div class="mode-card">
+          <strong>Open-internet ablation</strong>
+          <p><code>configs/full-open-xhigh.json</code> is intentionally non-compliant and stays separate from cleanroom results.</p>
+        </div>
+      </div>
+    </section>
+    """
+
+
+def render_results_sections(data: dict, instances: list[ResultRow]) -> str:
+    if not instances:
+        return render_empty_state()
+    return f"""
+    <div class="cards">
+      {"".join(render_summary_cards(f"{group['model']} / {group['mode']}", group) for group in data["groups"])}
+    </div>
+
+    {render_score_distribution(instances)}
+
+    {render_efficiency_plots(instances)}
+
+    <h2>Extended Results</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Avg. est. cost</th><th>Avg. calls</th></tr></thead>
+        <tbody>{render_leaderboard(data["groups"])}</tbody>
+      </table>
+    </div>
+    <p>Columns mirror ProgramBench's extended leaderboard shape: resolved and almost-resolved rates, average estimated API cost per task instance, and average calls per task instance. ProgramBench run-detail pages show total cost and total calls; our run-detail pages do the same. Mode and compliance are shown in Run Disclosures and Per-Instance Results so the mirrored metric table stays close to ProgramBench's shape.</p>
+
+    <h2>Run Disclosures</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Model</th><th>Mode</th><th>Compliance</th><th>Tasks</th><th>Avg. pass</th><th>Wall</th></tr></thead>
+        <tbody>{render_disclosures(data["groups"])}</tbody>
+      </table>
+    </div>
+    <p>These disclosure fields are intentionally outside the mirrored metric table because ProgramBench's public leaderboard does not mix scaffold deviations into the metric columns.</p>
+
+    {render_comparison(data["groups"])}
+
+    {render_task_index(data["tasks"])}
+
+    <h2>Per-Instance Results</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Instance</th><th>Mode</th><th>Model</th><th>Compliance</th><th>Status</th><th>Score</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Host</th><th>Docker</th><th>Evidence</th></tr></thead>
+        <tbody>{render_instances(instances)}</tbody>
+      </table>
+    </div>
+    """
+
+
 def render_html(data: dict) -> str:
-    group_cards = "\n".join(
-        render_summary_cards(
-            f"{group['model']} / {group['mode']}",
-            group,
-        )
-        for group in data["groups"]
-    )
     result_fields = {field.name for field in fields(ResultRow)}
     instances = [
         ResultRow(**{key: value for key, value in row.items() if key in result_fields}) for row in data["rows"]
@@ -604,7 +889,7 @@ def render_html(data: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ProgramBench Goal Runner Results</title>
+  <title>{SITE_NAME}</title>
   <style>
     :root {{
       color-scheme: light;
@@ -713,6 +998,14 @@ def render_html(data: dict) -> str:
       border-radius: 6px;
       color: #134e4a;
     }}
+    .empty-state {{
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 18px;
+      margin: 20px 0;
+    }}
+    .empty-state h2 {{ margin-top: 0; }}
     .mode-grid {{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -751,11 +1044,11 @@ def render_html(data: dict) -> str:
 </head>
 <body>
   <header>
-    <h1>ProgramBench Goal Runner Results</h1>
+    <h1>{SITE_NAME}</h1>
     <p>Codex <code>/goal</code> scaffold results on ProgramBench tasks. These are scaffold measurements, not official mini-SWE-agent leaderboard submissions.</p>
     <div class="pill-row">
       <span class="pill">Generated {cell(data["generated_at"])}</span>
-      <span class="pill">{data["sample_instances"]} evaluated sample instances</span>
+      <span class="pill">{data["sample_instances"]} evaluated instances</span>
       <span class="pill">{PROGRAMBENCH_TASKS} tasks in full ProgramBench</span>
       <span class="pill">Sorted Resolved → Almost → Avg. pass</span>
     </div>
@@ -782,51 +1075,19 @@ def render_html(data: dict) -> str:
       </div>
     </div>
     <p><a href="data/results.json">Download results.json</a> · <a href="data/results.csv">Download results.csv</a></p>
-    <div class="cards">
-      {group_cards}
-    </div>
-
-    {render_efficiency_plots(instances)}
-
-    <h2>Extended Results</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Est. cost</th><th>Calls</th></tr></thead>
-        <tbody>{render_leaderboard(data["groups"])}</tbody>
-      </table>
-    </div>
-    <p>Columns mirror ProgramBench's extended leaderboard shape: resolved and almost-resolved rates, average estimated API cost per task instance, and average calls per task instance. Mode and compliance are shown in Run Disclosures and Per-Instance Results so the mirrored metric table stays close to ProgramBench's shape.</p>
-
-    <h2>Run Disclosures</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Model</th><th>Mode</th><th>Compliance</th><th>Tasks</th><th>Avg. pass</th><th>Wall</th></tr></thead>
-        <tbody>{render_disclosures(data["groups"])}</tbody>
-      </table>
-    </div>
-    <p>These disclosure fields are intentionally outside the mirrored metric table because ProgramBench's public leaderboard does not mix scaffold deviations into the metric columns.</p>
-
-    {render_comparison(data["groups"])}
-
-    <h2>Per-Instance Results</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Instance</th><th>Mode</th><th>Model</th><th>Compliance</th><th>Status</th><th>Score</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Host</th><th>Docker</th><th>Evidence</th></tr></thead>
-        <tbody>{render_instances(instances)}</tbody>
-      </table>
-    </div>
+    {render_results_sections(data, instances)}
 
     <h2>Official Baseline Context</h2>
     <p>For orientation only. ProgramBench's public extended table reports mini-SWE-agent over 200 tasks, sorted by resolved, almost-resolved, then average pass rate.</p>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Cost</th><th>Calls</th></tr></thead>
+        <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Avg. cost</th><th>Avg. calls</th></tr></thead>
         <tbody>{render_baselines(data["baselines"])}</tbody>
       </table>
     </div>
 
     <h2>Method Notes</h2>
-    <p>Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Resolved requires every scored test to pass with no evaluator errors. Local smoke runs are not ProgramBench-comparable until they run on Linux amd64 with 20 CPU / 60g and strict egress. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Estimated cost comes from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths.</p>
+    <p>Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Scoring is computed through ProgramBench's own <code>EvaluationResult</code> and <code>InstanceEvalSummary</code> logic after active-branch and ignored-test filtering. Resolved means the ProgramBench behavioral test pass rate is exactly 100%; evaluator warnings/errors are disclosed separately in evidence artifacts. Local smoke runs are not ProgramBench-comparable until they run on Linux amd64 with 20 CPU / 60g and strict egress. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Estimated cost comes from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths.</p>
     <p>Sources: <a href="https://programbench.com/extended/">ProgramBench extended results</a>, <a href="https://programbench.com/run/gpt-5-5-xhigh/">GPT 5.5 xhigh run detail</a>, and this repository's generated CSV summaries.</p>
   </main>
 </body>
@@ -837,6 +1098,13 @@ def render_html(data: dict) -> str:
 def build(args: argparse.Namespace) -> None:
     rows = [row for path in args.results_csv for row in read_results(Path(path).expanduser())]
     output_dir = Path(args.output_dir).expanduser()
+    if args.clean_output:
+        for generated in (output_dir / "run", output_dir / "task"):
+            if generated.exists():
+                shutil.rmtree(generated)
+        for generated in (output_dir / "data" / "results.json", output_dir / "data" / "results.csv"):
+            if generated.exists():
+                generated.unlink()
     if args.refresh_baselines:
         refresh_baselines(output_dir)
     data = {
@@ -844,6 +1112,7 @@ def build(args: argparse.Namespace) -> None:
         "sample_instances": len(rows),
         "programbench_tasks": PROGRAMBENCH_TASKS,
         "groups": result_groups(rows),
+        "tasks": task_groups(rows),
         "rows": [row_to_dict(row) for row in rows],
         "baselines": load_baselines(output_dir),
     }
@@ -855,6 +1124,10 @@ def build(args: argparse.Namespace) -> None:
         run_dir = output_dir / "run" / str(group["slug"])
         run_dir.mkdir(parents=True, exist_ok=True)
         (run_dir / "index.html").write_text(render_run_detail(group, rows))
+    for task in data["tasks"]:
+        task_dir = output_dir / "task" / str(task["instance_id"])
+        task_dir.mkdir(parents=True, exist_ok=True)
+        (task_dir / "index.html").write_text(render_task_detail(str(task["instance_id"]), rows))
     print(output_dir / "index.html")
     print(output_dir / "data" / "results.json")
     print(output_dir / "data" / "results.csv")
@@ -862,8 +1135,9 @@ def build(args: argparse.Namespace) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build the static ProgramBench /goal report site")
-    parser.add_argument("results_csv", nargs="+")
+    parser.add_argument("results_csv", nargs="*")
     parser.add_argument("--output-dir", default="docs")
+    parser.add_argument("--clean-output", action="store_true")
     parser.add_argument(
         "--refresh-baselines",
         action=argparse.BooleanOptionalAction,

@@ -2,7 +2,10 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
+import shutil
+from collections import Counter
 from pathlib import Path
 
 LOCAL_ARTIFACTS = Path("local_state/run_artifacts")
@@ -23,10 +26,7 @@ def scrub_metrics(metrics: dict) -> dict:
 
 
 def status_counts(eval_json: dict) -> dict[str, int]:
-    counts: dict[str, int] = {}
-    for result in eval_json.get("test_results", []):
-        counts[result["status"]] = counts.get(result["status"], 0) + 1
-    return counts
+    return dict(Counter(result["status"] for result in eval_json.get("test_results", [])))
 
 
 def failed_tests(eval_json: dict) -> list[dict]:
@@ -118,6 +118,14 @@ def public_log_entry(entry: dict) -> dict:
 
 def public_manifest(manifest: dict, eval_summary_path: str, eval_json_path: str) -> dict:
     run_name = manifest.get("metrics", {}).get("run_name") or manifest["run"]["run_name"]
+    paper_compliant = (
+        manifest["run"]["inference_mode"] == "paper"
+        and manifest["run"].get("target_access") == "wrapper"
+        and manifest["run"]["host_system"] == "Linux"
+        and manifest["run"]["host_machine"] in {"x86_64", "AMD64"}
+        and str(manifest["run"]["docker_cpus"]) == "20"
+        and manifest["run"]["docker_memory"] == "60g"
+    )
     return {
         "collected_at": manifest["collected_at"],
         "instance_id": manifest["run"]["instance_id"],
@@ -125,7 +133,8 @@ def public_manifest(manifest: dict, eval_summary_path: str, eval_json_path: str)
         "model": manifest["run"]["model"],
         "reasoning_effort": manifest["run"]["reasoning_effort"],
         "inference_mode": manifest["run"]["inference_mode"],
-        "paper_compliant": manifest["run"]["paper_compliant"],
+        "paper_mode": manifest["run"]["inference_mode"] == "paper",
+        "paper_compliant": paper_compliant,
         "host_system": manifest["run"]["host_system"],
         "host_machine": manifest["run"]["host_machine"],
         "docker_cpus": manifest["run"]["docker_cpus"],
@@ -184,9 +193,32 @@ def export_one(manifest_path: Path, output_dir: Path) -> None:
     print(target_dir)
 
 
+def csv_rows(path: str) -> list[dict]:
+    with Path(path).expanduser().open(newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def result_pairs(paths: list[str]) -> set[tuple[str, str]]:
+    return {(row["run_name"], row["instance_id"]) for path in paths for row in csv_rows(path)}
+
+
+def manifest_key(manifest_path: Path) -> tuple[str, str]:
+    manifest = read_json(manifest_path)
+    return manifest.get("metrics", {}).get("run_name") or manifest["run"]["run_name"], manifest["run"]["instance_id"]
+
+
+def selected_manifests(artifacts_dir: Path, wanted: set[tuple[str, str]]) -> list[Path]:
+    manifests = sorted(artifacts_dir.glob("*/*/manifest.json"))
+    if not wanted:
+        return manifests
+    return [manifest_path for manifest_path in manifests if manifest_key(manifest_path) in wanted]
+
+
 def export(args: argparse.Namespace) -> None:
     output_dir = Path(args.output_dir)
-    for manifest_path in sorted(Path(args.artifacts_dir).glob("*/*/manifest.json")):
+    if args.clean_output and output_dir.exists():
+        shutil.rmtree(output_dir)
+    for manifest_path in selected_manifests(Path(args.artifacts_dir), result_pairs(args.results_csv)):
         export_one(manifest_path, output_dir)
 
 
@@ -194,6 +226,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Export sanitized public evidence from local run artifacts")
     parser.add_argument("--artifacts-dir", default=str(LOCAL_ARTIFACTS))
     parser.add_argument("--output-dir", default=str(DEFAULT_OUTPUT))
+    parser.add_argument("--results-csv", action="append", default=[])
+    parser.add_argument("--clean-output", action="store_true")
     export(parser.parse_args())
 
 

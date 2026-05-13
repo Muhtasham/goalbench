@@ -1,0 +1,222 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+CONFIG="configs/full-nointernet-xhigh.json"
+PROGRAMBENCH_REPO="${PROGRAMBENCH_REPO:-}"
+WATCH=1
+FINALIZE=1
+SITE=1
+PUBLISH=0
+DRY_RUN=0
+ONCE=0
+ALLOW_PARTIAL=0
+REFRESH_REPORT=1
+REFRESH_TARGET_SET=1
+
+usage() {
+  cat <<'EOF'
+Usage:
+  scripts/run-sweep.sh --programbench-repo /path/to/ProgramBench [options]
+
+Options:
+  --config PATH              Batch config JSON (default: configs/full-nointernet-xhigh.json)
+  --programbench-repo PATH   ProgramBench checkout used for target metadata and evaluation
+  --skip-watch               Do not run/watch Codex sessions
+  --skip-finalize            Do not package/evaluate completed sessions
+  --site-only                Only export evidence and rebuild docs
+  --no-site                  Do not rebuild docs
+  --publish                  Commit docs/ and push after rebuilding the site
+  --dry-run                  Print commands without running them
+  --once                     Pass --once to scripts/run-config.py watch
+  --allow-partial            Allow finalize/report publish before every target is evaluated
+  --offline-report           Do not refresh OpenAI pricing or ProgramBench baseline rows
+  --no-target-refresh        Do not regenerate target_sets/all_tasks.txt
+  -h, --help                 Show this help
+
+Examples:
+  scripts/run-sweep.sh --programbench-repo /path/to/ProgramBench
+  scripts/run-sweep.sh --config configs/full-nointernet-high.json --programbench-repo /path/to/ProgramBench
+  scripts/run-sweep.sh --site-only --programbench-repo /path/to/ProgramBench --publish
+EOF
+}
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --config)
+      CONFIG="$2"
+      shift 2
+      ;;
+    --programbench-repo)
+      PROGRAMBENCH_REPO="$2"
+      shift 2
+      ;;
+    --skip-watch)
+      WATCH=0
+      shift
+      ;;
+    --skip-finalize)
+      FINALIZE=0
+      shift
+      ;;
+    --site-only)
+      WATCH=0
+      FINALIZE=0
+      SITE=1
+      shift
+      ;;
+    --no-site)
+      SITE=0
+      shift
+      ;;
+    --publish)
+      PUBLISH=1
+      shift
+      ;;
+    --dry-run)
+      DRY_RUN=1
+      shift
+      ;;
+    --once)
+      ONCE=1
+      shift
+      ;;
+    --allow-partial)
+      ALLOW_PARTIAL=1
+      shift
+      ;;
+    --offline-report)
+      REFRESH_REPORT=0
+      shift
+      ;;
+    --no-target-refresh)
+      REFRESH_TARGET_SET=0
+      shift
+      ;;
+    -h | --help)
+      usage
+      exit 0
+      ;;
+    *)
+      echo "unknown argument: $1" >&2
+      usage >&2
+      exit 2
+      ;;
+  esac
+done
+
+if [[ ! -f "$CONFIG" ]]; then
+  echo "config not found: $CONFIG" >&2
+  exit 1
+fi
+
+if [[ -z "$PROGRAMBENCH_REPO" && ( "$FINALIZE" -eq 1 || "$REFRESH_TARGET_SET" -eq 1 ) ]]; then
+  echo "--programbench-repo is required unless both --skip-finalize and --no-target-refresh are set" >&2
+  exit 1
+fi
+
+print_cmd() {
+  printf '+'
+  printf ' %q' "$@"
+  printf '\n'
+}
+
+run() {
+  print_cmd "$@"
+  if [[ "$DRY_RUN" -eq 0 ]]; then
+    "$@"
+  fi
+}
+
+config_value() {
+  uv run python - "$CONFIG" "$1" <<'PY'
+import json
+import sys
+
+print(json.loads(open(sys.argv[1]).read())[sys.argv[2]])
+PY
+}
+
+collect_results_csvs() {
+  {
+    find local_state -maxdepth 1 -type f -name '*results.csv'
+    find local_state/batches -mindepth 2 -maxdepth 2 -type f -name 'results.csv' 2>/dev/null || true
+  } | sort
+}
+
+TARGET_FILE="$(config_value target_file)"
+
+if [[ "$REFRESH_TARGET_SET" -eq 1 && "$TARGET_FILE" == "target_sets/all_tasks.txt" ]]; then
+  run uv run python scripts/write-target-set.py "$PROGRAMBENCH_REPO" --output "$TARGET_FILE"
+fi
+
+if [[ -n "$PROGRAMBENCH_REPO" && "$TARGET_FILE" == "target_sets/all_tasks.txt" ]]; then
+  run uv run python scripts/validate-target-set.py "$TARGET_FILE" --programbench-repo "$PROGRAMBENCH_REPO"
+fi
+
+if [[ -n "$PROGRAMBENCH_REPO" ]]; then
+  run uv run --project "$PROGRAMBENCH_REPO" python scripts/check-metric-parity.py --programbench-repo "$PROGRAMBENCH_REPO"
+fi
+
+if [[ "$REFRESH_REPORT" -eq 1 ]]; then
+  run uv run python scripts/refresh-openai-pricing.py
+fi
+
+if [[ "$WATCH" -eq 1 ]]; then
+  watch_cmd=(uv run python scripts/run-config.py watch "$CONFIG")
+  if [[ "$ONCE" -eq 1 ]]; then
+    watch_cmd+=(--once)
+  fi
+  run "${watch_cmd[@]}"
+fi
+
+if [[ "$FINALIZE" -eq 1 ]]; then
+  finalize_cmd=(uv run python scripts/run-config.py finalize "$CONFIG" --programbench-repo "$PROGRAMBENCH_REPO")
+  if [[ "$ALLOW_PARTIAL" -eq 1 ]]; then
+    finalize_cmd+=(--allow-partial)
+  fi
+  run "${finalize_cmd[@]}"
+fi
+
+if [[ "$SITE" -eq 1 ]]; then
+  result_csvs_file="$(mktemp)"
+  collect_results_csvs > "$result_csvs_file"
+
+  export_cmd=(uv run python scripts/export-public-evidence.py --clean-output)
+  while IFS= read -r path; do
+    [[ -n "$path" ]] || continue
+    export_cmd+=(--results-csv "$path")
+  done < "$result_csvs_file"
+  run "${export_cmd[@]}"
+
+  build_cmd=(uv run python scripts/build-report.py)
+  while IFS= read -r path; do
+    [[ -n "$path" ]] || continue
+    build_cmd+=("$path")
+  done < "$result_csvs_file"
+  rm -f "$result_csvs_file"
+  build_cmd+=(--output-dir docs --clean-output)
+  if [[ "$REFRESH_REPORT" -eq 0 ]]; then
+    build_cmd+=(--no-refresh-baselines)
+  fi
+  run "${build_cmd[@]}"
+  run uv run python scripts/check-docs-size.py
+
+  print_cmd uv run python scripts/privacy-scan.py
+  if [[ "$DRY_RUN" -eq 0 ]] && ! uv run python scripts/privacy-scan.py; then
+    echo "privacy scan found local paths in public files" >&2
+    exit 1
+  fi
+fi
+
+if [[ "$PUBLISH" -eq 1 ]]; then
+  run git add docs
+  if [[ "$DRY_RUN" -eq 1 ]]; then
+    print_cmd git commit -m "Update ProgramBench goal report"
+    print_cmd git push
+  elif git diff --cached --quiet -- docs; then
+    echo "no docs changes to publish"
+  else
+    run git commit -m "Update ProgramBench goal report"
+    run git push
+  fi
+fi

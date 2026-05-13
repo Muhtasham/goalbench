@@ -9,6 +9,8 @@ Task:
 - Reconstruct the target CLI and produce a packageable replacement codebase.
 - Do not use internet access, package registries, public source, external docs,
   or cached dependency source.
+- Do not use web search, browser tools, `curl`, `wget`, package-manager
+  downloads, or any external network resource to learn implementation details.
 - Do not submit a wrapper around the provided target binary.
 - Do not make the final executable depend on `/workspace/executable` or any
   other prebuilt copy of the same tool.
@@ -17,6 +19,8 @@ Task:
   interface: CLI flags, stdin/stdout, filesystem effects, and localhost behavior.
 - You may write your own black-box probes, fuzzers, generators, and comparison
   scripts that interact with the target only through normal runtime behavior.
+- Do not inspect files outside `{{solution_dir}}` on the host.
+- Do not inspect the ProgramBench evaluator repository or hidden tests.
 - Write the complete replacement codebase in `{{solution_dir}}`.
 - Produce `compile.sh` at the solution root.
 - `compile.sh` must build or copy the final executable to `./executable`.
