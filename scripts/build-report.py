@@ -298,6 +298,7 @@ def render_summary_cards(label: str, summary: dict) -> str:
     return f"""
       <section class="summary-card">
         <div class="summary-title">{cell(label)}</div>
+        <div class="summary-meta">{cell(str(summary["compliance"]))}</div>
         <div class="metric-grid">
           <div><strong>{summary["instances"]}</strong><span>instances</span></div>
           <div><strong>{percent(summary["resolved_rate"])}</strong><span>resolved</span></div>
@@ -593,7 +594,8 @@ def render_html(data: dict) -> str:
       padding: 16px;
       background: #fff;
     }}
-    .summary-title {{ font-weight: 700; margin-bottom: 12px; }}
+    .summary-title {{ font-weight: 700; margin-bottom: 4px; }}
+    .summary-meta {{ color: var(--muted); font-size: 13px; margin-bottom: 12px; }}
     .metric-grid {{
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -648,6 +650,20 @@ def render_html(data: dict) -> str:
       border-radius: 6px;
       color: #134e4a;
     }}
+    .mode-grid {{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px;
+      margin: 14px 0 18px;
+    }}
+    .mode-card {{
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: var(--soft);
+    }}
+    .mode-card strong {{ display: block; margin-bottom: 6px; }}
+    .mode-card p {{ margin: 0; font-size: 13px; }}
     a {{ color: #075985; }}
   </style>
 </head>
@@ -664,6 +680,25 @@ def render_html(data: dict) -> str:
   </header>
   <main>
     <p class="note">Primary metric is fully resolved instances. Almost resolved follows ProgramBench's displayed threshold of at least 95% behavioral tests passing. Open-internet runs are intentionally non-compliant with ProgramBench cleanroom rules and are reported separately from paper/cleanroom runs.</p>
+    <h2>How To Read Modes</h2>
+    <div class="mode-grid">
+      <div class="mode-card">
+        <strong>Open internet</strong>
+        <p>Full Codex harness. Internet and package tooling are allowed. Not ProgramBench-compliant.</p>
+      </div>
+      <div class="mode-card">
+        <strong>Paper / cleanroom</strong>
+        <p>Black-box mode matching ProgramBench rules as closely as this scaffold can. Only ProgramBench-comparable on Linux amd64 with 20 CPU / 60g and strict egress.</p>
+      </div>
+      <div class="mode-card">
+        <strong>No internet</strong>
+        <p>Codex scaffold ablation with internet/source/package lookup blocked and target binary analysis still banned.</p>
+      </div>
+      <div class="mode-card">
+        <strong>No internet + local tools</strong>
+        <p>Non-compliant ablation for the tool-starvation critique: no external internet/source lookup, but local binary-analysis/tracing tools are allowed.</p>
+      </div>
+    </div>
     <p><a href="data/results.json">Download results.json</a> · <a href="data/results.csv">Download results.csv</a></p>
     <div class="cards">
       {group_cards}
@@ -676,7 +711,7 @@ def render_html(data: dict) -> str:
         <tbody>{render_leaderboard(data["groups"])}</tbody>
       </table>
     </div>
-    <p>Columns mirror ProgramBench's extended leaderboard: resolved and almost-resolved rates, average API cost per task instance, and average calls per task instance. Rows are sorted by resolved, almost-resolved, then average pass rate.</p>
+    <p>Columns mirror ProgramBench's extended leaderboard: resolved and almost-resolved rates, average API cost per task instance, and average calls per task instance. Mode and compliance are shown in Run Disclosures and Per-Instance Results so the mirrored metric table stays close to ProgramBench's shape.</p>
 
     <h2>Run Disclosures</h2>
     <div class="table-wrap">
