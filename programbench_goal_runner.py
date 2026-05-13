@@ -18,6 +18,7 @@ LOCAL_TOOLS_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_
 OPEN_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal_open.md"
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_REASONING_EFFORT = "xhigh"
+DEFAULT_INFERENCE_MODE = "open-internet"
 BLOCKED_ALWAYS_TOOLS = (
     "brew",
     "curl",
@@ -502,7 +503,7 @@ tmux kill-session -t {shlex.quote(session_name)} >/dev/null 2>&1 || true
 tmux new-session -d -s {shlex.quote(session_name)} -c {shlex.quote(str(solution_dir))} \\
   "{codex_env} codex --enable goals -m {shlex.quote(args.model)} \\
   -c model_reasoning_effort={shlex.quote(args.reasoning_effort)} \\
-  -C {shlex.quote(str(solution_dir))} -s danger-full-access -a never --no-alt-screen"
+  -C {shlex.quote(str(solution_dir))} --yolo --no-alt-screen"
 sleep 4
 tmux send-keys -t {shlex.quote(session_name)} {shlex.quote("/goal " + objective)} Enter
 sleep 2
@@ -581,7 +582,7 @@ def main() -> None:
     prepare_parser.add_argument(
         "--inference-mode",
         choices=["paper", "no-internet", "no-internet-local-tools", "open-internet"],
-        default="paper",
+        default=DEFAULT_INFERENCE_MODE,
     )
     prepare_parser.add_argument(
         "--target-access",
@@ -606,7 +607,7 @@ def main() -> None:
     batch_parser.add_argument(
         "--inference-mode",
         choices=["paper", "no-internet", "no-internet-local-tools", "open-internet"],
-        default="paper",
+        default=DEFAULT_INFERENCE_MODE,
     )
     batch_parser.add_argument(
         "--target-access",

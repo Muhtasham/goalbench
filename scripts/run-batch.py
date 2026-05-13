@@ -293,7 +293,7 @@ def add_common_run_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--inference-mode",
         choices=["paper", "no-internet", "no-internet-local-tools", "open-internet"],
-        default="paper",
+        default="open-internet",
     )
     parser.add_argument("--target-access", choices=["direct-docker", "wrapper"], default="direct-docker")
     parser.add_argument("--target-wrapper-command", default="sudo -n /usr/local/bin/pb-target-exec")

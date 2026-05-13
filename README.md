@@ -9,9 +9,10 @@ inference loop is Codex CLI goal mode. Report results as Codex `/goal` results,
 not as mini-SWE-agent results.
 
 The harness keeps the solving workspace separate from the ProgramBench evaluator
-repo. It starts the target binary inside a no-network Docker container, gives
-Codex a clean writable solution directory, and produces the `submission.tar.gz`
-layout that `programbench eval` expects.
+repo. It gives Codex a clean writable solution directory and produces the
+`submission.tar.gz` layout that `programbench eval` expects. The default mode is
+the full Codex harness (`open-internet`); use `--inference-mode paper` for the
+closest ProgramBench-cleanroom run.
 
 ProgramBench is a free-form reimplementation benchmark. The agent should choose
 the language, architecture, source layout, abstractions, and build script from
@@ -42,9 +43,10 @@ Silicon can sometimes emulate them, but serious runs should happen on Linux
 
 ## Isolation Model
 
-The target binary runs in a Docker container with `--network none`, so probes
-against the original program cannot reach the internet. The generated prompt
-also requires probing through `docker exec -u agent ...`; this matters because
+In `paper`, `no-internet`, and `no-internet-local-tools` modes, the target
+binary runs in a Docker container with `--network none`, so probes against the
+original program cannot reach the internet. The generated cleanroom prompts
+also require probing through `docker exec -u agent ...`; this matters because
 the cleanroom executable is execute-only for the `agent` user, while root can
 bypass file permissions.
 
@@ -79,7 +81,7 @@ The Codex launcher uses YOLO mode:
 
 ```bash
 codex --enable goals -m gpt-5.5 -c model_reasoning_effort='xhigh' \
-  -s danger-full-access -a never --no-alt-screen
+  --yolo --no-alt-screen
 ```
 
 Override `--model` and `--reasoning-effort` when preparing runs if you want a
@@ -93,9 +95,9 @@ CPUs and 60GB RAM. For local smoke tests on smaller machines, pass
 `--docker-cpus` and `--docker-memory` to `prepare` or `prepare-batch`; do not
 report those local smoke runs as paper-comparable results.
 
-The generated Codex launcher prepends a `guard-bin` directory to `PATH`. It
-blocks common host-side internet, source/package lookup, and binary-analysis
-commands, restricts `docker` to the allowed
+For `paper` and `no-internet`, the generated Codex launcher prepends a
+`guard-bin` directory to `PATH`. It blocks common host-side internet,
+source/package lookup, and binary-analysis commands, restricts `docker` to the allowed
 `docker exec -u agent <container> ...` target-probing form, and points common
 tool caches at an empty per-run directory. Local build commands such as
 `go build` and `cargo build` are still allowed; source-acquisition commands such
@@ -110,11 +112,19 @@ See `docs/paper-compliance.md` for the paper/FAQ compliance matrix.
 
 ## Inference Modes
 
-Default mode is `paper`. This is the only mode intended for ProgramBench-style
-cleanroom reporting:
+Default mode is `open-internet`, the full Codex harness. It is explicitly
+non-compliant research mode for ProgramBench-inspired runs where Codex can use
+normal internet and package tooling:
 
 ```bash
 uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763
+```
+
+For ProgramBench-style cleanroom reporting, opt into `paper`:
+
+```bash
+uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763 \
+  --inference-mode paper
 ```
 
 There is also a no-internet Codex ablation mode. It keeps the target container
@@ -141,9 +151,7 @@ binary-analysis/tracing tools, and root-level target inspection through the
 target container. This is intentionally non-compliant with ProgramBench
 cleanroom rules and must be reported separately.
 
-Open-internet mode is explicitly non-compliant research mode for
-ProgramBench-inspired runs where Codex can use normal internet and package
-tooling:
+The explicit form is equivalent to the default:
 
 ```bash
 uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763 \
