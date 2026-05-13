@@ -19,6 +19,12 @@ OPEN_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal_op
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_REASONING_EFFORT = "xhigh"
 DEFAULT_INFERENCE_MODE = "open-internet"
+MODE_RUN_SEGMENTS = {
+    "paper": "paper",
+    "no-internet": "nointernet",
+    "no-internet-local-tools": "localtools",
+    "open-internet": "open",
+}
 BLOCKED_ALWAYS_TOOLS = (
     "brew",
     "curl",
@@ -107,11 +113,16 @@ def model_slug(model: str) -> str:
     return slug(model.replace(".", ""))
 
 
-def run_name(instance_id: str, model: str = DEFAULT_MODEL, reasoning_effort: str = DEFAULT_REASONING_EFFORT) -> str:
+def run_name(
+    instance_id: str,
+    model: str = DEFAULT_MODEL,
+    reasoning_effort: str = DEFAULT_REASONING_EFFORT,
+    inference_mode: str = DEFAULT_INFERENCE_MODE,
+) -> str:
     name = instance_id.split("__", 1)[1].split(".", 1)[0] if "__" in instance_id else slug(instance_id)
     prefix = "gpt55" if model == DEFAULT_MODEL else model_slug(model)
     effort = "" if model == DEFAULT_MODEL and reasoning_effort == DEFAULT_REASONING_EFFORT else f"-{reasoning_effort}"
-    return f"{prefix}-goal{effort}-{name}"
+    return f"{prefix}-goal{effort}-{MODE_RUN_SEGMENTS[inference_mode]}-{name}"
 
 
 def render_prompt(template: str, values: dict[str, str]) -> str:
@@ -322,7 +333,12 @@ def local_tools_offline_exports() -> str:
 
 def prepare(args: argparse.Namespace) -> None:
     root = Path(args.run_root).expanduser().resolve()
-    prepared_run_name = args.run_name or run_name(args.instance_id, args.model, args.reasoning_effort)
+    prepared_run_name = args.run_name or run_name(
+        args.instance_id,
+        args.model,
+        args.reasoning_effort,
+        args.inference_mode,
+    )
     instance_dir = root / prepared_run_name / args.instance_id
     solution_dir = instance_dir / "solution"
     guard_dir = instance_dir / "guard-bin"

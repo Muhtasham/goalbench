@@ -87,8 +87,8 @@ codex --enable goals -m gpt-5.5 -c model_reasoning_effort='xhigh' \
 Override `--model` and `--reasoning-effort` when preparing runs if you want a
 separate high/xhigh sweep. These values are written into `run.json` and the
 metrics CSV. Container and `tmux` session names include the run name, so high
-and xhigh runs for the same instance can coexist. Default run names include
-non-default model or effort values.
+and xhigh runs for the same instance can coexist. Default run names include the
+inference mode plus non-default model or effort values.
 
 The generated target container defaults to the paper's resource setting of 20
 CPUs and 60GB RAM. For local smoke tests on smaller machines, pass
@@ -303,16 +303,16 @@ uv run python scripts/run-batch.py finalize \
   --programbench-repo /path/to/ProgramBench
 ```
 
-Start the no-network target container:
+Start the target container:
 
 ```bash
-~/pb-goal-runs/gpt55-goal-jq/jqlang__jq.b33a763/start-target.sh
+~/pb-goal-runs/gpt55-goal-open-jq/jqlang__jq.b33a763/start-target.sh
 ```
 
 Check the compliance-critical container properties:
 
 ```bash
-~/pb-goal-runs/gpt55-goal-jq/jqlang__jq.b33a763/check-compliance.sh
+~/pb-goal-runs/gpt55-goal-open-jq/jqlang__jq.b33a763/check-compliance.sh
 ```
 
 Before running expensive inference, do a full evaluator preflight with a known
@@ -326,7 +326,7 @@ For a paper-comparable host, run the strict preflight before launching a batch:
 uv run python scripts/preflight-paper-host.py \
   --codex-user codex-runner \
   --check-egress-guard \
-  --instance-dir ~/pb-goal-runs/gpt55-goal-jq/jqlang__jq.b33a763
+  --instance-dir ~/pb-goal-runs/gpt55-goal-paper-jq/jqlang__jq.b33a763
 ```
 
 The preflight checks Linux `amd64`, Docker CPU/RAM capacity, dedicated-user
@@ -336,38 +336,38 @@ container network mode, and generated guard wrappers.
 Launch Codex in `tmux` and inject `/goal`:
 
 ```bash
-~/pb-goal-runs/gpt55-goal-jq/jqlang__jq.b33a763/start-codex-goal.sh
+~/pb-goal-runs/gpt55-goal-open-jq/jqlang__jq.b33a763/start-codex-goal.sh
 ```
 
 Attach to the session:
 
 ```bash
-tmux attach -t pb-goal-jqlang-jq-b33a763
+tmux attach -t pb-goal-gpt55-goal-open-jq-jqlang-jq-b33a763
 ```
 
 Package the submission:
 
 ```bash
-~/pb-goal-runs/gpt55-goal-jq/jqlang__jq.b33a763/package-submission.sh
+~/pb-goal-runs/gpt55-goal-open-jq/jqlang__jq.b33a763/package-submission.sh
 ```
 
 Audit the Codex JSONL trace and package shape before evaluating or reporting:
 
 ```bash
-uv run python scripts/audit-run.py --strict-paper ~/pb-goal-runs/gpt55-goal-jq/jqlang__jq.b33a763
+uv run python scripts/audit-run.py ~/pb-goal-runs/gpt55-goal-open-jq/jqlang__jq.b33a763
 ```
 
 Evaluate from a ProgramBench checkout:
 
 ```bash
-~/pb-goal-runs/gpt55-goal-jq/jqlang__jq.b33a763/eval-submission.sh /path/to/ProgramBench
+~/pb-goal-runs/gpt55-goal-open-jq/jqlang__jq.b33a763/eval-submission.sh /path/to/ProgramBench
 ```
 
 Summarize leaderboard-style metrics after evaluation:
 
 ```bash
 uv run --project /path/to/ProgramBench \
-  python /path/to/programbench-goal-runner/scripts/summarize-results.py ~/pb-goal-runs/gpt55-goal-jq \
+  python /path/to/programbench-goal-runner/scripts/summarize-results.py ~/pb-goal-runs/gpt55-goal-open-jq \
   --programbench-repo /path/to/ProgramBench \
   --output results.csv
 ```
@@ -400,7 +400,7 @@ export CODEX_OUTPUT_USD_PER_MTOK=...
 Collect local evidence for a run after evaluation:
 
 ```bash
-uv run python scripts/collect-run-artifacts.py ~/pb-goal-runs/gpt55-goal-jq/jqlang__jq.b33a763
+uv run python scripts/collect-run-artifacts.py ~/pb-goal-runs/gpt55-goal-open-jq/jqlang__jq.b33a763
 ```
 
 The collector writes an ignored bundle under `local_state/run_artifacts/` with a

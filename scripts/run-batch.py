@@ -103,6 +103,7 @@ def prepare_instance(args: argparse.Namespace, instance_id: str, run_root: Path)
         "run_name": run_json["run_name"],
         "session_name": run_json["session_name"],
         "container_name": run_json["container_name"],
+        "inference_mode": run_json["inference_mode"],
         "prepared_at": now(),
         "last_error": "",
     }
