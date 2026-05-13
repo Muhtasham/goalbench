@@ -10,7 +10,6 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 
 PROGRAMBENCH_EXTENDED = "https://programbench.com/extended/"
-TARGET_MODELS = {"GPT 5.5 (xhigh)", "GPT 5.5 (high)"}
 ROW_RE = re.compile(r"<tr class=\"clickable-row\".*?</tr>", re.S)
 CELL_RE = re.compile(r"<td[^>]*>(.*?)</td>", re.S)
 TAG_RE = re.compile(r"<[^>]+>")
@@ -37,7 +36,7 @@ def parse_rows(html: str) -> list[dict]:
     rows = []
     for row in ROW_RE.findall(html):
         cells = [clean_html(cell) for cell in CELL_RE.findall(row)]
-        if len(cells) < 8 or cells[2] not in TARGET_MODELS:
+        if len(cells) < 8:
             continue
         rows.append(
             {
@@ -55,9 +54,8 @@ def parse_rows(html: str) -> list[dict]:
 
 def refresh(args: argparse.Namespace) -> None:
     rows = parse_rows(fetch(args.url))
-    missing = TARGET_MODELS - {row["model"] for row in rows}
-    if missing:
-        raise ValueError(f"missing baseline rows: {sorted(missing)}")
+    if len(rows) < 2:
+        raise ValueError("could not parse ProgramBench baseline rows")
     output = Path(args.output).expanduser()
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(

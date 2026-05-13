@@ -19,7 +19,6 @@ AGENT_NAME = "Codex /goal"
 SITE_NAME = "ProgramBench Goal"
 PROGRAMBENCH_TASKS = 200
 PROGRAMBENCH_EXTENDED = "https://programbench.com/extended/"
-TARGET_BASELINE_MODELS = {"GPT 5.5 (xhigh)", "GPT 5.5 (high)"}
 ROW_RE = re.compile(r"<tr class=\"clickable-row\".*?</tr>", re.S)
 CELL_RE = re.compile(r"<td[^>]*>(.*?)</td>", re.S)
 TAG_RE = re.compile(r"<[^>]+>")
@@ -95,7 +94,7 @@ def parse_baseline_rows(page: str) -> list[dict]:
     rows = []
     for row in ROW_RE.findall(page):
         cells = [clean_html(cell) for cell in CELL_RE.findall(row)]
-        if len(cells) < 8 or cells[2] not in TARGET_BASELINE_MODELS:
+        if len(cells) < 8:
             continue
         rows.append(
             {
@@ -108,9 +107,8 @@ def parse_baseline_rows(page: str) -> list[dict]:
                 "source": PROGRAMBENCH_EXTENDED,
             }
         )
-    missing = TARGET_BASELINE_MODELS - {row["model"] for row in rows}
-    if missing:
-        raise ValueError(f"missing ProgramBench baseline rows: {sorted(missing)}")
+    if len(rows) < 2:
+        raise ValueError("could not parse ProgramBench baseline rows")
     return rows
 
 
@@ -134,6 +132,11 @@ def refresh_baselines(output_dir: Path) -> None:
 def load_baselines(output_dir: Path) -> list[dict]:
     path = output_dir / "data" / "programbench-baselines.json"
     return json.loads(path.read_text())["baselines"] if path.is_file() else BASELINES
+
+
+def load_task_baselines(output_dir: Path) -> dict:
+    path = output_dir / "data" / "programbench-task-baselines.json"
+    return json.loads(path.read_text())["tasks"] if path.is_file() else {}
 
 
 def as_bool(value: str) -> bool:
@@ -293,7 +296,7 @@ def row_to_dict(row: ResultRow) -> dict:
     }
 
 
-def task_groups(rows: list[ResultRow], target_ids: list[str]) -> list[dict]:
+def task_groups(rows: list[ResultRow], target_ids: list[str], official_tasks: dict) -> list[dict]:
     row_groups = {
         instance_id: list(group_rows)
         for instance_id, group_rows in groupby(
@@ -310,6 +313,9 @@ def task_groups(rows: list[ResultRow], target_ids: list[str]) -> list[dict]:
             "scored_tests": max((row.n_tests for row in task_rows), default=None),
             "best_score": max((row.score for row in task_rows), default=None),
             "best_model": model_display(max(task_rows, key=lambda row: row.score)) if task_rows else "",
+            "official_generated_tests": official_tasks.get(instance_id, {}).get("generated_tests"),
+            "official_best_score": official_tasks.get(instance_id, {}).get("best_score"),
+            "official_result_count": len(official_tasks.get(instance_id, {}).get("results", [])),
         }
         for instance_id in instance_ids
         for task_rows in [row_groups.get(instance_id, [])]
@@ -494,10 +500,25 @@ def pending_plot(title: str, x_label: str) -> str:
 
 def render_pending_charts() -> str:
     return f"""
-    <h2>Charts</h2>
+    <h2>Score by Model × Task</h2>
+    <p>The matrix below mirrors ProgramBench's all-models-by-all-tasks view for this scaffold. Cells are pending until Codex results are published, then link to task pages with per-task detail.</p>
+    <div class="score-matrix pending-matrix">
+      {"".join('<a class="heat-cell pending" title="pending"></a>' for _ in range(PROGRAMBENCH_TASKS))}
+    </div>
+    <h2>Behavioral Test Pass Rate Distribution</h2>
+    <p>The distribution plots are wired into the report. They stay empty until the first evaluated task lands, then render ProgramBench-style cumulative and histogram views.</p>
+    <div class="plot-grid">
+      {pending_plot("Cumulative", "behavioral test pass rate")}
+      {pending_plot("Histogram", "behavioral test pass rate")}
+    </div>
+    <h2>Model Comparison</h2>
+    <p>Model comparison plots appear once there are at least two Codex result groups. Each dot will be one task instance, matching ProgramBench's comparison framing.</p>
+    <div class="plot-grid">
+      {pending_plot("Model Comparison", "comparison score")}
+    </div>
+    <h2>Efficiency Plots</h2>
     <p>The chart slots are wired into the report. They stay empty until the first evaluated task lands, then render ProgramBench-style pass-rate distribution plus pass rate by cost, calls, and latency.</p>
     <div class="plot-grid">
-      {pending_plot("Pass-Rate Distribution", "behavioral test pass rate")}
       {pending_plot("Pass vs. Est. Cost", "estimated cost")}
       {pending_plot("Pass vs. Calls", "Codex calls")}
       {pending_plot("Pass vs. Latency", "wall-clock hours")}
@@ -662,10 +683,12 @@ def render_task_index(tasks: list[dict]) -> str:
         <tr>
           <td>{index}</td>
           <td><a href="{cell(str(task["task_path"]))}"><code>{cell(str(task["instance_id"]))}</code></a></td>
-          <td>{task["scored_tests"] if task["scored_tests"] is not None else "pending"}</td>
+          <td>{task["official_generated_tests"] if task["official_generated_tests"] is not None else "pending"}</td>
+          <td>{percent(float(task["official_best_score"])) if task["official_best_score"] is not None else "pending"}</td>
           <td>{percent(float(task["best_score"])) if task["best_score"] is not None else "pending"}</td>
           <td>{cell(str(task["best_model"] or "pending"))}</td>
           <td>{task["result_count"]}</td>
+          <td>{task["official_result_count"]}</td>
           <td><a href="{cell(str(task["official_task_url"]))}">official</a></td>
         </tr>
         """
@@ -676,11 +699,27 @@ def render_task_index(tasks: list[dict]) -> str:
     <p>Task pages mirror ProgramBench's per-task view for this scaffold: scored behavioral tests, best score, and results by model/mode. Pending rows are full-run targets waiting for Codex results. The official ProgramBench task page is linked for baseline context.</p>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>#</th><th>Task</th><th>Scored tests</th><th>Best score</th><th>Best model</th><th>Rows</th><th>ProgramBench</th></tr></thead>
+        <thead><tr><th>#</th><th>Task</th><th>Generated tests</th><th>Official best</th><th>Codex best</th><th>Codex model</th><th>Codex rows</th><th>Official rows</th><th>ProgramBench</th></tr></thead>
         <tbody>{rows}</tbody>
       </table>
     </div>
     """
+
+
+def official_task_result_rows(task: dict) -> str:
+    return "\n".join(
+        f"""
+        <tr>
+          <td>{index}</td>
+          <td>{cell(str(row["model"]))}</td>
+          <td>{cell(str(row["provider"]))}</td>
+          <td>{percent(float(row["score"])) if row["score"] is not None else "n/a"}</td>
+          <td>{money(float(row["cost_usd"]))}</td>
+          <td>{integer(int(row["calls"]))}</td>
+        </tr>
+        """
+        for index, row in enumerate(task.get("results", []), start=1)
+    )
 
 
 def heat_color(score: float) -> str:
@@ -763,11 +802,12 @@ def evidence_link_path(row: ResultRow) -> str:
     return f"evidence/{row.run_name}/{row.instance_id}/manifest.json"
 
 
-def render_task_detail(instance_id: str, rows: list[ResultRow]) -> str:
+def render_task_detail(instance_id: str, rows: list[ResultRow], official_tasks: dict) -> str:
     matching = sorted([row for row in rows if row.instance_id == instance_id], key=lambda row: row.score, reverse=True)
     best_score = max((row.score for row in matching), default=None)
     scored_tests = max((row.n_tests for row in matching), default=None)
     official_task_url = f"https://programbench.com/task/{instance_id}/"
+    official_task = official_tasks.get(instance_id, {})
     if matching:
         result_rows = "\n".join(
             f"""
@@ -815,16 +855,22 @@ def render_task_detail(instance_id: str, rows: list[ResultRow]) -> str:
 <body>
   <p><a href="../../">← Back to summary</a> · <a href="{cell(official_task_url)}">Official ProgramBench task page</a></p>
   <h1><code>{cell(instance_id)}</code></h1>
-  <p class="muted">Task-level results for this Codex <code>/goal</code> scaffold. Scored tests are after ProgramBench active-branch and ignored-test filtering.</p>
+  <p class="muted">Task-level results for this Codex <code>/goal</code> scaffold. ProgramBench baseline context is cached from the official task page; Codex scored tests are after active-branch and ignored-test filtering.</p>
   <div class="metric-grid">
-    <div class="metric"><strong>{scored_tests if scored_tests is not None else "pending"}</strong><span>scored behavioral tests</span></div>
-    <div class="metric"><strong>{percent(best_score) if best_score is not None else "pending"}</strong><span>best score</span></div>
-    <div class="metric"><strong>{len(matching)}</strong><span>result rows</span></div>
+    <div class="metric"><strong>{official_task.get("generated_tests", scored_tests if scored_tests is not None else "pending")}</strong><span>generated behavioral tests</span></div>
+    <div class="metric"><strong>{percent(float(official_task["best_score"])) if official_task.get("best_score") is not None else "pending"}</strong><span>official best score</span></div>
+    <div class="metric"><strong>{percent(best_score) if best_score is not None else "pending"}</strong><span>Codex best score</span></div>
+    <div class="metric"><strong>{len(matching)}</strong><span>Codex result rows</span></div>
   </div>
-  <h2>Results by Model</h2>
+  <h2>Codex Results by Model</h2>
   <table>
     <thead><tr><th>#</th><th>Model</th><th>Agent</th><th>Mode</th><th>Score</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Evidence</th></tr></thead>
     <tbody>{result_rows}</tbody>
+  </table>
+  <h2>Official ProgramBench Results by Model</h2>
+  <table>
+    <thead><tr><th>#</th><th>Model</th><th>Provider</th><th>Score</th><th>Cost</th><th>Calls</th></tr></thead>
+    <tbody>{official_task_result_rows(official_task) or '<tr><td colspan="6">Official task rows not cached yet.</td></tr>'}</tbody>
   </table>
 </body>
 </html>
@@ -894,6 +940,11 @@ def render_results_sections(data: dict, instances: list[ResultRow]) -> str:
     return f"""
     <div class="cards">
       {"".join(render_summary_cards(f"{group['model']} / {group['mode']}", group) for group in data["groups"])}
+    </div>
+
+    <h2>Score by Model × Task</h2>
+    <div class="score-matrix">
+      {"".join(f'<a class="heat-cell" style="background:{heat_color(row.score)}" title="{cell(row.instance_id)}: {percent(row.score)}" href="{task_page_link(row)}"></a>' for row in sorted(instances, key=lambda row: (model_display(row), row.instance_id)))}
     </div>
 
     {render_score_distribution(instances)}
@@ -1092,6 +1143,23 @@ def render_html(data: dict) -> str:
     }}
     .plot line {{ stroke: var(--line); stroke-width: 1.5; }}
     .plot text {{ fill: var(--muted); font-size: 11px; }}
+    .score-matrix {{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(12px, 1fr));
+      gap: 3px;
+      max-width: 920px;
+      margin: 14px 0 18px;
+    }}
+    .heat-cell {{
+      display: block;
+      aspect-ratio: 1;
+      border-radius: 3px;
+      background: #e5e7eb;
+    }}
+    .heat-cell.pending {{
+      background: linear-gradient(135deg, #f5f7f8 25%, #e5e7eb 25%, #e5e7eb 50%, #f5f7f8 50%, #f5f7f8 75%, #e5e7eb 75%);
+      background-size: 8px 8px;
+    }}
     a {{ color: #075985; }}
   </style>
 </head>
@@ -1152,6 +1220,7 @@ def build(args: argparse.Namespace) -> None:
     rows = [row for path in args.results_csv for row in read_results(Path(path).expanduser())]
     output_dir = Path(args.output_dir).expanduser()
     target_ids = read_target_ids(Path(args.target_set).expanduser())
+    official_tasks = load_task_baselines(output_dir)
     if args.clean_output:
         for generated in (output_dir / "run", output_dir / "task"):
             if generated.exists():
@@ -1166,7 +1235,7 @@ def build(args: argparse.Namespace) -> None:
         "sample_instances": len(rows),
         "programbench_tasks": PROGRAMBENCH_TASKS,
         "groups": result_groups(rows),
-        "tasks": task_groups(rows, target_ids),
+        "tasks": task_groups(rows, target_ids, official_tasks),
         "rows": [row_to_dict(row) for row in rows],
         "baselines": load_baselines(output_dir),
     }
@@ -1181,7 +1250,7 @@ def build(args: argparse.Namespace) -> None:
     for task in data["tasks"]:
         task_dir = output_dir / "task" / str(task["instance_id"])
         task_dir.mkdir(parents=True, exist_ok=True)
-        (task_dir / "index.html").write_text(render_task_detail(str(task["instance_id"]), rows))
+        (task_dir / "index.html").write_text(render_task_detail(str(task["instance_id"]), rows, official_tasks))
     print(output_dir / "index.html")
     print(output_dir / "data" / "results.json")
     print(output_dir / "data" / "results.csv")

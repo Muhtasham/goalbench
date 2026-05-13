@@ -17,8 +17,107 @@
       "model": "GPT 5.5 (high)",
       "resolved_rate": 0.005,
       "source": "https://programbench.com/extended/"
+    },
+    {
+      "agent": "mini-SWE-agent",
+      "almost_resolved_rate": 0.045,
+      "average_calls": 159,
+      "average_cost_usd": 10.96,
+      "model": "Claude Opus 4.7 (xhigh)",
+      "resolved_rate": 0.0,
+      "source": "https://programbench.com/extended/"
+    },
+    {
+      "agent": "mini-SWE-agent",
+      "almost_resolved_rate": 0.03,
+      "average_calls": 93,
+      "average_cost_usd": 3.81,
+      "model": "Claude Opus 4.7",
+      "resolved_rate": 0.0,
+      "source": "https://programbench.com/extended/"
+    },
+    {
+      "agent": "mini-SWE-agent",
+      "almost_resolved_rate": 0.025,
+      "average_calls": 260,
+      "average_cost_usd": 11.38,
+      "model": "Claude Opus 4.6",
+      "resolved_rate": 0.0,
+      "source": "https://programbench.com/extended/"
+    },
+    {
+      "agent": "mini-SWE-agent",
+      "almost_resolved_rate": 0.015,
+      "average_calls": 19,
+      "average_cost_usd": 1.21,
+      "model": "GPT 5.5",
+      "resolved_rate": 0.0,
+      "source": "https://programbench.com/extended/"
+    },
+    {
+      "agent": "mini-SWE-agent",
+      "almost_resolved_rate": 0.01,
+      "average_calls": 472,
+      "average_cost_usd": 26.73,
+      "model": "Claude Sonnet 4.6",
+      "resolved_rate": 0.0,
+      "source": "https://programbench.com/extended/"
+    },
+    {
+      "agent": "mini-SWE-agent",
+      "almost_resolved_rate": 0.0,
+      "average_calls": 16,
+      "average_cost_usd": 0.33,
+      "model": "GPT 5.4",
+      "resolved_rate": 0.0,
+      "source": "https://programbench.com/extended/"
+    },
+    {
+      "agent": "mini-SWE-agent",
+      "almost_resolved_rate": 0.0,
+      "average_calls": 94,
+      "average_cost_usd": 1.51,
+      "model": "Gemini 3.1 Pro",
+      "resolved_rate": 0.0,
+      "source": "https://programbench.com/extended/"
+    },
+    {
+      "agent": "mini-SWE-agent",
+      "almost_resolved_rate": 0.0,
+      "average_calls": 85,
+      "average_cost_usd": 0.3,
+      "model": "Gemini 3 Flash",
+      "resolved_rate": 0.0,
+      "source": "https://programbench.com/extended/"
+    },
+    {
+      "agent": "mini-SWE-agent",
+      "almost_resolved_rate": 0.0,
+      "average_calls": 124,
+      "average_cost_usd": 0.8,
+      "model": "Claude Haiku 4.5",
+      "resolved_rate": 0.0,
+      "source": "https://programbench.com/extended/"
+    },
+    {
+      "agent": "mini-SWE-agent",
+      "almost_resolved_rate": 0.0,
+      "average_calls": 18,
+      "average_cost_usd": 0.04,
+      "model": "GPT 5.4 mini",
+      "resolved_rate": 0.0,
+      "source": "https://programbench.com/extended/"
+    },
+    {
+      "agent": "mini-SWE-agent",
+      "almost_resolved_rate": 0.0,
+      "average_calls": 15,
+      "average_cost_usd": 0.03,
+      "model": "GPT 5 mini",
+      "resolved_rate": 0.0,
+      "source": "https://programbench.com/extended/"
     }
   ],
-  "fetched_at": "2026-05-13T19:09:32.870200+00:00",
+  "fetched_at": "2026-05-13T20:19:28.675474+00:00",
   "source": "https://programbench.com/extended/"
 }
