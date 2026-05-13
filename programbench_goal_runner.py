@@ -537,6 +537,7 @@ tmux kill-session -t {shlex.quote(session_name)} >/dev/null 2>&1 || true
 tmux new-session -d -s {shlex.quote(session_name)} -c {shlex.quote(str(solution_dir))} \\
   "{codex_env} codex --enable goals -m {shlex.quote(args.model)} \\
   -c model_reasoning_effort={shlex.quote(args.reasoning_effort)} \\
+  -c trust_level=trusted \\
   -C {shlex.quote(str(solution_dir))} $CODEX_BYPASS_FLAG --no-alt-screen"
 tmux pipe-pane -o -t {shlex.quote(session_name)} 'cat >> {shlex.quote(str(instance_dir / "tmux-transcript.log"))}'
 sleep 4

@@ -144,6 +144,13 @@ def uses_tool(command: str, tool: str) -> bool:
     return bool(re.search(rf"(^|[\s;&|()]){path}{re.escape(tool)}([\s;&|()]|$)", command))
 
 
+def uses_binary_analysis_on_target(command: str, tool: str) -> bool:
+    return any(
+        "/workspace/executable" in segment and uses_tool(segment, tool)
+        for segment in re.split(r"(?:;|\n|&&|\|\|)", command)
+    )
+
+
 def uses_allowed_docker(command: str, container_name: str) -> bool:
     return bool(re.search(rf"\bdocker\s+exec\s+(?:-i\s+)?-u\s+agent\s+{re.escape(container_name)}\b", command))
 
@@ -281,7 +288,7 @@ def audit_command(
         findings.extend(
             Finding(line_source, f"binary analysis tool used on target executable: {tool}", command)
             for tool in BINARY_ANALYSIS_TOOLS
-            if uses_tool(command, tool)
+            if uses_binary_analysis_on_target(command, tool)
         )
     findings.extend(
         Finding(line_source, f"source/package lookup pattern: {pattern}", command)
@@ -296,7 +303,7 @@ def audit_command(
     findings.extend(
         Finding(line_source, f"forbidden cleanroom host/tool command: {tool}", command)
         for tool in FORBIDDEN_TOOLS
-        if not (allow_local_tools and tool in BINARY_ANALYSIS_TOOLS) and uses_tool(command, tool) and tool != "docker"
+        if tool not in BINARY_ANALYSIS_TOOLS and uses_tool(command, tool) and tool != "docker"
     )
     return findings
 
