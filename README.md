@@ -372,6 +372,18 @@ Run the matching high-effort sweep as a separate batch:
 uv run python scripts/run-config.py watch configs/full-nointernet-high.json
 ```
 
+For local Mac/ARM harness smoke testing, use the small non-comparable batch
+instead of the full 200-task config:
+
+```bash
+scripts/run-sweep.sh --config configs/local-mac-smoke-xhigh.json --dry-run
+scripts/run-sweep.sh --config configs/local-mac-smoke-xhigh.json
+```
+
+This uses five near-miss tasks, `direct-docker`, 8 CPUs, and 8GB RAM. Treat it
+as harness validation only; the publishable all-task run should still happen on
+Linux amd64.
+
 Check status:
 
 ```bash
