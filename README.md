@@ -208,6 +208,37 @@ Prepare the near-miss first batch:
 uv run python programbench_goal_runner.py prepare-batch target_sets/first_batch_near_miss.txt
 ```
 
+For real sweeps, prefer the resumable batch manager so the laptop does not start
+too many Codex `/goal` sessions at once:
+
+```bash
+uv run python scripts/run-batch.py watch target_sets/first_batch_near_miss.txt \
+  --batch-name first-near-miss-xhigh \
+  --max-parallel 1 \
+  --reasoning-effort xhigh
+```
+
+Use `--max-parallel 1` on a laptop until we know the active Codex rate limits.
+Use separate batch names for `high`, `xhigh`, `paper`, and `open-internet`
+runs. The manager stores resumable state under `local_state/batches/`, starts
+new work only when active sessions are below the concurrency cap, and pauses new
+launches when a running pane shows rate-limit text.
+
+Check progress:
+
+```bash
+uv run python scripts/run-batch.py status --batch-name first-near-miss-xhigh
+```
+
+After sessions reach `goal_done`, package, audit, evaluate, summarize, and
+collect local artifacts:
+
+```bash
+uv run python scripts/run-batch.py finalize \
+  --batch-name first-near-miss-xhigh \
+  --programbench-repo /path/to/ProgramBench
+```
+
 Start the no-network target container:
 
 ```bash
