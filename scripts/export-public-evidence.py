@@ -117,10 +117,11 @@ def public_log_entry(entry: dict) -> dict:
 
 
 def public_manifest(manifest: dict, eval_summary_path: str, eval_json_path: str) -> dict:
+    run_name = manifest.get("metrics", {}).get("run_name") or manifest["run"]["run_name"]
     return {
         "collected_at": manifest["collected_at"],
         "instance_id": manifest["run"]["instance_id"],
-        "run_name": manifest["run"]["run_name"],
+        "run_name": run_name,
         "model": manifest["run"]["model"],
         "reasoning_effort": manifest["run"]["reasoning_effort"],
         "inference_mode": manifest["run"]["inference_mode"],
@@ -159,7 +160,7 @@ def public_manifest(manifest: dict, eval_summary_path: str, eval_json_path: str)
 def export_one(manifest_path: Path, output_dir: Path) -> None:
     manifest = read_json(manifest_path)
     instance_id = manifest["run"]["instance_id"]
-    run_name = manifest["run"]["run_name"]
+    run_name = manifest.get("metrics", {}).get("run_name") or manifest["run"]["run_name"]
     target_dir = output_dir / run_name / instance_id
     target_dir.mkdir(parents=True, exist_ok=True)
 
