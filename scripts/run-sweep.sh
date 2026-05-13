@@ -160,6 +160,7 @@ fi
 if [[ "$REFRESH_REPORT" -eq 1 ]]; then
   run uv run python scripts/refresh-openai-pricing.py
   run uv run python scripts/refresh-programbench-baselines.py
+  run uv run python scripts/refresh-programbench-run-baselines.py
   run uv run python scripts/refresh-programbench-task-baselines.py --target-set "$TARGET_FILE"
 fi
 
