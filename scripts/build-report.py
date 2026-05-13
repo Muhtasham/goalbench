@@ -1221,20 +1221,20 @@ def render_html(data: dict) -> str:
     <h2>How To Read Modes</h2>
     <div class="mode-grid">
       <div class="mode-card">
-        <strong>Open internet</strong>
-        <p>Full Codex harness. Internet and package tooling are allowed. Not ProgramBench-compliant.</p>
+        <strong>No internet</strong>
+        <p>Primary Codex <code>/goal</code> scaffold for the Noam/Jake question: internet/source/package lookup blocked and target binary analysis still banned.</p>
       </div>
       <div class="mode-card">
         <strong>Paper / cleanroom</strong>
         <p>Black-box mode matching ProgramBench rules as closely as this scaffold can. Only ProgramBench-comparable on Linux amd64 with 20 CPU / 60g and strict egress.</p>
       </div>
       <div class="mode-card">
-        <strong>No internet</strong>
-        <p>Codex scaffold ablation with internet/source/package lookup blocked and target binary analysis still banned.</p>
-      </div>
-      <div class="mode-card">
         <strong>No internet + local tools</strong>
         <p>Non-compliant ablation for the tool-starvation critique: no external internet/source lookup, but local binary-analysis/tracing tools are allowed.</p>
+      </div>
+      <div class="mode-card">
+        <strong>Open internet</strong>
+        <p>Full Codex harness. Internet and package tooling are allowed. Not ProgramBench-compliant.</p>
       </div>
     </div>
     <p><a href="data/results.json">Download results.json</a> · <a href="data/results.csv">Download results.csv</a></p>

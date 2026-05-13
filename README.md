@@ -347,10 +347,12 @@ The script refreshes `target_sets/all_tasks.txt`, runs the configured batch,
 refreshes the OpenAI pricing snapshot before scoring, finalizes completed
 instances, exports sanitized evidence, rebuilds `docs/`, refreshes public
 ProgramBench leaderboard rows and per-task baseline context, checks report size,
-and runs the privacy scan. Add `--publish` to commit and push `docs/` after the
-site rebuild:
+and runs the privacy scan. By default this updates the local `docs/` site only.
+Add `--publish` to commit and push `docs/` to GitHub Pages after the site
+rebuild:
 
 ```bash
+scripts/run-sweep.sh --publish
 scripts/run-sweep.sh --skip-watch --publish
 ```
 
