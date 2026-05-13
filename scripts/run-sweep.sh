@@ -155,6 +155,21 @@ collect_results_csvs() {
 }
 
 TARGET_FILE="$(config_value target_file)"
+TARGET_ACCESS="$(config_value target_access)"
+TARGET_WRAPPER_COMMAND="$(config_value target_wrapper_command)"
+
+if [[ "$WATCH" -eq 1 && "$TARGET_ACCESS" == "wrapper" && "$DRY_RUN" -eq 0 ]]; then
+  set +e
+  bash -lc "$TARGET_WRAPPER_COMMAND __pb-wrapper-check true" >/tmp/pb-target-wrapper-check.out 2>/tmp/pb-target-wrapper-check.err
+  wrapper_status=$?
+  set -e
+  if [[ "$wrapper_status" -ne 126 ]]; then
+    echo "target wrapper is not available through: $TARGET_WRAPPER_COMMAND" >&2
+    echo "Install it with: scripts/install-target-wrapper.sh" >&2
+    cat /tmp/pb-target-wrapper-check.err >&2
+    exit 1
+  fi
+fi
 
 if [[ "$REFRESH_TARGET_SET" -eq 1 && "$TARGET_FILE" == "target_sets/all_tasks.txt" ]]; then
   run uv run python scripts/write-target-set.py "$PROGRAMBENCH_REPO" --output "$TARGET_FILE"

@@ -42,10 +42,14 @@ sibling checkout:
 
 ```bash
 scripts/bootstrap-programbench.sh
+scripts/install-target-wrapper.sh
 ```
 
-That clones or updates `../ProgramBench` and runs `uv sync --project` there.
-`scripts/run-sweep.sh` auto-detects that location. If you keep ProgramBench
+The bootstrap script clones or updates `../ProgramBench` and runs
+`uv sync --project` there. The wrapper installer grants the current user
+passwordless sudo for `/usr/local/bin/pb-target-exec` only, so Codex can probe
+target containers without direct Docker socket access. `scripts/run-sweep.sh`
+auto-detects the sibling ProgramBench checkout. If you keep ProgramBench
 somewhere else, set `PROGRAMBENCH_REPO=/path/to/ProgramBench` or pass
 `--programbench-repo /path/to/ProgramBench`.
 
@@ -76,7 +80,7 @@ access. Install the narrow target wrapper and prepare `paper` runs with
 `--target-access wrapper`:
 
 ```bash
-sudo install -o root -g root -m 0755 scripts/pb-target-exec /usr/local/bin/pb-target-exec
+scripts/install-target-wrapper.sh
 uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763 \
   --inference-mode paper \
   --target-access wrapper
@@ -130,9 +134,11 @@ See `docs/paper-compliance.md` for the paper/FAQ compliance matrix.
 
 ## Inference Modes
 
-Default mode is `open-internet`, the full Codex harness. It is explicitly
-non-compliant research mode for ProgramBench-inspired runs where Codex can use
-normal internet and package tooling:
+Default mode is `no-internet`, the recommended Codex `/goal` scaffold for the
+Noam/Jake question. It keeps the target container offline and keeps the
+host-side internet/package/source guards enabled, but it is reported separately
+from `paper` so we can measure the Codex scaffold without claiming
+mini-SWE-agent parity:
 
 ```bash
 uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763
@@ -145,10 +151,7 @@ uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763 \
   --inference-mode paper
 ```
 
-There is also a no-internet Codex ablation mode. It keeps the target container
-offline and keeps the host-side internet/package/source guards enabled, but it
-is reported separately from `paper` so we can measure the Codex scaffold without
-claiming mini-SWE-agent parity:
+The explicit no-internet form is equivalent to the default:
 
 ```bash
 uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763 \
@@ -169,7 +172,8 @@ binary-analysis/tracing tools, and root-level target inspection through the
 target container. This is intentionally non-compliant with ProgramBench
 cleanroom rules and must be reported separately.
 
-The explicit form is equivalent to the default:
+Run `open-internet` only as a separate, explicitly non-compliant full Codex
+harness ablation:
 
 ```bash
 uv run python programbench_goal_runner.py prepare jqlang__jq.b33a763 \

@@ -18,7 +18,7 @@ LOCAL_TOOLS_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_
 OPEN_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal_open.md"
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_REASONING_EFFORT = "xhigh"
-DEFAULT_INFERENCE_MODE = "open-internet"
+DEFAULT_INFERENCE_MODE = "no-internet"
 MODE_RUN_SEGMENTS = {
     "paper": "paper",
     "no-internet": "nointernet",

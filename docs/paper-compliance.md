@@ -3,11 +3,12 @@
 This runner is a Codex `/goal` scaffold for ProgramBench, not the paper's
 mini-SWE-agent baseline. Report it as a separate scaffold.
 
-The default `open-internet` inference mode is intentionally non-compliant and
-exists for full Codex-harness exploratory runs. The optional `paper` inference
-mode is the cleanroom mode. The optional `no-internet` mode keeps
+The default `no-internet` inference mode keeps
 internet/source/package access blocked but is reported as a Codex scaffold
-ablation rather than a paper-comparable run. The optional
+ablation rather than a paper-comparable run. The optional `paper` inference
+mode is the strict cleanroom mode. The optional `open-internet` inference mode
+is intentionally non-compliant and exists for full Codex-harness exploratory
+runs. The optional
 `no-internet-local-tools` mode also keeps external internet/source/package
 lookup blocked, but allows local binary-analysis/tracing tools and root-level
 target inspection.
