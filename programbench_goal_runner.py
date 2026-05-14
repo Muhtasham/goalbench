@@ -75,6 +75,8 @@ HOST_INSPECTION_PATTERNS = (
     "/Documents/" + "ProgramBench",
     "ProgramBench",
     "pb-goal-runs",
+)
+PARENT_TRAVERSAL_PATTERNS = (
     " .. ",
     "../",
     "/..",
@@ -256,7 +258,7 @@ fi
                 f'if [[ "$args" == *{shlex.quote(pattern)}* ]]; then '
                 f'echo "blocked {tool}: ProgramBench cleanroom runs forbid host/evaluator path inspection" >&2; '
                 "exit 126; fi"
-                for pattern in HOST_INSPECTION_PATTERNS
+                for pattern in (*HOST_INSPECTION_PATTERNS, *PARENT_TRAVERSAL_PATTERNS)
             ]
         )
         write_executable(
@@ -376,7 +378,8 @@ def prepare(args: argparse.Namespace) -> None:
     objective = (
         f"Solve ProgramBench instance {args.instance_id} in the cleanroom container by reimplementing the "
         "target CLI from black-box behavior only. Do not mark the goal complete until solution/compile.sh exists, "
-        "running ./compile.sh creates ./executable, and ../package-submission.sh succeeds."
+        "running ./compile.sh creates ./executable, and package-submission succeeds. Do not inspect parent "
+        "directories or files outside the solution directory."
     )
 
     solution_dir.mkdir(parents=True, exist_ok=True)
@@ -387,7 +390,8 @@ def prepare(args: argparse.Namespace) -> None:
             "Do not use internet, package managers, upstream source, decompilers, "
             "disassemblers, tracing/instrumentation tools, ProgramBench tests, or "
             "the ProgramBench evaluator repository. Do not inspect files outside "
-            "this solution directory, except through the target container command. Probe the "
+            "this solution directory, do not run commands against '..', and do not inspect parent directories. "
+            "The harness helper is exposed only as the package-submission command. Probe the "
             f"target executable at /workspace/executable with {target_command}. "
             "Use only documentation already present in the cleanroom container.\n"
         )
@@ -425,6 +429,7 @@ def prepare(args: argparse.Namespace) -> None:
                 "container_name": container_name,
                 "solution_dir": str(solution_dir),
                 "target_command": target_command,
+                "package_command": "package-submission",
             },
         )
     )
@@ -512,6 +517,17 @@ docker exec -u agent {shlex.quote(container_name)} bash -lc '
   fi
   echo "ok: agent can execute but cannot read/decompile executable"
 '
+(
+  cd {shlex.quote(str(solution_dir))}
+  export PATH={shlex.quote(str(guard_dir))}:$PATH
+  command -v package-submission >/dev/null
+  if rg --files -uu .. >/tmp/pb-parent-guard.out 2>/tmp/pb-parent-guard.err; then
+    echo "FAIL guard allowed parent-directory inspection" >&2
+    exit 1
+  fi
+  grep -q "blocked rg" /tmp/pb-parent-guard.err
+  echo "ok: guard blocks parent-directory inspection and exposes package-submission"
+)
 """,
     )
     codex_env = (
@@ -563,6 +579,17 @@ COPYFILE_DISABLE=1 tar -C {shlex.quote(str(solution_dir))} \\
   --exclude './._*' \\
   -czf {shlex.quote(str(instance_dir / "submission.tar.gz"))} .
 /bin/ls -lh {shlex.quote(str(instance_dir / "submission.tar.gz"))}
+""",
+    )
+    write_executable(
+        guard_dir / "package-submission",
+        f"""#!/usr/bin/env bash
+set -euo pipefail
+if [[ "$*" == *".."* ]]; then
+  echo "blocked package-submission: parent traversal is not allowed" >&2
+  exit 126
+fi
+exec {shlex.quote(str(instance_dir / "package-submission.sh"))} "$@"
 """,
     )
     write_executable(

@@ -71,6 +71,7 @@ BINARY_ANALYSIS_TOOLS = (
     "xxd",
 )
 PARENT_INSPECTION = re.compile(r"(^|[;&|]\s*)(cat|find|grep|head|ls|rg|sed|tail|wc)\s+[^;&|]*\.\.")
+PARENT_TRAVERSAL = re.compile(r"(^|[\s'\"`=:])\.\.(?:[/\s'\"`;&|)]|$)")
 WRAPPER_PATTERNS = (
     r"/workspace/executable",
     r"\bdocker\s+exec\b",
@@ -278,6 +279,10 @@ def audit_command(
         findings.append(Finding(line_source, "command contains private host or evaluator path", command))
     if PARENT_INSPECTION.search(command):
         findings.append(Finding(line_source, "command inspects parent directories from solution workspace", command))
+    elif PARENT_TRAVERSAL.search(command):
+        findings.append(
+            Finding(line_source, "command uses parent-directory traversal from solution workspace", command)
+        )
     if uses_tool(command, "docker") and not (
         uses_allowed_local_tools_docker(command, container_name)
         if allow_local_tools

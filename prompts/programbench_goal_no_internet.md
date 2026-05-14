@@ -20,11 +20,14 @@ Task:
 - You may write your own black-box probes, fuzzers, generators, and comparison
   scripts that interact with the target only through normal runtime behavior.
 - Do not inspect files outside `{{solution_dir}}` on the host.
+- Do not run host commands against `..`, parent directories, the run root, or
+  any sibling harness files. Parent-directory inspection is disqualifying.
 - Do not inspect the ProgramBench evaluator repository or hidden tests.
 - Write the complete replacement codebase in `{{solution_dir}}`.
 - Produce `compile.sh` at the solution root.
 - `compile.sh` must build or copy the final executable to `./executable`.
-- You may execute `../package-submission.sh` to verify packaging.
+- You may execute `{{package_command}}` to verify packaging. Do not inspect the
+  implementation of that helper or any files outside `{{solution_dir}}`.
 
 Harness context:
 - Instance: `{{instance_id}}`
@@ -39,5 +42,4 @@ Harness context:
 Complete the implementation in `{{solution_dir}}` so it is ready to package.
 
 Do not mark the goal complete until `compile.sh` exists, `./compile.sh`
-succeeds, `./executable` exists and runs, and `../package-submission.sh`
-succeeds.
+succeeds, `./executable` exists and runs, and `{{package_command}}` succeeds.

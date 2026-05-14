@@ -128,6 +128,8 @@ black-box probes, fuzzers, generators, and comparison scripts are allowed when
 they interact with the target only through normal runtime behavior. This catches
 common mistakes. It also blocks common local file-inspection commands from
 reading parent directories, the run root, home paths, or the evaluator checkout.
+Packaging is exposed as a `package-submission` command in `guard-bin`, so Codex
+does not need to invoke or inspect parent-directory helper scripts.
 This is still not a replacement for a VM/container/user-level egress policy.
 
 See `docs/paper-compliance.md` for the paper/FAQ compliance matrix.
@@ -542,6 +544,9 @@ Package the submission:
 ```bash
 ~/pb-goal-runs/gpt55-goal-open-jq/jqlang__jq.b33a763/package-submission.sh
 ```
+
+Inside a Codex task session, use `package-submission` from `guard-bin` instead
+of parent-directory paths such as `../package-submission.sh`.
 
 Audit the Codex JSONL trace and package shape before evaluating or reporting:
 

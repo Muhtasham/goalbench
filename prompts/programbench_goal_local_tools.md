@@ -16,13 +16,16 @@ Task:
 - You may inspect the provided target binary with local tools in this mode.
 - Do not inspect files outside `{{solution_dir}}` on the host, except through
   local target-inspection commands needed for this ablation.
+- Do not inspect parent directories, the run root, sibling harness files, or the
+  ProgramBench evaluator repository.
 - You may not submit a wrapper around the provided target binary.
 - You may not make the final executable depend on `/workspace/executable` or any
   other prebuilt copy of the same tool.
 - Write the complete replacement codebase in `{{solution_dir}}`.
 - Produce `compile.sh` at the solution root.
 - `compile.sh` must build or copy the final executable to `./executable`.
-- You may execute `../package-submission.sh` to verify packaging.
+- You may execute `{{package_command}}` to verify packaging. Do not inspect the
+  implementation of that helper or any files outside `{{solution_dir}}`.
 
 Harness context:
 - Instance: `{{instance_id}}`
@@ -37,5 +40,4 @@ Harness context:
 Complete the implementation in `{{solution_dir}}` so it is ready to package.
 
 Do not mark the goal complete until `compile.sh` exists, `./compile.sh`
-succeeds, `./executable` exists and runs, and `../package-submission.sh`
-succeeds.
+succeeds, `./executable` exists and runs, and `{{package_command}}` succeeds.

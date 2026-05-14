@@ -70,12 +70,14 @@ Harness context:
 - The target executable is `/workspace/executable` inside that container.
 - The bundled documentation is inside `/workspace` in that container.
 - Do not inspect files outside `{{solution_dir}}` on the host.
+- Do not run host commands against `..`, parent directories, the run root, or
+  any sibling harness files. Parent-directory inspection is disqualifying.
 - Do not inspect the ProgramBench evaluator repository or hidden tests.
 - Produce a complete replacement codebase in `{{solution_dir}}`.
 - Produce `compile.sh` at the solution root.
 - `compile.sh` must build or copy the final executable to `./executable`.
-- You may execute `../package-submission.sh` to verify packaging, but do not read
-  or inspect files outside `{{solution_dir}}`.
+- You may execute `{{package_command}}` to verify packaging. Do not inspect the
+  implementation of that helper or any files outside `{{solution_dir}}`.
 
 Complete the implementation in `{{solution_dir}}` so it is ready to package as a
 ProgramBench submission.
@@ -84,4 +86,4 @@ Do not mark the goal complete until:
 - `compile.sh` exists at the solution root.
 - `./compile.sh` succeeds.
 - `./executable` exists and runs.
-- `../package-submission.sh` succeeds.
+- `{{package_command}}` succeeds.
