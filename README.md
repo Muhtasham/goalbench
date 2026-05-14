@@ -81,6 +81,7 @@ Then authenticate Codex on the VM:
 ```bash
 codex login
 docker run --rm hello-world
+scripts/doctor.sh configs/linux-smoke-nointernet-xhigh.json
 ```
 
 For Codex app remote connections, add the VM to your local `~/.ssh/config`,
@@ -92,6 +93,7 @@ Run the Linux smoke first:
 ```bash
 scripts/start-sweep-tmux.sh configs/linux-smoke-nointernet-xhigh.json
 uv run python scripts/run-config.py status configs/linux-smoke-nointernet-xhigh.json
+tail -f local_state/logs/pb-goal-linux-smoke-nointernet-xhigh.log
 ```
 
 For the stricter paper-mode smoke:
@@ -304,6 +306,19 @@ Metric formulas:
 ProgramBench run-detail pages display total cost and total calls. ProgramBench's
 extended leaderboard table displays average cost and average calls per instance.
 The generated report follows the same split.
+
+## Doctor
+
+Before launching any expensive run, use the doctor script:
+
+```bash
+scripts/doctor.sh configs/linux-smoke-nointernet-xhigh.json
+```
+
+It checks the selected config, required commands, host architecture, Docker
+daemon/resources, ProgramBench checkout, wrapper access, target set, and Codex
+version. `scripts/start-sweep-tmux.sh` runs the same check before launching
+unless `SKIP_DOCTOR=1` is set.
 
 Before a serious run, check metric parity against ProgramBench's scoring code
 and bundled fixture runs:

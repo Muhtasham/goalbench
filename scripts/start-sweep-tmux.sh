@@ -4,6 +4,7 @@ set -euo pipefail
 CONFIG="${1:-configs/linux-smoke-nointernet-xhigh.json}"
 SESSION="${2:-}"
 PROGRAMBENCH_REPO="${PROGRAMBENCH_REPO:-}"
+SKIP_DOCTOR=0
 
 usage() {
   cat <<'EOF'
@@ -13,6 +14,8 @@ Usage:
 Starts scripts/run-sweep.sh in a detached tmux session and logs output under
 local_state/logs/. PROGRAMBENCH_REPO is passed through when set; otherwise
 run-sweep.sh auto-detects a sibling ../ProgramBench checkout.
+
+Set SKIP_DOCTOR=1 to skip the pre-launch scripts/doctor.sh check.
 EOF
 }
 
@@ -24,6 +27,10 @@ fi
 if [[ ! -f "$CONFIG" ]]; then
   echo "config not found: $CONFIG" >&2
   exit 1
+fi
+
+if [[ "${SKIP_DOCTOR:-0}" != "1" ]]; then
+  scripts/doctor.sh "$CONFIG"
 fi
 
 if [[ -z "$SESSION" ]]; then
