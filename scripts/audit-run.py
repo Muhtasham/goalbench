@@ -70,7 +70,6 @@ BINARY_ANALYSIS_TOOLS = (
     "xxd",
 )
 PARENT_INSPECTION = re.compile(r"(^|[;&|]\s*)(cat|find|grep|head|ls|rg|sed|tail|wc)\s+[^;&|]*\.\.")
-PARENT_DIRECTORY_CHANGE = re.compile(r"(^|[;&|]\s*)(cd|pushd)\s+\.\.(?:[/\s;&|]|$)")
 HARNESS_PARENT_PATH = re.compile(
     r"\.\./(?:package-submission|start-target|check-compliance|eval-submission|run\.json|GOAL_PROMPT|GOAL_OBJECTIVE)"
 )
@@ -78,7 +77,6 @@ WRAPPER_PATTERNS = (
     r"/workspace/executable",
     r"\bdocker\s+exec\b",
     r"\bprogrambench\b",
-    r"\bexec\s+[^;\n]*\s+\"\$@\"",
     r"\bsubprocess\.[^(]+\(.*executable",
     r"\bCommand::new\([^)]*executable",
 )
@@ -169,6 +167,26 @@ def uses_allowed_local_tools_docker(command: str, container_name: str) -> bool:
         re.search(rf"\bdocker\s+exec\s+(?:-i\s+)?{escaped}\b", command)
         or re.search(rf"\bdocker\s+cp\s+{escaped}:/", command)
         or re.search(rf"\bdocker\s+inspect\s+{escaped}\b", command)
+    )
+
+
+def command_segments(command: str) -> list[str]:
+    return [segment.strip() for segment in re.split(r"(?:;|\n|&&|\|\||\|)", command) if segment.strip()]
+
+
+def inspects_parent_directory(command: str) -> bool:
+    return any(PARENT_INSPECTION.search(segment) for segment in command_segments(command))
+
+
+def fetches_external_url(command: str) -> str:
+    return next(
+        (
+            match.group(0)
+            for segment in command_segments(command)
+            for match in re.finditer(r"^\s*(?:curl|wget)\b[^;&|]*\bhttps?://([^/\s'\"]+)", segment)
+            if match.group(1).rsplit(":", 1)[0] not in LOCALHOSTS
+        ),
+        "",
     )
 
 
@@ -298,9 +316,9 @@ def audit_command(
         findings.append(Finding(line_source, f"exec workdir escapes solution dir: {workdir}", command))
     if any(marker in command for marker in HOST_PATH_MARKERS):
         findings.append(Finding(line_source, "command contains private host or evaluator path", command))
-    if PARENT_INSPECTION.search(command):
+    if inspects_parent_directory(command):
         findings.append(Finding(line_source, "command inspects parent directories from solution workspace", command))
-    elif PARENT_DIRECTORY_CHANGE.search(command) or HARNESS_PARENT_PATH.search(command):
+    elif HARNESS_PARENT_PATH.search(command):
         findings.append(
             Finding(line_source, "command uses parent-directory traversal from solution workspace", command)
         )
@@ -321,11 +339,8 @@ def audit_command(
         for pattern in SOURCE_LOOKUP_PATTERNS
         if re.search(pattern, command)
     )
-    findings.extend(
-        Finding(line_source, f"external URL fetch: {match.group(0)}", command)
-        for match in re.finditer(r"\b(?:curl|wget)\b[^;&|]*\bhttps?://([^/\s'\"]+)", command)
-        if match.group(1).rsplit(":", 1)[0] not in LOCALHOSTS
-    )
+    if fetch := fetches_external_url(command):
+        findings.append(Finding(line_source, f"external URL fetch: {fetch}", command))
     findings.extend(
         Finding(line_source, f"forbidden cleanroom host/tool command: {tool}", command)
         for tool in FORBIDDEN_TOOLS
