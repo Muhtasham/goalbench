@@ -303,8 +303,10 @@ fi
 
 if [[ "$REFRESH_REPORT" -eq 1 ]]; then
   run uv run python scripts/refresh-openai-pricing.py
-  run uv run python scripts/refresh-programbench-baselines.py
-  run uv run python scripts/refresh-programbench-task-baselines.py --target-set "$TARGET_FILE" --merge-existing
+  if [[ "$SITE" -eq 1 || "$PUBLISH" -eq 1 ]]; then
+    run uv run python scripts/refresh-programbench-baselines.py
+    run uv run python scripts/refresh-programbench-task-baselines.py --target-set "$TARGET_FILE" --merge-existing
+  fi
 fi
 
 if [[ "$WATCH" -eq 1 && "$INCREMENTAL_FINALIZE" -eq 1 ]]; then
