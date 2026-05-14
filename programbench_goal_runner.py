@@ -334,7 +334,9 @@ def local_tools_offline_exports() -> str:
     return " ".join(f"{key}={shlex.quote(value)}" for key, value in values.items())
 
 
-def proxy_exports() -> str:
+def proxy_exports(enabled: bool) -> str:
+    if not enabled:
+        return ""
     keys = ("HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY", "NO_PROXY", "http_proxy", "https_proxy", "all_proxy", "no_proxy")
     return " ".join(f"{key}={shlex.quote(value)}" for key in keys if (value := os.environ.get(key)))
 
@@ -353,6 +355,10 @@ def strict_paper_compliant(args: argparse.Namespace) -> bool:
 def prepare(args: argparse.Namespace) -> None:
     if args.inference_mode == "paper" and args.target_access != "wrapper":
         raise SystemExit("paper mode requires --target-access wrapper; use no-internet for direct-docker ablations")
+    if args.strict_egress and args.inference_mode == "open-internet":
+        raise SystemExit("strict egress is incompatible with open-internet mode")
+    if args.strict_egress and not args.model.startswith("gpt-"):
+        raise SystemExit("strict OpenAI egress is only supported for OpenAI/Codex model runs")
     root = Path(args.run_root).expanduser().resolve()
     prepared_run_name = args.run_name or run_name(
         args.instance_id,
@@ -453,6 +459,7 @@ def prepare(args: argparse.Namespace) -> None:
                 "tool_cache_dir": str(cache_dir),
                 "tool_cache_env": tool_env,
                 "target_access": args.target_access,
+                "strict_egress": args.strict_egress,
                 "target_wrapper_command": args.target_wrapper_command,
                 "target_command": target_command,
                 "prompt_template": str(prompt_template_path),
@@ -547,7 +554,7 @@ docker exec -u agent {shlex.quote(container_name)} bash -lc '
         if local_tools_mode
         else f"GIT_CEILING_DIRECTORIES={shlex.quote(str(instance_dir))}"
     )
-    codex_env = " ".join(value for value in (base_codex_env, proxy_exports()) if value)
+    codex_env = " ".join(value for value in (base_codex_env, proxy_exports(args.strict_egress)) if value)
     write_executable(
         instance_dir / "start-codex-goal.sh",
         f"""#!/usr/bin/env bash
@@ -672,6 +679,7 @@ def main() -> None:
     prepare_parser.add_argument("--target-wrapper-command", default="sudo -n /usr/local/bin/pb-target-exec")
     prepare_parser.add_argument("--model", default=DEFAULT_MODEL)
     prepare_parser.add_argument("--reasoning-effort", default=DEFAULT_REASONING_EFFORT)
+    prepare_parser.add_argument("--strict-egress", action="store_true")
     prepare_parser.add_argument(
         "--prompt-template",
         default="",
@@ -697,6 +705,7 @@ def main() -> None:
     batch_parser.add_argument("--target-wrapper-command", default="sudo -n /usr/local/bin/pb-target-exec")
     batch_parser.add_argument("--model", default=DEFAULT_MODEL)
     batch_parser.add_argument("--reasoning-effort", default=DEFAULT_REASONING_EFFORT)
+    batch_parser.add_argument("--strict-egress", action="store_true")
     batch_parser.add_argument(
         "--prompt-template",
         default="",

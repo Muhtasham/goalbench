@@ -304,6 +304,12 @@ export NO_PROXY=localhost,127.0.0.1
 PUBLISH=1 scripts/start-sweep-tmux.sh configs/full-nointernet-xhigh.json
 ```
 
+Strict egress is config-scoped, not global. The full `no-internet`, `paper`,
+and `no-internet-local-tools` configs set `"strict_egress": true`; the
+`open-internet` configs leave it off so that ablation remains intentionally
+unrestricted. The runner refuses to combine strict egress with `open-internet`
+mode and currently supports strict egress only for OpenAI/Codex model runs.
+
 By default the proxy allows:
 
 ```text

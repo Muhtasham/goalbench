@@ -48,6 +48,7 @@ def common_watch_args(config: dict[str, Any]) -> list[str]:
         "--batch-name",
         config["batch_name"],
         *chain.from_iterable(option_args(name, config.get(name)) for name in names),
+        *flag_args("strict_egress", bool(config.get("strict_egress"))),
     ]
 
 

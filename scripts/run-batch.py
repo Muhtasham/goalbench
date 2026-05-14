@@ -110,6 +110,8 @@ def prepare_instance(args: argparse.Namespace, instance_id: str, run_root: Path)
         "--reasoning-effort",
         args.reasoning_effort,
     ]
+    if args.strict_egress:
+        cmd.append("--strict-egress")
     if args.run_name_prefix:
         cmd.extend(["--run-name", f"{args.run_name_prefix}-{instance_id.replace('__', '-').split('.', 1)[0]}"])
     output = run(cmd).stdout.splitlines()
@@ -351,6 +353,7 @@ def add_common_run_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--target-wrapper-command", default="sudo -n /usr/local/bin/pb-target-exec")
     parser.add_argument("--model", default="gpt-5.5")
     parser.add_argument("--reasoning-effort", default="xhigh")
+    parser.add_argument("--strict-egress", action="store_true")
     parser.add_argument("--run-name-prefix", default="")
 
 
