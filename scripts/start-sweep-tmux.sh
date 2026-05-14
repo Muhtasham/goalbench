@@ -11,6 +11,7 @@ OFFLINE_REPORT="${OFFLINE_REPORT:-0}"
 NO_TARGET_REFRESH="${NO_TARGET_REFRESH:-0}"
 SYNC_REPO="${SYNC_REPO:-1}"
 INCREMENTAL_FINALIZE="${INCREMENTAL_FINALIZE:-0}"
+MAX_PARALLEL="${MAX_PARALLEL:-}"
 
 usage() {
   cat <<'EOF'
@@ -29,6 +30,7 @@ Environment toggles:
   NO_TARGET_REFRESH=1 Do not refresh target_sets/all_tasks.txt.
   SYNC_REPO=0          Do not fetch and fast-forward this repo before launch.
   INCREMENTAL_FINALIZE=1 Evaluate/report after each watch tick.
+  MAX_PARALLEL=N       Override config max_parallel for this launch.
 EOF
 }
 
@@ -95,6 +97,9 @@ if [[ "$NO_TARGET_REFRESH" == "1" ]]; then
 fi
 if [[ "$INCREMENTAL_FINALIZE" == "1" ]]; then
   cmd+=(--incremental-finalize)
+fi
+if [[ -n "$MAX_PARALLEL" ]]; then
+  cmd+=(--max-parallel "$MAX_PARALLEL")
 fi
 
 tmux new-session -d -s "$SESSION" -c "$PWD" "$(printf '%q ' "${cmd[@]}") 2>&1 | tee -a $(printf '%q' "$log")"

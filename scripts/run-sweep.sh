@@ -14,6 +14,7 @@ ALLOW_PARTIAL=0
 INCREMENTAL_FINALIZE=0
 REFRESH_REPORT=1
 REFRESH_TARGET_SET=1
+MAX_PARALLEL="${MAX_PARALLEL:-}"
 
 usage() {
   cat <<'EOF'
@@ -33,6 +34,7 @@ Options:
   --once                     Pass --once to scripts/run-config.py watch
   --allow-partial            Allow finalize/report publish before every target is evaluated
   --incremental-finalize      Evaluate/report after each watch tick instead of waiting for all tasks
+  --max-parallel N           Override config max_parallel for Codex task concurrency
   --offline-report           Do not refresh OpenAI pricing or ProgramBench baseline rows
   --no-target-refresh        Do not regenerate target_sets/all_tasks.txt
   -h, --help                 Show this help
@@ -93,6 +95,10 @@ while [[ $# -gt 0 ]]; do
       INCREMENTAL_FINALIZE=1
       ALLOW_PARTIAL=1
       shift
+      ;;
+    --max-parallel)
+      MAX_PARALLEL="$2"
+      shift 2
       ;;
     --offline-report)
       REFRESH_REPORT=0
@@ -287,6 +293,9 @@ fi
 if [[ "$WATCH" -eq 1 && "$INCREMENTAL_FINALIZE" -eq 1 ]]; then
   while true; do
     watch_cmd=(uv run python scripts/run-config.py watch "$CONFIG" --once)
+    if [[ -n "$MAX_PARALLEL" ]]; then
+      watch_cmd+=(--max-parallel "$MAX_PARALLEL")
+    fi
     run "${watch_cmd[@]}"
     if [[ "$FINALIZE" -eq 1 ]]; then
       run_finalize
@@ -304,6 +313,9 @@ if [[ "$WATCH" -eq 1 && "$INCREMENTAL_FINALIZE" -eq 1 ]]; then
   done
 elif [[ "$WATCH" -eq 1 ]]; then
   watch_cmd=(uv run python scripts/run-config.py watch "$CONFIG")
+  if [[ -n "$MAX_PARALLEL" ]]; then
+    watch_cmd+=(--max-parallel "$MAX_PARALLEL")
+  fi
   if [[ "$ONCE" -eq 1 ]]; then
     watch_cmd+=(--once)
   fi

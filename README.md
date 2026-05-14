@@ -68,6 +68,14 @@ scripts/run-sweep.sh --dry-run
 scripts/run-sweep.sh
 ```
 
+Full-run configs default to `max_parallel=10`, so a normal launch can run up to
+ten Codex `/goal` task sessions at once. Lower it on smaller VMs with either:
+
+```bash
+scripts/run-sweep.sh --max-parallel 4
+MAX_PARALLEL=4 scripts/start-sweep-tmux.sh configs/full-nointernet-xhigh.json
+```
+
 Publish the regenerated GitHub Pages report after evaluation:
 
 ```bash
@@ -156,4 +164,3 @@ uv run pre-commit run --all-files
 - [Detailed runbook](docs/runbook.md)
 - [Paper/compliance notes](docs/paper-compliance.md)
 - [Public report](https://muhtasham.github.io/programbench-goal/)
-

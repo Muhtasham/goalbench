@@ -600,10 +600,11 @@ uv run python scripts/run-config.py watch configs/full-paper-xhigh.json
 ```
 
 The committed full-run configs all use `gpt-5.5`, 20 CPUs, 60GB RAM, and
-`max_parallel=1`. There are separate `high` and `xhigh` configs for
-`no-internet`, `open-internet`, `no-internet-local-tools`, and `paper`. Increase
-parallelism only after confirming Codex rate limits and host capacity. Do not
-mix reasoning modes in one batch.
+`max_parallel=10`. There are separate `high` and `xhigh` configs for
+`no-internet`, `open-internet`, `no-internet-local-tools`, and `paper`. Lower
+parallelism on smaller VMs with `scripts/run-sweep.sh --max-parallel N` or
+`MAX_PARALLEL=N scripts/start-sweep-tmux.sh ...`. Do not mix reasoning modes in
+one batch.
 
 Prepare with an official prompt template when one is available:
 
@@ -642,8 +643,9 @@ uv run python scripts/run-batch.py watch target_sets/first_batch_near_miss.txt \
   --reasoning-effort xhigh
 ```
 
-Use `--max-parallel 1` on a laptop until we know the active Codex rate limits.
-Use separate batch names for `high`, `xhigh`, `paper`, `no-internet`,
+Use `--max-parallel 1` on a laptop or small smoke VM. Use higher concurrency
+only when both Codex usage limits and host capacity are comfortable. Use
+separate batch names for `high`, `xhigh`, `paper`, `no-internet`,
 `no-internet-local-tools`, and `open-internet` runs. The manager stores resumable state under `local_state/batches/`, starts
 new work only when active sessions are below the concurrency cap, and pauses new
 launches when a running pane shows rate-limit text.

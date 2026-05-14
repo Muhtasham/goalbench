@@ -102,6 +102,7 @@ if command -v docker >/dev/null && docker info >/tmp/pb-doctor-docker-info.txt 2
   if [[ -f "$CONFIG" ]]; then
     required_cpus="$(config_value docker_cpus)"
     required_mem_gib="$(memory_gib "$(config_value docker_memory)")"
+    max_parallel="$(config_value max_parallel)"
     if (( docker_cpus < required_cpus )); then
       fail "docker CPUs below config: have ${docker_cpus}, need ${required_cpus}"
     else
@@ -116,6 +117,10 @@ PY
       ok "docker memory satisfies config: ${required_mem_gib} GiB"
     else
       fail "docker memory below config: have ${docker_mem_gib} GiB, need ${required_mem_gib} GiB"
+    fi
+    if (( max_parallel > 1 )); then
+      warn "max_parallel=${max_parallel}; this can run ${max_parallel} target containers/Codex sessions at once"
+      warn "per-container limits are ${required_cpus} CPUs and ${required_mem_gib} GiB; lower with MAX_PARALLEL=N or scripts/run-sweep.sh --max-parallel N if the VM is too small"
     fi
   fi
 else

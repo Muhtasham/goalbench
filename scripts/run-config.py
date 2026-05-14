@@ -31,10 +31,9 @@ def run_version(config: dict[str, Any]) -> str:
     return os.environ.get("RUN_VERSION") or str(config.get("run_version") or "")
 
 
-def common_watch_args(config: dict[str, Any]) -> list[str]:
+def common_watch_args(config: dict[str, Any], args: argparse.Namespace) -> list[str]:
     names = (
         "run_root",
-        "max_parallel",
         "poll_seconds",
         "docker_cpus",
         "docker_memory",
@@ -53,6 +52,10 @@ def common_watch_args(config: dict[str, Any]) -> list[str]:
         "--batch-name",
         config["batch_name"],
         *option_args("run_version", run_version(config)),
+        *option_args(
+            "max_parallel",
+            args.max_parallel if args.max_parallel is not None else config.get("max_parallel"),
+        ),
         *chain.from_iterable(option_args(name, config.get(name)) for name in names),
         *flag_args("strict_egress", bool(config.get("strict_egress"))),
     ]
@@ -60,7 +63,7 @@ def common_watch_args(config: dict[str, Any]) -> list[str]:
 
 def command(config: dict[str, Any], args: argparse.Namespace) -> list[str]:
     if args.action == "watch":
-        return [*common_watch_args(config), *flag_args("once", args.once)]
+        return [*common_watch_args(config, args), *flag_args("once", args.once)]
     if args.action == "status":
         return [
             sys.executable,
@@ -88,6 +91,7 @@ def main() -> None:
     parser.add_argument("action", choices=["watch", "status", "finalize"])
     parser.add_argument("config")
     parser.add_argument("--once", action="store_true", help="only applies to watch")
+    parser.add_argument("--max-parallel", type=int, default=None, help="override config max_parallel for watch")
     parser.add_argument("--programbench-repo", default="", help="only applies to finalize")
     parser.add_argument("--allow-partial", action="store_true", help="only applies to finalize")
     parser.add_argument("--dry-run", action="store_true")

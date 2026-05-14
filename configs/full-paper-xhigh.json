@@ -1,7 +1,7 @@
 {
   "batch_name": "full-paper-xhigh",
   "target_file": "target_sets/all_tasks.txt",
-  "max_parallel": 1,
+  "max_parallel": 10,
   "poll_seconds": 60,
   "docker_cpus": 20,
   "docker_memory": "60g",
