@@ -11,6 +11,7 @@ PUBLISH=0
 DRY_RUN=0
 ONCE=0
 ALLOW_PARTIAL=0
+INCREMENTAL_FINALIZE=0
 REFRESH_REPORT=1
 REFRESH_TARGET_SET=1
 
@@ -31,6 +32,7 @@ Options:
   --dry-run                  Print commands without running them
   --once                     Pass --once to scripts/run-config.py watch
   --allow-partial            Allow finalize/report publish before every target is evaluated
+  --incremental-finalize      Evaluate/report after each watch tick instead of waiting for all tasks
   --offline-report           Do not refresh OpenAI pricing or ProgramBench baseline rows
   --no-target-refresh        Do not regenerate target_sets/all_tasks.txt
   -h, --help                 Show this help
@@ -84,6 +86,11 @@ while [[ $# -gt 0 ]]; do
       shift
       ;;
     --allow-partial)
+      ALLOW_PARTIAL=1
+      shift
+      ;;
+    --incremental-finalize)
+      INCREMENTAL_FINALIZE=1
       ALLOW_PARTIAL=1
       shift
       ;;
@@ -154,11 +161,92 @@ print(json.loads(open(sys.argv[1]).read())[sys.argv[2]])
 PY
 }
 
+poll_seconds() {
+  uv run python - "$CONFIG" <<'PY'
+import json
+import sys
+
+print(json.loads(open(sys.argv[1]).read()).get("poll_seconds", 60))
+PY
+}
+
 collect_results_csvs() {
   {
     find local_state -maxdepth 1 -type f -name '*results.csv'
     find local_state/batches -mindepth 2 -maxdepth 3 -type f -name 'results.csv' 2>/dev/null || true
   } | sort
+}
+
+batch_complete() {
+  uv run python - "$CONFIG" "$RUN_VERSION" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+config = json.loads(Path(sys.argv[1]).read_text())
+version = sys.argv[2] or str(config.get("run_version") or "")
+path = (
+    Path("local_state/batches") / config["batch_name"] / version / "state.json"
+    if version
+    else Path("local_state/batches") / f"{config['batch_name']}.json"
+)
+if not path.is_file():
+    raise SystemExit(1)
+items = json.loads(path.read_text())["items"].values()
+raise SystemExit(0 if items and all(item["status"] in {"evaluated", "failed"} for item in items) else 1)
+PY
+}
+
+run_finalize() {
+  finalize_cmd=(uv run python scripts/run-config.py finalize "$CONFIG" --programbench-repo "$PROGRAMBENCH_REPO")
+  if [[ "$ALLOW_PARTIAL" -eq 1 ]]; then
+    finalize_cmd+=(--allow-partial)
+  fi
+  run "${finalize_cmd[@]}"
+}
+
+run_site() {
+  result_csvs_file="$(mktemp)"
+  collect_results_csvs > "$result_csvs_file"
+
+  export_cmd=(uv run python scripts/export-public-evidence.py --clean-output)
+  while IFS= read -r path; do
+    [[ -n "$path" ]] || continue
+    export_cmd+=(--results-csv "$path")
+  done < "$result_csvs_file"
+  run "${export_cmd[@]}"
+
+  build_cmd=(uv run python scripts/build-report.py)
+  while IFS= read -r path; do
+    [[ -n "$path" ]] || continue
+    build_cmd+=("$path")
+  done < "$result_csvs_file"
+  rm -f "$result_csvs_file"
+  build_cmd+=(--output-dir docs --clean-output)
+  if [[ "$REFRESH_REPORT" -eq 0 ]]; then
+    build_cmd+=(--no-refresh-baselines)
+  fi
+  run "${build_cmd[@]}"
+  run uv run python scripts/check-docs-size.py
+
+  print_cmd uv run python scripts/privacy-scan.py
+  if [[ "$DRY_RUN" -eq 0 ]] && ! uv run python scripts/privacy-scan.py; then
+    echo "privacy scan found local paths in public files" >&2
+    exit 1
+  fi
+}
+
+run_publish() {
+  run git add docs
+  if [[ "$DRY_RUN" -eq 1 ]]; then
+    print_cmd git commit -m "Update ProgramBench goal report"
+    print_cmd git push
+  elif git diff --cached --quiet -- docs; then
+    echo "no docs changes to publish"
+  else
+    run git commit -m "Update ProgramBench goal report"
+    run git push
+  fi
 }
 
 TARGET_FILE="$(config_value target_file)"
@@ -196,7 +284,25 @@ if [[ "$REFRESH_REPORT" -eq 1 ]]; then
   run uv run python scripts/refresh-programbench-task-baselines.py --target-set "$TARGET_FILE" --merge-existing
 fi
 
-if [[ "$WATCH" -eq 1 ]]; then
+if [[ "$WATCH" -eq 1 && "$INCREMENTAL_FINALIZE" -eq 1 ]]; then
+  while true; do
+    watch_cmd=(uv run python scripts/run-config.py watch "$CONFIG" --once)
+    run "${watch_cmd[@]}"
+    if [[ "$FINALIZE" -eq 1 ]]; then
+      run_finalize
+    fi
+    if [[ "$SITE" -eq 1 ]]; then
+      run_site
+    fi
+    if [[ "$PUBLISH" -eq 1 ]]; then
+      run_publish
+    fi
+    if [[ "$ONCE" -eq 1 ]] || batch_complete; then
+      break
+    fi
+    sleep "$(poll_seconds)"
+  done
+elif [[ "$WATCH" -eq 1 ]]; then
   watch_cmd=(uv run python scripts/run-config.py watch "$CONFIG")
   if [[ "$ONCE" -eq 1 ]]; then
     watch_cmd+=(--once)
@@ -204,54 +310,14 @@ if [[ "$WATCH" -eq 1 ]]; then
   run "${watch_cmd[@]}"
 fi
 
-if [[ "$FINALIZE" -eq 1 ]]; then
-  finalize_cmd=(uv run python scripts/run-config.py finalize "$CONFIG" --programbench-repo "$PROGRAMBENCH_REPO")
-  if [[ "$ALLOW_PARTIAL" -eq 1 ]]; then
-    finalize_cmd+=(--allow-partial)
-  fi
-  run "${finalize_cmd[@]}"
+if [[ "$FINALIZE" -eq 1 && "$INCREMENTAL_FINALIZE" -eq 0 ]]; then
+  run_finalize
 fi
 
-if [[ "$SITE" -eq 1 ]]; then
-  result_csvs_file="$(mktemp)"
-  collect_results_csvs > "$result_csvs_file"
-
-  export_cmd=(uv run python scripts/export-public-evidence.py --clean-output)
-  while IFS= read -r path; do
-    [[ -n "$path" ]] || continue
-    export_cmd+=(--results-csv "$path")
-  done < "$result_csvs_file"
-  run "${export_cmd[@]}"
-
-  build_cmd=(uv run python scripts/build-report.py)
-  while IFS= read -r path; do
-    [[ -n "$path" ]] || continue
-    build_cmd+=("$path")
-  done < "$result_csvs_file"
-  rm -f "$result_csvs_file"
-  build_cmd+=(--output-dir docs --clean-output)
-  if [[ "$REFRESH_REPORT" -eq 0 ]]; then
-    build_cmd+=(--no-refresh-baselines)
-  fi
-  run "${build_cmd[@]}"
-  run uv run python scripts/check-docs-size.py
-
-  print_cmd uv run python scripts/privacy-scan.py
-  if [[ "$DRY_RUN" -eq 0 ]] && ! uv run python scripts/privacy-scan.py; then
-    echo "privacy scan found local paths in public files" >&2
-    exit 1
-  fi
+if [[ "$SITE" -eq 1 && "$INCREMENTAL_FINALIZE" -eq 0 ]]; then
+  run_site
 fi
 
-if [[ "$PUBLISH" -eq 1 ]]; then
-  run git add docs
-  if [[ "$DRY_RUN" -eq 1 ]]; then
-    print_cmd git commit -m "Update ProgramBench goal report"
-    print_cmd git push
-  elif git diff --cached --quiet -- docs; then
-    echo "no docs changes to publish"
-  else
-    run git commit -m "Update ProgramBench goal report"
-    run git push
-  fi
+if [[ "$PUBLISH" -eq 1 && "$INCREMENTAL_FINALIZE" -eq 0 ]]; then
+  run_publish
 fi

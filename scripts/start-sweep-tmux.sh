@@ -10,6 +10,7 @@ PUBLISH="${PUBLISH:-0}"
 OFFLINE_REPORT="${OFFLINE_REPORT:-0}"
 NO_TARGET_REFRESH="${NO_TARGET_REFRESH:-0}"
 SYNC_REPO="${SYNC_REPO:-1}"
+INCREMENTAL_FINALIZE="${INCREMENTAL_FINALIZE:-0}"
 
 usage() {
   cat <<'EOF'
@@ -27,6 +28,7 @@ Environment toggles:
   OFFLINE_REPORT=1    Use cached pricing and ProgramBench baseline data.
   NO_TARGET_REFRESH=1 Do not refresh target_sets/all_tasks.txt.
   SYNC_REPO=0          Do not fetch and fast-forward this repo before launch.
+  INCREMENTAL_FINALIZE=1 Evaluate/report after each watch tick.
 EOF
 }
 
@@ -90,6 +92,9 @@ if [[ "$OFFLINE_REPORT" == "1" ]]; then
 fi
 if [[ "$NO_TARGET_REFRESH" == "1" ]]; then
   cmd+=(--no-target-refresh)
+fi
+if [[ "$INCREMENTAL_FINALIZE" == "1" ]]; then
+  cmd+=(--incremental-finalize)
 fi
 
 tmux new-session -d -s "$SESSION" -c "$PWD" "$(printf '%q ' "${cmd[@]}") 2>&1 | tee -a $(printf '%q' "$log")"

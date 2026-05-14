@@ -472,6 +472,20 @@ scripts/run-sweep.sh --publish
 scripts/run-sweep.sh --skip-watch --publish
 ```
 
+For long runs, prefer incremental finalize/reporting so each completed task is
+packaged, evaluated, summarized, and optionally published without waiting for
+the whole batch:
+
+```bash
+scripts/run-sweep.sh --incremental-finalize --publish
+INCREMENTAL_FINALIZE=1 PUBLISH=1 scripts/start-sweep-tmux.sh configs/full-nointernet-xhigh.json
+```
+
+The public site intentionally publishes sanitized manifests, eval summaries,
+usage audits, and score CSV/JSON. It does not publish submission tarballs by
+default; those stay in the VM run root as private backups and can be archived
+separately if needed.
+
 The tmux helper uses the same defaults without publishing:
 
 ```bash
