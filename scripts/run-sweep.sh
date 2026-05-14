@@ -199,7 +199,11 @@ path = (
 if not path.is_file():
     raise SystemExit(1)
 items = json.loads(path.read_text())["items"].values()
-raise SystemExit(0 if items and all(item["status"] in {"evaluated", "failed"} for item in items) else 1)
+raise SystemExit(
+    0
+    if items and all(item["status"] in {"evaluated", "failed", "finalize_failed"} for item in items)
+    else 1
+)
 PY
 }
 
