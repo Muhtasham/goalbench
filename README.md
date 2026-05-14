@@ -73,8 +73,11 @@ scripts/bootstrap-linux-vm.sh
 
 The bootstrap installs base packages, Docker, `uv`, `tmux`, Codex CLI when
 missing, the sibling `../ProgramBench` checkout, and the narrow
-`/usr/local/bin/pb-target-exec` wrapper. If it adds your user to the Docker
-group, log out and back in before running sweeps.
+`/usr/local/bin/pb-target-exec` wrapper. It also writes a Codex config with
+`service_tier = "fast"` and `[features].fast_mode = true`, so GPT-5.5 runs use
+Codex fast mode by default. Fast mode trades higher credit consumption for
+lower latency; API-key logins use standard API pricing instead. If it adds your
+user to the Docker group, log out and back in before running sweeps.
 
 Then authenticate Codex on the VM:
 

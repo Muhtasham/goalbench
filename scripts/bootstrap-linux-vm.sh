@@ -5,6 +5,7 @@ INSTALL_CODEX=1
 INSTALL_DOCKER=1
 INSTALL_PROGRAMBENCH=1
 INSTALL_WRAPPER=1
+CONFIGURE_CODEX_FAST=1
 CODEX_USER="$(id -un)"
 
 usage() {
@@ -18,6 +19,7 @@ Options:
   --skip-docker             Do not install Docker
   --skip-programbench       Do not clone/sync sibling ../ProgramBench
   --skip-wrapper            Do not install /usr/local/bin/pb-target-exec sudo wrapper
+  --skip-codex-fast-config  Do not set Codex fast mode as the VM default
   -h, --help                Show this help
 
 Run this on a fresh Ubuntu x86_64 VM from the programbench-goal repo root.
@@ -45,6 +47,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --skip-wrapper)
       INSTALL_WRAPPER=0
+      shift
+      ;;
+    --skip-codex-fast-config)
+      CONFIGURE_CODEX_FAST=0
       shift
       ;;
     -h | --help)
@@ -125,6 +131,19 @@ fi
 
 if [[ "$INSTALL_CODEX" -eq 1 ]] && ! command -v codex >/dev/null; then
   sudo npm install -g @openai/codex
+fi
+
+if [[ "$CONFIGURE_CODEX_FAST" -eq 1 ]]; then
+  CODEX_HOME="$(getent passwd "$CODEX_USER" | cut -d: -f6)/.codex"
+  sudo install -d -o "$CODEX_USER" -g "$CODEX_USER" "$CODEX_HOME"
+  sudo tee "$CODEX_HOME/config.toml" >/dev/null <<'EOF'
+service_tier = "fast"
+
+[features]
+goals = true
+fast_mode = true
+EOF
+  sudo chown "$CODEX_USER:$CODEX_USER" "$CODEX_HOME/config.toml"
 fi
 
 uv sync
