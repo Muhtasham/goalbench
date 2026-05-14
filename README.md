@@ -105,6 +105,14 @@ For the stricter paper-mode smoke:
 scripts/start-sweep-tmux.sh configs/linux-smoke-paper-xhigh.json
 ```
 
+If you are using a smaller Hetzner shared `cpx62` smoke VM, use the labeled
+16 CPU / 32GB config instead:
+
+```bash
+scripts/doctor.sh configs/hetzner-cpx62-smoke-xhigh.json
+scripts/start-sweep-tmux.sh configs/hetzner-cpx62-smoke-xhigh.json
+```
+
 Only start full sweeps after a Linux smoke produces `submission.tar.gz`,
 ProgramBench `.eval.json`, `results.csv`, and a clean audit.
 
