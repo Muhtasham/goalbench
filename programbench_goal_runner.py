@@ -398,6 +398,7 @@ def prepare(args: argparse.Namespace) -> None:
     )
 
     solution_dir.mkdir(parents=True, exist_ok=True)
+    helper_dir.mkdir(parents=True, exist_ok=True)
     cache_dir.mkdir(parents=True, exist_ok=True)
     write_guard_bin(guard_dir, container_name, args.target_access, args.target_wrapper_command, local_tools_mode)
     (solution_dir / "AGENT_RULES.md").write_text(
