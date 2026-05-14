@@ -119,6 +119,9 @@ if ! command -v uv >/dev/null; then
   curl -LsSf https://astral.sh/uv/install.sh | sh
   export PATH="$HOME/.local/bin:$PATH"
 fi
+if ! command -v uv >/dev/null && [[ -x "$HOME/.local/bin/uv" ]]; then
+  sudo ln -sf "$HOME/.local/bin/uv" /usr/local/bin/uv
+fi
 
 if [[ "$INSTALL_CODEX" -eq 1 ]] && ! command -v codex >/dev/null; then
   sudo npm install -g @openai/codex

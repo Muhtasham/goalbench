@@ -74,6 +74,11 @@ need_cmd docker
 need_cmd tmux
 need_cmd codex
 
+if ! command -v uv >/dev/null; then
+  printf '\nuv is required for config parsing and ProgramBench checks. Install it or expose it on PATH.\n' >&2
+  exit 1
+fi
+
 if [[ "$(uname -s)" == "Linux" ]]; then
   ok "host system Linux"
 else
