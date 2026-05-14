@@ -81,6 +81,7 @@ def command(config: dict[str, Any], args: argparse.Namespace) -> list[str]:
         config["batch_name"],
         *option_args("run_version", run_version(config)),
         *option_args("programbench_repo", args.programbench_repo or config.get("programbench_repo")),
+        *option_args("eval_timeout_seconds", config.get("eval_timeout_seconds")),
         *flag_args("strict_paper", bool(config.get("strict_paper"))),
         *flag_args("allow_partial", args.allow_partial),
     ]

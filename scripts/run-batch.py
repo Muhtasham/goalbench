@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import signal
 import subprocess
 import sys
 import time
@@ -71,6 +73,30 @@ def save_state(state: dict) -> None:
 
 def run(cmd: list[str], cwd: Path = REPO, check: bool = True) -> subprocess.CompletedProcess[str]:
     return subprocess.run(cmd, cwd=cwd, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, check=check)
+
+
+def run_with_timeout(cmd: list[str], timeout: int, cwd: Path = REPO) -> subprocess.CompletedProcess[str]:
+    process = subprocess.Popen(
+        cmd,
+        cwd=cwd,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        start_new_session=True,
+    )
+    try:
+        output, _ = process.communicate(timeout=timeout)
+    except subprocess.TimeoutExpired as e:
+        try:
+            os.killpg(process.pid, signal.SIGTERM)
+            output, _ = process.communicate(timeout=10)
+        except subprocess.TimeoutExpired:
+            os.killpg(process.pid, signal.SIGKILL)
+            output, _ = process.communicate()
+        raise subprocess.TimeoutExpired(cmd, timeout, output=output) from e
+    if process.returncode:
+        raise subprocess.CalledProcessError(process.returncode, cmd, output=output)
+    return subprocess.CompletedProcess(cmd, process.returncode, output)
 
 
 def tmux_has_session(session: str) -> bool:
@@ -284,9 +310,15 @@ def finalize_one(args: argparse.Namespace, record: dict) -> dict:
         audit_cmd.append(str(instance_dir))
         run(audit_cmd)
         if args.programbench_repo:
-            run([str(instance_dir / "eval-submission.sh"), str(Path(args.programbench_repo).expanduser())])
+            eval_cmd = [str(instance_dir / "eval-submission.sh"), str(Path(args.programbench_repo).expanduser())]
+            run_with_timeout(eval_cmd, args.eval_timeout_seconds) if args.eval_timeout_seconds else run(eval_cmd)
             return {**record, "status": "evaluated", "evaluated_at": now(), "last_error": ""}
         return {**record, "status": "packaged", "packaged_at": now(), "last_error": ""}
+    except subprocess.TimeoutExpired as e:
+        return add_error(
+            {**record, "status": "finalize_failed", "finalize_failed_at": now()},
+            f"{e.output or ''}\ncommand timed out after {e.timeout}s",
+        )
     except subprocess.CalledProcessError as e:
         return add_error({**record, "status": "finalize_failed", "finalize_failed_at": now()}, e.stdout)
 
@@ -412,6 +444,7 @@ def main() -> None:
     finalize_parser.add_argument("--programbench-repo", default="")
     finalize_parser.add_argument("--strict-paper", action="store_true")
     finalize_parser.add_argument("--allow-partial", action="store_true")
+    finalize_parser.add_argument("--eval-timeout-seconds", type=int, default=7200)
     finalize_parser.set_defaults(func=finalize)
 
     retry_parser = subparsers.add_parser("retry")
