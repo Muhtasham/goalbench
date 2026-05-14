@@ -633,6 +633,18 @@ Check progress:
 uv run python scripts/run-batch.py status --batch-name first-near-miss-xhigh
 ```
 
+Back up a completed or in-progress version on the VM before teardown:
+
+```bash
+scripts/backup-run-root.sh \
+  --batch-name first-near-miss-xhigh \
+  --run-version 20260515-nointernet-xhigh-a
+```
+
+The backup is a private `tar.gz` under `local_state/backups/` by default. It
+contains the batch state plus the matching `~/pb-goal-runs/` artifact tree and
+is ignored by git.
+
 After sessions reach `goal_done`, package, audit, evaluate, summarize, and
 collect local artifacts:
 
