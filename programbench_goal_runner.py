@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import platform
 import re
 import shlex
@@ -333,6 +334,11 @@ def local_tools_offline_exports() -> str:
     return " ".join(f"{key}={shlex.quote(value)}" for key, value in values.items())
 
 
+def proxy_exports() -> str:
+    keys = ("HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY", "NO_PROXY", "http_proxy", "https_proxy", "all_proxy", "no_proxy")
+    return " ".join(f"{key}={shlex.quote(value)}" for key in keys if (value := os.environ.get(key)))
+
+
 def strict_paper_compliant(args: argparse.Namespace) -> bool:
     return (
         args.inference_mode == "paper"
@@ -530,7 +536,7 @@ docker exec -u agent {shlex.quote(container_name)} bash -lc '
 )
 """,
     )
-    codex_env = (
+    base_codex_env = (
         f"PATH={shlex.quote(str(guard_dir))}:$PATH GIT_CEILING_DIRECTORIES={shlex.quote(str(instance_dir))} "
         f"{tool_cache_exports(cache_dir)}"
         if cleanroom_mode
@@ -541,6 +547,7 @@ docker exec -u agent {shlex.quote(container_name)} bash -lc '
         if local_tools_mode
         else f"GIT_CEILING_DIRECTORIES={shlex.quote(str(instance_dir))}"
     )
+    codex_env = " ".join(value for value in (base_codex_env, proxy_exports()) if value)
     write_executable(
         instance_dir / "start-codex-goal.sh",
         f"""#!/usr/bin/env bash

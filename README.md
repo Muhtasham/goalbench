@@ -278,26 +278,52 @@ not added again because it is a subset of output tokens in the local logs. When
 OpenAI's model docs expose a long-context threshold, the summarizer applies
 that multiplier per Codex call using `last_token_usage.input_tokens`.
 
-## Optional Host Egress Guard
+## Strict Host Egress Guard
 
-For a stronger run on Linux, create a dedicated user for the Codex process and
-apply the UID-scoped OpenAI egress guard:
+For a stronger run on Linux, run Codex as a dedicated non-root user and force
+all model traffic through the local OpenAI allowlist proxy. This is stricter
+than the DNS-to-IP allowlist because direct egress from the Codex UID is blocked
+and the proxy only accepts HTTPS `CONNECT` requests to configured OpenAI/Codex
+hostnames.
 
 ```bash
 sudo useradd -m codex-runner
-sudo scripts/linux-openai-egress-guard.sh apply codex-runner
+sudo nohup scripts/openai-connect-proxy.py \
+  >/var/log/pb-openai-connect-proxy.log 2>&1 &
+sudo scripts/linux-openai-egress-guard.sh proxy-apply codex-runner
 sudo scripts/linux-openai-egress-guard.sh status codex-runner
 ```
 
-By default the guard allows DNS plus HTTPS to the currently resolved IPs for:
+Run the sweep as `codex-runner` with proxy variables set:
+
+```bash
+export HTTPS_PROXY=http://127.0.0.1:18080
+export HTTP_PROXY=http://127.0.0.1:18080
+export ALL_PROXY=http://127.0.0.1:18080
+export NO_PROXY=localhost,127.0.0.1
+PUBLISH=1 scripts/start-sweep-tmux.sh configs/full-nointernet-xhigh.json
+```
+
+By default the proxy allows:
 
 ```text
 api.openai.com auth.openai.com chatgpt.com ab.chatgpt.com persistent.oaistatic.com
 ```
 
-This is intentionally simple and conservative. It is IP-based because Linux
-firewalls do not filter by domain name directly; if OpenAI/CDN IPs change during
-a long run, refresh the rules by running `apply` again. To remove the guard:
+Set `OPENAI_EGRESS_DOMAINS` before starting the proxy if the installed Codex
+build needs an additional official OpenAI hostname. The generated Codex launcher
+copies proxy environment variables into per-task `tmux` sessions so the setting
+survives the sweep handoff.
+
+There is also a simpler DNS-to-IP allowlist mode:
+
+```bash
+sudo scripts/linux-openai-egress-guard.sh apply codex-runner
+```
+
+Prefer `proxy-apply` for publishable runs. Do not apply either guard to `root`
+on a live SSH VM; root-owned SSH/server processes may need normal egress. To
+remove the guard:
 
 ```bash
 sudo scripts/linux-openai-egress-guard.sh delete codex-runner

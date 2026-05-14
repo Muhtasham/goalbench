@@ -5,6 +5,7 @@ usage() {
   cat <<'EOF'
 Usage:
   sudo scripts/linux-openai-egress-guard.sh apply <user>
+  sudo scripts/linux-openai-egress-guard.sh proxy-apply <user>
   sudo scripts/linux-openai-egress-guard.sh delete <user>
   sudo scripts/linux-openai-egress-guard.sh status <user>
 
@@ -15,6 +16,10 @@ Creates UID-scoped iptables OUTPUT rules so the given Linux user can only make:
 
 Override allowlist:
   OPENAI_EGRESS_DOMAINS="api.openai.com chatgpt.com auth.openai.com" sudo ...
+
+proxy-apply is stricter: it allows only loopback for the user and rejects all
+direct external egress. Use it with scripts/openai-connect-proxy.py running as a
+different user/root and launch Codex with HTTPS_PROXY=http://127.0.0.1:18080.
 
 This is intentionally Linux-only. Run Codex as a dedicated user and apply this
 guard to that user, not to your normal admin account.
@@ -42,6 +47,7 @@ uid="$(id -u "$user")"
 chain4="PB_OPENAI_${uid}"
 chain6="PB_OPENAI6_${uid}"
 domains="${OPENAI_EGRESS_DOMAINS:-api.openai.com auth.openai.com chatgpt.com ab.chatgpt.com persistent.oaistatic.com}"
+proxy_port="${OPENAI_PROXY_PORT:-18080}"
 
 require_cmd() {
   command -v "$1" >/dev/null || {
@@ -112,9 +118,27 @@ apply_rules() {
   ip6tables -A "$chain6" -j REJECT
 }
 
+proxy_apply_rules() {
+  delete_rules
+  iptables -N "$chain4"
+  ip6tables -N "$chain6"
+  iptables -A OUTPUT -m owner --uid-owner "$uid" -j "$chain4"
+  ip6tables -A OUTPUT -m owner --uid-owner "$uid" -j "$chain6"
+  iptables -A "$chain4" -o lo -p tcp --dport "$proxy_port" -j ACCEPT
+  iptables -A "$chain4" -o lo -j ACCEPT
+  ip6tables -A "$chain6" -o lo -j ACCEPT
+  iptables -A "$chain4" -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+  ip6tables -A "$chain6" -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+  iptables -A "$chain4" -j REJECT
+  ip6tables -A "$chain6" -j REJECT
+}
+
 case "$action" in
   apply)
     apply_rules
+    ;;
+  proxy-apply)
+    proxy_apply_rules
     ;;
   delete)
     delete_rules
