@@ -18,6 +18,7 @@ DEFAULT_STATE_ROOT = REPO / "local_state" / "batches"
 DONE_MARKERS = ("Goal achieved", "Goal marked complete")
 RATE_LIMIT_MARKERS = ("rate limit", "rate_limit", "429")
 FINALIZE_READY = {"goal_done"}
+TERMINAL_STATUSES = {"goal_done", "packaged", "evaluated", "failed", "finalize_failed"}
 
 
 def now() -> str:
@@ -292,9 +293,7 @@ def watch(args: argparse.Namespace) -> None:
         print_status(state)
         if args.once:
             return
-        if all(
-            record["status"] in {"goal_done", "packaged", "evaluated", "failed"} for record in state["items"].values()
-        ):
+        if all(record["status"] in TERMINAL_STATUSES for record in state["items"].values()):
             return
         time.sleep(args.poll_seconds)
 
