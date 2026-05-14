@@ -192,6 +192,7 @@ def refresh_record(record: dict) -> dict:
         return record
     output = record_output(record)
     if any(marker in output for marker in DONE_MARKERS):
+        cleanup_target_container(record)
         return {**record, "status": "goal_done", "goal_done_at": now(), "last_pane_tail": output[-4000:]}
     if output and any(marker in output.lower() for marker in RATE_LIMIT_MARKERS):
         return {**record, "last_rate_limit_seen_at": now(), "last_pane_tail": output[-4000:]}
