@@ -17,7 +17,7 @@ DEFAULT_RUNS_ROOT = Path.home() / "pb-goal-runs"
 DEFAULT_STATE_ROOT = REPO / "local_state" / "batches"
 DONE_MARKERS = ("Goal achieved", "Goal marked complete")
 RATE_LIMIT_MARKERS = ("rate limit", "rate_limit", "429")
-FINALIZE_READY = {"goal_done", "finalize_failed"}
+FINALIZE_READY = {"goal_done"}
 
 
 def now() -> str:
@@ -366,7 +366,7 @@ def finalize(args: argparse.Namespace) -> None:
     state = load_state(args.batch_name, args.run_version)
     refresh_state(state)
     for instance_id, record in list(state["items"].items()):
-        if record["status"] in FINALIZE_READY:
+        if record["status"] in FINALIZE_READY or (args.retry_finalize_failed and record["status"] == "finalize_failed"):
             state["items"][instance_id] = finalize_one(args, record)
             save_state(state)
     summarize_and_collect(args, state)
@@ -445,6 +445,7 @@ def main() -> None:
     finalize_parser.add_argument("--strict-paper", action="store_true")
     finalize_parser.add_argument("--allow-partial", action="store_true")
     finalize_parser.add_argument("--eval-timeout-seconds", type=int, default=7200)
+    finalize_parser.add_argument("--retry-finalize-failed", action="store_true")
     finalize_parser.set_defaults(func=finalize)
 
     retry_parser = subparsers.add_parser("retry")
