@@ -625,7 +625,7 @@ cd "$programbench_repo"
 uv run programbench eval {shlex.quote(str(instance_dir.parent))} \\
   --filter {shlex.quote(args.instance_id)} \\
   --workers 1 \\
-  --branch-workers 2 \\
+  --branch-workers 1 \\
   --docker-cpus {shlex.quote(str(args.docker_cpus))}
 uv run programbench info {shlex.quote(str(instance_dir.parent))}
 """,
