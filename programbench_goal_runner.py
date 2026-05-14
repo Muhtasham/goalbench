@@ -369,6 +369,7 @@ def prepare(args: argparse.Namespace) -> None:
     instance_dir = root / prepared_run_name / args.instance_id
     solution_dir = instance_dir / "solution"
     guard_dir = instance_dir / "guard-bin"
+    helper_dir = instance_dir / "helper-bin"
     cache_dir = instance_dir / "tool-caches"
     paper_mode = args.inference_mode == "paper"
     cleanroom_mode = args.inference_mode in {"paper", "no-internet"}
@@ -557,7 +558,7 @@ docker exec -u agent {shlex.quote(container_name)} bash -lc '
             f"{local_tools_offline_exports()}"
         )
         if local_tools_mode
-        else f"GIT_CEILING_DIRECTORIES={shlex.quote(str(instance_dir))}"
+        else f"PATH={shlex.quote(str(helper_dir))}:$PATH GIT_CEILING_DIRECTORIES={shlex.quote(str(instance_dir))}"
     )
     codex_env = " ".join(value for value in (base_codex_env, proxy_exports(args.strict_egress)) if value)
     write_executable(
@@ -622,6 +623,13 @@ exec {shlex.quote(str(instance_dir / "package-submission.sh"))} "$@"
 """,
     )
     write_executable(
+        helper_dir / "package-submission",
+        f"""#!/usr/bin/env bash
+set -euo pipefail
+exec {shlex.quote(str(instance_dir / "package-submission.sh"))} "$@"
+""",
+    )
+    write_executable(
         instance_dir / "eval-submission.sh",
         f"""#!/usr/bin/env bash
 set -euo pipefail
@@ -659,6 +667,7 @@ def prepare_batch(args: argparse.Namespace) -> None:
                     inference_mode=args.inference_mode,
                     model=args.model,
                     reasoning_effort=args.reasoning_effort,
+                    strict_egress=args.strict_egress,
                 )
             )
 
