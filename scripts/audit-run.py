@@ -209,6 +209,15 @@ def audit_solution_files(solution_dir: Path) -> list[Finding]:
     ]
 
 
+def audit_behavior_audit_file(solution_dir: Path) -> list[Finding]:
+    path = solution_dir / ".goal" / "BEHAVIOR_AUDIT.md"
+    if not path.is_file():
+        return [Finding(str(path), "missing behavior audit required by goal prompt")]
+    if not path.read_text(errors="replace").strip():
+        return [Finding(str(path), "behavior audit is empty")]
+    return []
+
+
 def audit_submission_archive(instance_dir: Path) -> list[Finding]:
     archive = instance_dir / "submission.tar.gz"
     if not archive.exists():
@@ -332,6 +341,7 @@ def audit(args: argparse.Namespace) -> None:
         findings.append(
             Finding(str(instance_dir / "submission.tar.gz"), "submission exists but cannot compile without compile.sh")
         )
+    findings.extend(audit_behavior_audit_file(solution_dir))
     findings.extend(audit_solution_files(solution_dir))
     findings.extend(audit_submission_archive(instance_dir))
     findings.extend(audit_paper_settings(run, instance_dir))
