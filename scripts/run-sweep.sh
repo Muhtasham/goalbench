@@ -311,20 +311,6 @@ fi
 
 if [[ "$WATCH" -eq 1 && "$INCREMENTAL_FINALIZE" -eq 1 ]]; then
   while true; do
-    if state_exists; then
-      if [[ "$FINALIZE" -eq 1 ]]; then
-        run_finalize
-      fi
-      if [[ "$SITE" -eq 1 ]]; then
-        run_site
-      fi
-      if [[ "$PUBLISH" -eq 1 ]]; then
-        run_publish
-      fi
-      if [[ "$ONCE" -eq 1 ]] || batch_complete; then
-        break
-      fi
-    fi
     watch_cmd=(uv run python scripts/run-config.py watch "$CONFIG" --once)
     if [[ -n "$MAX_PARALLEL" ]]; then
       watch_cmd+=(--max-parallel "$MAX_PARALLEL")
