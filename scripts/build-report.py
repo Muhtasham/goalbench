@@ -242,6 +242,14 @@ def is_programbench_comparable(row: ResultRow) -> bool:
     )
 
 
+def host_profile(row: ResultRow) -> str:
+    if row.host_system != "Linux" or row.host_machine not in {"x86_64", "AMD64"}:
+        return f"{row.host_system}/{row.host_machine} host"
+    if row.docker_cpus == "20" and row.docker_memory == "60g":
+        return "paper-sized host"
+    return f"smaller VM: {row.docker_cpus} CPU / {row.docker_memory}"
+
+
 def compliance_label(row: ResultRow) -> str:
     if row.inference_mode == "open-internet":
         return "Non-compliant: internet allowed"
@@ -267,6 +275,7 @@ def result_groups(rows: list[ResultRow]) -> list[dict]:
             "agent": key[1],
             "mode": key[2],
             "compliance": key[3],
+            "host_profile": ", ".join(sorted({host_profile(row) for row in group_rows})),
             "run_version": key[4],
             "score_distribution": distribution_bins(group_rows),
             **aggregate(group_rows),
@@ -347,6 +356,7 @@ def row_to_dict(row: ResultRow) -> dict:
         "inference_mode": row.inference_mode,
         "mode": mode_label(row),
         "compliance": compliance_label(row),
+        "host_profile": host_profile(row),
         "programbench_comparable": is_programbench_comparable(row),
         "paper_compliant": row.paper_compliant,
         "score": row.score,
@@ -697,6 +707,7 @@ def render_disclosures(groups: list[dict]) -> str:
               <td><code>{cell(version_label(str(group.get("run_version", ""))))}</code></td>
               <td>{cell(str(group["mode"]))}</td>
               <td>{cell(str(group["compliance"]))}</td>
+              <td>{cell(str(group["host_profile"]))}</td>
               <td>{group["instances"]}/{PROGRAMBENCH_TASKS}</td>
               <td>{percent(group["average_pass_rate"])}</td>
               <td>{group["total_wall_clock_hours"]:.2f}h</td>
@@ -1188,11 +1199,11 @@ def render_results_sections(data: dict, instances: list[ResultRow]) -> str:
     <h2>Run Disclosures</h2>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Mode</th><th>Compliance</th><th>Tasks</th><th>Avg. pass</th><th>Wall</th></tr></thead>
+        <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Mode</th><th>Compliance</th><th>Host profile</th><th>Tasks</th><th>Avg. pass</th><th>Wall</th></tr></thead>
         <tbody>{render_disclosures(data["groups"])}</tbody>
       </table>
     </div>
-    <p>These disclosure fields are intentionally outside the mirrored metric table because ProgramBench's public leaderboard does not mix scaffold deviations into the metric columns.</p>
+    <p>These disclosure fields are intentionally outside the mirrored metric table because ProgramBench's public leaderboard does not mix scaffold deviations into the metric columns. Rows labeled smaller VM are Codex <code>/goal</code> scaffold experiments, not paper-sized ProgramBench cleanroom runs.</p>
 
     {render_comparison(data["groups"])}
 
@@ -1437,7 +1448,7 @@ def render_html(data: dict) -> str:
     <p>GPT-5.5 baseline rows link to ProgramBench's official run-detail pages for total cost, total calls, distribution plots, and all 200 per-instance results.</p>
 
     <h2>Method Notes</h2>
-    <p>Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Scoring is computed through ProgramBench's own <code>EvaluationResult</code> and <code>InstanceEvalSummary</code> logic after active-branch and ignored-test filtering. Resolved means the ProgramBench behavioral test pass rate is exactly 100%; evaluator warnings/errors are disclosed separately in evidence artifacts. Local smoke runs are not ProgramBench-comparable until they run on Linux amd64 with 20 CPU / 60g and strict egress. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Estimated cost comes from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths.</p>
+    <p>Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Scoring is computed through ProgramBench's own <code>EvaluationResult</code> and <code>InstanceEvalSummary</code> logic after active-branch and ignored-test filtering. Resolved means the ProgramBench behavioral test pass rate is exactly 100%; evaluator warnings/errors are disclosed separately in evidence artifacts. The current Hetzner <code>cpx62</code> runner is a smaller 16 CPU / 30g VM, so those rows answer the Codex <code>/goal</code> scaffold question but are not paper-sized ProgramBench cleanroom runs. Paper-sized rows require Linux amd64 with 20 CPU / 60g, strict egress, wrapper-only target access, and clean audit. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Estimated cost comes from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths.</p>
     <p>Sources: <a href="https://programbench.com/extended/">ProgramBench extended results</a>, <a href="https://programbench.com/run/gpt-5-5-xhigh/">GPT 5.5 xhigh run detail</a>, and this repository's generated CSV summaries.</p>
   </main>
 </body>
