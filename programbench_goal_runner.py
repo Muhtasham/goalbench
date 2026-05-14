@@ -389,9 +389,11 @@ def prepare(args: argparse.Namespace) -> None:
     )
     objective = (
         f"Solve ProgramBench instance {args.instance_id} in the cleanroom container by reimplementing the "
-        "target CLI from black-box behavior only. Do not mark the goal complete until solution/compile.sh exists, "
-        "running ./compile.sh creates ./executable, and package-submission succeeds. Do not inspect parent "
-        "directories or files outside the solution directory."
+        "target CLI from black-box behavior only. Keep iterating on target-vs-local behavioral probes until no "
+        "obvious high-impact gaps remain. Do not mark the goal complete just because packaging works; complete "
+        "only after solution/compile.sh builds ./executable, package-submission succeeds, and "
+        ".goal/BEHAVIOR_AUDIT.md documents the probe coverage, comparisons, known gaps, and stopping rationale. "
+        "Do not inspect parent directories or files outside the solution directory."
     )
 
     solution_dir.mkdir(parents=True, exist_ok=True)
@@ -405,7 +407,9 @@ def prepare(args: argparse.Namespace) -> None:
             "this solution directory, do not run commands against '..', and do not inspect parent directories. "
             "The harness helper is exposed only as the package-submission command. Probe the "
             f"target executable at /workspace/executable with {target_command}. "
-            "Use only documentation already present in the cleanroom container.\n"
+            "Use only documentation already present in the cleanroom container. Keep .goal/BEHAVIOR_AUDIT.md "
+            "with the behavioral probe matrix, target-vs-local comparisons, known gaps, and stopping rationale. "
+            "Do not mark the goal complete merely because package-submission succeeds.\n"
         )
         if cleanroom_mode
         else (
@@ -599,6 +603,7 @@ test -f {shlex.quote(str(solution_dir / "compile.sh"))} || {{
 }}
 COPYFILE_DISABLE=1 tar -C {shlex.quote(str(solution_dir))} \\
   --exclude './AGENT_RULES.md' \\
+  --exclude './.goal' \\
   --exclude './.DS_Store' \\
   --exclude './._*' \\
   -czf {shlex.quote(str(instance_dir / "submission.tar.gz"))} .

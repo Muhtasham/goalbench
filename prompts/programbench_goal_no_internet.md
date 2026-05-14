@@ -29,6 +29,22 @@ Task:
 - You may execute `{{package_command}}` to verify packaging. Do not inspect the
   implementation of that helper or any files outside `{{solution_dir}}`.
 
+Required behavior-discovery loop:
+- Read the bundled documentation in `/workspace` through the target container.
+- Build a feature inventory from docs, `--help`/version output, obvious flags,
+  stdin/stdout/stderr behavior, exit codes, filesystem effects, config/env
+  behavior, terminal/no-terminal behavior, invalid inputs, boundary cases, and
+  combinations of documented options.
+- Maintain `.goal/BEHAVIOR_AUDIT.md` in the solution directory. Keep it updated
+  with the feature inventory, probe commands, target-vs-local comparison
+  results, discrepancies found, fixes made, remaining known gaps, and the final
+  stopping rationale. The harness excludes `.goal/` from the submitted archive.
+- After the first implementation works, continue running target-vs-local
+  comparison probes and fix mismatches. Use generated probes/fuzzers where they
+  help. Do not use hidden tests or evaluator files.
+- `{{package_command}}` succeeding is only a packaging gate. It is not enough to
+  finish the goal.
+
 Harness context:
 - Instance: `{{instance_id}}`
 - Target image: `{{image}}:task_cleanroom`
@@ -42,4 +58,6 @@ Harness context:
 Complete the implementation in `{{solution_dir}}` so it is ready to package.
 
 Do not mark the goal complete until `compile.sh` exists, `./compile.sh`
-succeeds, `./executable` exists and runs, and `{{package_command}}` succeeds.
+succeeds, `./executable` exists and runs, `{{package_command}}` succeeds, and
+`.goal/BEHAVIOR_AUDIT.md` documents broad target-vs-local behavioral coverage
+with no obvious high-impact gaps left to investigate.
