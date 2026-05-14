@@ -76,8 +76,10 @@ missing, the sibling `../ProgramBench` checkout, and the narrow
 `/usr/local/bin/pb-target-exec` wrapper. It also writes a Codex config with
 `service_tier = "fast"` and `[features].fast_mode = true`, so GPT-5.5 runs use
 Codex fast mode by default. Fast mode trades higher credit consumption for
-lower latency; API-key logins use standard API pricing instead. If it adds your
-user to the Docker group, log out and back in before running sweeps.
+lower latency; API-key logins use standard API pricing instead. The bootstrap
+also trusts the VM run directories and sets managed defaults for YOLO-style
+`approval_policy = "never"` and `sandbox_mode = "danger-full-access"`. If it
+adds your user to the Docker group, log out and back in before running sweeps.
 
 Then authenticate Codex on the VM:
 

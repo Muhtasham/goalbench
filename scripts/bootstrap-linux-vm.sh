@@ -96,6 +96,7 @@ sudo apt-get install -y \
   pkg-config \
   python3 \
   python3-venv \
+  ripgrep \
   rsync \
   tmux \
   unzip
@@ -134,16 +135,36 @@ if [[ "$INSTALL_CODEX" -eq 1 ]] && ! command -v codex >/dev/null; then
 fi
 
 if [[ "$CONFIGURE_CODEX_FAST" -eq 1 ]]; then
-  CODEX_HOME="$(getent passwd "$CODEX_USER" | cut -d: -f6)/.codex"
+  USER_HOME="$(getent passwd "$CODEX_USER" | cut -d: -f6)"
+  CODEX_HOME="$USER_HOME/.codex"
   sudo install -d -o "$CODEX_USER" -g "$CODEX_USER" "$CODEX_HOME"
-  sudo tee "$CODEX_HOME/config.toml" >/dev/null <<'EOF'
+  sudo tee "$CODEX_HOME/config.toml" >/dev/null <<EOF
+service_tier = "fast"
+
+[features]
+goals = true
+fast_mode = true
+
+[projects."$USER_HOME"]
+trust_level = "trusted"
+
+[projects."$USER_HOME/programbench-goal"]
+trust_level = "trusted"
+
+[projects."$USER_HOME/pb-goal-runs"]
+trust_level = "trusted"
+EOF
+  sudo chown "$CODEX_USER:$CODEX_USER" "$CODEX_HOME/config.toml"
+  sudo install -d /etc/codex
+  sudo tee /etc/codex/managed_config.toml >/dev/null <<'EOF'
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
 service_tier = "fast"
 
 [features]
 goals = true
 fast_mode = true
 EOF
-  sudo chown "$CODEX_USER:$CODEX_USER" "$CODEX_HOME/config.toml"
 fi
 
 uv sync
