@@ -60,26 +60,51 @@
       padding: 7px 9px;
     }
     .nav-links a:hover { color: #075985; background: #eef6f3; }
-    h1 { margin: 0 0 10px; font-size: clamp(36px, 5vw, 56px); line-height: 1.03; letter-spacing: 0; max-width: 820px; }
+    h1 { margin: 0 auto 10px; font-size: clamp(36px, 5vw, 56px); line-height: 1.03; letter-spacing: 0; max-width: 820px; }
     h2 { margin: 0 0 10px; font-size: 21px; letter-spacing: 0; }
     h3 { margin: 0 0 10px; font-size: 14px; letter-spacing: 0; }
     p { color: var(--muted); line-height: 1.5; max-width: 900px; }
     .brand-mark { width: 30px; height: 30px; display: block; flex: 0 0 auto; }
     .hero {
-      max-width: 880px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
     }
-    .hero-copy { font-size: 18px; max-width: 770px; margin-bottom: 0; }
-    .question { color: var(--accent-strong); margin: 0 0 12px; font-weight: 800; }
-    .codex-mention { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+    .hero-copy { font-size: 18px; max-width: 790px; margin: 0 auto; }
+    .question {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.34em;
+      color: var(--accent-strong);
+      margin: 0 auto 14px;
+      font-size: clamp(22px, 2.8vw, 32px);
+      line-height: 1.12;
+      font-weight: 850;
+      max-width: 820px;
+    }
+    .question > span { display: inline-flex; align-items: center; }
+    .codex-mention {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 0.05em 0.18em;
+      border-radius: 8px;
+      background: #edf7f3;
+      white-space: nowrap;
+    }
+    .question code { font-size: 0.78em; }
     .codex-mention-mark { width: 22px; height: 22px; display: inline-block; flex: 0 0 auto; }
     .hero-disclosure {
-      margin: 14px 0 0;
+      margin: 14px auto 0;
       color: #526472;
       font-size: 14px;
       line-height: 1.45;
+      max-width: 760px;
     }
     .hero-disclosure strong { color: var(--accent-strong); }
-    .pill-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+    .pill-row { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 18px; }
     .pill {
       border: 1px solid var(--line);
       background: #ffffff;
@@ -300,7 +325,7 @@
       </div>
     </div>
     <div class="pill-row">
-      <span class="pill">Generated 2026-05-15T19:16:10.961959+00:00</span>
+      <span class="pill">Generated 2026-05-15T20:46:51.598336+00:00</span>
       <span class="pill">1 evaluated instances</span>
       <span class="pill">200 tasks in full ProgramBench</span>
       <span class="pill">Sorted Resolved → Almost → Avg. pass</span>
