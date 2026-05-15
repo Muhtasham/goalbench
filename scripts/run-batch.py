@@ -258,6 +258,15 @@ def cleanup_codex_session(record: dict) -> None:
         run(["tmux", "kill-session", "-t", record["session_name"]], check=False)
 
 
+def docker_container_ids(name: str) -> set[str]:
+    return set(run(["docker", "ps", "-aq", "--filter", f"name={name}"], check=False).stdout.splitlines())
+
+
+def cleanup_new_eval_containers(before: set[str]) -> None:
+    for container in sorted(docker_container_ids("programbench-") - before):
+        run(["docker", "rm", "-f", container], check=False)
+
+
 def cleanup_finished(state: dict) -> None:
     for record in state["items"].values():
         if record["status"] in CLEANUP_STATUSES:
@@ -323,6 +332,7 @@ def status(args: argparse.Namespace) -> None:
 
 def finalize_one(args: argparse.Namespace, record: dict) -> dict:
     instance_dir = Path(record["instance_dir"])
+    eval_containers = docker_container_ids("programbench-")
     try:
         run([str(instance_dir / "package-submission.sh")])
         audit_cmd = [sys.executable, str(REPO / "scripts" / "audit-run.py")]
@@ -345,6 +355,8 @@ def finalize_one(args: argparse.Namespace, record: dict) -> dict:
     finally:
         cleanup_target_container(record)
         cleanup_codex_session(record)
+        if args.programbench_repo:
+            cleanup_new_eval_containers(eval_containers)
 
 
 def summarize_and_collect(args: argparse.Namespace, state: dict) -> None:
