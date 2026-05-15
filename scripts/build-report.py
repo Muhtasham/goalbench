@@ -20,6 +20,7 @@ AGENT_NAME = "Codex /goal"
 SITE_NAME = "GoalBench"
 PROGRAMBENCH_TASKS = 200
 PROGRAMBENCH_EXTENDED = "https://programbench.com/extended/"
+PROGRAMBENCH_HOME = "https://programbench.com/"
 ROW_RE = re.compile(r"<tr class=\"clickable-row\".*?</tr>", re.S)
 CELL_RE = re.compile(r"<td[^>]*>(.*?)</td>", re.S)
 TAG_RE = re.compile(r"<[^>]+>")
@@ -142,6 +143,18 @@ def load_baselines(output_dir: Path) -> list[dict]:
 
 def write_html(path: Path, content: str) -> None:
     path.write_text("\n".join(line.rstrip() for line in content.splitlines()) + "\n")
+
+
+def write_support_files(output_dir: Path) -> None:
+    (output_dir / "favicon.svg").write_text(
+        """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#10201d"/>
+  <path d="M14 18h24c8.3 0 14 5.7 14 14s-5.7 14-14 14H24V34h13c1.6 0 2.7-.8 2.7-2s-1.1-2-2.7-2H14V18Z" fill="#d8fff4"/>
+  <path d="M14 34h10v12H14V34Z" fill="#14b8a6"/>
+  <path d="M33 32l9-9 8 8-8 8-9-7Z" fill="#f6c453"/>
+</svg>
+""",
+    )
 
 
 def load_task_baselines(output_dir: Path) -> dict:
@@ -847,7 +860,7 @@ def render_task_index(tasks: list[dict]) -> str:
     )
     return f"""
     <h2>Task Details</h2>
-    <p>Task pages mirror ProgramBench's per-task view for this scaffold: scored behavioral tests, best score, and results by model/mode. Pending rows are full-run targets waiting for Codex results. The official ProgramBench task page is linked for baseline context.</p>
+    <p>Per-task pages show official ProgramBench context, GoalBench rows by model/mode, failed-test evidence, and baseline links. See <a href="task-details.html">how to read task pages</a>.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>#</th><th>Task</th><th>Generated tests</th><th>Official best</th><th>Codex best</th><th>Codex model</th><th>Codex rows</th><th>Official rows</th><th>ProgramBench</th></tr></thead>
@@ -918,6 +931,7 @@ def render_run_detail(group: dict, rows: list[ResultRow]) -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{cell(str(group["model"]))} GoalBench Run</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
   <style>
     body {{ font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 24px; color: #182026; }}
     a {{ color: #075985; }}
@@ -1065,6 +1079,7 @@ def render_task_detail(instance_id: str, rows: list[ResultRow], official_tasks: 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{cell(instance_id)} ProgramBench Task</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
   <style>
     body {{ font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 24px; color: #182026; }}
     a {{ color: #075985; }}
@@ -1229,7 +1244,7 @@ def render_empty_state() -> str:
 
 def render_run_plan() -> str:
     return """
-    <h2>Recommended Run Order</h2>
+    <h2 id="run-order">Recommended Run Order</h2>
     <p>This site keeps each scaffold and mode separate. The intended sequence is:</p>
     <div class="table-wrap">
       <table>
@@ -1244,6 +1259,76 @@ def render_run_plan() -> str:
       </table>
     </div>
     """
+
+
+def render_task_details_page() -> str:
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Details · {SITE_NAME}</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root {{
+      color-scheme: light;
+      --ink: #182026;
+      --muted: #61707d;
+      --line: #d9e0e6;
+      --soft: #f5f7f8;
+      --accent: #0f766e;
+    }}
+    * {{ box-sizing: border-box; }}
+    body {{
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #ffffff;
+    }}
+    header, main {{ max-width: 980px; margin: 0 auto; padding: 24px; }}
+    header {{ border-bottom: 1px solid var(--line); }}
+    nav {{ display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; font-size: 14px; }}
+    a {{ color: #075985; }}
+    h1 {{ margin: 0 0 8px; font-size: 32px; letter-spacing: 0; }}
+    h2 {{ margin: 30px 0 10px; font-size: 19px; letter-spacing: 0; }}
+    p, li {{ color: var(--muted); line-height: 1.55; }}
+    code {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }}
+    .panel {{ border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: var(--soft); margin: 16px 0; }}
+    .steps {{ display: grid; gap: 10px; margin-top: 16px; }}
+    .step {{ border-left: 3px solid var(--accent); padding: 4px 0 4px 12px; }}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./">Summary</a>
+      <a href="task-details.html">Task Details</a>
+      <a href="paper-compliance.md">Compliance</a>
+      <a href="runbook.md">Runbook</a>
+      <a href="{PROGRAMBENCH_HOME}">ProgramBench</a>
+    </nav>
+    <h1>Task Details</h1>
+    <p>Task pages mirror ProgramBench's per-task view for this Codex <code>/goal</code> scaffold: scored behavioral tests, best score, results by model/mode, and links to sanitized evidence.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <p>Pending rows are full-run targets waiting for Codex results. Once a task is evaluated, its page shows the GoalBench score beside cached official ProgramBench task context, plus links to the official ProgramBench task page for baseline comparison.</p>
+    </section>
+    <h2>What Each Task Page Shows</h2>
+    <div class="steps">
+      <div class="step"><strong>Official context.</strong> Generated test count, official best score, and official model rows are cached from ProgramBench public task pages.</div>
+      <div class="step"><strong>GoalBench results.</strong> Each Codex <code>/goal</code> result is shown by run version, model, inference mode, score, evaluated tests, estimated cost, calls, and wall-clock time.</div>
+      <div class="step"><strong>Why scores differ.</strong> When public evidence exists, task pages list failed test names and a compact miss-class summary so near-solves like <code>cmatrix</code> are explainable without opening raw JSON.</div>
+      <div class="step"><strong>Evidence links.</strong> Public artifacts include sanitized eval summaries, public eval JSON, usage audit, and manifest. Raw Codex session logs and submission tarballs remain local by default.</div>
+    </div>
+    <h2>Metric Contract</h2>
+    <p>Resolved means the ProgramBench behavioral test pass rate is exactly 100%. Almost resolved follows ProgramBench's public threshold of at least 95%. Scores are computed with ProgramBench's own evaluation summary logic after active-branch and ignored-test filtering.</p>
+    <h2>Scope</h2>
+    <p>GoalBench is not the official mini-SWE-agent leaderboard. It is a scaffold measurement for Codex <code>/goal</code> on the same ProgramBench task family, with modes and compliance labels shown explicitly.</p>
+  </main>
+</body>
+</html>
+"""
 
 
 def render_results_sections(data: dict, instances: list[ResultRow]) -> str:
@@ -1306,12 +1391,23 @@ def render_html(data: dict) -> str:
     instances = [
         ResultRow(**{key: value for key, value in row.items() if key in result_fields}) for row in data["rows"]
     ]
+    nav = f"""
+    <nav>
+      <a href="./">Leaderboard</a>
+      <a href="task-details.html">Task Details</a>
+      <a href="#run-order">Run Order</a>
+      <a href="paper-compliance.md">Compliance</a>
+      <a href="runbook.md">Runbook</a>
+      <a href="{PROGRAMBENCH_EXTENDED}">ProgramBench Extended</a>
+    </nav>
+    """
     return f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{SITE_NAME}</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     :root {{
       color-scheme: light;
@@ -1320,8 +1416,10 @@ def render_html(data: dict) -> str:
       --line: #d9e0e6;
       --soft: #f5f7f8;
       --accent: #0f766e;
+      --accent-strong: #115e59;
       --warn: #b45309;
       --bad: #9f1239;
+      --gold: #f6c453;
     }}
     * {{ box-sizing: border-box; }}
     body {{
@@ -1332,17 +1430,38 @@ def render_html(data: dict) -> str:
     }}
     header {{
       border-bottom: 1px solid var(--line);
-      padding: 28px max(24px, calc((100vw - 1180px) / 2));
+      padding: 22px max(24px, calc((100vw - 1180px) / 2)) 28px;
     }}
     main {{
       max-width: 1180px;
       margin: 0 auto;
       padding: 24px;
     }}
-    h1 {{ margin: 0 0 8px; font-size: 28px; letter-spacing: 0; }}
+    nav {{ display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; font-size: 14px; }}
+    nav a {{ color: #33424d; text-decoration: none; }}
+    nav a:hover {{ color: #075985; text-decoration: underline; }}
+    h1 {{ margin: 0 0 8px; font-size: clamp(34px, 5vw, 64px); line-height: 0.98; letter-spacing: 0; max-width: 760px; }}
     h2 {{ margin: 32px 0 12px; font-size: 18px; letter-spacing: 0; }}
     h3 {{ margin: 0 0 10px; font-size: 14px; letter-spacing: 0; }}
     p {{ color: var(--muted); line-height: 1.5; max-width: 900px; }}
+    .brand {{ display: flex; gap: 10px; align-items: center; margin-bottom: 16px; font-weight: 800; letter-spacing: 0; }}
+    .brand-mark {{ width: 30px; height: 30px; border-radius: 7px; display: inline-grid; place-items: center; background: #10201d; color: #d8fff4; font-weight: 900; }}
+    .hero {{
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+      gap: 28px;
+      align-items: end;
+    }}
+    .hero-copy {{ font-size: 18px; max-width: 760px; }}
+    .question {{ color: #33424d; margin: 0 0 12px; font-weight: 700; }}
+    .hero-panel {{
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: #fbfcfc;
+    }}
+    .hero-panel strong {{ display: block; font-size: 13px; color: var(--accent-strong); margin-bottom: 6px; }}
+    .hero-panel p {{ margin: 0; font-size: 14px; }}
     .pill-row {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }}
     .pill {{
       border: 1px solid var(--line);
@@ -1479,12 +1598,28 @@ def render_html(data: dict) -> str:
       background-size: 8px 8px;
     }}
     a {{ color: #075985; }}
+    @media (max-width: 760px) {{
+      .hero {{ grid-template-columns: 1fr; }}
+      .metric-grid {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
+      header, main {{ padding-left: 16px; padding-right: 16px; }}
+    }}
   </style>
 </head>
 <body>
   <header>
-    <h1>{SITE_NAME}</h1>
-    <p>Codex <code>/goal</code> scaffold results on ProgramBench tasks. These are scaffold measurements, not official mini-SWE-agent leaderboard submissions.</p>
+    {nav}
+    <div class="brand"><span class="brand-mark">G</span><span>{SITE_NAME}</span></div>
+    <div class="hero">
+      <div>
+        <p class="question">Can Codex <code>/goal</code> rebuild programs from scratch?</p>
+        <h1>Long-running Codex on ProgramBench.</h1>
+        <p class="hero-copy">Given only a compiled binary and its documentation, Codex <code>/goal</code> agents must architect and implement a complete codebase that reproduces the original program's behavior.</p>
+      </div>
+      <aside class="hero-panel">
+        <strong>Scaffold measurement</strong>
+        <p>GoalBench reports Codex <code>/goal</code> runs against ProgramBench tasks. These are not official mini-SWE-agent leaderboard submissions.</p>
+      </aside>
+    </div>
     <div class="pill-row">
       <span class="pill">Generated {cell(data["generated_at"])}</span>
       <span class="pill">{data["sample_instances"]} evaluated instances</span>
@@ -1493,7 +1628,7 @@ def render_html(data: dict) -> str:
     </div>
   </header>
   <main>
-    <p class="note">Primary metric is fully resolved instances. Almost resolved follows ProgramBench's displayed threshold of at least 95% behavioral tests passing. The headline track is GPT-5.5 xhigh with Codex <code>/goal</code> in no-internet mode. Paper/cleanroom rows are ProgramBench-style Codex scaffold runs, not official mini-SWE-agent paper baseline reproductions. Open-internet and local-tools runs are intentionally non-compliant and reported separately. See the <a href="runbook.md">runbook</a> and <a href="paper-compliance.md">compliance notes</a> for setup and mode details.</p>
+    <p class="note">Primary metric is fully resolved instances. Almost resolved follows ProgramBench's displayed threshold of at least 95% behavioral tests passing. The headline track is GPT-5.5 xhigh with Codex <code>/goal</code> in no-internet mode. Paper/cleanroom rows are ProgramBench-style Codex scaffold runs, not official mini-SWE-agent paper baseline reproductions. Open-internet and local-tools runs are intentionally non-compliant and reported separately. See <a href="task-details.html">Task Details</a>, the <a href="runbook.md">runbook</a>, and <a href="paper-compliance.md">compliance notes</a> for setup and mode details.</p>
     <h2>How To Read Modes</h2>
     <div class="mode-grid">
       <div class="mode-card">
@@ -1567,9 +1702,11 @@ def build(args: argparse.Namespace) -> None:
         "baselines": load_baselines(output_dir),
     }
     (output_dir / "data").mkdir(parents=True, exist_ok=True)
+    write_support_files(output_dir)
     (output_dir / "data" / "results.json").write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
     (output_dir / "data" / "results.csv").write_text(render_csv(rows))
     write_html(output_dir / "index.html", render_html(data))
+    write_html(output_dir / "task-details.html", render_task_details_page())
     for group in data["groups"]:
         run_dir = output_dir / "run" / str(group["slug"])
         run_dir.mkdir(parents=True, exist_ok=True)
