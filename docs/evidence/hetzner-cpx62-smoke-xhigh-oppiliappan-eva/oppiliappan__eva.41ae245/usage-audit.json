@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-05-14T21:34:53.061241+00:00",
+  "notes": [
+    "Costs are estimates from local Codex token_count logs, not authoritative billed dollars.",
+    "Pricing comes from an official-doc snapshot because there is no supported structured pricing endpoint.",
+    "reasoning_output_tokens is preserved for audit only; it is not added separately to output_tokens.",
+    "long_context_calls counts Codex calls whose last_token_usage.input_tokens exceeded the pricing threshold."
+  ],
+  "pricing_file": "local_state/openai_pricing.json",
+  "pricing_file_sha256": "0159fc3b28aae359d2e632a23989f37cf91121a4f150ae22426a0dffe5f80087",
+  "pricing_snapshot": {
+    "age_hours": 1.16,
+    "fetched_at": "2026-05-14T20:25:33.231680+00:00",
+    "max_age_hours": 24,
+    "models": {
+      "gpt-5": {
+        "cached_input_usd_per_mtok": 0.125,
+        "input_usd_per_mtok": 1.25,
+        "long_context_cached_input_multiplier": null,
+        "long_context_input_multiplier": null,
+        "long_context_input_threshold_tokens": null,
+        "long_context_output_multiplier": null,
+        "output_usd_per_mtok": 10.0,
+        "source_url": "https://developers.openai.com/api/docs/models/gpt-5"
+      },
+      "gpt-5.4": {
+        "cached_input_usd_per_mtok": 0.25,
+        "input_usd_per_mtok": 2.5,
+        "long_context_cached_input_multiplier": 2.0,
+        "long_context_input_multiplier": 2.0,
+        "long_context_input_threshold_tokens": 272000,
+        "long_context_output_multiplier": 1.5,
+        "output_usd_per_mtok": 15.0,
+        "source_url": "https://developers.openai.com/api/docs/models/gpt-5.4"
+      },
+      "gpt-5.5": {
+        "cached_input_usd_per_mtok": 0.5,
+        "input_usd_per_mtok": 5.0,
+        "long_context_cached_input_multiplier": 2.0,
+        "long_context_input_multiplier": 2.0,
+        "long_context_input_threshold_tokens": 272000,
+        "long_context_output_multiplier": 1.5,
+        "output_usd_per_mtok": 30.0,
+        "source_url": "https://developers.openai.com/api/docs/models/gpt-5.5"
+      }
+    },
+    "notes": [
+      "OpenAI does not currently expose a supported structured pricing endpoint for these model price cards.",
+      "Prices are standard API text token rates per 1M tokens.",
+      "Codex subscription billing and fast-mode multipliers may differ from these API rates.",
+      "Reasoning output tokens are diagnostic and are not added on top of output_tokens.",
+      "When model docs expose a long-context threshold, costs apply that multiplier per Codex token_count call."
+    ],
+    "pricing_api_endpoint": null,
+    "source": "OpenAI model documentation pricing cards",
+    "source_type": "official_docs_scrape"
+  },
+  "rows": [
+    {
+      "cached_input_tokens": 2197376,
+      "calls": 45,
+      "estimated_cost_usd": "3.2297",
+      "input_tokens": 2279213,
+      "instance_id": "agourlay__zip-password-finder.704700d",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 57394,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 17494,
+      "run_name": "hetzner-cpx62-smoke-xhigh-agourlay-zip-password-finder",
+      "session_logs": [
+        "$CODEX_SESSIONS/2026/05/14/rollout-2026-05-14T20-37-46-019e2835-ac98-7e43-8b0c-6d66d7de30cb.jsonl"
+      ],
+      "total_tokens": 2336607
+    },
+    {
+      "cached_input_tokens": 1694848,
+      "calls": 51,
+      "estimated_cost_usd": "2.0489",
+      "input_tokens": 1772182,
+      "instance_id": "htop-dev__htop.523600b",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 27161,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 10214,
+      "run_name": "hetzner-cpx62-smoke-xhigh-htop-dev-htop",
+      "session_logs": [
+        "$CODEX_SESSIONS/2026/05/14/rollout-2026-05-14T21-11-11-019e2854-4258-7673-b263-f9c5edda155b.jsonl"
+      ],
+      "total_tokens": 1799343
+    },
+    {
+      "cached_input_tokens": 2073856,
+      "calls": 59,
+      "estimated_cost_usd": "2.7570",
+      "input_tokens": 2202193,
+      "instance_id": "oppiliappan__eva.41ae245",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 35057,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 14968,
+      "run_name": "hetzner-cpx62-smoke-xhigh-oppiliappan-eva",
+      "session_logs": [
+        "$CODEX_SESSIONS/2026/05/14/rollout-2026-05-14T21-01-03-019e284a-fb5b-78d3-8995-ca320665f80e.jsonl"
+      ],
+      "total_tokens": 2237250
+    },
+    {
+      "cached_input_tokens": 1663232,
+      "calls": 46,
+      "estimated_cost_usd": "2.4743",
+      "input_tokens": 1780810,
+      "instance_id": "sitkevij__hex.61ae69b",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 35161,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 12586,
+      "run_name": "hetzner-cpx62-smoke-xhigh-sitkevij-hex",
+      "session_logs": [
+        "$CODEX_SESSIONS/2026/05/14/rollout-2026-05-14T20-51-55-019e2842-9e03-7bd3-8233-867deae2517b.jsonl"
+      ],
+      "total_tokens": 1815971
+    },
+    {
+      "cached_input_tokens": 3196160,
+      "calls": 66,
+      "estimated_cost_usd": "3.4176",
+      "input_tokens": 3285744,
+      "instance_id": "wfxr__csview.8ac4de0",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 45721,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 13604,
+      "run_name": "hetzner-cpx62-smoke-xhigh-wfxr-csview",
+      "session_logs": [
+        "$CODEX_SESSIONS/2026/05/14/rollout-2026-05-14T20-25-39-019e282a-92eb-7de3-b5f6-43c15ce0b5a6.jsonl"
+      ],
+      "total_tokens": 3331465
+    }
+  ],
+  "totals": {
+    "cached_input_tokens": 10825472,
+    "calls": 267,
+    "estimated_cost_usd": 13.9275,
+    "input_tokens": 11320142,
+    "long_context_calls": 0,
+    "output_tokens": 200494,
+    "reasoning_output_tokens": 68866,
+    "total_tokens": 11520636
+  },
+  "warnings": []
+}
