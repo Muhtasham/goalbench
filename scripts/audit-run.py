@@ -246,7 +246,7 @@ def source_lookup_patterns(command: str) -> list[str]:
 
 
 def git_command_uses_only_local_fixture(command: str) -> bool:
-    if not (re.search(r"\bgit\s+init\b", command) and re.search(r"(?:^|\s|;|&&|\|\|)cd\s+/tmp/", command)):
+    if not re.search(r"\bgit\s+init\b", command):
         return False
     return not re.search(r"(?:https?|ssh|git)://|[\w.-]+@[\w.-]+:|github\.com|gitlab\.com|bitbucket\.org", command)
 
