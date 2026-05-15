@@ -1,0 +1,3367 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.14416101899769274
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.11659560600310215
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.15632854200157453
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.14388327000051504
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.11643266700048116
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.12613642900032573
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.7693661149969557
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09039197799938847
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11629451800035895
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12601738900048076
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12512842299838667
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 4.705905577000522
+    },
+    {
+      "branch": "bc9e04bf4f1d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.032748102999903494
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13002856400271412
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12484597399816266
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09369837499980349
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11887945799753652
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 6.762427634999767
+    },
+    {
+      "branch": "5f48c669398c",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.01892225599658559
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1268946970012621
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12602905899984762
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11309568000069703
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10402809500010335
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 48.98292500900061
+    },
+    {
+      "branch": "3007289124ea",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03814545200293651
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10167793499931577
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.101658124000096
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.0898696000003838
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09594033699977444
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 6.9756395559998055
+    },
+    {
+      "branch": "a478c749c070",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.039503636999143055
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1087097880008514
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12645249900015187
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1023829210025724
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.0927849689978757
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.468395765998139
+    },
+    {
+      "branch": "2e9e0a85b3b1",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.024036106002313318
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09923007500037784
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.0674698789989634
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.06693054999777814
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.06759267799861846
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 6.3564448969991645
+    },
+    {
+      "branch": "c00b90a86801",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03691248700124561
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10554142100227182
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09252336200006539
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12692547900223872
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11010240299947327
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 5.696757800000341
+    },
+    {
+      "branch": "919f9056ebc8",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03563559200119926
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13174004900065484
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11962487699929625
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.095454089998384
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1071584739984246
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 8.542309205000493
+    },
+    {
+      "branch": "86582e2e370b",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02648179700190667
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11061447100291844
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11987604499881854
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11162602799959132
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09973034300128347
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.660384861999773
+    },
+    {
+      "branch": "756ef31a4912",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.019232204998843372
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12140705999991042
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.129158269999607
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11632631899919943
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.120084884998505
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 6.373254430000088
+    },
+    {
+      "branch": "ed6391483754",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.036138479998044204
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.07206976100133033
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.06440775000010035
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.08057316800113767
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.06473370899766451
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.3190710349990695
+    },
+    {
+      "branch": "4f43e146d462",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.021550146000663517
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12707561700153747
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13979927899708855
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12127407999651041
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12346142100068391
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.026644645997294
+    },
+    {
+      "branch": "fa8b614ae705",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.020592040000337875
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12904241000069305
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09737406299973372
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1252847549985745
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11343621999913012
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.443424263001361
+    },
+    {
+      "branch": "7a39011794d6",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.022491072999400785
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11123177899935399
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12382840999998734
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12088195100295707
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11146761800046079
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 7.662404803002573
+    },
+    {
+      "branch": "92b21834419a",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03358535000006668
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1285377519998292
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09980294300112291
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10106806800104096
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11543969299964374
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.095045640002354
+    },
+    {
+      "branch": "887e92af4ead",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02797879100035061
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13522597599876462
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.124919535999652
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1291003490005096
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11994368500018027
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 4.1997698029990715
+    },
+    {
+      "branch": "4ff2391bad75",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.0340680169974803
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10236865399929229
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13196028799939086
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10889516799943522
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10724033500082442
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 38.341567837000184
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.030202603000361705
+    }
+  ],
+  "executable_hash": "aa75f5423b90e19ca9542bd5c8b1e61da132acf6ecc8aac0b0c28e70700974be",
+  "failed_tests": [
+    {
+      "branch": "bc9e04bf4f1d",
+      "message": "AssertionError",
+      "name": "tests.test_actions.test_action_composition_replace_then_lower",
+      "status": "failure"
+    },
+    {
+      "branch": "bc9e04bf4f1d",
+      "message": "AssertionError",
+      "name": "tests.test_actions.test_action_composition_replace_then_upper",
+      "status": "failure"
+    },
+    {
+      "branch": "bc9e04bf4f1d",
+      "message": "AssertionError",
+      "name": "tests.test_rust_lang.test_rust_mod_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_additional_features.test_multiple_actions_order",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_case_transforms.test_case_transform_with_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_delete_squeeze.test_squeeze_newlines",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_final_coverage_push.test_combined_titlecase_and_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_more_features.test_python_lambda",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_more_features.test_typescript_type_params",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_more_features.test_go_const",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_more_features.test_go_switch",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_more_features.test_rust_impl_type",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_more_language_scopes.test_rust_unsafe",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_more_language_scopes.test_typescript_method",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_rust_scopes.test_rust_doc_comments",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_special_actions.test_invert_requires_symbols",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_error_handling.test_binary_data_utf8_error",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_more_features.test_go_select",
+      "status": "failure"
+    },
+    {
+      "branch": "5f48c669398c",
+      "message": "AssertionError",
+      "name": "tests.test_more_features.test_rust_impl_trait",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_specialized.test_german_legal_alternatives_not_converted",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_basic.test_german_ae_to_umlaut",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_file_ops.test_dry_run_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_find_interpreter_with_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_mixed_case_uppercase_first",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_naive_prefer_original_combination",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_errors_and_edge_cases.test_invalid_regex_unclosed_group",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_dosfix_preserves_crlf_in_python_comments_deletion",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_basic.test_titlecase_global_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_specialized.test_symbols_url_preservation",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_errors_and_edge_cases.test_multiple_actions_chained_order",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_specialized.test_german_eszett_in_multiple_words",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_errors_and_edge_cases.test_undefined_capture_group_in_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_basic.test_upper_german_special_chars",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_errors_and_edge_cases.test_regex_unclosed_paren",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--squeeze', '\\\\n+', '--', '\\n']' returned non-zero exit status 2.",
+      "name": "tests.test_actions_basic.test_squeeze_multiple_newlines",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_hyphenated_words",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_dosfix_preserves_crlf_with_inline_comments",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_find_interpreter_direct_path",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_basic.test_titlecase_with_articles",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_mixed_case_lowercase_first",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_basic.test_german_ss_to_eszett",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_specialized.test_german_uppercase_conversion",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_specialized.test_german_large_text_with_multiple_conversions",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_errors_and_edge_cases.test_named_capture_group_undefined_name",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_specialized.test_german_full_sentence_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_errors_and_edge_cases.test_invalid_utf8_on_stdin_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_file_ops.test_glob_hidden_files_with_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_errors_and_edge_cases.test_regex_quantifier_overflow",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_file_ops.test_dry_run_shows_diff_without_modifying",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--squeeze', '\\\\t+', '--', '\\t']' returned non-zero exit status 2.",
+      "name": "tests.test_actions_basic.test_squeeze_multiple_tabs",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Stdout mismatch for german-symbols",
+      "name": "tests.test_harvest.test_cli_stdin_operations[german-symbols-cli__tests__german-symbols]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_bracketed_words",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_dosfix_multiple_consecutive_crlf_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_basic.test_titlecase_short_words",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_specialized.test_german_mixed_case_eszett",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_basic.test_german_scoped",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_specialized.test_german_lowercase_nouns_not_converted",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_titlecase_compound_words",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_find_interpreter_with_crlf_in_shebang",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_specialized.test_german_standalone_character_sequences_naive",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_errors_and_edge_cases.test_regex_empty_named_group",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps2.test_uppercase_compound_word",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_errors_and_edge_cases.test_empty_python_scope_with_empty_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_alluppercase_words",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Expected exit code 1 for fail-any-in-search-mode-sorted, got 0",
+      "name": "tests.test_harvest.test_cli_failure_modes_files[fail-any-in-search-mode-sorted-cli__tests__fail-any-in-search-mode-sorted]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Stdout mismatch for german-text",
+      "name": "tests.test_harvest.test_cli_stdin_operations[german-text-cli__tests__german-text]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_cli_line_numbers_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_extreme_mixed_case_naive",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_dosfix_mixed_with_unix_line_endings",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_basic.test_german_then_upper_chained",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_find_multiple_python_files_with_mixed_identification",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_alluppercase_eszett",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--squeeze', ' +', '--', '_']' returned non-zero exit status 2.",
+      "name": "tests.test_actions_basic.test_squeeze_with_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps2.test_mixed_case_uppercase_first_compound",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Stdout mismatch for python-multiple-scopes",
+      "name": "tests.test_harvest.test_cli_stdin_operations[python-multiple-scopes-cli__tests__python-multiple-scopes]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_rust_strings_with_upper",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Exit code mismatch for deleting-emojis: expected 0, got 1",
+      "name": "tests.test_harvest.test_cli_stdin_operations[deleting-emojis-cli__tests__deleting-emojis]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Expected exit code 1 for fail-none-implicitly-in-search-mode-multithreaded, got 0",
+      "name": "tests.test_harvest.test_cli_failure_modes_multithreaded[fail-none-implicitly-in-search-mode-multithreaded-cli__tests__fail-none-implicitly-in-search-mode-multithreaded]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_cli_only_matching_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_regression_brew_build_github_token_redaction",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_do_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_function_with_pointer_parameters",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_labeled_statement_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_dosfix_with_stdin_crlf",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_find_go_files_by_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_lowercase_mixed_validity",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--squeeze', 'a+', '--', 'X']' returned non-zero exit status 2.",
+      "name": "tests.test_actions_basic.test_squeeze_adjacent_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_specialized.test_german_basic_umlauts_and_eszett",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps2.test_naive_prefer_original_standalone_sequences",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_python_strings_with_german_action",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Exit code mismatch for only-matching-outside-search-mode: expected 0, got 2",
+      "name": "tests.test_harvest.test_cli_stdin_operations[only-matching-outside-search-mode-cli__tests__only-matching-outside-search-mode]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Expected exit code 1 for fail-any-in-search-mode-multithreaded, got 0",
+      "name": "tests.test_harvest.test_cli_failure_modes_multithreaded[fail-any-in-search-mode-multithreaded-cli__tests__fail-any-in-search-mode-multithreaded]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_hcl.test_hcl_variables_declarations_and_usages",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Stdout mismatch for go-search",
+      "name": "tests.test_harvest.test_cli_stdin_operations[go-search-cli__tests__go-search]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_identifier_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_custom_query_multiple_captures",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_cli_unicode_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Expected error to start with: \"error: the argument '--delete' cannot be used with:\\n  [REPLACEMENT]\\n  --upper\\n\"\nGot: \"error: the argument '--delete' cannot be used with other actions\\n\\nFor more information, try '--help'.\\n\"",
+      "name": "tests.test_integration.test_conflicting_flags_delete_and_upper",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_goto_statement_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_find_rust_files_by_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_multiple_replacements_in_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_dosfix_crlf_at_eof_no_final_newline",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps2.test_naive_prefer_original_valid_words",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_actions_specialized.test_german_compound_words",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_typedef_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Exit code mismatch for line-numbers-outside-search-mode: expected 0, got 2",
+      "name": "tests.test_harvest.test_cli_stdin_operations[line-numbers-outside-search-mode-cli__tests__line-numbers-outside-search-mode]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_hcl.test_hcl_resource_names_declarations_and_usages",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_cli_fail_multiple_languages",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Stdout mismatch for python-search-stdin",
+      "name": "tests.test_harvest.test_cli_stdin_operations[python-search-stdin-cli__tests__python-search-stdin]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps2.test_c_extensions_filter_dot_c_files",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_go_struct_definitions_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_declaration_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_type_alias_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--go=struct~User.*', '--upper']' returned non-zero exit status 2.",
+      "name": "tests.test_lang_go_gaps.test_go_struct_named_pattern_matching",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_typescript_type_alias_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps.test_german_whitespace_variants",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Got: 'int main() { const char* s = \"test\"; }\\n'",
+      "name": "tests.test_dosfix_and_find.test_find_c_files_by_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_find_python_by_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps2.test_go_custom_query_invalid_syntax_error_message",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_variable_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_german_gaps2.test_non_naive_long_compound_correct_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Exit code mismatch for only-matching-and-line-numbers-outside-search-mode: expected 0, got 2",
+      "name": "tests.test_harvest.test_cli_stdin_operations[only-matching-and-line-numbers-outside-search-mode-cli__tests__only-matching-and-line-numbers-outside-search-mode]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_hcl.test_hcl_resource_types_declarations_and_usages",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_cli_go_search_files_linux",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps2.test_c_extensions_filter_dot_h_files",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_call_expression_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_go_interface_definitions_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Stdout mismatch for python-search-stdin-and-files",
+      "name": "tests.test_harvest.test_cli_stdin_operations[python-search-stdin-and-files-cli__tests__python-search-stdin-and-files]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_const_spec_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--go=interface~User.*', '--upper']' returned non-zero exit status 2.",
+      "name": "tests.test_lang_go_gaps.test_go_interface_named_pattern_matching",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_c_nested_struct_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_find_python_by_shebang_python3",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_find_typescript_files_by_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_c_function_identifiers_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps2.test_go_custom_query_with_ignore_pattern_subtraction",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_function_decl_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Exit code mismatch for only-matching-and-line-numbers-no-actions-outside-search-mode: expected 0, got 2",
+      "name": "tests.test_harvest.test_cli_stdin_operations[only-matching-and-line-numbers-no-actions-outside-search-mode-cli__tests__only-matching-and-line-numbers-no-actions-outside-search-mode]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python_def_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_hcl.test_hcl_data_names_declarations_and_usages",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_custom_query_inline",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_csharp_gaps.test_csharp_attribute_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_csharp_gaps.test_csharp_variable_declaration_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_var_spec_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_typescript_class_definitions_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Stdout mismatch for python-search-stdin-across-lines",
+      "name": "tests.test_harvest.test_cli_stdin_operations[python-search-stdin-across-lines-cli__tests__python-search-stdin-across-lines]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--go=func~Get.*', '--upper']' returned non-zero exit status 2.",
+      "name": "tests.test_lang_go_gaps.test_go_func_named_pattern_matching",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_c_union_definitions_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_find_python_by_shebang_python",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_dosfix_and_find.test_dosfix_with_rust_comments_crlf",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps2.test_go_path_filtering_absolute_path_without_vendor",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_c_struct_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_switch_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Expected exit code 1 for fail-none-implicitly-in-search-mode-stdin, got 0",
+      "name": "tests.test_harvest.test_cli_failure_modes_stdin[fail-none-implicitly-in-search-mode-stdin-cli__tests__fail-none-implicitly-in-search-mode-stdin-x = \"y\"]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python_methods_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_csharp_gaps.test_csharp_identifier_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_custom_query_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_csharp_gaps.test_csharp_constructor_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_hcl.test_hcl_data_sources_declarations_and_usages",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_free_func_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_c_enum_definitions_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_vendor_directory_filtering_skips_vendor_paths",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_csharp_method_definitions_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_pub_enum_only_public",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_errors_and_edge_cases.test_delete_conflicts_with_composable_actions",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps2.test_go_extensions_match_go_files_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Expected non-zero exit code for invalid query",
+      "name": "tests.test_lang_hcl_gaps2.test_hcl_custom_query_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_csharp_strings_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_if_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python_class_methods_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Expected exit code 1 for fail-none-implicitly-in-search-mode-sorted, got 0",
+      "name": "tests.test_harvest.test_cli_failure_modes_files[fail-none-implicitly-in-search-mode-sorted-cli__tests__fail-none-implicitly-in-search-mode-sorted]",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_csharp_gaps.test_csharp_custom_query_class_names",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_enum_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_type_params_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_csharp_gaps.test_csharp_destructor_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_hcl.test_hcl_required_providers",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_go_method_definitions_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps2.test_go_custom_query_inline_function_scope",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_impl_type_vs_impl_trait",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_custom_query_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_typescript_function_all_types_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_hcl.test_hcl_comments_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--hcl', 'required-providers~aws', '-u']' returned non-zero exit status 2.",
+      "name": "tests.test_lang_hcl_gaps2.test_hcl_required_providers_named_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_for_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_csharp_property_definitions_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python_static_methods_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_comments_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_csharp_gaps.test_csharp_custom_query_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_select_statement_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_csharp_gaps.test_csharp_field_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_hcl.test_hcl_heredoc_strings",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_typescript_gaps.test_typescript_try_catch_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python_gaps2.test_python_py_extension_file_discovery",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_const_fn_modifier",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_async_fn_modifier",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_raw_string_with_hashes",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_hcl.test_hcl_strings_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_typescript_method_definitions_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_c_gaps.test_c_while_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_c_strings_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_others.test_go_strings_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python_try_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_strings_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_csharp_gaps.test_csharp_custom_query_invalid_syntax_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_goroutine_statement_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "gold-env-limitation: stdout contaminated with file listings in gold environment",
+      "name": "tests.test_lang_python.test_python_empty_file",
+      "status": "skipped"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python_gaps2.test_python_python3_shebang_file_discovery",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_typescript_gaps.test_typescript_var_decl_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python3_type_hints",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_typescript_gaps.test_typescript_try_catch_nested_and_partial",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_unsafe_fn_modifier",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_pub_self_fn_visibility",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_combined_function_modifiers",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_identifier_scope",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_complex_custom_query",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python_function_calls_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_priv_enum_only_private",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python_docstrings_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python_lambda_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_fn_scope_all_functions",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_switch_statement_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_csharp_gaps.test_csharp_multiple_query_types_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python_gaps2.test_python_python_shebang_file_discovery",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_typescript_gaps.test_typescript_type_params_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python_decorators_with_functions",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_typescript_gaps.test_typescript_type_params_in_functions_and_interfaces",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_test_fn_with_test_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_extern_fn_ffi_functions",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_pub_crate_fn_visibility",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_type_identifier_scope",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_pub_self_enum_visibility",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python_types_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_doc_comments_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Should fail on invalid query syntax",
+      "name": "tests.test_lang_typescript_gaps2.test_typescript_invalid_query_syntax_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_pub_fn_only_public_functions",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_literal_and_search.test_literal_backslash_escape_sequences",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_priv_enum_in_nested_modules",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python_gaps2.test_python_file_discovery_dry_run_output",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_typescript_gaps.test_typescript_custom_query_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_expression_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_typescript_gaps.test_typescript_custom_query_with_captures",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_literal_and_search.test_literal_backslash_backslash",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_closure_definitions",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_enum_variant_scope",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_pub_super_fn_visibility",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_pub_super_enum_visibility",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_pub_self_struct_visibility",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python.test_python_custom_query_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_pub_crate_struct_visibility",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Should fail on unknown node type",
+      "name": "tests.test_lang_typescript_gaps2.test_typescript_invalid_query_unknown_node_type",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_priv_fn_only_private_functions",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_literal_and_search.test_literal_invalid_escape_sequence_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_doc_comments_consecutive_blocks",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python_gaps2.test_python_file_discovery_excludes_non_python_files",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_typescript_gaps.test_typescript_custom_query_inline",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_go_gaps.test_go_type_def_scope_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_literal_and_search.test_search_only_matching_no_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--line-numbers', 'word', '--delete']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_line_numbers_with_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_impl_fn_methods_in_impl_blocks",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_literal_and_search.test_literal_zero_width_assertions_as_literal",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_unsafe_blocks_not_just_unsafe_fn",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_doc_comments_with_mixed_visibility",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_pub_super_struct_visibility",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_pub_crate_enum_visibility",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError: Should fail on bad predicate",
+      "name": "tests.test_lang_typescript_gaps2.test_typescript_invalid_query_bad_predicate",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_search_mode_with_language_scoper",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_pub_self_struct_with_mixed_enums",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_pub_struct_only_public",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_german_transformation",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_python_gaps2.test_python_file_discovery_with_nested_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_literal_and_search.test_literal_multiline_newline_match",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps2.test_sorted_with_debug_logging",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--only-matching', 'a', '--upper']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_only_matching_single_char_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '-L', '.*', '--line-numbers', '--upper']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_line_numbers_with_literal_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_custom_query_inline",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_stdin_detection_force_readable_with_glob",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_type_def_all_type_definitions",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_pub_super_struct_in_nested_modules",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_typescript_gaps2.test_typescript_extensions_filtering_ts_files",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_gitignored_files_default_respected",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_pub_self_enum_with_mixed_structs",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_priv_struct_only_private",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_hidden_files_with_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps2.test_line_numbers_flag_shows_file_and_line_info",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps2.test_verbosity_exceeds_maximum_warning",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_literal_and_search.test_literal_tab_character_match",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps2.test_fail_any_flag_with_no_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--only-matching', 'ab', '--upper']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_only_matching_multiple_matches_per_line",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--line-numbers', 'MATCH', '--lower']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_line_numbers_very_long_line",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--hcl', 'required-providers~aws', '--delete', '.*']' returned non-zero exit status 2.",
+      "name": "tests.test_main_gaps2.test_hcl_named_required_providers_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_ranges_gaps2.test_language_scope_intersection_triggers_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust.test_rust_mod_tests_specific_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_rust_gaps2.test_rust_pub_super_enum_in_nested_modules",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_regex_gaps.test_invalid_regex_parse_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_typescript_gaps2.test_typescript_extensions_filtering_tsx_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_join_language_scopes_intersection_default",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_dry_run_with_language_scoper",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps2.test_sorted_file_walking",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--line-numbers', 'match', '--delete']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_line_numbers_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--line-numbers', 'world', '--upper']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_line_numbers_column_ranges",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_ranges_gaps.test_language_scope_intersection_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_replacement.test_undefined_named_variable_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_replacement.test_undefined_numbered_variable_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps2.test_go_interface_named_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_ranges_gaps2.test_language_scope_union_join_non_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_replacement.test_replacement_with_regex_metacharacters",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_replacement.test_named_brace_mismatched_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_replacement.test_replacement_without_captures_ignores_variables",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_lang_typescript_gaps2.test_typescript_extensions_multiple_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_join_language_scopes_with_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_multiple_language_scopers_intersection",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps2.test_invalid_regex_pattern_with_named_scope",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--only-matching', 'match', '--upper']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_only_matching_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_view_gaps.test_german_action_converts_umlauts",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--only-matching', 'old', '--', 'NEW']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_only_matching_with_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_ranges_gaps.test_language_scope_union_merge",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_replacement.test_mismatched_braces_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_replacement.test_escape_sequences_in_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'a+', '--upper', '--squeeze']' returned non-zero exit status 2.",
+      "name": "tests.test_ranges_gaps2.test_squeeze_merges_adjacent_ranges",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_view_gaps.test_replacement_with_no_capture_groups",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_replacement.test_numbered_brace_mismatched_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_view_gaps.test_german_preserves_non_german_words",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_view_gaps.test_action_with_context_error_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps2.test_multiple_language_scopes_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps2.test_pattern_not_supported_for_scope",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--only-matching', '--line-numbers', 'match', '--upper']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_both_flags_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--line-numbers', 'x', '--upper']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_line_numbers_empty_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "AssertionError",
+      "name": "tests.test_ranges_gaps.test_nested_language_constructs_range_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "3007289124ea",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', '--line-numbers', 'line 5', '--upper']' returned non-zero exit status 2.",
+      "name": "tests.test_literal_and_search.test_search_line_numbers_multiline_input",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestCombinedShortFlags.test_combined_upper_titlecase",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestShortAndLongFlagEquivalence.test_invert_flag[--invert]",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestFlagsMissingValues.test_rust_missing_value",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestShortAndLongFlagEquivalence.test_invert_flag[-i]",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestFlagsMissingValues.test_python_missing_value",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestCombinedShortFlags.test_combined_upper_lower",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestFlagsMissingValues.test_typescript_query_file_missing_value",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestFlagsMissingValues.test_rust_query_file_missing_value",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestFlagsMissingValues.test_python_query_file_missing_value",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestMutuallyExclusiveFlags.test_squeeze_with_upper",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestLanguageExclusivity.test_python_and_typescript_conflict",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestLanguageExclusivity.test_python_and_rust_conflict",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestLanguageExclusivity.test_python_query_and_rust_conflict",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestLanguageExclusivity.test_rust_and_typescript_conflict",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestInvalidFlagCombinations.test_invert_without_symbols",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestFlagValueEdgeCases.test_flag_value_starting_with_dash",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestFlagsMissingValues.test_typescript_missing_value",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestRequiredArguments.test_invert_requires_symbols",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestActionCombinations.test_replacement_and_upper",
+      "status": "failure"
+    },
+    {
+      "branch": "a478c749c070",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestActionCombinations.test_upper_and_lower",
+      "status": "failure"
+    },
+    {
+      "branch": "2e9e0a85b3b1",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_threads_supports_equals_syntax",
+      "status": "failure"
+    },
+    {
+      "branch": "2e9e0a85b3b1",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_delete_is_mutually_exclusive_with_other_actions",
+      "status": "failure"
+    },
+    {
+      "branch": "2e9e0a85b3b1",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_invalid_flags_and_values_produce_clap_errors[args0-contains0]",
+      "status": "failure"
+    },
+    {
+      "branch": "2e9e0a85b3b1",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_invalid_flags_and_values_produce_clap_errors[args3-contains3]",
+      "status": "failure"
+    },
+    {
+      "branch": "2e9e0a85b3b1",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_threads_negative_is_not_accepted_as_value_without_separator",
+      "status": "failure"
+    },
+    {
+      "branch": "2e9e0a85b3b1",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_threads_rejects_zero_with_specific_message",
+      "status": "failure"
+    },
+    {
+      "branch": "2e9e0a85b3b1",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_invalid_flags_and_values_produce_clap_errors[args2-contains2]",
+      "status": "failure"
+    },
+    {
+      "branch": "c00b90a86801",
+      "message": "AssertionError",
+      "name": "tests.test_env_vars.TestCombinedEnvVars.test_multiple_action_env_vars",
+      "status": "failure"
+    },
+    {
+      "branch": "c00b90a86801",
+      "message": "AssertionError",
+      "name": "tests.test_env_vars.TestRustLogEnvVar.test_rust_log_debug",
+      "status": "failure"
+    },
+    {
+      "branch": "c00b90a86801",
+      "message": "AssertionError",
+      "name": "tests.test_env_vars.TestInvalidEnvVars.test_invalid_boolean_env_var",
+      "status": "failure"
+    },
+    {
+      "branch": "c00b90a86801",
+      "message": "AssertionError",
+      "name": "tests.test_env_vars.TestEnvVarPrecedence.test_multiple_cli_override_env",
+      "status": "failure"
+    },
+    {
+      "branch": "c00b90a86801",
+      "message": "AssertionError",
+      "name": "tests.test_env_vars.TestEnvVarEmptyValues.test_empty_python_scope",
+      "status": "failure"
+    },
+    {
+      "branch": "c00b90a86801",
+      "message": "AssertionError",
+      "name": "tests.test_env_vars.TestEnvVarEmptyValues.test_empty_upper_env_var",
+      "status": "failure"
+    },
+    {
+      "branch": "919f9056ebc8",
+      "message": "AssertionError",
+      "name": "eval.tests.test_env_vars.test_env_upper_invalid_value_errors",
+      "status": "failure"
+    },
+    {
+      "branch": "919f9056ebc8",
+      "message": "AssertionError",
+      "name": "eval.tests.test_env_vars.test_env_logger_rust_log_level_changes_error_formatting",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError: Long help output differs from baseline",
+      "name": "eval.tests.test_help_baseline.TestBaselineComparison.test_help_long_matches_baseline",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_baseline.TestBaselineComparison.test_help_flags_equivalent",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_content.TestLanguageScopeDescriptions.test_rust_scope_values_listed",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_flags.TestLanguageScopeFlags.test_custom_query_flag_documented[--c-query]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_flags.TestLanguageScopeFlags.test_custom_query_flag_documented[--csharp-query]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_flags.TestLanguageScopeFlags.test_custom_query_flag_documented[--go-query]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_flags.TestLanguageScopeFlags.test_custom_query_flag_documented[--hcl-query]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_flags.TestLanguageScopeFlags.test_custom_query_flag_documented[--rust-query]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_flags.TestLanguageScopeFlags.test_custom_query_flag_documented[--python-query]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_flags.TestLanguageScopeFlags.test_custom_query_flag_documented[--typescript-query]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestRustLanguageOptions.test_rust_scope_option_documented[comments]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_structure.TestShortVsLongHelp.test_help_short_is_shorter",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestRustLanguageOptions.test_rust_scope_option_documented[fn]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestRustLanguageOptions.test_rust_scope_option_documented[strings]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestRustLanguageOptions.test_rust_scope_option_documented[impl]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestPythonLanguageOptions.test_python_scope_option_documented[imports]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestPythonLanguageOptions.test_python_scope_option_documented[class]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_content.TestLanguageScopeDescriptions.test_tree_sitter_mentioned",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestGoLanguageOptions.test_go_scope_option_documented[func]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestRustLanguageOptions.test_rust_scope_option_documented[enum]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestCLanguageOptions.test_c_scope_option_documented[comments]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestCLanguageOptions.test_c_scope_option_documented[strings]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestPythonLanguageOptions.test_python_scope_option_documented[comments]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestCLanguageOptions.test_c_scope_option_documented[function]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestRustLanguageOptions.test_rust_pattern_syntax_documented",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestPythonLanguageOptions.test_python_scope_option_documented[strings]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestPythonLanguageOptions.test_python_scope_option_documented[function]",
+      "status": "failure"
+    },
+    {
+      "branch": "86582e2e370b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_options.TestGoLanguageOptions.test_go_scope_option_documented[interface]",
+      "status": "failure"
+    },
+    {
+      "branch": "756ef31a4912",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_output.test_short_help_is_more_compact_than_long",
+      "status": "failure"
+    },
+    {
+      "branch": "ed6391483754",
+      "message": "AssertionError",
+      "name": "eval.tests.test_actions.TestCombinedActions.test_replace_then_lower",
+      "status": "failure"
+    },
+    {
+      "branch": "ed6391483754",
+      "message": "AssertionError",
+      "name": "eval.tests.test_actions.TestCombinedActions.test_replace_then_upper",
+      "status": "failure"
+    },
+    {
+      "branch": "ed6391483754",
+      "message": "AssertionError",
+      "name": "eval.tests.test_actions.TestCombinedActions.test_upper_then_titlecase",
+      "status": "failure"
+    },
+    {
+      "branch": "4f43e146d462",
+      "message": "AssertionError",
+      "name": "eval.tests.test_io_behavior.test_search_mode_with_python_scope_outputs_locations",
+      "status": "failure"
+    },
+    {
+      "branch": "4f43e146d462",
+      "message": "AssertionError",
+      "name": "eval.tests.test_io_behavior.test_unknown_positional_argument_is_usage_error_exit_2_and_stderr_only",
+      "status": "failure"
+    },
+    {
+      "branch": "4f43e146d462",
+      "message": "AssertionError",
+      "name": "eval.tests.test_io_behavior.test_python_scope_error_when_nothing_in_scope_is_stderr_and_exit_1",
+      "status": "failure"
+    },
+    {
+      "branch": "7a39011794d6",
+      "message": "AssertionError",
+      "name": "eval.tests.test_scoping_and_replacement.test_replacement_runs_before_other_actions",
+      "status": "failure"
+    },
+    {
+      "branch": "92b21834419a",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_externalized.test_ext_cli_german_symbols",
+      "status": "failure"
+    },
+    {
+      "branch": "92b21834419a",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_externalized.test_ext_cli_only_matching_changes_output",
+      "status": "failure"
+    },
+    {
+      "branch": "92b21834419a",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_externalized.test_ext_cli_fail_modes_from_stdin[fail-any-trigger]",
+      "status": "failure"
+    },
+    {
+      "branch": "92b21834419a",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_externalized.test_ext_test_brew_build_case2_replaces_capture_group",
+      "status": "failure"
+    },
+    {
+      "branch": "92b21834419a",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_externalized.test_ext_cli_fail_modes_from_stdin[fail-any-no-trigger]",
+      "status": "failure"
+    },
+    {
+      "branch": "92b21834419a",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_externalized.test_ext_cli_tree_sitter_invalid_regex_validated_at_parse_time",
+      "status": "failure"
+    },
+    {
+      "branch": "92b21834419a",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_externalized.test_ext_cli_line_numbers_in_search_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "92b21834419a",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_externalized.test_ext_cli_fail_multiple_languages",
+      "status": "failure"
+    },
+    {
+      "branch": "92b21834419a",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_externalized.test_ext_cli_invalid_utf8_stdin_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "92b21834419a",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_externalized.test_ext_cli_shell_completion_zsh_contains_python",
+      "status": "failure"
+    },
+    {
+      "branch": "4ff2391bad75",
+      "message": "AssertionError",
+      "name": "eval.tests.test_srgn.TestCommandLineFlags.test_line_numbers_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "4ff2391bad75",
+      "message": "AssertionError",
+      "name": "eval.tests.test_srgn.TestCommandLineFlags.test_only_matching_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: exit code mismatch: expected 0, got 1\nstderr: Error: Failed building regex\n\nCaused by:\n    Invalid regex: bad escape \\p at position 0",
+      "name": "eval.tests.test_srgn.test_snapshot[deleting-emojis]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: exit code mismatch: expected 1, got 0\nstderr: [2026-05-15T01:46:51.154065Z ERROR srgn] No actions specified, and not in search mode. Will return input unchanged, if any.",
+      "name": "eval.tests.test_srgn.test_snapshot[fail-any-in-search-mode-multithreaded]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: exit code mismatch: expected 1, got 0\nstderr: [2026-05-15T01:46:53.301962Z ERROR srgn] No actions specified, and not in search mode. Will return input unchanged, if any.",
+      "name": "eval.tests.test_srgn.test_snapshot[fail-any-in-search-mode-sorted]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: exit code mismatch: expected 1, got 0\nstderr: [2026-05-15T01:46:55.476362Z ERROR srgn] No actions specified, and not in search mode. Will return input unchanged, if any.",
+      "name": "eval.tests.test_srgn.test_snapshot[fail-any-in-search-mode-stdin]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: exit code mismatch: expected 2, got 0\nstderr: [2026-05-15T01:46:57.680273Z ERROR srgn] No actions specified, and not in search mode. Will return input unchanged, if any.",
+      "name": "eval.tests.test_srgn.test_snapshot[fail-multiple-languages]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: stdout mismatch for german-symbols\nexpected: 'D\u00fcbel \u2192 1.5mm; \\x10 Wand \u2260 3m\u00b2... \u00dcBELT\u00c4TER! #x1F62B'\nactual:   'Duebel \u2192 1.5mm; \\x10 Wand \u2260 3m\u00b2... UEBELTAETER! #x1F62B'",
+      "name": "eval.tests.test_srgn.test_snapshot[german-symbols]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: stdout mismatch for german-text\nexpected: 'Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt.\\nFranz jagt im komplett verwahrlosten Taxi quer durch Bayern.\\nZw\u00f6lf Boxk\u00e4mpfer jagen Viktor quer \u00fcber den gro\u00dfen Sylter Deich.\\nVogel Quax zwickt Johnys Pferd Bim.\\nSylvia wagt quick den Jux bei Pforzheim.\\nPolyfon zwitschernd a\u00dfen Maexchens V\u00f6gel R\u00fcben, Joghurt und Quark.\\n\"Fix, Schwyz!\" qu\u00e4kt J\u00fcrgen bl\u00f6d vom Pass.\\nVictor jagt zw\u00f6lf Boxk\u00e4mpfer quer \u00fcber den gro\u00dfen Sylter Deich.\\nFalsches \u00dcben von Xylophonmusik qu\u00e4lt jeden gr\u00f6\u00dferen Zwerg.\\nHeiz\u00f6lr\u00fccksto\u00dfabd\u00e4mpfung.\\n'\nactual:   'Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt.\\nFranz jagt im komplett verwahrlosten Taxi quer durch Bayern.\\nZw\u00f6lf Boxk\u00e4mpfer jagen Viktor quer \u00fcber den gro\u00dfen Sylter Deich.\\nVogel Quax zwickt Johnys Pferd Bim.\\nSylvia wagt quick den Jux bei Pforzheim.\\nPolyfon zwitschernd a\u00dfen M\u00e4xchens V\u00f6gel Rueben, Joghurt und Quark.\\n\"Fix, Schwyz!\" qu\u00e4kt Juergen bl\u00f6d vom Pa\u00df.\\nVictor jagt zw\u00f6lf Boxk\u00e4mpfer quer \u00fcber den gro\u00dfen Sylter Deich.\\nFalsches Ueben von Xylophonmusik qu\u00e4lt jeden gr\u00f6\u00dferen Zwerg.\\nHeiz\u00f6lrueckstossabd\u00e4mpfung.\\n'",
+      "name": "eval.tests.test_srgn.test_snapshot[german-text]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: stdout mismatch for go-search\nexpected: '(stdin):5:3-7:// fizzBuzz prints the numbers from 1 to a specified limit.\\n(stdin):6:34-38:// For multiples of 3, it prints \"Fizz\" instead of the number,\\n(stdin):8:14-18:// it prints \"FizzBuzz\".\\n(stdin):25:12-16:\\t// Run the FizzBuzz function for numbers from 1 to 100\\n'\nactual:   'package package_test\\n\\nimport \"fmt\"\\n\\n// fizzBuzz prints the numbers from 1 to a specified limit.\\n// For multiples of 3, it prints \"Fizz\" instead of the number,\\n// for multiples of 5, it prints \"Buzz\", and for multiples of both 3 and 5,\\n// it prints \"FizzBuzz\".\\nfunc fizzBuzz(limit int) {\\n\\tfor i := 1; i <= limit; i++ {\\n\\t\\tswitch {\\n\\t\\tcase i%3 == 0 && i%5 == 0:\\n\\t\\t\\tfmt.Println(\"FizzBuzz\")\\n\\t\\tcase i%3 == 0:\\n\\t\\t\\tfmt.Println(\"Fizz\")\\n\\t\\tcase i%5 == 0:\\n\\t\\t\\tfmt.Println(\"Buzz\")\\n\\t\\tdefault:\\n\\t\\t\\tfmt.Println(i)\\n\\t\\t}\\n\\t}\\n}\\n\\nfunc main() {\\n\\t// Run the FizzBuzz function for numbers from 1 to 100\\n\\tfizzBuzz(100)\\n}\\n'",
+      "name": "eval.tests.test_srgn.test_snapshot[go-search]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: exit code mismatch: expected 0, got 2\nstderr: error: unexpected argument '--line-numbers' found\n\nUsage: executable [OPTIONS] [SCOPE] [-- <REPLACEMENT>]\n\nFor more information, try '--help'.",
+      "name": "eval.tests.test_srgn.test_snapshot[line-numbers-outside-search-mode]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: exit code mismatch: expected 0, got 2\nstderr: error: unexpected argument '--only-matching' found\n\nUsage: executable [OPTIONS] [SCOPE] [-- <REPLACEMENT>]\n\nFor more information, try '--help'.",
+      "name": "eval.tests.test_srgn.test_snapshot[only-matching-and-line-numbers-no-actions-outside-search-mode]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: exit code mismatch: expected 0, got 2\nstderr: error: unexpected argument '--only-matching' found\n\nUsage: executable [OPTIONS] [SCOPE] [-- <REPLACEMENT>]\n\nFor more information, try '--help'.",
+      "name": "eval.tests.test_srgn.test_snapshot[only-matching-and-line-numbers-outside-search-mode]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: exit code mismatch: expected 0, got 2\nstderr: error: unexpected argument '--only-matching' found\n\nUsage: executable [OPTIONS] [SCOPE] [-- <REPLACEMENT>]\n\nFor more information, try '--help'.",
+      "name": "eval.tests.test_srgn.test_snapshot[only-matching-outside-search-mode]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: stdout mismatch for python-multiple-scopes\nexpected: '(stdin):3:17-18:def A(): return \"A string in a func\"\\n'\nactual:   '# A comment\\nx = \"A string\"\\ndef A(): return \"A string in a func\"\\nclass A: pass'",
+      "name": "eval.tests.test_srgn.test_snapshot[python-multiple-scopes]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: stdout mismatch for python-search-stdin-across-lines\nexpected: '(stdin):62:4-17:    @classmethod\\n(stdin):63:0-20:    def class_method(cls) -> None:\\n'\nactual:   '\"\"\"\\nModule for testing various Python grammar elements.\\n\"\"\"\\n\\nimport asyncio\\nimport os as operating_system\\nfrom collections import namedtuple\\nfrom math import *\\nfrom math import acos as soca\\nfrom typing import Dict, List\\n\\nfrom ..parent import x\\nfrom .sibling import y\\n\\n# Global variable\\ntest_var: int = 10\\n\\n\\n# Free function\\ndef free_func():\\n    \"\"\"A free function for testing.\"\"\"\\n    global test_var\\n    test_var += 1\\n    print(f\"Global test_var is now {test_var}\")\\n\\n\\n# Decorator for functions\\ndef func_decorator(func):\\n    \"\"\"Decorator for free function.\"\"\"\\n\\n    def wrapper(*args, **kwargs):\\n        print(\"Function decorator called\")\\n        return func(*args, **kwargs)\\n\\n    return wrapper\\n\\n\\n@func_decorator\\ndef decorated_func():\\n    \"\"\"Function with a decorator.\"\"\"\\n    print(\"Inside decorated function\")\\n\\n\\n# Class definition\\nclass TestClass:\\n    \"\"\"Class for testing various features.\"\"\"\\n\\n    class_var = \"Class variable\"\\n\\n    # Decorator for methods\\n    @staticmethod\\n    def static_decorator(func):\\n        \"\"\"Decorator for static methods.\"\"\"\\n\\n        def wrapper(*args, **kwargs):\\n            print(\"Static method decorator called\")\\n            return func(*args, **kwargs)\\n\\n        return wrapper\\n\\n    # Class method\\n    @classmethod\\n    def class_method(cls) -> None:\\n        \"\"\"Class method.\"\"\"\\n        cls.class_var += \" updated\"\\n        print(f\"Class variable is now {cls.class_var}\")\\n\\n    # Method\\n    def instance_method(self) -> None:\\n        \"\"\"Instance method.\"\"\"\\n        self.instance_var = \"Instance variable\"\\n        print(f\"Instance variable is {self.instance_var}\")\\n\\n    @staticmethod\\n    @static_decorator\\n    def static_method() -> None:\\n        \"\"\"Static method.\"\"\"\\n        print(\"Inside static method\")\\n\\n\\n# Lambda \n[truncated 3062 chars]",
+      "name": "eval.tests.test_srgn.test_snapshot[python-search-stdin-across-lines]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: stdout mismatch for python-search-stdin-and-files\nexpected: '(stdin):24:28-30:    print(f\"Global test_var is now {test_var}\")\\n(stdin):66:31-33:        print(f\"Class variable is now {cls.class_var}\")\\n(stdin):72:34-36:        print(f\"Instance variable is {self.instance_var}\")\\n(stdin):86:2-4;5-7:This is a\\n(stdin):91:27-29;30-32:multiline_f_string = f\"\"\"This is a\\n(stdin):96:17-19;20-22:raw_string = r\"This is a raw string with no special treatment for \\\\n\"\\n(stdin):97:19-21;22-24:bytes_string = b\"This is a bytes string\"\\n(stdin):98:20-22;23-25:bytes_string = rf\"This is a raw f-string with {raw_string}\"\\n(stdin):118:40-42:            raise ZeroDivisionError(\"Division by zero\")\\n(stdin):127:17-19:        print(\"This will always be printed\")\\n(stdin):140:30-32:    print(f\"Nonlocal variable is {nonlocal_var}\")\\n(stdin):158:24-26:        print(\"test_var is greater than 5\")\\n(stdin):160:24-26:        print(\"test_var is 5 or less\")\\n(stdin):165:24-26:        print(f\"Counter is {counter}\")\\n'\nactual:   ''",
+      "name": "eval.tests.test_srgn.test_snapshot[python-search-stdin-and-files]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: stdout mismatch for python-search-stdin\nexpected: '(stdin):24:28-30:    print(f\"Global test_var is now {test_var}\")\\n(stdin):66:31-33:        print(f\"Class variable is now {cls.class_var}\")\\n(stdin):72:34-36:        print(f\"Instance variable is {self.instance_var}\")\\n(stdin):86:2-4;5-7:This is a\\n(stdin):91:27-29;30-32:multiline_f_string = f\"\"\"This is a\\n(stdin):96:17-19;20-22:raw_string = r\"This is a raw string with no special treatment for \\\\n\"\\n(stdin):97:19-21;22-24:bytes_string = b\"This is a bytes string\"\\n(stdin):98:20-22;23-25:bytes_string = rf\"This is a raw f-string with {raw_string}\"\\n(stdin):118:40-42:            raise ZeroDivisionError(\"Division by zero\")\\n(stdin):127:17-19:        print(\"This will always be printed\")\\n(stdin):140:30-32:    print(f\"Nonlocal variable is {nonlocal_var}\")\\n(stdin):158:24-26:        print(\"test_var is greater than 5\")\\n(stdin):160:24-26:        print(\"test_var is 5 or less\")\\n(stdin):165:24-26:        print(f\"Counter is {counter}\")\\n'\nactual:   '\"\"\"\\nModule for testing various Python grammar elements.\\n\"\"\"\\n\\nimport asyncio\\nimport os as operating_system\\nfrom collections import namedtuple\\nfrom math import *\\nfrom math import acos as soca\\nfrom typing import Dict, List\\n\\nfrom ..parent import x\\nfrom .sibling import y\\n\\n# Global variable\\ntest_var: int = 10\\n\\n\\n# Free function\\ndef free_func():\\n    \"\"\"A free function for testing.\"\"\"\\n    global test_var\\n    test_var += 1\\n    print(f\"Global test_var is now {test_var}\")\\n\\n\\n# Decorator for functions\\ndef func_decorator(func):\\n    \"\"\"Decorator for free function.\"\"\"\\n\\n    def wrapper(*args, **kwargs):\\n        print(\"Function decorator called\")\\n        return func(*args, **kwargs)\\n\\n    return wrapper\\n\\n\\n@func_decorator\\ndef decorated_func():\\n    \"\"\"Function with a decorator.\"\"\"\\n    print(\"Inside decorated function\")\\n\\n\\n# Class definition\\nclass TestClass:\\n    \"\"\"Class for testing various features.\"\"\"\\n\\n    class_var = \"Class variable\"\\n\\n    # \n[truncated 3900 chars]",
+      "name": "eval.tests.test_srgn.test_snapshot[python-search-stdin]",
+      "status": "failure"
+    },
+    {
+      "branch": "20cfe2d37f0d",
+      "message": "AssertionError: exit code mismatch: expected 2, got 0\nstderr: [2026-05-15T01:47:23.889734Z ERROR srgn] No actions specified, and not in search mode. Will return input unchanged, if any.",
+      "name": "eval.tests.test_srgn.test_snapshot[tree-sitter-invalid-regex-validated-at-parse-time]",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 427,
+    "passed": 1648,
+    "skipped": 1
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "bc9e04bf4f1d",
+    "5f48c669398c",
+    "3007289124ea",
+    "a478c749c070",
+    "2e9e0a85b3b1",
+    "c00b90a86801",
+    "919f9056ebc8",
+    "86582e2e370b",
+    "756ef31a4912",
+    "ed6391483754",
+    "4f43e146d462",
+    "fa8b614ae705",
+    "7a39011794d6",
+    "92b21834419a",
+    "887e92af4ead",
+    "4ff2391bad75",
+    "20cfe2d37f0d"
+  ],
+  "test_records": 2076,
+  "warnings": []
+}
