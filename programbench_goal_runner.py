@@ -409,7 +409,9 @@ def prepare(args: argparse.Namespace) -> None:
             "this solution directory, do not run commands against '..', and do not inspect parent directories. "
             "The harness helper is exposed only as the package-submission command. Probe the "
             f"target executable at /workspace/executable with {target_command}. "
-            "Use only documentation already present in the cleanroom container. Keep .goal/BEHAVIOR_AUDIT.md "
+            "Use only documentation already present in the cleanroom container. For documented options that accept "
+            "values, probe valid/invalid values, case variants for word values, and combinations with help/version. "
+            "Keep .goal/BEHAVIOR_AUDIT.md "
             "with the behavioral probe matrix, target-vs-local comparisons, known gaps, and stopping rationale. "
             "Do not mark the goal complete merely because package-submission succeeds.\n"
         )

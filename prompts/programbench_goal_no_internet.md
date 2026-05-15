@@ -35,6 +35,10 @@ Required behavior-discovery loop:
   stdin/stdout/stderr behavior, exit codes, filesystem effects, config/env
   behavior, terminal/no-terminal behavior, invalid inputs, boundary cases, and
   combinations of documented options.
+- For every documented option that accepts a value, probe valid and invalid
+  values, case variants where values are words, and combinations with
+  help/version or other early-exit flags. Do not assume option parsing is
+  case-sensitive or that earlier options are ignored before `-h`/`-V`.
 - Maintain `.goal/BEHAVIOR_AUDIT.md` in the solution directory. Keep it updated
   with the feature inventory, probe commands, target-vs-local comparison
   results, discrepancies found, fixes made, remaining known gaps, and the final
