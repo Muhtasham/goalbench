@@ -12,7 +12,6 @@
   "reasoning_effort": "xhigh",
   "min_goal_seconds": 21600,
   "min_goal_calls": 200,
-  "max_goal_continuations": 32,
   "strict_egress": true,
   "run_name_prefix": "full-nointernet-xhigh",
   "strict_paper": false

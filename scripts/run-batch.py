@@ -19,8 +19,8 @@ DEFAULT_STATE_ROOT = REPO / "local_state" / "batches"
 DONE_MARKERS = ("Goal achieved", "Goal marked complete")
 RATE_LIMIT_MARKERS = ("rate limit", "rate_limit", "429")
 FINALIZE_READY = {"goal_done"}
-TERMINAL_STATUSES = {"goal_done", "packaged", "evaluated", "failed", "finalize_failed"}
-CLEANUP_STATUSES = TERMINAL_STATUSES | {"goal_done"}
+TERMINAL_STATUSES = {"goal_done", "early_goal_done", "packaged", "evaluated", "failed", "finalize_failed"}
+CLEANUP_STATUSES = TERMINAL_STATUSES
 
 
 def now() -> str:
@@ -170,48 +170,6 @@ def session_stats(record: dict) -> dict:
     }
 
 
-def has_new_done_marker(record: dict, output: str) -> bool:
-    marker = record.get("last_continuation_marker", "")
-    if marker and marker in output:
-        output = output.rsplit(marker, 1)[1]
-    return any(done_marker in output for done_marker in DONE_MARKERS)
-
-
-def send_continuation(record: dict, stats: dict, min_goal_seconds: int, min_goal_calls: int, marker: str) -> None:
-    prompt = Path(record["instance_dir"]) / "CONTINUE_GOAL_PROMPT.md"
-    prompt.write_text(
-        "\n".join(
-            [
-                marker,
-                "Continue the current ProgramBench /goal. The harness rejected the previous completion as premature.",
-                (
-                    f"Current measured wall time is {stats['wall_seconds']} seconds; "
-                    f"required minimum is {min_goal_seconds}."
-                ),
-                f"Current measured model calls are {stats['calls']}; required minimum is {min_goal_calls}.",
-                "Do not package-and-stop. Run new adversarial target-vs-local probes that were not in the prior audit.",
-                (
-                    "Focus on edge cases: help/version combined with other flags, repeated/reordered flags, missing "
-                    "and empty values, case variants, filesystem/stdin/env/terminal edge cases, Unicode/invalid "
-                    "bytes where relevant, and stdout/stderr/whitespace/timestamp traps."
-                ),
-                (
-                    "Fix every mismatch you can. Update .goal/BEHAVIOR_AUDIT.md with the new probe classes, "
-                    "mismatches found, fixes made, and remaining gaps."
-                ),
-                (
-                    "Do not mark the goal complete again until the minimum wall/call gate is satisfied and the "
-                    "audit explains the adversarial coverage."
-                ),
-            ]
-        )
-        + "\n"
-    )
-    run(["tmux", "load-buffer", str(prompt)])
-    run(["tmux", "paste-buffer", "-t", record["session_name"]])
-    run(["tmux", "send-keys", "-t", record["session_name"], "Enter"])
-
-
 def completion_gate(state: dict) -> dict:
     return state.get("completion_gate", {})
 
@@ -246,6 +204,10 @@ def prepare_instance(args: argparse.Namespace, instance_id: str, run_root: Path)
         args.model,
         "--reasoning-effort",
         args.reasoning_effort,
+        "--min-goal-seconds",
+        str(args.min_goal_seconds),
+        "--min-goal-calls",
+        str(args.min_goal_calls),
         "--run-version",
         args.run_version,
     ]
@@ -284,31 +246,23 @@ def refresh_record(record: dict, gate: dict | None = None) -> dict:
     if record["status"] != "running":
         return record
     output = record_output(record)
-    if has_new_done_marker(record, output):
+    if any(marker in output for marker in DONE_MARKERS):
         gate = gate or {}
         min_goal_seconds = int(gate.get("min_goal_seconds") or 0)
         min_goal_calls = int(gate.get("min_goal_calls") or 0)
-        max_goal_continuations = int(gate.get("max_goal_continuations") or 0)
         stats = session_stats(record)
         too_early = stats["wall_seconds"] < min_goal_seconds or stats["calls"] < min_goal_calls
-        if too_early and record.get("continuations", 0) < max_goal_continuations:
-            if not tmux_has_session(record["session_name"]):
-                return add_error(
-                    {**record, "status": "failed", "failed_at": now()},
-                    f"goal completed before minimum gate and tmux session is gone: {stats}",
-                )
-            marker = f"PB_GOAL_CONTINUATION_{record.get('continuations', 0) + 1}"
-            send_continuation(record, stats, min_goal_seconds, min_goal_calls, marker)
-            return {
-                **record,
-                "continuations": record.get("continuations", 0) + 1,
-                "last_early_completion_at": now(),
-                "last_continuation_marker": marker,
-                "last_goal_stats": stats,
-                "last_pane_tail": output[-4000:],
-            }
         cleanup_target_container(record)
         cleanup_codex_session(record)
+        if too_early:
+            return {
+                **record,
+                "status": "early_goal_done",
+                "early_goal_done_at": now(),
+                "last_goal_stats": stats,
+                "last_error": f"goal completed before minimum gate: {stats}",
+                "last_pane_tail": output[-4000:],
+            }
         return {
             **record,
             "status": "goal_done",
@@ -432,7 +386,6 @@ def watch(args: argparse.Namespace) -> None:
     state["completion_gate"] = {
         "min_goal_seconds": args.min_goal_seconds,
         "min_goal_calls": args.min_goal_calls,
-        "max_goal_continuations": args.max_goal_continuations,
     }
     while True:
         refresh_state(state)
@@ -623,7 +576,7 @@ def add_common_run_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--run-name-prefix", default="")
     parser.add_argument("--min-goal-seconds", type=int, default=0)
     parser.add_argument("--min-goal-calls", type=int, default=0)
-    parser.add_argument("--max-goal-continuations", type=int, default=0)
+    parser.add_argument("--max-goal-continuations", type=int, default=0, help=argparse.SUPPRESS)
 
 
 def main() -> None:
