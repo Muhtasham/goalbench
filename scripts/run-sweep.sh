@@ -148,6 +148,7 @@ if [[ -z "$RUN_VERSION" ]]; then
 fi
 export RUN_VERSION
 echo "run_version=$RUN_VERSION"
+echo "site_results_scope=$SITE_RESULTS_SCOPE"
 
 if [[ -z "$PROGRAMBENCH_REPO" ]]; then
   SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
