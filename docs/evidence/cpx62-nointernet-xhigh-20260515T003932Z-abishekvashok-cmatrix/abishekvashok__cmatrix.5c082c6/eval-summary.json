@@ -1,0 +1,759 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.16902688200207194
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.12672582099912688
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.14268224099942017
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.29848134300118545
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.1228031259997806
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.11020108400043682
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6440106279987958
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.094253364000906
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09916888499719789
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.07122997099941131
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.08389205399726052
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 7.399886883998988
+    },
+    {
+      "branch": "79b69dd3fd98",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03389997200065409
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12371844199878979
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12188828999933321
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1211160419989028
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13149789399903966
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 4.964213062001363
+    },
+    {
+      "branch": "1b991a57d4e9",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.036670352001237916
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1264213229987945
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.07604569199975231
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10512219299926073
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.08888396499969531
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.353625219002424
+    },
+    {
+      "branch": "bcaceaff5bda",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03391479200217873
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1418573339979048
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11699207800120348
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10837339099816745
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13121893399875262
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.677162952000799
+    },
+    {
+      "branch": "f53d318371c8",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.022706234998622676
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11941718900197884
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12409231200217619
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10150905600312399
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1123221560010279
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.208931058001326
+    },
+    {
+      "branch": "1d30a9bd67f8",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.016937166998104658
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09447413300222252
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10790162299963413
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.06952557700060424
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.0855110570009856
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.140693535999162
+    },
+    {
+      "branch": "2a51b65a0988",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.020103703998756828
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13112387399814907
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11357867100014118
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.08906847400066908
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12388501199893653
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.616183832000388
+    },
+    {
+      "branch": "c9a563c41e59",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.023560801000712672
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11563328300326248
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10884504899877356
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.08999947999836877
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10272973199971602
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.059051840999018
+    },
+    {
+      "branch": "47e777b60c5e",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.017846292998001445
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.08554977699895971
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11383400999693549
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11016261400072835
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11676609899950563
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.4730268029998115
+    },
+    {
+      "branch": "f40262460d4c",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.022866874001920223
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11900389099901076
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10870639899803791
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11666149899974698
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11707722799837939
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.1643462059982994
+    },
+    {
+      "branch": "4325cb75f082",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03038974500304903
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10160413700214121
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11913954999909038
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10866503899887903
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10609635999935563
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 16.07131202200253
+    },
+    {
+      "branch": "60fce8bbb0c8",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.018839099000615533
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11213732699980028
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10161277599763707
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10639570800049114
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09190805300022475
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.3636608329979936
+    },
+    {
+      "branch": "28d2b640a014",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.028245822999451775
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10539457200138713
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09886267700130702
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09174713299944415
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10755884399986826
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 34.95097333200101
+    },
+    {
+      "branch": "b75df89939ed",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03782449700156576
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.14792759100237163
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12647747300070478
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12431656999979168
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11702589800188434
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 7.1315428060006525
+    },
+    {
+      "branch": "aa26a2ba3c36",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.01765609300127835
+    }
+  ],
+  "executable_hash": "8f7ff745c4fe0c5531da3e0699afc04689b0a145111d2e512519974b759aee61",
+  "failed_tests": [
+    {
+      "branch": "79b69dd3fd98",
+      "message": "AssertionError: assert b'CMatrix version' in b''\n +  where b'' = CompletedProcess(args=['../executable', '-C', 'GREEN', '-V'], returncode=0, stdout=b'', stderr=b' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n').stdout",
+      "name": "tests.test_edge_cases.test_color_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "79b69dd3fd98",
+      "message": "AssertionError: assert b'CMatrix version' in b''\n +  where b'' = CompletedProcess(args=['../executable', '-C', 'ReD', '-V'], returncode=0, stdout=b'', stderr=b' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n').stdout",
+      "name": "tests.test_edge_cases.test_color_mixed_case",
+      "status": "failure"
+    },
+    {
+      "branch": "79b69dd3fd98",
+      "message": "AssertionError: assert (b'CMatrix version' in b'' or 0 != 0)\n +  where b'' = CompletedProcess(args=['../executable', '-t', '/dev/null', '-V'], returncode=0, stdout=b'', stderr=b'').stdout\n +  and   0 = CompletedProcess(args=['../executable', '-t', '/dev/null', '-V'], returncode=0, stdout=b'', stderr=b'').returncode",
+      "name": "tests.test_terminal_modes.test_tty_option",
+      "status": "failure"
+    },
+    {
+      "branch": "1b991a57d4e9",
+      "message": "AssertionError: assert b'Usage: cmatrix' in b''\n +  where b'' = CompletedProcess(args=['./executable', '-C', 'RED', '-h'], returncode=0, stdout=b'', stderr=b' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n').stdout",
+      "name": "eval.tests.test_cmatrix.TestColorOptions.test_color_case_insensitive",
+      "status": "failure"
+    },
+    {
+      "branch": "1b991a57d4e9",
+      "message": "AssertionError: assert b'Usage: cmatrix' in b''\n +  where b'' = CompletedProcess(args=['./executable', '-t', '/dev/null', '-h'], returncode=0, stdout=b'', stderr=b'').stdout",
+      "name": "eval.tests.test_cmatrix.TestTTYOption.test_tty_option_with_help",
+      "status": "failure"
+    },
+    {
+      "branch": "bcaceaff5bda",
+      "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
+      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[Cyan]",
+      "status": "failure"
+    },
+    {
+      "branch": "bcaceaff5bda",
+      "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
+      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[GREEN]",
+      "status": "failure"
+    },
+    {
+      "branch": "bcaceaff5bda",
+      "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
+      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[MAGENTA]",
+      "status": "failure"
+    },
+    {
+      "branch": "bcaceaff5bda",
+      "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
+      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[White]",
+      "status": "failure"
+    },
+    {
+      "branch": "bcaceaff5bda",
+      "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
+      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[YELLOW]",
+      "status": "failure"
+    },
+    {
+      "branch": "bcaceaff5bda",
+      "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
+      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[Red]",
+      "status": "failure"
+    },
+    {
+      "branch": "bcaceaff5bda",
+      "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
+      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[BLUE]",
+      "status": "failure"
+    },
+    {
+      "branch": "bcaceaff5bda",
+      "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
+      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[Black]",
+      "status": "failure"
+    },
+    {
+      "branch": "bcaceaff5bda",
+      "message": "AssertionError: assert 'CMatrix version' in ''",
+      "name": "eval.tests.test_argument_parsing.TestTtyFlag.test_tty_flag_with_value",
+      "status": "failure"
+    },
+    {
+      "branch": "60fce8bbb0c8",
+      "message": "AssertionError: assert ' CMatrix ver...hok/cmatrix\\n' == ' CMatrix ver...hok/cmatrix\\n'\n  \n  -  CMatrix version 2.0 (compiled 20:15:26, Mar  5 2026)\n  +  CMatrix version 2.0 (compiled 19:59:42, Apr 17 2026)\n    Email: abishekvashok@gmail.com\n    Web: https://github.com/abishekvashok/cmatrix",
+      "name": "eval.tests.test_help_and_version.test_version_flag",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 15,
+    "passed": 754
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "79b69dd3fd98",
+    "1b991a57d4e9",
+    "bcaceaff5bda",
+    "f53d318371c8",
+    "1d30a9bd67f8",
+    "2a51b65a0988",
+    "c9a563c41e59",
+    "47e777b60c5e",
+    "f40262460d4c",
+    "4325cb75f082",
+    "60fce8bbb0c8",
+    "28d2b640a014",
+    "b75df89939ed",
+    "aa26a2ba3c36"
+  ],
+  "test_records": 769,
+  "warnings": []
+}

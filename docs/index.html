@@ -178,8 +178,8 @@
     <h1>ProgramBench Goal</h1>
     <p>Codex <code>/goal</code> scaffold results on ProgramBench tasks. These are scaffold measurements, not official mini-SWE-agent leaderboard submissions.</p>
     <div class="pill-row">
-      <span class="pill">Generated 2026-05-15T00:51:17.920907+00:00</span>
-      <span class="pill">0 evaluated instances</span>
+      <span class="pill">Generated 2026-05-15T01:03:25.721246+00:00</span>
+      <span class="pill">3 evaluated instances</span>
       <span class="pill">200 tasks in full ProgramBench</span>
       <span class="pill">Sorted Resolved → Almost → Avg. pass</span>
     </div>
@@ -223,137 +223,169 @@
     </div>
     
     
+    <div class="cards">
+      
+      <section class="summary-card">
+        <div class="summary-title">GPT 5.5 (xhigh) / No internet / unversioned</div>
+        <div class="summary-meta">Codex no-internet ablation · run unversioned</div>
+        <div class="metric-grid">
+          <div><strong>3</strong><span>instances</span></div>
+          <div><strong>0.0%</strong><span>resolved</span></div>
+          <div><strong>33.3%</strong><span>almost</span></div>
+          <div><strong>80.8%</strong><span>avg pass</span></div>
+          <div><strong>$14.84</strong><span>total est. cost</span></div>
+          <div><strong>195</strong><span>total calls</span></div>
+          <div><strong>$4.95</strong><span>est. cost / task</span></div>
+          <div><strong>65.0</strong><span>calls / task</span></div>
+        </div>
+      </section>
     
-    <section class="empty-state">
-      <h2>Clean Slate</h2>
-      <p>No Codex <code>/goal</code> results are published in this reset yet. The next full run will populate the leaderboard, run-detail pages, task pages, plots, and downloadable JSON/CSV artifacts.</p>
-      <div class="mode-grid">
-        <div class="mode-card">
-          <strong>Primary run</strong>
-          <p><code>configs/full-nointernet-xhigh.json</code> is the headline Noam/Jake run: GPT-5.5 xhigh with Codex <code>/goal</code>, no internet/source lookup, black-box target access.</p>
-        </div>
-        <div class="mode-card">
-          <strong>High comparison</strong>
-          <p><code>configs/full-nointernet-high.json</code> keeps the same scaffold and mode, changing only reasoning effort for high-vs-xhigh comparison.</p>
-        </div>
-        <div class="mode-card">
-          <strong>Strict cleanroom variant</strong>
-          <p><code>configs/full-paper-xhigh.json</code> is ProgramBench-style cleanroom for Codex <code>/goal</code>, not a paper baseline reproduction. It needs Linux amd64, 20 CPU / 60g, strict egress, and wrapper-only target access.</p>
-        </div>
-        <div class="mode-card">
-          <strong>Tool-starvation ablation</strong>
-          <p><code>configs/full-localtools-xhigh.json</code> keeps internet/source lookup blocked but allows local binary-analysis/tracing tools. It is intentionally non-compliant.</p>
-        </div>
-        <div class="mode-card">
-          <strong>Open-internet ceiling</strong>
-          <p><code>configs/full-open-xhigh.json</code> allows internet/package tooling and is only a non-compliant ceiling experiment.</p>
-        </div>
-      </div>
-    </section>
-    
-    
+    </div>
+
     <h2>Score by Model × Task</h2>
-    <p>The matrix below mirrors ProgramBench's all-models-by-all-tasks view for this scaffold. Cells are pending until Codex results are published, then link to task pages with per-task detail.</p>
-    <div class="score-matrix pending-matrix">
-      <a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a>
+    <div class="score-matrix">
+      <a class="heat-cell" style="background:#d97706" title="abishekvashok__cmatrix.5c082c6: 97.2%" href="task/abishekvashok__cmatrix.5c082c6/"></a><a class="heat-cell" style="background:#0f766e" title="agourlay__zip-password-finder.704700d: 66.6%" href="task/agourlay__zip-password-finder.704700d/"></a><a class="heat-cell" style="background:#0f766e" title="ajeetdsouza__zoxide.67ca1bc: 78.5%" href="task/ajeetdsouza__zoxide.67ca1bc/"></a>
     </div>
+
+    
     <h2>Behavioral Test Pass Rate Distribution</h2>
-    <p>The distribution plots are wired into the report. They stay empty until the first evaluated task lands, then render ProgramBench-style cumulative and histogram views.</p>
+    <p>These plots mirror ProgramBench's run-detail views: a score histogram and a cumulative count by behavioral test pass-rate bucket.</p>
     <div class="plot-grid">
-      
-      <section class="plot-card pending-plot">
-        <h3>Cumulative</h3>
-        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Cumulative pending results">
-          <line x1="42" y1="18" x2="42" y2="186" />
-          <line x1="42" y1="186" x2="342" y2="186" />
-          <text x="34" y="22" text-anchor="end">100%</text>
-          <text x="34" y="190" text-anchor="end">0%</text>
-          <text x="192" y="212" text-anchor="middle">behavioral test pass rate</text>
-          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
-          <text x="192" y="106" text-anchor="middle">waiting for results</text>
-        </svg>
-      </section>
-    
-      
-      <section class="plot-card pending-plot">
+      <section class="plot-card">
         <h3>Histogram</h3>
-        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Histogram pending results">
-          <line x1="42" y1="18" x2="42" y2="186" />
-          <line x1="42" y1="186" x2="342" y2="186" />
-          <text x="34" y="22" text-anchor="end">100%</text>
-          <text x="34" y="190" text-anchor="end">0%</text>
-          <text x="192" y="212" text-anchor="middle">behavioral test pass rate</text>
-          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
-          <text x="192" y="106" text-anchor="middle">waiting for results</text>
-        </svg>
-      </section>
+        
+      <svg class="plot" viewBox="0 0 520 240" role="img" aria-label="Behavioral test pass rate histogram">
+        <line x1="42" y1="18" x2="42" y2="194" />
+        <line x1="42" y1="194" x2="506" y2="194" />
+        <text x="34" y="22" text-anchor="end">1</text>
+        <text x="34" y="198" text-anchor="end">0</text>
+        <text x="42" y="228">0%</text>
+        <text x="506" y="228" text-anchor="end">100%</text>
+        <text x="260.0" y="228" text-anchor="middle">behavioral test pass rate</text>
+        <text x="12" y="120.0" transform="rotate(-90 12 120.0)" text-anchor="middle">tasks</text>
+        <rect x="44.0" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>0-10% pass: 0 task(s)</title></rect><rect x="90.4" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>10-20% pass: 0 task(s)</title></rect><rect x="136.8" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>20-30% pass: 0 task(s)</title></rect><rect x="183.2" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>30-40% pass: 0 task(s)</title></rect><rect x="229.6" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>40-50% pass: 0 task(s)</title></rect><rect x="276.0" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>50-60% pass: 0 task(s)</title></rect><rect x="322.4" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>60-70% pass: 1 task(s)</title></rect><rect x="368.8" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>70-80% pass: 1 task(s)</title></rect><rect x="415.2" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>80-90% pass: 0 task(s)</title></rect><rect x="461.6" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>90-100% pass: 1 task(s)</title></rect>
+      </svg>
     
-    </div>
-    <h2>Model Comparison</h2>
-    <p>Model comparison plots appear once there are at least two Codex result groups. Each dot will be one task instance, matching ProgramBench's comparison framing.</p>
-    <div class="plot-grid">
-      
-      <section class="plot-card pending-plot">
-        <h3>Model Comparison</h3>
-        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Model Comparison pending results">
-          <line x1="42" y1="18" x2="42" y2="186" />
-          <line x1="42" y1="186" x2="342" y2="186" />
-          <text x="34" y="22" text-anchor="end">100%</text>
-          <text x="34" y="190" text-anchor="end">0%</text>
-          <text x="192" y="212" text-anchor="middle">comparison score</text>
-          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
-          <text x="192" y="106" text-anchor="middle">waiting for results</text>
-        </svg>
       </section>
+      <section class="plot-card">
+        <h3>Cumulative</h3>
+        
+      <svg class="plot" viewBox="0 0 520 240" role="img" aria-label="Behavioral test pass rate cumulative distribution">
+        <line x1="42" y1="18" x2="42" y2="194" />
+        <line x1="42" y1="194" x2="506" y2="194" />
+        <text x="34" y="22" text-anchor="end">3</text>
+        <text x="34" y="198" text-anchor="end">0</text>
+        <text x="42" y="228">0%</text>
+        <text x="506" y="228" text-anchor="end">100%</text>
+        <text x="260.0" y="228" text-anchor="middle">behavioral test pass rate</text>
+        <text x="12" y="120.0" transform="rotate(-90 12 120.0)" text-anchor="middle">tasks</text>
+        <rect x="44.0" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 0% pass: 3 task(s), 100.0%</title></rect><rect x="90.4" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 10% pass: 3 task(s), 100.0%</title></rect><rect x="136.8" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 20% pass: 3 task(s), 100.0%</title></rect><rect x="183.2" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 30% pass: 3 task(s), 100.0%</title></rect><rect x="229.6" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 40% pass: 3 task(s), 100.0%</title></rect><rect x="276.0" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 50% pass: 3 task(s), 100.0%</title></rect><rect x="322.4" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 60% pass: 3 task(s), 100.0%</title></rect><rect x="368.8" y="76.7" width="42.4" height="117.3" fill="#0f766e"><title>&gt;= 70% pass: 2 task(s), 66.7%</title></rect><rect x="415.2" y="135.3" width="42.4" height="58.7" fill="#0f766e"><title>&gt;= 80% pass: 1 task(s), 33.3%</title></rect><rect x="461.6" y="135.3" width="42.4" height="58.7" fill="#0f766e"><title>&gt;= 90% pass: 1 task(s), 33.3%</title></rect>
+      </svg>
     
+      </section>
     </div>
+    
+
+    
     <h2>Efficiency Plots</h2>
-    <p>The chart slots are wired into the report. They stay empty until the first evaluated task lands, then render ProgramBench-style pass-rate distribution plus pass rate by cost, calls, and latency.</p>
+    <p>Each point is one evaluated task. Compute is shown as Codex calls because public results omit raw token logs; cost is estimated from local token logs and a pricing snapshot.</p>
     <div class="plot-grid">
-      
-      <section class="plot-card pending-plot">
+      <section class="plot-card">
         <h3>Pass vs. Est. Cost</h3>
-        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass vs. Est. Cost pending results">
-          <line x1="42" y1="18" x2="42" y2="186" />
-          <line x1="42" y1="186" x2="342" y2="186" />
-          <text x="34" y="22" text-anchor="end">100%</text>
-          <text x="34" y="190" text-anchor="end">0%</text>
-          <text x="192" y="212" text-anchor="middle">estimated cost</text>
-          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
-          <text x="192" y="106" text-anchor="middle">waiting for results</text>
-        </svg>
-      </section>
+        
+      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Est. cost (USD)">
+        <line x1="42" y1="18" x2="42" y2="186" />
+        <line x1="42" y1="186" x2="342" y2="186" />
+        <text x="34" y="22" text-anchor="end">100%</text>
+        <text x="34" y="190" text-anchor="end">0%</text>
+        <text x="42" y="212">0</text>
+        <text x="342" y="212" text-anchor="end">$7.45</text>
+        <text x="180.0" y="212" text-anchor="middle">Est. cost (USD)</text>
+        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
+        <circle cx="342.0" cy="22.6" r="5.5" fill="#d97706"><title>abishekvashok__cmatrix.5c082c6: 97.2% pass, est. cost (usd) $7.45, No internet</title></circle><circle cx="167.8" cy="74.1" r="5.5" fill="#be123c"><title>agourlay__zip-password-finder.704700d: 66.6% pass, est. cost (usd) $3.13, No internet</title></circle><circle cx="213.5" cy="54.1" r="5.5" fill="#be123c"><title>ajeetdsouza__zoxide.67ca1bc: 78.5% pass, est. cost (usd) $4.26, No internet</title></circle>
+      </svg>
     
-      
-      <section class="plot-card pending-plot">
+      </section>
+      <section class="plot-card">
         <h3>Pass vs. Calls</h3>
-        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass vs. Calls pending results">
-          <line x1="42" y1="18" x2="42" y2="186" />
-          <line x1="42" y1="186" x2="342" y2="186" />
-          <text x="34" y="22" text-anchor="end">100%</text>
-          <text x="34" y="190" text-anchor="end">0%</text>
-          <text x="192" y="212" text-anchor="middle">Codex calls</text>
-          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
-          <text x="192" y="106" text-anchor="middle">waiting for results</text>
-        </svg>
-      </section>
+        
+      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Codex calls">
+        <line x1="42" y1="18" x2="42" y2="186" />
+        <line x1="42" y1="186" x2="342" y2="186" />
+        <text x="34" y="22" text-anchor="end">100%</text>
+        <text x="34" y="190" text-anchor="end">0%</text>
+        <text x="42" y="212">0</text>
+        <text x="342" y="212" text-anchor="end">73</text>
+        <text x="180.0" y="212" text-anchor="middle">Codex calls</text>
+        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
+        <circle cx="317.3" cy="22.6" r="5.5" fill="#d97706"><title>abishekvashok__cmatrix.5c082c6: 97.2% pass, codex calls 67, No internet</title></circle><circle cx="268.0" cy="74.1" r="5.5" fill="#be123c"><title>agourlay__zip-password-finder.704700d: 66.6% pass, codex calls 55, No internet</title></circle><circle cx="342.0" cy="54.1" r="5.5" fill="#be123c"><title>ajeetdsouza__zoxide.67ca1bc: 78.5% pass, codex calls 73, No internet</title></circle>
+      </svg>
     
-      
-      <section class="plot-card pending-plot">
+      </section>
+      <section class="plot-card">
         <h3>Pass vs. Latency</h3>
-        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass vs. Latency pending results">
-          <line x1="42" y1="18" x2="42" y2="186" />
-          <line x1="42" y1="186" x2="342" y2="186" />
-          <text x="34" y="22" text-anchor="end">100%</text>
-          <text x="34" y="190" text-anchor="end">0%</text>
-          <text x="192" y="212" text-anchor="middle">wall-clock hours</text>
-          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
-          <text x="192" y="106" text-anchor="middle">waiting for results</text>
-        </svg>
-      </section>
+        
+      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Wall-clock hours">
+        <line x1="42" y1="18" x2="42" y2="186" />
+        <line x1="42" y1="186" x2="342" y2="186" />
+        <text x="34" y="22" text-anchor="end">100%</text>
+        <text x="34" y="190" text-anchor="end">0%</text>
+        <text x="42" y="212">0</text>
+        <text x="342" y="212" text-anchor="end">0.20h</text>
+        <text x="180.0" y="212" text-anchor="middle">Wall-clock hours</text>
+        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
+        <circle cx="340.7" cy="22.6" r="5.5" fill="#d97706"><title>abishekvashok__cmatrix.5c082c6: 97.2% pass, wall-clock hours 0.20h, No internet</title></circle><circle cx="342.0" cy="74.1" r="5.5" fill="#be123c"><title>agourlay__zip-password-finder.704700d: 66.6% pass, wall-clock hours 0.20h, No internet</title></circle><circle cx="328.4" cy="54.1" r="5.5" fill="#be123c"><title>ajeetdsouza__zoxide.67ca1bc: 78.5% pass, wall-clock hours 0.19h, No internet</title></circle>
+      </svg>
     
+      </section>
     </div>
     
+
+    <h2>Extended Results</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Avg. est. cost</th><th>Avg. calls</th></tr></thead>
+        <tbody>
+            <tr>
+              <td>1</td>
+              <td><a href="run/gpt-5-5--xhigh--codex--goal-no-internet-codex-no-internet-ablation/">GPT 5.5 (xhigh)</a></td>
+              <td><code>unversioned</code></td>
+              <td>Codex /goal</td>
+              <td>0.0% (0/3)</td>
+              <td>33.3% (1/3)</td>
+              <td>$4.95</td>
+              <td>65.0</td>
+            </tr>
+            </tbody>
+      </table>
+    </div>
+    <p>Columns mirror ProgramBench's extended leaderboard shape: resolved and almost-resolved rates, average estimated API cost per task instance, and average calls per task instance. ProgramBench run-detail pages show total cost and total calls; our run-detail pages do the same. Run versions keep repeated same-config sweeps separate instead of silently merging attempts. Mode and compliance are shown in Run Disclosures and Per-Instance Results so the mirrored metric table stays close to ProgramBench's shape.</p>
+
+    <h2>Run Disclosures</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Mode</th><th>Compliance</th><th>Host profile</th><th>Tasks</th><th>Avg. pass</th><th>Wall</th></tr></thead>
+        <tbody>
+            <tr>
+              <td>1</td>
+              <td>GPT 5.5 (xhigh)</td>
+              <td><code>unversioned</code></td>
+              <td>No internet</td>
+              <td>Codex no-internet ablation</td>
+              <td>smaller VM: 16 CPU / 30g</td>
+              <td>3/200</td>
+              <td>80.8%</td>
+              <td>0.58h</td>
+            </tr>
+            </tbody>
+      </table>
+    </div>
+    <p>These disclosure fields are intentionally outside the mirrored metric table because ProgramBench's public leaderboard does not mix scaffold deviations into the metric columns. Rows labeled smaller VM are Codex <code>/goal</code> scaffold experiments, not paper-sized ProgramBench cleanroom runs.</p>
+
+    
+
+    
+
     
     <h2>Task Details</h2>
     <p>Task pages mirror ProgramBench's per-task view for this scaffold: scored behavioral tests, best score, and results by model/mode. Pending rows are full-run targets waiting for Codex results. The official ProgramBench task page is linked for baseline context.</p>
@@ -366,9 +398,9 @@
           <td><a href="task/abishekvashok__cmatrix.5c082c6/"><code>abishekvashok__cmatrix.5c082c6</code></a></td>
           <td>507</td>
           <td>100.0%</td>
-          <td>pending</td>
-          <td>pending</td>
-          <td>0</td>
+          <td>97.2%</td>
+          <td>GPT 5.5 (xhigh)</td>
+          <td>1</td>
           <td>13</td>
           <td><a href="https://programbench.com/task/abishekvashok__cmatrix.5c082c6/">official</a></td>
         </tr>
@@ -376,27 +408,27 @@
 
         <tr>
           <td>2</td>
-          <td><a href="task/agourlay__zip-password-finder.704700d/"><code>agourlay__zip-password-finder.704700d</code></a></td>
-          <td>680</td>
-          <td>98.7%</td>
-          <td>pending</td>
-          <td>pending</td>
-          <td>0</td>
+          <td><a href="task/ajeetdsouza__zoxide.67ca1bc/"><code>ajeetdsouza__zoxide.67ca1bc</code></a></td>
+          <td>531</td>
+          <td>87.2%</td>
+          <td>78.5%</td>
+          <td>GPT 5.5 (xhigh)</td>
+          <td>1</td>
           <td>13</td>
-          <td><a href="https://programbench.com/task/agourlay__zip-password-finder.704700d/">official</a></td>
+          <td><a href="https://programbench.com/task/ajeetdsouza__zoxide.67ca1bc/">official</a></td>
         </tr>
         
 
         <tr>
           <td>3</td>
-          <td><a href="task/ajeetdsouza__zoxide.67ca1bc/"><code>ajeetdsouza__zoxide.67ca1bc</code></a></td>
-          <td>531</td>
-          <td>87.2%</td>
-          <td>pending</td>
-          <td>pending</td>
-          <td>0</td>
+          <td><a href="task/agourlay__zip-password-finder.704700d/"><code>agourlay__zip-password-finder.704700d</code></a></td>
+          <td>680</td>
+          <td>98.7%</td>
+          <td>66.6%</td>
+          <td>GPT 5.5 (xhigh)</td>
+          <td>1</td>
           <td>13</td>
-          <td><a href="https://programbench.com/task/ajeetdsouza__zoxide.67ca1bc/">official</a></td>
+          <td><a href="https://programbench.com/task/agourlay__zip-password-finder.704700d/">official</a></td>
         </tr>
         
 
@@ -2963,6 +2995,73 @@
       </table>
     </div>
     
+
+    <h2>Per-Instance Results</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Instance</th><th>Run</th><th>Mode</th><th>Model</th><th>Compliance</th><th>Status</th><th>Eval</th><th>Score</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Host</th><th>Docker</th><th>Evidence</th></tr></thead>
+        <tbody>
+            <tr>
+              <td>1</td>
+              <td><a href="task/abishekvashok__cmatrix.5c082c6/"><code>abishekvashok__cmatrix.5c082c6</code></a></td>
+              <td><code>unversioned</code></td>
+              <td>No internet</td>
+              <td>GPT 5.5 (xhigh)</td>
+              <td>Codex no-internet ablation</td>
+              <td><span class="status almost">almost</span></td>
+              <td><span class="status resolved">ok</span></td>
+              <td>97.2%</td>
+              <td>493/507</td>
+              <td>$7.45</td>
+              <td>67</td>
+              <td>0.20h</td>
+              <td>Linux/x86_64</td>
+              <td>16 CPU / 30g</td>
+              <td><a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-abishekvashok-cmatrix/abishekvashok__cmatrix.5c082c6/manifest.json">manifest</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-abishekvashok-cmatrix/abishekvashok__cmatrix.5c082c6/eval.json">eval json</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-abishekvashok-cmatrix/abishekvashok__cmatrix.5c082c6/eval-summary.json">eval summary</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-abishekvashok-cmatrix/abishekvashok__cmatrix.5c082c6/usage-audit.json">usage audit</a></td>
+            </tr>
+            
+
+            <tr>
+              <td>2</td>
+              <td><a href="task/ajeetdsouza__zoxide.67ca1bc/"><code>ajeetdsouza__zoxide.67ca1bc</code></a></td>
+              <td><code>unversioned</code></td>
+              <td>No internet</td>
+              <td>GPT 5.5 (xhigh)</td>
+              <td>Codex no-internet ablation</td>
+              <td><span class="status open">open</span></td>
+              <td><span class="status resolved">ok</span></td>
+              <td>78.5%</td>
+              <td>417/531</td>
+              <td>$4.26</td>
+              <td>73</td>
+              <td>0.19h</td>
+              <td>Linux/x86_64</td>
+              <td>16 CPU / 30g</td>
+              <td><a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-ajeetdsouza-zoxide/ajeetdsouza__zoxide.67ca1bc/manifest.json">manifest</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-ajeetdsouza-zoxide/ajeetdsouza__zoxide.67ca1bc/eval.json">eval json</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-ajeetdsouza-zoxide/ajeetdsouza__zoxide.67ca1bc/eval-summary.json">eval summary</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-ajeetdsouza-zoxide/ajeetdsouza__zoxide.67ca1bc/usage-audit.json">usage audit</a></td>
+            </tr>
+            
+
+            <tr>
+              <td>3</td>
+              <td><a href="task/agourlay__zip-password-finder.704700d/"><code>agourlay__zip-password-finder.704700d</code></a></td>
+              <td><code>unversioned</code></td>
+              <td>No internet</td>
+              <td>GPT 5.5 (xhigh)</td>
+              <td>Codex no-internet ablation</td>
+              <td><span class="status open">open</span></td>
+              <td><span class="status resolved">ok</span></td>
+              <td>66.6%</td>
+              <td>453/680</td>
+              <td>$3.13</td>
+              <td>55</td>
+              <td>0.20h</td>
+              <td>Linux/x86_64</td>
+              <td>16 CPU / 30g</td>
+              <td><a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/manifest.json">manifest</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/eval.json">eval json</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/eval-summary.json">eval summary</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/usage-audit.json">usage audit</a></td>
+            </tr>
+            </tbody>
+      </table>
+    </div>
     
 
     <h2>Official Baseline Context</h2>

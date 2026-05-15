@@ -1,0 +1,854 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.7335529189986119
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.14233141200020327
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.10260178200041992
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.12070055400181445
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.12792210699990392
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.8101687900016259
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1337014349992387
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12720269900091807
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11631047099945135
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12647861200093757
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 7.599412693998602
+    },
+    {
+      "branch": "a9c8e0729570",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.026370249997853534
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12712844000270707
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.0977133109990973
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1296938699997554
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09393725499830907
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 290.96012559000155
+    },
+    {
+      "branch": "aa89e180e290",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.023341151998465648
+    }
+  ],
+  "executable_hash": "d9c505c4ef2bfba59ea15366f6bf85dbed0b45d36e47a079e0989df5ffc90bdf",
+  "failed_tests": [
+    {
+      "branch": "a9c8e0729570",
+      "message": "assert b'zoxide' in b''\n +  where b'' = CompletedProcess(args=['/workspace/executable'], returncode=2, stdout=b\"zoxide 0.9.9\\nAjeet D'Souza <98ajeet@gmail.com>\\nhttps://github.com/ajeetdsouza/zoxide\\n\\nA smarter cd command for your terminal\\n\\nUsage:\\n  executable <COMMAND>\\n\\nCommands:\\n  add     Add a new directory or increment its rank\\n  edit    Edit the database\\n  import  Import entries from another application\\n  init    Generate shell configuration\\n  query   Search for a directory in the database\\n  remove  Remove a directory from the database\\n\\nOptions:\\n  -h, --help     Print help\\n  -V, --version  Print version\\n\\nEnvironment variables:\\n  _ZO_DATA_DIR          Path for zoxide data files\\n  _ZO_ECHO              Print the matched directory before navigating to it when set to 1\\n  _ZO_EXCLUDE_DIRS      List of directory globs to be excluded\\n  _ZO_FZF_OPTS          Custom flags to pass to fzf\\n  _ZO_MAXAGE            Maximum total age after which entries start getting deleted\\n  _ZO_RESOLVE_SYMLINKS  Resolve symlinks when storing paths\\n\", stderr=b'').stderr",
+      "name": "eval.tests.test_zoxide.TestBasicInvocation.test_no_args_shows_help_on_stderr",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'import', '--from', 'fasd', '/tmp/zoxide_test_j0i52aq6/fasd_data.txt'], returncode=2, stdout=b'', stderr=b\"error: invalid value 'fasd' for '--from <FROM>'\\n  [possible values: autojump, z]\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "eval.tests.test_zoxide.TestImportCommand.test_import_from_fasd_alias",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "AssertionError: assert 1 == 2\n +  where 1 = CompletedProcess(args=['/workspace/executable', 'query', '--interactive', '--list'], returncode=1, stdout=b'', stderr=b'zoxide: could not find fzf, is it installed?\\n').returncode",
+      "name": "eval.tests.test_zoxide.TestQueryCommand.test_query_interactive_and_list_conflict",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'init', 'ksh'], returncode=2, stdout=b'', stderr=b\"error: invalid value 'ksh' for '<SHELL>'\\n  [possible values: bash, elvish, fish, nushell, posix, powershell, tcsh, xonsh, zsh]\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "eval.tests.test_zoxide.TestInitCommand.test_init_posix_alias_ksh",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'init', 'bash', '--no-aliases'], returncode=2, stdout=b'', stderr=b\"error: unexpected argument '--no-aliases' found\\n\\nUsage: executable init [OPTIONS] <SHELL>\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "eval.tests.test_zoxide.TestInitCommand.test_init_no_aliases_is_alias_for_no_cmd",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '/tmp'], returncode=0, stdout=b'', stderr=b'').returncode",
+      "name": "eval.tests.test_zoxide.TestEnvironmentVariables.test_zo_maxage_invalid_value_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '/tmp'], returncode=0, stdout=b'', stderr=b'').returncode",
+      "name": "eval.tests.test_zoxide.TestEnvironmentVariables.test_zo_data_dir_must_be_absolute",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'delete', '/tmp'], returncode=2, stdout=b'', stderr=b\"error: unexpected argument 'delete' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "eval.tests.test_zoxide.TestEditCommand.test_edit_delete_subcommand",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout=b'', stderr=b\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "eval.tests.test_zoxide.TestEditCommand.test_edit_reload_subcommand",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'decrement', '/tmp'], returncode=2, stdout=b'', stderr=b\"error: unexpected argument 'decrement' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "eval.tests.test_zoxide.TestEditCommand.test_edit_decrement_subcommand",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', '/tmp'], returncode=2, stdout=b'', stderr=b\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "eval.tests.test_zoxide.TestEditCommand.test_edit_increment_subcommand",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout=b'', stderr=b\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "eval.tests.test_zoxide.TestEditCommand.test_edit_reload_output_format",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "AssertionError: assert b'/tmp' not in b'/home\\n/tmp\\n'\n +  where b'/home\\n/tmp\\n' = CompletedProcess(args=['/workspace/executable', 'query', '--list'], returncode=0, stdout=b'/home\\n/tmp\\n', stderr=b'').stdout",
+      "name": "eval.tests.test_zoxide.TestEnvironmentVariables.test_zo_exclude_dirs_filters_query_results",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "assert 40000.0 <= 9999.0",
+      "name": "eval.tests.test_zoxide.TestRankingAndScoring.test_score_clamped_at_maximum_9999",
+      "status": "failure"
+    },
+    {
+      "branch": "a9c8e0729570",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout=b'', stderr=b\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "eval.tests.test_zoxide.TestEditCommand.test_edit_delete_then_reload",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert \"error: unrec...y '--help'.\\n\" == \"error: unrec...y '--help'.\\n\"\n  \n    error: unrecognized subcommand 'Add'\n  - \n  -   tip: a similar subcommand exists: 'add'\n    \n    Usage: executable <COMMAND>\n    \n    For more information, try '--help'.",
+      "name": "tests.test_cli_errors.test_case_sensitive_subcommand_names",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 1\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'import', '--from', 'fasd', '/tmp/pytest-of-root/pytest-0/popen-gw10/test_import_fasd_alias_accepte2/nonexistent.txt'], returncode=2, stdout='', stderr=\"error: invalid value 'fasd' for '--from <FROM>'\\n  [possible values: autojump, z]\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_cli_errors.test_import_fasd_alias_accepted",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert \"error: unexp...y '--help'.\\n\" == \"error: unexp...y '--help'.\\n\"\n  \n    error: unexpected argument '--unknown-flag' found\n  - \n  -   tip: to pass '--unknown-flag' as a value, use '-- --unknown-flag'\n    \n    Usage: executable query [OPTIONS] [KEYWORDS]...\n    \n    For more information, try '--help'.",
+      "name": "tests.test_cli_errors.test_query_invalid_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert \"error: unexp...y '--help'.\\n\" == \"error: unexp...y '--help'.\\n\"\n  \n    error: unexpected argument '--invalid-flag' found\n  - \n  -   tip: to pass '--invalid-flag' as a value, use '-- --invalid-flag'\n    \n    Usage: executable add [OPTIONS] <PATHS>...\n    \n    For more information, try '--help'.",
+      "name": "tests.test_cli_errors.test_add_invalid_subcommand_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 != 0\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', ''], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_add.test_add_empty_path_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '' == 'zoxide 0.9.9...oring paths\\n'\n  \n  - zoxide 0.9.9\n  - Ajeet D'Souza <98ajeet@gmail.com>\n  - https://github.com/ajeetdsouza/zoxide\n  - \n  - A smarter cd command for your terminal\n  - ...\n  \n  ...Full output truncated (22 lines hidden), use '-vv' to show",
+      "name": "tests.test_cli_errors.test_no_subcommand_shows_help",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '/tmp/pytest-...with\\nnewline' == ''\n  \n  + /tmp/pytest-of-root/pytest-0/popen-gw2/test_add_directory_with_newlin2/dir\n  + with\n  + newline",
+      "name": "tests.test_add.test_add_directory_with_newline_silently_ignored",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_null_byte_separator_exact",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_persistence",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 'could not find fzf' in '/usr/bin/env: \u2018python3\u2019: no such file or directory\\n'\n +  where '/usr/bin/env: \u2018python3\u2019: no such file or directory\\n' = <built-in method lower of str object at 0x7fb78f549e30>()\n +    where <built-in method lower of str object at 0x7fb78f549e30> = '/usr/bin/env: \u2018python3\u2019: No such file or directory\\n'.lower\n +      where '/usr/bin/env: \u2018python3\u2019: No such file or directory\\n' = CompletedProcess(args=['/workspace/executable', 'query', '--interactive'], returncode=127, stdout='', stderr='/usr/bin/env: \u2018python3\u2019: No such file or directory\\n').stderr",
+      "name": "tests.test_edge_cases.test_query_interactive_without_fzf",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'decrement', ''], returncode=2, stdout='', stderr=\"error: unexpected argument 'decrement' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_decrement_empty_path",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', '/tmp/pytest-of-root/pytest-0/popen-gw5/test_edit_operations_with_spec2/dir with spaces'], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_operations_with_special_characters_in_path",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'query', '--list'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_environment.test_zo_data_dir_relative_path_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'decrement', '/tmp/test1'], returncode=2, stdout='', stderr=\"error: unexpected argument 'decrement' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_decrement_multiple_times_clamps_at_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 2\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '--score', '0.5', '--score', '1.0', '/tmp'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_cli_errors.test_add_duplicate_score_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert \"error: unexp...y '--help'.\\n\" == \"error: unexp...y '--help'.\\n\"\n  \n    error: unexpected argument '--unknown-flag' found\n  - \n  -   tip: to pass '--unknown-flag' as a value, use '-- --unknown-flag'\n    \n    Usage: executable remove [PATHS]...\n    \n    For more information, try '--help'.",
+      "name": "tests.test_cli_errors.test_remove_invalid_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 1 == 2\n +  where 1 = CompletedProcess(args=['/workspace/executable', 'query', '--interactive', '--list'], returncode=1, stdout='', stderr='zoxide: could not find fzf, is it installed?\\n').returncode",
+      "name": "tests.test_cli_errors.test_query_conflicting_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'init', 'ksh'], returncode=2, stdout='', stderr=\"error: invalid value 'ksh' for '<SHELL>'\\n  [possible values: bash, elvish, fish, nushell, posix, powershell, tcsh, xonsh, zsh]\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_cli_errors.test_init_ksh_alias_accepted",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '/tmp/pytest-...ith\\ncarriage' == ''\n  \n  + /tmp/pytest-of-root/pytest-0/popen-gw2/test_add_directory_with_carria2/dir\n  + with\n  + carriage",
+      "name": "tests.test_add.test_add_directory_with_carriage_return_silently_ignored",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_deduplication",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_score_display_format",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_create_data_dir",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'delete', ''], returncode=2, stdout='', stderr=\"error: unexpected argument 'delete' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_delete_empty_path",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_reload_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_concurrent_modifications",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert '   4.0\\t/tmp/toggle' in ''\n +  where '' = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', '/tmp/toggle'], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").stdout",
+      "name": "tests.test_edit.test_edit_increment_then_decrement_same_path",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert \"error: unexp...y '--help'.\\n\" == \"error: unexp...y '--help'.\\n\"\n  \n    error: unexpected argument '--unknown-flag' found\n    \n  -   tip: to pass '--unknown-flag' as a value, use '-- --unknown-flag'\n  - \n  - Usage: executable init <SHELL>\n  + Usage: executable init [OPTIONS] <SHELL>...\n  \n  ...Full output truncated (3 lines hidden), use '-vv' to show",
+      "name": "tests.test_cli_errors.test_init_invalid_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 2\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', ''], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_cli_errors.test_add_empty_string_path",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '/tmp'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_errors.test_data_dir_not_absolute",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert \"error: the f...y '--help'.\\n\" == \"error: the f...y '--help'.\\n\"\n  \n    error: the following required arguments were not provided:\n      --from <FROM>\n  -   <PATH>\n    \n    Usage: executable import --from <FROM> <PATH>\n    \n    For more information, try '--help'.",
+      "name": "tests.test_cli_errors.test_import_missing_all_required_args",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '/tmp'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_environment.test_zo_maxage_with_whitespace",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '/tmp'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_environment.test_zo_maxage_invalid_non_numeric",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_large_database_performance",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 1\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_invalid_version",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', 'path\\twith\\ttabs'], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_path_with_tabs",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_increment_multiple_times",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'delete', '/tmp/pytest-of-root/pytest-0/popen-gw15/test_edit_delete_all_entries2/test1'], returncode=2, stdout='', stderr=\"error: unexpected argument 'delete' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_delete_all_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', '/tmp/pytest-of-root/pytest-0/popen-gw3/test_edit_increment2/test2'], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_increment",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert \"zoxide: impo...not_a_number'\" == 'zoxide: impo...und in string'\n  \n    zoxide: import error\n    \n    Caused by:\n  -     0: invalid epoch: not_a_number\n  ?                  ---\n  +     0: invalid timestamp: not_a_number...\n  \n  ...Full output truncated (3 lines hidden), use '-vv' to show",
+      "name": "tests.test_errors.test_import_z_invalid_epoch",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_score_clamping_9999",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', '/tmp/path3'], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_output_null_byte_separation_exact",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '/tmp'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_errors.test_maxage_invalid_non_numeric",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 1 == 2\n +  where 1 = CompletedProcess(args=['/workspace/executable', 'import', '--from', 'z', '--from', 'autojump', '/tmp/file.txt'], returncode=1, stdout='', stderr='zoxide: current database is not empty, specify --merge to continue anyway\\n').returncode",
+      "name": "tests.test_cli_errors.test_import_duplicate_from_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '/tmp'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_errors.test_maxage_negative_value",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '/tmp/pytest...ects_q2/dir2' not in '/tmp/pytest...ts_q2/dir1\\n'\n  \n  '/tmp/pytest-of-roo...irs_affects_q2/dir2' is contained here:\n    /tmp/pytest-of-root/pytest-0/popen-gw8/test_zo_exclude_dirs_affects_q2/dir2\n    /tmp/pytest-of-root/pytest-0/popen-gw8/test_zo_exclude_dirs_affects_q2/dir1",
+      "name": "tests.test_environment.test_zo_exclude_dirs_affects_query_filtering",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '/tmp'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_environment.test_zo_maxage_negative_value",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: error: invalid value 'fasd' for '--from <FROM>'\n    [possible values: autojump, z]\n  \n  For more information, try '--help'.\n  \nassert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'import', '--from', 'fasd', '/workspace/eval/test_resources/test_import/z_basic.txt'], returncode=2, stdout='', stderr=\"error: invalid value 'fasd' for '--from <FROM>'\\n  [possible values: autojump, z]\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_import.test_import_fasd_alias",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 1\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_corrupted_data",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', 'path\\nwith\\nnewlines'], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_path_with_newlines",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_maxage_configuration",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 'invalid epoch: 10.0' in 'zoxide: import error\\n\\nCaused by:\\n    invalid entry: /home/user/badentry|10.0\\n'\n +  where 'zoxide: import error\\n\\nCaused by:\\n    invalid entry: /home/user/badentry|10.0\\n' = CompletedProcess(args=['/workspace/executable', 'import', '--from', 'z', '/workspace/eval/test_resources/test_errors/import_z_missing_field.txt'], returncode=1, stdout='', stderr='zoxide: import error\\n\\nCaused by:\\n    invalid entry: /home/user/badentry|10.0\\n').stderr",
+      "name": "tests.test_errors.test_import_z_missing_field",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_decrement_below_zero_clamped",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'decrement', '/tmp/pytest-of-root/pytest-0/popen-gw3/test_edit_decrement2/test3'], returncode=2, stdout='', stderr=\"error: unexpected argument 'decrement' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_decrement",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '/tmp'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_errors.test_maxage_invalid_float",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '/tmp'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_errors.test_maxage_overflow_value",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '/tmp/pytest...lue2/testdir' not in '/tmp/pytest...e2/testdir\\n'\n  \n  '/tmp/pytest-of-roo...zero_value2/testdir' is contained here:\n  Strings contain only whitespace, escaping them using repr()\n    '/tmp/pytest-of-root/pytest-0/popen-gw10/test_zo_maxage_zero_value2/testdir\\n'",
+      "name": "tests.test_environment.test_zo_maxage_zero_value",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_swap_remove_preserves_other_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 'zoxide: impo.../documents|10' == 'zoxide: impo...float literal'\n  \n    zoxide: import error\n    \n    Caused by:\n  -     0: invalid rank: /home/user/documents\n  ?    ---          ^^^                      ^\n  +     invalid entry: /home/user/documents|10\n  ?             +++ ^                      ^^^\n  -     1: invalid float literal",
+      "name": "tests.test_import.test_import_z_invalid_format",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 1 == 0\n +  where 1 = CompletedProcess(args=['/workspace/executable', 'import', '--from', 'z', '/workspace/eval/test_resources/test_import/z_path_with_pipe.txt'], returncode=1, stdout='', stderr='zoxide: import error\\n\\nCaused by:\\n    invalid entry: /home/user/path|with|pipes|10|1609459200\\n').returncode",
+      "name": "tests.test_import.test_import_z_path_with_pipes",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_sort_by_score",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', './relative'], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_relative_paths_accepted",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert '# shellcheck...init bash)\"\\n' == '# shellcheck...init bash)\"\\n'\n  \n    # shellcheck shell=bash\n    \n    # =============================================================================\n    #\n    # Utility functions for zoxide.\n    #...\n  \n  ...Full output truncated (189 lines hidden), use '-vv' to show",
+      "name": "tests.test_init.test_init_bash_custom_cmd",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 1 == 0\n +  where 1 = CompletedProcess(args=['/workspace/executable', 'import', '--from', 'autojump', '/workspace/eval/test_resources/test_import/autojump_whitespace.txt'], returncode=1, stdout='', stderr='zoxide: import error\\n\\nCaused by:\\n    invalid entry: 5.0\\t/home/user/projects\\t\\n').returncode",
+      "name": "tests.test_import.test_import_autojump_trailing_whitespace_preserved",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '# ==========...sh | source\\n' == '# ==========...sh | source\\n'\n  \n    # =============================================================================\n    #\n    # Utility functions for zoxide.\n    #\n    \n    # pwd based on the value of _ZO_RESOLVE_SYMLINKS....\n  \n  ...Full output truncated (118 lines hidden), use '-vv' to show",
+      "name": "tests.test_init.test_init_fish_custom_cmd",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 'invalid glob in _ZO_EXCLUDE_DIRS: /tmp/[' in 'zoxide: not a directory: /tmp/test\\n'\n +  where 'zoxide: not a directory: /tmp/test\\n' = CompletedProcess(args=['/workspace/executable', 'add', '/tmp/test'], returncode=1, stdout='', stderr='zoxide: not a directory: /tmp/test\\n').stderr",
+      "name": "tests.test_errors.test_exclude_dirs_invalid_glob_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'delete', '/tmp/pytest-of-root/pytest-0/popen-gw3/test_edit_delete2/test2'], returncode=2, stdout='', stderr=\"error: unexpected argument 'delete' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'delete', '/nonexistent/path/does/not/exist'], returncode=2, stdout='', stderr=\"error: unexpected argument 'delete' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_delete_nonexistent_path",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 'invalid glob in _ZO_EXCLUDE_DIRS' in 'zoxide: not a directory: /tmp/test\\n'\n +  where 'zoxide: not a directory: /tmp/test\\n' = CompletedProcess(args=['/workspace/executable', 'add', '/tmp/test'], returncode=1, stdout='', stderr='zoxide: not a directory: /tmp/test\\n').stderr",
+      "name": "tests.test_errors.test_exclude_dirs_multiple_invalid_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 'function my;cmd()' in '# shellcheck shell=bash\\n\\n# =============================================================================\\n#\\n# Utility functions for zoxide.\\n#\\n\\n# pwd based on the value of _ZO_RESOLVE_SYMLINKS.\\nfunction __zoxide_pwd() {\\n    \\\\builtin pwd -L\\n}\\n\\n# cd + custom logic based on the value of _ZO_ECHO.\\nfunction __zoxide_cd() {\\n    # shellcheck disable=SC2164\\n    \\\\builtin cd -- \"$@\"\\n}\\n\\n# =============================================================================\\n#\\n# Hook configuration for zoxide.\\n#\\n\\n# Hook to add new entries to the database.\\n__zoxide_oldpwd=\"$(__zoxide_pwd)\"\\n\\nfunction __zoxide_hook() {\\n    \\\\builtin local -r retval=\"$?\"\\n    \\\\builtin local pwd_tmp\\n    pwd_tmp=\"$(__zoxide_pwd)\"\\n    if [[ ${__zoxide_oldpwd} != \"${pwd_tmp}\" ]]; then\\n        __zoxide_oldpwd=\"${pwd_tmp}\"\\n        \\\\command zoxide add -- \"${__zoxide_oldpwd}\"\\n    fi\\n    return \"${retval}\"\\n}\\n\\n# Initialize hook.\\nif [[ ${PROMPT_COMMAND:=} != *\\'__zoxide_hook\\'* ]]; then\\n    if [[ \"$(declare -p PROMPT_COMMAND 2>&1)\" == \"declare -a\"* ]]; then\\n        PROMPT_COMMAND=(\"${PROMPT_COMMAND[@]}\" __zoxide_hook)\\n    else\\n        # shellcheck disable=SC2128,SC2178\\n        PROMPT_COMM...[[ -z ${COMP_WORDS[-1]} ]]; then\\n            # shellcheck disable=SC2312\\n            __zoxide_result=\"$(\\\\command zoxide query --exclude \"$(__zoxide_pwd)\" --interactive -- \"${COMP_WORDS[@]:1:${#COMP_WORDS[@]}-2}\")\" && {\\n                # In case the terminal does not respond to \\\\e[5n or another\\n                # mechanism steals the response, it is still worth completing\\n                # the directory in the command line.\\n                COMPREPLY=(\"${__zoxide_z_prefix}${__zoxide_result}/\")\\n\\n                # Note: We here call \"bind\" without prefixing \"\\\\builtin\" to be\\n                # compatible with frameworks like ble.sh, which emulates Bash\\'s\\n                # builtin \"bind\".\\n                bind -x \\'\"\\\\e[0n\": __zoxide_z_complete_helper\\'\n[truncated 430 chars]",
+      "name": "tests.test_init.test_init_cmd_special_chars_passes_through",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert \"zoxide: impo...not_a_number'\" == 'zoxide: impo...und in string'\n  \n    zoxide: import error\n    \n    Caused by:\n  -     0: invalid epoch: not_a_number\n  ?                  ---\n  +     0: invalid timestamp: not_a_number...\n  \n  ...Full output truncated (3 lines hidden), use '-vv' to show",
+      "name": "tests.test_import.test_import_z_invalid_epoch",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', ''], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_increment_empty_path",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 1 == 0\n +  where 1 = CompletedProcess(args=['/workspace/executable', 'import', '--from', 'autojump', '/workspace/eval/test_resources/test_import/autojump_path_with_tab.txt'], returncode=1, stdout='', stderr='zoxide: import error\\n\\nCaused by:\\n    invalid entry: 10.0\\t/home/user/path\\twith\\ttabs\\n').returncode",
+      "name": "tests.test_import.test_import_autojump_path_with_tabs",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_reload_empty_database",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'init', 'ksh'], returncode=2, stdout='', stderr=\"error: invalid value 'ksh' for '<SHELL>'\\n  [possible values: bash, elvish, fish, nushell, posix, powershell, tcsh, xonsh, zsh]\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_init.test_init_posix_alias_ksh",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_aging_removes_low_rank_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 27.3 <= 26.0",
+      "name": "tests.test_integration.test_maxage_triggers_rank_reduction",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '/tmp/pytest...exclude/that' not in '/tmp/pytest...clude/this\\n'\n  \n  '/tmp/pytest-of-roo...reven2/exclude/that' is contained here:\n    /tmp/pytest-of-root/pytest-0/popen-gw5/test_exclusion_patterns_preven2/another/dir\n    /tmp/pytest-of-root/pytest-0/popen-gw5/test_exclusion_patterns_preven2/exclude/that\n    /tmp/pytest-of-root/pytest-0/popen-gw5/test_exclusion_patterns_preven2/include/this",
+      "name": "tests.test_integration.test_exclusion_patterns_prevent_adding_matching_dirs",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', '/tmp/pytest-of-root/pytest-0/popen-gw4/test_edit_increment_nonexisten2/test'], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_increment_nonexistent_creates_entry",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_multiple_operations_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '' == 'zoxide: no match found'\n  \n  - zoxide: no match found",
+      "name": "tests.test_query_interactive.test_interactive_fzf_exit_code_1_no_match",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 'fzf returned an error' in ''\n +  where '' = CompletedProcess(args=['/workspace/executable', 'query', '-i', 'myapp'], returncode=2, stdout='', stderr='').stderr",
+      "name": "tests.test_query_interactive.test_interactive_fzf_exit_code_2_error",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '3.8709\\t/tmp...rojects/myapp' == '/tmp/pytest-...rojects/myapp'\n  \n  - /tmp/pytest-of-root/pytest-0/popen-gw15/test_interactive_basic_selecti2/projects/myapp\n  + 3.8709\t/tmp/pytest-of-root/pytest-0/popen-gw15/test_interactive_basic_selecti2/projects/myapp\n  ? +++++++",
+      "name": "tests.test_query_interactive.test_interactive_basic_selection_without_score",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 'fzf was terminated' in ''\n +  where '' = CompletedProcess(args=['/workspace/executable', 'query', '-i', 'myapp'], returncode=143, stdout='', stderr='').stderr",
+      "name": "tests.test_query_interactive.test_interactive_fzf_terminated_signal",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '--exact' in 'ARGS: \\n'",
+      "name": "tests.test_query_interactive.test_interactive_default_fzf_args_without_custom_opts",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '3.0000\\t/tmp.../python/myapp' == '/tmp/pytest-.../python/myapp'\n  \n  - /tmp/pytest-of-root/pytest-0/popen-gw9/test_interactive_multiple_keyw2/projects/python/myapp\n  + 3.0000\t/tmp/pytest-of-root/pytest-0/popen-gw9/test_interactive_multiple_keyw2/projects/python/myapp\n  ? +++++++",
+      "name": "tests.test_query_interactive.test_interactive_multiple_keywords_and_logic",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'remove', '/tmp/pytest-of-root/pytest-0/popen-gw14/test_remove_same_path_twice2/dir_a', '/tmp/pytest-of-root/pytest-0/popen-gw14/test_remove_same_path_twice2/dir_a'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_remove.test_remove_same_path_twice",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'decrement', '/tmp/pytest-of-root/pytest-0/popen-gw4/test_edit_decrement_nonexisten2/test'], returncode=2, stdout='', stderr=\"error: unexpected argument 'decrement' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_decrement_nonexistent_creates_zero_rank",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '3.8709\\t/tmp...rojects/myapp' == '/tmp/pytest-...rojects/myapp'\n  \n  - /tmp/pytest-of-root/pytest-0/popen-gw13/test_interactive_with_all_flag2/projects/myapp\n  + 3.8709\t/tmp/pytest-of-root/pytest-0/popen-gw13/test_interactive_with_all_flag2/projects/myapp\n  ? +++++++",
+      "name": "tests.test_query_interactive.test_interactive_with_all_flag_excludes_nonexistent_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'add', '/tmp/pytest-of-root/pytest-0/popen-gw6/test_database_relative_data_di2/test'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_edit.test_database_relative_data_dir_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '3.0000\\t/tmp...rojects/myapp' == '/tmp/pytest-...rojects/myapp'\n  \n  - /tmp/pytest-of-root/pytest-0/popen-gw1/test_interactive_exclude_flag_2/projects/myapp\n  + 3.0000\t/tmp/pytest-of-root/pytest-0/popen-gw1/test_interactive_exclude_flag_2/projects/myapp\n  ? +++++++",
+      "name": "tests.test_query_interactive.test_interactive_exclude_flag_filters_specific_path",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 != 0\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'query', '-i', 'myapp'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_query_interactive.test_interactive_empty_selection_error",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 == 1\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'remove', '/tmp/pytest-of-root/pytest-0/popen-gw12/test_remove_multiple_with_dupl2/dir_0', '/tmp/pytest-of-root/pytest-0/popen-gw12/test_remove_multiple_with_dupl2/dir_1', '/tmp/pytest-of-root/pytest-0/popen-gw12/test_remove_multiple_with_dupl2/dir_0'], returncode=0, stdout='', stderr='').returncode",
+      "name": "tests.test_remove.test_remove_multiple_with_duplicates_in_args",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '3.8709\\t/tmp...ects/app v2.0' == '/tmp/pytest-...ects/app v2.0'\n  \n  - /tmp/pytest-of-root/pytest-0/popen-gw9/test_interactive_selection_wit2/my projects/app v2.0\n  + 3.8709\t/tmp/pytest-of-root/pytest-0/popen-gw9/test_interactive_selection_wit2/my projects/app v2.0\n  ? +++++++",
+      "name": "tests.test_query_interactive.test_interactive_selection_with_spaces_in_path",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_empty_after_aging_all_removed",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert '20.0000\\t/tm...rojects/app00' == '/tmp/pytest-...rojects/app00'\n  \n  - /tmp/pytest-of-root/pytest-0/popen-gw2/test_interactive_early_selecti2/projects/app00\n  + 20.0000\t/tmp/pytest-of-root/pytest-0/popen-gw2/test_interactive_early_selecti2/projects/app00\n  ? ++++++++",
+      "name": "tests.test_query_interactive.test_interactive_early_selection_during_streaming",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_database_persistence_across_multiple_operations",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'reload'], returncode=2, stdout='', stderr=\"error: unexpected argument 'reload' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_output_score_alignment",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 12000.0 == 9999.0",
+      "name": "tests.test_query.test_query_score_clamping_to_9999",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', '  leading spaces'], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_path_with_leading_spaces",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', 'trailing spaces  '], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_path_with_trailing_spaces",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', '/tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n[truncated 439 chars]",
+      "name": "tests.test_edit.test_edit_very_long_path",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "assert 2 == 0\n +  where 2 = CompletedProcess(args=['/workspace/executable', 'edit', 'increment', '/tmp/test1'], returncode=2, stdout='', stderr=\"error: unexpected argument 'increment' found\\n\\nUsage: executable edit\\n\\nFor more information, try '--help'.\\n\").returncode",
+      "name": "tests.test_edit.test_edit_multiple_increments_same_path",
+      "status": "failure"
+    },
+    {
+      "branch": "aa89e180e290",
+      "message": "AssertionError: assert 0 != 0\n +  where 0 = CompletedProcess(args=['/workspace/executable', 'query', '-i', 'myapp'], returncode=0, stdout='short', stderr='').returncode",
+      "name": "tests.test_query_interactive.test_interactive_selection_too_short_error",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 118,
+    "passed": 459
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "a9c8e0729570",
+    "aa89e180e290"
+  ],
+  "test_records": 577,
+  "warnings": []
+}
