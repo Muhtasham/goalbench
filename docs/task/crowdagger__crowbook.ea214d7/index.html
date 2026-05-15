@@ -15,6 +15,11 @@
     .metric { border: 1px solid #d9e0e6; border-radius: 8px; padding: 14px; }
     .metric strong { display: block; font-size: 24px; }
     .metric span { color: #61707d; font-size: 13px; }
+    .evidence-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 12px; margin: 16px 0; }
+    .evidence-card { border: 1px solid #d9e0e6; border-radius: 8px; padding: 14px; }
+    .evidence-card h3 { margin: 0 0 8px; font-size: 16px; }
+    .evidence-card ul { margin: 8px 0 0; padding-left: 18px; }
+    .evidence-card li { margin: 5px 0; font-size: 13px; }
     .muted { color: #61707d; }
   </style>
 </head>
@@ -37,6 +42,7 @@
         </tr>
         </tbody>
   </table>
+
   <h2>Official ProgramBench Results by Model</h2>
   <table>
     <thead><tr><th>#</th><th>Model</th><th>Provider</th><th>Score</th><th>Cost</th><th>Calls</th></tr></thead>
