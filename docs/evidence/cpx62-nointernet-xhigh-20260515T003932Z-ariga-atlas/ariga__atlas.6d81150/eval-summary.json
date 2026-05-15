@@ -1,0 +1,4032 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.11423093700068421
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.10999638299836079
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.11797411299994565
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.11965769600283238
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.10905820699917967
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.08899434500199277
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6861844999984896
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1045112740030163
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.08838016799927573
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.07849948500006576
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12394398000105866
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 4.344262044000061
+    },
+    {
+      "branch": "5e483d7465e7",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03084559000126319
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09104063700215193
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.08818080800119787
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09741108199887094
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11746655499882763
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 6.4982748399997945
+    },
+    {
+      "branch": "040ee76f34fd",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.021214247000898467
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12744221500179265
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.14138481200279784
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11682165699676261
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12510885499796132
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 77.00500925599772
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02830705100132036
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09645419599837624
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12790008400043007
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13092232200142462
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13575359400056186
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 6.877714399997785
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.022887031998834573
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13154270899758558
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09798574000160443
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09006160100034322
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1201483940021717
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.414226314998814
+    },
+    {
+      "branch": "99c1346c445d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02796354200108908
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11959551600011764
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1338467710011173
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11558616200272809
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12240579500212334
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 6.889191925001796
+    },
+    {
+      "branch": "d38253c926ee",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.023319398998864926
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11699840599976596
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09190345399838407
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.08486539099976653
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11656551899795886
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.347545529999479
+    },
+    {
+      "branch": "239427da9840",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03412070799822686
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13800108500072383
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12611618100345368
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1120300260008662
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11898588899930473
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.4708187989999715
+    },
+    {
+      "branch": "6256695fac2d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.028826697998738382
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12953820600159816
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12153747899719747
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1138087990002532
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1369660689997545
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.63805740799944
+    },
+    {
+      "branch": "c46ae9b89fa0",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03845444000035059
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12680358800207614
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09608440800002427
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09313091899821302
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1241843579991837
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.623170522998407
+    },
+    {
+      "branch": "f24728ecf8a8",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.026474196998606203
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11748000400257297
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10964710500047659
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13113911199980066
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13303458399968804
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.638029747999099
+    },
+    {
+      "branch": "6188fe5b7e4d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.026095708999491762
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10735396300151478
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11104214000079082
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11550203200022224
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09934517500005313
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 4.85128747699855
+    },
+    {
+      "branch": "dea01dd56536",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03113726000083261
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1112964979984099
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12582865200238302
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11297519200161332
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11012451300121029
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.460030892998475
+    },
+    {
+      "branch": "6dd45c010e5d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02517358299883199
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1219889569983934
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1274583550002717
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09442574400236481
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11628558799930033
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 6.464334443997359
+    },
+    {
+      "branch": "bf96b63415cc",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.024183565998100676
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13321645300311502
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12379158999829087
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11212464600248495
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11690966699825367
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.49024414899759
+    },
+    {
+      "branch": "0386d0614fb1",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.020546461000776617
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1426097369985655
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12982322599782492
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10965019499781192
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09556786900066072
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.614597239000432
+    },
+    {
+      "branch": "efbed7268f1d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02276904199970886
+    }
+  ],
+  "executable_hash": "59da1e5856abe5457ce64b83602bebd81267665d2ea1a8c9eee9ce5529615b7a",
+  "failed_tests": [
+    {
+      "branch": "5e483d7465e7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_completion.test_completion_powershell",
+      "status": "failure"
+    },
+    {
+      "branch": "5e483d7465e7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_completion.test_completion_fish",
+      "status": "failure"
+    },
+    {
+      "branch": "5e483d7465e7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_basic_invocation.test_help_for_specific_command",
+      "status": "failure"
+    },
+    {
+      "branch": "5e483d7465e7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_completion.test_completion_zsh",
+      "status": "failure"
+    },
+    {
+      "branch": "5e483d7465e7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_error_conditions.test_completion_invalid_shell",
+      "status": "failure"
+    },
+    {
+      "branch": "040ee76f34fd",
+      "message": "AssertionError",
+      "name": "tests.test_completion.test_completion_powershell",
+      "status": "failure"
+    },
+    {
+      "branch": "040ee76f34fd",
+      "message": "AssertionError",
+      "name": "tests.test_completion.test_completion_zsh",
+      "status": "failure"
+    },
+    {
+      "branch": "040ee76f34fd",
+      "message": "AssertionError",
+      "name": "tests.test_completion.test_completion_fish",
+      "status": "failure"
+    },
+    {
+      "branch": "040ee76f34fd",
+      "message": "AssertionError",
+      "name": "tests.test_special_cases.test_help_subcommand_for_completion",
+      "status": "failure"
+    },
+    {
+      "branch": "040ee76f34fd",
+      "message": "AssertionError",
+      "name": "tests.test_more_commands.test_multiple_help_commands",
+      "status": "failure"
+    },
+    {
+      "branch": "040ee76f34fd",
+      "message": "AssertionError",
+      "name": "tests.test_flags_and_options.test_config_flag_before_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_aws_gcp_datasources.TestAWSDatasource.test_aws_rds_token_invalid_profile",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_nil_check_with_conditional",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmpwk19icoa/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_formatting.test_status_all_migrations_applied",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_apply_template_indent_ln_with_no_newlines",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_basic.test_completion_zsh_exact_output",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_migrate_lint_invalid_format_template",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_multi_environment_not_supported_in_oss",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_advanced.test_apply_template_lower_function_undefined",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_formatting.test_schema_diff_template_with_conditional",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_custom_template_nested_env_field",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_basic.test_help_for_nonexistent_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_cmdlog_color_template_functions_all_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_cmdlog_migrate_status_template_gt_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_basic.test_completion_output_to_stdout",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_config.test_missing_config_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_config.test_config_unsupported_scheme_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_aws_gcp_datasources.TestAWSDatasource.test_aws_rds_token_with_valid_config",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_deeply_nested_field_access",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmp39csw19d/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_formatting.test_status_all_applied_json_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_unsupported_migrate_rm_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: fish completion script should be substantial",
+      "name": "tests.test_basic.test_completion_fish_generates_script",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_apply_template_indent_ln_with_empty_string",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_custom_template_range_over_pending",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_template_nested_field_access",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Expected ALTER statement in output: Schemas are synced, no changes to be made.",
+      "name": "tests.test_cmdlog_advanced.test_schema_diff_template_sql_with_indent",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_schema_clean_format_unsupported",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_unsupported_schema_test_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_reader_sql_directory_with_subdirectories_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_cmdlog_template_conditional_formatting",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_config.test_invalid_hcl_syntax_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_basic.test_error_completion_invalid_shell_shows_help",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestSQLDatasource.test_sql_query_nonexistent_table",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_aws_gcp_datasources.TestGCPDatasource.test_gcp_cloudsql_token_no_credentials",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_custom_template_json_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_json_with_indent_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmp_nhg1wut/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_formatting.test_status_template_conditional_ok_status",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_reader_invalid_hcl_syntax_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_json_with_nil_pointer",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_unsupported_migrate_edit_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_basic.test_completion_fish_exact_output",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmp1035sevu/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_advanced.test_schema_inspect_template_json_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_schema_diff_include_unsupported",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_unsupported_migrate_checkpoint_with_abort_prefix",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_cmdlog_template_len_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: stdout: \nstderr: Error: checksum file not found\nYou have a checksum error in your migration directory.\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_config.test_config_with_migration_dir",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestTemplateDirDatasource.test_template_dir_missing_variable",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Expected success (0), got 1",
+      "name": "tests.test_main_init.test_no_migration_files_succeeds_with_message",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestSQLDatasource.test_sql_query_syntax_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_aws_gcp_datasources.TestDatasourceIntegration.test_multiple_datasources_in_config",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_json_with_prefix_and_indent",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_range_over_empty_slice",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_unsupported_schema_push_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_template_conditional_pending_status",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_reader_empty_schema_directory_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_custom_template_default_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: powershell completion script should be substantial",
+      "name": "tests.test_basic.test_completion_powershell_generates_script",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmp67e6pjk0/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_advanced.test_schema_inspect_template_mermaid_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_redBgWhiteFg_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_unsupported_migrate_down_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_cmdlog_schema_inspect_multiple_tables",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_config.test_missing_required_variable_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: sql/migrate: stat migrations: no such file or directory",
+      "name": "tests.test_datasources.TestTemplateDirDatasource.test_template_dir_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_completion_bash_generates_valid_script",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestSQLDatasource.test_sql_query_invalid_url",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_with_action_combining_multiple_functions",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_unsupported_migrate_push_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_template_json_with_custom_indent",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmpmr6zjegl/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_advanced.test_status_template_range_over_applied_with_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_reader_ambiguous_mixed_sql_hcl_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmprgt2ifyh/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_advanced.test_schema_inspect_template_sql_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmpfufzqsw_/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_formatting.test_status_template_with_applied_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_basic.test_completion_powershell_exact_output",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_unsupported_migrate_rebase_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_json_merge_two_objects",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: bash completion script should be substantial",
+      "name": "tests.test_basic.test_completion_bash_generates_script",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: sql/migrate: stat migrations: no such file or directory",
+      "name": "tests.test_datasources.TestTemplateDirDatasource.test_template_dir_number_variables",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_config.test_invalid_var_flag_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_completion_zsh_generates_valid_script",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "name": "tests.test_cmdlog_reader.test_cmdlog_migrate_apply_json_output_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "name": "tests.test_ent_orm_coverage.TestEntRevisionOperations.test_ent_with_json_output",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_unsupported_migrate_test_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmp205ayf51/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_formatting.test_status_template_len_function_on_applied",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_printf_with_multiple_args",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_template_multiline_with_printf",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmp2ybeh5fg/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic', '2']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_advanced.test_status_template_nested_range_with_field_access",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_unsupported_schema_plan_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_reader_project_file_as_schema_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_advanced.test_status_template_json_merge_invalid_json_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_unicode_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_basic.test_completion_bash_exact_output",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_config_file_not_found_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestRuntimeVarDatasource.test_runtimevar_invalid_url",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: stdout: \nstderr: Error: required flag(s) \"to\" not set",
+      "name": "tests.test_config.test_schema_src_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_diff_missing_required_dev_url_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "KeyError: 'indexes'",
+      "name": "tests.test_cmdlog_reader.test_cmdlog_schema_inspect_index_details",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "name": "tests.test_ent_orm_coverage.TestEntRevisionOperations.test_ent_multiple_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_migrate_diff_dry_run_unsupported",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_apply_template_add_with_negative_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_migrate_lint_missing_required_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_with_variable_assignment",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_formatting.test_status_template_invalid_field_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_template_access_available_array",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_apply_template_upper_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_complex_conditional_with_len",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_reader_no_dev_url_for_sql_schema_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: zsh completion script should be substantial",
+      "name": "tests.test_basic.test_completion_zsh_generates_script",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_env_flag_without_config_file",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestRuntimeVarDatasource.test_runtimevar_file_not_found",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: stdout: \nstderr: Error: required flag(s) \"to\" not set",
+      "name": "tests.test_config.test_diff_block_skip_policies",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_import_atlas_format_source_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_double_dash_separator_shows_help",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_schema_apply_edit_flag_unsupported",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_apply_template_indent_ln_zero_indent",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_migrate_lint_mutually_exclusive_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_apply_template_json_merge_in_apply_context",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmp81x1ng7c/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_formatting.test_status_template_color_green_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_formatting.test_status_template_invalid_function_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_reader_multi_schema_hcl_with_single_bound_dev_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_apply_template_with_multiple_variable_assignments",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_apply_template_indent_ln_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Missing '-- ok (X.Xms)' success marker",
+      "name": "tests.test_ent_orm_coverage.TestEntClientInitialization.test_ent_with_schema_parameter",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_completion_fish_generates_valid_script",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_var_flag_invalid_format_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestRuntimeVarDatasource.test_runtimevar_unsupported_decoder",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: stdout: \nstderr: Error: required flag(s) \"to\" not set",
+      "name": "tests.test_config.test_multiple_schema_sources",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_import_target_directory_must_be_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_config_flag_missing_scheme_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_schema_apply_plan_flag_unsupported",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_env_scheme_without_selected_environment",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_json_merge_overlapping_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_empty_array_conditional",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_template_color_yellow_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_apply_template_add_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_formatting.test_status_template_syntax_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_advanced.test_status_template_eq_with_different_types_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "name": "tests.test_cmdlog_reader.test_cmdlog_migrate_status_json_format_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_completion_powershell_generates_valid_script",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_url_empty_string_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_apply.test_failed_migration_sql_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Missing '-- ok (X.Xms)' success marker",
+      "name": "tests.test_ent_orm_coverage.TestEntRevisionOperations.test_ent_revision_create",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_config.test_config_missing_scheme_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_apply_exec_order_linear_skip_with_out_of_order_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed with stderr: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20220318104615_second.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_apply.test_apply_single_migration_to_empty_database",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_schema_apply_include_flag_unsupported",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_template_color_red_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_json_encode_with_special_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_apply_template_chained_pipeline_operations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_len_on_nil_value",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_pipeline_operation",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_json_format_full_output",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestExternalDatasource.test_external_nonexistent_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_url_invalid_driver_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "KeyError: 'indexes'",
+      "name": "tests.test_cmdlog_reader.test_cmdlog_schema_inspect_json_format_tables_columns",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_help_with_nonexistent_command_shows_unknown_topic",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Dry-run should succeed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20220318104615_second.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_apply.test_dry_run_mode_does_not_apply",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_migrate_apply_with_amount_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_migrate_status_missing_url_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_status_with_invalid_url_connection_failure",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed with stderr: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20220318104615_second.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_apply.test_apply_multiple_migrations_in_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_schema_apply_log_without_dry_run_or_auto_approve",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_advanced.test_status_template_syntax_error_unclosed_action",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmpm7ghjfzn/test.db', '--dir', 'file:///workspace/eval/test_resources/test_cmdlog_formatting/migrations_basic']' returned non-zero exit status 1.",
+      "name": "tests.test_cmdlog_formatting.test_schema_inspect_json_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_advanced.test_status_template_accessing_zero_indexed_array",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_formatting.test_schema_diff_custom_template_sql_function",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_custom_template_current_field",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_advanced.test_status_template_type_error_accessing_string_field",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestExternalDatasource.test_external_command_failing_exit_code",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_config_file_invalid_hcl_parse_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_reader.test_reader_sql_replay_execution_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20220318104615_second.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_apply.test_apply_with_amount_parameter_limits_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_apply_with_amount_zero_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_shorthand_version_flag_not_supported",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_apply_with_invalid_exec_order_value",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_set_missing_version_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_apply.test_apply_to_database_with_existing_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdapi_gaps.test_schema_inspect_invalid_format_template",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_formatting.test_schema_diff_custom_template_sql_with_indent",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_advanced.test_status_template_syntax_error_malformed_if",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_cmdlog_formatting.test_status_custom_template_status_field",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_cmdlog_advanced.test_status_template_index_out_of_bounds_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '--url', 'sqlite:///tmp/tmpmvdma3py/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_gaps/exec_order_migrations', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_gaps.test_exec_order_non_linear_mode_applies_out_of_order",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestExternalDatasource.test_external_empty_program",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "sqlite3.OperationalError: no such table: atlas_schema_revisions",
+      "name": "tests.test_migrate_apply.test_reapply_after_fixing_failed_migration",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_community_error_suggestion_appears_on_first_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_apply.test_invalid_amount_parameter_errors",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_help_command_for_help_shows_meta_help",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_diff_edit_and_dry_run_mutually_exclusive",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_apply_with_invalid_database_url_scheme",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Should fail with invalid dev-url",
+      "name": "tests.test_migrate_diff.test_diff_no_dev_url_connection_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_validates_source_has_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_apply.test_no_pending_migrations_is_noop",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_dbmate_removes_migrate_directives",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_create_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_flags.test_txmode_none_applies_without_transactions",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_from_dbmate_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_handles_whitespace_only_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_gaps.test_tx_mode_file_rolls_back_on_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_flags.test_invalid_url_scheme_returns_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestExternalDatasource.test_external_command_stderr_on_failure",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Migration content mismatch:\nGot:\n-- Create \"users\" table\nCREATE TABLE `users` (`id` integer NULL, `name` text NULL, PRIMARY KEY (`id`));\n\nExpected:\n-- Create \"users\" table\nCREATE TABLE `users` (`id` integer NOT NULL, `name` text NOT NULL, PRIMARY KEY (`id`));",
+      "name": "tests.test_migrate_diff.test_diff_empty_dir_to_single_table",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_community_error_suggestion_throttled_on_second_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_apply.test_apply_to_dirty_database_without_flag_errors",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_apply_log_and_format_mutually_exclusive",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_url_missing_protocol_scheme_colons_only",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_apply_with_baseline_nonexistent_version",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Expected failure for invalid exec-order",
+      "name": "tests.test_migrate_edge_cases.test_apply_with_invalid_exec_order",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_from_format_not_specified_defaults_to_atlas",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_create_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_flags.test_txmode_file_applies_with_per_file_transactions",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_from_flyway_with_repeatable",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_gaps.test_tx_mode_none_no_rollback_on_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_create_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_flags.test_txmode_file_directive_respected_with_none_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_goose_statementbegin_statementend",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: sql/migrate: stat migrations: no such file or directory",
+      "name": "tests.test_datasources.TestTemplateDirDatasource.test_template_dir_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Should succeed with valid lock-timeout: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20220318104615_second.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_apply.test_concurrent_apply_lock_behavior",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_dbmate_strips_only_up_section",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_migrate_diff_missing_required_flags_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Should succeed with --allow-dirty: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20220318104615_second.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_apply.test_apply_to_dirty_database_with_allow_dirty_succeeds",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_main_init.test_config_flag_without_scheme_suggests_file_prefix",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_status_with_empty_migrations_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_apply_with_multiple_txmode_directives_in_file",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Incremental migration mismatch:\nGot:\n-- Create \"users\" table\nCREATE TABLE `users` (`id` integer NULL, `name` text NULL, `email` text NULL, PRIMARY KEY (`id`));\n-- Create \"posts\" table\nCREATE TABLE `posts` (`id` integer NULL, `title` text NULL, `user_id` integer NULL, PRIMARY KEY (`id`));\n\nExpected:\n-- Add column \"email\" to table: \"users\"\nALTER TABLE `users` ADD COLUMN `email` text NOT NULL;\n-- Create \"posts\" table\nCREATE TABLE `posts` (`id` integer NOT NULL, `title` text NOT NULL, `user_id` integer NOT NULL, PRIMARY KEY (`id`));",
+      "name": "tests.test_migrate_diff.test_diff_incremental_add_column_and_table",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Expected failure for invalid tx-mode",
+      "name": "tests.test_migrate_edge_cases.test_apply_with_invalid_tx_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_create_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_flags.test_txmode_all_applies_in_single_transaction",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_create_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_flags.test_dry_run_does_not_modify_database",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_gaps.test_tx_mode_all_rolls_back_everything_on_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_from_golang_migrate",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_datasources.TestTemplateDirDatasource.test_template_dir_missing_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Expected failure for unsupported format",
+      "name": "tests.test_migrate_internals.test_formatter_for_unsupported_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_goose_removes_directives",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_apply.test_apply_only_up_to_amount_when_more_pending",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_preserves_sql_formatting",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_apply.test_url_flag_required_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_validate_with_corrupted_atlas_sum",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_internals.test_dir_url_with_unsupported_scheme",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Should fail for non-main schema with SQLite",
+      "name": "tests.test_migrate_internals.test_revision_table_in_different_schema_sqlite_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_apply_txmode_all_with_file_directive_conflict",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_flags.test_txmode_invalid_returns_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_gaps.test_baseline_version_marks_version_applied_without_executing",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_flags.test_txmode_file_commits_first_migration_on_second_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_from_goose",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Expected failure for missing scheme",
+      "name": "tests.test_migrate_internals.test_dir_url_with_missing_scheme_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_flyway_repeatable_version_assignment",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "sqlite3.OperationalError: no such table: atlas_schema_revisions",
+      "name": "tests.test_migrate_apply.test_database_state_after_partial_failure",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Expected failure without --latest or --git-base",
+      "name": "tests.test_migrate_edge_cases.test_lint_missing_required_latest_or_git_base",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_creates_sum_file_with_correct_hashes",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20220318104615_second.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_apply.test_apply_with_json_format_output",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Default 'migrations' directory should be created",
+      "name": "tests.test_migrate_internals.test_empty_default_directory_name",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_new.test_migrate_new_multiple_formats_independent",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_apply_txmode_directive_invalid_value",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_internals.test_hash_with_modified_file_after_initial_hash",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_create_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_flags.test_exec_order_linear_applies_in_strict_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_gaps.test_revisions_schema_flag_errors_on_sqlite",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_flags.test_txmode_all_rolls_back_everything_on_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_flyway_baseline_migration",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_apply.test_baseline_and_allow_dirty_mutually_exclusive",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Tables before baseline should not be created",
+      "name": "tests.test_migrate_internals.test_baseline_version_skips_earlier_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_from_liquibase",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Expected failure for mutually exclusive flags",
+      "name": "tests.test_migrate_edge_cases.test_diff_with_edit_and_dry_run_mutually_exclusive",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Expected sync message, got:",
+      "name": "tests.test_migrate_diff.test_diff_no_changes_synced_state",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_handles_empty_migration_files",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20220318104615_second.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_apply.test_migration_with_data_insertion",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: mem:// scheme should work: Error: sql/migrate: stat mem://test_migrations: no such file or directory",
+      "name": "tests.test_migrate_internals.test_mem_directory_scheme",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: SQLite should recreate table to add email column",
+      "name": "tests.test_migrate_diff.test_diff_add_unique_constraint",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_advanced.test_apply_txmode_all_directive_not_allowed_in_file",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_new.test_migrate_new_requires_file_scheme",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_status.test_set_nonexistent_version",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_create_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_flags.test_baseline_with_linear_skip_skips_earlier_versions",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '--url', 'sqlite:///tmp/tmp0lki4x6_/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_gaps/exec_order_migrations', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_gaps.test_exec_order_linear_rejects_out_of_order_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_liquibase_changeset_splitting",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_create_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_flags.test_lock_timeout_flag_accepts_duration",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Should accept --revisions-schema flag: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20220318104615_second.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_apply.test_apply_with_custom_revision_schema",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_target_must_be_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_new.test_migrate_new_golang_migrate_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_golang_migrate_version_parsing",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000002', '-u', 'sqlite:///tmp/tmpqxsrew1q/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_status_after_manual_revision_deletion",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Expected only users table after rollback, got ['posts', 'users']",
+      "name": "tests.test_migrate_internals.test_migration_rollback_on_error_in_file_tx_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_new.test_migrate_new_golang_migrate_multiple_sequential",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_new.test_migrate_new_dir_format_flag_vs_url_parameter",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_email.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_status.test_set_verify_history_table_contents",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmpved07zbk/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_status_one_migration_applied_json",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_create_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_flags.test_baseline_with_non_linear_allows_out_of_order",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '--url', 'sqlite:///tmp/tmpaqgnwedw/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_gaps/exec_order_migrations', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_gaps.test_dry_run_mode_does_not_apply_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_flags.test_allow_dirty_flag_permits_existing_tables",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_golang_migrate_only_up_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_new.test_migrate_new_goose_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_missing_format_parameter",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000002', '-u', 'sqlite:///tmp/tmp43tcpel7/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_set_to_middle_version_then_status",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_flyway_skips_undo_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "name": "tests.test_migrate_status.test_status_json_format_special_characters_in_description",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Should disable foreign keys",
+      "name": "tests.test_migrate_diff.test_diff_remove_column",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_new.test_migrate_new_dir_format_flag_alone",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000001', '-u', 'sqlite:///tmp/tmpf1om0bv9/main.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_status_with_custom_revision_schema",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_validate_modified_file_checksum_mismatch_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmpdaw3abdf/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_status_all_migrations_applied",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_flags.test_baseline_version_not_found_returns_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_email.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_gaps.test_tx_mode_file_with_successful_migration",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_flags.test_revisions_schema_flag_rejects_custom_schema_on_sqlite",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_invalid_format_parameter",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_new.test_migrate_new_flyway_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000003', '-u', 'sqlite:///tmp/tmpvvr16dzy/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_set_clear_all_revisions",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_email.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_status.test_status_empty_database_no_migrations_applied",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_validate_multiple_modified_files_first_reported",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000001', '-u', 'sqlite:///tmp/tmp9r8lryqf/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_status_after_set_with_error_recovery",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_latest_2_analyzes_multiple_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_status.test_status_invalid_format_template",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_status.test_status_connection_to_nonexistent_database_file",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmpgo53dbq8/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_status_all_migrations_applied_json",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_flags.test_exec_order_invalid_returns_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_email.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_gaps.test_tx_mode_all_with_successful_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_validate_with_dev_url_detects_invalid_sql_syntax",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_create_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_flags.test_baseline_and_exec_order_combination_multiple_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_import.test_import_empty_source_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_new.test_migrate_new_invalid_format_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_email.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_status.test_status_empty_database_json_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_with_syntax_error_in_migration",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmpdzocuwpw/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_status_json_all_fields_present",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_requires_latest_or_git_base",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "name": "tests.test_migrate_status.test_status_json_escaped_quotes_in_description",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_format_json_output",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000002', '-u', 'sqlite:///tmp/tmpyxbgn7os/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_set_idempotent_same_version",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_status.test_set_multiple_versions_in_one_command",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_flags.test_missing_url_flag_returns_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_email.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_status.test_set_version_on_empty_database",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_email.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_gaps.test_baseline_with_higher_version_skips_earlier_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Failed: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_create_posts.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_flags.test_apply_with_limit_applies_subset",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmp4p5r9u_1/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_status_one_migration_applied",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000001', '-u', 'sqlite:///tmp/tmp70fhivjt/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_set_preserves_migration_order",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_new.test_migrate_new_liquibase_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_validate_empty_migration_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_json_output_structure_complete",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_detects_rename_table",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Expected 'DROP TABLE `posts`', got: -- Create \"users\" table\nCREATE TABLE `users` (`id` integer NULL, `name` text NULL, `email` text NULL, PRIMARY KEY (`id`));",
+      "name": "tests.test_migrate_diff.test_diff_remove_table",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_latest_1_clean_migration",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_email.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_status.test_set_concurrent_safety",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "name": "tests.test_migrate_status.test_status_with_long_migration_names",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_latest_exceeds_available_migrations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000002', '-u', 'sqlite:///tmp/tmpu39_a_hw/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_set_advance_version",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_git_base_invalid_branch_name_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_dev_url_unreachable_database_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '--url', 'sqlite:///tmp/tmpqer6zdbc/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_gaps/exec_order_migrations', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_gaps.test_exec_order_linear_skip_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_directory_with_non_migration_files_ignored",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_new.test_migrate_new_dbmate_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'apply', '-u', 'sqlite:///tmp/tmpaajoydcu/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple', '1']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_set_with_partial_applied_state",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_rename_column_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_env_url_invalid_format_with_path",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_latest_0_invalid",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_clean_migrations_no_diagnostics_count",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_latest_1_detects_drop_table",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_validate_missing_atlas_sum_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000001', '-u', 'sqlite:///tmp/tmp72l1eunn/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_set_revision_table_schema_integrity",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_git_base_with_multiple_new_migrations_in_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000003', '-u', 'sqlite:///tmp/tmpwywpsq_x/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_set_rollback_version",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmphrbobtom/home/.atlas/local-community.json'",
+      "name": "tests.test_misc_features.test_state_file_json_format_valid",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_misc_features.test_upgrade_suggestion_creates_state_file",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_large_migration_directory_50_files",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_git_base_not_in_git_repo_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: State file should be named local-community.json",
+      "name": "tests.test_misc_features.test_state_file_with_custom_name_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20240101000002_add_email.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "tests.test_migrate_status.test_status_with_url_query_parameters",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_env_url_invalid_format_with_query",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_add_not_null_column_without_default",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "name": "tests.test_migrate_validate.test_lint_latest_with_json_format_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_git_base_detects_new_migrations_since_base",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_env_url_custom_attribute_resolves",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_sources_invalid_type_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "name": "tests.test_migrate_status.test_status_migration_with_multiple_statements",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Should fail with invalid schema file",
+      "name": "tests.test_migrate_diff.test_diff_invalid_schema_file",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000001', '-u', 'sqlite:///tmp/tmpiav2lbyv/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_set_no_version_sets_to_latest",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_misc_features.test_upgrade_suggestion_rate_limited_within_week",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmp8a06y8ss/home/.atlas/local-community.json'",
+      "name": "tests.test_misc_features.test_state_file_read_write_idempotent",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_misc_features.test_multiple_schema_commands_share_same_state",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_format_template_with_file_count",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_env_url_empty_host",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_migration_with_syntax_error_reports_line_number",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_env_url_missing_src_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_transaction_mode_consistency",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_format_custom_go_template",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_concurrent_index_not_supported_by_sqlite",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_config_unsupported_scheme",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_env_url_src_with_multiple_sources",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_create_table_auto_approve",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "subprocess.CalledProcessError: Command '['/workspace/executable', 'migrate', 'set', '20240101000002', '-u', 'sqlite:///tmp/tmphelu1es1/test.db', '--dir', 'file:///workspace/eval/test_resources/test_migrate_status/migrations_simple']' returned non-zero exit status 1.",
+      "name": "tests.test_migrate_status.test_set_rollback_to_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Should fail when --dev-url is missing",
+      "name": "tests.test_migrate_diff.test_diff_missing_required_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_misc_features.test_upgrade_suggestion_disabled_by_env_var",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_env_url_invalid_parse_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_misc_features.test_state_file_corrupted_json_handled_gracefully",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_misc_features.test_state_file_permissions_allow_read_write",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: stderr: Error: env \"dev\" not defined in config file",
+      "name": "tests.test_project_gaps.test_dynamic_env_name",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_env_url_nested_reference_forbidden",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_with_analyzer_reporting_multiple_drop_operations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_mixed_valid_and_invalid_migrations_reports_both",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_multiple_destructive_operations_all_reported",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_config_missing_scheme",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_git_base_all_migrations_new_from_empty_base",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_env_url_src_with_single_element_list",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_latest_exceeds_total_files_analyzes_all",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_add_column",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_create_foreign_key",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: ~/.atlas directory should be created automatically",
+      "name": "tests.test_misc_features.test_state_file_directory_created_automatically",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_empty_schema_to_empty_database",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_invalid_database_url",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_env_url_unknown_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_add_foreign_key",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_exclude_tables",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_idempotent_operations",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_validate.test_lint_empty_migration_file_handled",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_drop_index",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_with_exclude_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_project_gaps.test_config_url_parse_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_database_to_database",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_add_column_with_not_null_constraint",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: posts should be cascade deleted",
+      "name": "tests.test_schema_apply.test_apply_cascade_delete_on_foreign_key",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_drop_column",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_missing_to_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_add_column_and_table",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_create_table_dry_run",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: Should have failed due to foreign key constraint",
+      "name": "tests.test_schema_apply.test_apply_multiple_tables_in_correct_order",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_custom_format",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_with_default_values",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_database_to_file",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_unique_constraints",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_empty_to_tables",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "sqlite3.OperationalError: no such column: email",
+      "name": "tests.test_schema_apply.test_apply_data_preservation_on_column_add",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_nullable_columns",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_column_with_default_values",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_clean_empty_database",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_errors.test_apply_missing_to_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_create_index",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_errors.test_fmt_nonexistent_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: should fail on invalid schema file",
+      "name": "tests.test_schema_apply.test_apply_invalid_schema_file",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_remove_column_and_table",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_clean_nonexistent_database",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_with_schema_filter",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_remove_index",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_format_badly_indented_file",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_file_to_database",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_apply.test_apply_composite_primary_key",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_tables_to_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_invalid_schema_file",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError: users table should exist",
+      "name": "tests.test_schema_apply.test_apply_multiple_schema_files",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_clean_twice_is_idempotent",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_errors.test_apply_invalid_tx_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_errors.test_apply_invalid_database_driver",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_directory_with_non_hcl_files_ignored",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_errors.test_inspect_invalid_port_number",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_errors.test_inspect_malformed_format_template_syntax",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_add_indexes",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_errors.test_fmt_single_file_formats_correctly",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_format_with_comments_preserved",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_nonexistent_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_empty_file_no_changes",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_subdirectories_not_traversed",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_binary_file_in_directory_ignored",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_complex_schema",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_format_directory_with_multiple_hcl_files",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_mixed_files_and_directories_as_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_file_ending_without_newline_formatting",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_inline_vs_multiline_block_formatting",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_diff.test_diff_bidirectional_consistency",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_errors.test_inspect_invalid_format_template_field",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_schema_clean_inspect_realm_error_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_apply_error_handling_in_transaction_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_complex_nested_structures_formatting",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_fmt_directory_with_mixed_files",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_whitespace_only_file",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_apply_with_auto_approve_and_format_valid_template",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_schema_diff_with_realm_vs_schema_mismatch_error",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_apply_with_edit_flag_unsupported_community_edition",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_schema_clean_with_format_flag_unsupported_community_edition",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_block_label_formatting",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_multiple_directories_as_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_inspect.test_inspect_single_table_with_indexes",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_inspect.test_inspect_various_data_types",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_schema_clean_empty_database_nothing_to_drop",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_inspect.test_inspect_invalid_database_driver",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_inspect.test_inspect_autoincrement_and_defaults",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_schema_clean_inspect_schema_error_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_apply_schema_qualifier_when_url_has_schema",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_apply_log_format_without_dryrun_or_autoapprove_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_fmt_file_info_error_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_apply_with_exclude_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_inspect.test_inspect_complex_check_constraints",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_apply_with_include_patterns_unsupported_community_edition",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_diff_with_include_patterns_unsupported_community_edition",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_apply_with_plan_url_unsupported_community_edition",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_gaps.test_apply_txmode_none_no_transaction",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_inspect.test_inspect_foreign_keys_and_constraints",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_inspect.test_inspect_exclude_single_table",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_inspect.test_inspect_exclude_glob_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_inspect.test_inspect_empty_string_default",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_inspect.test_inspect_multiple_exclude_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "cbaf9db6ea2e",
+      "message": "AssertionError",
+      "name": "tests.test_schema_inspect.test_inspect_composite_foreign_key",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestSchemaApplyArguments.test_lock_timeout_invalid_duration",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestMigrateApplyArguments.test_positional_invalid_integer",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestMigrateApplyArguments.test_positional_negative_integer",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestMigrateLintArguments.test_latest_invalid_uint",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestMigrateLintArguments.test_latest_negative_uint",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestGlobalFlags.test_var_flag_invalid_format[command1]",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestGlobalFlags.test_var_flag_missing_equals[command0]",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestGlobalFlags.test_var_flag_invalid_format[command0]",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestGlobalFlags.test_var_flag_missing_equals[command1]",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestGlobalFlags.test_var_flag_invalid_format[command2]",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestGlobalFlags.test_var_flag_missing_equals[command2]",
+      "status": "failure"
+    },
+    {
+      "branch": "96d1eb797f1c",
+      "message": "AssertionError",
+      "name": "tests.test_argument_parsing.TestSpecialCases.test_double_dash_separator",
+      "status": "failure"
+    },
+    {
+      "branch": "99c1346c445d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_args_parsing.test_missing_value_for_url_flag[-u]",
+      "status": "failure"
+    },
+    {
+      "branch": "99c1346c445d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_args_parsing.test_invalid_typed_values_error[args1-invalid argument \"nope\" for \"--lock-timeout\" flag: time: invalid duration \"nope\"]",
+      "status": "failure"
+    },
+    {
+      "branch": "99c1346c445d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_args_parsing.test_schema_apply_requires_to_or_file_when_url_set",
+      "status": "failure"
+    },
+    {
+      "branch": "99c1346c445d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_args_parsing.test_invalid_typed_values_error[args0-unknown tx-mode \"nope\"]",
+      "status": "failure"
+    },
+    {
+      "branch": "d38253c926ee",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env.TestConfigFileLoading.test_missing_config_file",
+      "status": "failure"
+    },
+    {
+      "branch": "d38253c926ee",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env.TestConfigFileLoading.test_malformed_config_file",
+      "status": "failure"
+    },
+    {
+      "branch": "c46ae9b89fa0",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_edge_cases.test_unknown_flag_errors_and_mentions_unknown_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "f24728ecf8a8",
+      "message": "AssertionError",
+      "name": "tests.test_completion.test_completion_shells[fish]",
+      "status": "failure"
+    },
+    {
+      "branch": "f24728ecf8a8",
+      "message": "AssertionError",
+      "name": "tests.test_help_commands.test_help_for_subcommand",
+      "status": "failure"
+    },
+    {
+      "branch": "f24728ecf8a8",
+      "message": "AssertionError",
+      "name": "tests.test_exit_codes.test_missing_file_exit_nonzero",
+      "status": "failure"
+    },
+    {
+      "branch": "f24728ecf8a8",
+      "message": "AssertionError",
+      "name": "tests.test_output_streams.test_file_not_found_to_stderr",
+      "status": "failure"
+    },
+    {
+      "branch": "f24728ecf8a8",
+      "message": "AssertionError",
+      "name": "tests.test_schema_fmt.test_schema_fmt_nonexistent_file",
+      "status": "failure"
+    },
+    {
+      "branch": "6188fe5b7e4d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_schema_fmt.test_schema_fmt_nonexistent_path_errors_to_stderr_and_exit_1",
+      "status": "failure"
+    },
+    {
+      "branch": "6188fe5b7e4d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_schema_fmt.test_schema_fmt_subdirectory_formats_hcl_file_inside",
+      "status": "failure"
+    },
+    {
+      "branch": "6188fe5b7e4d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_schema_fmt.test_schema_fmt_formats_file_in_place_and_reports_filename",
+      "status": "failure"
+    },
+    {
+      "branch": "6188fe5b7e4d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_schema_fmt.test_schema_fmt_directory_only_formats_hcl_files_under_that_dir",
+      "status": "failure"
+    },
+    {
+      "branch": "dea01dd56536",
+      "message": "AssertionError: Subcommand 'help' should accept --help",
+      "name": "eval.tests.test_subcommand_dispatch.TestTopLevelSubcommandRecognition.test_subcommand_help_flag[help]",
+      "status": "failure"
+    },
+    {
+      "branch": "dea01dd56536",
+      "message": "AssertionError: '-h' should work for 'help'",
+      "name": "eval.tests.test_subcommand_dispatch.TestSubcommandFlags.test_help_flag_works_on_all_subcommands",
+      "status": "failure"
+    },
+    {
+      "branch": "dea01dd56536",
+      "message": "AssertionError: help should be accessible",
+      "name": "eval.tests.test_subcommand_dispatch.TestAllSubcommandsAccessible.test_all_top_level_subcommands_exist",
+      "status": "failure"
+    },
+    {
+      "branch": "bf96b63415cc",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.TestEmptyInputs.test_migrate_validate_empty_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "bf96b63415cc",
+      "message": "AssertionError",
+      "name": "tests.test_exact_output.TestCompletionOutput.test_powershell_completion_format",
+      "status": "failure"
+    },
+    {
+      "branch": "bf96b63415cc",
+      "message": "AssertionError",
+      "name": "tests.test_exact_output.TestCompletionOutput.test_zsh_completion_format",
+      "status": "failure"
+    },
+    {
+      "branch": "bf96b63415cc",
+      "message": "AssertionError",
+      "name": "tests.test_migrate_commands.TestMigrateValidate.test_validate_empty_dir",
+      "status": "failure"
+    },
+    {
+      "branch": "bf96b63415cc",
+      "message": "AssertionError",
+      "name": "tests.test_schema_commands.TestSchemaFmt.test_fmt_nonexistent_path",
+      "status": "failure"
+    },
+    {
+      "branch": "bf96b63415cc",
+      "message": "AssertionError",
+      "name": "tests.test_exact_output.TestCompletionOutput.test_fish_completion_format",
+      "status": "failure"
+    },
+    {
+      "branch": "0386d0614fb1",
+      "message": "test_schema_fmt_idempotent_prints_nothing depends on test_schema_fmt_formats_file_and_prints_path",
+      "name": "eval.tests.test_atlas_cli.test_schema_fmt_idempotent_prints_nothing",
+      "status": "skipped"
+    },
+    {
+      "branch": "0386d0614fb1",
+      "message": "test_license_output depends on test_help_exact",
+      "name": "eval.tests.test_atlas_cli.test_license_output",
+      "status": "skipped"
+    },
+    {
+      "branch": "0386d0614fb1",
+      "message": "test_version_output depends on test_help_exact",
+      "name": "eval.tests.test_atlas_cli.test_version_output",
+      "status": "skipped"
+    },
+    {
+      "branch": "0386d0614fb1",
+      "message": "AssertionError",
+      "name": "eval.tests.test_atlas_cli.test_schema_fmt_formats_file_and_prints_path",
+      "status": "failure"
+    },
+    {
+      "branch": "0386d0614fb1",
+      "message": "AssertionError",
+      "name": "eval.tests.test_atlas_cli.test_completion_generates_script[powershell-# powershell completion for atlas]",
+      "status": "failure"
+    },
+    {
+      "branch": "0386d0614fb1",
+      "message": "AssertionError",
+      "name": "eval.tests.test_atlas_cli.test_schema_fmt_errors_on_missing_path",
+      "status": "failure"
+    },
+    {
+      "branch": "0386d0614fb1",
+      "message": "AssertionError",
+      "name": "eval.tests.test_atlas_cli.test_completion_generates_script[fish-# fish completion for atlas]",
+      "status": "failure"
+    },
+    {
+      "branch": "efbed7268f1d",
+      "message": "AssertionError: Error: checksum mismatch\nYou have a checksum error in your migration directory.\n\n\tL2: 20230727105615_t2.sql was edited\n\nPlease check your migration files and run 'atlas migrate hash' to re-hash the contents",
+      "name": "eval.tests.test_migrate_status.test_ext_migrate_status_reports_current_and_next",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 543,
+    "passed": 1186,
+    "skipped": 3
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "5e483d7465e7",
+    "040ee76f34fd",
+    "cbaf9db6ea2e",
+    "96d1eb797f1c",
+    "99c1346c445d",
+    "d38253c926ee",
+    "239427da9840",
+    "6256695fac2d",
+    "c46ae9b89fa0",
+    "f24728ecf8a8",
+    "6188fe5b7e4d",
+    "dea01dd56536",
+    "6dd45c010e5d",
+    "bf96b63415cc",
+    "0386d0614fb1",
+    "efbed7268f1d"
+  ],
+  "test_records": 1732,
+  "warnings": []
+}
