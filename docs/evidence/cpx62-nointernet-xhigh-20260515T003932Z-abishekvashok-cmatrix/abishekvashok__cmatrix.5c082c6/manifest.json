@@ -3,7 +3,7 @@
     "codex_logs_available_local_only": true,
     "raw_logs_published": false
   },
-  "collected_at": "2026-05-15T15:08:13.226463+00:00",
+  "collected_at": "2026-05-15T15:12:35.943189+00:00",
   "docker_cpus": 16,
   "docker_memory": "30g",
   "eval": {
@@ -14,13 +14,13 @@
       "tests.test_terminal_modes.test_tty_option",
       "eval.tests.test_cmatrix.TestColorOptions.test_color_case_insensitive",
       "eval.tests.test_cmatrix.TestTTYOption.test_tty_option_with_help",
-      "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[Cyan]",
       "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[GREEN]",
-      "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[MAGENTA]",
+      "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[BLUE]",
       "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[White]",
       "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[YELLOW]",
+      "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[MAGENTA]",
       "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[Red]",
-      "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[BLUE]",
+      "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[Cyan]",
       "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[Black]",
       "eval.tests.test_argument_parsing.TestTtyFlag.test_tty_flag_with_value",
       "eval.tests.test_help_and_version.test_version_flag"

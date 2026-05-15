@@ -7,637 +7,637 @@
       "exception_info": "",
       "returncode": 0,
       "step": "wipe_workspace",
-      "wall_time": 0.16902688200207194
+      "wall_time": 0.15469162000226788
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "remove_hashed_files",
-      "wall_time": 0.12672582099912688
+      "wall_time": 0.12277596099011134
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "seed_git",
-      "wall_time": 0.14268224099942017
+      "wall_time": 0.15177949299686588
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "compile",
-      "wall_time": 0.29848134300118545
+      "wall_time": 0.30235159100266173
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "copy_executable",
-      "wall_time": 0.1228031259997806
+      "wall_time": 0.1141162389976671
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "hash_executable",
-      "wall_time": 0.11020108400043682
+      "wall_time": 0.12025402099243365
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "install_rerunfailures",
-      "wall_time": 0.6440106279987958
+      "wall_time": 0.6562205560039729
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.094253364000906
+      "wall_time": 0.1055404670041753
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.09916888499719789
+      "wall_time": 0.11909547699906398
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.07122997099941131
+      "wall_time": 0.12778802899993025
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.08389205399726052
+      "wall_time": 0.11903039799653925
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 1,
       "step": "run_tests",
-      "wall_time": 7.399886883998988
+      "wall_time": 7.589344239997445
     },
     {
       "branch": "79b69dd3fd98",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.03389997200065409
+      "wall_time": 0.01876116800121963
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.12371844199878979
+      "wall_time": 0.11617750000732485
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.12188828999933321
+      "wall_time": 0.12169108600937761
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.1211160419989028
+      "wall_time": 0.11525759499636479
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.13149789399903966
+      "wall_time": 0.1294712620001519
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 1,
       "step": "run_tests",
-      "wall_time": 4.964213062001363
+      "wall_time": 4.993871647006017
     },
     {
       "branch": "1b991a57d4e9",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.036670352001237916
+      "wall_time": 0.02250827099487651
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.1264213229987945
+      "wall_time": 0.10865709399513435
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.07604569199975231
+      "wall_time": 0.10700836101023015
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.10512219299926073
+      "wall_time": 0.11194440998951904
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.08888396499969531
+      "wall_time": 0.11824615200748667
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 4.353625219002424
+      "wall_time": 4.5056051519932225
     },
     {
       "branch": "bcaceaff5bda",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.03391479200217873
+      "wall_time": 0.03288052599236835
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.1418573339979048
+      "wall_time": 0.12192787599633448
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.11699207800120348
+      "wall_time": 0.1362463330005994
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.10837339099816745
+      "wall_time": 0.11071543500293046
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.13121893399875262
+      "wall_time": 0.11294846500095446
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 3.677162952000799
+      "wall_time": 3.6704638699884526
     },
     {
       "branch": "f53d318371c8",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.022706234998622676
+      "wall_time": 0.03465808900364209
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.11941718900197884
+      "wall_time": 0.12082787101098802
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.12409231200217619
+      "wall_time": 0.12600950899650343
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.10150905600312399
+      "wall_time": 0.12410610599908978
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.1123221560010279
+      "wall_time": 0.08186294199549593
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 2.208931058001326
+      "wall_time": 2.38119937099691
     },
     {
       "branch": "1d30a9bd67f8",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.016937166998104658
+      "wall_time": 0.023570667006424628
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.09447413300222252
+      "wall_time": 0.1373909289977746
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.10790162299963413
+      "wall_time": 0.12086987200018484
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.06952557700060424
+      "wall_time": 0.12753475199860986
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.0855110570009856
+      "wall_time": 0.11762529499537777
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 2.140693535999162
+      "wall_time": 2.3261772750120144
     },
     {
       "branch": "2a51b65a0988",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.020103703998756828
+      "wall_time": 0.024434872990241274
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.13112387399814907
+      "wall_time": 0.14113674299733248
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.11357867100014118
+      "wall_time": 0.10883720401034225
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.08906847400066908
+      "wall_time": 0.12489250299404375
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.12388501199893653
+      "wall_time": 0.12232863600365818
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 3.616183832000388
+      "wall_time": 3.470136370000546
     },
     {
       "branch": "c9a563c41e59",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.023560801000712672
+      "wall_time": 0.04132672000559978
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.11563328300326248
+      "wall_time": 0.1373662200057879
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.10884504899877356
+      "wall_time": 0.08996449700498488
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.08999947999836877
+      "wall_time": 0.11179777201323304
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.10272973199971602
+      "wall_time": 0.10236633199383505
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 4.059051840999018
+      "wall_time": 4.203981451006257
     },
     {
       "branch": "47e777b60c5e",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.017846292998001445
+      "wall_time": 0.023399817990139127
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.08554977699895971
+      "wall_time": 0.11700014899543021
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.11383400999693549
+      "wall_time": 0.08937106899975333
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.11016261400072835
+      "wall_time": 0.10287022098782472
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.11676609899950563
+      "wall_time": 0.10925251300795935
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 3.4730268029998115
+      "wall_time": 3.456903683996643
     },
     {
       "branch": "f40262460d4c",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.022866874001920223
+      "wall_time": 0.021270306999213062
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.11900389099901076
+      "wall_time": 0.13699228200130165
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.10870639899803791
+      "wall_time": 0.13156690599862486
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.11666149899974698
+      "wall_time": 0.12110349099384621
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.11707722799837939
+      "wall_time": 0.1364674240030581
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 2.1643462059982994
+      "wall_time": 2.1480127649992937
     },
     {
       "branch": "4325cb75f082",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.03038974500304903
+      "wall_time": 0.03287239700148348
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.10160413700214121
+      "wall_time": 0.13436509300663602
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.11913954999909038
+      "wall_time": 0.12923865600896534
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.10866503899887903
+      "wall_time": 0.096540119004203
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.10609635999935563
+      "wall_time": 0.12328804199933074
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 16.07131202200253
+      "wall_time": 16.1656389060081
     },
     {
       "branch": "60fce8bbb0c8",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.018839099000615533
+      "wall_time": 0.03334956499747932
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.11213732699980028
+      "wall_time": 0.14037457900121808
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.10161277599763707
+      "wall_time": 0.12016300599498209
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.10639570800049114
+      "wall_time": 0.0971625769889215
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.09190805300022475
+      "wall_time": 0.11376575400936417
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 2.3636608329979936
+      "wall_time": 2.40635564000695
     },
     {
       "branch": "28d2b640a014",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.028245822999451775
+      "wall_time": 0.02723438199609518
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.10539457200138713
+      "wall_time": 0.13164390699239448
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.09886267700130702
+      "wall_time": 0.11331033700844273
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.09174713299944415
+      "wall_time": 0.10996325100131799
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.10755884399986826
+      "wall_time": 0.1316105269943364
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 34.95097333200101
+      "wall_time": 34.945280001003994
     },
     {
       "branch": "b75df89939ed",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.03782449700156576
+      "wall_time": 0.03497581799456384
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "restore_executable",
-      "wall_time": 0.14792759100237163
+      "wall_time": 0.1322716160066193
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "verify_executable_hash",
-      "wall_time": 0.12647747300070478
+      "wall_time": 0.13287579400639515
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "clean_stale_results",
-      "wall_time": 0.12431656999979168
+      "wall_time": 0.09511523699620739
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "patch_timeout_method",
-      "wall_time": 0.11702589800188434
+      "wall_time": 0.11982215999159962
     },
     {
       "branch": "",
       "exception_info": "",
       "returncode": 0,
       "step": "run_tests",
-      "wall_time": 7.1315428060006525
+      "wall_time": 7.080654613004299
     },
     {
       "branch": "aa26a2ba3c36",
       "exception_info": "",
       "returncode": 0,
       "step": "results_read",
-      "wall_time": 0.01765609300127835
+      "wall_time": 0.03766863700002432
     }
   ],
   "executable_hash": "8f7ff745c4fe0c5531da3e0699afc04689b0a145111d2e512519974b759aee61",
@@ -675,19 +675,13 @@
     {
       "branch": "bcaceaff5bda",
       "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
-      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[Cyan]",
-      "status": "failure"
-    },
-    {
-      "branch": "bcaceaff5bda",
-      "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
       "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[GREEN]",
       "status": "failure"
     },
     {
       "branch": "bcaceaff5bda",
       "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
-      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[MAGENTA]",
+      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[BLUE]",
       "status": "failure"
     },
     {
@@ -705,13 +699,19 @@
     {
       "branch": "bcaceaff5bda",
       "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
+      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[MAGENTA]",
+      "status": "failure"
+    },
+    {
+      "branch": "bcaceaff5bda",
+      "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
       "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[Red]",
       "status": "failure"
     },
     {
       "branch": "bcaceaff5bda",
       "message": "AssertionError: assert 'CMatrix version' in ' Invalid color selection\\n Valid colors are green, red, blue, white, yellow, cyan, magenta and black.\\n'",
-      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[BLUE]",
+      "name": "eval.tests.test_argument_parsing.TestColorFlag.test_valid_colors_case_insensitive[Cyan]",
       "status": "failure"
     },
     {
