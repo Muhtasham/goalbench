@@ -209,8 +209,10 @@ if dry_run:
     raise SystemExit(0)
 if config.get("strict_egress") and platform.system() != "Linux":
     raise SystemExit("strict egress is only implemented for Linux hosts")
-if config.get("strict_egress") and os.geteuid() == 0:
-    raise SystemExit("strict egress must run as a dedicated non-root user; do not firewall root/SSH")
+if config.get("strict_egress") and os.geteuid() == 0 and not config.get("codex_user"):
+    raise SystemExit("strict egress under root requires codex_user so only the Codex UID is firewalled")
+if config.get("codex_user") == "root":
+    raise SystemExit("strict egress must run Codex as a dedicated non-root user")
 PY
 }
 

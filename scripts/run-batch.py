@@ -102,19 +102,23 @@ def run_with_timeout(cmd: list[str], timeout: int, cwd: Path = REPO) -> subproce
     return subprocess.CompletedProcess(cmd, process.returncode, output)
 
 
-def tmux_has_session(session: str) -> bool:
+def tmux_cmd(user: str, *args: str) -> list[str]:
+    return ["sudo", "-H", "-u", user, "tmux", *args] if user else ["tmux", *args]
+
+
+def tmux_has_session(session: str, user: str = "") -> bool:
     return (
         subprocess.run(
-            ["tmux", "has-session", "-t", session], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
+            tmux_cmd(user, "has-session", "-t", session), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
         ).returncode
         == 0
     )
 
 
-def tmux_capture(session: str) -> str:
-    if not tmux_has_session(session):
+def tmux_capture(session: str, user: str = "") -> str:
+    if not tmux_has_session(session, user):
         return ""
-    return run(["tmux", "capture-pane", "-pt", session, "-S", "-220"], check=False).stdout
+    return run(tmux_cmd(user, "capture-pane", "-pt", session, "-S", "-220"), check=False).stdout
 
 
 def transcript_tail(record: dict) -> str:
@@ -123,7 +127,7 @@ def transcript_tail(record: dict) -> str:
 
 
 def record_output(record: dict) -> str:
-    return tmux_capture(record["session_name"]) + "\n" + transcript_tail(record)
+    return tmux_capture(record["session_name"], record.get("codex_user", "")) + "\n" + transcript_tail(record)
 
 
 def add_error(record: dict, error: str) -> dict:
@@ -161,6 +165,8 @@ def prepare_instance(args: argparse.Namespace, instance_id: str, run_root: Path)
     ]
     if args.strict_egress:
         cmd.append("--strict-egress")
+    if args.codex_user:
+        cmd.extend(["--codex-user", args.codex_user])
     if args.run_name_prefix:
         version = f"{args.run_version}-" if args.run_version else ""
         cmd.extend(["--run-name", f"{args.run_name_prefix}-{version}{instance_id.replace('__', '-').split('.', 1)[0]}"])
@@ -176,6 +182,7 @@ def prepare_instance(args: argparse.Namespace, instance_id: str, run_root: Path)
         "session_name": run_json["session_name"],
         "container_name": run_json["container_name"],
         "inference_mode": run_json["inference_mode"],
+        "codex_user": run_json.get("codex_user", ""),
         "prepared_at": now(),
         "attempts": 0,
         "last_error": "",
@@ -200,7 +207,7 @@ def refresh_record(record: dict) -> dict:
         return {**record, "status": "goal_done", "goal_done_at": now(), "last_pane_tail": output[-4000:]}
     if output and any(marker in output.lower() for marker in RATE_LIMIT_MARKERS):
         return {**record, "last_rate_limit_seen_at": now(), "last_pane_tail": output[-4000:]}
-    if not tmux_has_session(record["session_name"]):
+    if not tmux_has_session(record["session_name"], record.get("codex_user", "")):
         return add_error({**record, "status": "failed", "failed_at": now()}, "tmux session ended before goal_done")
     return {**record, "last_rate_limit_seen_at": "", "last_pane_tail": output[-4000:]}
 
@@ -256,7 +263,7 @@ def cleanup_target_container(record: dict) -> None:
 
 def cleanup_codex_session(record: dict) -> None:
     if record.get("session_name"):
-        run(["tmux", "kill-session", "-t", record["session_name"]], check=False)
+        run(tmux_cmd(record.get("codex_user", ""), "kill-session", "-t", record["session_name"]), check=False)
 
 
 def docker_container_ids(name: str) -> set[str]:
@@ -496,6 +503,7 @@ def add_common_run_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--model", default="gpt-5.5")
     parser.add_argument("--reasoning-effort", default="xhigh")
     parser.add_argument("--strict-egress", action="store_true")
+    parser.add_argument("--codex-user", default="")
     parser.add_argument("--run-name-prefix", default="")
 
 

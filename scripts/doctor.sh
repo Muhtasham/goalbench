@@ -56,6 +56,15 @@ print("true" if json.loads(open(sys.argv[1]).read()).get(sys.argv[2]) else "fals
 PY
 }
 
+config_optional() {
+  uv run python - "$CONFIG" "$1" <<'PY'
+import json
+import sys
+
+print(json.loads(open(sys.argv[1]).read()).get(sys.argv[2], ""))
+PY
+}
+
 memory_gib() {
   uv run python - "$1" <<'PY'
 import re
@@ -155,20 +164,26 @@ fi
 if [[ -f "$CONFIG" ]]; then
   inference_mode="$(config_value inference_mode)"
   strict_egress="$(config_bool strict_egress)"
+  codex_user="$(config_optional codex_user)"
+  egress_user="${codex_user:-$(id -un)}"
   if [[ "$inference_mode" == "paper" || "$inference_mode" == "no-internet" || "$inference_mode" == "no-internet-local-tools" ]]; then
     if [[ "$strict_egress" != "true" ]]; then
       fail "$inference_mode requires strict_egress=true"
-    elif [[ "$(id -u)" -eq 0 ]]; then
-      fail "strict egress must run as a dedicated non-root user; do not firewall root/SSH"
+    elif [[ "$(id -u)" -eq 0 && -z "$codex_user" ]]; then
+      fail "strict egress under root requires config codex_user so only the Codex UID is firewalled"
+    elif [[ "$egress_user" == "root" ]]; then
+      fail "strict egress must run Codex as a dedicated non-root user"
+    elif ! id -u "$egress_user" >/dev/null 2>&1; then
+      fail "codex_user does not exist: $egress_user"
     else
       set +e
-      scripts/linux-openai-egress-guard.sh status "$(id -un)" >/tmp/pb-doctor-egress.out 2>/tmp/pb-doctor-egress.err
+      scripts/linux-openai-egress-guard.sh status "$egress_user" >/tmp/pb-doctor-egress.out 2>/tmp/pb-doctor-egress.err
       egress_status=$?
       set -e
       if [[ "$egress_status" -eq 0 ]] && grep -q 'PB_OPENAI_' /tmp/pb-doctor-egress.out; then
-        ok "strict egress guard active for $(id -un)"
+        ok "strict egress guard active for $egress_user"
       else
-        fail "strict egress guard missing for $(id -un); run sudo scripts/linux-openai-egress-guard.sh proxy-apply $(id -un)"
+        fail "strict egress guard missing for $egress_user; run sudo scripts/linux-openai-egress-guard.sh proxy-apply $egress_user"
         cat /tmp/pb-doctor-egress.err >&2
       fi
     fi
@@ -184,7 +199,11 @@ if [[ -f "$CONFIG" ]]; then
   fi
   if [[ "$target_access" == "wrapper" ]]; then
     set +e
-    bash -lc "$target_wrapper_command __pb-wrapper-check true" >/tmp/pb-doctor-wrapper.out 2>/tmp/pb-doctor-wrapper.err
+    if [[ -n "${codex_user:-}" ]]; then
+      sudo -H -u "$codex_user" bash -lc "$target_wrapper_command __pb-wrapper-check true" >/tmp/pb-doctor-wrapper.out 2>/tmp/pb-doctor-wrapper.err
+    else
+      bash -lc "$target_wrapper_command __pb-wrapper-check true" >/tmp/pb-doctor-wrapper.out 2>/tmp/pb-doctor-wrapper.err
+    fi
     wrapper_status=$?
     set -e
     if [[ "$wrapper_status" -eq 126 ]]; then

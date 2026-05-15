@@ -28,8 +28,10 @@ def validate_config(config: dict[str, Any], action: str, dry_run: bool) -> None:
         return
     if platform.system() != "Linux":
         raise SystemExit("strict egress is only implemented for Linux hosts")
-    if os.geteuid() == 0:
-        raise SystemExit("strict egress must run as a dedicated non-root user; do not firewall root/SSH")
+    if os.geteuid() == 0 and not config.get("codex_user"):
+        raise SystemExit("strict egress under root requires codex_user so only the Codex UID is firewalled")
+    if config.get("codex_user") == "root":
+        raise SystemExit("strict egress must run Codex as a dedicated non-root user")
 
 
 def option_args(name: str, value: Any) -> list[str]:
@@ -55,6 +57,7 @@ def common_watch_args(config: dict[str, Any], args: argparse.Namespace) -> list[
         "target_wrapper_command",
         "model",
         "reasoning_effort",
+        "codex_user",
         "run_name_prefix",
     )
     return [

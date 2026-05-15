@@ -12,5 +12,6 @@
   "reasoning_effort": "high",
   "strict_egress": true,
   "run_name_prefix": "full-nointernet-high",
-  "strict_paper": false
+  "strict_paper": false,
+  "codex_user": "codex-runner"
 }

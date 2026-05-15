@@ -312,7 +312,10 @@ sudo scripts/linux-openai-egress-guard.sh proxy-apply codex-runner
 sudo scripts/linux-openai-egress-guard.sh status codex-runner
 ```
 
-Run the sweep as `codex-runner` with proxy variables set:
+Run the sweep from the coordinator account. The strict configs set
+`"codex_user": "codex-runner"`, so Docker/eval orchestration can stay on the
+coordinator while generated Codex `/goal` tmux sessions run as the firewalled
+non-root user:
 
 ```bash
 export HTTPS_PROXY=http://127.0.0.1:18080

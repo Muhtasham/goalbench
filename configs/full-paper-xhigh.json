@@ -12,5 +12,6 @@
   "reasoning_effort": "xhigh",
   "strict_egress": true,
   "run_name_prefix": "full-paper-xhigh",
-  "strict_paper": true
+  "strict_paper": true,
+  "codex_user": "codex-runner"
 }

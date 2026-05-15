@@ -134,7 +134,9 @@ Use separate batches for each mode. Do not mix them in one result.
 Any mode with `no-internet` semantics (`no-internet`, `paper`, and
 `no-internet-local-tools`) must use strict host egress. The runner refuses those
 configs unless `strict_egress=true`, and the launch doctor requires a
-dedicated non-root user with the OpenAI-only egress guard active.
+dedicated non-root `codex_user` with the OpenAI-only egress guard active. The
+coordinator may run as root for Docker/eval access, but the generated Codex
+`/goal` tmux sessions run as that dedicated user.
 
 Recommended run order:
 

@@ -6,6 +6,7 @@ import hashlib
 import json
 import os
 import platform
+import pwd
 import re
 import shlex
 import shutil
@@ -138,6 +139,14 @@ def render_prompt(template: str, values: dict[str, str]) -> str:
 def write_executable(path: Path, text: str) -> None:
     path.write_text(text)
     path.chmod(0o755)
+
+
+def chown_tree(path: Path, user: str) -> None:
+    if not user:
+        return
+    user_info = pwd.getpwnam(user)
+    for item in (path, *path.rglob("*")):
+        os.chown(item, user_info.pw_uid, user_info.pw_gid)
 
 
 def file_sha256(path: Path) -> str:
@@ -354,6 +363,7 @@ def strict_paper_compliant(args: argparse.Namespace) -> bool:
 
 
 def prepare(args: argparse.Namespace) -> None:
+    codex_user = args.codex_user.strip()
     if args.inference_mode == "paper" and args.target_access != "wrapper":
         raise SystemExit("paper mode requires --target-access wrapper; use no-internet for direct-docker ablations")
     if args.inference_mode in NO_INTERNET_MODES and not args.strict_egress:
@@ -364,8 +374,12 @@ def prepare(args: argparse.Namespace) -> None:
         raise SystemExit("strict OpenAI egress is only supported for OpenAI/Codex model runs")
     if args.strict_egress and platform.system() != "Linux":
         raise SystemExit("strict egress is only implemented for Linux hosts")
-    if args.strict_egress and os.geteuid() == 0:
-        raise SystemExit("strict egress must run as a dedicated non-root user; do not firewall root/SSH")
+    if args.strict_egress and os.geteuid() == 0 and not codex_user:
+        raise SystemExit("strict egress under root requires --codex-user so only the Codex UID is firewalled")
+    if args.strict_egress and codex_user == "root":
+        raise SystemExit("strict egress must run Codex as a dedicated non-root user")
+    if codex_user:
+        pwd.getpwnam(codex_user)
     root = Path(args.run_root).expanduser().resolve()
     prepared_run_name = args.run_name or run_name(
         args.instance_id,
@@ -480,6 +494,7 @@ def prepare(args: argparse.Namespace) -> None:
                 "tool_cache_env": tool_env,
                 "target_access": args.target_access,
                 "strict_egress": args.strict_egress,
+                "codex_user": codex_user,
                 "target_wrapper_command": args.target_wrapper_command,
                 "target_command": target_command,
                 "prompt_template": str(prompt_template_path),
@@ -575,37 +590,56 @@ docker exec -u agent {shlex.quote(container_name)} bash -lc '
         else f"PATH={shlex.quote(str(helper_dir))}:$PATH GIT_CEILING_DIRECTORIES={shlex.quote(str(instance_dir))}"
     )
     codex_env = " ".join(value for value in (base_codex_env, proxy_exports(args.strict_egress)) if value)
+    codex_command = f"sudo -H -u {shlex.quote(codex_user)} codex" if codex_user else "codex"
+    tmux_command = f"sudo -H -u {shlex.quote(codex_user)} tmux" if codex_user else "tmux"
+    transcript_log = shlex.quote(str(instance_dir / "tmux-transcript.log"))
+    codex_config_setup = (
+        f"""
+CODEX_USER={shlex.quote(codex_user)}
+CODEX_USER_HOME="$(getent passwd "$CODEX_USER" | cut -d: -f6)"
+CODEX_CONFIG="$CODEX_USER_HOME/.codex/config.toml"
+mkdir -p "$(dirname "$CODEX_CONFIG")"
+touch "$CODEX_CONFIG"
+if [ "$(id -u)" -eq 0 ]; then
+  chown -R "$CODEX_USER:$CODEX_USER" "$(dirname "$CODEX_CONFIG")"
+fi
+"""
+        if codex_user
+        else 'CODEX_CONFIG="${CODEX_HOME:-$HOME/.codex}/config.toml"\nmkdir -p "$(dirname "$CODEX_CONFIG")"\n'
+    )
     write_executable(
         instance_dir / "start-codex-goal.sh",
         f"""#!/usr/bin/env bash
 set -euo pipefail
 CODEX_BYPASS_FLAG="--yolo"
-if ! codex --yolo --version >/dev/null 2>&1; then
+if ! {codex_command} --yolo --version >/dev/null 2>&1; then
   CODEX_BYPASS_FLAG="--dangerously-bypass-approvals-and-sandbox"
 fi
-CODEX_CONFIG="${{CODEX_HOME:-$HOME/.codex}}/config.toml"
+{codex_config_setup}
 TRUST_KEY="$(python3 -c 'import json, sys; print(json.dumps(sys.argv[1]))' {shlex.quote(str(solution_dir))})"
-mkdir -p "$(dirname "$CODEX_CONFIG")"
 if ! grep -Fqx "[projects.$TRUST_KEY]" "$CODEX_CONFIG" 2>/dev/null; then
   {{
     printf '\\n[projects.%s]\\n' "$TRUST_KEY"
     printf 'trust_level = "trusted"\\n'
   }} >> "$CODEX_CONFIG"
 fi
-tmux kill-session -t {shlex.quote(session_name)} >/dev/null 2>&1 || true
-tmux new-session -d -s {shlex.quote(session_name)} -c {shlex.quote(str(solution_dir))} \\
+if [ -n "{codex_user}" ] && [ "$(id -u)" -eq 0 ]; then
+  chown "$CODEX_USER:$CODEX_USER" "$CODEX_CONFIG"
+fi
+{tmux_command} kill-session -t {shlex.quote(session_name)} >/dev/null 2>&1 || true
+{tmux_command} new-session -d -s {shlex.quote(session_name)} -c {shlex.quote(str(solution_dir))} \\
   "{codex_env} codex --enable goals --disable plugins --disable apps -m {shlex.quote(args.model)} \\
   -c model_reasoning_effort={shlex.quote(args.reasoning_effort)} \\
   -c trust_level=trusted \\
   -C {shlex.quote(str(solution_dir))} $CODEX_BYPASS_FLAG --no-alt-screen"
-tmux pipe-pane -o -t {shlex.quote(session_name)} 'cat >> {shlex.quote(str(instance_dir / "tmux-transcript.log"))}'
+{tmux_command} pipe-pane -o -t {shlex.quote(session_name)} 'cat >> {transcript_log}'
 sleep 4
-tmux send-keys -t {shlex.quote(session_name)} {shlex.quote("/goal " + objective)} Enter
+{tmux_command} send-keys -t {shlex.quote(session_name)} {shlex.quote("/goal " + objective)} Enter
 sleep 2
-tmux load-buffer {shlex.quote(str(instance_dir / "GOAL_PROMPT.md"))}
-tmux paste-buffer -t {shlex.quote(session_name)}
-tmux send-keys -t {shlex.quote(session_name)} Enter
-echo "Attached session: tmux attach -t {session_name}"
+{tmux_command} load-buffer {shlex.quote(str(instance_dir / "GOAL_PROMPT.md"))}
+{tmux_command} paste-buffer -t {shlex.quote(session_name)}
+{tmux_command} send-keys -t {shlex.quote(session_name)} Enter
+echo "Attached session: {tmux_command} attach -t {session_name}"
 """,
     )
     write_executable(
@@ -644,6 +678,7 @@ set -euo pipefail
 exec {shlex.quote(str(instance_dir / "package-submission.sh"))} "$@"
 """,
     )
+    chown_tree(instance_dir, codex_user)
     write_executable(
         instance_dir / "eval-submission.sh",
         f"""#!/usr/bin/env bash
@@ -683,6 +718,7 @@ def prepare_batch(args: argparse.Namespace) -> None:
                     model=args.model,
                     reasoning_effort=args.reasoning_effort,
                     strict_egress=args.strict_egress,
+                    codex_user=args.codex_user,
                 )
             )
 
@@ -713,6 +749,11 @@ def main() -> None:
     prepare_parser.add_argument("--reasoning-effort", default=DEFAULT_REASONING_EFFORT)
     prepare_parser.add_argument("--strict-egress", action="store_true")
     prepare_parser.add_argument(
+        "--codex-user",
+        default="",
+        help="Run Codex/tmux as this non-root user while the coordinator keeps Docker/eval access.",
+    )
+    prepare_parser.add_argument(
         "--prompt-template",
         default="",
         help="Prompt template to render. Use this to pass an official ProgramBench prompt unchanged when available.",
@@ -739,6 +780,11 @@ def main() -> None:
     batch_parser.add_argument("--model", default=DEFAULT_MODEL)
     batch_parser.add_argument("--reasoning-effort", default=DEFAULT_REASONING_EFFORT)
     batch_parser.add_argument("--strict-egress", action="store_true")
+    batch_parser.add_argument(
+        "--codex-user",
+        default="",
+        help="Run Codex/tmux as this non-root user while the coordinator keeps Docker/eval access.",
+    )
     batch_parser.add_argument(
         "--prompt-template",
         default="",
