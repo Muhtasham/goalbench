@@ -1,0 +1,1633 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.15075654999964172
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.12164716100232909
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.13043873399874428
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.12539942500006873
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.12386485200113384
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.12895409000338987
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6599204589947476
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10484043099859264
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1322158769980888
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13709851699968567
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1372705070025404
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 7.954006447995198
+    },
+    {
+      "branch": "80d1d2869975",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.020927992998622358
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13183775899960892
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11817830700601917
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1300016070017591
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11646109400317073
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 4.917544636999082
+    },
+    {
+      "branch": "a03959b491c9",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02293025399558246
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12951660900580464
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11439147199416766
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11408947400195757
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11471321100543719
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 57.75870253999892
+    },
+    {
+      "branch": "df37316a82f6",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.036869695999484975
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10807496000052197
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10605004899844062
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11225716300396016
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12369463499635458
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.6537309599953005
+    },
+    {
+      "branch": "ed1c5cce9580",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.025183825004205573
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12849505500344094
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10177409600146348
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12086091699893586
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1154862100011087
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.650426772001083
+    },
+    {
+      "branch": "460cfbe4e9d2",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03273926400288474
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12437712199607631
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12466294200567063
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13228445899585495
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11830350800300948
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.420603856997332
+    },
+    {
+      "branch": "d4f313db3900",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03616252000210807
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12888565399771323
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12170435400184942
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13393153400102165
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1208625969957211
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 5.4698151310003595
+    },
+    {
+      "branch": "40d5eb846453",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.022541896003531292
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13780508700438077
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1285408350013313
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12236623200442409
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09849740999925416
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.264925237002899
+    },
+    {
+      "branch": "a8673232be36",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.027878215005330276
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11639726599969435
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12330928799929097
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10461974499776261
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13282221800182015
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.00283063200186
+    },
+    {
+      "branch": "75c14d1d5dcd",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03798022199771367
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1373034499993082
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11794794999877922
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12105606700060889
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13199093200091738
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.554395724000642
+    },
+    {
+      "branch": "db00846502d9",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.027496825001435354
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11964246299612569
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12662673400336644
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12315179900178919
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11668344500503736
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 0.14106461300252704
+    },
+    {
+      "branch": "486efefbd280",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.04047890200308757
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12485617200582055
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12660734399833018
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12469996199797606
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11860712699854048
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.436934386998473
+    },
+    {
+      "branch": "e7846e834011",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.020977323001716286
+    }
+  ],
+  "executable_hash": "e761fab92966c1ed6b24a667effbbaed1e61fc0eef087c484ad12c89c92b5155",
+  "failed_tests": [
+    {
+      "branch": "80d1d2869975",
+      "message": "AssertionError",
+      "name": "eval.tests.test_bases_configuration.test_bases_with_alias_base",
+      "status": "failure"
+    },
+    {
+      "branch": "80d1d2869975",
+      "message": "AssertionError",
+      "name": "eval.tests.test_actual_deletion.test_actual_merged_branch_deletion",
+      "status": "failure"
+    },
+    {
+      "branch": "80d1d2869975",
+      "message": "AssertionError",
+      "name": "eval.tests.test_output_parsing.test_deletion_output_format",
+      "status": "failure"
+    },
+    {
+      "branch": "80d1d2869975",
+      "message": "AssertionError",
+      "name": "eval.tests.test_actual_deletion.test_dry_run_vs_actual_deletion",
+      "status": "failure"
+    },
+    {
+      "branch": "a03959b491c9",
+      "message": "AssertionError",
+      "name": "tests.test_conflicting_flags.test_conflicting_confirm_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "a03959b491c9",
+      "message": "AssertionError",
+      "name": "tests.test_conflicting_flags.test_conflicting_detach_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "a03959b491c9",
+      "message": "AssertionError",
+      "name": "tests.test_conflicting_flags.test_base_alias",
+      "status": "failure"
+    },
+    {
+      "branch": "a03959b491c9",
+      "message": "AssertionError",
+      "name": "tests.test_conflicting_flags.test_conflicting_update_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_negative_update_interval",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_flows.test_recent_fetch_head_skips_update",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_flows.test_error_no_bases_single_remote",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_delete_diverged_with_explicit_remote",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_delete_multiple_ranges",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_config_file_no_confirm",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_cli_overrides_config_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected exit code 1, got 0",
+      "name": "tests.test_config.test_config_whitespace_in_bases_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_base_alias_for_bases",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_conflicting_update_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected panic exit code 101, got 0",
+      "name": "tests.test_config.test_config_negative_update_interval_panics",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_bases_flag_single_value",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config.test_config_multiple_remotes_default_bases",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Should reject non-numeric updateInterval",
+      "name": "tests.test_config.test_config_invalid_numeric_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_config_multiple_bases_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_config_diverged_empty_scope",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_delete_local_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_conflicting_confirm_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_flows.test_error_no_bases_multiple_remotes",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_delete_remote_with_wildcard",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_update_interval_numeric_value",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_config_file_no_update",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config.test_config_multiple_bases_entries_merged",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_protected_patterns_multiple_globs",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_bases_multiple_comma_separated",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_edge_cases.test_push_remote_uses_pushdefault_when_no_branch_pushremote",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Should reject non-boolean update value",
+      "name": "tests.test_config.test_config_invalid_boolean_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_config_comma_separated_delete_one_bad",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_config_remote_empty_scope",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_core.test_squash_merge_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_conflicting_detach_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_delete_stray_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_flows.test_error_empty_bases_via_git_config",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_very_long_branch_names",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_config_invalid_update_interval",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_special_characters_in_branch_names",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_core.test_worktree_branch_preserved",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_config_invalid_delete_range_format",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Should fail when config is invalid",
+      "name": "tests.test_config_edge_cases.test_config_error_propagation_on_config_read_failure",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Should reject empty bases",
+      "name": "tests.test_config.test_config_empty_bases_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Should fail when remote config is invalid",
+      "name": "tests.test_config_edge_cases.test_config_get_remote_invalid_remote_name",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_coverage_push.test_merged_non_upstream_remote_tracking_preservation",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: git-trim failed: error: invalid value ' stray ' for '--delete <DELETE>': Invalid delete range format ` stray `\n\nFor more information, try '--help'.\n\nstdout:",
+      "name": "tests.test_config_advanced.test_config_delete_whitespace_trimmed",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_config_merged_remote_empty_scope",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_core_edge_cases.test_non_upstream_remote_branch_without_delete_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_flows.test_prompt_survey_for_push_upstream_config",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_config_invalid_bool_value",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_empty_protected_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_delete_merged_with_explicit_remote",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_protected_pattern_with_no_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_config_delete_range_empty_scope",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_core_edge_cases.test_non_heads_remote_preservation",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_defensive_paths.test_refspec_wildcard_at_start_and_end_separately",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_core_edge_cases.test_diverged_remote_tracking_base_preservation",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_coverage_push.test_worktree_preservation_with_merged_branch",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_error_no_bases.test_implicit_three_remotes_generic_message",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_edge_cases.test_push_remote_branch_pushremote_overrides_pushdefault",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_error_no_bases.test_error_message_final_line",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_error_no_bases.test_implicit_single_remote_no_head",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: git-trim failed: error: unexpected argument '--base' found\n\nUsage: executable [OPTIONS]\n\nFor more information, try '--help'.",
+      "name": "tests.test_coverage_push.test_base_branch_is_itself_merged_remote_tracking",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_config_invalid_delete_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_config_file_protected_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_delete_remote_with_explicit_remote",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_flows.test_skip_suggestions_non_tracking_and_non_upstream",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_config_negative_update_interval_panics",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_core_edge_cases.test_worktree_preservation_of_merged_branch",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_error_no_bases.test_git_config_empty_with_multiple_remotes",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_core_edge_cases.test_merged_direct_fetch_hub_cli_style",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_error_no_bases.test_multi_remote_for_loop_command_present",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_error_no_bases.test_implicit_multiple_remotes_no_heads",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: git-trim failed: error: unexpected argument '--base' found\n\nUsage: executable [OPTIONS]\n\nFor more information, try '--help'.",
+      "name": "tests.test_coverage_push.test_diverged_remote_tracking_branch_preserved_as_base",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_no_bases_multiple_remotes",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_simple_git_flow_rejected_hotfix_to_master",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_config_bases_config_value",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_conflicting_update_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_explicit_empty_bases_from_gitconfig",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_invalid_ref_name_in_bases",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_config_unknown_delete_keyword",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_github_flow_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_merge_style_squash",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_non_trackings_merged_non_tracking",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_error_no_bases.test_implicit_single_remote_specific_name_in_message",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_error_no_bases.test_git_config_empty_bases",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_orphan_noop",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_simple_git_flow_hotfix_to_master",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_config_bases_multiple_comma_separated_values",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_conflicting_confirm_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_git_flow_rejected_feature_to_develop",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_hub_cli_checkout_accepted",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_bare_repository_not_supported",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_github_flow_rejected_but_edited",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_github_flow_accepted_but_edited",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_config_multiple_delete_entries_one_invalid",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_filter_accidential_track",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_git_flow_hotfix_to_master",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_error_no_bases.test_all_help_suggestions_present_git_config",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_git_flow_rejected_hotfix_to_master",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_git_flow_feature_to_develop",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_github_flow_accepted_but_forgot_to_delete_and_edited",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_conflicting_detach_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_hub_cli_checkout_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_simple_git_flow_hotfix_to_master_forgot_to_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_github_flow_accepted",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_hub_cli_checkout_noop",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_merge_style_mixed",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_git_flow_feature_to_develop_but_forgot_to_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_hub_cli_checkout_modified_and_accepted",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_github_flow_accepted_but_forgot_to_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_errors.test_should_update_with_zero_interval",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_errors.test_should_update_missing_fetch_head",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_git_flow_hotfix_to_master_forgot_to_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_errors.test_explicit_update_flag_forces_fetch",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_errors.test_multiple_remotes_push_config",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_git_flow_develop_to_master",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_hub_cli_checkout_should_not_push_delete_non_heads",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_hub_cli_checkout_modified_and_accepted_but_forgot_to_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_skip_recent_update",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_remaining.test_skip_suggestion_merged_star_multiple_remotes",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_triangular_git_flow_develop_to_master_but_forgot_to_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_print_summary.test_merged_direct_fetch_protected",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_errors.test_should_update_with_fetch_prune_disabled",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_errors.test_should_update_recent_fetch_head",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_print_summary.test_protected_non_upstream_remote",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_errors.test_old_fetch_head_with_prune_enabled",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_no_bases_implicit_multiple_remotes",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_errors.test_prompt_survey_on_push_upstream",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_no_bases_git_config_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_small_gaps.test_refspec_wildcard_prefix_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_print_summary.test_skipped_tracking_gone_upstream",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_remote_push_config_survey_prompt",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_small_gaps.test_refspec_wildcard_middle_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_skip_suggestions.test_skip_suggestion_merged_local_gone_upstream",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_print_summary.test_skipped_branches_multiple_remotes",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_main_remaining.test_skip_suggestion_merged_local",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_skip_suggestions.test_skip_suggestion_merged_local_direct_fetch",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_skip_suggestions.test_skip_suggestion_mixed_tracking_states",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_small_gaps.test_refspec_direction_mismatch_push_only",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_small_gaps.test_refspec_no_matching_refspec_returns_none",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_subprocess.test_git_trim_branch_deletion_dry_run",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_small_gaps.test_refspec_wildcard_suffix_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_utils.test_glob_wildcard_suffix_protects_branches",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_small_gaps.test_refspec_nonmatching_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_subprocess.test_merged_branch_detection_with_ff_merge",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_subprocess.test_remote_update_unreachable",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_utils.test_glob_slash_in_pattern_matches_paths",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_utils.test_glob_wildcard_prefix_matches_suffix",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected:\nBranches that will remain:\n  local branches:\n    feature *2\n    feaxture *2\n    master [base]\n    relaese *2\n    relase *2\n    release *2\n  remote references:\n    origin/master [base]\n  Some branches are skipped. Consider following to scan them:\n    *2: Set an upstream to make it a tracking branch or add `--delete 'local'` flag.\n\n\n\nGot:\nBranches that will remain:\n  local branches:\n    feature *2\n    feaxture *2\n    master [base]\n    relaese [merged, but: protected by a pattern `rel*se`]\n    relase [merged, but: protected by a pattern `rel*se`]\n    release [merged, but: protected by a pattern `rel*se`]\n  remote references:\n    origin/master [base]\n  Some branches are skipped. Consider following to scan them:\n    *2: Set an upstream to make it a tracking branch or add `--delete 'local'` flag.",
+      "name": "tests.test_utils.test_glob_wildcard_in_middle_of_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected:\nBranches that will remain:\n  local branches:\n    heads-old *2\n    master [base]\n    refs-backup *2\n    remotes-cache *2\n  remote references:\n    origin/master [base]\n  Some branches are skipped. Consider following to scan them:\n    *2: Set an upstream to make it a tracking branch or add `--delete 'local'` flag.\n\n\n\nGot:\nBranches that will remain:\n  local branches:\n    heads-old *2\n    master [base]\n    refs-backup [merged, but: protected by a pattern `refs-*`]\n    remotes-cache *2\n  remote references:\n    origin/master [base]\n  Some branches are skipped. Consider following to scan them:\n    *2: Set an upstream to make it a tracking branch or add `--delete 'local'` flag.",
+      "name": "tests.test_utils.test_glob_pattern_with_refs_prefix",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected exit 1, got 0",
+      "name": "tests.test_utils.test_bases_with_whitespace_causes_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_utils.test_glob_multiple_patterns_comma_separated",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_utils.test_glob_prefix_wildcard_protects_subdirectory_branches",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected:\nBranches that will remain:\n  local branches:\n    FEATURE/admin *2\n    Feature/ui *2\n    RELEASE-3.0 *2\n    Release-2.0 *2\n    feature/auth *2\n    master [base]\n    release-1.0 *2\n  remote references:\n    origin/master [base]\n  Some branches are skipped. Consider following to scan them:\n    *2: Set an upstream to make it a tracking branch or add `--delete 'local'` flag.\n\n\n\nGot:\nBranches that will remain:\n  local branches:\n    FEATURE/admin *2\n    Feature/ui *2\n    RELEASE-3.0 *2\n    Release-2.0 *2\n    feature/auth *2\n    master [base]\n    release-1.0 [merged, but: protected by a pattern `release-*`]\n  remote references:\n    origin/master [base]\n  Some branches are skipped. Consider following to scan them:\n    *2: Set an upstream to make it a tracking branch or add `--delete 'local'` flag.",
+      "name": "tests.test_utils.test_glob_case_sensitive_matching",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected:\nBranches that will remain:\n  local branches:\n    123test *2\n    branch.with.dots *2\n    feature-new *2\n    feature_old *2\n    master [base]\n    my.branch *2\n    test123 *2\n    v1.0.0 *2\n    v1.2.3 *2\n  remote references:\n    origin/master [base]\n  Some branches are skipped. Consider following to scan them:\n    *2: Set an upstream to make it a tracking branch or add `--delete 'local'` flag.\n\n\n\nGot:\nBranches that will remain:\n  local branches:\n    123test *2\n    branch.with.dots *2\n    feature-new *2\n    feature_old *2\n    master [base]\n    my.branch *2\n    test123 *2\n    v1.0.0 [merged, but: protected by a pattern `v*`]\n    v1.2.3 [merged, but: protected by a pattern `v*`]\n  remote references:\n    origin/master [base]\n  Some branches are skipped. Consider following to scan them:\n    *2: Set an upstream to make it a tracking branch or add `--delete 'local'` flag.",
+      "name": "tests.test_utils.test_glob_special_characters_in_branch_names",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_utils.test_glob_protection_prevents_deletion_of_merged_branches",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "pexpect.exceptions.TIMEOUT: Timeout exceeded.\n<pexpect.pty_spawn.spawn object at 0x7a792e426710>\ncommand: /workspace/executable\nargs: [b'/workspace/executable', b'--delete', b'merged:origin', b'--no-update']\nbuffer (last 100 chars): 'feature1\\r\\nDelete merged remote refs:\\r\\n  - origin, refs/heads/feature1\\r\\nDelete these branches? [y/N] '\nbefore (last 100 chars): 'feature1\\r\\nDelete merged remote refs:\\r\\n  - origin, refs/heads/feature1\\r\\nDelete these branches? [y/N] '\nafter: <class 'pexpect.exceptions.TIMEOUT'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: False\npid: 31061\nchild_fd: 18\nclosed: False\ntimeout: 10\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: None\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.05\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('Confirm?')",
+      "name": "tests.test_interactive.test_confirm_yes_deletes_branches",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "pexpect.exceptions.TIMEOUT: Timeout exceeded.\n<pexpect.pty_spawn.spawn object at 0x75c8fcd198a0>\ncommand: /workspace/executable\nargs: [b'/workspace/executable', b'--delete', b'merged:origin', b'--no-update']\nbuffer (last 100 chars): 'feature1\\r\\nDelete merged remote refs:\\r\\n  - origin, refs/heads/feature1\\r\\nDelete these branches? [y/N] '\nbefore (last 100 chars): 'feature1\\r\\nDelete merged remote refs:\\r\\n  - origin, refs/heads/feature1\\r\\nDelete these branches? [y/N] '\nafter: <class 'pexpect.exceptions.TIMEOUT'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: False\npid: 31109\nchild_fd: 18\nclosed: False\ntimeout: 10\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: None\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.05\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('Confirm?')",
+      "name": "tests.test_interactive.test_confirm_no_cancels_deletion",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "pexpect.exceptions.TIMEOUT: Timeout exceeded.\n<pexpect.pty_spawn.spawn object at 0x7426068b3a00>\ncommand: /workspace/executable\nargs: [b'/workspace/executable', b'--delete', b'merged:origin', b'--no-update']\nbuffer (last 100 chars): 'feature1\\r\\nDelete merged remote refs:\\r\\n  - origin, refs/heads/feature1\\r\\nDelete these branches? [y/N] '\nbefore (last 100 chars): 'feature1\\r\\nDelete merged remote refs:\\r\\n  - origin, refs/heads/feature1\\r\\nDelete these branches? [y/N] '\nafter: <class 'pexpect.exceptions.TIMEOUT'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: False\npid: 31154\nchild_fd: 18\nclosed: False\ntimeout: 10\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: None\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.05\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('Confirm?')",
+      "name": "tests.test_interactive.test_confirm_default_is_no",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_print_summary.test_diverged_direct_fetch_protected",
+      "status": "failure"
+    },
+    {
+      "branch": "ed1c5cce9580",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_unknown_or_unexpected_arguments_error[args2-unexpected argument '--no-update']",
+      "status": "failure"
+    },
+    {
+      "branch": "ed1c5cce9580",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_update_interval_type_validation[args1-unexpected argument '-1']",
+      "status": "failure"
+    },
+    {
+      "branch": "ed1c5cce9580",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_update_interval_rejects_out_of_range_large_value",
+      "status": "failure"
+    },
+    {
+      "branch": "ed1c5cce9580",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_combined_short_flags_not_supported_for_value_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "ed1c5cce9580",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_repeated_flags_for_update_interval_are_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "460cfbe4e9d2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_handling.test_negative_update_interval_panics_with_message",
+      "status": "failure"
+    },
+    {
+      "branch": "d4f313db3900",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_output.test_dashdash_then_help_is_error_and_points_to_help",
+      "status": "failure"
+    },
+    {
+      "branch": "40d5eb846453",
+      "message": "AssertionError",
+      "name": "eval.tests.test_dry_run_output.test_dry_run_no_update_prints_summary_and_exit_0",
+      "status": "failure"
+    },
+    {
+      "branch": "40d5eb846453",
+      "message": "AssertionError",
+      "name": "eval.tests.test_dry_run_output.test_dry_run_disables_confirmation_prompt_in_non_tty",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 175,
+    "passed": 535
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "80d1d2869975",
+    "a03959b491c9",
+    "df37316a82f6",
+    "ed1c5cce9580",
+    "460cfbe4e9d2",
+    "d4f313db3900",
+    "40d5eb846453",
+    "a8673232be36",
+    "75c14d1d5dcd",
+    "db00846502d9",
+    "486efefbd280",
+    "e7846e834011"
+  ],
+  "test_records": 710,
+  "warnings": []
+}
