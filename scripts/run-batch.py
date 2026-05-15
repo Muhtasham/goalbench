@@ -22,6 +22,15 @@ RATE_LIMIT_MARKERS = ("rate limit", "rate_limit", "429")
 FINALIZE_READY = {"goal_done"}
 TERMINAL_STATUSES = {"goal_done", "packaged", "evaluated", "failed", "finalize_failed"}
 CLEANUP_STATUSES = TERMINAL_STATUSES
+STATUS_RANK = {
+    "pending": 0,
+    "running": 1,
+    "failed": 2,
+    "goal_done": 3,
+    "finalize_failed": 4,
+    "packaged": 5,
+    "evaluated": 6,
+}
 
 
 def now() -> str:
@@ -66,9 +75,34 @@ def load_state(batch_name: str, run_version: str = "") -> dict:
     )
 
 
-def save_state(state: dict) -> None:
+def record_updated_at(record: dict) -> str:
+    return max(
+        str(record.get(key, ""))
+        for key in (
+            "evaluated_at",
+            "packaged_at",
+            "finalize_failed_at",
+            "completed_at",
+            "failed_at",
+            "started_at",
+            "retried_at",
+        )
+    )
+
+
+def save_state(state: dict, merge_disk: bool = True) -> None:
     path = state_path(state["batch_name"], state.get("run_version", ""))
     path.parent.mkdir(parents=True, exist_ok=True)
+    if merge_disk and path.is_file():
+        disk = json.loads(path.read_text())
+        for instance_id, record in disk["items"].items():
+            current = state["items"].get(instance_id, {})
+            disk_rank = STATUS_RANK.get(record["status"], 0)
+            current_rank = STATUS_RANK.get(current.get("status", ""), 0)
+            if disk_rank > current_rank or (
+                disk_rank == current_rank and record_updated_at(record) > record_updated_at(current)
+            ):
+                state["items"][instance_id] = record
     state["updated_at"] = now()
     path.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n")
     if state.get("run_version"):
@@ -490,7 +524,7 @@ def retry(args: argparse.Namespace) -> None:
         else record
         for instance_id, record in state["items"].items()
     }
-    save_state(state)
+    save_state(state, merge_disk=False)
     print_status(state)
 
 
