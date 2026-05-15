@@ -11,7 +11,7 @@
   "target_wrapper_command": "sudo -n /usr/local/bin/pb-target-exec",
   "model": "gpt-5.5",
   "reasoning_effort": "high",
-  "strict_egress": false,
+  "strict_egress": true,
   "run_name_prefix": "cpx62-nointernet-high-smoke20",
   "strict_paper": false
 }

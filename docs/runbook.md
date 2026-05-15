@@ -114,7 +114,8 @@ scripts/start-sweep-tmux.sh configs/linux-smoke-paper-xhigh.json
 ```
 
 If you are using a smaller Hetzner shared `cpx62` smoke VM, use the labeled
-16 CPU / 30GB config instead:
+16 CPU / 30GB config instead. It still requires strict egress and must be run as
+a dedicated non-root user with the OpenAI-only egress guard active:
 
 ```bash
 scripts/doctor.sh configs/hetzner-cpx62-smoke-xhigh.json
@@ -474,7 +475,8 @@ scripts/run-sweep.sh
 
 On the smaller Hetzner `cpx62` runner, use the `cpx62-*` xhigh configs. They
 are explicitly non-paper-sized because they disclose 16 CPU / 30g instead of
-20 CPU / 60g:
+20 CPU / 60g, but they still require strict egress for every no-internet-style
+mode:
 
 ```bash
 scripts/run-sweep.sh --config configs/cpx62-nointernet-xhigh.json --dry-run
@@ -616,8 +618,10 @@ parallelism on smaller VMs with `scripts/run-sweep.sh --max-parallel N` or
 one batch.
 
 The `cpx62-*` configs are the same xhigh mode matrix sized for the current
-Hetzner shared runner: 16 CPUs, 30GB RAM, `max_parallel=10`, and no strict
-egress. They are useful for the Codex `/goal` scaffold question, but not for
+Hetzner shared runner: 16 CPUs, 30GB RAM, and `max_parallel=10`. They still use
+strict egress for `no-internet`, `paper`, and `no-internet-local-tools` modes;
+the only non-strict cpx62 mode is the explicitly non-compliant open-internet
+ceiling. They are useful for the Codex `/goal` scaffold question, but not for
 paper-sized cleanroom claims.
 
 Prepare with an official prompt template when one is available:

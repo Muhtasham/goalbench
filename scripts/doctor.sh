@@ -47,6 +47,15 @@ print(json.loads(open(sys.argv[1]).read())[sys.argv[2]])
 PY
 }
 
+config_bool() {
+  uv run python - "$CONFIG" "$1" <<'PY'
+import json
+import sys
+
+print("true" if json.loads(open(sys.argv[1]).read()).get(sys.argv[2]) else "false")
+PY
+}
+
 memory_gib() {
   uv run python - "$1" <<'PY'
 import re
@@ -144,6 +153,26 @@ else
 fi
 
 if [[ -f "$CONFIG" ]]; then
+  inference_mode="$(config_value inference_mode)"
+  strict_egress="$(config_bool strict_egress)"
+  if [[ "$inference_mode" == "paper" || "$inference_mode" == "no-internet" || "$inference_mode" == "no-internet-local-tools" ]]; then
+    if [[ "$strict_egress" != "true" ]]; then
+      fail "$inference_mode requires strict_egress=true"
+    elif [[ "$(id -u)" -eq 0 ]]; then
+      fail "strict egress must run as a dedicated non-root user; do not firewall root/SSH"
+    else
+      set +e
+      scripts/linux-openai-egress-guard.sh status "$(id -un)" >/tmp/pb-doctor-egress.out 2>/tmp/pb-doctor-egress.err
+      egress_status=$?
+      set -e
+      if [[ "$egress_status" -eq 0 ]] && grep -q 'PB_OPENAI_' /tmp/pb-doctor-egress.out; then
+        ok "strict egress guard active for $(id -un)"
+      else
+        fail "strict egress guard missing for $(id -un); run sudo scripts/linux-openai-egress-guard.sh proxy-apply $(id -un)"
+        cat /tmp/pb-doctor-egress.err >&2
+      fi
+    fi
+  fi
   target_file="$(config_value target_file)"
   target_access="$(config_value target_access)"
   target_wrapper_command="$(config_value target_wrapper_command)"

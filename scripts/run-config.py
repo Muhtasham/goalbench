@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import platform
 import shlex
 import subprocess
 import sys
@@ -13,10 +14,22 @@ from typing import Any
 
 REPO = Path(__file__).resolve().parents[1]
 RUN_BATCH = REPO / "scripts" / "run-batch.py"
+NO_INTERNET_MODES = {"paper", "no-internet", "no-internet-local-tools"}
 
 
 def load_config(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text())
+
+
+def validate_config(config: dict[str, Any], action: str, dry_run: bool) -> None:
+    if config.get("inference_mode") in NO_INTERNET_MODES and not config.get("strict_egress"):
+        raise SystemExit(f"{config['inference_mode']} configs must set strict_egress=true")
+    if dry_run or action != "watch" or not config.get("strict_egress"):
+        return
+    if platform.system() != "Linux":
+        raise SystemExit("strict egress is only implemented for Linux hosts")
+    if os.geteuid() == 0:
+        raise SystemExit("strict egress must run as a dedicated non-root user; do not firewall root/SSH")
 
 
 def option_args(name: str, value: Any) -> list[str]:
@@ -102,7 +115,9 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
-    cmd = command(load_config(Path(args.config)), args)
+    config = load_config(Path(args.config))
+    validate_config(config, args.action, args.dry_run)
+    cmd = command(config, args)
     if args.dry_run:
         print(shlex.join(cmd))
         return

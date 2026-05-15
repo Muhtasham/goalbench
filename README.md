@@ -131,6 +131,11 @@ Use separate batches for each mode. Do not mix them in one result.
 | `no-internet-local-tools` | `configs/full-localtools-xhigh.json` | Non-compliant tool-starvation ablation. No internet/source lookup, but local binary-analysis/tracing tools are allowed. |
 | `open-internet` | `configs/full-open-xhigh.json` | Non-compliant ceiling run with normal Codex internet/package access. |
 
+Any mode with `no-internet` semantics (`no-internet`, `paper`, and
+`no-internet-local-tools`) must use strict host egress. The runner refuses those
+configs unless `strict_egress=true`, and the launch doctor requires a
+dedicated non-root user with the OpenAI-only egress guard active.
+
 Recommended run order:
 
 On a paper-sized Linux host, use the `full-*` configs. On the current Hetzner

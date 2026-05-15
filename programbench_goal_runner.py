@@ -20,6 +20,7 @@ OPEN_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal_op
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_REASONING_EFFORT = "xhigh"
 DEFAULT_INFERENCE_MODE = "no-internet"
+NO_INTERNET_MODES = {"paper", "no-internet", "no-internet-local-tools"}
 MODE_RUN_SEGMENTS = {
     "paper": "paper",
     "no-internet": "nointernet",
@@ -355,10 +356,16 @@ def strict_paper_compliant(args: argparse.Namespace) -> bool:
 def prepare(args: argparse.Namespace) -> None:
     if args.inference_mode == "paper" and args.target_access != "wrapper":
         raise SystemExit("paper mode requires --target-access wrapper; use no-internet for direct-docker ablations")
+    if args.inference_mode in NO_INTERNET_MODES and not args.strict_egress:
+        raise SystemExit(f"{args.inference_mode} mode requires --strict-egress")
     if args.strict_egress and args.inference_mode == "open-internet":
         raise SystemExit("strict egress is incompatible with open-internet mode")
     if args.strict_egress and not args.model.startswith("gpt-"):
         raise SystemExit("strict OpenAI egress is only supported for OpenAI/Codex model runs")
+    if args.strict_egress and platform.system() != "Linux":
+        raise SystemExit("strict egress is only implemented for Linux hosts")
+    if args.strict_egress and os.geteuid() == 0:
+        raise SystemExit("strict egress must run as a dedicated non-root user; do not firewall root/SSH")
     root = Path(args.run_root).expanduser().resolve()
     prepared_run_name = args.run_name or run_name(
         args.instance_id,

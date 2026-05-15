@@ -193,6 +193,27 @@ print(json.loads(open(sys.argv[1]).read())[sys.argv[2]])
 PY
 }
 
+validate_config_policy() {
+  uv run python - "$CONFIG" "$DRY_RUN" <<'PY'
+import json
+import os
+import platform
+import sys
+
+config = json.loads(open(sys.argv[1]).read())
+dry_run = sys.argv[2] == "1"
+mode = config.get("inference_mode")
+if mode in {"paper", "no-internet", "no-internet-local-tools"} and not config.get("strict_egress"):
+    raise SystemExit(f"{mode} configs must set strict_egress=true")
+if dry_run:
+    raise SystemExit(0)
+if config.get("strict_egress") and platform.system() != "Linux":
+    raise SystemExit("strict egress is only implemented for Linux hosts")
+if config.get("strict_egress") and os.geteuid() == 0:
+    raise SystemExit("strict egress must run as a dedicated non-root user; do not firewall root/SSH")
+PY
+}
+
 poll_seconds() {
   uv run python - "$CONFIG" <<'PY'
 import json
@@ -323,6 +344,7 @@ run_publish() {
 TARGET_FILE="$(config_value target_file)"
 TARGET_ACCESS="$(config_value target_access)"
 TARGET_WRAPPER_COMMAND="$(config_value target_wrapper_command)"
+validate_config_policy
 
 if [[ "$WATCH" -eq 1 && "$TARGET_ACCESS" == "wrapper" && "$DRY_RUN" -eq 0 ]]; then
   set +e
