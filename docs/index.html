@@ -178,8 +178,8 @@
     <h1>ProgramBench Goal</h1>
     <p>Codex <code>/goal</code> scaffold results on ProgramBench tasks. These are scaffold measurements, not official mini-SWE-agent leaderboard submissions.</p>
     <div class="pill-row">
-      <span class="pill">Generated 2026-05-15T00:44:36.619986+00:00</span>
-      <span class="pill">5 evaluated instances</span>
+      <span class="pill">Generated 2026-05-15T00:45:05.995241+00:00</span>
+      <span class="pill">0 evaluated instances</span>
       <span class="pill">200 tasks in full ProgramBench</span>
       <span class="pill">Sorted Resolved → Almost → Avg. pass</span>
     </div>
@@ -223,169 +223,137 @@
     </div>
     
     
-    <div class="cards">
-      
-      <section class="summary-card">
-        <div class="summary-title">GPT 5.5 (xhigh) / No internet / unversioned</div>
-        <div class="summary-meta">Codex no-internet ablation · run unversioned</div>
-        <div class="metric-grid">
-          <div><strong>5</strong><span>instances</span></div>
-          <div><strong>0.0%</strong><span>resolved</span></div>
-          <div><strong>40.0%</strong><span>almost</span></div>
-          <div><strong>74.6%</strong><span>avg pass</span></div>
-          <div><strong>$13.93</strong><span>total est. cost</span></div>
-          <div><strong>267</strong><span>total calls</span></div>
-          <div><strong>$2.79</strong><span>est. cost / task</span></div>
-          <div><strong>53.4</strong><span>calls / task</span></div>
+    
+    <section class="empty-state">
+      <h2>Clean Slate</h2>
+      <p>No Codex <code>/goal</code> results are published in this reset yet. The next full run will populate the leaderboard, run-detail pages, task pages, plots, and downloadable JSON/CSV artifacts.</p>
+      <div class="mode-grid">
+        <div class="mode-card">
+          <strong>Primary run</strong>
+          <p><code>configs/full-nointernet-xhigh.json</code> is the headline Noam/Jake run: GPT-5.5 xhigh with Codex <code>/goal</code>, no internet/source lookup, black-box target access.</p>
         </div>
-      </section>
+        <div class="mode-card">
+          <strong>High comparison</strong>
+          <p><code>configs/full-nointernet-high.json</code> keeps the same scaffold and mode, changing only reasoning effort for high-vs-xhigh comparison.</p>
+        </div>
+        <div class="mode-card">
+          <strong>Strict cleanroom variant</strong>
+          <p><code>configs/full-paper-xhigh.json</code> is ProgramBench-style cleanroom for Codex <code>/goal</code>, not a paper baseline reproduction. It needs Linux amd64, 20 CPU / 60g, strict egress, and wrapper-only target access.</p>
+        </div>
+        <div class="mode-card">
+          <strong>Tool-starvation ablation</strong>
+          <p><code>configs/full-localtools-xhigh.json</code> keeps internet/source lookup blocked but allows local binary-analysis/tracing tools. It is intentionally non-compliant.</p>
+        </div>
+        <div class="mode-card">
+          <strong>Open-internet ceiling</strong>
+          <p><code>configs/full-open-xhigh.json</code> allows internet/package tooling and is only a non-compliant ceiling experiment.</p>
+        </div>
+      </div>
+    </section>
     
-    </div>
-
+    
     <h2>Score by Model × Task</h2>
-    <div class="score-matrix">
-      <a class="heat-cell" style="background:#0f766e" title="agourlay__zip-password-finder.704700d: 58.1%" href="task/agourlay__zip-password-finder.704700d/"></a><a class="heat-cell" style="background:#94a3b8" title="htop-dev__htop.523600b: 36.9%" href="task/htop-dev__htop.523600b/"></a><a class="heat-cell" style="background:#0f766e" title="oppiliappan__eva.41ae245: 83.2%" href="task/oppiliappan__eva.41ae245/"></a><a class="heat-cell" style="background:#d97706" title="sitkevij__hex.61ae69b: 97.1%" href="task/sitkevij__hex.61ae69b/"></a><a class="heat-cell" style="background:#d97706" title="wfxr__csview.8ac4de0: 97.9%" href="task/wfxr__csview.8ac4de0/"></a>
+    <p>The matrix below mirrors ProgramBench's all-models-by-all-tasks view for this scaffold. Cells are pending until Codex results are published, then link to task pages with per-task detail.</p>
+    <div class="score-matrix pending-matrix">
+      <a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a>
     </div>
-
-    
     <h2>Behavioral Test Pass Rate Distribution</h2>
-    <p>These plots mirror ProgramBench's run-detail views: a score histogram and a cumulative count by behavioral test pass-rate bucket.</p>
+    <p>The distribution plots are wired into the report. They stay empty until the first evaluated task lands, then render ProgramBench-style cumulative and histogram views.</p>
     <div class="plot-grid">
-      <section class="plot-card">
-        <h3>Histogram</h3>
-        
-      <svg class="plot" viewBox="0 0 520 240" role="img" aria-label="Behavioral test pass rate histogram">
-        <line x1="42" y1="18" x2="42" y2="194" />
-        <line x1="42" y1="194" x2="506" y2="194" />
-        <text x="34" y="22" text-anchor="end">2</text>
-        <text x="34" y="198" text-anchor="end">0</text>
-        <text x="42" y="228">0%</text>
-        <text x="506" y="228" text-anchor="end">100%</text>
-        <text x="260.0" y="228" text-anchor="middle">behavioral test pass rate</text>
-        <text x="12" y="120.0" transform="rotate(-90 12 120.0)" text-anchor="middle">tasks</text>
-        <rect x="44.0" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>0-10% pass: 0 task(s)</title></rect><rect x="90.4" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>10-20% pass: 0 task(s)</title></rect><rect x="136.8" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>20-30% pass: 0 task(s)</title></rect><rect x="183.2" y="106.0" width="42.4" height="88.0" fill="#0f766e"><title>30-40% pass: 1 task(s)</title></rect><rect x="229.6" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>40-50% pass: 0 task(s)</title></rect><rect x="276.0" y="106.0" width="42.4" height="88.0" fill="#0f766e"><title>50-60% pass: 1 task(s)</title></rect><rect x="322.4" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>60-70% pass: 0 task(s)</title></rect><rect x="368.8" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>70-80% pass: 0 task(s)</title></rect><rect x="415.2" y="106.0" width="42.4" height="88.0" fill="#0f766e"><title>80-90% pass: 1 task(s)</title></rect><rect x="461.6" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>90-100% pass: 2 task(s)</title></rect>
-      </svg>
-    
-      </section>
-      <section class="plot-card">
+      
+      <section class="plot-card pending-plot">
         <h3>Cumulative</h3>
-        
-      <svg class="plot" viewBox="0 0 520 240" role="img" aria-label="Behavioral test pass rate cumulative distribution">
-        <line x1="42" y1="18" x2="42" y2="194" />
-        <line x1="42" y1="194" x2="506" y2="194" />
-        <text x="34" y="22" text-anchor="end">5</text>
-        <text x="34" y="198" text-anchor="end">0</text>
-        <text x="42" y="228">0%</text>
-        <text x="506" y="228" text-anchor="end">100%</text>
-        <text x="260.0" y="228" text-anchor="middle">behavioral test pass rate</text>
-        <text x="12" y="120.0" transform="rotate(-90 12 120.0)" text-anchor="middle">tasks</text>
-        <rect x="44.0" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 0% pass: 5 task(s), 100.0%</title></rect><rect x="90.4" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 10% pass: 5 task(s), 100.0%</title></rect><rect x="136.8" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 20% pass: 5 task(s), 100.0%</title></rect><rect x="183.2" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 30% pass: 5 task(s), 100.0%</title></rect><rect x="229.6" y="53.2" width="42.4" height="140.8" fill="#0f766e"><title>&gt;= 40% pass: 4 task(s), 80.0%</title></rect><rect x="276.0" y="53.2" width="42.4" height="140.8" fill="#0f766e"><title>&gt;= 50% pass: 4 task(s), 80.0%</title></rect><rect x="322.4" y="88.4" width="42.4" height="105.6" fill="#0f766e"><title>&gt;= 60% pass: 3 task(s), 60.0%</title></rect><rect x="368.8" y="88.4" width="42.4" height="105.6" fill="#0f766e"><title>&gt;= 70% pass: 3 task(s), 60.0%</title></rect><rect x="415.2" y="88.4" width="42.4" height="105.6" fill="#0f766e"><title>&gt;= 80% pass: 3 task(s), 60.0%</title></rect><rect x="461.6" y="123.6" width="42.4" height="70.4" fill="#0f766e"><title>&gt;= 90% pass: 2 task(s), 40.0%</title></rect>
-      </svg>
-    
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Cumulative pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">behavioral test pass rate</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
       </section>
+    
+      
+      <section class="plot-card pending-plot">
+        <h3>Histogram</h3>
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Histogram pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">behavioral test pass rate</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
+      </section>
+    
     </div>
-    
-
-    
-    <h2>Efficiency Plots</h2>
-    <p>Each point is one evaluated task. Compute is shown as Codex calls because public results omit raw token logs; cost is estimated from local token logs and a pricing snapshot.</p>
+    <h2>Model Comparison</h2>
+    <p>Model comparison plots appear once there are at least two Codex result groups. Each dot will be one task instance, matching ProgramBench's comparison framing.</p>
     <div class="plot-grid">
-      <section class="plot-card">
+      
+      <section class="plot-card pending-plot">
+        <h3>Model Comparison</h3>
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Model Comparison pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">comparison score</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
+      </section>
+    
+    </div>
+    <h2>Efficiency Plots</h2>
+    <p>The chart slots are wired into the report. They stay empty until the first evaluated task lands, then render ProgramBench-style pass-rate distribution plus pass rate by cost, calls, and latency.</p>
+    <div class="plot-grid">
+      
+      <section class="plot-card pending-plot">
         <h3>Pass vs. Est. Cost</h3>
-        
-      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Est. cost (USD)">
-        <line x1="42" y1="18" x2="42" y2="186" />
-        <line x1="42" y1="186" x2="342" y2="186" />
-        <text x="34" y="22" text-anchor="end">100%</text>
-        <text x="34" y="190" text-anchor="end">0%</text>
-        <text x="42" y="212">0</text>
-        <text x="342" y="212" text-anchor="end">$3.42</text>
-        <text x="180.0" y="212" text-anchor="middle">Est. cost (USD)</text>
-        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
-        <circle cx="325.5" cy="88.5" r="5.5" fill="#be123c"><title>agourlay__zip-password-finder.704700d: 58.1% pass, est. cost (usd) $3.23, No internet</title></circle><circle cx="221.9" cy="123.9" r="5.5" fill="#be123c"><title>htop-dev__htop.523600b: 36.9% pass, est. cost (usd) $2.05, No internet</title></circle><circle cx="284.0" cy="46.2" r="5.5" fill="#be123c"><title>oppiliappan__eva.41ae245: 83.2% pass, est. cost (usd) $2.76, No internet</title></circle><circle cx="259.2" cy="22.9" r="5.5" fill="#d97706"><title>sitkevij__hex.61ae69b: 97.1% pass, est. cost (usd) $2.47, No internet</title></circle><circle cx="342.0" cy="21.5" r="5.5" fill="#d97706"><title>wfxr__csview.8ac4de0: 97.9% pass, est. cost (usd) $3.42, No internet</title></circle>
-      </svg>
-    
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass vs. Est. Cost pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">estimated cost</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
       </section>
-      <section class="plot-card">
+    
+      
+      <section class="plot-card pending-plot">
         <h3>Pass vs. Calls</h3>
-        
-      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Codex calls">
-        <line x1="42" y1="18" x2="42" y2="186" />
-        <line x1="42" y1="186" x2="342" y2="186" />
-        <text x="34" y="22" text-anchor="end">100%</text>
-        <text x="34" y="190" text-anchor="end">0%</text>
-        <text x="42" y="212">0</text>
-        <text x="342" y="212" text-anchor="end">66</text>
-        <text x="180.0" y="212" text-anchor="middle">Codex calls</text>
-        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
-        <circle cx="246.5" cy="88.5" r="5.5" fill="#be123c"><title>agourlay__zip-password-finder.704700d: 58.1% pass, codex calls 45, No internet</title></circle><circle cx="273.8" cy="123.9" r="5.5" fill="#be123c"><title>htop-dev__htop.523600b: 36.9% pass, codex calls 51, No internet</title></circle><circle cx="310.2" cy="46.2" r="5.5" fill="#be123c"><title>oppiliappan__eva.41ae245: 83.2% pass, codex calls 59, No internet</title></circle><circle cx="251.1" cy="22.9" r="5.5" fill="#d97706"><title>sitkevij__hex.61ae69b: 97.1% pass, codex calls 46, No internet</title></circle><circle cx="342.0" cy="21.5" r="5.5" fill="#d97706"><title>wfxr__csview.8ac4de0: 97.9% pass, codex calls 66, No internet</title></circle>
-      </svg>
-    
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass vs. Calls pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">Codex calls</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
       </section>
-      <section class="plot-card">
+    
+      
+      <section class="plot-card pending-plot">
         <h3>Pass vs. Latency</h3>
-        
-      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Wall-clock hours">
-        <line x1="42" y1="18" x2="42" y2="186" />
-        <line x1="42" y1="186" x2="342" y2="186" />
-        <text x="34" y="22" text-anchor="end">100%</text>
-        <text x="34" y="190" text-anchor="end">0%</text>
-        <text x="42" y="212">0</text>
-        <text x="342" y="212" text-anchor="end">0.22h</text>
-        <text x="180.0" y="212" text-anchor="middle">Wall-clock hours</text>
-        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
-        <circle cx="342.0" cy="88.5" r="5.5" fill="#be123c"><title>agourlay__zip-password-finder.704700d: 58.1% pass, wall-clock hours 0.22h, No internet</title></circle><circle cx="194.4" cy="123.9" r="5.5" fill="#be123c"><title>htop-dev__htop.523600b: 36.9% pass, wall-clock hours 0.11h, No internet</title></circle><circle cx="253.0" cy="46.2" r="5.5" fill="#be123c"><title>oppiliappan__eva.41ae245: 83.2% pass, wall-clock hours 0.16h, No internet</title></circle><circle cx="235.6" cy="22.9" r="5.5" fill="#d97706"><title>sitkevij__hex.61ae69b: 97.1% pass, wall-clock hours 0.14h, No internet</title></circle><circle cx="298.2" cy="21.5" r="5.5" fill="#d97706"><title>wfxr__csview.8ac4de0: 97.9% pass, wall-clock hours 0.19h, No internet</title></circle>
-      </svg>
-    
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass vs. Latency pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">wall-clock hours</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
       </section>
+    
     </div>
     
-
-    <h2>Extended Results</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Avg. est. cost</th><th>Avg. calls</th></tr></thead>
-        <tbody>
-            <tr>
-              <td>1</td>
-              <td><a href="run/gpt-5-5--xhigh--codex--goal-no-internet-codex-no-internet-ablation/">GPT 5.5 (xhigh)</a></td>
-              <td><code>unversioned</code></td>
-              <td>Codex /goal</td>
-              <td>0.0% (0/5)</td>
-              <td>40.0% (2/5)</td>
-              <td>$2.79</td>
-              <td>53.4</td>
-            </tr>
-            </tbody>
-      </table>
-    </div>
-    <p>Columns mirror ProgramBench's extended leaderboard shape: resolved and almost-resolved rates, average estimated API cost per task instance, and average calls per task instance. ProgramBench run-detail pages show total cost and total calls; our run-detail pages do the same. Run versions keep repeated same-config sweeps separate instead of silently merging attempts. Mode and compliance are shown in Run Disclosures and Per-Instance Results so the mirrored metric table stays close to ProgramBench's shape.</p>
-
-    <h2>Run Disclosures</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Mode</th><th>Compliance</th><th>Host profile</th><th>Tasks</th><th>Avg. pass</th><th>Wall</th></tr></thead>
-        <tbody>
-            <tr>
-              <td>1</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td><code>unversioned</code></td>
-              <td>No internet</td>
-              <td>Codex no-internet ablation</td>
-              <td>smaller VM: 16 CPU / 30g</td>
-              <td>5/200</td>
-              <td>74.6%</td>
-              <td>0.83h</td>
-            </tr>
-            </tbody>
-      </table>
-    </div>
-    <p>These disclosure fields are intentionally outside the mirrored metric table because ProgramBench's public leaderboard does not mix scaffold deviations into the metric columns. Rows labeled smaller VM are Codex <code>/goal</code> scaffold experiments, not paper-sized ProgramBench cleanroom runs.</p>
-
-    
-
-    
-
     
     <h2>Task Details</h2>
     <p>Task pages mirror ProgramBench's per-task view for this scaffold: scored behavioral tests, best score, and results by model/mode. Pending rows are full-run targets waiting for Codex results. The official ProgramBench task page is linked for baseline context.</p>
@@ -395,71 +363,6 @@
         <tbody>
         <tr>
           <td>1</td>
-          <td><a href="task/wfxr__csview.8ac4de0/"><code>wfxr__csview.8ac4de0</code></a></td>
-          <td>335</td>
-          <td>99.7%</td>
-          <td>97.9%</td>
-          <td>GPT 5.5 (xhigh)</td>
-          <td>1</td>
-          <td>13</td>
-          <td><a href="https://programbench.com/task/wfxr__csview.8ac4de0/">official</a></td>
-        </tr>
-        
-
-        <tr>
-          <td>2</td>
-          <td><a href="task/sitkevij__hex.61ae69b/"><code>sitkevij__hex.61ae69b</code></a></td>
-          <td>823</td>
-          <td>99.6%</td>
-          <td>97.1%</td>
-          <td>GPT 5.5 (xhigh)</td>
-          <td>1</td>
-          <td>13</td>
-          <td><a href="https://programbench.com/task/sitkevij__hex.61ae69b/">official</a></td>
-        </tr>
-        
-
-        <tr>
-          <td>3</td>
-          <td><a href="task/oppiliappan__eva.41ae245/"><code>oppiliappan__eva.41ae245</code></a></td>
-          <td>913</td>
-          <td>98.4%</td>
-          <td>83.2%</td>
-          <td>GPT 5.5 (xhigh)</td>
-          <td>1</td>
-          <td>13</td>
-          <td><a href="https://programbench.com/task/oppiliappan__eva.41ae245/">official</a></td>
-        </tr>
-        
-
-        <tr>
-          <td>4</td>
-          <td><a href="task/agourlay__zip-password-finder.704700d/"><code>agourlay__zip-password-finder.704700d</code></a></td>
-          <td>680</td>
-          <td>98.7%</td>
-          <td>58.1%</td>
-          <td>GPT 5.5 (xhigh)</td>
-          <td>1</td>
-          <td>13</td>
-          <td><a href="https://programbench.com/task/agourlay__zip-password-finder.704700d/">official</a></td>
-        </tr>
-        
-
-        <tr>
-          <td>5</td>
-          <td><a href="task/htop-dev__htop.523600b/"><code>htop-dev__htop.523600b</code></a></td>
-          <td>693</td>
-          <td>98.1%</td>
-          <td>36.9%</td>
-          <td>GPT 5.5 (xhigh)</td>
-          <td>1</td>
-          <td>13</td>
-          <td><a href="https://programbench.com/task/htop-dev__htop.523600b/">official</a></td>
-        </tr>
-        
-
-        <tr>
-          <td>6</td>
           <td><a href="task/abishekvashok__cmatrix.5c082c6/"><code>abishekvashok__cmatrix.5c082c6</code></a></td>
           <td>507</td>
           <td>100.0%</td>
@@ -472,7 +375,20 @@
         
 
         <tr>
-          <td>7</td>
+          <td>2</td>
+          <td><a href="task/agourlay__zip-password-finder.704700d/"><code>agourlay__zip-password-finder.704700d</code></a></td>
+          <td>680</td>
+          <td>98.7%</td>
+          <td>pending</td>
+          <td>pending</td>
+          <td>0</td>
+          <td>13</td>
+          <td><a href="https://programbench.com/task/agourlay__zip-password-finder.704700d/">official</a></td>
+        </tr>
+        
+
+        <tr>
+          <td>3</td>
           <td><a href="task/ajeetdsouza__zoxide.67ca1bc/"><code>ajeetdsouza__zoxide.67ca1bc</code></a></td>
           <td>531</td>
           <td>87.2%</td>
@@ -485,7 +401,7 @@
         
 
         <tr>
-          <td>8</td>
+          <td>4</td>
           <td><a href="task/alecthomas__chroma.8d04def/"><code>alecthomas__chroma.8d04def</code></a></td>
           <td>503</td>
           <td>41.7%</td>
@@ -498,7 +414,7 @@
         
 
         <tr>
-          <td>9</td>
+          <td>5</td>
           <td><a href="task/alexpovel__srgn.89f943b/"><code>alexpovel__srgn.89f943b</code></a></td>
           <td>1852</td>
           <td>80.1%</td>
@@ -511,7 +427,7 @@
         
 
         <tr>
-          <td>10</td>
+          <td>6</td>
           <td><a href="task/altdesktop__i3-style.f93821b/"><code>altdesktop__i3-style.f93821b</code></a></td>
           <td>539</td>
           <td>93.3%</td>
@@ -524,7 +440,7 @@
         
 
         <tr>
-          <td>11</td>
+          <td>7</td>
           <td><a href="task/ammarabouzor__tui-journal.2b4540d/"><code>ammarabouzor__tui-journal.2b4540d</code></a></td>
           <td>1402</td>
           <td>71.0%</td>
@@ -537,7 +453,7 @@
         
 
         <tr>
-          <td>12</td>
+          <td>8</td>
           <td><a href="task/anordal__shellharden.6a6ffd4/"><code>anordal__shellharden.6a6ffd4</code></a></td>
           <td>1095</td>
           <td>88.2%</td>
@@ -550,7 +466,7 @@
         
 
         <tr>
-          <td>13</td>
+          <td>9</td>
           <td><a href="task/antonmedv__fx.86d0d34/"><code>antonmedv__fx.86d0d34</code></a></td>
           <td>2047</td>
           <td>75.7%</td>
@@ -563,7 +479,7 @@
         
 
         <tr>
-          <td>14</td>
+          <td>10</td>
           <td><a href="task/antonmedv__walk.bf802ef/"><code>antonmedv__walk.bf802ef</code></a></td>
           <td>470</td>
           <td>89.6%</td>
@@ -576,7 +492,7 @@
         
 
         <tr>
-          <td>15</td>
+          <td>11</td>
           <td><a href="task/ariga__atlas.6d81150/"><code>ariga__atlas.6d81150</code></a></td>
           <td>1318</td>
           <td>72.5%</td>
@@ -589,7 +505,7 @@
         
 
         <tr>
-          <td>16</td>
+          <td>12</td>
           <td><a href="task/arq5x__bedtools2.dd57059/"><code>arq5x__bedtools2.dd57059</code></a></td>
           <td>1053</td>
           <td>46.1%</td>
@@ -602,7 +518,7 @@
         
 
         <tr>
-          <td>17</td>
+          <td>13</td>
           <td><a href="task/arthursonzogni__json-tui.17a22b6/"><code>arthursonzogni__json-tui.17a22b6</code></a></td>
           <td>755</td>
           <td>90.2%</td>
@@ -615,7 +531,7 @@
         
 
         <tr>
-          <td>18</td>
+          <td>14</td>
           <td><a href="task/ast-grep__ast-grep.dde0fe0/"><code>ast-grep__ast-grep.dde0fe0</code></a></td>
           <td>882</td>
           <td>23.6%</td>
@@ -628,7 +544,7 @@
         
 
         <tr>
-          <td>19</td>
+          <td>15</td>
           <td><a href="task/astaxie__bat.17d1080/"><code>astaxie__bat.17d1080</code></a></td>
           <td>1091</td>
           <td>79.5%</td>
@@ -641,7 +557,7 @@
         
 
         <tr>
-          <td>20</td>
+          <td>16</td>
           <td><a href="task/astro__deadnix.d590041/"><code>astro__deadnix.d590041</code></a></td>
           <td>602</td>
           <td>91.7%</td>
@@ -654,7 +570,7 @@
         
 
         <tr>
-          <td>21</td>
+          <td>17</td>
           <td><a href="task/axodotdev__oranda.27d60c7/"><code>axodotdev__oranda.27d60c7</code></a></td>
           <td>767</td>
           <td>64.9%</td>
@@ -667,7 +583,7 @@
         
 
         <tr>
-          <td>22</td>
+          <td>18</td>
           <td><a href="task/bellard__quickjs.d7ae12a/"><code>bellard__quickjs.d7ae12a</code></a></td>
           <td>3034</td>
           <td>31.0%</td>
@@ -680,7 +596,7 @@
         
 
         <tr>
-          <td>23</td>
+          <td>19</td>
           <td><a href="task/bensadeh__tailspin.6278437/"><code>bensadeh__tailspin.6278437</code></a></td>
           <td>615</td>
           <td>88.0%</td>
@@ -693,7 +609,7 @@
         
 
         <tr>
-          <td>24</td>
+          <td>20</td>
           <td><a href="task/blacknon__hwatch.edfcb62/"><code>blacknon__hwatch.edfcb62</code></a></td>
           <td>1016</td>
           <td>85.3%</td>
@@ -706,7 +622,7 @@
         
 
         <tr>
-          <td>25</td>
+          <td>21</td>
           <td><a href="task/blake3-team__blake3.15e83a5/"><code>blake3-team__blake3.15e83a5</code></a></td>
           <td>647</td>
           <td>97.8%</td>
@@ -719,7 +635,7 @@
         
 
         <tr>
-          <td>26</td>
+          <td>22</td>
           <td><a href="task/bootandy__dust.62bf1e1/"><code>bootandy__dust.62bf1e1</code></a></td>
           <td>584</td>
           <td>87.3%</td>
@@ -732,7 +648,7 @@
         
 
         <tr>
-          <td>27</td>
+          <td>23</td>
           <td><a href="task/boyter__scc.515f91c/"><code>boyter__scc.515f91c</code></a></td>
           <td>464</td>
           <td>47.8%</td>
@@ -745,7 +661,7 @@
         
 
         <tr>
-          <td>28</td>
+          <td>24</td>
           <td><a href="task/brocode__fblog.3b54330/"><code>brocode__fblog.3b54330</code></a></td>
           <td>978</td>
           <td>87.8%</td>
@@ -758,7 +674,7 @@
         
 
         <tr>
-          <td>29</td>
+          <td>25</td>
           <td><a href="task/burntsushi__ripgrep.3b7fd44/"><code>burntsushi__ripgrep.3b7fd44</code></a></td>
           <td>1994</td>
           <td>84.1%</td>
@@ -771,7 +687,7 @@
         
 
         <tr>
-          <td>30</td>
+          <td>26</td>
           <td><a href="task/burntsushi__xsv.f430466/"><code>burntsushi__xsv.f430466</code></a></td>
           <td>1182</td>
           <td>90.7%</td>
@@ -784,7 +700,7 @@
         
 
         <tr>
-          <td>31</td>
+          <td>27</td>
           <td><a href="task/byron__dua-cli.8570c15/"><code>byron__dua-cli.8570c15</code></a></td>
           <td>709</td>
           <td>93.1%</td>
@@ -797,7 +713,7 @@
         
 
         <tr>
-          <td>32</td>
+          <td>28</td>
           <td><a href="task/canop__broot.d6c798e/"><code>canop__broot.d6c798e</code></a></td>
           <td>539</td>
           <td>67.0%</td>
@@ -810,7 +726,7 @@
         
 
         <tr>
-          <td>33</td>
+          <td>29</td>
           <td><a href="task/canop__rhit.ae90bcb/"><code>canop__rhit.ae90bcb</code></a></td>
           <td>817</td>
           <td>73.2%</td>
@@ -823,7 +739,7 @@
         
 
         <tr>
-          <td>34</td>
+          <td>30</td>
           <td><a href="task/cheat__cheat.b8098dc/"><code>cheat__cheat.b8098dc</code></a></td>
           <td>297</td>
           <td>71.7%</td>
@@ -836,7 +752,7 @@
         
 
         <tr>
-          <td>35</td>
+          <td>31</td>
           <td><a href="task/chirlu__sox.42b3557/"><code>chirlu__sox.42b3557</code></a></td>
           <td>1202</td>
           <td>38.9%</td>
@@ -849,7 +765,7 @@
         
 
         <tr>
-          <td>36</td>
+          <td>32</td>
           <td><a href="task/chmln__handlr.90e78ba/"><code>chmln__handlr.90e78ba</code></a></td>
           <td>722</td>
           <td>91.4%</td>
@@ -862,7 +778,7 @@
         
 
         <tr>
-          <td>37</td>
+          <td>33</td>
           <td><a href="task/chmln__sd.87d1ba5/"><code>chmln__sd.87d1ba5</code></a></td>
           <td>810</td>
           <td>97.4%</td>
@@ -875,7 +791,7 @@
         
 
         <tr>
-          <td>38</td>
+          <td>34</td>
           <td><a href="task/clog-tool__clog-cli.7066cba/"><code>clog-tool__clog-cli.7066cba</code></a></td>
           <td>575</td>
           <td>98.4%</td>
@@ -888,7 +804,7 @@
         
 
         <tr>
-          <td>39</td>
+          <td>35</td>
           <td><a href="task/cmatsuoka__figlet.202a0a8/"><code>cmatsuoka__figlet.202a0a8</code></a></td>
           <td>872</td>
           <td>77.5%</td>
@@ -901,7 +817,7 @@
         
 
         <tr>
-          <td>40</td>
+          <td>36</td>
           <td><a href="task/codesnap-rs__codesnap.f81e4f3/"><code>codesnap-rs__codesnap.f81e4f3</code></a></td>
           <td>571</td>
           <td>82.7%</td>
@@ -914,7 +830,7 @@
         
 
         <tr>
-          <td>41</td>
+          <td>37</td>
           <td><a href="task/cordx56__rustowl.655bc5c/"><code>cordx56__rustowl.655bc5c</code></a></td>
           <td>589</td>
           <td>88.5%</td>
@@ -927,7 +843,7 @@
         
 
         <tr>
-          <td>42</td>
+          <td>38</td>
           <td><a href="task/crowdagger__crowbook.ea214d7/"><code>crowdagger__crowbook.ea214d7</code></a></td>
           <td>807</td>
           <td>60.3%</td>
@@ -940,7 +856,7 @@
         
 
         <tr>
-          <td>43</td>
+          <td>39</td>
           <td><a href="task/cslarsen__jp2a.61d205f/"><code>cslarsen__jp2a.61d205f</code></a></td>
           <td>631</td>
           <td>61.3%</td>
@@ -953,7 +869,7 @@
         
 
         <tr>
-          <td>44</td>
+          <td>40</td>
           <td><a href="task/cweill__gotests.2a672c5/"><code>cweill__gotests.2a672c5</code></a></td>
           <td>603</td>
           <td>71.0%</td>
@@ -966,7 +882,7 @@
         
 
         <tr>
-          <td>45</td>
+          <td>41</td>
           <td><a href="task/dalance__amber.69a0f52/"><code>dalance__amber.69a0f52</code></a></td>
           <td>565</td>
           <td>74.3%</td>
@@ -979,7 +895,7 @@
         
 
         <tr>
-          <td>46</td>
+          <td>42</td>
           <td><a href="task/dandavison__delta.acd758f/"><code>dandavison__delta.acd758f</code></a></td>
           <td>950</td>
           <td>38.9%</td>
@@ -992,7 +908,7 @@
         
 
         <tr>
-          <td>47</td>
+          <td>43</td>
           <td><a href="task/danmar__cppcheck.0a5b103/"><code>danmar__cppcheck.0a5b103</code></a></td>
           <td>2126</td>
           <td>14.6%</td>
@@ -1005,7 +921,7 @@
         
 
         <tr>
-          <td>48</td>
+          <td>44</td>
           <td><a href="task/direnv__direnv.02040c7/"><code>direnv__direnv.02040c7</code></a></td>
           <td>849</td>
           <td>80.9%</td>
@@ -1018,7 +934,7 @@
         
 
         <tr>
-          <td>49</td>
+          <td>45</td>
           <td><a href="task/doxygen__doxygen.966d98e/"><code>doxygen__doxygen.966d98e</code></a></td>
           <td>229</td>
           <td>34.5%</td>
@@ -1031,7 +947,7 @@
         
 
         <tr>
-          <td>50</td>
+          <td>46</td>
           <td><a href="task/drew-alleman__datasurgeon.d257cee/"><code>drew-alleman__datasurgeon.d257cee</code></a></td>
           <td>502</td>
           <td>80.7%</td>
@@ -1044,7 +960,7 @@
         
 
         <tr>
-          <td>51</td>
+          <td>47</td>
           <td><a href="task/ducaale__xh.4a6e44f/"><code>ducaale__xh.4a6e44f</code></a></td>
           <td>1171</td>
           <td>50.0%</td>
@@ -1057,7 +973,7 @@
         
 
         <tr>
-          <td>52</td>
+          <td>48</td>
           <td><a href="task/duckdb__duckdb.bdb65ec/"><code>duckdb__duckdb.bdb65ec</code></a></td>
           <td>5650</td>
           <td>16.8%</td>
@@ -1070,7 +986,7 @@
         
 
         <tr>
-          <td>53</td>
+          <td>49</td>
           <td><a href="task/dundee__gdu.ede21d2/"><code>dundee__gdu.ede21d2</code></a></td>
           <td>1161</td>
           <td>78.9%</td>
@@ -1083,7 +999,7 @@
         
 
         <tr>
-          <td>54</td>
+          <td>50</td>
           <td><a href="task/ecumene__rust-sloth.051c559/"><code>ecumene__rust-sloth.051c559</code></a></td>
           <td>380</td>
           <td>66.8%</td>
@@ -1096,7 +1012,7 @@
         
 
         <tr>
-          <td>55</td>
+          <td>51</td>
           <td><a href="task/ekzhang__bore.8e059cd/"><code>ekzhang__bore.8e059cd</code></a></td>
           <td>394</td>
           <td>93.1%</td>
@@ -1109,7 +1025,7 @@
         
 
         <tr>
-          <td>56</td>
+          <td>52</td>
           <td><a href="task/eliukblau__pixterm.1a93fd5/"><code>eliukblau__pixterm.1a93fd5</code></a></td>
           <td>430</td>
           <td>85.8%</td>
@@ -1122,7 +1038,7 @@
         
 
         <tr>
-          <td>57</td>
+          <td>53</td>
           <td><a href="task/elkowar__pipr.fae0b17/"><code>elkowar__pipr.fae0b17</code></a></td>
           <td>525</td>
           <td>67.0%</td>
@@ -1135,7 +1051,7 @@
         
 
         <tr>
-          <td>58</td>
+          <td>54</td>
           <td><a href="task/epistates__treemd.825c6dd/"><code>epistates__treemd.825c6dd</code></a></td>
           <td>1569</td>
           <td>58.9%</td>
@@ -1148,7 +1064,7 @@
         
 
         <tr>
-          <td>59</td>
+          <td>55</td>
           <td><a href="task/eradman__entr.8e2e8b4/"><code>eradman__entr.8e2e8b4</code></a></td>
           <td>586</td>
           <td>91.8%</td>
@@ -1161,7 +1077,7 @@
         
 
         <tr>
-          <td>60</td>
+          <td>56</td>
           <td><a href="task/esubaalew__run.0fb9dec/"><code>esubaalew__run.0fb9dec</code></a></td>
           <td>1212</td>
           <td>88.0%</td>
@@ -1174,7 +1090,7 @@
         
 
         <tr>
-          <td>61</td>
+          <td>57</td>
           <td><a href="task/eudoxia0__hashcards.48aa136/"><code>eudoxia0__hashcards.48aa136</code></a></td>
           <td>1019</td>
           <td>86.8%</td>
@@ -1187,7 +1103,7 @@
         
 
         <tr>
-          <td>62</td>
+          <td>58</td>
           <td><a href="task/facebook__zstd.1168da0/"><code>facebook__zstd.1168da0</code></a></td>
           <td>2038</td>
           <td>68.8%</td>
@@ -1200,7 +1116,7 @@
         
 
         <tr>
-          <td>63</td>
+          <td>59</td>
           <td><a href="task/facebookresearch__fasttext.1142dc4/"><code>facebookresearch__fasttext.1142dc4</code></a></td>
           <td>312</td>
           <td>80.4%</td>
@@ -1213,7 +1129,7 @@
         
 
         <tr>
-          <td>64</td>
+          <td>60</td>
           <td><a href="task/ffmpeg__ffmpeg.360a402/"><code>ffmpeg__ffmpeg.360a402</code></a></td>
           <td>3050</td>
           <td>7.0%</td>
@@ -1226,7 +1142,7 @@
         
 
         <tr>
-          <td>65</td>
+          <td>61</td>
           <td><a href="task/filosottile__age.706dfc1/"><code>filosottile__age.706dfc1</code></a></td>
           <td>676</td>
           <td>63.5%</td>
@@ -1239,7 +1155,7 @@
         
 
         <tr>
-          <td>66</td>
+          <td>62</td>
           <td><a href="task/foriequal0__git-trim.07c2f50/"><code>foriequal0__git-trim.07c2f50</code></a></td>
           <td>509</td>
           <td>79.0%</td>
@@ -1252,7 +1168,7 @@
         
 
         <tr>
-          <td>67</td>
+          <td>63</td>
           <td><a href="task/gabotechs__dep-tree.60a95a2/"><code>gabotechs__dep-tree.60a95a2</code></a></td>
           <td>865</td>
           <td>77.8%</td>
@@ -1265,7 +1181,7 @@
         
 
         <tr>
-          <td>68</td>
+          <td>64</td>
           <td><a href="task/ggreer__the_silver_searcher.a61f178/"><code>ggreer__the_silver_searcher.a61f178</code></a></td>
           <td>1004</td>
           <td>85.7%</td>
@@ -1278,7 +1194,7 @@
         
 
         <tr>
-          <td>69</td>
+          <td>65</td>
           <td><a href="task/git-bahn__git-graph.87b4473/"><code>git-bahn__git-graph.87b4473</code></a></td>
           <td>568</td>
           <td>93.7%</td>
@@ -1291,7 +1207,7 @@
         
 
         <tr>
-          <td>70</td>
+          <td>66</td>
           <td><a href="task/go-critic__go-critic.9aea378/"><code>go-critic__go-critic.9aea378</code></a></td>
           <td>493</td>
           <td>56.8%</td>
@@ -1304,7 +1220,7 @@
         
 
         <tr>
-          <td>71</td>
+          <td>67</td>
           <td><a href="task/google__brotli.b3dc9cc/"><code>google__brotli.b3dc9cc</code></a></td>
           <td>441</td>
           <td>95.5%</td>
@@ -1317,7 +1233,7 @@
         
 
         <tr>
-          <td>72</td>
+          <td>68</td>
           <td><a href="task/gromacs__gromacs.665ea4c/"><code>gromacs__gromacs.665ea4c</code></a></td>
           <td>1245</td>
           <td>9.3%</td>
@@ -1330,7 +1246,7 @@
         
 
         <tr>
-          <td>73</td>
+          <td>69</td>
           <td><a href="task/guumaster__hostctl.d6d9699/"><code>guumaster__hostctl.d6d9699</code></a></td>
           <td>1051</td>
           <td>82.8%</td>
@@ -1343,7 +1259,7 @@
         
 
         <tr>
-          <td>74</td>
+          <td>70</td>
           <td><a href="task/hairyhenderson__gomplate.05eb3aa/"><code>hairyhenderson__gomplate.05eb3aa</code></a></td>
           <td>2926</td>
           <td>74.7%</td>
@@ -1356,7 +1272,7 @@
         
 
         <tr>
-          <td>75</td>
+          <td>71</td>
           <td><a href="task/halitechallenge__halite.822cfb6/"><code>halitechallenge__halite.822cfb6</code></a></td>
           <td>275</td>
           <td>95.6%</td>
@@ -1369,7 +1285,7 @@
         
 
         <tr>
-          <td>76</td>
+          <td>72</td>
           <td><a href="task/hatoo__oha.8dc6349/"><code>hatoo__oha.8dc6349</code></a></td>
           <td>899</td>
           <td>78.6%</td>
@@ -1382,7 +1298,7 @@
         
 
         <tr>
-          <td>77</td>
+          <td>73</td>
           <td><a href="task/hooklift__gowsdl.2a06cec/"><code>hooklift__gowsdl.2a06cec</code></a></td>
           <td>391</td>
           <td>90.8%</td>
@@ -1395,7 +1311,7 @@
         
 
         <tr>
-          <td>78</td>
+          <td>74</td>
           <td><a href="task/hpjansson__chafa.dd4d4c1/"><code>hpjansson__chafa.dd4d4c1</code></a></td>
           <td>1931</td>
           <td>58.4%</td>
@@ -1408,7 +1324,20 @@
         
 
         <tr>
-          <td>79</td>
+          <td>75</td>
+          <td><a href="task/htop-dev__htop.523600b/"><code>htop-dev__htop.523600b</code></a></td>
+          <td>693</td>
+          <td>98.1%</td>
+          <td>pending</td>
+          <td>pending</td>
+          <td>0</td>
+          <td>13</td>
+          <td><a href="https://programbench.com/task/htop-dev__htop.523600b/">official</a></td>
+        </tr>
+        
+
+        <tr>
+          <td>76</td>
           <td><a href="task/hush-shell__hush.560c33a/"><code>hush-shell__hush.560c33a</code></a></td>
           <td>1201</td>
           <td>83.3%</td>
@@ -1421,7 +1350,7 @@
         
 
         <tr>
-          <td>80</td>
+          <td>77</td>
           <td><a href="task/incu6us__goimports-reviser.81bd549/"><code>incu6us__goimports-reviser.81bd549</code></a></td>
           <td>513</td>
           <td>89.7%</td>
@@ -1434,7 +1363,7 @@
         
 
         <tr>
-          <td>81</td>
+          <td>78</td>
           <td><a href="task/ip7z__7zip.839151e/"><code>ip7z__7zip.839151e</code></a></td>
           <td>1043</td>
           <td>46.8%</td>
@@ -1447,7 +1376,7 @@
         
 
         <tr>
-          <td>82</td>
+          <td>79</td>
           <td><a href="task/ismaelgv__rnr.fc0733b/"><code>ismaelgv__rnr.fc0733b</code></a></td>
           <td>683</td>
           <td>94.0%</td>
@@ -1460,7 +1389,7 @@
         
 
         <tr>
-          <td>83</td>
+          <td>80</td>
           <td><a href="task/isona__dirble.e2dea9f/"><code>isona__dirble.e2dea9f</code></a></td>
           <td>718</td>
           <td>81.5%</td>
@@ -1473,7 +1402,7 @@
         
 
         <tr>
-          <td>84</td>
+          <td>81</td>
           <td><a href="task/ivanceras__svgbob.6d00ad9/"><code>ivanceras__svgbob.6d00ad9</code></a></td>
           <td>472</td>
           <td>47.7%</td>
@@ -1486,7 +1415,7 @@
         
 
         <tr>
-          <td>85</td>
+          <td>82</td>
           <td><a href="task/jarun__nnn.cb2c535/"><code>jarun__nnn.cb2c535</code></a></td>
           <td>477</td>
           <td>98.1%</td>
@@ -1499,7 +1428,7 @@
         
 
         <tr>
-          <td>86</td>
+          <td>83</td>
           <td><a href="task/jesseduffield__lazygit.1d0db51/"><code>jesseduffield__lazygit.1d0db51</code></a></td>
           <td>855</td>
           <td>63.4%</td>
@@ -1512,7 +1441,7 @@
         
 
         <tr>
-          <td>87</td>
+          <td>84</td>
           <td><a href="task/jgm__pandoc.5caad90/"><code>jgm__pandoc.5caad90</code></a></td>
           <td>5228</td>
           <td>14.7%</td>
@@ -1525,7 +1454,7 @@
         
 
         <tr>
-          <td>88</td>
+          <td>85</td>
           <td><a href="task/jhspetersson__fselect.c3559ca/"><code>jhspetersson__fselect.c3559ca</code></a></td>
           <td>3115</td>
           <td>76.4%</td>
@@ -1538,7 +1467,7 @@
         
 
         <tr>
-          <td>89</td>
+          <td>86</td>
           <td><a href="task/johanneskaufmann__html-to-markdown.3006818/"><code>johanneskaufmann__html-to-markdown.3006818</code></a></td>
           <td>885</td>
           <td>92.8%</td>
@@ -1551,7 +1480,7 @@
         
 
         <tr>
-          <td>90</td>
+          <td>87</td>
           <td><a href="task/johnkerl__miller.8d85b46/"><code>johnkerl__miller.8d85b46</code></a></td>
           <td>14637</td>
           <td>24.1%</td>
@@ -1564,7 +1493,7 @@
         
 
         <tr>
-          <td>91</td>
+          <td>88</td>
           <td><a href="task/jonas__tig.8334123/"><code>jonas__tig.8334123</code></a></td>
           <td>1586</td>
           <td>85.2%</td>
@@ -1577,7 +1506,7 @@
         
 
         <tr>
-          <td>92</td>
+          <td>89</td>
           <td><a href="task/jqlang__jq.b33a763/"><code>jqlang__jq.b33a763</code></a></td>
           <td>6072</td>
           <td>89.9%</td>
@@ -1590,7 +1519,7 @@
         
 
         <tr>
-          <td>93</td>
+          <td>90</td>
           <td><a href="task/jrnxf__thokr.09375ef/"><code>jrnxf__thokr.09375ef</code></a></td>
           <td>445</td>
           <td>93.0%</td>
@@ -1603,7 +1532,7 @@
         
 
         <tr>
-          <td>94</td>
+          <td>91</td>
           <td><a href="task/junegunn__fzf.b56d614/"><code>junegunn__fzf.b56d614</code></a></td>
           <td>1858</td>
           <td>82.4%</td>
@@ -1616,7 +1545,7 @@
         
 
         <tr>
-          <td>95</td>
+          <td>92</td>
           <td><a href="task/kaushiksrini__parqeye.8072121/"><code>kaushiksrini__parqeye.8072121</code></a></td>
           <td>479</td>
           <td>81.6%</td>
@@ -1629,7 +1558,7 @@
         
 
         <tr>
-          <td>96</td>
+          <td>93</td>
           <td><a href="task/kisielk__errcheck.dacab89/"><code>kisielk__errcheck.dacab89</code></a></td>
           <td>341</td>
           <td>83.3%</td>
@@ -1642,7 +1571,7 @@
         
 
         <tr>
-          <td>97</td>
+          <td>94</td>
           <td><a href="task/konradsz__igrep.aa75630/"><code>konradsz__igrep.aa75630</code></a></td>
           <td>385</td>
           <td>86.2%</td>
@@ -1655,7 +1584,7 @@
         
 
         <tr>
-          <td>98</td>
+          <td>95</td>
           <td><a href="task/ksxgithub__parallel-disk-usage.96978ed/"><code>ksxgithub__parallel-disk-usage.96978ed</code></a></td>
           <td>531</td>
           <td>95.7%</td>
@@ -1668,7 +1597,7 @@
         
 
         <tr>
-          <td>99</td>
+          <td>96</td>
           <td><a href="task/kyoh86__richgo.313114f/"><code>kyoh86__richgo.313114f</code></a></td>
           <td>546</td>
           <td>88.1%</td>
@@ -1681,7 +1610,7 @@
         
 
         <tr>
-          <td>100</td>
+          <td>97</td>
           <td><a href="task/kyoheiu__felix.95df390/"><code>kyoheiu__felix.95df390</code></a></td>
           <td>502</td>
           <td>88.2%</td>
@@ -1694,7 +1623,7 @@
         
 
         <tr>
-          <td>101</td>
+          <td>98</td>
           <td><a href="task/lfos__calcurse.49180d5/"><code>lfos__calcurse.49180d5</code></a></td>
           <td>666</td>
           <td>75.8%</td>
@@ -1707,7 +1636,7 @@
         
 
         <tr>
-          <td>102</td>
+          <td>99</td>
           <td><a href="task/lh3__seqtk.94e7070/"><code>lh3__seqtk.94e7070</code></a></td>
           <td>429</td>
           <td>74.6%</td>
@@ -1720,7 +1649,7 @@
         
 
         <tr>
-          <td>103</td>
+          <td>100</td>
           <td><a href="task/lua__lua.c6b4848/"><code>lua__lua.c6b4848</code></a></td>
           <td>1338</td>
           <td>76.2%</td>
@@ -1733,7 +1662,7 @@
         
 
         <tr>
-          <td>104</td>
+          <td>101</td>
           <td><a href="task/luajit__luajit.a553b3d/"><code>luajit__luajit.a553b3d</code></a></td>
           <td>2967</td>
           <td>78.0%</td>
@@ -1746,7 +1675,7 @@
         
 
         <tr>
-          <td>105</td>
+          <td>102</td>
           <td><a href="task/lymphatus__caesium-clt.a529b2e/"><code>lymphatus__caesium-clt.a529b2e</code></a></td>
           <td>575</td>
           <td>96.2%</td>
@@ -1759,7 +1688,7 @@
         
 
         <tr>
-          <td>106</td>
+          <td>103</td>
           <td><a href="task/lz4__lz4.1519f46/"><code>lz4__lz4.1519f46</code></a></td>
           <td>1496</td>
           <td>87.9%</td>
@@ -1772,7 +1701,7 @@
         
 
         <tr>
-          <td>107</td>
+          <td>104</td>
           <td><a href="task/madler__pigz.fe4894f/"><code>madler__pigz.fe4894f</code></a></td>
           <td>831</td>
           <td>94.9%</td>
@@ -1785,7 +1714,7 @@
         
 
         <tr>
-          <td>108</td>
+          <td>105</td>
           <td><a href="task/mfridman__tparse.2416b4b/"><code>mfridman__tparse.2416b4b</code></a></td>
           <td>425</td>
           <td>82.4%</td>
@@ -1798,7 +1727,7 @@
         
 
         <tr>
-          <td>109</td>
+          <td>106</td>
           <td><a href="task/mgdm__htmlq.6e31bc8/"><code>mgdm__htmlq.6e31bc8</code></a></td>
           <td>1455</td>
           <td>98.0%</td>
@@ -1811,7 +1740,7 @@
         
 
         <tr>
-          <td>110</td>
+          <td>107</td>
           <td><a href="task/mgechev__revive.201451e/"><code>mgechev__revive.201451e</code></a></td>
           <td>727</td>
           <td>48.3%</td>
@@ -1824,7 +1753,7 @@
         
 
         <tr>
-          <td>111</td>
+          <td>108</td>
           <td><a href="task/mibk__dupl.1bf052b/"><code>mibk__dupl.1bf052b</code></a></td>
           <td>373</td>
           <td>92.8%</td>
@@ -1837,7 +1766,7 @@
         
 
         <tr>
-          <td>112</td>
+          <td>109</td>
           <td><a href="task/mikefarah__yq.602586d/"><code>mikefarah__yq.602586d</code></a></td>
           <td>2000</td>
           <td>39.5%</td>
@@ -1850,7 +1779,7 @@
         
 
         <tr>
-          <td>113</td>
+          <td>110</td>
           <td><a href="task/miserlou__loop.209927c/"><code>miserlou__loop.209927c</code></a></td>
           <td>710</td>
           <td>97.3%</td>
@@ -1863,7 +1792,7 @@
         
 
         <tr>
-          <td>114</td>
+          <td>111</td>
           <td><a href="task/mkj__dropbear.75f699b/"><code>mkj__dropbear.75f699b</code></a></td>
           <td>678</td>
           <td>65.5%</td>
@@ -1876,7 +1805,7 @@
         
 
         <tr>
-          <td>115</td>
+          <td>112</td>
           <td><a href="task/mookid__diffr.2152742/"><code>mookid__diffr.2152742</code></a></td>
           <td>606</td>
           <td>90.6%</td>
@@ -1889,7 +1818,7 @@
         
 
         <tr>
-          <td>116</td>
+          <td>113</td>
           <td><a href="task/multiprocessio__dsq.c3ae0ba/"><code>multiprocessio__dsq.c3ae0ba</code></a></td>
           <td>542</td>
           <td>80.3%</td>
@@ -1902,7 +1831,7 @@
         
 
         <tr>
-          <td>117</td>
+          <td>114</td>
           <td><a href="task/nachoparker__dutree.44e877d/"><code>nachoparker__dutree.44e877d</code></a></td>
           <td>641</td>
           <td>96.1%</td>
@@ -1915,7 +1844,7 @@
         
 
         <tr>
-          <td>118</td>
+          <td>115</td>
           <td><a href="task/naggie__dstask.ff57396/"><code>naggie__dstask.ff57396</code></a></td>
           <td>1278</td>
           <td>76.9%</td>
@@ -1928,7 +1857,7 @@
         
 
         <tr>
-          <td>119</td>
+          <td>116</td>
           <td><a href="task/nikoladucak__caps-log.2cf2d1e/"><code>nikoladucak__caps-log.2cf2d1e</code></a></td>
           <td>551</td>
           <td>75.3%</td>
@@ -1941,7 +1870,7 @@
         
 
         <tr>
-          <td>120</td>
+          <td>117</td>
           <td><a href="task/nikolassv__bartib.6b9b5ce/"><code>nikolassv__bartib.6b9b5ce</code></a></td>
           <td>722</td>
           <td>96.0%</td>
@@ -1954,7 +1883,7 @@
         
 
         <tr>
-          <td>121</td>
+          <td>118</td>
           <td><a href="task/ninja-build__ninja.cc60300/"><code>ninja-build__ninja.cc60300</code></a></td>
           <td>1438</td>
           <td>82.0%</td>
@@ -1967,7 +1896,7 @@
         
 
         <tr>
-          <td>122</td>
+          <td>119</td>
           <td><a href="task/noborus__ov.b96c2ba/"><code>noborus__ov.b96c2ba</code></a></td>
           <td>1854</td>
           <td>87.6%</td>
@@ -1980,7 +1909,7 @@
         
 
         <tr>
-          <td>123</td>
+          <td>120</td>
           <td><a href="task/noborus__trdsql.d8c5ff6/"><code>noborus__trdsql.d8c5ff6</code></a></td>
           <td>1312</td>
           <td>76.4%</td>
@@ -1993,7 +1922,7 @@
         
 
         <tr>
-          <td>124</td>
+          <td>121</td>
           <td><a href="task/nukesor__pueue.8b9d6fe/"><code>nukesor__pueue.8b9d6fe</code></a></td>
           <td>638</td>
           <td>16.1%</td>
@@ -2006,7 +1935,7 @@
         
 
         <tr>
-          <td>125</td>
+          <td>122</td>
           <td><a href="task/nuta__nsh.bdd0702/"><code>nuta__nsh.bdd0702</code></a></td>
           <td>1963</td>
           <td>83.7%</td>
@@ -2019,7 +1948,7 @@
         
 
         <tr>
-          <td>126</td>
+          <td>123</td>
           <td><a href="task/o2sh__onefetch.e5958ce/"><code>o2sh__onefetch.e5958ce</code></a></td>
           <td>1166</td>
           <td>85.1%</td>
@@ -2032,7 +1961,7 @@
         
 
         <tr>
-          <td>127</td>
+          <td>124</td>
           <td><a href="task/ogham__dog.721440b/"><code>ogham__dog.721440b</code></a></td>
           <td>1300</td>
           <td>93.9%</td>
@@ -2045,7 +1974,20 @@
         
 
         <tr>
-          <td>128</td>
+          <td>125</td>
+          <td><a href="task/oppiliappan__eva.41ae245/"><code>oppiliappan__eva.41ae245</code></a></td>
+          <td>913</td>
+          <td>98.4%</td>
+          <td>pending</td>
+          <td>pending</td>
+          <td>0</td>
+          <td>13</td>
+          <td><a href="https://programbench.com/task/oppiliappan__eva.41ae245/">official</a></td>
+        </tr>
+        
+
+        <tr>
+          <td>126</td>
           <td><a href="task/oppiliappan__statix.e9df54c/"><code>oppiliappan__statix.e9df54c</code></a></td>
           <td>815</td>
           <td>69.0%</td>
@@ -2058,7 +2000,7 @@
         
 
         <tr>
-          <td>129</td>
+          <td>127</td>
           <td><a href="task/orf__gping.26eb5b9/"><code>orf__gping.26eb5b9</code></a></td>
           <td>339</td>
           <td>88.2%</td>
@@ -2071,7 +2013,7 @@
         
 
         <tr>
-          <td>130</td>
+          <td>128</td>
           <td><a href="task/osgeo__gdal.0847f12/"><code>osgeo__gdal.0847f12</code></a></td>
           <td>657</td>
           <td>25.4%</td>
@@ -2084,7 +2026,7 @@
         
 
         <tr>
-          <td>131</td>
+          <td>129</td>
           <td><a href="task/osgeo__proj.75d455c/"><code>osgeo__proj.75d455c</code></a></td>
           <td>5319</td>
           <td>73.8%</td>
@@ -2097,7 +2039,7 @@
         
 
         <tr>
-          <td>132</td>
+          <td>130</td>
           <td><a href="task/paradigmxyz__solar.5190d0e/"><code>paradigmxyz__solar.5190d0e</code></a></td>
           <td>1978</td>
           <td>47.4%</td>
@@ -2110,7 +2052,7 @@
         
 
         <tr>
-          <td>133</td>
+          <td>131</td>
           <td><a href="task/parcel-bundler__lightningcss.aa2ed1e/"><code>parcel-bundler__lightningcss.aa2ed1e</code></a></td>
           <td>2828</td>
           <td>55.0%</td>
@@ -2123,7 +2065,7 @@
         
 
         <tr>
-          <td>134</td>
+          <td>132</td>
           <td><a href="task/peco__peco.4e58dad/"><code>peco__peco.4e58dad</code></a></td>
           <td>1224</td>
           <td>76.7%</td>
@@ -2136,7 +2078,7 @@
         
 
         <tr>
-          <td>135</td>
+          <td>133</td>
           <td><a href="task/pemistahl__grex.fa3e8ed/"><code>pemistahl__grex.fa3e8ed</code></a></td>
           <td>1312</td>
           <td>97.2%</td>
@@ -2149,7 +2091,7 @@
         
 
         <tr>
-          <td>136</td>
+          <td>134</td>
           <td><a href="task/php__php-src.c891263/"><code>php__php-src.c891263</code></a></td>
           <td>14288</td>
           <td>13.2%</td>
@@ -2162,7 +2104,7 @@
         
 
         <tr>
-          <td>137</td>
+          <td>135</td>
           <td><a href="task/pier-cli__pier.5e1bde9/"><code>pier-cli__pier.5e1bde9</code></a></td>
           <td>692</td>
           <td>94.2%</td>
@@ -2175,7 +2117,7 @@
         
 
         <tr>
-          <td>138</td>
+          <td>136</td>
           <td><a href="task/pls-rs__pls.4e1ae50/"><code>pls-rs__pls.4e1ae50</code></a></td>
           <td>332</td>
           <td>76.5%</td>
@@ -2188,7 +2130,7 @@
         
 
         <tr>
-          <td>139</td>
+          <td>137</td>
           <td><a href="task/psampaz__go-mod-outdated.bb79367/"><code>psampaz__go-mod-outdated.bb79367</code></a></td>
           <td>285</td>
           <td>98.2%</td>
@@ -2201,7 +2143,7 @@
         
 
         <tr>
-          <td>140</td>
+          <td>138</td>
           <td><a href="task/quinn-rs__quinn.bb359cc/"><code>quinn-rs__quinn.bb359cc</code></a></td>
           <td>522</td>
           <td>84.5%</td>
@@ -2214,7 +2156,7 @@
         
 
         <tr>
-          <td>141</td>
+          <td>139</td>
           <td><a href="task/raviqqe__muffet.a882908/"><code>raviqqe__muffet.a882908</code></a></td>
           <td>293</td>
           <td>89.4%</td>
@@ -2227,7 +2169,7 @@
         
 
         <tr>
-          <td>142</td>
+          <td>140</td>
           <td><a href="task/rbakbashev__elfcat.52f8cc7/"><code>rbakbashev__elfcat.52f8cc7</code></a></td>
           <td>564</td>
           <td>98.2%</td>
@@ -2240,7 +2182,7 @@
         
 
         <tr>
-          <td>143</td>
+          <td>141</td>
           <td><a href="task/rcoh__angle-grinder.9c2fc88/"><code>rcoh__angle-grinder.9c2fc88</code></a></td>
           <td>1130</td>
           <td>73.3%</td>
@@ -2253,7 +2195,7 @@
         
 
         <tr>
-          <td>144</td>
+          <td>142</td>
           <td><a href="task/rhysd__kiro-editor.4157485/"><code>rhysd__kiro-editor.4157485</code></a></td>
           <td>595</td>
           <td>95.3%</td>
@@ -2266,7 +2208,7 @@
         
 
         <tr>
-          <td>145</td>
+          <td>143</td>
           <td><a href="task/riquito__tuc.16fb471/"><code>riquito__tuc.16fb471</code></a></td>
           <td>1196</td>
           <td>96.1%</td>
@@ -2279,7 +2221,7 @@
         
 
         <tr>
-          <td>146</td>
+          <td>144</td>
           <td><a href="task/robertdavidgraham__masscan.b99d433/"><code>robertdavidgraham__masscan.b99d433</code></a></td>
           <td>2549</td>
           <td>65.8%</td>
@@ -2292,7 +2234,7 @@
         
 
         <tr>
-          <td>147</td>
+          <td>145</td>
           <td><a href="task/rochacbruno__marmite.7d4bc2d/"><code>rochacbruno__marmite.7d4bc2d</code></a></td>
           <td>668</td>
           <td>68.4%</td>
@@ -2305,7 +2247,7 @@
         
 
         <tr>
-          <td>148</td>
+          <td>146</td>
           <td><a href="task/rs__curlie.5dfcbb1/"><code>rs__curlie.5dfcbb1</code></a></td>
           <td>701</td>
           <td>92.9%</td>
@@ -2318,7 +2260,7 @@
         
 
         <tr>
-          <td>149</td>
+          <td>147</td>
           <td><a href="task/rs__jplot.2a54bcc/"><code>rs__jplot.2a54bcc</code></a></td>
           <td>583</td>
           <td>91.3%</td>
@@ -2331,7 +2273,7 @@
         
 
         <tr>
-          <td>150</td>
+          <td>148</td>
           <td><a href="task/rust-embedded__svd2rust.1760b5e/"><code>rust-embedded__svd2rust.1760b5e</code></a></td>
           <td>920</td>
           <td>82.0%</td>
@@ -2344,7 +2286,7 @@
         
 
         <tr>
-          <td>151</td>
+          <td>149</td>
           <td><a href="task/rust-ethereum__ethabi.b1710ad/"><code>rust-ethereum__ethabi.b1710ad</code></a></td>
           <td>997</td>
           <td>93.3%</td>
@@ -2357,7 +2299,7 @@
         
 
         <tr>
-          <td>152</td>
+          <td>150</td>
           <td><a href="task/rust-lang__mdbook.37273ba/"><code>rust-lang__mdbook.37273ba</code></a></td>
           <td>1114</td>
           <td>72.5%</td>
@@ -2370,7 +2312,7 @@
         
 
         <tr>
-          <td>153</td>
+          <td>151</td>
           <td><a href="task/rvben__rumdl.2d75c4d/"><code>rvben__rumdl.2d75c4d</code></a></td>
           <td>3322</td>
           <td>48.6%</td>
@@ -2383,7 +2325,7 @@
         
 
         <tr>
-          <td>154</td>
+          <td>152</td>
           <td><a href="task/samtools__samtools.aa823b5/"><code>samtools__samtools.aa823b5</code></a></td>
           <td>1425</td>
           <td>22.6%</td>
@@ -2396,7 +2338,7 @@
         
 
         <tr>
-          <td>155</td>
+          <td>153</td>
           <td><a href="task/sayanarijit__xplr.1751065/"><code>sayanarijit__xplr.1751065</code></a></td>
           <td>419</td>
           <td>78.5%</td>
@@ -2409,7 +2351,7 @@
         
 
         <tr>
-          <td>156</td>
+          <td>154</td>
           <td><a href="task/sclevine__yj.8016400/"><code>sclevine__yj.8016400</code></a></td>
           <td>767</td>
           <td>81.7%</td>
@@ -2422,7 +2364,7 @@
         
 
         <tr>
-          <td>157</td>
+          <td>155</td>
           <td><a href="task/segmentio__chamber.5f93f5f/"><code>segmentio__chamber.5f93f5f</code></a></td>
           <td>1748</td>
           <td>88.0%</td>
@@ -2435,7 +2377,7 @@
         
 
         <tr>
-          <td>158</td>
+          <td>156</td>
           <td><a href="task/sharkdp__bat.f822bd0/"><code>sharkdp__bat.f822bd0</code></a></td>
           <td>799</td>
           <td>61.5%</td>
@@ -2448,7 +2390,7 @@
         
 
         <tr>
-          <td>159</td>
+          <td>157</td>
           <td><a href="task/sharkdp__fd.40d8eb3/"><code>sharkdp__fd.40d8eb3</code></a></td>
           <td>1235</td>
           <td>82.8%</td>
@@ -2461,7 +2403,7 @@
         
 
         <tr>
-          <td>160</td>
+          <td>158</td>
           <td><a href="task/sharkdp__hexyl.2e26437/"><code>sharkdp__hexyl.2e26437</code></a></td>
           <td>906</td>
           <td>95.4%</td>
@@ -2474,7 +2416,7 @@
         
 
         <tr>
-          <td>161</td>
+          <td>159</td>
           <td><a href="task/sharkdp__hyperfine.327d5f4/"><code>sharkdp__hyperfine.327d5f4</code></a></td>
           <td>291</td>
           <td>77.0%</td>
@@ -2487,7 +2429,7 @@
         
 
         <tr>
-          <td>162</td>
+          <td>160</td>
           <td><a href="task/sharkdp__pastel.b60e899/"><code>sharkdp__pastel.b60e899</code></a></td>
           <td>1114</td>
           <td>93.1%</td>
@@ -2500,7 +2442,7 @@
         
 
         <tr>
-          <td>163</td>
+          <td>161</td>
           <td><a href="task/shashwatah__jot.a92aad8/"><code>shashwatah__jot.a92aad8</code></a></td>
           <td>752</td>
           <td>97.1%</td>
@@ -2513,7 +2455,7 @@
         
 
         <tr>
-          <td>164</td>
+          <td>162</td>
           <td><a href="task/sheepla__pingu.926d475/"><code>sheepla__pingu.926d475</code></a></td>
           <td>383</td>
           <td>98.7%</td>
@@ -2526,7 +2468,7 @@
         
 
         <tr>
-          <td>165</td>
+          <td>163</td>
           <td><a href="task/sibprogrammer__xq.b89f681/"><code>sibprogrammer__xq.b89f681</code></a></td>
           <td>792</td>
           <td>86.5%</td>
@@ -2539,7 +2481,7 @@
         
 
         <tr>
-          <td>166</td>
+          <td>164</td>
           <td><a href="task/sigoden__argc.04a08f1/"><code>sigoden__argc.04a08f1</code></a></td>
           <td>995</td>
           <td>44.1%</td>
@@ -2552,7 +2494,7 @@
         
 
         <tr>
-          <td>167</td>
+          <td>165</td>
           <td><a href="task/simeg__eureka.df3796c/"><code>simeg__eureka.df3796c</code></a></td>
           <td>344</td>
           <td>97.4%</td>
@@ -2565,7 +2507,7 @@
         
 
         <tr>
-          <td>168</td>
+          <td>166</td>
           <td><a href="task/sirwart__ripsecrets.34c9e03/"><code>sirwart__ripsecrets.34c9e03</code></a></td>
           <td>611</td>
           <td>91.2%</td>
@@ -2578,7 +2520,20 @@
         
 
         <tr>
-          <td>169</td>
+          <td>167</td>
+          <td><a href="task/sitkevij__hex.61ae69b/"><code>sitkevij__hex.61ae69b</code></a></td>
+          <td>823</td>
+          <td>99.6%</td>
+          <td>pending</td>
+          <td>pending</td>
+          <td>0</td>
+          <td>13</td>
+          <td><a href="https://programbench.com/task/sitkevij__hex.61ae69b/">official</a></td>
+        </tr>
+        
+
+        <tr>
+          <td>168</td>
           <td><a href="task/skeema__skeema.6a76243/"><code>skeema__skeema.6a76243</code></a></td>
           <td>1708</td>
           <td>79.7%</td>
@@ -2591,7 +2546,7 @@
         
 
         <tr>
-          <td>170</td>
+          <td>169</td>
           <td><a href="task/sqlite__sqlite.839433d/"><code>sqlite__sqlite.839433d</code></a></td>
           <td>13514</td>
           <td>71.6%</td>
@@ -2604,7 +2559,7 @@
         
 
         <tr>
-          <td>171</td>
+          <td>170</td>
           <td><a href="task/sstadick__hck.b66c751/"><code>sstadick__hck.b66c751</code></a></td>
           <td>855</td>
           <td>97.2%</td>
@@ -2617,7 +2572,7 @@
         
 
         <tr>
-          <td>172</td>
+          <td>171</td>
           <td><a href="task/stacked-git__stgit.430027d/"><code>stacked-git__stgit.430027d</code></a></td>
           <td>1488</td>
           <td>48.7%</td>
@@ -2630,7 +2585,7 @@
         
 
         <tr>
-          <td>173</td>
+          <td>172</td>
           <td><a href="task/stathissideris__ditaa.f2286c4/"><code>stathissideris__ditaa.f2286c4</code></a></td>
           <td>609</td>
           <td>38.4%</td>
@@ -2643,7 +2598,7 @@
         
 
         <tr>
-          <td>174</td>
+          <td>173</td>
           <td><a href="task/stranger6667__jsonschema.d52e881/"><code>stranger6667__jsonschema.d52e881</code></a></td>
           <td>2933</td>
           <td>57.1%</td>
@@ -2656,7 +2611,7 @@
         
 
         <tr>
-          <td>175</td>
+          <td>174</td>
           <td><a href="task/svenstaro__genact.16f96e3/"><code>svenstaro__genact.16f96e3</code></a></td>
           <td>232</td>
           <td>71.1%</td>
@@ -2669,7 +2624,7 @@
         
 
         <tr>
-          <td>176</td>
+          <td>175</td>
           <td><a href="task/svenstaro__miniserve.8449e8b/"><code>svenstaro__miniserve.8449e8b</code></a></td>
           <td>304</td>
           <td>92.1%</td>
@@ -2682,7 +2637,7 @@
         
 
         <tr>
-          <td>177</td>
+          <td>176</td>
           <td><a href="task/tarka__xcp.5e5b448/"><code>tarka__xcp.5e5b448</code></a></td>
           <td>1184</td>
           <td>95.8%</td>
@@ -2695,7 +2650,7 @@
         
 
         <tr>
-          <td>178</td>
+          <td>177</td>
           <td><a href="task/thezoraiz__ascii-image-converter.d05a757/"><code>thezoraiz__ascii-image-converter.d05a757</code></a></td>
           <td>465</td>
           <td>80.9%</td>
@@ -2708,7 +2663,7 @@
         
 
         <tr>
-          <td>179</td>
+          <td>178</td>
           <td><a href="task/tinycc__tinycc.9b8765d/"><code>tinycc__tinycc.9b8765d</code></a></td>
           <td>1978</td>
           <td>72.5%</td>
@@ -2721,7 +2676,7 @@
         
 
         <tr>
-          <td>180</td>
+          <td>179</td>
           <td><a href="task/tomarrell__wrapcheck.c058da1/"><code>tomarrell__wrapcheck.c058da1</code></a></td>
           <td>480</td>
           <td>81.9%</td>
@@ -2734,7 +2689,7 @@
         
 
         <tr>
-          <td>181</td>
+          <td>180</td>
           <td><a href="task/tomnomnom__gron.88a6234/"><code>tomnomnom__gron.88a6234</code></a></td>
           <td>224</td>
           <td>90.2%</td>
@@ -2747,7 +2702,7 @@
         
 
         <tr>
-          <td>182</td>
+          <td>181</td>
           <td><a href="task/trasta298__keifu.3331426/"><code>trasta298__keifu.3331426</code></a></td>
           <td>262</td>
           <td>87.0%</td>
@@ -2760,7 +2715,7 @@
         
 
         <tr>
-          <td>183</td>
+          <td>182</td>
           <td><a href="task/tree-sitter__tree-sitter.5e23cca/"><code>tree-sitter__tree-sitter.5e23cca</code></a></td>
           <td>1232</td>
           <td>46.1%</td>
@@ -2773,7 +2728,7 @@
         
 
         <tr>
-          <td>184</td>
+          <td>183</td>
           <td><a href="task/tstack__lnav.ee34494/"><code>tstack__lnav.ee34494</code></a></td>
           <td>990</td>
           <td>21.7%</td>
@@ -2786,7 +2741,7 @@
         
 
         <tr>
-          <td>185</td>
+          <td>184</td>
           <td><a href="task/tukaani-project__xz.1007bf0/"><code>tukaani-project__xz.1007bf0</code></a></td>
           <td>1410</td>
           <td>84.7%</td>
@@ -2799,7 +2754,7 @@
         
 
         <tr>
-          <td>186</td>
+          <td>185</td>
           <td><a href="task/typst__typst.88356d0/"><code>typst__typst.88356d0</code></a></td>
           <td>1724</td>
           <td>32.7%</td>
@@ -2812,7 +2767,7 @@
         
 
         <tr>
-          <td>187</td>
+          <td>186</td>
           <td><a href="task/unhappychoice__gittype.34b72d0/"><code>unhappychoice__gittype.34b72d0</code></a></td>
           <td>741</td>
           <td>91.3%</td>
@@ -2825,7 +2780,7 @@
         
 
         <tr>
-          <td>188</td>
+          <td>187</td>
           <td><a href="task/universal-ctags__ctags.243595e/"><code>universal-ctags__ctags.243595e</code></a></td>
           <td>2258</td>
           <td>13.3%</td>
@@ -2838,7 +2793,7 @@
         
 
         <tr>
-          <td>189</td>
+          <td>188</td>
           <td><a href="task/wfxr__code-minimap.0ddeea5/"><code>wfxr__code-minimap.0ddeea5</code></a></td>
           <td>313</td>
           <td>95.8%</td>
@@ -2847,6 +2802,19 @@
           <td>0</td>
           <td>13</td>
           <td><a href="https://programbench.com/task/wfxr__code-minimap.0ddeea5/">official</a></td>
+        </tr>
+        
+
+        <tr>
+          <td>189</td>
+          <td><a href="task/wfxr__csview.8ac4de0/"><code>wfxr__csview.8ac4de0</code></a></td>
+          <td>335</td>
+          <td>99.7%</td>
+          <td>pending</td>
+          <td>pending</td>
+          <td>0</td>
+          <td>13</td>
+          <td><a href="https://programbench.com/task/wfxr__csview.8ac4de0/">official</a></td>
         </tr>
         
 
@@ -2995,113 +2963,6 @@
       </table>
     </div>
     
-
-    <h2>Per-Instance Results</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Instance</th><th>Run</th><th>Mode</th><th>Model</th><th>Compliance</th><th>Status</th><th>Eval</th><th>Score</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Host</th><th>Docker</th><th>Evidence</th></tr></thead>
-        <tbody>
-            <tr>
-              <td>1</td>
-              <td><a href="task/wfxr__csview.8ac4de0/"><code>wfxr__csview.8ac4de0</code></a></td>
-              <td><code>unversioned</code></td>
-              <td>No internet</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td>Codex no-internet ablation</td>
-              <td><span class="status almost">almost</span></td>
-              <td><span class="status resolved">ok</span></td>
-              <td>97.9%</td>
-              <td>328/335</td>
-              <td>$3.42</td>
-              <td>66</td>
-              <td>0.19h</td>
-              <td>Linux/x86_64</td>
-              <td>16 CPU / 30g</td>
-              <td><a href="evidence/hetzner-cpx62-smoke-xhigh-wfxr-csview/wfxr__csview.8ac4de0/manifest.json">manifest</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-wfxr-csview/wfxr__csview.8ac4de0/eval.json">eval json</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-wfxr-csview/wfxr__csview.8ac4de0/eval-summary.json">eval summary</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-wfxr-csview/wfxr__csview.8ac4de0/usage-audit.json">usage audit</a></td>
-            </tr>
-            
-
-            <tr>
-              <td>2</td>
-              <td><a href="task/sitkevij__hex.61ae69b/"><code>sitkevij__hex.61ae69b</code></a></td>
-              <td><code>unversioned</code></td>
-              <td>No internet</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td>Codex no-internet ablation</td>
-              <td><span class="status almost">almost</span></td>
-              <td><span class="status resolved">ok</span></td>
-              <td>97.1%</td>
-              <td>799/823</td>
-              <td>$2.47</td>
-              <td>46</td>
-              <td>0.14h</td>
-              <td>Linux/x86_64</td>
-              <td>16 CPU / 30g</td>
-              <td><a href="evidence/hetzner-cpx62-smoke-xhigh-sitkevij-hex/sitkevij__hex.61ae69b/manifest.json">manifest</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-sitkevij-hex/sitkevij__hex.61ae69b/eval.json">eval json</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-sitkevij-hex/sitkevij__hex.61ae69b/eval-summary.json">eval summary</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-sitkevij-hex/sitkevij__hex.61ae69b/usage-audit.json">usage audit</a></td>
-            </tr>
-            
-
-            <tr>
-              <td>3</td>
-              <td><a href="task/oppiliappan__eva.41ae245/"><code>oppiliappan__eva.41ae245</code></a></td>
-              <td><code>unversioned</code></td>
-              <td>No internet</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td>Codex no-internet ablation</td>
-              <td><span class="status open">open</span></td>
-              <td><span class="status resolved">ok</span></td>
-              <td>83.2%</td>
-              <td>760/913</td>
-              <td>$2.76</td>
-              <td>59</td>
-              <td>0.16h</td>
-              <td>Linux/x86_64</td>
-              <td>16 CPU / 30g</td>
-              <td><a href="evidence/hetzner-cpx62-smoke-xhigh-oppiliappan-eva/oppiliappan__eva.41ae245/manifest.json">manifest</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-oppiliappan-eva/oppiliappan__eva.41ae245/eval.json">eval json</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-oppiliappan-eva/oppiliappan__eva.41ae245/eval-summary.json">eval summary</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-oppiliappan-eva/oppiliappan__eva.41ae245/usage-audit.json">usage audit</a></td>
-            </tr>
-            
-
-            <tr>
-              <td>4</td>
-              <td><a href="task/agourlay__zip-password-finder.704700d/"><code>agourlay__zip-password-finder.704700d</code></a></td>
-              <td><code>unversioned</code></td>
-              <td>No internet</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td>Codex no-internet ablation</td>
-              <td><span class="status open">open</span></td>
-              <td><span class="status almost" title="2 evaluator warning(s)">warn 2</span></td>
-              <td>58.1%</td>
-              <td>396/682</td>
-              <td>$3.23</td>
-              <td>45</td>
-              <td>0.22h</td>
-              <td>Linux/x86_64</td>
-              <td>16 CPU / 30g</td>
-              <td><a href="evidence/hetzner-cpx62-smoke-xhigh-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/manifest.json">manifest</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/eval.json">eval json</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/eval-summary.json">eval summary</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/usage-audit.json">usage audit</a></td>
-            </tr>
-            
-
-            <tr>
-              <td>5</td>
-              <td><a href="task/htop-dev__htop.523600b/"><code>htop-dev__htop.523600b</code></a></td>
-              <td><code>unversioned</code></td>
-              <td>No internet</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td>Codex no-internet ablation</td>
-              <td><span class="status open">open</span></td>
-              <td><span class="status resolved">ok</span></td>
-              <td>36.9%</td>
-              <td>256/693</td>
-              <td>$2.05</td>
-              <td>51</td>
-              <td>0.11h</td>
-              <td>Linux/x86_64</td>
-              <td>16 CPU / 30g</td>
-              <td><a href="evidence/hetzner-cpx62-smoke-xhigh-htop-dev-htop/htop-dev__htop.523600b/manifest.json">manifest</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-htop-dev-htop/htop-dev__htop.523600b/eval.json">eval json</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-htop-dev-htop/htop-dev__htop.523600b/eval-summary.json">eval summary</a> · <a href="evidence/hetzner-cpx62-smoke-xhigh-htop-dev-htop/htop-dev__htop.523600b/usage-audit.json">usage audit</a></td>
-            </tr>
-            </tbody>
-      </table>
-    </div>
     
 
     <h2>Official Baseline Context</h2>
