@@ -118,18 +118,18 @@
       "source": "https://programbench.com/extended/"
     }
   ],
-  "generated_at": "2026-05-15T05:08:46.647554+00:00",
+  "generated_at": "2026-05-15T05:13:48.246218+00:00",
   "groups": [
     {
       "agent": "Codex /goal",
       "almost_resolved": 3,
-      "almost_resolved_rate": 0.07894736842105263,
-      "average_calls": 80.23684210526316,
-      "average_cost_usd": 5.227505263157894,
-      "average_pass_rate": 0.6110500738995996,
+      "almost_resolved_rate": 0.07692307692307693,
+      "average_calls": 79.64102564102564,
+      "average_cost_usd": 5.155082051282052,
+      "average_pass_rate": 0.6012364459552715,
       "compliance": "Codex no-internet ablation",
       "host_profile": "smaller VM: 16 CPU / 30g",
-      "instances": 38,
+      "instances": 39,
       "mode": "No internet",
       "model": "GPT 5.5 (xhigh)",
       "resolved": 0,
@@ -138,7 +138,7 @@
       "score_distribution": [
         {
           "count": 2,
-          "cumulative_at_least": 38,
+          "cumulative_at_least": 39,
           "cumulative_rate_at_least": 1.0,
           "label": "0-10%",
           "lower": 0.0,
@@ -146,16 +146,16 @@
         },
         {
           "count": 2,
-          "cumulative_at_least": 36,
-          "cumulative_rate_at_least": 0.9473684210526315,
+          "cumulative_at_least": 37,
+          "cumulative_rate_at_least": 0.9487179487179487,
           "label": "10-20%",
           "lower": 0.1,
           "upper": 0.2
         },
         {
-          "count": 2,
-          "cumulative_at_least": 34,
-          "cumulative_rate_at_least": 0.8947368421052632,
+          "count": 3,
+          "cumulative_at_least": 35,
+          "cumulative_rate_at_least": 0.8974358974358975,
           "label": "20-30%",
           "lower": 0.2,
           "upper": 0.3
@@ -163,7 +163,7 @@
         {
           "count": 2,
           "cumulative_at_least": 32,
-          "cumulative_rate_at_least": 0.8421052631578947,
+          "cumulative_rate_at_least": 0.8205128205128205,
           "label": "30-40%",
           "lower": 0.3,
           "upper": 0.4
@@ -171,7 +171,7 @@
         {
           "count": 3,
           "cumulative_at_least": 30,
-          "cumulative_rate_at_least": 0.7894736842105263,
+          "cumulative_rate_at_least": 0.7692307692307693,
           "label": "40-50%",
           "lower": 0.4,
           "upper": 0.5
@@ -179,7 +179,7 @@
         {
           "count": 3,
           "cumulative_at_least": 27,
-          "cumulative_rate_at_least": 0.7105263157894737,
+          "cumulative_rate_at_least": 0.6923076923076923,
           "label": "50-60%",
           "lower": 0.5,
           "upper": 0.6
@@ -187,7 +187,7 @@
         {
           "count": 7,
           "cumulative_at_least": 24,
-          "cumulative_rate_at_least": 0.631578947368421,
+          "cumulative_rate_at_least": 0.6153846153846154,
           "label": "60-70%",
           "lower": 0.6,
           "upper": 0.7
@@ -195,7 +195,7 @@
         {
           "count": 6,
           "cumulative_at_least": 17,
-          "cumulative_rate_at_least": 0.4473684210526316,
+          "cumulative_rate_at_least": 0.4358974358974359,
           "label": "70-80%",
           "lower": 0.7,
           "upper": 0.8
@@ -203,7 +203,7 @@
         {
           "count": 7,
           "cumulative_at_least": 11,
-          "cumulative_rate_at_least": 0.2894736842105263,
+          "cumulative_rate_at_least": 0.28205128205128205,
           "label": "80-90%",
           "lower": 0.8,
           "upper": 0.9
@@ -211,16 +211,16 @@
         {
           "count": 4,
           "cumulative_at_least": 4,
-          "cumulative_rate_at_least": 0.10526315789473684,
+          "cumulative_rate_at_least": 0.10256410256410256,
           "label": "90-100%",
           "lower": 0.9,
           "upper": 1.0
         }
       ],
       "slug": "gpt-5-5--xhigh--codex--goal-no-internet-codex-no-internet-ablation",
-      "total_calls": 3049,
-      "total_cost_usd": 198.6452,
-      "total_wall_clock_hours": 9.184722222222222
+      "total_calls": 3106,
+      "total_cost_usd": 201.0482,
+      "total_wall_clock_hours": 9.321944444444444
     }
   ],
   "programbench_tasks": 200,
@@ -1525,9 +1525,43 @@
       "score": 0.5278810408921933,
       "task_path": "task/crowdagger__crowbook.ea214d7/",
       "wall_clock_seconds": 887
+    },
+    {
+      "agent": "Codex /goal",
+      "almost_resolved": false,
+      "calls": 57,
+      "compliance": "Codex no-internet ablation",
+      "docker_cpus": "16",
+      "docker_memory": "30g",
+      "error_code": "",
+      "estimated_cost_usd": 2.403,
+      "evaluator_problem": false,
+      "evidence_path": "evidence/cpx62-nointernet-xhigh-20260515T003932Z-dalance-amber/dalance__amber.69a0f52/manifest.json",
+      "host_machine": "x86_64",
+      "host_profile": "smaller VM: 16 CPU / 30g",
+      "host_system": "Linux",
+      "inference_mode": "no-internet",
+      "instance_id": "dalance__amber.69a0f52",
+      "mode": "No internet",
+      "model": "gpt-5.5",
+      "model_display": "GPT 5.5 (xhigh)",
+      "n_resolved_tests": 129,
+      "n_system_errors": 0,
+      "n_tests": 565,
+      "n_warnings": 0,
+      "paper_compliant": false,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "programbench_comparable": false,
+      "reasoning_effort": "xhigh",
+      "resolved": false,
+      "run_name": "cpx62-nointernet-xhigh-20260515T003932Z-dalance-amber",
+      "run_version": "",
+      "score": 0.22831858407079647,
+      "task_path": "task/dalance__amber.69a0f52/",
+      "wall_clock_seconds": 494
     }
   ],
-  "sample_instances": 38,
+  "sample_instances": 39,
   "tasks": [
     {
       "best_model": "GPT 5.5 (xhigh)",
@@ -2010,15 +2044,15 @@
       "task_path": "task/cweill__gotests.2a672c5/"
     },
     {
-      "best_model": "",
-      "best_score": null,
+      "best_model": "GPT 5.5 (xhigh)",
+      "best_score": 0.22831858407079647,
       "instance_id": "dalance__amber.69a0f52",
       "official_best_score": 0.743,
       "official_generated_tests": 565,
       "official_result_count": 13,
       "official_task_url": "https://programbench.com/task/dalance__amber.69a0f52/",
-      "result_count": 0,
-      "scored_tests": null,
+      "result_count": 1,
+      "scored_tests": 565,
       "task_path": "task/dalance__amber.69a0f52/"
     },
     {
