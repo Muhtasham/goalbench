@@ -118,18 +118,18 @@
       "source": "https://programbench.com/extended/"
     }
   ],
-  "generated_at": "2026-05-15T13:15:10.726181+00:00",
+  "generated_at": "2026-05-15T13:39:38.481043+00:00",
   "groups": [
     {
       "agent": "Codex /goal",
       "almost_resolved": 3,
-      "almost_resolved_rate": 0.038461538461538464,
-      "average_calls": 81.71794871794872,
-      "average_cost_usd": 5.2121589743589745,
-      "average_pass_rate": 0.5544918225532803,
+      "almost_resolved_rate": 0.0379746835443038,
+      "average_calls": 81.36708860759494,
+      "average_cost_usd": 5.192467088607595,
+      "average_pass_rate": 0.5563231203108832,
       "compliance": "Codex no-internet ablation",
       "host_profile": "smaller VM: 16 CPU / 30g",
-      "instances": 78,
+      "instances": 79,
       "mode": "No internet",
       "model": "GPT 5.5 (xhigh)",
       "resolved": 0,
@@ -138,7 +138,7 @@
       "score_distribution": [
         {
           "count": 7,
-          "cumulative_at_least": 78,
+          "cumulative_at_least": 79,
           "cumulative_rate_at_least": 1.0,
           "label": "0-10%",
           "lower": 0.0,
@@ -146,48 +146,48 @@
         },
         {
           "count": 6,
-          "cumulative_at_least": 71,
-          "cumulative_rate_at_least": 0.9102564102564102,
+          "cumulative_at_least": 72,
+          "cumulative_rate_at_least": 0.9113924050632911,
           "label": "10-20%",
           "lower": 0.1,
           "upper": 0.2
         },
         {
           "count": 4,
-          "cumulative_at_least": 65,
-          "cumulative_rate_at_least": 0.8333333333333334,
+          "cumulative_at_least": 66,
+          "cumulative_rate_at_least": 0.8354430379746836,
           "label": "20-30%",
           "lower": 0.2,
           "upper": 0.3
         },
         {
           "count": 6,
-          "cumulative_at_least": 61,
-          "cumulative_rate_at_least": 0.782051282051282,
+          "cumulative_at_least": 62,
+          "cumulative_rate_at_least": 0.7848101265822784,
           "label": "30-40%",
           "lower": 0.3,
           "upper": 0.4
         },
         {
           "count": 5,
-          "cumulative_at_least": 55,
-          "cumulative_rate_at_least": 0.7051282051282052,
+          "cumulative_at_least": 56,
+          "cumulative_rate_at_least": 0.7088607594936709,
           "label": "40-50%",
           "lower": 0.4,
           "upper": 0.5
         },
         {
           "count": 7,
-          "cumulative_at_least": 50,
-          "cumulative_rate_at_least": 0.6410256410256411,
+          "cumulative_at_least": 51,
+          "cumulative_rate_at_least": 0.6455696202531646,
           "label": "50-60%",
           "lower": 0.5,
           "upper": 0.6
         },
         {
-          "count": 14,
-          "cumulative_at_least": 43,
-          "cumulative_rate_at_least": 0.5512820512820513,
+          "count": 15,
+          "cumulative_at_least": 44,
+          "cumulative_rate_at_least": 0.5569620253164557,
           "label": "60-70%",
           "lower": 0.6,
           "upper": 0.7
@@ -195,7 +195,7 @@
         {
           "count": 13,
           "cumulative_at_least": 29,
-          "cumulative_rate_at_least": 0.3717948717948718,
+          "cumulative_rate_at_least": 0.3670886075949367,
           "label": "70-80%",
           "lower": 0.7,
           "upper": 0.8
@@ -203,7 +203,7 @@
         {
           "count": 11,
           "cumulative_at_least": 16,
-          "cumulative_rate_at_least": 0.20512820512820512,
+          "cumulative_rate_at_least": 0.20253164556962025,
           "label": "80-90%",
           "lower": 0.8,
           "upper": 0.9
@@ -211,16 +211,16 @@
         {
           "count": 5,
           "cumulative_at_least": 5,
-          "cumulative_rate_at_least": 0.0641025641025641,
+          "cumulative_rate_at_least": 0.06329113924050633,
           "label": "90-100%",
           "lower": 0.9,
           "upper": 1.0
         }
       ],
       "slug": "gpt-5-5--xhigh--codex--goal-no-internet-codex-no-internet-ablation",
-      "total_calls": 6374,
-      "total_cost_usd": 406.5484,
-      "total_wall_clock_hours": 19.0425
+      "total_calls": 6428,
+      "total_cost_usd": 410.2049,
+      "total_wall_clock_hours": 19.260277777777777
     }
   ],
   "programbench_tasks": 200,
@@ -2885,9 +2885,43 @@
       "score": 0.931185944363104,
       "task_path": "task/ismaelgv__rnr.fc0733b/",
       "wall_clock_seconds": 1013
+    },
+    {
+      "agent": "Codex /goal",
+      "almost_resolved": false,
+      "calls": 54,
+      "compliance": "Codex no-internet ablation",
+      "docker_cpus": "16",
+      "docker_memory": "30g",
+      "error_code": "",
+      "estimated_cost_usd": 3.6565,
+      "evaluator_problem": false,
+      "evidence_path": "evidence/cpx62-nointernet-xhigh-20260515T003932Z-isona-dirble/isona__dirble.e2dea9f/manifest.json",
+      "host_machine": "x86_64",
+      "host_profile": "smaller VM: 16 CPU / 30g",
+      "host_system": "Linux",
+      "inference_mode": "no-internet",
+      "instance_id": "isona__dirble.e2dea9f",
+      "mode": "No internet",
+      "model": "gpt-5.5",
+      "model_display": "GPT 5.5 (xhigh)",
+      "n_resolved_tests": 502,
+      "n_system_errors": 0,
+      "n_tests": 718,
+      "n_warnings": 0,
+      "paper_compliant": false,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "programbench_comparable": false,
+      "reasoning_effort": "xhigh",
+      "resolved": false,
+      "run_name": "cpx62-nointernet-xhigh-20260515T003932Z-isona-dirble",
+      "run_version": "",
+      "score": 0.6991643454038997,
+      "task_path": "task/isona__dirble.e2dea9f/",
+      "wall_clock_seconds": 784
     }
   ],
-  "sample_instances": 78,
+  "sample_instances": 79,
   "tasks": [
     {
       "best_model": "GPT 5.5 (xhigh)",
@@ -3838,15 +3872,15 @@
       "task_path": "task/ismaelgv__rnr.fc0733b/"
     },
     {
-      "best_model": "",
-      "best_score": null,
+      "best_model": "GPT 5.5 (xhigh)",
+      "best_score": 0.6991643454038997,
       "instance_id": "isona__dirble.e2dea9f",
       "official_best_score": 0.815,
       "official_generated_tests": 718,
       "official_result_count": 13,
       "official_task_url": "https://programbench.com/task/isona__dirble.e2dea9f/",
-      "result_count": 0,
-      "scored_tests": null,
+      "result_count": 1,
+      "scored_tests": 718,
       "task_path": "task/isona__dirble.e2dea9f/"
     },
     {

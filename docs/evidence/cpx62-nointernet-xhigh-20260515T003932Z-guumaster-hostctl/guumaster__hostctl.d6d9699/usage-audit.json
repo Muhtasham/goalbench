@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T13:15:01.410309+00:00",
+  "generated_at": "2026-05-15T13:39:29.376037+00:00",
   "notes": [
     "Costs are estimates from local Codex token_count logs, not authoritative billed dollars.",
     "Pricing comes from an official-doc snapshot because there is no supported structured pricing endpoint.",
@@ -9,7 +9,7 @@
   "pricing_file": "local_state/openai_pricing.json",
   "pricing_file_sha256": "3db38d2379ad47a4ff00e5bc060bb472c0efb23bd793418647801ac30e50148f",
   "pricing_snapshot": {
-    "age_hours": 2.49,
+    "age_hours": 2.9,
     "fetched_at": "2026-05-15T10:45:47.317560+00:00",
     "max_age_hours": 24,
     "models": {
@@ -1537,17 +1537,36 @@
         "$CODEX_SESSIONS/2026/05/15/rollout-2026-05-15T03-14-50-019e29a1-30bb-7bc1-b5fc-17a55cb9f32f.jsonl"
       ],
       "total_tokens": 5497490
+    },
+    {
+      "cached_input_tokens": 3157760,
+      "calls": 54,
+      "estimated_cost_usd": "3.6565",
+      "input_tokens": 3333641,
+      "instance_id": "isona__dirble.e2dea9f",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 39942,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 8481,
+      "run_name": "cpx62-nointernet-xhigh-20260515T003932Z-isona-dirble",
+      "run_version": "",
+      "session_logs": [
+        "$CODEX_SESSIONS/2026/05/15/rollout-2026-05-15T03-15-04-019e29a1-6a7d-78b0-9b00-60d9981091d1.jsonl"
+      ],
+      "total_tokens": 3373583
     }
   ],
   "totals": {
-    "cached_input_tokens": 406180608,
-    "calls": 6374,
-    "estimated_cost_usd": 406.5484,
-    "input_tokens": 421071526,
+    "cached_input_tokens": 409338368,
+    "calls": 6428,
+    "estimated_cost_usd": 410.2049,
+    "input_tokens": 424405167,
     "long_context_calls": 0,
-    "output_tokens": 4287227,
-    "reasoning_output_tokens": 1194073,
-    "total_tokens": 425358753
+    "output_tokens": 4327169,
+    "reasoning_output_tokens": 1202554,
+    "total_tokens": 428732336
   },
   "warnings": []
 }
