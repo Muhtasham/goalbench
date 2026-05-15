@@ -360,16 +360,9 @@ def finalize_one(args: argparse.Namespace, record: dict) -> dict:
         audit_cmd = [sys.executable, str(REPO / "scripts" / "audit-run.py")]
         if args.strict_paper:
             audit_cmd.append("--strict-paper")
-        audit_cmd.extend(
-            [
-                *(
-                    ["--codex-sessions", *[str(path) for path in codex_session_roots(record)]]
-                    if record.get("codex_user")
-                    else []
-                ),
-                str(instance_dir),
-            ]
-        )
+        audit_cmd.append(str(instance_dir))
+        if record.get("codex_user"):
+            audit_cmd.extend(["--codex-sessions", *[str(path) for path in codex_session_roots(record)]])
         run(audit_cmd)
         if args.programbench_repo:
             eval_cmd = [str(instance_dir / "eval-submission.sh"), str(Path(args.programbench_repo).expanduser())]
