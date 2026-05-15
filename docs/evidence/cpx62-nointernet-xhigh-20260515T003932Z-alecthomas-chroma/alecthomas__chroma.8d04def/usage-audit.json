@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T10:53:43.915927+00:00",
+  "generated_at": "2026-05-15T12:55:21.571581+00:00",
   "notes": [
     "Costs are estimates from local Codex token_count logs, not authoritative billed dollars.",
     "Pricing comes from an official-doc snapshot because there is no supported structured pricing endpoint.",
@@ -9,7 +9,7 @@
   "pricing_file": "local_state/openai_pricing.json",
   "pricing_file_sha256": "3db38d2379ad47a4ff00e5bc060bb472c0efb23bd793418647801ac30e50148f",
   "pricing_snapshot": {
-    "age_hours": 0.13,
+    "age_hours": 2.16,
     "fetched_at": "2026-05-15T10:45:47.317560+00:00",
     "max_age_hours": 24,
     "models": {
