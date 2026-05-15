@@ -318,10 +318,7 @@ coordinator while generated Codex `/goal` tmux sessions run as the firewalled
 non-root user:
 
 ```bash
-export HTTPS_PROXY=http://127.0.0.1:18080
-export HTTP_PROXY=http://127.0.0.1:18080
-export ALL_PROXY=http://127.0.0.1:18080
-export NO_PROXY=localhost,127.0.0.1
+export PB_CODEX_PROXY_URL=http://127.0.0.1:18080
 PUBLISH=1 scripts/start-sweep-tmux.sh configs/full-nointernet-xhigh.json
 ```
 
