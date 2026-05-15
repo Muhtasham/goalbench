@@ -1,0 +1,2296 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.17201601099804975
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.1414189159986563
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.12065640700166114
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.12078030699922238
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.10451227899466176
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6534957449985086
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1424923119993764
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11960352399910334
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12019882000458892
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12205769299907843
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 16.74241832599364
+    },
+    {
+      "branch": "df88744325cf",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.024821571001666598
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09930902400083141
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09379186899604974
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.14066328199987765
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12841732600645628
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 81.56542435300071
+    },
+    {
+      "branch": "8ebac061b133",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.022410642995964736
+    }
+  ],
+  "executable_hash": "4ca3b369a34b2ac98e15d8c29e16a5cc840dae241eca83f0f20bbe45f0f5a4eb",
+  "failed_tests": [
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_advanced.TestDuplicates.test_duplicate_identity_file_warns",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_advanced.TestDuplicates.test_duplicate_recipient_warns",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_batchpass.TestBatchpassBasic.test_batchpass_encrypt_decrypt",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_coverage_boost.TestRSAFullRoundtrip.test_encrypt_to_rsa_decrypt_with_identity",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_batchpass.TestBatchpassBasic.test_batchpass_decrypt_with_d_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_coverage_boost.TestPostQuantumRoundtrip.test_encrypt_decrypt_pq_roundtrip",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_batchpass.TestBatchpassBasic.test_batchpass_inspect_shows_scrypt",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_basic.TestOutputFile.test_input_output_same_file_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_basic.TestArmorMode.test_armor_with_leading_trailing_whitespace",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_basic.TestSSHKeys.test_encrypt_decrypt_with_ed25519_ssh_key",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_coverage_boost.TestPostQuantumRoundtrip.test_pq_wrong_key_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_identity_files.TestSSHIdentityParsing.test_ed25519_pem_parsed_correctly",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_identity_files.TestEncryptedIdentityFile.test_key_encrypted_identity_file_fails_with_helpful_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_coverage_boost.TestInspectPostQuantumAndMultiple.test_inspect_multiple_recipient_types",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_inspect.TestInspectBasic.test_inspect_postquantum",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_batchpass.TestBatchpassBasic.test_batchpass_encrypt_to_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_coverage_boost.TestRSAFullRoundtrip.test_rsa_wrong_key_decrypt_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_advanced.TestDuplicates.test_duplicate_recipients_file_warns",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_coverage_boost.TestPostQuantumRoundtrip.test_pq_encrypt_to_identity",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_basic.TestSSHKeys.test_encrypt_to_ssh_pubkey_inline",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_batchpass.TestBatchpassBasic.test_batchpass_empty_data",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_coverage_boost.TestRSAFullRoundtrip.test_encrypt_decrypt_rsa_roundtrip",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_parse_edge_cases.TestRecipientsFileEdgeCases.test_recipients_file_age_identity_in_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_parse_edge_cases.TestRecipientsFileEdgeCases.test_identity_file_with_recipient_key_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_parse_edge_cases.TestIdentityFileEdgeCases.test_hybrid_identity_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_identity_files.TestRecipientsFileParsing.test_recipients_file_with_ssh_pubkeys",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_ssh_keys.TestSSHEd25519.test_encrypt_to_ed25519_pubkey_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_identity_files.TestEncryptedIdentityFile.test_armored_identity_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_ssh_keys.TestSSHEd25519.test_encrypt_with_ed25519_identity",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_error_paths.TestFlagConflicts.test_identity_with_passphrase_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_ssh_keys.TestSSHKeyEncryptDecryptRoundtrip.test_ed25519_armor_roundtrip",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_batchpass.TestBatchpassBasic.test_batchpass_armored_encrypt_decrypt",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_coverage_boost.TestRSAFullRoundtrip.test_rsa_armored_roundtrip",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_batchpass.TestBatchpassBasic.test_batchpass_max_work_factor",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_coverage_boost.TestPostQuantumRoundtrip.test_pq_armored_roundtrip",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "batchpass plugin not available",
+      "name": "eval.tests.test_age_targeted_coverage.TestDecryptPassphrasePaths.test_decrypt_passphrase_file_with_identity_gives_error",
+      "status": "skipped"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "batchpass not available for encrypted identity test",
+      "name": "eval.tests.test_age_targeted_coverage.TestEncryptedIdentityFile.test_encrypt_to_encrypted_identity",
+      "status": "skipped"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestTagRecipients.test_tag_recipient_encrypt_armored",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestSSHPassphraseKeys.test_ssh_ed25519_passphrase_protected_key",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestTagRecipients.test_tag_recipient_inspect_json",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestTagRecipients.test_tag_recipient_encrypt_to_valid_key",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError: Encryption failed: b'age: error: failed to parse recipient file \"/tmp/tmp368s20us/rsa_enc_key.pub\": \"/tmp/tmp368s20us/rsa_enc_key.pub\": malformed recipient at line 1\\nage: report unexpected or unhelpful errors at https://filippo.io/age/report\\n'",
+      "name": "eval.tests.test_age_targeted_coverage.TestSSHPassphraseKeys.test_ssh_rsa_passphrase_protected_key",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_ssh_keys.TestSSHEd25519.test_wrong_ed25519_key_fails_decrypt",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_ssh_keys.TestSSHEd25519.test_ed25519_inspect_shows_ssh_stanza",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError: Encryption failed for b'simple text'",
+      "name": "eval.tests.test_age_ssh_keys.TestSSHKeyEncryptDecryptRoundtrip.test_ed25519_roundtrip_with_various_data",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_ssh_keys.TestSSHEd25519.test_encrypt_to_ed25519_pubkey_inline",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestTagRecipientsFile.test_tag_recipient_in_recipients_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "RSA not supported",
+      "name": "eval.tests.test_age_targeted_coverage.TestRecipientParseEdgeCases.test_ssh_rsa_recipient_from_file",
+      "status": "skipped"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_batchpass.TestBatchpassBasic.test_batchpass_wrong_password_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_coverage_boost.TestRSAFullRoundtrip.test_rsa_inspect_shows_ssh_rsa_stanza",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_ssh_keys.TestRSASSHKey.test_encrypt_to_rsa_pubkey_inline",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "RSA identity encrypt not supported",
+      "name": "eval.tests.test_age_targeted_coverage.TestMultipleIdentityTypes.test_encrypt_with_rsa_identity",
+      "status": "skipped"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "ed25519 identity encrypt not supported",
+      "name": "eval.tests.test_age_targeted_coverage.TestMultipleIdentityTypes.test_encrypt_with_ed25519_identity",
+      "status": "skipped"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_coverage_boost.TestPostQuantumRoundtrip.test_pq_inspect_shows_mlkem_stanza",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestTagRecipients.test_tag_recipient_to_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestArmorEdgeCases.test_armor_with_extra_whitespace_before_header",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestWarnDuplicates.test_duplicate_recipients_file_warning",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestWarnDuplicates.test_duplicate_identities_warning",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestWarnDuplicates.test_duplicate_recipients_warning",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestRecipientParseEdgeCases.test_github_recipient_gives_clear_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestTagRecipients.test_tag_recipient_inspect",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestSSHPassphraseKeys.test_ssh_ed25519_old_format_no_pub",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestTagRecipients.test_tag_recipient_multiple_encrypt",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestRecipientFileEdgeCases.test_recipients_file_with_too_long_line",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestRecipientFileEdgeCases.test_recipients_file_with_non_utf8",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestAbsPath.test_same_input_output_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestRecipientFileEdgeCases.test_recipients_file_with_unsupported_ssh_key_type",
+      "status": "failure"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "batchpass not available",
+      "name": "eval.tests.test_age_targeted_coverage.TestJFlag.test_j_flag_for_decrypt",
+      "status": "skipped"
+    },
+    {
+      "branch": "df88744325cf",
+      "message": "AssertionError",
+      "name": "eval.tests.test_age_targeted_coverage.TestMultipleRecipientTypes.test_x25519_and_ssh_ed25519_roundtrip",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_cli_parse_gaps.test_github_recipient_error_message",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_armor_roundtrip_large_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_cli_parse_gaps.test_hybrid_pq_recipient_parsing",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_ssh_key_with_comment_works",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_edge.test_armor_wrong_footer",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_armor_empty_line_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_recipient_found_in_identities_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_age_core_gaps.test_truncated_encrypted_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_identity_found_in_recipients_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_passphrase_with_identity_encryption_error",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Expected warning: duplicate recipient \"age1jh0u9yam5jhql7vy4acz90p0rhqcr0rcyu4zm85s9sdcwrs7rfgshtdg85 in stderr, got:",
+      "name": "tests.test_harvest.test_duplicates_02_test_duplicates_separated_by_different_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_armor_format_has_correct_headers",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_encryption.test_mixed_ssh_and_age_recipients",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_cli_parse_gaps.test_encrypted_ssh_key_stdin_no_pub_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_cli_parse_gaps.test_hybrid_pq_identity_parsing",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_armor_output_to_stdout",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_edge.test_armor_empty_line_in_data",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_armor_with_ssh_ed25519",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_armor_trailing_data_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_invalid_utf8_in_recipients_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_age_core_gaps.test_corrupted_mac_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_armor_format_base64_encoding",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Expected warning: duplicate recipients file \"recipients1.txt in stderr, got:",
+      "name": "tests.test_harvest.test_duplicates_03_test_duplicate_recipients_file_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_same_input_output_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires age-plugin-batchpass which is not available in gold environment",
+      "name": "tests.test_harvest.test_batchpass_02_decrypt_with_age_passphrase_max_work_factor",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires age-plugin-batchpass which is not available in gold environment",
+      "name": "tests.test_harvest.test_batchpass_03_age_passphrase_max_work_factor_lower_than_work_factor",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires age-plugin-batchpass which is not available in gold environment",
+      "name": "tests.test_harvest.test_batchpass_04_error_both_age_passphrase_and_age_passphrase_fd_set",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires age-plugin-batchpass which is not available in gold environment",
+      "name": "tests.test_harvest.test_batchpass_05_error_neither_age_passphrase_nor_age_passphrase_fd_set",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires age-plugin-batchpass which is not available in gold environment",
+      "name": "tests.test_harvest.test_batchpass_06_error_incorrect_passphrase",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires age-plugin-batchpass which is not available in gold environment",
+      "name": "tests.test_harvest.test_batchpass_07_error_encrypting_to_other_recipients_along_with_passphrase",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_batchpass_08_decrypt_with_native_scrypt",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Expected warning: duplicate recipient \"age1jh0u9yam5jhql7vy4acz90p0rhqcr0rcyu4zm85s9sdcwrs7rfgshtdg85 in stderr, got:",
+      "name": "tests.test_harvest.test_duplicates_01_test_duplicate_recipient_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_07_stderr",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_08_no_terminal_causes_an_error",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_09_noctty",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_10_age_p_o_testage_input",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_11_stderr_standard_input_is_not_a_terminal",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Command failed with: age: error: reading \"key.pem\": failed to read \"key.pem\": error at line 1: unknown identity type\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_harvest.test_pkcs8_02_encrypt_and_decrypt_a_file_with_an_ed25519_key_encoded_with_",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_12_prompt_for_password_before_plaintext_if_stdin_is_the_termina",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_13_check_the_file_was_encrypted_correctly",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_14_buffer_armored_ciphertext_before_prompting_if_stdin_is_the_t",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_cli_parse_gaps.test_recipients_file_line_too_long",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_edge.test_armor_line_too_long",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-rsa\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_armor_with_ssh_rsa",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_armor_invalid_header_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_armor_leading_whitespace_allowed",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_cli_parse_gaps.test_identities_file_not_valid_utf8",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_line_too_long_in_recipients_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_armor_format_64_char_columns",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Command failed with: age: error: failed to parse recipient file \"key.pem.pub\": \"key.pem.pub\": malformed recipient at line 1\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_harvest.test_ed25519_01_encrypt_and_decrypt_a_file_with_r",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Expected warning: duplicate recipients file \"recipients1.txt in stderr, got:",
+      "name": "tests.test_harvest.test_duplicates_04_test_duplicates_separated_by_output_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Command failed with: age: error: failed to read header: parsing age header: unexpected intro: \"\\n\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_harvest.test_armor_01_unnamed_scenario_line_1",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_scrypt_07_fail_when_i_is_missing",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_01_controlling_terminal_is_used_instead_of_stdinstderr",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_02_autogenerated_passphrase_is_printed_to_terminal",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_03_with_no_controlling_terminal_stdin_terminal_is_used",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_04_noctty",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_05_ttyin_stdin_terminal",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_terminal_06_age_p_o_testage_input",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "age-plugin-test is test infrastructure embedded in age_test.go, not available as standalone binary",
+      "name": "tests.test_harvest.test_plugin_01_encrypt_and_decrypt_a_file_with_a_test_plugin",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "age-plugin-test is test infrastructure embedded in age_test.go, not available as standalone binary",
+      "name": "tests.test_harvest.test_plugin_02_very_long_identity_and_recipient",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "age-plugin-test is test infrastructure embedded in age_test.go, not available as standalone binary",
+      "name": "tests.test_harvest.test_plugin_03_check_that_path_separators_are_rejected",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "age-plugin-test is test infrastructure embedded in age_test.go, not available as standalone binary",
+      "name": "tests.test_harvest.test_plugin_04_check_plugin_not_found_hint",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_cli_parse_gaps.test_recipients_file_invalid_utf8",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_mixed_ssh_and_age_recipients_decrypt_with_both",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_edge.test_armor_trailing_data_after_footer",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_armor_line_too_long_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_armor_with_multiple_ssh_recipients",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_ssh_ed25519_stanza_format",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Command failed with: age: error: failed to parse recipient file \"key.pem.pub\": \"key.pem.pub\": malformed recipient at line 1\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_harvest.test_rsa_01_encrypt_and_decrypt_a_file_with_r",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_invalid_utf8_in_identities_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_armor_roundtrip_small_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Command failed with: age: error: reading \"key.pem\": failed to read \"key.pem\": error at line 1: unknown identity type\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_harvest.test_ed25519_02_encrypt_and_decrypt_a_file_with_i",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires age-plugin-batchpass which is not available in gold environment",
+      "name": "tests.test_harvest.test_batchpass_01_encrypt_and_decrypt_with_age_passphrase",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Command failed with: age: error: reading \"key.pem\": failed to read \"key.pem\": error at line 1: unknown identity type\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_harvest.test_rsa_02_encrypt_and_decrypt_a_file_with_i",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Expected warning: duplicate identity file \"key1.txt in stderr, got:",
+      "name": "tests.test_harvest.test_duplicates_06_test_duplicate_identity_file_detection_decrypt_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_cli_parse_gaps.test_recipients_file_contains_identity_not_recipient",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_edge.test_armor_too_much_trailing_whitespace",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-rsa\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_ssh_rsa_stanza_format",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_ssh_ed25519_encryption",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_ssh_wrong_key_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_recipients_file_with_mixed_types",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_malformed_ssh_recipient",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_armor_roundtrip_binary_data",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Command failed with: age: error: failed to parse recipient file \"otherkey.pem.pub\": \"otherkey.pem.pub\": malformed recipient at line 1\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_harvest.test_ed25519_03_encrypt_and_decrypt_a_file_with_the_wrong_key",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Command failed with: age: error: failed to parse recipient file \"otherkey.pem.pub\": \"otherkey.pem.pub\": malformed recipient at line 1\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_harvest.test_rsa_03_encrypt_and_decrypt_a_file_with_the_wrong_key",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Expected warning: duplicate identity file \"key1.txt in stderr, got:",
+      "name": "tests.test_harvest.test_duplicates_07_test_duplicates_separated_by_different_argument_in_decrypt_m",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_cli_parse_gaps.test_identities_file_contains_recipient_not_identity",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-rsa\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_ssh_rsa_2048_encryption",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_ssh_ed25519_large_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_edge.test_armor_invalid_base64_chars",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to parse recipient file \"/tmp/pytest-of-root/pytest-0/popen-gw7/test_ssh_recipient_file_format2/recipients.txt\": \"/tmp/pytest-of-root/pytest-0/popen-gw7/test_ssh_recipient_file_format2/recipients.txt\": malformed recipient at line 2\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_ssh_recipient_file_format",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_github_recipient_removed",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Expected incompatible in stderr, got: age: error: malformed recipient \"age1pq1044e3hfmq2tltgck54m0gnpv8rfrwkdxjgl38psnwg8zfyv4uqdu63kk0u94ztt0q35k9dzuwgv405kxq6due2sre2kfsjftf7k2vz2mdpetku9pufy9d6ny6k5ss0cghpxdxrux0yd5xy40f8fu8ch9xn2rczyek2pqetqk0l9fqj0e3hfhkyfmcf9j6cpe5mf5stt9cymfq3xm276x4sramhn8srr42g78q9rkmqesevy33p4kdhkuggl99x9zx7j05uflx3s8q558xeaq9q9ctxqx52rzg6yffwykxngvxf7g3n83ddawagq2lnk59kcnexm54jrsmkjk9nemlge9v6p7fxu5z6yvq3ghpet8ww2c3h9fylvjx6j9njwz744376ap5r3xcpzh7qlk0kq3gknzfqhmxmjqypf6xz6geffdmy25apzsfr4ce0x825njkf62mgzx0x9n3zt0490u4dnt4468zse4zvd9sv0ycx2u2wsseuy4yymrg0nmfuxcwq9q0jykq7g5f59vunf95vnmcw336ksrh43fgapsd40u4227ymx56xtudtrte39twnq6fdfdj4p9pgx7pcqdk953za76fqcnvatx2cmywurag7ky4y8ecq5lvf25rydhxg6gmcn6vf78vtsqw79hp3mzv2u4v4jzn0nk50kl4gpv7k60cgz79c6k30jzy8dyetqtwg04tguxkv2p4hqj02yvsz2szaqdn9flu24rhth3v0t33023nwy27gt0x32eqpa5tpz6ygz3yzcsa3w889drpynzd5hlywuk9dwgafuax7upfnnxch4znrx4vactasg32u7vl886pxfswskk7wjgqkggrewtnaecfusl3nmg0xxh8e5nl5eft0xqwj5rk9ajn2j6yxehhgg5k6kpw5pk382hxmpu8wcd3rqx6m8905c7f8v0x2z9gyduxtqp2fdy9w2z4g2rrgu4d5cqes5tnwag007h2f326s3j9p6970xyd73rv5awx27zzezrax467c6vuye62ha88pzhw9xytjpezw3vg3l6x4k9rxwm9f6lwj6j7r9makg59rhgt0355s3jx9vw3raz5qdk5cnpny56q5h3dyd75suskuz63wmmfp9333tx4ry38vnh7jxy0j0cka99y7v2dmyjldjy0mqjetcefsmmg3pw0h9ll0rtskpmxz2cs8vmx6lu4v5rjtzpzgaqt46cwvnmhy5e3ye0tv6sre342lwg0tfd0yjkfz2haqc3hprpqf5ce8c9lx076dnk5cukn3tu38jgprrxt9sk9nqzt8grvkc4qzlg8jjf638v07ej9cf4eu48kphrgyjy83qm822xq8v9k22zwa7txr439x74j2f9ay7frkwtfdwn02enyx8stjpr4wgg25n5tj7uxyx0dqt3hnrqf7dcgt9fqnkjgemjfzyck6pawewptcayxm49sq3477f4cvm2p8fmg27rcmwm5l2vmzvdmymvkrr3aywu04y3zlhs7awu3r9u9lseheqpffvm2xf8y6w2qaj9g22pcu0sdsnqseusrxq9awru5lyqxnzftlslgpe3njegxkze98rveswp3u0xgx69wkg38vgp4k55lwwgv5l7ccv503mh9q23nud4xtm499xq276u40rxyrzaqfyuz2f3v5qr2vq00xs4g3ruynmq0c6nprvjcwqc5zrdn4cnzeeuwumjvqfjdpxr739n4cqcwytc8pjmfcj2qs3l2a8p5fzq7nvtng2jvvklx0x5ypnlkeuegsm587f6d4dkwel2es0lwwt88y2jdg8enjyph02tnjyndlx34h52fngjk96ggtu6vcxqkreqcxs4gwa8ww40t0kzlxfzyfhtjmfdm5fcrr\n[truncated 142 chars]",
+      "name": "tests.test_harvest.test_hybrid_04_cannot_mix_hybrid_and_x25519_recipients",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_encrypted_keys_02_age_file_password_prompt_during_encryption",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires PTY interaction - encrypted SSH key needs password from /dev/tty",
+      "name": "tests.test_harvest.test_encrypted_keys_03_use_an_encrypted_openssh_private_key_without_pub_file",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_scrypt_01_encrypt_with_a_provided_passphrase",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires PTY interaction - encrypted SSH key needs password from /dev/tty",
+      "name": "tests.test_harvest.test_encrypted_keys_04_e_i_with_an_encrypted_openssh_private_key",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_scrypt_02_decrypt_with_a_provided_passphrase",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_scrypt_03_decrypt_with_the_wrong_passphrase",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Command failed with: age: error: failed to parse recipient file \"key_ed25519_other.pub\": \"key_ed25519_other.pub\": malformed recipient at line 1\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_harvest.test_encrypted_keys_05_a_file_encrypted_to_the_wrong_key_does_not_ask_for_the_passw",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_scrypt_04_encrypt_with_a_generated_passphrase",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_scrypt_05_fail_when_i_is_present",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_scrypt_06_fail_when_passphrases_dont_match",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Expected warning: duplicate recipient \"age1jh0u9yam5jhql7vy4acz90p0rhqcr0rcyu4zm85s9sdcwrs7rfgshtdg85 in stderr, got:",
+      "name": "tests.test_harvest.test_duplicates_09_test_multiple_duplicates_same_value_repeated_3_times",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_edge.test_armor_leading_whitespace_accepted",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-rsa\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_ssh_rsa_large_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_armor_file_output_identical_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-rsa\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_ssh_rsa_4096_encryption",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_cli_parse_gaps.test_recipients_file_with_unsupported_ssh_key_type",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "age-plugin-test is test infrastructure embedded in age_test.go, not available as standalone binary",
+      "name": "tests.test_harvest.test_hybrid_05_convert_to_plugin_identity_and_use_plugin",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_multiple_ssh_key_types_mixed",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "no pty support",
+      "name": "tests.test_harvest.test_output_file_03_url",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires PTY interaction - passphrase encryption needs terminal input from /dev/tty",
+      "name": "tests.test_harvest.test_output_file_04_url",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_input_before_flags_unsafe_shell_chars_no_suggestion",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_keygen.test_roundtrip_pq_key",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_ssh_ed25519_binary_data",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_empty_input_with_armor",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_ssh_rsa_too_small_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_duplicate_identity_file_warning",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_internal_modules.test_stream_header_corruption_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_internal_modules.test_stream_trailing_data_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_encrypt_with_ssh_ed25519_key",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_input_output_same_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_powershell_crlf_mangled_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_parsing.test_recipient_file_identity_key_error",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_empty_input_with_ssh_key",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_armor_ssh.test_multiple_ssh_recipients",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_ssh.test_ssh_public_key_format_validation",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_stdin_conflict_recipients_file_and_input",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_armor_edge.test_armor_missing_footer_eof",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to parse recipient file \"/workspace/eval/test_resources/test_parsing/recipients_with_ssh.txt\": \"/workspace/eval/test_resources/test_parsing/recipients_with_ssh.txt\": malformed recipient at line 3\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_parsing.test_recipient_file_with_ssh_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_encrypt_with_ssh_rsa_key",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_binary_output_to_terminal_without_armor",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_powershell_utf16_mangled_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_parsing.test_recipient_file_invalid_utf8",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_parsing.test_identity_file_invalid_utf8",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_stdin_conflict_identity_file_and_input",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_parsing.test_identity_file_recipient_key_error",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires PTY interaction - encrypted SSH key needs password from /dev/tty",
+      "name": "tests.test_harvest.test_encrypted_keys_06_use_an_encrypted_legacy_pem_private_key_with_a_pub_file",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires PTY interaction - encrypted SSH key needs password from /dev/tty",
+      "name": "tests.test_harvest.test_encrypted_keys_07_e_i_with_an_encrypted_legacy_pem_private_key",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires PTY interaction - encrypted SSH key needs password from /dev/tty",
+      "name": "tests.test_harvest.test_encrypted_keys_08_legacy_pem_private_key_without_a_pub_file_causes_an_error",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires PTY interaction - encrypted SSH key needs password from /dev/tty",
+      "name": "tests.test_harvest.test_encrypted_keys_09_mismatched_pub_file_causes_an_error",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "requires PTY interaction - encrypted SSH key needs password from /dev/tty",
+      "name": "tests.test_harvest.test_encrypted_keys_10_buffer_armored_ciphertext_before_prompting_if_stdin_is_the_t",
+      "status": "skipped"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_parsing.test_recipient_file_unsupported_ssh_key_warning",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Command failed with: age: error: malformed recipient \"age1pq1044e3hfmq2tltgck54m0gnpv8rfrwkdxjgl38psnwg8zfyv4uqdu63kk0u94ztt0q35k9dzuwgv405kxq6due2sre2kfsjftf7k2vz2mdpetku9pufy9d6ny6k5ss0cghpxdxrux0yd5xy40f8fu8ch9xn2rczyek2pqetqk0l9fqj0e3hfhkyfmcf9j6cpe5mf5stt9cymfq3xm276x4sramhn8srr42g78q9rkmqesevy33p4kdhkuggl99x9zx7j05uflx3s8q558xeaq9q9ctxqx52rzg6yffwykxngvxf7g3n83ddawagq2lnk59kcnexm54jrsmkjk9nemlge9v6p7fxu5z6yvq3ghpet8ww2c3h9fylvjx6j9njwz744376ap5r3xcpzh7qlk0kq3gknzfqhmxmjqypf6xz6geffdmy25apzsfr4ce0x825njkf62mgzx0x9n3zt0490u4dnt4468zse4zvd9sv0ycx2u2wsseuy4yymrg0nmfuxcwq9q0jykq7g5f59vunf95vnmcw336ksrh43fgapsd40u4227ymx56xtudtrte39twnq6fdfdj4p9pgx7pcqdk953za76fqcnvatx2cmywurag7ky4y8ecq5lvf25rydhxg6gmcn6vf78vtsqw79hp3mzv2u4v4jzn0nk50kl4gpv7k60cgz79c6k30jzy8dyetqtwg04tguxkv2p4hqj02yvsz2szaqdn9flu24rhth3v0t33023nwy27gt0x32eqpa5tpz6ygz3yzcsa3w889drpynzd5hlywuk9dwgafuax7upfnnxch4znrx4vactasg32u7vl886pxfswskk7wjgqkggrewtnaecfusl3nmg0xxh8e5nl5eft0xqwj5rk9ajn2j6yxehhgg5k6kpw5pk382hxmpu8wcd3rqx6m8905c7f8v0x2z9gyduxtqp2fdy9w2z4g2rrgu4d5cqes5tnwag007h2f326s3j9p6970xyd73rv5awx27zzezrax467c6vuye62ha88pzhw9xytjpezw3vg3l6x4k9rxwm9f6lwj6j7r9makg59rhgt0355s3jx9vw3raz5qdk5cnpny56q5h3dyd75suskuz63wmmfp9333tx4ry38vnh7jxy0j0cka99y7v2dmyjldjy0mqjetcefsmmg3pw0h9ll0rtskpmxz2cs8vmx6lu4v5rjtzpzgaqt46cwvnmhy5e3ye0tv6sre342lwg0tfd0yjkfz2haqc3hprpqf5ce8c9lx076dnk5cukn3tu38jgprrxt9sk9nqzt8grvkc4qzlg8jjf638v07ej9cf4eu48kphrgyjy83qm822xq8v9k22zwa7txr439x74j2f9ay7frkwtfdwn02enyx8stjpr4wgg25n5tj7uxyx0dqt3hnrqf7dcgt9fqnkjgemjfzyck6pawewptcayxm49sq3477f4cvm2p8fmg27rcmwm5l2vmzvdmymvkrr3aywu04y3zlhs7awu3r9u9lseheqpffvm2xf8y6w2qaj9g22pcu0sdsnqseusrxq9awru5lyqxnzftlslgpe3njegxkze98rveswp3u0xgx69wkg38vgp4k55lwwgv5l7ccv503mh9q23nud4xtm499xq276u40rxyrzaqfyuz2f3v5qr2vq00xs4g3ruynmq0c6nprvjcwqc5zrdn4cnzeeuwumjvqfjdpxr739n4cqcwytc8pjmfcj2qs3l2a8p5fzq7nvtng2jvvklx0x5ypnlkeuegsm587f6d4dkwel2es0lwwt88y2jdg8enjyph02tnjyndlx34h52fngjk96ggtu6vcxqkreqcxs4gwa8ww40t0kzlxfzyfhtjmfdm5fcrr5pt2xm4yslfynr0h9\n[truncated 125 chars]",
+      "name": "tests.test_harvest.test_hybrid_01_encrypt_and_decrypt_a_file_with_r",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_encrypt_with_multiple_recipient_types",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to parse recipient file \"/tmp/pytest-of-root/pytest-0/popen-gw2/test_recipient_file_with_tab_s2/tab_ssh.txt\": \"/tmp/pytest-of-root/pytest-0/popen-gw2/test_recipient_file_with_tab_s2/tab_ssh.txt\": malformed recipient at line 2\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_parsing.test_recipient_file_with_tab_separated_ssh_key",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_wrong_password_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_duplicate_recipient_warning",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_parsing.test_recipient_file_line_too_long",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_empty_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_passphrase.test_passphrase_work_factor_boundary_values",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_armored_input_with_leading_whitespace",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_parsing.test_identity_file_with_ssh_private_key",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Command failed with: age: error: reading \"key.txt\": failed to read \"key.txt\": error at line 3: unknown identity type\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_harvest.test_hybrid_02_encrypt_and_decrypt_a_file_with_i",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_passphrase.test_passphrase_multiple_recipients_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_basic_roundtrip",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_passphrase.test_passphrase_empty_string_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_very_long",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_main_gaps.test_duplicate_recipients_file_warning",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_passphrase.test_passphrase_neither_env_set",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_binary_data",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_fd_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_max_work_factor_enforcement",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_mutually_exclusive_env_vars",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Expected no identity matched any of the recipients in stderr, got: age: error: reading \"key.txt\": failed to read \"key.txt\": error at line 3: unknown identity type\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_harvest.test_hybrid_03_encrypt_and_decrypt_a_file_with_the_wrong_key",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_corrupted_salt",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_multiline_with_newlines",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_special_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_work_factor_default",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_wrong_passphrase_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_file_format_stanza",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_armor_format",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_fd_no_trailing_newline",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_invalid_work_factor_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_large_file_encryption",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_special_chars_in_passphrase",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_corrupted_work_factor",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: b'age: error: failed to wrap key for recipient #0: batchpass plugin: couldn\\'t start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\\nage: hint: you might want to install the \"batchpass\" plugin\\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\\nage: report unexpected or unhelpful errors at https://filippo.io/age/report\\n'",
+      "name": "tests.test_plugin.test_batchpass_encrypt_decrypt_roundtrip",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_unicode",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_work_factor_custom",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_missing_passphrase_env_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_salt_uniqueness",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_stdin_stdout",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_passphrase.test_passphrase_mutual_exclusivity",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_plugin_not_found_helpful_error",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_empty_file_encryption",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_unicode_passphrase",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_stdin_for_encryption",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_plugin_invalid_recipient_encoding",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_very_long_passphrase",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_work_factor_adjustment",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_max_work_factor_enforcement",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to wrap key for recipient #0: batchpass plugin: couldn't start plugin: \"batchpass\" plugin not found: exec: \"age-plugin-batchpass\": executable file not found in $PATH\nage: hint: you might want to install the \"batchpass\" plugin\nage: hint: visit https://age-encryption.org/awesome#plugins for a list of available plugins\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_passphrase.test_passphrase_large_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: malformed recipient \"age1pq1c935lrvmxlp4gkk7ja48kd54hgqtusj623z0rwrtyfv0fsjma0g8mkmmqsf3h97mevlmc92hhayk0lx6t6wtk6v6q9mm82jrzgvyhzpkjxvfpf2dc35ykuyv6c95c89r5qgz2ac57xxf67n0dwqfzjuyn6y5s7mldj3d5gg5xymnhjvs46rvc83acy8gwgmfvmnk6sd2sufnwzma64l6fj7qrp2h27fx8wterwpdvpaxrd5u3mrr95x44ffxs25p9qup4gjrmvqs5n3x5q702ecmu50epwsx7ftxas73nv2lvmshkkluuy4e65qe3kkf9pptwp0cv9qmfuznyassu84gc9meyu5pz2edptztvmcjj84gscacj6k2fqtuxjyhc29hxmc33n82xw332rrsuceyn3xya5sup8uehparrny2xsx8wfay2fj3tmt0ktncty3jqjnzf7cvvj0qrr4eenn89d8r9j2ajadu6axk4u65wrk9cfzwc09e3f34e4d6twj0tg7mvd9y58qgra9n7sgn383u2lm62duzjusnwkyspavs385vspzhk3fjs9tuqqe2p4gqfu6h2s08y5z9a2v2knagdna5sn65t0x7nytmm9wtccsf29zfhtmud9ztg3e9969g3ztk79jft6h6cpmvc6ngeytnv3v3gkf9dpmunxw2j2sk52mgh45gckveen0w2tu52cefx52gklrqq3egsq2tfrre39gxn7ruylnhcr5edvvyjsxjt9cuzeaqmmmgsxry9wu3nymgu7y3hqp0sw259m9n07pn5gfayuv2e5u4al3ftfh34u84v6zjqy8um99c76fmljzhjynw3d4vsztc3sca4jtrplvscvhpsdgtdxz60kdrd89m977cw4gewf4xu6xuzxaxj2f84clmfqjwc4q7u0ywjdjf0ng9403jc0trv2dcnqlatse3ztdz98qm9vgsvlv3z963ukw06m2pucq8xc2m2wxdsyvmud3vfmp3c9xnzn0ykesnrpdf6q6zk6zg8apg9xj5efgclfhwnzfs6vyxre6m0f942xeuapudv09sz39tjeuryxzt5k0ukuq2tqez26s2wvhvrn93d90uhvgh8mrw7a265svm8e0zpzyesg5qjsczxl2f7wrsvpxmqu0zw3fd9egk5g2huf3uwp9mhwna2d4du4pe6xwrvnk6w3g0v5h5j3l8dzqw2a7yktpj3nm45efj8wsclkqsvger9rrjq973qt5a9xxehptm0znm20kp0vlszkv9zwrqhzfnzjtgan5mpx6th2dluv349tr648ns0e0zeyyscx40jq28aygxrlckeysz2ah9kmehmqd69kclkk9gs0qj9vgyvsw6zkw3zkehc9atw9mr5yvyf0sheprkc5q5c9nnqdgvw0w522n3lznmsap42n63hlsf5typrd7qgy9npzzn5jn4spjnws2ce39qtjqxtgtwh2sjnyv5g87s9wvqffvyuyvv3m2vakrsguccrfyfkx6362atecacch3e9z6rgrke9yfu5e2f7xfc9y3s3l6lwnaj8y9fypv0edj5u3rtnn7wgz58scasz5vnx9a20fdxjtppjgras75ewaernyw2hsfqw39wxwfyks5masmjm0u4mprqx7u8gedxtjxufx2zm358nshv96qrynznwf9zxusff2shv3g45hqjtfux039lwzfyj0ae5zwq9sz7ezkxaqvfxcvzd3q3cy24pgkdqnxchpd4pkuawljusly3v2ekvcapmj0wp7fvy6zvm8htp362rjlul9gdkfpj4ja9wy9cp28c9qyzaj9uz9g3v6e8gyn6g940uvelgfyua8xhw5j3s5ngq2r6hylm9a3tx4uyuyjy4qj8uqlhjyrn8m096jkzsfnp9j5qg47tk6qw9s5qrqzu\n[truncated 104 chars]",
+      "name": "tests.test_pq.test_pq_encrypt_decrypt_roundtrip",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_recipient_string_for_identity_based",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_identity_to_recipient_conversion",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_unwrap_without_matching_identity",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_multiple_recipients_one_plugin",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq.test_pq_wrong_key_fails_to_decrypt",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_plugin_with_dash_in_name",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_file_io",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_done_stanza_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_not_found_error",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_protocol_version_recipient_v1",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_new_identity_without_data",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: malformed recipient \"age1pq1ux58053329wp2dynryvjac6rj7fsurpy25ucql5rwgqgc4gh02zpqu6np2jcqxzlayr6cpkxahj2gw7mqmvncpjrvnyun5fjk4d6naheppkyq7823yr79nzavvus74cm3wtx8r9tdjs65gs8v5eky7djqyhgwwt8dzckwz4avx654perqndwewj88x4av2zau5r56gdg4jdc5xtmxcg7tggmj7398tkrpcvlcs0j23lw22qdpzmztxv28gha4tg83fuwrk27hjmr8526d03a5fshjs60nf28ygrhvcj9jaapjr455ajdygtjwayh48fqrsghhvztw9yhxedup0ycnlrpr6h3tvx3wd89xjta3y442ta2grezcfgpa9dqp63wtq45lhlgzc79c54p2kppdf3rqgzs5rmfg8x5w9ekxmx53qdj5crg0jjpvl79v805canvdlzsptnyz6ugjwqdrjjwjc7qdpqmc3jgtjd8wsqcxvek764a4wcjsj6944dkgvgczqw8e3pem8zv8wtfdw8ck9rj5ndm4tq3qgw8w7cc2l4prnrvh8jq6aw5mg34p3g2fyu4e2uv2gyxxxd2239q2y6skps4q8my25kllwa200ypmtp8np793ys302324s9ark37wadu2ptxclgfyh9rspf80urmdeyj72j4c4t4gcf7qnqx4540szz2km2ftzteqgmar2j4u0zmduzhvqj6x06g030q54t9s9ycphjhcaj5ksvlguek6xg07fn85gj30gvtq4jljskhffzl0aze8s69tfe48seffseawkpcfcq5zywv8p9h2fmttvwyvyy09z622kx2eewqjm3658we73cr7323w2jc53h5cesuz4dxjuhautyg4yqpy8k2vhev3q4uu3lad9yt0r7y8uytfszt9xc499cltaug98js7k5rv9pmx9frysh5fkjet0ghm2fp04w6f8ply9dm65gv00d8ja0vkdtvc703szg6n7g4dvfcpqnvru0hzj59jx099za2v63m6ffnndna3qepzagfv6j077g6gwern2xhzgscjfqjpg39x323mfwuv0szj8ww8zkc33na27tr3junh83x43f82lxj94e9atggj0lzhqkmgftwd2v6j7vzd7ucwu9rjgg89qk79drmgvml9e9z062yr4ayxpq5mqu799qarpsewpnm0dztdyf32sv2kf3ynfpqy7uptuk7sjft5kwdc4ytxezgqmek8wn85p9wyy9c3r920ujuut0hvgp3ccs8wv07zd3cnd9gxcyywu9ucq9z9sqj39qd0nqplr6y9dd4eqngfxve97z88ef25mh928xsvf97nrz0s6fnau9ynzuhv0ta50fwjw7vzaxr8q6gl47tfdnt8yg00sdxl6a72ezm2ln2h2fezwyhzvks5ac3k065af35j7zmc98vs5uxhxp8lvxt02f6c8h0hz4hgxeyrjmf3ks6ltngr058g3xaevcy327vd0fnvxqyely409ltvcvgkdz0xtj53vt3fxal4wwskyt4csu9e4rnpwh98lzv8szdyz84rv5yrj9ujs7npn2g8ts36uuwaftnp6vy44j2kz0nsnqwxf84wjfr3d3hn24rqppqd9j34gxwupdr3grvcvkske9fxhhdmw2sxzajputgdx9ff5wy2442d2gql0p443j6lyh63y672l7a7nq4sj7q6hd4t3aydf8zcq6t8j2sx2txpprklrh9hekv2mgfqxr8r5vsct9juhs4w2za5w0qcyx44xkym2em4xvxghhnfn23txp04kfz6efxwz75z4gqdfvf0d3wm9dwxnd9wwv3vesk683hr26t4jh8sh7vutdx8k7drsemp32uw5u5hzv7cs65zv8vxrxsqfrgtpllw3vurum3lh9mxav6aawn96md\n[truncated 104 chars]",
+      "name": "tests.test_pq.test_pq_multiple_recipients",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_identity_name_method",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_wrap_with_labels",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_large_file_key",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_extension_labels_sent",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq.test_pq_binary_data_preservation",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin.test_batchpass_armor_format",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq.test_pq_recipients_file_support",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_ok_responses_sent",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_recipient_name_method",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_connection_cleanup",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_protocol_version_identity_v1",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq.test_pq_cannot_mix_with_x25519",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_identity_string_method",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_plugin_client_gaps.test_plugin_error_propagation",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: malformed recipient \"age1pq1d9z3egz4j7hl3ytdnvfd9du26xaf84pcx20z5zq3zmqsxqdfnpxplcughc6025zk7g7dq3ulx3wvghuthq5z3303shy2q0x9ld4gv39xzzzp4dh80j4u9kd7y0mcldu8d65r3y0jt0x7r3d69vz2tpeftkrfv6vjext00fut9feu3zhxw4pjvf2xs7vs4dyervjzkk92r2ac4nfx3pfpluua43cnvh8twxlfvrfvd99w6ecudhu2hm5j0473zws2xy684fqnfmppmn02plj6c0pdav4gj3kqzw4etyncyzus82j5a2cskd6elndh2gdynjyqwqxhjp54y2s5ehruau6mpyvxxm352cjujddus7peasnvzmduh0zuwmxfw4y5csrxes5gxas3g4g0wctrdk9sqkwvdefzggsfz7jf8dwel5pazkxg53xxdhax80qy5urdwzqkg02glfqyeerfv2lfjvnmq2zmk2mcqavmzfjreppe6t8vh5deunyvqjzep374yfgm09sv99y62vp2dm6jh8qcdnymjg3afsc38ee5hq9sg3fhk62j6c7xsum8nkngyc9u4c8afyvtndphllzt67u4suwzcgarpfe29w38hydwqj6h9lnne0ythwa56qkezaeft2vfqgjzpwzt3p28j963c47ftqzy7yc92d285v6yfvm2jjckjrpg3e98zeprt84k3qxwxj3ukswgye4hknpswgttz6pyxu3p9vd6wdqhkyx7twn4ldngdvqu6gkvy49tcesk3tzgyav72ey80qeegatyhp2ewhqagry0mc2qhye9u3f4taz5xsjk33e8x47g8jjy9t4hcry4vav5m2sqw52apt220lfvhwjz4wa9cqldxzeu9d5hws9s2k9ut98ytwa9gpjpz9ee4kkckfe2pj9kjvj5njsvsutq290xzpaa896gwyrcq5mqysprvsf6qq3zqk5s02esuq3cpj94h69tweh6xasfqsh92qdcl4f3d2aerraddfet7seue3ca5xn6nmm92p642y8ktg9f5s4h8gg6drqqxzx3xhgg0x2xua2h3qnfrvk3pwmjqgrxtwdtuu5umngclj6xkt84nq5xpytrhkgh8243t75pvxjzrtjl49u4yfenhy5j4p6e0qjjx8ktgfuwqafud7cjynxxqthazgrl92gmffayjncusvhuv3e826ju6ukzzynpvfpk094y8e6v2lrzvks4gj45j4y83cvz4pnkwk5fhg9egctr2hfn797jh5z23v4gyeceuamjw8u6xw8ysa8t30g8x3aqa6v7j5ekt89mp7wekpehfxhg0p96elr44wa3dy2ugw5cvvuut42g24qc6a2vqe8zkskdawc6f6nk7kgumztq3xc8vd95yqk7d3zm32k2pjtpfvdr5raw2wl4wmpef2n27ngmvlaa57qak4e6k9pnd256uj3yr5zqt2h76yz2ezktv3q5h0n6jt0lxzyh7lqhtmqkgsp52tt60d3js2u4x7vv862kjndcnapyyx3cyn6wzqyyzje68jwz8tgrdkx68da2yjy5m2uxntjyengptsyttv8xqg02yjv337jmr06mpl8cqr54s2xqsw6gr2ctj3sn4j3htyr55y6hhap48jmgawshqalechq3z4vpzkf2tcmguwsu0haq53xqz973ss22vuqqxugrkg7sht4wwlxhuf7wy95nyjsgzgj9c0tx54decd3n7ft9fhfuh8effvz7v8pxkjej9f4xcj4rg2qdqnazp9acg99pez5hdgqq3gdvgmuz93fd8h9s2psq3v252uwsjerux5puhcnj2jyr65sffrlwkyjyukyyqqawmwnvtfsyzv8rnstkltrhahq7wafmm3cztmjm4cmmddg23794uqqf8cfpdkchl0n2amuhm8ey\n[truncated 104 chars]",
+      "name": "tests.test_pq.test_pq_large_file_encryption",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: malformed recipient \"age1pq1x4a40j62w7nwj33zgecgfashcprzwsnz46fmvd0awxecu8pz39jzfcdt9q6sdzluyrrvyxu9vyatxyknp0zdka4f6g6gsh95peprlya494efrzau735un8x042yu8cfstzs6ppeg7fzjukj2l22vutd9r3clcwg95y9wgfykazek3ndkgjandxhu4nxnu4m7qvs6fjn5zffudtvsj9z226tsvgah60r2djt4kl4762decctvan2u6cqnsrxlsu0gz8qmhj497z5tfxpcfsvztsealf0qeu66huccrmn3sl959xls9zcredr3k5q8d3ntydrqx3fq8rqaxk9wcyfq9c05ttvs0svsl39qjq4kzadftqlpxeu58xlmxuuc7uz23lfzecty9my22hhwvq9quaguu6mmftgkw3mdxz7trqc0cp60gayfyejtquv6v3xwmgjevx59s7jnxme8yntmdpnm93e06qje955xeah8q8979wye2pyjlqtdeevgyk3gxru5hrd3wwqc0u5vpy55pq7fzffg5a39tf30ldthdqyeesscqmyejgz22475d33089utdszerp6usna8jjlrqexgwy927vh2jvzq3qfg4vzqapz74uky8h453ntzxsprxz7zx5p5fggm5e29hjs7j4a96h94ns9uvtz5kzvhhx5454dz6w4w78yy7k7vwl3386d0xvqljy0wdeeg5kc3nt050mfl2k3hhv7v2zrzwqphd4rehxndev865qp76zahtarvhnjhhfku8pqyqxgx3w6zhlpz9dpxwclcyc9z0scvc56l2pfrwdu5vaqjswl5zwevjsd7dgp3udkksk3n2jc4qtr8l6zhpeujdy6x4cuqk3x45p3jp3yqh9c63s0uprm3rrxfkczt7zdw775qr09phf2gcgzffg07g3mxv87rkwq9xd7kdx9svpdk42e8x39nulduxf3pxccgmnxyvwf998fk6p4vpgv0xtdywf7grqqqf334uz7kvwpkglc6mpn66g70aa2t53zc5j9vzruj7eqtqxgg2hu4vuhqv62pk96pcwmdl99jjpetcex58cudyhwncp2hmjacgvng07r99zs7c8yvqac49ssrrld52vef40r0c0rxpsfvvfyf0xw2yfeuel5hzejt3sjg9xzgmxzuedlzvn08zp5z7d2vnzs5e6ayux5rj05rg5el6f5mf3enytj6lqxphq3ktv27eqkr7crpl5fj97qjhh4cpdxtxpszwazezhevg6d9d39xckh66yj79548cfss3s3xr57ccepcgzru8jrw5mye6kzcc6a25pw63x0cxfgkjwar05xgqx2jw48dgryu25afg9smtjnmv7eq4yk56zyggj5lxnem0ztq3a66hy8pzzdgddr855zg000623axyxm2ewgxt9qu2ttqcgyvc6h6jqxfvq09m6puncqzq62mzz5sqk46j9g6k6rnwnk9crrgqz7rrp44gwmpj97v6ecj8xwrkvydy6ry27qvu9vax4ysmsq5zcwexrpwn2dmjjx2wh2s5a6tgmhfgdf4037sn9jlem6s6defclftfymwj39u8g4kh8y8wgq65m6px2yyuewq0gsssjrkt3khh20t5nw06c44kx9mgse6mnkfz5mmrsh96qe25wfsd9ah6wvrqa2tfnmnnygptcrnrgtc2vm89upwfxz2cwy4c2rdz3k2x4sy5h4rfsyzxzfdg3s74l9xeufcre02g4fsxsgu4gkw5mp5ka86klq9fqecjeh3w7k8y8vc4l0pj8nxz4ryzsrrkvmkv23pme8qtkrsewu3kqexzrj2cs7yz9yssztk4hhn4gaemzyyn2zf2p8lffct4h5r3ggyrh6nv7upa7jcaxhnyuzfvagczjw2gr5ffjuathkk5jl7jk6506gj\n[truncated 104 chars]",
+      "name": "tests.test_pq.test_pq_stdin_encryption",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq.test_pq_key_file_with_comments_and_whitespace",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq.test_pq_multiple_identities_file",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq.test_pq_armor_format_support",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq_gaps.test_pq_identity_wrong_prefix_AGE_SECRET_KEY",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq_gaps.test_pq_identity_invalid_checksum",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq_gaps.test_pq_roundtrip_with_recipient_method",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_primitives_format.test_format_base64_body_line_too_long",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_primitives_format.test_format_footer_with_multiple_args",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_primitives_format.test_format_stanza_arg_with_control_chars",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_primitives_format.test_format_stanza_with_no_args",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: malformed recipient \"age1pq1ge2veul4pr5yrfd7v299g6ej8dk8pz25q58x25femzklfyqs9qe6k5p6vv5fnf8zy4aeyxul4pajf24qepycyp0ewax0989zz325898uf5a6vepvz7sq0zyvu8au9dt59qulrnxhapweudmyhp6g3vzefq0uxx55yrzqsqu6979twxy59f3wyrtju49vs2ncrw2cwms6rrem4g038jj875q9whjjfern0rwxsjd8hd9xpgplujvjhplyplxfzsg80fv94xcdx9msjwdgp53qt2wqjjsea6gpq3myc4ncsrqhvxgcsvsqwpukh2p9ahmkpytw40ttefeuzefympvpdjjuzfpg4wjv5css8ctcs3rrqwgtv0pmrq92rgqu67ef47pya7nerzdfz80k0scnyctu8sn3lqvngfy2sse7gflpep463fay535twujtq5hsxlrm3kdkq3nsm2rury6vvmuju5d08enx5s38sq59te7sgua2fsx0elqfltaycku6dy99gwmtyctal5u8vqq63fjp9vf5r8qnxxm3zy7p32x8empvsyygdgcc39k65syfln4ee53u8gc0z3c4t08w55tjs8t60vp9ja32whh4ks5d7kx9tame4yzuhddn4vs6afqp6aaza29vvllqhrr0wkw6zztvxn90j3fmk5c6h4n3z2jace8dsy375pxz6qjy5ml78za7gv6qa23vqfyfjwyhxxjs5wn8j2t60uup5umkgqjjhrwkwccc63t22cudyt2j6qlqh7wpquj3929py2g8a0rk5plyj6dz3sl409xy24jd093m4cgrdycztjevz9u6s2zpx3rfz59rwaems6ydgkrttu39ts2ras35faqhkfuh6acxtwqa2wrxupuxckgyy8yzkw5dhvfgnxm2uevgxq4ze3mnzfq42j3axrrg9x5f9nqf498gkce4wsq9tfyr0gh5jlp0kn8t79gkr25xttw9xrskj6sq5tntskvcfdj4axmx0mkxr0nqe34f09v79c4xuzfp00kuxwye5egmrfy5qzsy9ncn6pfc53vpwt2pfj0ram9x22gejz2483pxnz4cq4l47qyha7kzzq92h9tdwxx4jqmmdg3hqlrgrz2f2frvjerdkcww8zgfnhsxl7j3z4h0ffm7tzxnypgrex4v3ty2nm6x2pvmtp8829anxzrzve8c8uvp2p7e8wz86s6mj7nq0g88y4ss8fwfvwju6kmyu24hssygy3hxypep088j24wggq2yumpkdq6u56qgswex37fh37ss9vsfnmjah22257x374nltxdjzumsffz8cu6xlfkc3wutw4e6ezfet4lfzj8zs6cx7stgsc34vz2cd66jju3z7zyfdj6svmvrdastxwdchfr0nq693kdyl3umhkhgzs5cjvh7azfrqu69g44h92nps37gyn07wukvggfhplfk46ufqjfakv2fxslezcpxulghc3qunxjuva4632p8akg44dneu9kgpqlwg69dq2kch2s7n9tr43jy0q5xkffqlgay4uujrqvpvlmqvcdsjz5znz3jpcz6fg3ulujzx3cm434slpstxxdmkmg5fvutw984gjvtgjtwmg4qnkefx9zmws6h5dezvkksefv2xq2pdycp54xuj3ex6s925eqxkamvc6qj48u6p2yqrx7h0239z77t6dq33uru8r6tmtyl0pmnkgm52uwmzflsgrtrgzv6lsdd2cjn3xaef6dzc0ml893lw8quqxan5euqyqla3j2m6zuyvwyhm4auf3axp3uphsg6fdkk96eg7l6kyv5ypefa2z2lqxth3utxgtdrgzdlqp8qmhunueqtdyg2uv7udvks4au8e6y0kcyjtm4fgfr9f4e506t5h9evn5sppcx0a73gmw2hthtcwsypqvhyuy8g\n[truncated 104 chars]",
+      "name": "tests.test_pq.test_pq_empty_file_encryption",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq.test_pq_stdout_decryption",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_pq_gaps.test_pq_recipient_bech32_decoding_error",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_primitives_format.test_format_isvalid_string_boundaries",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_encrypted_keys_gaps.test_encrypted_ed25519_key_no_tty_error",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_encrypted_keys_gaps.test_encrypted_key_wrong_recipient_no_passphrase_prompt",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_encrypted_keys_gaps.test_invalid_stanza_missing_args_rsa",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_primitives_format.test_format_newline_in_base64_body",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_primitives_format.test_format_stanza_without_short_final_line",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_primitives_format.test_format_stanza_with_empty_type",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_ssh_hybrid.test_x25519_and_ssh_ed25519_dual_recipients",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_hybrid.test_x25519_and_ssh_ed25519_decrypt_with_ssh",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to parse recipient file \"/workspace/eval/test_resources/test_ssh_hybrid/mixed_recipients.txt\": \"/workspace/eval/test_resources/test_ssh_hybrid/mixed_recipients.txt\": malformed recipient at line 3\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_ssh_hybrid.test_recipient_file_mixed_x25519_ssh_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_primitives_format.test_format_decode_string_rejects_cr_in_args",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_ssh_hybrid.test_ssh_ed25519_without_comment",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_hybrid.test_x25519_encrypted_cannot_decrypt_with_ssh",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_encrypted_keys_gaps.test_encrypted_rsa_key_no_tty_error",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_encrypted_keys_gaps.test_invalid_stanza_missing_args_ed25519",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_encrypted_keys_gaps.test_unsupported_ssh_key_type_dsa",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_encrypted_keys_gaps.test_encrypt_with_encrypted_ed25519_identity",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_encrypted_keys_gaps.test_encrypted_key_wrong_fingerprint_same_type",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_ssh_hybrid.test_x25519_and_encrypted_ssh_key_recipient",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_encrypted_keys_gaps.test_encrypt_with_encrypted_rsa_identity",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-rsa\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_ssh_hybrid.test_x25519_and_ssh_rsa_dual_recipients",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_hybrid.test_x25519_and_ssh_rsa_decrypt_with_ssh",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_hybrid.test_mixed_recipients_decrypt_with_any_identity",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_hybrid.test_ssh_encrypted_cannot_decrypt_with_x25519",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_ssh_hybrid.test_ssh_ed25519_with_long_comment",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_hybrid.test_ssh_fingerprint_uniqueness_across_types",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_ssh_hybrid.test_multiple_ssh_keys_different_types",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_hybrid.test_x25519_first_then_ssh_order_preserved",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_hybrid.test_ssh_first_then_x25519_order_preserved",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: failed to parse recipient file \"/workspace/eval/test_resources/test_ssh_hybrid/recipients_with_comments.txt\": \"/workspace/eval/test_resources/test_ssh_hybrid/recipients_with_comments.txt\": malformed recipient at line 8\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_ssh_hybrid.test_recipient_file_with_comments_and_empty_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_ssh_hybrid.test_duplicate_recipients_mixed_types",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-rsa\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_ssh_hybrid.test_ssh_rsa_4096_with_x25519",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_hybrid.test_ssh_ed25519_stanza_format_with_x25519",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: age: error: unsupported SSH recipient: \"ssh-ed25519\"\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_ssh_hybrid.test_many_mixed_recipients",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError",
+      "name": "tests.test_ssh_hybrid.test_ssh_rsa_stanza_format_with_x25519",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "AssertionError: Error should mention specific line being too long: age: error: failed to parse recipient file \"/tmp/pytest-of-root/pytest-0/popen-gw7/test_recipient_line_length_lim2/oversized_line.txt\": \"/tmp/pytest-of-root/pytest-0/popen-gw7/test_recipient_line_length_lim2/oversized_line.txt\": malformed recipient at line 1\nage: report unexpected or unhelpful errors at https://filippo.io/age/report",
+      "name": "tests.test_stress.test_recipient_line_length_limit",
+      "status": "failure"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_encryption.test_file_to_stdout",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_encryption.test_large_file_50mb_streaming",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_encryption.test_large_file_encryption_decryption_10mb",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_encryption.test_unicode_filename",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_integration.test_large_armored_file_roundtrip",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_integration.test_large_file_50mb_encrypt_decrypt_integrity",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_primitives_format.test_format_invalid_footer_mac_length",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_primitives_format.test_primitives_header_mac_computation",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_stream_gaps.test_trailing_data_after_full_length_final_chunk",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_stress.test_armor_overhead_large_file",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_stress.test_chunk_boundary_file_encryption",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_stress.test_deeply_nested_output_path",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_stress.test_encrypt_decrypt_100mb_file",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_stress.test_many_small_sequential_operations",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_stress.test_multiple_recipients_with_large_file",
+      "status": "not_run"
+    },
+    {
+      "branch": "8ebac061b133",
+      "message": "",
+      "name": "tests.test_stress.test_stdin_stdout_large_file",
+      "status": "not_run"
+    }
+  ],
+  "status_counts": {
+    "failure": 292,
+    "not_run": 16,
+    "passed": 480,
+    "skipped": 50
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "df88744325cf",
+    "8ebac061b133"
+  ],
+  "test_records": 838,
+  "warnings": []
+}

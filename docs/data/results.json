@@ -118,18 +118,18 @@
       "source": "https://programbench.com/extended/"
     }
   ],
-  "generated_at": "2026-05-15T08:41:49.923961+00:00",
+  "generated_at": "2026-05-15T08:45:40.194407+00:00",
   "groups": [
     {
       "agent": "Codex /goal",
       "almost_resolved": 3,
-      "almost_resolved_rate": 0.05172413793103448,
-      "average_calls": 79.39655172413794,
-      "average_cost_usd": 5.141662068965518,
-      "average_pass_rate": 0.5501760747242562,
+      "almost_resolved_rate": 0.05084745762711865,
+      "average_calls": 79.72881355932203,
+      "average_cost_usd": 5.158333898305084,
+      "average_pass_rate": 0.5499273778404532,
       "compliance": "Codex no-internet ablation",
       "host_profile": "smaller VM: 16 CPU / 30g",
-      "instances": 58,
+      "instances": 59,
       "mode": "No internet",
       "model": "GPT 5.5 (xhigh)",
       "resolved": 0,
@@ -138,7 +138,7 @@
       "score_distribution": [
         {
           "count": 5,
-          "cumulative_at_least": 58,
+          "cumulative_at_least": 59,
           "cumulative_rate_at_least": 1.0,
           "label": "0-10%",
           "lower": 0.0,
@@ -146,40 +146,40 @@
         },
         {
           "count": 5,
-          "cumulative_at_least": 53,
-          "cumulative_rate_at_least": 0.9137931034482759,
+          "cumulative_at_least": 54,
+          "cumulative_rate_at_least": 0.9152542372881356,
           "label": "10-20%",
           "lower": 0.1,
           "upper": 0.2
         },
         {
           "count": 3,
-          "cumulative_at_least": 48,
-          "cumulative_rate_at_least": 0.8275862068965517,
+          "cumulative_at_least": 49,
+          "cumulative_rate_at_least": 0.8305084745762712,
           "label": "20-30%",
           "lower": 0.2,
           "upper": 0.3
         },
         {
           "count": 3,
-          "cumulative_at_least": 45,
-          "cumulative_rate_at_least": 0.7758620689655172,
+          "cumulative_at_least": 46,
+          "cumulative_rate_at_least": 0.7796610169491526,
           "label": "30-40%",
           "lower": 0.3,
           "upper": 0.4
         },
         {
           "count": 5,
-          "cumulative_at_least": 42,
-          "cumulative_rate_at_least": 0.7241379310344828,
+          "cumulative_at_least": 43,
+          "cumulative_rate_at_least": 0.7288135593220338,
           "label": "40-50%",
           "lower": 0.4,
           "upper": 0.5
         },
         {
-          "count": 5,
-          "cumulative_at_least": 37,
-          "cumulative_rate_at_least": 0.6379310344827587,
+          "count": 6,
+          "cumulative_at_least": 38,
+          "cumulative_rate_at_least": 0.6440677966101694,
           "label": "50-60%",
           "lower": 0.5,
           "upper": 0.6
@@ -187,7 +187,7 @@
         {
           "count": 11,
           "cumulative_at_least": 32,
-          "cumulative_rate_at_least": 0.5517241379310345,
+          "cumulative_rate_at_least": 0.5423728813559322,
           "label": "60-70%",
           "lower": 0.6,
           "upper": 0.7
@@ -195,7 +195,7 @@
         {
           "count": 10,
           "cumulative_at_least": 21,
-          "cumulative_rate_at_least": 0.3620689655172414,
+          "cumulative_rate_at_least": 0.3559322033898305,
           "label": "70-80%",
           "lower": 0.7,
           "upper": 0.8
@@ -203,7 +203,7 @@
         {
           "count": 7,
           "cumulative_at_least": 11,
-          "cumulative_rate_at_least": 0.1896551724137931,
+          "cumulative_rate_at_least": 0.1864406779661017,
           "label": "80-90%",
           "lower": 0.8,
           "upper": 0.9
@@ -211,16 +211,16 @@
         {
           "count": 4,
           "cumulative_at_least": 4,
-          "cumulative_rate_at_least": 0.06896551724137931,
+          "cumulative_rate_at_least": 0.06779661016949153,
           "label": "90-100%",
           "lower": 0.9,
           "upper": 1.0
         }
       ],
       "slug": "gpt-5-5--xhigh--codex--goal-no-internet-codex-no-internet-ablation",
-      "total_calls": 4605,
-      "total_cost_usd": 298.2164,
-      "total_wall_clock_hours": 13.816666666666666
+      "total_calls": 4704,
+      "total_cost_usd": 304.3417,
+      "total_wall_clock_hours": 14.111944444444445
     }
   ],
   "programbench_tasks": 200,
@@ -2205,9 +2205,43 @@
       "score": 0.1160655737704918,
       "task_path": "task/ffmpeg__ffmpeg.360a402/",
       "wall_clock_seconds": 632
+    },
+    {
+      "agent": "Codex /goal",
+      "almost_resolved": false,
+      "calls": 99,
+      "compliance": "Codex no-internet ablation",
+      "docker_cpus": "16",
+      "docker_memory": "30g",
+      "error_code": "",
+      "estimated_cost_usd": 6.1253,
+      "evaluator_problem": false,
+      "evidence_path": "evidence/cpx62-nointernet-xhigh-20260515T003932Z-filosottile-age/filosottile__age.706dfc1/manifest.json",
+      "host_machine": "x86_64",
+      "host_profile": "smaller VM: 16 CPU / 30g",
+      "host_system": "Linux",
+      "inference_mode": "no-internet",
+      "instance_id": "filosottile__age.706dfc1",
+      "mode": "No internet",
+      "model": "gpt-5.5",
+      "model_display": "GPT 5.5 (xhigh)",
+      "n_resolved_tests": 362,
+      "n_system_errors": 0,
+      "n_tests": 676,
+      "n_warnings": 0,
+      "paper_compliant": false,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "programbench_comparable": false,
+      "reasoning_effort": "xhigh",
+      "resolved": false,
+      "run_name": "cpx62-nointernet-xhigh-20260515T003932Z-filosottile-age",
+      "run_version": "",
+      "score": 0.5355029585798816,
+      "task_path": "task/filosottile__age.706dfc1/",
+      "wall_clock_seconds": 1063
     }
   ],
-  "sample_instances": 58,
+  "sample_instances": 59,
   "tasks": [
     {
       "best_model": "GPT 5.5 (xhigh)",
@@ -2930,15 +2964,15 @@
       "task_path": "task/ffmpeg__ffmpeg.360a402/"
     },
     {
-      "best_model": "",
-      "best_score": null,
+      "best_model": "GPT 5.5 (xhigh)",
+      "best_score": 0.5355029585798816,
       "instance_id": "filosottile__age.706dfc1",
       "official_best_score": 0.635,
       "official_generated_tests": 676,
       "official_result_count": 13,
       "official_task_url": "https://programbench.com/task/filosottile__age.706dfc1/",
-      "result_count": 0,
-      "scored_tests": null,
+      "result_count": 1,
+      "scored_tests": 676,
       "task_path": "task/filosottile__age.706dfc1/"
     },
     {
