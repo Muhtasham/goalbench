@@ -291,6 +291,11 @@ def codex_session_roots(*records: dict) -> list[Path]:
     return roots
 
 
+def codex_session_args(*records: dict) -> list[str]:
+    roots = codex_session_roots(*records)
+    return ["--codex-sessions", *[str(path) for path in roots]] if roots else []
+
+
 def summarize_state(state: dict) -> dict[str, int]:
     return dict(Counter(record["status"] for record in state["items"].values()))
 
@@ -361,8 +366,7 @@ def finalize_one(args: argparse.Namespace, record: dict) -> dict:
         if args.strict_paper:
             audit_cmd.append("--strict-paper")
         audit_cmd.append(str(instance_dir))
-        if record.get("codex_user"):
-            audit_cmd.extend(["--codex-sessions", *[str(path) for path in codex_session_roots(record)]])
+        audit_cmd.extend(codex_session_args(record))
         run(audit_cmd)
         if args.programbench_repo:
             eval_cmd = [str(instance_dir / "eval-submission.sh"), str(Path(args.programbench_repo).expanduser())]
@@ -430,11 +434,7 @@ def summarize_and_collect(args: argparse.Namespace, state: dict, records: list[d
             str(run_root),
             "--programbench-repo",
             str(Path(args.programbench_repo).expanduser()),
-            *(
-                ["--codex-sessions", *[str(path) for path in codex_session_roots(*state["items"].values())]]
-                if codex_session_roots(*state["items"].values())
-                else []
-            ),
+            *codex_session_args(*state["items"].values()),
             "--output",
             str(output),
         ]
