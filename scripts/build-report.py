@@ -1245,19 +1245,22 @@ def render_empty_state() -> str:
 
 def render_run_plan() -> str:
     return """
-    <h2 id="run-order">Recommended Run Order</h2>
-    <p>This site keeps each scaffold and mode separate. The intended sequence is:</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Track</th><th>Config</th><th>What it answers</th><th>Compliance label</th></tr></thead>
-        <tbody>
-          <tr><td>1</td><td>Primary</td><td><code>cpx62-nointernet-xhigh</code></td><td>GPT-5.5 xhigh with Codex <code>/goal</code> on ProgramBench without internet/source lookup, with strict host egress, sized for the current 16 CPU / 30g runner.</td><td>Codex no-internet ablation</td></tr>
-          <tr><td>2</td><td>Prompt variant</td><td><code>cpx62-paper-xhigh</code></td><td>ProgramBench-style prompt/scaffold restrictions on the same smaller runner, with strict host egress. Not paper-sized.</td><td>Codex cleanroom-style ablation</td></tr>
-          <tr><td>3</td><td>Criticism ablation</td><td><code>cpx62-localtools-xhigh</code></td><td>Tests the tool-starvation critique: still no internet/source lookup and strict host egress, but local binary-analysis/tracing tools are allowed.</td><td>Non-compliant: local/binary tools allowed</td></tr>
-          <tr><td>4</td><td>Ceiling</td><td><code>cpx62-open-xhigh</code></td><td>Measures the full Codex harness with internet/package tooling allowed.</td><td>Non-compliant: internet allowed</td></tr>
-          <tr><td>5</td><td>Later</td><td><code>full-*</code> / <code>*-high</code></td><td>Use paper-sized configs or high-effort comparisons only after xhigh says the extra run is worthwhile.</td><td>Depends on mode and host preflight</td></tr>
-        </tbody>
-      </table>
+    <div class="section">
+      <div class="section-eyebrow">Run plan</div>
+      <h2 id="run-order">Recommended Run Order</h2>
+      <p>This site keeps each scaffold and mode separate. The intended sequence is:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Track</th><th>Config</th><th>What it answers</th><th>Compliance label</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Primary</td><td><code>cpx62-nointernet-xhigh</code></td><td>GPT-5.5 xhigh with Codex <code>/goal</code> on ProgramBench without internet/source lookup, with strict host egress, sized for the current 16 CPU / 30g runner.</td><td>Codex no-internet ablation</td></tr>
+            <tr><td>2</td><td>Prompt variant</td><td><code>cpx62-paper-xhigh</code></td><td>ProgramBench-style prompt/scaffold restrictions on the same smaller runner, with strict host egress. Not paper-sized.</td><td>Codex cleanroom-style ablation</td></tr>
+            <tr><td>3</td><td>Criticism ablation</td><td><code>cpx62-localtools-xhigh</code></td><td>Tests the tool-starvation critique: still no internet/source lookup and strict host egress, but local binary-analysis/tracing tools are allowed.</td><td>Non-compliant: local/binary tools allowed</td></tr>
+            <tr><td>4</td><td>Ceiling</td><td><code>cpx62-open-xhigh</code></td><td>Measures the full Codex harness with internet/package tooling allowed.</td><td>Non-compliant: internet allowed</td></tr>
+            <tr><td>5</td><td>Later</td><td><code>full-*</code> / <code>*-high</code></td><td>Use paper-sized configs or high-effort comparisons only after xhigh says the extra run is worthwhile.</td><td>Depends on mode and host preflight</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     """
 
@@ -1284,30 +1287,48 @@ def render_task_details_page() -> str:
       margin: 0;
       font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--ink);
-      background: #ffffff;
+      background: #f7faf9;
     }}
-    header, main {{ max-width: 980px; margin: 0 auto; padding: 24px; }}
-    header {{ border-bottom: 1px solid var(--line); }}
-    nav {{ display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; font-size: 14px; }}
+    header {{
+      border-bottom: 1px solid var(--line);
+      background: #fbfdfb;
+      padding: 18px max(24px, calc((100vw - 980px) / 2)) 30px;
+    }}
+    main {{ max-width: 980px; margin: 0 auto; padding: 24px; }}
+    .topbar {{ display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 28px; font-size: 14px; }}
+    .nav-brand {{ display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 850; text-decoration: none; }}
+    .brand-mark {{ width: 30px; height: 30px; border-radius: 7px; display: inline-grid; place-items: center; background: #10201d; color: #d8fff4; font-weight: 900; font-size: 22px; line-height: 1; }}
+    .nav-links {{ display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }}
+    .nav-links a {{ color: #40515c; text-decoration: none; border-radius: 6px; padding: 7px 9px; }}
+    .nav-links a:hover {{ color: #075985; background: #eef6f3; }}
     a {{ color: #075985; }}
-    h1 {{ margin: 0 0 8px; font-size: 32px; letter-spacing: 0; }}
+    h1 {{ margin: 0 0 8px; font-size: clamp(34px, 5vw, 48px); line-height: 1.05; letter-spacing: 0; }}
     h2 {{ margin: 30px 0 10px; font-size: 19px; letter-spacing: 0; }}
     p, li {{ color: var(--muted); line-height: 1.55; }}
     code {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }}
-    .panel {{ border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: var(--soft); margin: 16px 0; }}
+    .panel {{ border: 1px solid var(--line); border-radius: 10px; padding: 18px; background: #ffffff; margin: 16px 0; }}
     .steps {{ display: grid; gap: 10px; margin-top: 16px; }}
-    .step {{ border-left: 3px solid var(--accent); padding: 4px 0 4px 12px; }}
+    .step {{ border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; padding: 12px 14px; background: #ffffff; }}
+    @media (max-width: 760px) {{
+      header, main {{ padding-left: 16px; padding-right: 16px; }}
+      .topbar {{ align-items: flex-start; flex-direction: column; }}
+      .nav-links {{ justify-content: flex-start; }}
+    }}
   </style>
 </head>
 <body>
   <header>
-    <nav>
-      <a href="./">Summary</a>
-      <a href="task-details.html">Task Details</a>
-      <a href="paper-compliance.md">Compliance</a>
-      <a href="runbook.md">Runbook</a>
-      <a href="{GOALBENCH_GITHUB}">GitHub</a>
-      <a href="{PROGRAMBENCH_HOME}">ProgramBench</a>
+    <nav class="topbar" aria-label="Primary">
+      <a class="nav-brand" href="./"><span class="brand-mark">/</span><span>{SITE_NAME}</span></a>
+      <div class="nav-links">
+        <a href="./">Leaderboard</a>
+        <a href="extended/">Extended</a>
+        <a href="task-details.html">Tasks</a>
+        <a href="paper-compliance.md">Compliance</a>
+        <a href="runbook.md">Runbook</a>
+        <a href="{GOALBENCH_GITHUB}">GitHub</a>
+        <a href="{PROGRAMBENCH_HOME}">ProgramBench</a>
+      </div>
     </nav>
     <h1>Task Details</h1>
     <p>Task pages mirror ProgramBench's per-task view for this Codex <code>/goal</code> scaffold: scored behavioral tests, best score, results by model/mode, and links to sanitized evidence.</p>
@@ -1391,22 +1412,35 @@ def render_results_sections(data: dict, instances: list[ResultRow]) -> str:
 def render_home_results(data: dict, instances: list[ResultRow]) -> str:
     if not instances:
         return f"""
-    {render_empty_state()}
-    <p><a href="extended/">See extended results →</a></p>
+    <section class="section">
+      {render_empty_state()}
+      <p class="link-row"><a class="button primary" href="extended/">See extended results</a></p>
+    </section>
         """
     return f"""
-    <div class="cards">
-      {"".join(render_summary_cards(f"{group['model']} / {group['mode']} / {version_label(str(group.get('run_version', '')))}", group) for group in data["groups"])}
-    </div>
+    <section class="section leaderboard-section">
+      <div class="section-eyebrow">Leaderboard</div>
+      <div class="section-head">
+        <div>
+          <h2>Current Results</h2>
+          <p>Compact view of Codex <code>/goal</code> scaffold results, sorted with the same headline shape as ProgramBench: resolved, almost resolved, then average pass rate.</p>
+        </div>
+        <a class="button primary" href="extended/">See extended results</a>
+      </div>
+      <div class="table-wrap priority-table">
+        <table>
+          <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Avg. est. cost</th><th>Avg. calls</th></tr></thead>
+          <tbody>{render_leaderboard(data["groups"])}</tbody>
+        </table>
+      </div>
+    </section>
 
-    <h2>Leaderboard</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Avg. est. cost</th><th>Avg. calls</th></tr></thead>
-        <tbody>{render_leaderboard(data["groups"])}</tbody>
-      </table>
-    </div>
-    <p>Compact view of Codex <code>/goal</code> scaffold results. <a href="extended/">See extended results →</a></p>
+    <section class="section">
+      <div class="section-eyebrow">Run summary</div>
+      <div class="cards">
+        {"".join(render_summary_cards(f"{group['model']} / {group['mode']} / {version_label(str(group.get('run_version', '')))}", group) for group in data["groups"])}
+      </div>
+    </section>
     """
 
 
@@ -1416,14 +1450,17 @@ def render_html(data: dict, extended: bool = False) -> str:
         ResultRow(**{key: value for key, value in row.items() if key in result_fields}) for row in data["rows"]
     ]
     nav = f"""
-    <nav>
-      <a href="./">Leaderboard</a>
-      <a href="extended/">Extended Results</a>
-      <a href="task-details.html">Task Details</a>
-      <a href="paper-compliance.md">Compliance</a>
-      <a href="runbook.md">Runbook</a>
-      <a href="{GOALBENCH_GITHUB}">GitHub</a>
-      <a href="{PROGRAMBENCH_EXTENDED}">ProgramBench Extended</a>
+    <nav class="topbar" aria-label="Primary">
+      <a class="nav-brand" href="./"><span class="brand-mark">/</span><span>{SITE_NAME}</span></a>
+      <div class="nav-links">
+        <a href="./">Leaderboard</a>
+        <a href="extended/">Extended</a>
+        <a href="task-details.html">Tasks</a>
+        <a href="paper-compliance.md">Compliance</a>
+        <a href="runbook.md">Runbook</a>
+        <a href="{GOALBENCH_GITHUB}">GitHub</a>
+        <a href="{PROGRAMBENCH_EXTENDED}">ProgramBench</a>
+      </div>
     </nav>
     """
     title = f"Extended Results · {SITE_NAME}" if extended else SITE_NAME
@@ -1460,56 +1497,122 @@ def render_html(data: dict, extended: bool = False) -> str:
       margin: 0;
       font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--ink);
-      background: #ffffff;
+      background: #f7faf9;
     }}
     header {{
-      border-bottom: 1px solid var(--line);
-      padding: 22px max(24px, calc((100vw - 1180px) / 2)) 28px;
+      border-bottom: 1px solid #dfe7e2;
+      background: #fbfdfb;
+      padding: 18px max(24px, calc((100vw - 1180px) / 2)) 34px;
     }}
     main {{
       max-width: 1180px;
       margin: 0 auto;
-      padding: 24px;
+      padding: 28px 24px 68px;
     }}
-    nav {{ display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; font-size: 14px; }}
-    nav a {{ color: #33424d; text-decoration: none; }}
-    nav a:hover {{ color: #075985; text-decoration: underline; }}
-    h1 {{ margin: 0 0 8px; font-size: clamp(34px, 5vw, 64px); line-height: 0.98; letter-spacing: 0; max-width: 760px; }}
-    h2 {{ margin: 32px 0 12px; font-size: 18px; letter-spacing: 0; }}
+    .topbar {{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 34px;
+      font-size: 14px;
+    }}
+    .nav-brand {{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink);
+      font-weight: 850;
+      text-decoration: none;
+    }}
+    .nav-links {{ display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }}
+    .nav-links a {{
+      color: #40515c;
+      text-decoration: none;
+      border-radius: 6px;
+      padding: 7px 9px;
+    }}
+    .nav-links a:hover {{ color: #075985; background: #eef6f3; }}
+    h1 {{ margin: 0 0 10px; font-size: clamp(36px, 5vw, 56px); line-height: 1.03; letter-spacing: 0; max-width: 820px; }}
+    h2 {{ margin: 0 0 10px; font-size: 21px; letter-spacing: 0; }}
     h3 {{ margin: 0 0 10px; font-size: 14px; letter-spacing: 0; }}
     p {{ color: var(--muted); line-height: 1.5; max-width: 900px; }}
-    .brand {{ display: flex; gap: 10px; align-items: center; margin-bottom: 16px; font-weight: 800; letter-spacing: 0; }}
     .brand-mark {{ width: 30px; height: 30px; border-radius: 7px; display: inline-grid; place-items: center; background: #10201d; color: #d8fff4; font-weight: 900; font-size: 22px; line-height: 1; }}
     .hero {{
       display: grid;
       grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
       gap: 28px;
-      align-items: end;
+      align-items: stretch;
     }}
-    .hero-copy {{ font-size: 18px; max-width: 760px; }}
-    .question {{ color: #33424d; margin: 0 0 12px; font-weight: 700; }}
+    .hero-copy {{ font-size: 18px; max-width: 770px; margin-bottom: 0; }}
+    .question {{ color: var(--accent-strong); margin: 0 0 12px; font-weight: 800; }}
     .hero-panel {{
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 16px;
-      background: #fbfcfc;
+      padding: 18px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(16, 32, 29, 0.06);
     }}
     .hero-panel strong {{ display: block; font-size: 13px; color: var(--accent-strong); margin-bottom: 6px; }}
     .hero-panel p {{ margin: 0; font-size: 14px; }}
-    .pill-row {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }}
+    .pill-row {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }}
     .pill {{
       border: 1px solid var(--line);
-      background: var(--soft);
+      background: #ffffff;
       padding: 5px 9px;
       border-radius: 6px;
       font-size: 13px;
       color: var(--muted);
     }}
+    .section {{
+      margin: 0 0 28px;
+      padding: 22px;
+      border: 1px solid #e1e8e4;
+      border-radius: 10px;
+      background: #ffffff;
+      box-shadow: 0 1px 0 rgba(16, 32, 29, 0.03);
+    }}
+    .section.compact {{ padding: 18px; }}
+    .section-eyebrow {{
+      margin: 0 0 8px;
+      color: var(--accent-strong);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }}
+    .section-head {{
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 14px;
+    }}
+    .section-head p {{ margin: 0; }}
+    .button {{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      border-radius: 7px;
+      border: 1px solid var(--line);
+      padding: 8px 12px;
+      color: #263640;
+      background: #ffffff;
+      font-size: 13px;
+      font-weight: 750;
+      text-decoration: none;
+      white-space: nowrap;
+    }}
+    .button:hover {{ border-color: #9fb4ad; background: #f5faf8; }}
+    .button.primary {{ border-color: #0f766e; background: #0f766e; color: #ffffff; }}
+    .button.primary:hover {{ background: #115e59; }}
+    .link-row {{ display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 12px; }}
     .cards {{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 12px;
-      margin-top: 16px;
+      margin-top: 0;
     }}
     .summary-card {{
       border: 1px solid var(--line);
@@ -1538,6 +1641,7 @@ def render_html(data: dict, extended: bool = False) -> str:
       overflow-x: auto;
       background: #fff;
     }}
+    .priority-table {{ border-color: #cbd8d3; }}
     table {{
       width: 100%;
       border-collapse: collapse;
@@ -1552,6 +1656,7 @@ def render_html(data: dict, extended: bool = False) -> str:
     }}
     th {{ background: var(--soft); color: #33424d; font-weight: 700; }}
     tr:last-child td {{ border-bottom: 0; }}
+    tbody tr:hover td {{ background: #fbfdfc; }}
     code {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }}
     .status {{
       display: inline-block;
@@ -1567,12 +1672,14 @@ def render_html(data: dict, extended: bool = False) -> str:
     .status.almost {{ color: var(--warn); background: #fef3c7; }}
     .status.open {{ color: var(--bad); background: #ffe4e6; }}
     .note {{
+      border: 1px solid #b7d8cf;
       border-left: 4px solid var(--accent);
-      background: #ecfdf5;
-      padding: 12px 14px;
-      border-radius: 6px;
+      background: #f1fbf7;
+      padding: 14px 16px;
+      border-radius: 8px;
       color: #134e4a;
     }}
+    .note a {{ color: #075985; }}
     .empty-state {{
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -1591,7 +1698,7 @@ def render_html(data: dict, extended: bool = False) -> str:
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 12px;
-      background: var(--soft);
+      background: #fbfcfc;
     }}
     .mode-card strong {{ display: block; margin-bottom: 6px; }}
     .mode-card p {{ margin: 0; font-size: 13px; }}
@@ -1634,6 +1741,9 @@ def render_html(data: dict, extended: bool = False) -> str:
     a {{ color: #075985; }}
     @media (max-width: 760px) {{
       .hero {{ grid-template-columns: 1fr; }}
+      .topbar {{ align-items: flex-start; flex-direction: column; margin-bottom: 26px; }}
+      .nav-links {{ justify-content: flex-start; }}
+      .section-head {{ align-items: flex-start; flex-direction: column; }}
       .metric-grid {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
       header, main {{ padding-left: 16px; padding-right: 16px; }}
     }}
@@ -1642,7 +1752,6 @@ def render_html(data: dict, extended: bool = False) -> str:
 <body>
   <header>
     {nav}
-    <div class="brand"><span class="brand-mark">/</span><span>{SITE_NAME}</span></div>
     <div class="hero">
       <div>
         <p class="question">{question}</p>
@@ -1662,30 +1771,46 @@ def render_html(data: dict, extended: bool = False) -> str:
     </div>
   </header>
   <main>
-    <p class="note">Primary metric is fully resolved instances. Almost resolved follows ProgramBench's displayed threshold of at least 95% behavioral tests passing. The headline track is GPT-5.5 xhigh with Codex <code>/goal</code> in no-internet mode. Paper/cleanroom rows are ProgramBench-style Codex scaffold runs, not official mini-SWE-agent paper baseline reproductions. Open-internet and local-tools runs are intentionally non-compliant and reported separately. See <a href="task-details.html">Task Details</a>, the <a href="runbook.md">runbook</a>, and <a href="paper-compliance.md">compliance notes</a> for setup and mode details.</p>
-    <h2>How To Read Modes</h2>
-    <div class="mode-grid">
-      <div class="mode-card">
-        <strong>No internet</strong>
-        <p>Primary Codex <code>/goal</code> scaffold for the Noam/Jake question: internet/source/package lookup blocked, target binary analysis banned, and target probing stays black-box.</p>
-      </div>
-      <div class="mode-card">
-        <strong>Paper / cleanroom</strong>
-        <p>Stricter ProgramBench-style cleanroom mode for Codex <code>/goal</code>. It is only ProgramBench-comparable on Linux amd64 with 20 CPU / 60g, strict egress, wrapper-only target access, and clean audit; it is not a mini-SWE-agent paper reproduction.</p>
-      </div>
-      <div class="mode-card">
-        <strong>No internet + local tools</strong>
-        <p>Non-compliant ablation for the tool-starvation critique: external internet/source lookup remains blocked, but local binary-analysis/tracing tools are allowed.</p>
-      </div>
-      <div class="mode-card">
-        <strong>Open internet</strong>
-        <p>Full Codex harness. Internet and package tooling are allowed. Not ProgramBench-compliant.</p>
-      </div>
-    </div>
-    <p><a href="data/results.json">Download results.json</a> · <a href="data/results.csv">Download results.csv</a></p>
     {render_run_plan() if extended else ""}
     {body}
 
+    <section class="section">
+      <div class="section-eyebrow">Modes</div>
+      <div class="section-head">
+        <div>
+          <h2>How To Read Modes</h2>
+          <p>Every row is a Codex <code>/goal</code> scaffold run. Compliance labels tell you what environment and tool access the run had.</p>
+        </div>
+        <div class="link-row">
+          <a class="button" href="data/results.json">results.json</a>
+          <a class="button" href="data/results.csv">results.csv</a>
+        </div>
+      </div>
+      <div class="mode-grid">
+        <div class="mode-card">
+          <strong>No internet</strong>
+          <p>Primary Codex <code>/goal</code> scaffold for the Noam/Jake question: internet/source/package lookup blocked, target binary analysis banned, and target probing stays black-box.</p>
+        </div>
+        <div class="mode-card">
+          <strong>Paper / cleanroom</strong>
+          <p>Stricter ProgramBench-style cleanroom mode for Codex <code>/goal</code>. It is only ProgramBench-comparable on Linux amd64 with 20 CPU / 60g, strict egress, wrapper-only target access, and clean audit; it is not a mini-SWE-agent paper reproduction.</p>
+        </div>
+        <div class="mode-card">
+          <strong>No internet + local tools</strong>
+          <p>Non-compliant ablation for the tool-starvation critique: external internet/source lookup remains blocked, but local binary-analysis/tracing tools are allowed.</p>
+        </div>
+        <div class="mode-card">
+          <strong>Open internet</strong>
+          <p>Full Codex harness. Internet and package tooling are allowed. Not ProgramBench-compliant.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <p class="note">Primary metric is fully resolved instances. Almost resolved follows ProgramBench's displayed threshold of at least 95% behavioral tests passing. The headline track is GPT-5.5 xhigh with Codex <code>/goal</code> in no-internet mode. Paper/cleanroom rows are ProgramBench-style Codex scaffold runs, not official mini-SWE-agent paper baseline reproductions. Open-internet and local-tools runs are intentionally non-compliant and reported separately. See <a href="task-details.html">Task Details</a>, the <a href="runbook.md">runbook</a>, and <a href="paper-compliance.md">compliance notes</a> for setup and mode details.</p>
+    </section>
+
+    <section class="section">
     <h2>Official Baseline Context</h2>
     <p>For orientation only. ProgramBench's public extended table reports mini-SWE-agent over 200 tasks, sorted by resolved, almost-resolved, then average pass rate.</p>
     <div class="table-wrap">
@@ -1695,10 +1820,13 @@ def render_html(data: dict, extended: bool = False) -> str:
       </table>
     </div>
     <p>GPT-5.5 baseline rows link to ProgramBench's official run-detail pages for total cost, total calls, distribution plots, and all 200 per-instance results.</p>
+    </section>
 
+    <section class="section">
     <h2>Method Notes</h2>
     <p>Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Scoring is computed through ProgramBench's own <code>EvaluationResult</code> and <code>InstanceEvalSummary</code> logic after active-branch and ignored-test filtering. Resolved means the ProgramBench behavioral test pass rate is exactly 100%; evaluator warnings/errors are disclosed separately in evidence artifacts. The current Hetzner <code>cpx62</code> runner is a smaller 16 CPU / 30g VM, so those rows answer the Codex <code>/goal</code> scaffold question but are not paper-sized ProgramBench cleanroom runs. All no-internet-style rows require strict host egress and wrapper-only target access; paper-sized rows also require Linux amd64 with 20 CPU / 60g and clean audit. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Estimated cost comes from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths.</p>
     <p>Sources: <a href="https://programbench.com/extended/">ProgramBench extended results</a>, <a href="https://programbench.com/run/gpt-5-5-xhigh/">GPT 5.5 xhigh run detail</a>, and this repository's generated CSV summaries.</p>
+    </section>
   </main>
 </body>
 </html>
