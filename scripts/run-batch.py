@@ -406,11 +406,15 @@ def finalize(args: argparse.Namespace) -> None:
     state = load_state(args.batch_name, args.run_version)
     refresh_state(state)
     cleanup_finished(state)
+    finalized = 0
     for instance_id, record in list(state["items"].items()):
         if record["status"] in FINALIZE_READY or (args.retry_finalize_failed and record["status"] == "finalize_failed"):
             state["items"][instance_id] = finalize_one(args, record)
             save_state(state)
             summarize_and_collect(args, state, [state["items"][instance_id]])
+            finalized += 1
+            if args.limit and finalized >= args.limit:
+                break
     summarize_and_collect(args, state)
     if not args.allow_partial:
         incomplete = [record["instance_id"] for record in state["items"].values() if record["status"] != "evaluated"]
@@ -491,6 +495,7 @@ def main() -> None:
     finalize_parser.add_argument("--strict-paper", action="store_true")
     finalize_parser.add_argument("--allow-partial", action="store_true")
     finalize_parser.add_argument("--eval-timeout-seconds", type=int, default=7200)
+    finalize_parser.add_argument("--limit", type=int, default=0)
     finalize_parser.add_argument("--retry-finalize-failed", action="store_true")
     finalize_parser.set_defaults(func=finalize)
 

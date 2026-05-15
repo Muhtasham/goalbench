@@ -16,6 +16,7 @@ REFRESH_REPORT=1
 REFRESH_TARGET_SET=1
 MAX_PARALLEL="${MAX_PARALLEL:-}"
 SITE_RESULTS_SCOPE="${SITE_RESULTS_SCOPE:-}"
+FINALIZE_LIMIT="${FINALIZE_LIMIT:-}"
 
 usage() {
   cat <<'EOF'
@@ -38,6 +39,8 @@ Options:
   --max-parallel N           Override config max_parallel for Codex task concurrency
   --site-results-scope SCOPE  Results included in docs: all or current
                              (default: current for published watch runs, else all)
+  --finalize-limit N          Max completed tasks to evaluate per finalize pass
+                             (default: 1 for --incremental-finalize, else all)
   --offline-report           Do not refresh OpenAI pricing or ProgramBench baseline rows
   --no-target-refresh        Do not regenerate target_sets/all_tasks.txt
   -h, --help                 Show this help
@@ -105,6 +108,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --site-results-scope)
       SITE_RESULTS_SCOPE="$2"
+      shift 2
+      ;;
+    --finalize-limit)
+      FINALIZE_LIMIT="$2"
       shift 2
       ;;
     --offline-report)
@@ -258,6 +265,11 @@ PY
 
 run_finalize() {
   finalize_cmd=(uv run python scripts/run-config.py finalize "$CONFIG" --programbench-repo "$PROGRAMBENCH_REPO")
+  if [[ -n "$FINALIZE_LIMIT" ]]; then
+    finalize_cmd+=(--limit "$FINALIZE_LIMIT")
+  elif [[ "$INCREMENTAL_FINALIZE" -eq 1 ]]; then
+    finalize_cmd+=(--limit 1)
+  fi
   if [[ "$ALLOW_PARTIAL" -eq 1 ]]; then
     finalize_cmd+=(--allow-partial)
   fi
