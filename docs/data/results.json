@@ -118,18 +118,18 @@
       "source": "https://programbench.com/extended/"
     }
   ],
-  "generated_at": "2026-05-15T09:11:45.961061+00:00",
+  "generated_at": "2026-05-15T09:16:13.775427+00:00",
   "groups": [
     {
       "agent": "Codex /goal",
       "almost_resolved": 3,
-      "almost_resolved_rate": 0.047619047619047616,
-      "average_calls": 80.14285714285714,
-      "average_cost_usd": 5.163593650793651,
-      "average_pass_rate": 0.5597171121125101,
+      "almost_resolved_rate": 0.046875,
+      "average_calls": 80.015625,
+      "average_cost_usd": 5.143709375,
+      "average_pass_rate": 0.557120112357456,
       "compliance": "Codex no-internet ablation",
       "host_profile": "smaller VM: 16 CPU / 30g",
-      "instances": 63,
+      "instances": 64,
       "mode": "No internet",
       "model": "GPT 5.5 (xhigh)",
       "resolved": 0,
@@ -138,7 +138,7 @@
       "score_distribution": [
         {
           "count": 5,
-          "cumulative_at_least": 63,
+          "cumulative_at_least": 64,
           "cumulative_rate_at_least": 1.0,
           "label": "0-10%",
           "lower": 0.0,
@@ -146,24 +146,24 @@
         },
         {
           "count": 5,
-          "cumulative_at_least": 58,
-          "cumulative_rate_at_least": 0.9206349206349206,
+          "cumulative_at_least": 59,
+          "cumulative_rate_at_least": 0.921875,
           "label": "10-20%",
           "lower": 0.1,
           "upper": 0.2
         },
         {
           "count": 3,
-          "cumulative_at_least": 53,
-          "cumulative_rate_at_least": 0.8412698412698413,
+          "cumulative_at_least": 54,
+          "cumulative_rate_at_least": 0.84375,
           "label": "20-30%",
           "lower": 0.2,
           "upper": 0.3
         },
         {
-          "count": 3,
-          "cumulative_at_least": 50,
-          "cumulative_rate_at_least": 0.7936507936507936,
+          "count": 4,
+          "cumulative_at_least": 51,
+          "cumulative_rate_at_least": 0.796875,
           "label": "30-40%",
           "lower": 0.3,
           "upper": 0.4
@@ -171,7 +171,7 @@
         {
           "count": 5,
           "cumulative_at_least": 47,
-          "cumulative_rate_at_least": 0.746031746031746,
+          "cumulative_rate_at_least": 0.734375,
           "label": "40-50%",
           "lower": 0.4,
           "upper": 0.5
@@ -179,7 +179,7 @@
         {
           "count": 6,
           "cumulative_at_least": 42,
-          "cumulative_rate_at_least": 0.6666666666666666,
+          "cumulative_rate_at_least": 0.65625,
           "label": "50-60%",
           "lower": 0.5,
           "upper": 0.6
@@ -187,7 +187,7 @@
         {
           "count": 13,
           "cumulative_at_least": 36,
-          "cumulative_rate_at_least": 0.5714285714285714,
+          "cumulative_rate_at_least": 0.5625,
           "label": "60-70%",
           "lower": 0.6,
           "upper": 0.7
@@ -195,7 +195,7 @@
         {
           "count": 12,
           "cumulative_at_least": 23,
-          "cumulative_rate_at_least": 0.36507936507936506,
+          "cumulative_rate_at_least": 0.359375,
           "label": "70-80%",
           "lower": 0.7,
           "upper": 0.8
@@ -203,7 +203,7 @@
         {
           "count": 7,
           "cumulative_at_least": 11,
-          "cumulative_rate_at_least": 0.1746031746031746,
+          "cumulative_rate_at_least": 0.171875,
           "label": "80-90%",
           "lower": 0.8,
           "upper": 0.9
@@ -211,16 +211,16 @@
         {
           "count": 4,
           "cumulative_at_least": 4,
-          "cumulative_rate_at_least": 0.06349206349206349,
+          "cumulative_rate_at_least": 0.0625,
           "label": "90-100%",
           "lower": 0.9,
           "upper": 1.0
         }
       ],
       "slug": "gpt-5-5--xhigh--codex--goal-no-internet-codex-no-internet-ablation",
-      "total_calls": 5049,
-      "total_cost_usd": 325.3064,
-      "total_wall_clock_hours": 15.096388888888889
+      "total_calls": 5121,
+      "total_cost_usd": 329.1974,
+      "total_wall_clock_hours": 15.303888888888888
     }
   ],
   "programbench_tasks": 200,
@@ -2375,9 +2375,43 @@
       "score": 0.7798804780876494,
       "task_path": "task/ggreer__the_silver_searcher.a61f178/",
       "wall_clock_seconds": 1030
+    },
+    {
+      "agent": "Codex /goal",
+      "almost_resolved": false,
+      "calls": 72,
+      "compliance": "Codex no-internet ablation",
+      "docker_cpus": "16",
+      "docker_memory": "30g",
+      "error_code": "",
+      "estimated_cost_usd": 3.891,
+      "evaluator_problem": false,
+      "evidence_path": "evidence/cpx62-nointernet-xhigh-20260515T003932Z-go-critic-go-critic/go-critic__go-critic.9aea378/manifest.json",
+      "host_machine": "x86_64",
+      "host_profile": "smaller VM: 16 CPU / 30g",
+      "host_system": "Linux",
+      "inference_mode": "no-internet",
+      "instance_id": "go-critic__go-critic.9aea378",
+      "mode": "No internet",
+      "model": "gpt-5.5",
+      "model_display": "GPT 5.5 (xhigh)",
+      "n_resolved_tests": 194,
+      "n_system_errors": 0,
+      "n_tests": 493,
+      "n_warnings": 0,
+      "paper_compliant": false,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "programbench_comparable": false,
+      "reasoning_effort": "xhigh",
+      "resolved": false,
+      "run_name": "cpx62-nointernet-xhigh-20260515T003932Z-go-critic-go-critic",
+      "run_version": "",
+      "score": 0.3935091277890467,
+      "task_path": "task/go-critic__go-critic.9aea378/",
+      "wall_clock_seconds": 747
     }
   ],
-  "sample_instances": 63,
+  "sample_instances": 64,
   "tasks": [
     {
       "best_model": "GPT 5.5 (xhigh)",
@@ -3160,15 +3194,15 @@
       "task_path": "task/git-bahn__git-graph.87b4473/"
     },
     {
-      "best_model": "",
-      "best_score": null,
+      "best_model": "GPT 5.5 (xhigh)",
+      "best_score": 0.3935091277890467,
       "instance_id": "go-critic__go-critic.9aea378",
       "official_best_score": 0.568,
       "official_generated_tests": 493,
       "official_result_count": 13,
       "official_task_url": "https://programbench.com/task/go-critic__go-critic.9aea378/",
-      "result_count": 0,
-      "scored_tests": null,
+      "result_count": 1,
+      "scored_tests": 493,
       "task_path": "task/go-critic__go-critic.9aea378/"
     },
     {
