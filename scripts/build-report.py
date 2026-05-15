@@ -1964,12 +1964,12 @@ def render_html(data: dict, extended: bool = False) -> str:
         if extended
         else f'<span>Can</span><span class="codex-mention">{codex_logo_img("codex-mention-mark")}Codex <code>/goal</code></span><span>rebuild programs from scratch?</span>'
     )
-    heading = "Extended Results" if extended else "GoalBench: Codex Goal Mode on ProgramBench."
+    heading = "Extended Results" if extended else "GoalBench"
     hero_copy = (
         "Explore Codex <code>/goal</code> results by model, mode, task, cost, calls, and latency. "
         "Each row is a separate scaffold run evaluated with ProgramBench's behavioral tests."
         if extended
-        else "GoalBench measures Codex <code>/goal</code> on ProgramBench tasks. Given only a compiled binary and its documentation, Codex must architect and implement a replacement codebase that reproduces the original CLI's behavior, then we score it with ProgramBench's behavioral tests."
+        else "Given only a compiled binary and its documentation, the agent must architect and implement a replacement CLI that reproduces the original program's behavior. We score each submission with ProgramBench's behavioral tests."
     )
     body = render_results_sections(data, instances) if extended else render_home_results(data, instances)
     base = '<base href="../">\n  ' if extended else ""
