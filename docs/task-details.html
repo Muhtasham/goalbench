@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Details · GoalBench</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #182026;
+      --muted: #61707d;
+      --line: #d9e0e6;
+      --soft: #f5f7f8;
+      --accent: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #ffffff;
+    }
+    header, main { max-width: 980px; margin: 0 auto; padding: 24px; }
+    header { border-bottom: 1px solid var(--line); }
+    nav { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; font-size: 14px; }
+    a { color: #075985; }
+    h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: 0; }
+    h2 { margin: 30px 0 10px; font-size: 19px; letter-spacing: 0; }
+    p, li { color: var(--muted); line-height: 1.55; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }
+    .panel { border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: var(--soft); margin: 16px 0; }
+    .steps { display: grid; gap: 10px; margin-top: 16px; }
+    .step { border-left: 3px solid var(--accent); padding: 4px 0 4px 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./">Summary</a>
+      <a href="task-details.html">Task Details</a>
+      <a href="paper-compliance.md">Compliance</a>
+      <a href="runbook.md">Runbook</a>
+      <a href="https://programbench.com/">ProgramBench</a>
+    </nav>
+    <h1>Task Details</h1>
+    <p>Task pages mirror ProgramBench's per-task view for this Codex <code>/goal</code> scaffold: scored behavioral tests, best score, results by model/mode, and links to sanitized evidence.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <p>Pending rows are full-run targets waiting for Codex results. Once a task is evaluated, its page shows the GoalBench score beside cached official ProgramBench task context, plus links to the official ProgramBench task page for baseline comparison.</p>
+    </section>
+    <h2>What Each Task Page Shows</h2>
+    <div class="steps">
+      <div class="step"><strong>Official context.</strong> Generated test count, official best score, and official model rows are cached from ProgramBench public task pages.</div>
+      <div class="step"><strong>GoalBench results.</strong> Each Codex <code>/goal</code> result is shown by run version, model, inference mode, score, evaluated tests, estimated cost, calls, and wall-clock time.</div>
+      <div class="step"><strong>Why scores differ.</strong> When public evidence exists, task pages list failed test names and a compact miss-class summary so near-solves like <code>cmatrix</code> are explainable without opening raw JSON.</div>
+      <div class="step"><strong>Evidence links.</strong> Public artifacts include sanitized eval summaries, public eval JSON, usage audit, and manifest. Raw Codex session logs and submission tarballs remain local by default.</div>
+    </div>
+    <h2>Metric Contract</h2>
+    <p>Resolved means the ProgramBench behavioral test pass rate is exactly 100%. Almost resolved follows ProgramBench's public threshold of at least 95%. Scores are computed with ProgramBench's own evaluation summary logic after active-branch and ignored-test filtering.</p>
+    <h2>Scope</h2>
+    <p>GoalBench is not the official mini-SWE-agent leaderboard. It is a scaffold measurement for Codex <code>/goal</code> on the same ProgramBench task family, with modes and compliance labels shown explicitly.</p>
+  </main>
+</body>
+</html>

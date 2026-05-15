@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GoalBench</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     :root {
       color-scheme: light;
@@ -12,8 +13,10 @@
       --line: #d9e0e6;
       --soft: #f5f7f8;
       --accent: #0f766e;
+      --accent-strong: #115e59;
       --warn: #b45309;
       --bad: #9f1239;
+      --gold: #f6c453;
     }
     * { box-sizing: border-box; }
     body {
@@ -24,17 +27,38 @@
     }
     header {
       border-bottom: 1px solid var(--line);
-      padding: 28px max(24px, calc((100vw - 1180px) / 2));
+      padding: 22px max(24px, calc((100vw - 1180px) / 2)) 28px;
     }
     main {
       max-width: 1180px;
       margin: 0 auto;
       padding: 24px;
     }
-    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0; }
+    nav { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; font-size: 14px; }
+    nav a { color: #33424d; text-decoration: none; }
+    nav a:hover { color: #075985; text-decoration: underline; }
+    h1 { margin: 0 0 8px; font-size: clamp(34px, 5vw, 64px); line-height: 0.98; letter-spacing: 0; max-width: 760px; }
     h2 { margin: 32px 0 12px; font-size: 18px; letter-spacing: 0; }
     h3 { margin: 0 0 10px; font-size: 14px; letter-spacing: 0; }
     p { color: var(--muted); line-height: 1.5; max-width: 900px; }
+    .brand { display: flex; gap: 10px; align-items: center; margin-bottom: 16px; font-weight: 800; letter-spacing: 0; }
+    .brand-mark { width: 30px; height: 30px; border-radius: 7px; display: inline-grid; place-items: center; background: #10201d; color: #d8fff4; font-weight: 900; }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+      gap: 28px;
+      align-items: end;
+    }
+    .hero-copy { font-size: 18px; max-width: 760px; }
+    .question { color: #33424d; margin: 0 0 12px; font-weight: 700; }
+    .hero-panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: #fbfcfc;
+    }
+    .hero-panel strong { display: block; font-size: 13px; color: var(--accent-strong); margin-bottom: 6px; }
+    .hero-panel p { margin: 0; font-size: 14px; }
     .pill-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
     .pill {
       border: 1px solid var(--line);
@@ -171,21 +195,46 @@
       background-size: 8px 8px;
     }
     a { color: #075985; }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; }
+      .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      header, main { padding-left: 16px; padding-right: 16px; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>GoalBench</h1>
-    <p>Codex <code>/goal</code> scaffold results on ProgramBench tasks. These are scaffold measurements, not official mini-SWE-agent leaderboard submissions.</p>
+
+    <nav>
+      <a href="./">Leaderboard</a>
+      <a href="task-details.html">Task Details</a>
+      <a href="#run-order">Run Order</a>
+      <a href="paper-compliance.md">Compliance</a>
+      <a href="runbook.md">Runbook</a>
+      <a href="https://programbench.com/extended/">ProgramBench Extended</a>
+    </nav>
+
+    <div class="brand"><span class="brand-mark">G</span><span>GoalBench</span></div>
+    <div class="hero">
+      <div>
+        <p class="question">Can Codex <code>/goal</code> rebuild programs from scratch?</p>
+        <h1>Long-running Codex on ProgramBench.</h1>
+        <p class="hero-copy">Given only a compiled binary and its documentation, Codex <code>/goal</code> agents must architect and implement a complete codebase that reproduces the original program's behavior.</p>
+      </div>
+      <aside class="hero-panel">
+        <strong>Scaffold measurement</strong>
+        <p>GoalBench reports Codex <code>/goal</code> runs against ProgramBench tasks. These are not official mini-SWE-agent leaderboard submissions.</p>
+      </aside>
+    </div>
     <div class="pill-row">
-      <span class="pill">Generated 2026-05-15T17:56:36.737799+00:00</span>
+      <span class="pill">Generated 2026-05-15T18:02:07.193763+00:00</span>
       <span class="pill">1 evaluated instances</span>
       <span class="pill">200 tasks in full ProgramBench</span>
       <span class="pill">Sorted Resolved → Almost → Avg. pass</span>
     </div>
   </header>
   <main>
-    <p class="note">Primary metric is fully resolved instances. Almost resolved follows ProgramBench's displayed threshold of at least 95% behavioral tests passing. The headline track is GPT-5.5 xhigh with Codex <code>/goal</code> in no-internet mode. Paper/cleanroom rows are ProgramBench-style Codex scaffold runs, not official mini-SWE-agent paper baseline reproductions. Open-internet and local-tools runs are intentionally non-compliant and reported separately. See the <a href="runbook.md">runbook</a> and <a href="paper-compliance.md">compliance notes</a> for setup and mode details.</p>
+    <p class="note">Primary metric is fully resolved instances. Almost resolved follows ProgramBench's displayed threshold of at least 95% behavioral tests passing. The headline track is GPT-5.5 xhigh with Codex <code>/goal</code> in no-internet mode. Paper/cleanroom rows are ProgramBench-style Codex scaffold runs, not official mini-SWE-agent paper baseline reproductions. Open-internet and local-tools runs are intentionally non-compliant and reported separately. See <a href="task-details.html">Task Details</a>, the <a href="runbook.md">runbook</a>, and <a href="paper-compliance.md">compliance notes</a> for setup and mode details.</p>
     <h2>How To Read Modes</h2>
     <div class="mode-grid">
       <div class="mode-card">
@@ -207,7 +256,7 @@
     </div>
     <p><a href="data/results.json">Download results.json</a> · <a href="data/results.csv">Download results.csv</a></p>
 
-    <h2>Recommended Run Order</h2>
+    <h2 id="run-order">Recommended Run Order</h2>
     <p>This site keeps each scaffold and mode separate. The intended sequence is:</p>
     <div class="table-wrap">
       <table>
@@ -388,7 +437,7 @@
 
 
     <h2>Task Details</h2>
-    <p>Task pages mirror ProgramBench's per-task view for this scaffold: scored behavioral tests, best score, and results by model/mode. Pending rows are full-run targets waiting for Codex results. The official ProgramBench task page is linked for baseline context.</p>
+    <p>Per-task pages show official ProgramBench context, GoalBench rows by model/mode, failed-test evidence, and baseline links. See <a href="task-details.html">how to read task pages</a>.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>#</th><th>Task</th><th>Generated tests</th><th>Official best</th><th>Codex best</th><th>Codex model</th><th>Codex rows</th><th>Official rows</th><th>ProgramBench</th></tr></thead>
