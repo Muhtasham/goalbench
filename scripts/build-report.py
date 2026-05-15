@@ -161,6 +161,12 @@ def codex_logo_img(class_name: str = "codex-mark") -> str:
     return f'<img class="{class_name}" src="assets/codex-logo.png" alt="" aria-hidden="true">'
 
 
+def brand_lockup() -> str:
+    return (
+        f'{brand_slash_svg()}<span>GoalBench</span><span class="brand-x">×</span>{codex_logo_img()}<span>Codex</span>'
+    )
+
+
 def write_support_files(output_dir: Path) -> None:
     (output_dir / "favicon.svg").write_text(
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">{BRAND_SLASH_PATHS}</svg>\n',
@@ -1307,8 +1313,10 @@ def render_task_details_page() -> str:
     }}
     main {{ max-width: 980px; margin: 0 auto; padding: 24px; }}
     .topbar {{ display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 28px; font-size: 14px; }}
-    .nav-brand {{ display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 850; text-decoration: none; }}
+    .nav-brand {{ display: inline-flex; align-items: center; gap: 8px; color: var(--ink); font-weight: 850; text-decoration: none; }}
     .brand-mark {{ width: 30px; height: 30px; display: block; flex: 0 0 auto; }}
+    .codex-mark {{ width: 26px; height: 26px; display: block; flex: 0 0 auto; }}
+    .brand-x {{ color: #7a8993; font-weight: 650; margin: 0 2px; }}
     .nav-links {{ display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }}
     .nav-links a {{ color: #40515c; text-decoration: none; border-radius: 6px; padding: 7px 9px; }}
     .nav-links a:hover {{ color: #075985; background: #eef6f3; }}
@@ -1330,7 +1338,7 @@ def render_task_details_page() -> str:
 <body>
   <header>
     <nav class="topbar" aria-label="Primary">
-      <a class="nav-brand" href="./">{brand_slash_svg()}<span>{SITE_NAME}</span></a>
+      <a class="nav-brand" href="./">{brand_lockup()}</a>
       <div class="nav-links">
         <a href="./">Leaderboard</a>
         <a href="extended/">Extended</a>
@@ -1462,7 +1470,7 @@ def render_html(data: dict, extended: bool = False) -> str:
     ]
     nav = f"""
     <nav class="topbar" aria-label="Primary">
-      <a class="nav-brand" href="./">{brand_slash_svg()}<span>{SITE_NAME}</span></a>
+      <a class="nav-brand" href="./">{brand_lockup()}</a>
       <div class="nav-links">
         <a href="./">Leaderboard</a>
         <a href="extended/">Extended</a>
@@ -1535,7 +1543,7 @@ def render_html(data: dict, extended: bool = False) -> str:
     .nav-brand {{
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       color: var(--ink);
       font-weight: 850;
       text-decoration: none;
@@ -1553,21 +1561,11 @@ def render_html(data: dict, extended: bool = False) -> str:
     h3 {{ margin: 0 0 10px; font-size: 14px; letter-spacing: 0; }}
     p {{ color: var(--muted); line-height: 1.5; max-width: 900px; }}
     .brand-mark {{ width: 30px; height: 30px; display: block; flex: 0 0 auto; }}
-    .codex-mark {{ width: 28px; height: 28px; display: block; flex: 0 0 auto; }}
+    .codex-mark {{ width: 26px; height: 26px; display: block; flex: 0 0 auto; }}
+    .brand-x {{ color: #7a8993; font-weight: 650; margin: 0 2px; }}
     .hero {{
       max-width: 880px;
     }}
-    .hero-lockup {{
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      margin: 0 0 22px;
-      color: #21313b;
-      font-size: 14px;
-      font-weight: 820;
-    }}
-    .hero-lockup span {{ display: inline-flex; align-items: center; gap: 8px; }}
-    .hero-lockup .lockup-x {{ color: #7a8993; font-weight: 650; }}
     .hero-copy {{ font-size: 18px; max-width: 770px; margin-bottom: 0; }}
     .question {{ color: var(--accent-strong); margin: 0 0 12px; font-weight: 800; }}
     .hero-disclosure {{
@@ -1767,7 +1765,6 @@ def render_html(data: dict, extended: bool = False) -> str:
       .section-head {{ align-items: flex-start; flex-direction: column; }}
       .metric-grid {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
       header, main {{ padding-left: 16px; padding-right: 16px; }}
-      .hero-lockup {{ margin-bottom: 18px; }}
     }}
   </style>
 </head>
@@ -1776,11 +1773,6 @@ def render_html(data: dict, extended: bool = False) -> str:
     {nav}
     <div class="hero">
       <div>
-        <div class="hero-lockup" aria-label="GoalBench powered by Codex">
-          <span>{brand_slash_svg("brand-mark")}GoalBench</span>
-          <span class="lockup-x">×</span>
-          <span>{codex_logo_img()}Codex</span>
-        </div>
         <p class="question">{question}</p>
         <h1>{heading}</h1>
         <p class="hero-copy">{hero_copy}</p>
