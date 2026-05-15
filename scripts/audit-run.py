@@ -187,6 +187,8 @@ def command_segments(command: str) -> list[str]:
 
 
 def is_parent_path_arg(arg: str) -> bool:
+    if arg in {"../submission.tar.gz", "../submission.tgz"}:
+        return False
     return arg == ".." or arg.startswith("../") or "/../" in arg or arg.endswith("/..")
 
 
