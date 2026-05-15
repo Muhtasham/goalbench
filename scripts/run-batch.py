@@ -359,15 +359,19 @@ def finalize_one(args: argparse.Namespace, record: dict) -> dict:
             cleanup_new_eval_containers(eval_containers)
 
 
-def summarize_and_collect(args: argparse.Namespace, state: dict) -> None:
-    if not args.programbench_repo:
-        return
-    run_root = Path(state["run_root"])
-    output = (
+def results_output_path(state: dict) -> Path:
+    return (
         DEFAULT_STATE_ROOT / state["batch_name"] / state["run_version"] / "results.csv"
         if state.get("run_version")
         else DEFAULT_STATE_ROOT / state["batch_name"] / "results.csv"
     )
+
+
+def summarize_and_collect(args: argparse.Namespace, state: dict, records: list[dict] | None = None) -> None:
+    if not args.programbench_repo:
+        return
+    run_root = Path(state["run_root"])
+    output = results_output_path(state)
     output.parent.mkdir(parents=True, exist_ok=True)
     run(
         [
@@ -384,7 +388,7 @@ def summarize_and_collect(args: argparse.Namespace, state: dict) -> None:
             str(output),
         ]
     )
-    for record in state["items"].values():
+    for record in records or list(state["items"].values()):
         if record["status"] == "evaluated":
             run(
                 [
@@ -406,6 +410,7 @@ def finalize(args: argparse.Namespace) -> None:
         if record["status"] in FINALIZE_READY or (args.retry_finalize_failed and record["status"] == "finalize_failed"):
             state["items"][instance_id] = finalize_one(args, record)
             save_state(state)
+            summarize_and_collect(args, state, [state["items"][instance_id]])
     summarize_and_collect(args, state)
     if not args.allow_partial:
         incomplete = [record["instance_id"] for record in state["items"].values() if record["status"] != "evaluated"]
