@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shlex
 import tarfile
 from dataclasses import dataclass
 from pathlib import Path
@@ -174,8 +175,52 @@ def command_segments(command: str) -> list[str]:
     return [segment.strip() for segment in re.split(r"(?:;|\n|&&|\|\||\|)", command) if segment.strip()]
 
 
+def is_parent_path_arg(arg: str) -> bool:
+    return arg == ".." or arg.startswith("../") or "/../" in arg or arg.endswith("/..")
+
+
+def segment_inspects_parent_directory(segment: str) -> bool:
+    try:
+        tokens = shlex.split(segment)
+    except ValueError:
+        return bool(PARENT_INSPECTION.search(segment))
+    if not tokens:
+        return False
+    tool = Path(tokens[0]).name
+    if tool not in {"cat", "find", "grep", "head", "ls", "rg", "sed", "tail", "wc"}:
+        return False
+    skip_next = False
+    for token in tokens[1:]:
+        if skip_next:
+            skip_next = False
+            continue
+        if tool == "rg" and token in {"-g", "--glob"}:
+            skip_next = True
+            continue
+        if tool == "rg" and (token.startswith("--glob=") or token.startswith("-g")):
+            continue
+        if token.startswith("-"):
+            continue
+        if is_parent_path_arg(token):
+            return True
+    return False
+
+
 def inspects_parent_directory(command: str) -> bool:
-    return any(PARENT_INSPECTION.search(segment) for segment in command_segments(command))
+    return any(segment_inspects_parent_directory(segment) for segment in command_segments(command))
+
+
+def source_lookup_patterns(command: str) -> list[str]:
+    patterns = []
+    for pattern in SOURCE_LOOKUP_PATTERNS:
+        if not re.search(pattern, command):
+            continue
+        if pattern == r"\bgit\s+clone\b" and (
+            'grep -E "path:|git clone"' in command or "grep -E 'path:|git clone'" in command
+        ):
+            continue
+        patterns.append(pattern)
+    return patterns
 
 
 def fetches_external_url(command: str) -> str:
@@ -336,8 +381,7 @@ def audit_command(
         )
     findings.extend(
         Finding(line_source, f"source/package lookup pattern: {pattern}", command)
-        for pattern in SOURCE_LOOKUP_PATTERNS
-        if re.search(pattern, command)
+        for pattern in source_lookup_patterns(command)
     )
     if fetch := fetches_external_url(command):
         findings.append(Finding(line_source, f"external URL fetch: {fetch}", command))
