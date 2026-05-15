@@ -49,6 +49,13 @@ SOURCE_LOOKUP_PATTERNS = (
     r"/go/pkg/mod",
     r"\$\(go env GOPATH\)/pkg/mod",
 )
+GIT_SOURCE_LOOKUP_PATTERNS = {
+    r"\bgit\s+clone\b",
+    r"\bgit\s+remote\b",
+    r"\bgit\s+fetch\b",
+    r"\bgit\s+pull\b",
+    r"\bgit\s+checkout\b",
+}
 LOCALHOSTS = {"127.0.0.1", "localhost", "::1", "[::1]", "0.0.0.0"}
 HOST_PATH_MARKERS = (
     "/" + "Users" + "/",
@@ -230,12 +237,79 @@ def source_lookup_patterns(command: str) -> list[str]:
     for pattern in SOURCE_LOOKUP_PATTERNS:
         if not re.search(pattern, command):
             continue
-        if pattern == r"\bgit\s+clone\b" and (
-            'grep -E "path:|git clone"' in command or "grep -E 'path:|git clone'" in command
-        ):
+        if pattern in GIT_SOURCE_LOOKUP_PATTERNS and git_command_uses_only_local_fixture(command):
+            continue
+        if pattern == r"\bgit\s+clone\b" and not git_clone_looks_like_source_lookup(command):
             continue
         patterns.append(pattern)
     return patterns
+
+
+def git_command_uses_only_local_fixture(command: str) -> bool:
+    if not (re.search(r"\bgit\s+init\b", command) and re.search(r"(?:^|\s|;|&&|\|\|)cd\s+/tmp/", command)):
+        return False
+    return not re.search(r"(?:https?|ssh|git)://|[\w.-]+@[\w.-]+:|github\.com|gitlab\.com|bitbucket\.org", command)
+
+
+def git_clone_looks_like_source_lookup(command: str) -> bool:
+    if 'grep -E "path:|git clone"' in command or "grep -E 'path:|git clone'" in command:
+        return False
+    for segment in command_segments(command):
+        try:
+            tokens = shlex.split(segment)
+        except ValueError:
+            if re.search(r"\bgit\s+clone\s+(?:https?://|ssh://|git@)", segment):
+                return True
+            continue
+        for index, token in enumerate(tokens[:-1]):
+            if Path(token).name != "git" or tokens[index + 1] != "clone":
+                continue
+            source = git_clone_source_arg(tokens[index + 2 :])
+            if source and clone_source_is_remote_or_host_path(source):
+                return True
+    return False
+
+
+def git_clone_source_arg(tokens: list[str]) -> str:
+    options_with_values = {
+        "-b",
+        "-c",
+        "-j",
+        "-o",
+        "--branch",
+        "--config",
+        "--depth",
+        "--jobs",
+        "--origin",
+        "--reference",
+        "--reference-if-able",
+        "--separate-git-dir",
+        "--template",
+    }
+    skip_next = False
+    for token in tokens:
+        if skip_next:
+            skip_next = False
+            continue
+        if token in options_with_values:
+            skip_next = True
+            continue
+        if token.startswith("--") and "=" in token:
+            continue
+        if token.startswith("-"):
+            continue
+        return token
+    return ""
+
+
+def clone_source_is_remote_or_host_path(source: str) -> bool:
+    if re.match(r"^(?:https?|ssh|git)://", source):
+        return True
+    if re.match(r"^[\w.-]+@[\w.-]+:", source):
+        return True
+    if any(host in source for host in ("github.com", "gitlab.com", "bitbucket.org")):
+        return True
+    return source.startswith(("..", "/", "~"))
 
 
 def fetches_external_url(command: str) -> str:
