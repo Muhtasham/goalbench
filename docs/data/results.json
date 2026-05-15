@@ -118,18 +118,18 @@
       "source": "https://programbench.com/extended/"
     }
   ],
-  "generated_at": "2026-05-15T08:31:12.754422+00:00",
+  "generated_at": "2026-05-15T08:41:49.923961+00:00",
   "groups": [
     {
       "agent": "Codex /goal",
       "almost_resolved": 3,
-      "almost_resolved_rate": 0.05263157894736842,
-      "average_calls": 79.75438596491227,
-      "average_cost_usd": 5.172426315789474,
-      "average_pass_rate": 0.5577920484251994,
+      "almost_resolved_rate": 0.05172413793103448,
+      "average_calls": 79.39655172413794,
+      "average_cost_usd": 5.141662068965518,
+      "average_pass_rate": 0.5501760747242562,
       "compliance": "Codex no-internet ablation",
       "host_profile": "smaller VM: 16 CPU / 30g",
-      "instances": 57,
+      "instances": 58,
       "mode": "No internet",
       "model": "GPT 5.5 (xhigh)",
       "resolved": 0,
@@ -138,16 +138,16 @@
       "score_distribution": [
         {
           "count": 5,
-          "cumulative_at_least": 57,
+          "cumulative_at_least": 58,
           "cumulative_rate_at_least": 1.0,
           "label": "0-10%",
           "lower": 0.0,
           "upper": 0.1
         },
         {
-          "count": 4,
-          "cumulative_at_least": 52,
-          "cumulative_rate_at_least": 0.9122807017543859,
+          "count": 5,
+          "cumulative_at_least": 53,
+          "cumulative_rate_at_least": 0.9137931034482759,
           "label": "10-20%",
           "lower": 0.1,
           "upper": 0.2
@@ -155,7 +155,7 @@
         {
           "count": 3,
           "cumulative_at_least": 48,
-          "cumulative_rate_at_least": 0.8421052631578947,
+          "cumulative_rate_at_least": 0.8275862068965517,
           "label": "20-30%",
           "lower": 0.2,
           "upper": 0.3
@@ -163,7 +163,7 @@
         {
           "count": 3,
           "cumulative_at_least": 45,
-          "cumulative_rate_at_least": 0.7894736842105263,
+          "cumulative_rate_at_least": 0.7758620689655172,
           "label": "30-40%",
           "lower": 0.3,
           "upper": 0.4
@@ -171,7 +171,7 @@
         {
           "count": 5,
           "cumulative_at_least": 42,
-          "cumulative_rate_at_least": 0.7368421052631579,
+          "cumulative_rate_at_least": 0.7241379310344828,
           "label": "40-50%",
           "lower": 0.4,
           "upper": 0.5
@@ -179,7 +179,7 @@
         {
           "count": 5,
           "cumulative_at_least": 37,
-          "cumulative_rate_at_least": 0.6491228070175439,
+          "cumulative_rate_at_least": 0.6379310344827587,
           "label": "50-60%",
           "lower": 0.5,
           "upper": 0.6
@@ -187,7 +187,7 @@
         {
           "count": 11,
           "cumulative_at_least": 32,
-          "cumulative_rate_at_least": 0.5614035087719298,
+          "cumulative_rate_at_least": 0.5517241379310345,
           "label": "60-70%",
           "lower": 0.6,
           "upper": 0.7
@@ -195,7 +195,7 @@
         {
           "count": 10,
           "cumulative_at_least": 21,
-          "cumulative_rate_at_least": 0.3684210526315789,
+          "cumulative_rate_at_least": 0.3620689655172414,
           "label": "70-80%",
           "lower": 0.7,
           "upper": 0.8
@@ -203,7 +203,7 @@
         {
           "count": 7,
           "cumulative_at_least": 11,
-          "cumulative_rate_at_least": 0.19298245614035087,
+          "cumulative_rate_at_least": 0.1896551724137931,
           "label": "80-90%",
           "lower": 0.8,
           "upper": 0.9
@@ -211,16 +211,16 @@
         {
           "count": 4,
           "cumulative_at_least": 4,
-          "cumulative_rate_at_least": 0.07017543859649122,
+          "cumulative_rate_at_least": 0.06896551724137931,
           "label": "90-100%",
           "lower": 0.9,
           "upper": 1.0
         }
       ],
       "slug": "gpt-5-5--xhigh--codex--goal-no-internet-codex-no-internet-ablation",
-      "total_calls": 4546,
-      "total_cost_usd": 294.8283,
-      "total_wall_clock_hours": 13.641111111111112
+      "total_calls": 4605,
+      "total_cost_usd": 298.2164,
+      "total_wall_clock_hours": 13.816666666666666
     }
   ],
   "programbench_tasks": 200,
@@ -2171,9 +2171,43 @@
       "score": 0.1506378802747792,
       "task_path": "task/facebook__zstd.1168da0/",
       "wall_clock_seconds": 977
+    },
+    {
+      "agent": "Codex /goal",
+      "almost_resolved": false,
+      "calls": 59,
+      "compliance": "Codex no-internet ablation",
+      "docker_cpus": "16",
+      "docker_memory": "30g",
+      "error_code": "",
+      "estimated_cost_usd": 3.3881,
+      "evaluator_problem": false,
+      "evidence_path": "evidence/cpx62-nointernet-xhigh-20260515T003932Z-ffmpeg-ffmpeg/ffmpeg__ffmpeg.360a402/manifest.json",
+      "host_machine": "x86_64",
+      "host_profile": "smaller VM: 16 CPU / 30g",
+      "host_system": "Linux",
+      "inference_mode": "no-internet",
+      "instance_id": "ffmpeg__ffmpeg.360a402",
+      "mode": "No internet",
+      "model": "gpt-5.5",
+      "model_display": "GPT 5.5 (xhigh)",
+      "n_resolved_tests": 354,
+      "n_system_errors": 0,
+      "n_tests": 3050,
+      "n_warnings": 0,
+      "paper_compliant": false,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "programbench_comparable": false,
+      "reasoning_effort": "xhigh",
+      "resolved": false,
+      "run_name": "cpx62-nointernet-xhigh-20260515T003932Z-ffmpeg-ffmpeg",
+      "run_version": "",
+      "score": 0.1160655737704918,
+      "task_path": "task/ffmpeg__ffmpeg.360a402/",
+      "wall_clock_seconds": 632
     }
   ],
-  "sample_instances": 57,
+  "sample_instances": 58,
   "tasks": [
     {
       "best_model": "GPT 5.5 (xhigh)",
@@ -2884,15 +2918,15 @@
       "task_path": "task/facebookresearch__fasttext.1142dc4/"
     },
     {
-      "best_model": "",
-      "best_score": null,
+      "best_model": "GPT 5.5 (xhigh)",
+      "best_score": 0.1160655737704918,
       "instance_id": "ffmpeg__ffmpeg.360a402",
       "official_best_score": 0.07,
       "official_generated_tests": 3050,
       "official_result_count": 13,
       "official_task_url": "https://programbench.com/task/ffmpeg__ffmpeg.360a402/",
-      "result_count": 0,
-      "scored_tests": null,
+      "result_count": 1,
+      "scored_tests": 3050,
       "task_path": "task/ffmpeg__ffmpeg.360a402/"
     },
     {
