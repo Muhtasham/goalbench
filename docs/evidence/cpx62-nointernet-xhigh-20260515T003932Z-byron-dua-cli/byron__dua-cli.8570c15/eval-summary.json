@@ -1,0 +1,1425 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.8947333410033025
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.11970355400262633
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.14970374000040465
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.1308128509990638
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.13269407500047237
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.11272232999908738
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6557007020019228
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09291308600222692
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10213926099822856
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13040137300049537
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13309412200032966
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 15.014618987002905
+    },
+    {
+      "branch": "c2599e7591b2",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.024687786000868073
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1310840799997095
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12717787500150735
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1257105810000212
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11711421300060465
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 7.035983675999887
+    },
+    {
+      "branch": "d014dc54f718",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02126667899938184
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13348795099955169
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1227464420007891
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12360851800258388
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12496637299773283
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 45.01194231300178
+    },
+    {
+      "branch": "f4db9bade42b",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.023628309998457553
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1289130369987106
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1150849899968307
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12520481200044742
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1319547250022879
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.6980012679996435
+    },
+    {
+      "branch": "4de4727adf7f",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.027919833002670202
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13476739399993676
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11087092600064352
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1255222700019658
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11051323799983948
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.478818455998407
+    },
+    {
+      "branch": "1108111f6267",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.022362604999216273
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.14060808200156316
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13553190200036624
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12116855600106646
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12991306299954886
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.420728515000519
+    },
+    {
+      "branch": "eba9b739385d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.01893237700278405
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13282109200008563
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10229795800114516
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.0894807779986877
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1098840900012874
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.391481553000631
+    },
+    {
+      "branch": "1348ea81d136",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03186076800193405
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1316680260024441
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13079131000267807
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11336744599975646
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12358197700086748
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.1501374219988065
+    },
+    {
+      "branch": "becd061accb4",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03528433500105166
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13194666500203311
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12275391100047273
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11015547900024103
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.14087695099806297
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.2412567749997834
+    },
+    {
+      "branch": "6ac475511579",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.0364220209994528
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.14289693300088402
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13749489299880224
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11911499400230241
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10434349100250984
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 17.01564127399979
+    },
+    {
+      "branch": "2340a3323717",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.04089017400110606
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11989747999905376
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12901000599958934
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10234286799823167
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12595247799981735
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.592471648000355
+    },
+    {
+      "branch": "dc305c27a9ba",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02942650700060767
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13067659000080312
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12276950900195516
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12383335599952261
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12161251400175388
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 17.67915037000057
+    },
+    {
+      "branch": "6f2d18f2fb17",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.024100596998323454
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1440282080002362
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12072389699824271
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10662054099884699
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12705196300157695
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 4.202501278999989
+    },
+    {
+      "branch": "9bcc06cbc2d0",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03802823399746558
+    }
+  ],
+  "executable_hash": "57d5f63d69d2c01c506b242e618a2c642dedb1f64022dd61c9b1c1585f32d42a",
+  "failed_tests": [
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_extreme_coverage.test_completions_detailed_output",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_global_flags.test_log_file_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_mode.test_interactive_without_tty",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_mode.test_interactive_with_path_no_tty",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_launches_with_tmux",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_with_no_entry_check",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_i_alias",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_deeply_nested",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_multiple_paths",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_displays_percentages",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_with_current_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_with_subdirectories",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_mode.test_interactive_alias_without_tty",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_specific_code_paths.test_log_file_written_with_content",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_mode.test_interactive_no_entry_check_flag_no_tty",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_mode.test_interactive_short_flag_no_entry_check",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_version_in_header",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_with_apparent_size",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_shows_file_listing",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_displays_sizes",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_shows_total_size",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_empty_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_special_chars_in_filename",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_with_large_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "Running as root, can't test permission errors",
+      "name": "eval.tests.test_error_cases.test_aggregate_with_permission_denied",
+      "status": "skipped"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "Running as root, can't test permission errors",
+      "name": "eval.tests.test_error_cases.test_mixed_readable_unreadable_files",
+      "status": "skipped"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "AssertionError",
+      "name": "eval.tests.test_error_cases.test_log_file_creation",
+      "status": "failure"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "AssertionError",
+      "name": "eval.tests.test_error_cases.test_log_file_invalid_path",
+      "status": "failure"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "AssertionError",
+      "name": "eval.tests.test_error_cases.test_multiple_format_specifications",
+      "status": "failure"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "Running as root, can't test permission errors",
+      "name": "eval.tests.test_input_handling.test_no_permission_handling",
+      "status": "skipped"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tui.test_interactive_mode_launches_in_tmux",
+      "status": "failure"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tui.test_interactive_mode_no_entry_check_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tui.test_interactive_mode_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tui.test_interactive_mode_help",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate.test_aggregate_single_directory_sorted_by_size",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate.test_aggregate_directory_with_subdirectories_only",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate_advanced.test_ignore_dirs_multiple_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_completions.test_completions_fish_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Expected size for directory tree:      86016 b level0",
+      "name": "tests.test_aggregate_advanced.test_deep_directory_hierarchy",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_completions.test_completions_elvish_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: missing 'metric' format value",
+      "name": "tests.test_completions.test_completions_bash_contains_format_values",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Expected subdir1 to show 0 b when ignored, got:       4096 b subdir1",
+      "name": "tests.test_aggregate_advanced.test_ignore_dirs_flag_skips_traversed_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: missing --help flag",
+      "name": "tests.test_completions.test_completions_zsh_contains_common_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate_advanced.test_multiple_roots_all_valid",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: missing case for 'i' alias",
+      "name": "tests.test_completions.test_completions_bash_subcommand_aliases",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: missing interactive subcommand check",
+      "name": "tests.test_completions.test_completions_fish_interactive_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: missing 'metric' format value",
+      "name": "tests.test_completions.test_completions_zsh_format_values",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: missing --help flag",
+      "name": "tests.test_completions.test_completions_elvish_contains_common_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate.test_aggregate_empty_directory_shows_zero_bytes",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_broken_symlink_explicit_path",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate.test_aggregate_multiple_paths_default_sorted",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_completions.test_completions_zsh_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "Cannot test permission denied when running as root",
+      "name": "tests.test_aggregate_advanced.test_permission_denied_error_handling",
+      "status": "skipped"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: missing 'i' alias in case statement",
+      "name": "tests.test_completions.test_completions_bash_contains_main_commands",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Expected 0 b for symlink, got:       4096 b /tmp/pytest-of-root/pytest-0/popen-gw14/test_symlink_handling2/link.txt",
+      "name": "tests.test_aggregate_advanced.test_symlink_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_completions.test_completions_bash_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: missing aggregate case",
+      "name": "tests.test_completions.test_completions_bash_aggregate_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: missing help subcommand with description",
+      "name": "tests.test_completions.test_completions_zsh_help_subcommand",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_mixed_valid_and_broken_symlinks",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: missing base command context",
+      "name": "tests.test_completions.test_completions_powershell_subcommand_contexts",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_empty_directory_no_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_creates_new_file",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_invalid_path_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_appends_to_existing_file",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw15/test_log_file_with_aggregate_m2/aggregate.log'",
+      "name": "tests.test_global_flags.test_log_file_with_aggregate_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_symlink_chain_to_nonexistent",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_circular_symlinks_both_paths",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_completions.test_completions_powershell_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw0/test_log_file_with_format2/format.log'",
+      "name": "tests.test_global_flags.test_log_file_with_format",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: missing base command entry",
+      "name": "tests.test_completions.test_completions_elvish_command_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_with_nonexistent_path",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_aggregate_subcommand_no_sorting",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw10/test_log_file_contains_ignore_2/ignore_dirs.log'",
+      "name": "tests.test_global_flags.test_log_file_contains_ignore_dirs",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_no_sort",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw4/test_threads_default_value_log2/default_threads.log'",
+      "name": "tests.test_global_flags.test_threads_default_value_logged",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_statistics",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_no_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot for format bytes",
+      "name": "tests.test_harvest.test_format_variants[bytes]",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw14/test_log_file_overwrite_vs_app2/multi_run.log'",
+      "name": "tests.test_global_flags.test_log_file_overwrite_vs_append_multiple_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot for format mb",
+      "name": "tests.test_harvest.test_format_variants[mb]",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Error message doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_interactive_without_tty",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw5/test_log_file_with_threads2/threaded.log'",
+      "name": "tests.test_global_flags.test_log_file_with_threads",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw7/test_log_file_records_thread_c2/threads_log.log'",
+      "name": "tests.test_global_flags.test_log_file_records_thread_count",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw0/test_log_file_records_all_flag2/all_flags.log'",
+      "name": "tests.test_global_flags.test_log_file_records_all_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_no_total",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_aggregate_no_sort",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Expected failure with broken link",
+      "name": "tests.test_harvest.test_multiple_paths_broken_link",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_aggregate",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_no_subcommand",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot for format metric",
+      "name": "tests.test_harvest.test_format_variants[metric]",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot for format binary",
+      "name": "tests.test_harvest.test_format_variants[binary]",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot for format mib",
+      "name": "tests.test_harvest.test_format_variants[mib]",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_some_not_existing",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Not inside dir1",
+      "name": "tests.test_interactive.test_interactive_left_back_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_trash_file_with_ctrl_t",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Missing header",
+      "name": "tests.test_interactive.test_interactive_basic_launch",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Wrong initial sort mode",
+      "name": "tests.test_interactive.test_interactive_sort_toggle",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_delete_single_marked_file",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Failed to launch with --no-entry-check",
+      "name": "tests.test_interactive.test_interactive_no_entry_check_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_toggle_all_items_with_a_key",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_delete_mixed_files_and_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_delete_directory_with_contents",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_delete_navigation_after_deletion",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_search_glob_basic_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_page_navigation_ctrl_d_ctrl_u",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Marked pane not shown",
+      "name": "tests.test_interactive.test_interactive_marking_items",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_mark_and_delete_from_subdirectory",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_unmark_files_before_deletion",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_delete_multiple_marked_files",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_empty_directory_after_deleting_all",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_navigation_home_end_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_search_glob_case_sensitivity_toggle",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_search_glob_no_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_page_down_up_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Help panel not shown",
+      "name": "tests.test_interactive.test_interactive_help_toggle",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_display_toggle_both_columns",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_display_toggle_mtime_column",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_multiple_directories_launch",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_search_glob_wildcard_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_display_toggle_count_column",
+      "status": "failure"
+    },
+    {
+      "branch": "4de4727adf7f",
+      "message": "AssertionError: Expected exit code 2, got 0\nstdout: #x1B[32m   4.00 KiB#x1B[39m .editorconfig\n#x1B[32m   4.00 KiB#x1B[39m .gitignore\n#x1B[32m   4.00 KiB#x1B[39m Cargo.toml\n#x1B[32m   4.00 KiB#x1B[39m LICENSE\n#x1B[32m   4.00 KiB#x1B[39m Makefile\n#x1B[32m   4.00 KiB#x1B[39m build.sh\n#x1B[32m   4.00 KiB#x1B[39m compile.sh\n#x1B[32m   8.00 KiB#x1B[39m #x1B[36m.github#x1B[39m\n#x1B[32m   8.00 KiB#x1B[39m README.md\n#x1B[32m   8.00 KiB#x1B[39m #x1B[36metc#x1B[39m\n#x1B[32m  16.00 KiB#x1B[39m #x1B[36mci#x1B[39m\n#x1B[32m  28.00 KiB#x1B[39m dua_reimpl.py\n#x1B[32m  28.00 KiB#x1B[39m executable\n#x1B[32m  48.00 KiB#x1B[39m Cargo.lock\n#x1B[32m  80.00 KiB#x1B[39m #x1B[36meval#x1B[39m\n#x1B[32m 184.00 KiB#x1B[39m #x1B[36m.git#x1B[39m\n#x1B[32m 236.00 KiB#x1B[39m CHANGELOG.md\n#x1B[32m 288.00 KiB#x1B[39m #x1B[36msrc#x1B[39m\n#x1B[32m   1.39 MiB#x1B[39m #x1B[36mtests#x1B[39m\n#x1B[32m   2.33 MiB#x1B[39m total\n\nstderr:",
+      "name": "eval.tests.test_argument_parsing.TestEdgeCases.test_multiple_same_flags_error",
+      "status": "failure"
+    },
+    {
+      "branch": "1108111f6267",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_unknown_flag_errors[args1-must_contain1]",
+      "status": "failure"
+    },
+    {
+      "branch": "1108111f6267",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_default_and_precedence.test_repeated_flag_is_rejected_for_format",
+      "status": "failure"
+    },
+    {
+      "branch": "2340a3323717",
+      "message": "AssertionError",
+      "name": "eval.tests.test_tui_interactive.test_initial_screen_has_header_and_footer",
+      "status": "failure"
+    },
+    {
+      "branch": "2340a3323717",
+      "message": "test_help_pane_toggles_with_question_mark depends on test_initial_screen_has_header_and_footer",
+      "name": "eval.tests.test_tui_interactive.test_help_pane_toggles_with_question_mark",
+      "status": "skipped"
+    },
+    {
+      "branch": "2340a3323717",
+      "message": "test_navigation_j_moves_selection_and_does_not_crash depends on test_initial_screen_has_header_and_footer",
+      "name": "eval.tests.test_tui_interactive.test_navigation_j_moves_selection_and_does_not_crash",
+      "status": "skipped"
+    },
+    {
+      "branch": "2340a3323717",
+      "message": "test_unbound_key_is_ignored_gracefully depends on test_initial_screen_has_header_and_footer",
+      "name": "eval.tests.test_tui_interactive.test_unbound_key_is_ignored_gracefully",
+      "status": "skipped"
+    },
+    {
+      "branch": "2340a3323717",
+      "message": "test_quit_with_q_returns_to_shell_prompt depends on test_initial_screen_has_header_and_footer",
+      "name": "eval.tests.test_tui_interactive.test_quit_with_q_returns_to_shell_prompt",
+      "status": "skipped"
+    },
+    {
+      "branch": "dc305c27a9ba",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized_stateless_journey.test_ext_multiple_roots_with_broken_link_fails_but_lists_valid_paths",
+      "status": "failure"
+    },
+    {
+      "branch": "dc305c27a9ba",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized_stateless_journey.test_ext_interactive_mode_without_tty_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "6f2d18f2fb17",
+      "message": "test_interactive_help_overlay_and_quit depends on test_interactive_starts_and_renders",
+      "name": "eval.tests.test_interactive_tui.test_interactive_help_overlay_and_quit",
+      "status": "skipped"
+    },
+    {
+      "branch": "6f2d18f2fb17",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tui.test_interactive_starts_and_renders",
+      "status": "failure"
+    },
+    {
+      "branch": "9bcc06cbc2d0",
+      "message": "AssertionError",
+      "name": "eval.tests.test_dua_errors.TestErrorHandling.test_interactive_without_tty",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 124,
+    "passed": 869,
+    "skipped": 9
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "c2599e7591b2",
+    "d014dc54f718",
+    "f4db9bade42b",
+    "4de4727adf7f",
+    "1108111f6267",
+    "eba9b739385d",
+    "1348ea81d136",
+    "becd061accb4",
+    "6ac475511579",
+    "2340a3323717",
+    "dc305c27a9ba",
+    "6f2d18f2fb17",
+    "9bcc06cbc2d0"
+  ],
+  "test_records": 1002,
+  "warnings": []
+}

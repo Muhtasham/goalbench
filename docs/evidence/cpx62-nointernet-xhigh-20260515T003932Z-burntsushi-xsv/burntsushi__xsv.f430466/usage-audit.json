@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T04:12:31.450684+00:00",
+  "generated_at": "2026-05-15T04:16:42.327896+00:00",
   "notes": [
     "Costs are estimates from local Codex token_count logs, not authoritative billed dollars.",
     "Pricing comes from an official-doc snapshot because there is no supported structured pricing endpoint.",
@@ -9,7 +9,7 @@
   "pricing_file": "local_state/openai_pricing.json",
   "pricing_file_sha256": "953d8f9d9bbd42a3ca9ec35a865a4711fdc11fb9cbc682a8b13acb2fd0ba2924",
   "pricing_snapshot": {
-    "age_hours": 2.58,
+    "age_hours": 2.65,
     "fetched_at": "2026-05-15T01:37:50.839307+00:00",
     "max_age_hours": 24,
     "models": {
@@ -549,17 +549,36 @@
         "$CODEX_SESSIONS/2026/05/15/rollout-2026-05-15T01-23-57-019e293b-adc6-71f3-80b1-5deb0acd8e42.jsonl"
       ],
       "total_tokens": 4429611
+    },
+    {
+      "cached_input_tokens": 2500480,
+      "calls": 49,
+      "estimated_cost_usd": "3.2175",
+      "input_tokens": 2655817,
+      "instance_id": "byron__dua-cli.8570c15",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 39685,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 12452,
+      "run_name": "cpx62-nointernet-xhigh-20260515T003932Z-byron-dua-cli",
+      "run_version": "",
+      "session_logs": [
+        "$CODEX_SESSIONS/2026/05/15/rollout-2026-05-15T01-24-05-019e293b-cb85-7183-9fec-3fce7092fbd3.jsonl"
+      ],
+      "total_tokens": 2695502
     }
   ],
   "totals": {
-    "cached_input_tokens": 146105088,
-    "calls": 2187,
-    "estimated_cost_usd": 143.8053,
-    "input_tokens": 151057100,
+    "cached_input_tokens": 148605568,
+    "calls": 2236,
+    "estimated_cost_usd": 147.0228,
+    "input_tokens": 153712917,
     "long_context_calls": 0,
-    "output_tokens": 1529738,
-    "reasoning_output_tokens": 386981,
-    "total_tokens": 152586838
+    "output_tokens": 1569423,
+    "reasoning_output_tokens": 399433,
+    "total_tokens": 155282340
   },
   "warnings": []
 }
