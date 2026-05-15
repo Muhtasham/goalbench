@@ -1,0 +1,4303 @@
+{
+  "error_code": null,
+  "error_details": "",
+  "executable_hash": "66ec7797b9a2921121190eff63c71e3300b50814101419ee1b9041373da7f227",
+  "log": [
+    {
+      "branch": "",
+      "command": "rm -rf /workspace/* /workspace/.[!.]*",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.14610716700553894
+    },
+    {
+      "branch": "",
+      "command": "find /workspace -type f -exec sha256sum {} + 2>/dev/null | grep -E \"^(e7464f4078a4be427e752bfdd7aae891f74287fe0afe4c347a31d87b204467ff)  \" | cut -c67- | xargs -I% rm -fv %",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.13114489000145113
+    },
+    {
+      "branch": "",
+      "command": "if [ ! -d .git ]; then GIT_AUTHOR_DATE='2000-01-01T00:00:00Z' GIT_COMMITTER_DATE='2000-01-01T00:00:00Z' git -c init.defaultBranch=gold init -q && git -c user.email=gold@local -c user.name=gold -c commit.gpgsign=false add -A && GIT_AUTHOR_DATE='2000-01-01T00:00:00Z' GIT_COMMITTER_DATE='2000-01-01T00:00:00Z' git -c user.email=gold@local -c user.name=gold -c commit.gpgsign=false commit -q --allow-empty -m gold; fi",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.14171297900611535
+    },
+    {
+      "branch": "",
+      "command": "chmod +x ./compile.sh && ./compile.sh",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.13728914999956032
+    },
+    {
+      "branch": "",
+      "command": "mv ./executable /opt/programbench-stashed-executable-do-not-modify",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.11648956999852089
+    },
+    {
+      "branch": "",
+      "command": "sha256sum /opt/programbench-stashed-executable-do-not-modify",
+      "exception_info": "",
+      "output_original_chars": 117,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.1361834240015014
+    },
+    {
+      "branch": "",
+      "command": "pip3 install -q --disable-pip-version-check pytest-rerunfailures",
+      "exception_info": "",
+      "output_original_chars": 222,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6798997110017808
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.08006054900033632
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10787219499616185
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11976888399658492
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=thread/--timeout-method=signal/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.0994360280019464
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 10498,
+      "output_redacted": true,
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 37.80097177900461
+    },
+    {
+      "branch": "d95dad695c95",
+      "command": "docker cp 30403a935dfcb84d69b179cd4558bb66fe41002d250a79a2f6492afba7b2ca00:/workspace/eval/results.xml /tmp/tmp7r0t_0m1.xml",
+      "exception_info": "",
+      "output_original_chars": 11247,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.037385206000180915
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10226928500196664
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1003741109961993
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10448011900007259
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=thread/--timeout-method=signal/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11134210000454914
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 111692,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 1010.5975722540024
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "command": "docker cp a631d51f11486e27c64a9a807f54e655415851f7cbbdc002e40c19bfd4732c1b:/workspace/eval/results.xml /tmp/tmpm0igz1oz.xml",
+      "exception_info": "",
+      "output_original_chars": 51791,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03218370899412548
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.125910656999622
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1253520190002746
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10372799400647637
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=thread/--timeout-method=signal/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11667688700254075
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 12842,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.865839705998951
+    },
+    {
+      "branch": "e454759f15a4",
+      "command": "docker cp 86291114c1cc016388f7436af112989adcff7cc8b970386d7dc4d86acd3a0962:/workspace/eval/results.xml /tmp/tmpcx3jisxc.xml",
+      "exception_info": "",
+      "output_original_chars": 10013,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.034366458996373694
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1473813920019893
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.08606682100071339
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11071956300293095
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=thread/--timeout-method=signal/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11774038200383075
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 4036,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.302817474999756
+    },
+    {
+      "branch": "f1e76ae50499",
+      "command": "docker cp 915887f32a757029bb3a6ef5f9454122ea7980e5841bfbf4dcd7449d23208362:/workspace/eval/results.xml /tmp/tmp2u9gpkdw.xml",
+      "exception_info": "",
+      "output_original_chars": 2133,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03056320500036236
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12473804100591224
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.0953360999992583
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11278349399799481
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=thread/--timeout-method=signal/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.08081255399883958
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 4009,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.445816270002979
+    },
+    {
+      "branch": "c977eb4a4e02",
+      "command": "docker cp 385353d2ee0d2dff4ea34c1f80b4fc9a7282ceafdd24596fad299eef3580b230:/workspace/eval/results.xml /tmp/tmpsfxo4nir.xml",
+      "exception_info": "",
+      "output_original_chars": 1736,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03967951500089839
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13396413999726065
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12934271000267472
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1318564190005418
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=thread/--timeout-method=signal/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12188514299486997
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 3514,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.4028030460031005
+    },
+    {
+      "branch": "4acd63872783",
+      "command": "docker cp 514666effc7e0f29662aa6bd0b120bff4d188ff30419f302a50982e0f36e0bf0:/workspace/eval/results.xml /tmp/tmp4m07cx6t.xml",
+      "exception_info": "",
+      "output_original_chars": 1758,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03374611099570757
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12995869700534968
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13294502400094643
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11307850199955283
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=thread/--timeout-method=signal/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10308907499711495
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 2532,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.252093464005156
+    },
+    {
+      "branch": "6ce775dbab8a",
+      "command": "docker cp 1955bffb18f5f6b5a33651020c98f6fb245e12874dceb2129a443744c731fb63:/workspace/eval/results.xml /tmp/tmp23eqt8i8.xml",
+      "exception_info": "",
+      "output_original_chars": 500,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03381144100421807
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.15251636799803236
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12914557000476634
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13697420599783072
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=thread/--timeout-method=signal/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10780017399520148
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 1902,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.3277134989984916
+    },
+    {
+      "branch": "ac290e5f97d2",
+      "command": "docker cp 591f65d0e108c88d5f09a810f31549d57781e42d3946afd13646c2dce379ac77:/workspace/eval/results.xml /tmp/tmp4ssjv574.xml",
+      "exception_info": "",
+      "output_original_chars": 1147,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.030946634004067164
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10850280200247653
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1253851469955407
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10380078199523268
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=thread/--timeout-method=signal/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1276669069993659
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 3490,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 21.745841295996797
+    },
+    {
+      "branch": "183567ae769e",
+      "command": "docker cp 08532b3384c58fd763a40d7074df2665cc6646d56ecc6527d8456b3156c12f4a:/workspace/eval/results.xml /tmp/tmpi442w5gy.xml",
+      "exception_info": "",
+      "output_original_chars": 3674,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03732392499659909
+    }
+  ],
+  "public_redactions": {
+    "extra_text": "redacted",
+    "log_output": "redacted",
+    "long_extra_text": "truncated to 2000 chars"
+  },
+  "solution_branch": "submission",
+  "test_branch_errors": {},
+  "test_branches": [
+    "d95dad695c95",
+    "8f4b78a7e9eb",
+    "e454759f15a4",
+    "f1e76ae50499",
+    "c977eb4a4e02",
+    "4acd63872783",
+    "6ce775dbab8a",
+    "ac290e5f97d2",
+    "183567ae769e"
+  ],
+  "test_results": [
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.055
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestBasicInvocation.test_help_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.069
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestBasicInvocation.test_help_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestBasicInvocation.test_version_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.065
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestBasicInvocation.test_version_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestBasicInvocation.test_no_arguments",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestBasicInvocation.test_unknown_command",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestBasicInvocation.test_invalid_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestLocalCommandHelp.test_local_help_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestLocalCommandHelp.test_local_help_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestServerCommandHelp.test_server_help_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.03
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestServerCommandHelp.test_server_help_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.03
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestHelpSubcommand.test_help_command",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestHelpSubcommand.test_help_local",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_01_basic_invocation.TestHelpSubcommand.test_help_server",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandRequired.test_local_no_args_shows_error",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandRequired.test_local_missing_to_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandRequired.test_local_missing_port_shows_error",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandPortValidation.test_local_invalid_port_non_numeric",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandPortValidation.test_local_invalid_port_negative",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.239
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandPortValidation.test_local_invalid_port_zero",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.051
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandPortValidation.test_local_invalid_port_too_large",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.18
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandPortValidation.test_local_valid_port_formats",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.058
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandServerValidation.test_local_empty_server_address",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.062
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandServerValidation.test_local_invalid_server_connection",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.062
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandOptionalArgs.test_local_with_port_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.053
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandOptionalArgs.test_local_with_port_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandOptionalArgs.test_local_with_local_host_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.066
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandOptionalArgs.test_local_with_local_host_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.051
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandOptionalArgs.test_local_with_secret_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandOptionalArgs.test_local_with_secret_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "eval.tests.test_02_local_command_validation.TestLocalCommandToShortFlag.test_local_with_to_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.006
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandBasic.test_server_no_args_attempts_start",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.004
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandPortRange.test_server_min_port_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandPortRange.test_server_max_port_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.006
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandPortRange.test_server_both_port_flags",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.046
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandPortRange.test_server_invalid_port_range_reversed",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.004
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandPortRange.test_server_port_range_equal",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.055
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandPortRange.test_server_invalid_min_port_negative",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.03
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandPortRange.test_server_invalid_max_port_too_large",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.004
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandBindAddress.test_server_bind_addr_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.006
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandBindAddress.test_server_bind_addr_ipv6",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.054
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandBindAddress.test_server_bind_addr_invalid_format",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.006
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandBindAddress.test_server_bind_tunnels_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandBindAddress.test_server_bind_addr_and_tunnels",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandSecret.test_server_with_secret_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandSecret.test_server_with_secret_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandSecret.test_server_with_empty_secret",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.006
+      },
+      "name": "eval.tests.test_03_server_command_validation.TestServerCommandCombinations.test_server_all_flags_together",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.071
+      },
+      "name": "eval.tests.test_04_environment_variables.TestLocalEnvironmentVariables.test_local_port_from_env_var",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.058
+      },
+      "name": "eval.tests.test_04_environment_variables.TestLocalEnvironmentVariables.test_local_server_from_env_var",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.066
+      },
+      "name": "eval.tests.test_04_environment_variables.TestLocalEnvironmentVariables.test_local_secret_from_env_var",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.06
+      },
+      "name": "eval.tests.test_04_environment_variables.TestLocalEnvironmentVariables.test_local_env_var_overridden_by_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.039
+      },
+      "name": "eval.tests.test_04_environment_variables.TestLocalEnvironmentVariables.test_local_all_env_vars",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_04_environment_variables.TestServerEnvironmentVariables.test_server_min_port_from_env_var",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.006
+      },
+      "name": "eval.tests.test_04_environment_variables.TestServerEnvironmentVariables.test_server_max_port_from_env_var",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_04_environment_variables.TestServerEnvironmentVariables.test_server_secret_from_env_var",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_04_environment_variables.TestServerEnvironmentVariables.test_server_all_env_vars",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.006
+      },
+      "name": "eval.tests.test_04_environment_variables.TestServerEnvironmentVariables.test_server_env_var_overridden_by_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.06
+      },
+      "name": "eval.tests.test_04_environment_variables.TestEnvironmentVariableValidation.test_local_invalid_port_in_env_var",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "eval.tests.test_04_environment_variables.TestEnvironmentVariableValidation.test_server_invalid_min_port_in_env_var",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "eval.tests.test_04_environment_variables.TestEnvironmentVariableValidation.test_server_empty_port_range_from_env_vars",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.706
+      },
+      "name": "eval.tests.test_05_server_client_integration.TestServerStartup.test_server_starts_successfully",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.506
+      },
+      "name": "eval.tests.test_05_server_client_integration.TestServerStartup.test_server_with_custom_port_range",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.507
+      },
+      "name": "eval.tests.test_05_server_client_integration.TestServerStartup.test_server_with_secret",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.506
+      },
+      "name": "eval.tests.test_05_server_client_integration.TestServerStartup.test_server_with_bind_addr",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.931
+      },
+      "name": "eval.tests.test_05_server_client_integration.TestClientServerBasicInteraction.test_client_attempts_connection_to_server",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 1.912
+      },
+      "name": "eval.tests.test_05_server_client_integration.TestClientServerWithAuthentication.test_client_server_matching_secrets",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.763
+      },
+      "name": "eval.tests.test_05_server_client_integration.TestClientServerWithAuthentication.test_client_server_mismatched_secrets",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "time": 0.743
+      },
+      "name": "eval.tests.test_05_server_client_integration.TestClientServerWithAuthentication.test_client_no_secret_server_with_secret",
+      "status": "passed"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {
+        "message": "AssertionError",
+        "time": 5.328
+      },
+      "name": "eval.tests.test_05_server_client_integration.TestClientServerWithAuthentication.test_client_with_secret_server_without_secret",
+      "status": "failure"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_05_server_client_integration.TestServerPortAllocation.test_server_allocates_port_in_range",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_06_full_integration.TestClientErrorHandling.test_client_fails_on_invalid_local_port",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_06_full_integration.TestClientErrorHandling.test_client_fails_on_unreachable_server",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_06_full_integration.TestFullServerClientFlow.test_end_to_end_data_transfer",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_06_full_integration.TestFullServerClientFlow.test_server_accepts_client_hello",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_06_full_integration.TestMultipleClients.test_server_handles_multiple_sequential_clients",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_06_full_integration.TestServerErrorHandling.test_server_accepts_client_with_correct_secret",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_06_full_integration.TestServerErrorHandling.test_server_rejects_client_with_wrong_secret",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_07_deep_server_coverage.TestAuthenticationCodePaths.test_client_with_various_secrets",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_07_deep_server_coverage.TestAuthenticationCodePaths.test_server_with_various_secrets",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_07_deep_server_coverage.TestClientCodePaths.test_client_connection_attempts",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_07_deep_server_coverage.TestClientCodePaths.test_client_with_different_local_hosts",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_07_deep_server_coverage.TestClientCodePaths.test_client_with_port_selection",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_07_deep_server_coverage.TestServerCodePaths.test_server_new_and_configuration",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_07_deep_server_coverage.TestServerCodePaths.test_server_with_bind_tunnels_separate",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "extra": {},
+      "name": "eval.tests.test_07_deep_server_coverage.TestServerCodePaths.test_server_with_different_bind_addresses",
+      "status": "not_run"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.079
+      },
+      "name": "tests.test_cli_basics.test_version_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.083
+      },
+      "name": "tests.test_cli_basics.test_server_help",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.076
+      },
+      "name": "tests.test_cli_basics.test_help_command",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.076
+      },
+      "name": "tests.test_cli_basics.test_local_invalid_port_string",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.069
+      },
+      "name": "tests.test_cli_basics.test_help_output",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.07
+      },
+      "name": "tests.test_cli_basics.test_no_command_error",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.072
+      },
+      "name": "tests.test_cli_basics.test_invalid_command",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "tests.test_cli_basics.test_help_server_via_help_command",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.069
+      },
+      "name": "tests.test_cli_basics.test_help_local_via_help_command",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.052
+      },
+      "name": "tests.test_cli_basics.test_local_missing_all_args",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.043
+      },
+      "name": "tests.test_cli_basics.test_local_missing_port_arg",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.053
+      },
+      "name": "tests.test_cli_basics.test_version_output",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.054
+      },
+      "name": "tests.test_cli_basics.test_local_missing_to_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.061
+      },
+      "name": "tests.test_cli_basics.test_local_help",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.057
+      },
+      "name": "tests.test_cli_basics.test_local_port_out_of_range",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "tests.test_cli_basics.test_env_bore_max_port_invalid",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "tests.test_cli_basics.test_env_bore_max_port_out_of_range",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "tests.test_cli_basics.test_server_min_port_greater_than_max",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "tests.test_cli_basics.test_server_invalid_bind_tunnels",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "tests.test_cli_basics.test_env_bore_min_port_out_of_range",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "tests.test_cli_basics.test_cli_flag_overrides_env_bore_server",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "tests.test_cli_basics.test_local_negative_port_without_double_dash",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "tests.test_cli_basics.test_server_bind_addr_ipv4_octet_overflow",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "tests.test_cli_basics.test_server_bind_addr_ipv4_all_invalid_octets",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "tests.test_cli_basics.test_server_bind_tunnels_ipv4_octet_overflow",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.037
+      },
+      "name": "tests.test_cli_basics.test_local_port_zero_is_valid",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.142
+      },
+      "name": "tests.test_cli_basics.test_env_bore_server_used_when_no_to_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "tests.test_client.test_local_missing_all_required_args",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.049
+      },
+      "name": "tests.test_client.test_local_missing_to_argument",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.037
+      },
+      "name": "tests.test_cli_basics.test_server_min_port_explicit_1024",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.095
+      },
+      "name": "tests.test_cli_basics.test_server_max_port_explicit_65535",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "tests.test_client.test_remote_port_option_non_numeric",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "tests.test_client.test_remote_port_option_exceeds_maximum",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.131
+      },
+      "name": "tests.test_client.test_invalid_domain_name",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.003
+      },
+      "name": "tests.test_cli_basics.test_server_port_range_both_zero",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.11
+      },
+      "name": "tests.test_cli_basics.test_local_long_host_name",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "tests.test_cli_basics.test_server_min_port_out_of_range",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.036
+      },
+      "name": "tests.test_cli_basics.test_server_max_port_out_of_range",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.036
+      },
+      "name": "tests.test_cli_basics.test_cli_flag_overrides_env_local_port",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.043
+      },
+      "name": "tests.test_cli_basics.test_server_invalid_bind_addr",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.043
+      },
+      "name": "tests.test_cli_basics.test_local_remote_port_out_of_range",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "tests.test_cli_basics.test_env_bore_local_port_out_of_range",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.043
+      },
+      "name": "tests.test_client.test_local_missing_local_port_argument",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.043
+      },
+      "name": "tests.test_cli_basics.test_env_bore_local_port_invalid",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.053
+      },
+      "name": "tests.test_cli_basics.test_env_bore_min_port_invalid",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "tests.test_client.test_env_local_port_invalid",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.041
+      },
+      "name": "tests.test_client.test_port_boundary_minimum",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.036
+      },
+      "name": "tests.test_client.test_remote_port_boundary_minimum",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "tests.test_client.test_port_boundary_maximum",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.148
+      },
+      "name": "tests.test_client.test_port_in_server_address",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "tests.test_client.test_remote_port_boundary_maximum",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.141
+      },
+      "name": "tests.test_client.test_env_server_invalid",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "tests.test_client.test_ipv6_localhost",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "tests.test_client.test_custom_local_host_ipv4",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.036
+      },
+      "name": "tests.test_client.test_secret_option",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.119
+      },
+      "name": "tests.test_client.test_ipv6_unreachable_address",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.127
+      },
+      "name": "tests.test_client.test_empty_server_address",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.129
+      },
+      "name": "tests.test_client.test_whitespace_server_address",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.127
+      },
+      "name": "tests.test_client.test_very_long_hostname",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.038
+      },
+      "name": "tests.test_client.test_unreachable_ip_address",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "tests.test_client.test_duplicate_port_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.219
+      },
+      "name": "tests.test_client.test_dns_lookup_failure",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.074
+      },
+      "name": "tests.test_client.test_remote_port_zero_default",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.068
+      },
+      "name": "tests.test_client.test_localhost_hostname",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.091
+      },
+      "name": "tests.test_client.test_local_port_negative",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.129
+      },
+      "name": "tests.test_cli_basics.test_local_negative_port_with_double_dash",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 4.394
+      },
+      "name": "tests.test_auth.test_auth_wrong_secret_error@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.962
+      },
+      "name": "tests.test_client.test_connection_refused_localhost",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "tests.test_client.test_local_port_exceeds_maximum",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.058
+      },
+      "name": "tests.test_client.test_local_port_non_numeric",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "tests.test_client.test_local_command_help",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "tests.test_client.test_duplicate_to_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.047
+      },
+      "name": "tests.test_client.test_env_secret",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 2.185
+      },
+      "name": "tests.test_auth.test_auth_no_secret_when_required@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should connect successfully even with unused secret",
+        "time": 10.255
+      },
+      "name": "tests.test_auth.test_auth_secret_provided_when_not_required@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should still be running after successful auth",
+        "time": 10.25
+      },
+      "name": "tests.test_auth.test_auth_matching_secrets_success@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 2.169
+      },
+      "name": "tests.test_auth.test_auth_empty_secret_mismatch@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate successfully with long matching secret",
+        "time": 10.255
+      },
+      "name": "tests.test_auth.test_auth_long_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate with Unicode secret",
+        "time": 10.255
+      },
+      "name": "tests.test_auth.test_auth_unicode_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate with special character secret",
+        "time": 10.255
+      },
+      "name": "tests.test_auth.test_auth_special_chars_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate with whitespace-containing secret",
+        "time": 10.259
+      },
+      "name": "tests.test_auth.test_auth_whitespace_in_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate with correct case",
+        "time": 10.421
+      },
+      "name": "tests.test_auth.test_auth_case_sensitive_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate with binary-like secret",
+        "time": 10.273
+      },
+      "name": "tests.test_auth.test_auth_binary_like_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate with numeric secret",
+        "time": 10.257
+      },
+      "name": "tests.test_auth.test_auth_numeric_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate with hex-like secret",
+        "time": 10.255
+      },
+      "name": "tests.test_auth.test_auth_hex_like_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate with single-char secret",
+        "time": 10.252
+      },
+      "name": "tests.test_auth.test_auth_single_char_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate with repeated char secret",
+        "time": 10.249
+      },
+      "name": "tests.test_auth.test_auth_repeated_char_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client with correct secret should authenticate",
+        "time": 10.568
+      },
+      "name": "tests.test_auth.test_auth_multiple_clients_different_secrets@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate with quotes in secret",
+        "time": 10.258
+      },
+      "name": "tests.test_auth.test_auth_secret_with_quotes@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should authenticate with '=' in secret",
+        "time": 10.259
+      },
+      "name": "tests.test_auth.test_auth_secret_with_equals_sign@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 2.285
+      },
+      "name": "tests.test_auth.test_auth_prefix_suffix_mismatch@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Server should still accept correct auth after rapid failures",
+        "time": 11.226
+      },
+      "name": "tests.test_auth.test_auth_rapid_authentication_attempts@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.562
+      },
+      "name": "tests.test_client_gaps.test_successful_client_connection_logs_remote_port@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.563
+      },
+      "name": "tests.test_client_gaps.test_client_with_requested_remote_port@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.563
+      },
+      "name": "tests.test_client_gaps.test_authenticated_client_successful_handshake@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.767
+      },
+      "name": "tests.test_client_gaps.test_client_connection_proxies_data_bidirectionally@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.73
+      },
+      "name": "tests.test_client_gaps.test_client_handles_port_already_in_use_error@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.322
+      },
+      "name": "tests.test_client_gaps.test_client_handles_missing_auth_when_required@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.322
+      },
+      "name": "tests.test_client_gaps.test_client_handles_wrong_authentication_secret@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.163
+      },
+      "name": "tests.test_client_gaps.test_client_handles_local_connection_failure@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.771
+      },
+      "name": "tests.test_client_gaps.test_client_multiple_concurrent_connections@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.563
+      },
+      "name": "tests.test_client_gaps.test_client_with_zero_remote_port_server_assigns@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.559
+      },
+      "name": "tests.test_client_gaps.test_client_survives_graceful_server_shutdown@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.767
+      },
+      "name": "tests.test_client_gaps.test_client_large_data_transfer@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.267
+      },
+      "name": "tests.test_client_gaps.test_client_connection_rapid_sequence@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.767
+      },
+      "name": "tests.test_client_gaps.test_client_authenticated_connection_proxy@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.967
+      },
+      "name": "tests.test_client_gaps.test_client_connection_with_local_host_option@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.371
+      },
+      "name": "tests.test_client_gaps.test_client_connection_closes_cleanly@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.054
+      },
+      "name": "tests.test_edge_cases.test_server_port_65536_overflow@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.161
+      },
+      "name": "tests.test_edge_cases.test_server_negative_port_as_flag@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.063
+      },
+      "name": "tests.test_edge_cases.test_local_port_65536_overflow@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "tests.test_edge_cases.test_local_remote_port_65536_overflow@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.139
+      },
+      "name": "tests.test_edge_cases.test_local_remote_port_negative_as_flag@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.174
+      },
+      "name": "tests.test_edge_cases.test_local_empty_hostname@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.192
+      },
+      "name": "tests.test_edge_cases.test_local_nonexistent_hostname@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.143
+      },
+      "name": "tests.test_edge_cases.test_local_255_char_hostname@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.193
+      },
+      "name": "tests.test_edge_cases.test_local_unicode_hostname@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.053
+      },
+      "name": "tests.test_edge_cases.test_server_invalid_bind_ip_out_of_range@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: local client should stay running with empty local-host",
+        "time": 9.029
+      },
+      "name": "tests.test_edge_cases.test_local_empty_local_host@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.569
+      },
+      "name": "tests.test_edge_cases.test_local_request_port_below_server_min@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.06
+      },
+      "name": "tests.test_edge_cases.test_local_request_port_above_server_max@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_edge_cases.test_server_port_range_single_port@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: local client should stay running",
+        "time": 9.031
+      },
+      "name": "tests.test_edge_cases.test_local_port_boundary_1@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: local client should stay running",
+        "time": 9.027
+      },
+      "name": "tests.test_edge_cases.test_local_port_65535_max@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.043
+      },
+      "name": "tests.test_edge_cases.test_local_port_string_letters@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "tests.test_edge_cases.test_local_port_mixed_alphanumeric@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "tests.test_edge_cases.test_local_port_float_notation@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "tests.test_edge_cases.test_local_port_hex_notation@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: local client should stay running",
+        "time": 9.028
+      },
+      "name": "tests.test_edge_cases.test_local_port_octal_notation@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.062
+      },
+      "name": "tests.test_edge_cases.test_local_hostname_with_port_notation@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "tests.test_edge_cases.test_server_bind_localhost_string@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_edge_cases.test_server_min_max_equal_boundary@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_edge_cases.test_server_wildcard_bind_0_0_0_0@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.506
+      },
+      "name": "tests.test_edge_cases.test_server_specific_bind_127_0_0_1@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.506
+      },
+      "name": "tests.test_edge_cases.test_server_bind_tunnels_different_from_bind_addr@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.146
+      },
+      "name": "tests.test_edge_cases.test_local_to_arg_with_spaces@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.176
+      },
+      "name": "tests.test_edge_cases.test_local_to_arg_with_tab@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: local client should stay running",
+        "time": 9.029
+      },
+      "name": "tests.test_edge_cases.test_local_local_host_ipv4_127_0_0_1@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.508
+      },
+      "name": "tests.test_edge_cases.test_server_max_port_65535_boundary@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.667
+      },
+      "name": "tests.test_harvest.test_basic_proxy[None]@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.668
+      },
+      "name": "tests.test_harvest.test_basic_proxy[]@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.668
+      },
+      "name": "tests.test_harvest.test_basic_proxy[abc]@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client should have exited with non-zero status",
+        "time": 11.886
+      },
+      "name": "tests.test_harvest.test_mismatched_secret[None-my secret]@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 3.962
+      },
+      "name": "tests.test_harvest.test_mismatched_secret[my secret-None]@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 2.704
+      },
+      "name": "tests.test_harvest.test_invalid_address@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Server should disconnect after receiving oversized frame (sent 1000000 bytes without error)",
+        "time": 1.375
+      },
+      "name": "tests.test_harvest.test_very_long_frame@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.057
+      },
+      "name": "tests.test_harvest.test_empty_port_range@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Expected b'hello from the other side!', got b''",
+        "time": 1.685
+      },
+      "name": "tests.test_harvest.test_half_closed_tcp_stream@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.064
+      },
+      "name": "tests.test_harvest.test_auth_handshake@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 3.962
+      },
+      "name": "tests.test_harvest.test_auth_handshake_fail@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.47
+      },
+      "name": "tests.test_integration.test_server_port_range_validation@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.473
+      },
+      "name": "tests.test_integration.test_client_missing_required_arguments@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.473
+      },
+      "name": "tests.test_integration.test_client_missing_to_flag@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.424
+      },
+      "name": "tests.test_integration.test_server_bind_addr_flag@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.086
+      },
+      "name": "tests.test_integration.test_client_port_outside_server_range@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.09
+      },
+      "name": "tests.test_integration.test_client_wrong_secret_to_protected_server@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.077
+      },
+      "name": "tests.test_integration.test_client_without_secret_to_protected_server@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.087
+      },
+      "name": "tests.test_integration.test_authentication_mismatched_secrets@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client exited unexpectedly",
+        "time": 7.169
+      },
+      "name": "tests.test_integration.test_server_allocates_random_port_when_not_specified@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 2.242
+      },
+      "name": "tests.test_integration.test_server_minimum_port_respected@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.472
+      },
+      "name": "tests.test_integration.test_client_invalid_port_number@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.471
+      },
+      "name": "tests.test_integration.test_client_non_numeric_port@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError: Client exited (heartbeat may have failed)",
+        "time": 17.681
+      },
+      "name": "tests.test_integration.test_server_heartbeat_keeps_connection_alive@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 3.537
+      },
+      "name": "tests.test_integration.test_server_handles_client_disconnect_gracefully@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_oversized_frame_rejected@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.516
+      },
+      "name": "tests.test_protocol.test_malformed_json_closes_connection@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_empty_message_closes_connection@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.518
+      },
+      "name": "tests.test_protocol.test_valid_hello_message_exchange@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_request_any_port_with_zero@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_authentication_challenge_sent@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_wrong_authentication_rejected@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_timeout_waiting_for_authentication@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 19.53
+      },
+      "name": "tests.test_protocol.test_timeout_waiting_for_hello@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_message_with_unicode_characters@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_heartbeat_messages_sent@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.519
+      },
+      "name": "tests.test_protocol.test_message_exactly_at_max_length@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.519
+      },
+      "name": "tests.test_protocol.test_multiple_null_terminators@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 8.116
+      },
+      "name": "tests.test_protocol.test_partial_message_then_complete@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_accept_message_with_invalid_uuid@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.518
+      },
+      "name": "tests.test_protocol.test_message_just_under_max_length@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_port_out_of_allowed_range_low@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.518
+      },
+      "name": "tests.test_protocol.test_port_out_of_allowed_range_high@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_port_at_range_boundaries@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.519
+      },
+      "name": "tests.test_protocol.test_negative_port_number@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.517
+      },
+      "name": "tests.test_protocol.test_connection_with_unknown_message_type@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.516
+      },
+      "name": "tests.test_protocol.test_send_accept_without_prior_hello@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.518
+      },
+      "name": "tests.test_protocol.test_very_large_port_number@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.519
+      },
+      "name": "tests.test_protocol.test_rapid_successive_connections@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 7.518
+      },
+      "name": "tests.test_protocol.test_whitespace_in_json_message@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.036
+      },
+      "name": "tests.test_server.test_server_help_output@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_starts_with_defaults@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_starts_custom_port_range@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_minimum_single_port_range@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_wide_port_range@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_high_port_range@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_low_privileged_ports@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.063
+      },
+      "name": "tests.test_server.test_server_empty_port_range_error@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_bind_localhost@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_bind_all_interfaces@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_with_secret@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_with_empty_secret@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.505
+      },
+      "name": "tests.test_server.test_server_with_long_secret@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.505
+      },
+      "name": "tests.test_server.test_server_with_special_chars_secret@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_bind_tunnels_separate@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_bind_tunnels_defaults_to_bind_addr@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.508
+      },
+      "name": "tests.test_server.test_server_all_options_combined@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.061
+      },
+      "name": "tests.test_server.test_server_logs_listening_message@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "tests.test_server.test_server_invalid_bind_address@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_env_var_min_port@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_env_var_max_port@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_env_var_secret@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.508
+      },
+      "name": "tests.test_server.test_server_cli_overrides_env@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_zero_min_port_allowed@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.046
+      },
+      "name": "tests.test_server.test_server_max_port_65536_error@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.176
+      },
+      "name": "tests.test_server.test_server_negative_port_error@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "tests.test_server.test_server_non_numeric_port_error@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 2.508
+      },
+      "name": "tests.test_server.test_server_accepts_connection@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 3.11
+      },
+      "name": "tests.test_server.test_server_multiple_sequential_connections@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_ipv4_bind_addr@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_port_range_boundary_max@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_respects_port_range_limits@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.061
+      },
+      "name": "tests.test_server.test_server_help_shows_usage@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 2.517
+      },
+      "name": "tests.test_server.test_server_survives_rapid_connections@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 0.067
+      },
+      "name": "tests.test_server.test_server_port_range_order@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.508
+      },
+      "name": "tests.test_server.test_server_control_port_fixed_7835@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 2.509
+      },
+      "name": "tests.test_server.test_server_simultaneous_connections@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_with_whitespace_secret@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.507
+      },
+      "name": "tests.test_server.test_server_unicode_secret@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.03
+      },
+      "name": "tests.test_server_gaps.test_server_accepts_control_connection@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.029
+      },
+      "name": "tests.test_server_gaps.test_server_hello_with_port_zero_allocates_in_range@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.029
+      },
+      "name": "tests.test_server_gaps.test_server_hello_with_specific_port_in_range@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.029
+      },
+      "name": "tests.test_server_gaps.test_server_hello_with_port_outside_range@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.028
+      },
+      "name": "tests.test_server_gaps.test_server_hello_with_port_already_in_use@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.031
+      },
+      "name": "tests.test_server_gaps.test_server_sends_heartbeat_after_hello@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.031
+      },
+      "name": "tests.test_server_gaps.test_server_handles_client_disconnect_during_heartbeat@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.031
+      },
+      "name": "tests.test_server_gaps.test_server_accepts_multiple_hello_clients_concurrently@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 9.027
+      },
+      "name": "tests.test_server_gaps.test_server_handles_unexpected_authenticate_message@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "time": 1.508
+      },
+      "name": "tests.test_server_gaps.test_server_handles_empty_message_stream@server_tests",
+      "status": "passed"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.03
+      },
+      "name": "tests.test_server_gaps.test_server_sends_connection_message_on_incoming_tunnel@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.03
+      },
+      "name": "tests.test_server_gaps.test_server_accept_message_initiates_forwarding@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.031
+      },
+      "name": "tests.test_server_gaps.test_server_accept_with_missing_connection_id@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.031
+      },
+      "name": "tests.test_server_gaps.test_server_multiple_incoming_connections_get_unique_uuids@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.03
+      },
+      "name": "tests.test_server_gaps.test_server_stale_connection_cleanup@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 13.537
+      },
+      "name": "tests.test_server_gaps.test_server_handles_random_port_allocation_exhaustion@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.031
+      },
+      "name": "tests.test_server_gaps.test_server_privileged_port_in_range@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.031
+      },
+      "name": "tests.test_server_gaps.test_server_hello_port_zero_boundary@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.03
+      },
+      "name": "tests.test_server_gaps.test_server_hello_port_at_range_boundaries@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.031
+      },
+      "name": "tests.test_server_gaps.test_server_connection_message_timing@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.031
+      },
+      "name": "tests.test_server_gaps.test_server_multiple_sequential_clients@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 12.03
+      },
+      "name": "tests.test_server_gaps.test_server_heartbeat_continues_after_tunnel_disconnect@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "extra": {
+        "message": "TimeoutError: timed out",
+        "time": 9.027
+      },
+      "name": "tests.test_server_gaps.test_server_handles_malformed_json@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_args_parsing.test_local_type_validation[args0-needles0]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "eval.tests.test_args_parsing.test_local_missing_option_values[args2-needles2]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.049
+      },
+      "name": "eval.tests.test_args_parsing.test_duplicate_options_disallowed[args1-needles1]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.059
+      },
+      "name": "eval.tests.test_args_parsing.test_local_missing_required_args[args1-needles1]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.048
+      },
+      "name": "eval.tests.test_args_parsing.test_server_missing_option_values[args4-needles4]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.055
+      },
+      "name": "eval.tests.test_args_parsing.test_local_type_validation[args4-needles4]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.061
+      },
+      "name": "eval.tests.test_args_parsing.test_local_type_validation[args2-needles2]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.055
+      },
+      "name": "eval.tests.test_args_parsing.test_root_level_errors[args0-needles0]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.065
+      },
+      "name": "eval.tests.test_args_parsing.test_local_missing_option_values[args0-needles0]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.061
+      },
+      "name": "eval.tests.test_args_parsing.test_server_type_and_range_validation[args1-needles1]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.06
+      },
+      "name": "eval.tests.test_args_parsing.test_server_missing_option_values[args2-needles2]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.06
+      },
+      "name": "eval.tests.test_args_parsing.test_unexpected_args[args1-needles1]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.058
+      },
+      "name": "eval.tests.test_args_parsing.test_root_level_errors[args2-needles2]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.055
+      },
+      "name": "eval.tests.test_args_parsing.test_server_type_and_range_validation[args3-needles3]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_args_parsing.test_local_type_validation[args1-needles1]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.061
+      },
+      "name": "eval.tests.test_args_parsing.test_server_missing_option_values[args0-needles0]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "eval.tests.test_args_parsing.test_local_missing_required_args[args2-needles2]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "eval.tests.test_args_parsing.test_server_missing_option_values[args3-needles3]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "eval.tests.test_args_parsing.test_duplicate_options_disallowed[args0-needles0]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "eval.tests.test_args_parsing.test_server_type_and_range_validation[args0-needles0]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "eval.tests.test_args_parsing.test_root_level_errors[args1-needles1]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "eval.tests.test_args_parsing.test_unexpected_args[args0-needles0]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "message": "AssertionError: Expected stderr to contain \"error: a value is required for '--to <TO>' but none was supplied\".\nActual stderr:\nerror: the argument '--to <TO>' cannot be used multiple times\n\nUsage: executable local [OPTIONS] --to <TO> <LOCAL_PORT>\n\nFor more information, try '--help'.",
+        "time": 0.154
+      },
+      "name": "eval.tests.test_args_parsing.test_local_missing_option_values[args3-needles3]",
+      "status": "failure"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.036
+      },
+      "name": "eval.tests.test_args_parsing.test_local_missing_option_values[args1-needles1]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.037
+      },
+      "name": "eval.tests.test_args_parsing.test_server_type_and_range_validation[args2-needles2]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.039
+      },
+      "name": "eval.tests.test_args_parsing.test_local_missing_required_args[args0-needles0]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.037
+      },
+      "name": "eval.tests.test_args_parsing.test_unexpected_args[args2-needles2]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 0.039
+      },
+      "name": "eval.tests.test_args_parsing.test_server_missing_option_values[args1-needles1]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "message": "AssertionError: Expected stderr to contain \"error: invalid value '-1' for '<LOCAL_PORT>': -1 is not in 0..=65535\".\nActual stderr:\nerror: invalid value '-1' for '<LOCAL_PORT>': invalid digit found in string\n\nFor more information, try '--help'.",
+        "time": 0.158
+      },
+      "name": "eval.tests.test_args_parsing.test_local_type_validation[args3-needles3]",
+      "status": "failure"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 1.263
+      },
+      "name": "eval.tests.test_args_parsing.test_local_accepts_common_flag_syntax[args1]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 1.239
+      },
+      "name": "eval.tests.test_args_parsing.test_local_accepts_common_flag_syntax[args0]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 1.245
+      },
+      "name": "eval.tests.test_args_parsing.test_local_accepts_common_flag_syntax[args3]",
+      "status": "passed"
+    },
+    {
+      "branch": "e454759f15a4",
+      "extra": {
+        "time": 1.264
+      },
+      "name": "eval.tests.test_args_parsing.test_local_accepts_common_flag_syntax[args2]",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "eval.tests.test_help_main.test_help_output_ends_with_newline",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "eval.tests.test_help_subcommands.test_server_help_exits_zero_and_stdout_only",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "eval.tests.test_help_subcommands.test_local_help_has_usage_and_arguments_section",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "eval.tests.test_help_main.test_main_help_has_commands_and_options_sections",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.043
+      },
+      "name": "eval.tests.test_help_main.test_dashdash_help_exits_zero_and_stdout_only",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.048
+      },
+      "name": "eval.tests.test_help_subcommands.test_local_help_exits_zero_and_stdout_only",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.05
+      },
+      "name": "eval.tests.test_help_subcommands.test_server_help_has_usage_and_expected_flags",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.06
+      },
+      "name": "eval.tests.test_help_main.test_main_help_has_expected_usage_line",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.057
+      },
+      "name": "eval.tests.test_help_subcommands.test_local_help_documents_required_args_and_key_flags",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.059
+      },
+      "name": "eval.tests.test_help_errors.test_unknown_global_flag_shows_error_on_stderr_and_usage_hint",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.064
+      },
+      "name": "eval.tests.test_help_main.test_main_help_lists_core_commands",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.065
+      },
+      "name": "eval.tests.test_help_main.test_main_help_documents_help_and_version_flags",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.068
+      },
+      "name": "eval.tests.test_help_main.test_help_precedes_other_flags",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.093
+      },
+      "name": "eval.tests.test_help_main.test_dashh_matches_dashdash_help_exactly",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.101
+      },
+      "name": "eval.tests.test_help_subcommands.test_local_help_ignores_unknown_flag_after_help",
+      "status": "passed"
+    },
+    {
+      "branch": "f1e76ae50499",
+      "extra": {
+        "time": 0.094
+      },
+      "name": "eval.tests.test_help_main.test_help_subcommand_matches_dashdash_help_exactly",
+      "status": "passed"
+    },
+    {
+      "branch": "c977eb4a4e02",
+      "extra": {
+        "time": 0.04
+      },
+      "name": "eval.tests.test_cli_io.test_local_missing_required_to_flag_is_usage_error_exit_2",
+      "status": "passed"
+    },
+    {
+      "branch": "c977eb4a4e02",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "eval.tests.test_cli_io.test_top_level_help_exit_0_and_mentions_commands",
+      "status": "passed"
+    },
+    {
+      "branch": "c977eb4a4e02",
+      "extra": {
+        "time": 0.047
+      },
+      "name": "eval.tests.test_cli_io.test_subcommand_help_local_contains_env_hints_and_defaults",
+      "status": "passed"
+    },
+    {
+      "branch": "c977eb4a4e02",
+      "extra": {
+        "time": 0.07
+      },
+      "name": "eval.tests.test_cli_io.test_subcommand_help_server_contains_range_defaults_and_env_hints",
+      "status": "passed"
+    },
+    {
+      "branch": "c977eb4a4e02",
+      "extra": {
+        "time": 0.066
+      },
+      "name": "eval.tests.test_cli_io.test_version_stdout_and_exit_0",
+      "status": "passed"
+    },
+    {
+      "branch": "c977eb4a4e02",
+      "extra": {
+        "time": 0.066
+      },
+      "name": "eval.tests.test_cli_io.test_local_uses_bore_server_env_when_to_not_provided_and_connection_refused_exit_1",
+      "status": "passed"
+    },
+    {
+      "branch": "c977eb4a4e02",
+      "extra": {
+        "time": 0.065
+      },
+      "name": "eval.tests.test_cli_io.test_server_empty_port_range_is_clap_invalid_value_exit_2",
+      "status": "passed"
+    },
+    {
+      "branch": "c977eb4a4e02",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.316
+      },
+      "name": "eval.tests.test_cli_io.test_local_invalid_host_name_exit_1_and_shows_name_or_service_not_known",
+      "status": "failure"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_main_help_lists_subcommands",
+      "status": "passed"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_subcommand_recognized_via_help_flag[local]",
+      "status": "passed"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_unknown_subcommand_errors",
+      "status": "passed"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.047
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_no_subcommand_shows_usage_and_errors_or_help",
+      "status": "passed"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.056
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_subcommand_recognized_via_help_flag[server]",
+      "status": "passed"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.055
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_subcommand_flag_does_not_work_globally",
+      "status": "passed"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.056
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_server_rejects_unknown_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.07
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_local_missing_required_args_errors_and_mentions_requirements",
+      "status": "passed"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.087
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_global_help_routing_and_position",
+      "status": "passed"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.092
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_help_subcommand_requires_target_or_no_extra_args",
+      "status": "passed"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.125
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_subcommand_help_differs_from_main_help[local]",
+      "status": "passed"
+    },
+    {
+      "branch": "4acd63872783",
+      "extra": {
+        "time": 0.128
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_subcommand_help_differs_from_main_help[server]",
+      "status": "passed"
+    },
+    {
+      "branch": "6ce775dbab8a",
+      "extra": {
+        "time": 0.136
+      },
+      "name": "eval.tests.test_all.test_basic",
+      "status": "passed"
+    },
+    {
+      "branch": "6ce775dbab8a",
+      "extra": {
+        "time": 0.504
+      },
+      "name": "eval.tests.test_all.test_invalid_range",
+      "status": "passed"
+    },
+    {
+      "branch": "6ce775dbab8a",
+      "extra": {
+        "time": 2.331
+      },
+      "name": "eval.tests.test_all.test_proxy_and_auth_and_range",
+      "status": "passed"
+    },
+    {
+      "branch": "ac290e5f97d2",
+      "extra": {
+        "time": 0.06
+      },
+      "name": "eval.tests.test_bore_cli.test_version_exact",
+      "status": "passed"
+    },
+    {
+      "branch": "ac290e5f97d2",
+      "extra": {
+        "time": 0.058
+      },
+      "name": "eval.tests.test_bore_cli.test_server_help_exact",
+      "status": "passed"
+    },
+    {
+      "branch": "ac290e5f97d2",
+      "extra": {
+        "time": 0.054
+      },
+      "name": "eval.tests.test_bore_cli.test_invalid_subcommand_has_nonzero_exit_and_usage",
+      "status": "passed"
+    },
+    {
+      "branch": "ac290e5f97d2",
+      "extra": {
+        "time": 0.062
+      },
+      "name": "eval.tests.test_bore_cli.test_local_requires_to_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "ac290e5f97d2",
+      "extra": {
+        "time": 0.054
+      },
+      "name": "eval.tests.test_bore_cli.test_root_help_exact",
+      "status": "passed"
+    },
+    {
+      "branch": "ac290e5f97d2",
+      "extra": {
+        "time": 0.059
+      },
+      "name": "eval.tests.test_bore_cli.test_local_help_exact",
+      "status": "passed"
+    },
+    {
+      "branch": "ac290e5f97d2",
+      "extra": {
+        "time": 0.063
+      },
+      "name": "eval.tests.test_bore_cli.test_local_to_from_env_BORE_SERVER",
+      "status": "passed"
+    },
+    {
+      "branch": "ac290e5f97d2",
+      "extra": {
+        "time": 0.061
+      },
+      "name": "eval.tests.test_bore_cli.test_local_port_from_env_BORE_LOCAL_PORT",
+      "status": "passed"
+    },
+    {
+      "branch": "ac290e5f97d2",
+      "extra": {
+        "time": 0.075
+      },
+      "name": "eval.tests.test_bore_cli.test_invalid_to_address_fails_quickly",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_bore.TestCLI.test_help_command",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_bore.TestCLI.test_version_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "eval.tests.test_bore.TestCLI.test_local_help",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "eval.tests.test_bore.TestCLI.test_server_help",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.061
+      },
+      "name": "eval.tests.test_bore.TestCLI.test_help_subcommand",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "eval.tests.test_bore.TestErrorHandling.test_unknown_subcommand",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.042
+      },
+      "name": "eval.tests.test_bore.TestErrorHandling.test_local_missing_to_argument",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.039
+      },
+      "name": "eval.tests.test_bore.TestErrorHandling.test_local_invalid_port",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "eval.tests.test_bore.TestErrorHandling.test_local_invalid_to_address",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.064
+      },
+      "name": "eval.tests.test_bore.TestErrorHandling.test_server_invalid_port_range",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.038
+      },
+      "name": "eval.tests.test_bore.TestErrorHandling.test_local_port_out_of_range",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.037
+      },
+      "name": "eval.tests.test_bore.TestErrorHandling.test_local_negative_port",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.037
+      },
+      "name": "eval.tests.test_bore.TestErrorHandling.test_local_zero_port",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 2.004
+      },
+      "name": "eval.tests.test_bore.TestServerMode.test_server_with_secret",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_bore.TestServerMode.test_server_still_running",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.061
+      },
+      "name": "eval.tests.test_bore.TestLocalMode.test_local_requires_to",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_bore.TestLocalMode.test_local_with_to",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_bore.TestLocalMode.test_local_with_custom_local_host",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_bore.TestLocalMode.test_local_with_port_option",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 1.006
+      },
+      "name": "eval.tests.test_bore.TestLocalMode.test_local_with_secret",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 1.005
+      },
+      "name": "eval.tests.test_bore.TestLocalMode.test_local_short_flags",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 2.005
+      },
+      "name": "eval.tests.test_bore.TestEndToEnd.test_server_client_basic_proxy",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 4.007
+      },
+      "name": "eval.tests.test_bore.TestEndToEnd.test_server_client_with_secret",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 1.007
+      },
+      "name": "eval.tests.test_bore.TestEnvironmentVariables.test_local_env_bore_local_port",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 1.007
+      },
+      "name": "eval.tests.test_bore.TestEnvironmentVariables.test_local_env_bore_server",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 1.007
+      },
+      "name": "eval.tests.test_bore.TestEnvironmentVariables.test_local_env_bore_secret",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_bore.TestEnvironmentVariables.test_server_env_bore_secret",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_bore.TestEnvironmentVariables.test_server_env_bore_min_port",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_bore.TestEnvironmentVariables.test_server_env_bore_max_port",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 2.004
+      },
+      "name": "eval.tests.test_bore.TestOutputFormat.test_local_outputs_port_info",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 1.073
+      },
+      "name": "eval.tests.test_bore.TestEdgeCases.test_local_short_form_options",
+      "status": "passed"
+    },
+    {
+      "branch": "183567ae769e",
+      "extra": {
+        "time": 1.069
+      },
+      "name": "eval.tests.test_bore.TestEdgeCases.test_local_very_high_port",
+      "status": "passed"
+    }
+  ],
+  "warnings": []
+}

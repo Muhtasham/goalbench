@@ -1,0 +1,1133 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.14610716700553894
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.13114489000145113
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.14171297900611535
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.13728914999956032
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.11648956999852089
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.1361834240015014
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6798997110017808
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.08006054900033632
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10787219499616185
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11976888399658492
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.0994360280019464
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 37.80097177900461
+    },
+    {
+      "branch": "d95dad695c95",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.037385206000180915
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10226928500196664
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1003741109961993
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10448011900007259
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11134210000454914
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 1010.5975722540024
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03218370899412548
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.125910656999622
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1253520190002746
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10372799400647637
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11667688700254075
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.865839705998951
+    },
+    {
+      "branch": "e454759f15a4",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.034366458996373694
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1473813920019893
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.08606682100071339
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11071956300293095
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11774038200383075
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.302817474999756
+    },
+    {
+      "branch": "f1e76ae50499",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03056320500036236
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12473804100591224
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.0953360999992583
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11278349399799481
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.08081255399883958
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.445816270002979
+    },
+    {
+      "branch": "c977eb4a4e02",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03967951500089839
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13396413999726065
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12934271000267472
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1318564190005418
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12188514299486997
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.4028030460031005
+    },
+    {
+      "branch": "4acd63872783",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03374611099570757
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12995869700534968
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13294502400094643
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11307850199955283
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10308907499711495
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.252093464005156
+    },
+    {
+      "branch": "6ce775dbab8a",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03381144100421807
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.15251636799803236
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12914557000476634
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13697420599783072
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10780017399520148
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.3277134989984916
+    },
+    {
+      "branch": "ac290e5f97d2",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.030946634004067164
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10850280200247653
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1253851469955407
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10380078199523268
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1276669069993659
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 21.745841295996797
+    },
+    {
+      "branch": "183567ae769e",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03732392499659909
+    }
+  ],
+  "executable_hash": "66ec7797b9a2921121190eff63c71e3300b50814101419ee1b9041373da7f227",
+  "failed_tests": [
+    {
+      "branch": "d95dad695c95",
+      "message": "AssertionError",
+      "name": "eval.tests.test_05_server_client_integration.TestClientServerWithAuthentication.test_client_with_secret_server_without_secret",
+      "status": "failure"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_05_server_client_integration.TestServerPortAllocation.test_server_allocates_port_in_range",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_06_full_integration.TestClientErrorHandling.test_client_fails_on_invalid_local_port",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_06_full_integration.TestClientErrorHandling.test_client_fails_on_unreachable_server",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_06_full_integration.TestFullServerClientFlow.test_end_to_end_data_transfer",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_06_full_integration.TestFullServerClientFlow.test_server_accepts_client_hello",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_06_full_integration.TestMultipleClients.test_server_handles_multiple_sequential_clients",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_06_full_integration.TestServerErrorHandling.test_server_accepts_client_with_correct_secret",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_06_full_integration.TestServerErrorHandling.test_server_rejects_client_with_wrong_secret",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_07_deep_server_coverage.TestAuthenticationCodePaths.test_client_with_various_secrets",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_07_deep_server_coverage.TestAuthenticationCodePaths.test_server_with_various_secrets",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_07_deep_server_coverage.TestClientCodePaths.test_client_connection_attempts",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_07_deep_server_coverage.TestClientCodePaths.test_client_with_different_local_hosts",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_07_deep_server_coverage.TestClientCodePaths.test_client_with_port_selection",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_07_deep_server_coverage.TestServerCodePaths.test_server_new_and_configuration",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_07_deep_server_coverage.TestServerCodePaths.test_server_with_bind_tunnels_separate",
+      "status": "not_run"
+    },
+    {
+      "branch": "d95dad695c95",
+      "message": "",
+      "name": "eval.tests.test_07_deep_server_coverage.TestServerCodePaths.test_server_with_different_bind_addresses",
+      "status": "not_run"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_cli_basics.test_env_bore_server_used_when_no_to_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_client.test_invalid_domain_name",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_client.test_port_in_server_address",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_client.test_env_server_invalid",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_client.test_ipv6_unreachable_address",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_client.test_empty_server_address",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_client.test_whitespace_server_address",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_client.test_very_long_hostname",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_client.test_dns_lookup_failure",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_cli_basics.test_local_negative_port_with_double_dash",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_client.test_connection_refused_localhost",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should connect successfully even with unused secret",
+      "name": "tests.test_auth.test_auth_secret_provided_when_not_required@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should still be running after successful auth",
+      "name": "tests.test_auth.test_auth_matching_secrets_success@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate successfully with long matching secret",
+      "name": "tests.test_auth.test_auth_long_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate with Unicode secret",
+      "name": "tests.test_auth.test_auth_unicode_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate with special character secret",
+      "name": "tests.test_auth.test_auth_special_chars_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate with whitespace-containing secret",
+      "name": "tests.test_auth.test_auth_whitespace_in_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate with correct case",
+      "name": "tests.test_auth.test_auth_case_sensitive_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate with binary-like secret",
+      "name": "tests.test_auth.test_auth_binary_like_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate with numeric secret",
+      "name": "tests.test_auth.test_auth_numeric_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate with hex-like secret",
+      "name": "tests.test_auth.test_auth_hex_like_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate with single-char secret",
+      "name": "tests.test_auth.test_auth_single_char_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate with repeated char secret",
+      "name": "tests.test_auth.test_auth_repeated_char_secret@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client with correct secret should authenticate",
+      "name": "tests.test_auth.test_auth_multiple_clients_different_secrets@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate with quotes in secret",
+      "name": "tests.test_auth.test_auth_secret_with_quotes@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should authenticate with '=' in secret",
+      "name": "tests.test_auth.test_auth_secret_with_equals_sign@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Server should still accept correct auth after rapid failures",
+      "name": "tests.test_auth.test_auth_rapid_authentication_attempts@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_server_negative_port_as_flag@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_local_remote_port_negative_as_flag@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_local_empty_hostname@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_local_nonexistent_hostname@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_local_255_char_hostname@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_local_unicode_hostname@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: local client should stay running with empty local-host",
+      "name": "tests.test_edge_cases.test_local_empty_local_host@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: local client should stay running",
+      "name": "tests.test_edge_cases.test_local_port_boundary_1@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: local client should stay running",
+      "name": "tests.test_edge_cases.test_local_port_65535_max@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: local client should stay running",
+      "name": "tests.test_edge_cases.test_local_port_octal_notation@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_local_to_arg_with_spaces@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_local_to_arg_with_tab@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: local client should stay running",
+      "name": "tests.test_edge_cases.test_local_local_host_ipv4_127_0_0_1@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client should have exited with non-zero status",
+      "name": "tests.test_harvest.test_mismatched_secret[None-my secret]@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Server should disconnect after receiving oversized frame (sent 1000000 bytes without error)",
+      "name": "tests.test_harvest.test_very_long_frame@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Expected b'hello from the other side!', got b''",
+      "name": "tests.test_harvest.test_half_closed_tcp_stream@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client exited unexpectedly",
+      "name": "tests.test_integration.test_server_allocates_random_port_when_not_specified@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError: Client exited (heartbeat may have failed)",
+      "name": "tests.test_integration.test_server_heartbeat_keeps_connection_alive@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_oversized_frame_rejected@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_malformed_json_closes_connection@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_empty_message_closes_connection@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_valid_hello_message_exchange@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_request_any_port_with_zero@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_authentication_challenge_sent@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_wrong_authentication_rejected@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_timeout_waiting_for_authentication@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_timeout_waiting_for_hello@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_message_with_unicode_characters@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_heartbeat_messages_sent@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_message_exactly_at_max_length@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_multiple_null_terminators@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_partial_message_then_complete@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_accept_message_with_invalid_uuid@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_message_just_under_max_length@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_port_out_of_allowed_range_low@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_port_out_of_allowed_range_high@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_port_at_range_boundaries@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_negative_port_number@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_connection_with_unknown_message_type@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_send_accept_without_prior_hello@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_very_large_port_number@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_rapid_successive_connections@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_protocol.test_whitespace_in_json_message@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "AssertionError",
+      "name": "tests.test_server.test_server_negative_port_error@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_accepts_control_connection@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_hello_with_port_zero_allocates_in_range@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_hello_with_specific_port_in_range@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_hello_with_port_outside_range@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_hello_with_port_already_in_use@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_sends_heartbeat_after_hello@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_handles_client_disconnect_during_heartbeat@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_accepts_multiple_hello_clients_concurrently@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_handles_unexpected_authenticate_message@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_sends_connection_message_on_incoming_tunnel@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_accept_message_initiates_forwarding@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_accept_with_missing_connection_id@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_multiple_incoming_connections_get_unique_uuids@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_stale_connection_cleanup@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_handles_random_port_allocation_exhaustion@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_privileged_port_in_range@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_hello_port_zero_boundary@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_hello_port_at_range_boundaries@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_connection_message_timing@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_multiple_sequential_clients@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_heartbeat_continues_after_tunnel_disconnect@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "8f4b78a7e9eb",
+      "message": "TimeoutError: timed out",
+      "name": "tests.test_server_gaps.test_server_handles_malformed_json@server_tests",
+      "status": "failure"
+    },
+    {
+      "branch": "e454759f15a4",
+      "message": "AssertionError: Expected stderr to contain \"error: a value is required for '--to <TO>' but none was supplied\".\nActual stderr:\nerror: the argument '--to <TO>' cannot be used multiple times\n\nUsage: executable local [OPTIONS] --to <TO> <LOCAL_PORT>\n\nFor more information, try '--help'.",
+      "name": "eval.tests.test_args_parsing.test_local_missing_option_values[args3-needles3]",
+      "status": "failure"
+    },
+    {
+      "branch": "e454759f15a4",
+      "message": "AssertionError: Expected stderr to contain \"error: invalid value '-1' for '<LOCAL_PORT>': -1 is not in 0..=65535\".\nActual stderr:\nerror: invalid value '-1' for '<LOCAL_PORT>': invalid digit found in string\n\nFor more information, try '--help'.",
+      "name": "eval.tests.test_args_parsing.test_local_type_validation[args3-needles3]",
+      "status": "failure"
+    },
+    {
+      "branch": "c977eb4a4e02",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_io.test_local_invalid_host_name_exit_1_and_shows_name_or_service_not_known",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 97,
+    "not_run": 16,
+    "passed": 337
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "d95dad695c95",
+    "8f4b78a7e9eb",
+    "e454759f15a4",
+    "f1e76ae50499",
+    "c977eb4a4e02",
+    "4acd63872783",
+    "6ce775dbab8a",
+    "ac290e5f97d2",
+    "183567ae769e"
+  ],
+  "test_records": 450,
+  "warnings": []
+}
