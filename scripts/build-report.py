@@ -24,6 +24,12 @@ PROGRAMBENCH_HOME = "https://programbench.com/"
 GOALBENCH_GITHUB = "https://github.com/Muhtasham/goalbench"
 ROW_RE = re.compile(r"<tr class=\"clickable-row\".*?</tr>", re.S)
 CELL_RE = re.compile(r"<td[^>]*>(.*?)</td>", re.S)
+BRAND_SLASH_PATHS = """
+  <rect width="64" height="64" rx="14" fill="#10201d"/>
+  <path d="M40.5 10.5h9.75L24.25 53.5H14.5L40.5 10.5Z" fill="#effff9"/>
+  <path d="M48.25 10.5h4.25L26.5 53.5h-4.25L48.25 10.5Z" fill="#14b8a6"/>
+  <path d="M37.5 43.5h13v8.25h-13z" fill="#f6c453"/>
+""".strip()
 TAG_RE = re.compile(r"<[^>]+>")
 
 
@@ -146,15 +152,14 @@ def write_html(path: Path, content: str) -> None:
     path.write_text("\n".join(line.rstrip() for line in content.splitlines()) + "\n")
 
 
+def brand_slash_svg(class_name: str = "brand-mark") -> str:
+    class_attr = f' class="{class_name}"' if class_name else ""
+    return f'<svg{class_attr} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">{BRAND_SLASH_PATHS}</svg>'
+
+
 def write_support_files(output_dir: Path) -> None:
     (output_dir / "favicon.svg").write_text(
-        """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#10201d"/>
-  <path d="M39 11h10L25 53H15L39 11Z" fill="#d8fff4"/>
-  <path d="M45 11h4L25 53h-4L45 11Z" fill="#14b8a6" opacity=".75"/>
-  <path d="M38 42h12v9H38z" fill="#f6c453"/>
-</svg>
-""",
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">{BRAND_SLASH_PATHS}</svg>\n',
     )
 
 
@@ -1297,7 +1302,7 @@ def render_task_details_page() -> str:
     main {{ max-width: 980px; margin: 0 auto; padding: 24px; }}
     .topbar {{ display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 28px; font-size: 14px; }}
     .nav-brand {{ display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 850; text-decoration: none; }}
-    .brand-mark {{ width: 30px; height: 30px; border-radius: 7px; display: inline-grid; place-items: center; background: #10201d; color: #d8fff4; font-weight: 900; font-size: 22px; line-height: 1; }}
+    .brand-mark {{ width: 30px; height: 30px; display: block; flex: 0 0 auto; }}
     .nav-links {{ display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }}
     .nav-links a {{ color: #40515c; text-decoration: none; border-radius: 6px; padding: 7px 9px; }}
     .nav-links a:hover {{ color: #075985; background: #eef6f3; }}
@@ -1319,7 +1324,7 @@ def render_task_details_page() -> str:
 <body>
   <header>
     <nav class="topbar" aria-label="Primary">
-      <a class="nav-brand" href="./"><span class="brand-mark">/</span><span>{SITE_NAME}</span></a>
+      <a class="nav-brand" href="./">{brand_slash_svg()}<span>{SITE_NAME}</span></a>
       <div class="nav-links">
         <a href="./">Leaderboard</a>
         <a href="extended/">Extended</a>
@@ -1451,7 +1456,7 @@ def render_html(data: dict, extended: bool = False) -> str:
     ]
     nav = f"""
     <nav class="topbar" aria-label="Primary">
-      <a class="nav-brand" href="./"><span class="brand-mark">/</span><span>{SITE_NAME}</span></a>
+      <a class="nav-brand" href="./">{brand_slash_svg()}<span>{SITE_NAME}</span></a>
       <div class="nav-links">
         <a href="./">Leaderboard</a>
         <a href="extended/">Extended</a>
@@ -1537,7 +1542,7 @@ def render_html(data: dict, extended: bool = False) -> str:
     h2 {{ margin: 0 0 10px; font-size: 21px; letter-spacing: 0; }}
     h3 {{ margin: 0 0 10px; font-size: 14px; letter-spacing: 0; }}
     p {{ color: var(--muted); line-height: 1.5; max-width: 900px; }}
-    .brand-mark {{ width: 30px; height: 30px; border-radius: 7px; display: inline-grid; place-items: center; background: #10201d; color: #d8fff4; font-weight: 900; font-size: 22px; line-height: 1; }}
+    .brand-mark {{ width: 30px; height: 30px; display: block; flex: 0 0 auto; }}
     .hero {{
       display: grid;
       grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
