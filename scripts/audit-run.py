@@ -102,6 +102,7 @@ PAPER_CACHE_ENV = {
     "PIP_CACHE_DIR",
     "PIP_NO_INDEX",
 }
+SCRATCH_ARTIFACT_NAME = re.compile(r"(^|[_-])(probe|probes|compare|fuzz|fuzzer|fixture|fixtures)([_\.-]|$)")
 
 
 @dataclass
@@ -354,6 +355,7 @@ def is_small_text_file(path: Path) -> bool:
         path.is_file()
         and ".goal" not in path.parts
         and "probes" not in path.parts
+        and not any(SCRATCH_ARTIFACT_NAME.search(part.lower()) for part in path.parts)
         and path.name != "AGENT_RULES.md"
         and path.stat().st_size < 2_000_000
     ):
