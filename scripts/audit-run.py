@@ -77,7 +77,9 @@ HARNESS_PARENT_PATH = re.compile(
 WRAPPER_PATTERNS = (
     r"/workspace/executable",
     r"\bdocker\s+exec\b",
-    r"\bprogrambench\b",
+    r"/ProgramBench(?:/|\b)",
+    r"\bprogrambench\s+(?:eval|run|solve|benchmark)\b",
+    r"\bprogrambench/",
     r"\bsubprocess\.[^(]+\(.*executable",
     r"\bCommand::new\([^)]*executable",
 )
