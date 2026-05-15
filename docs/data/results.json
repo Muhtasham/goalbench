@@ -118,18 +118,18 @@
       "source": "https://programbench.com/extended/"
     }
   ],
-  "generated_at": "2026-05-15T15:17:02.595842+00:00",
+  "generated_at": "2026-05-15T15:23:37.381561+00:00",
   "groups": [
     {
       "agent": "Codex /goal",
       "almost_resolved": 1,
-      "almost_resolved_rate": 0.5,
-      "average_calls": 61.0,
-      "average_cost_usd": 5.2894000000000005,
-      "average_pass_rate": 0.8192815291797192,
+      "almost_resolved_rate": 0.3333333333333333,
+      "average_calls": 65.0,
+      "average_cost_usd": 4.946566666666667,
+      "average_pass_rate": 0.8079579309409052,
       "compliance": "Codex no-internet ablation",
       "host_profile": "smaller VM: 16 CPU / 30g",
-      "instances": 2,
+      "instances": 3,
       "mode": "No internet",
       "model": "GPT 5.5 (xhigh)",
       "resolved": 0,
@@ -138,7 +138,7 @@
       "score_distribution": [
         {
           "count": 0,
-          "cumulative_at_least": 2,
+          "cumulative_at_least": 3,
           "cumulative_rate_at_least": 1.0,
           "label": "0-10%",
           "lower": 0.0,
@@ -146,7 +146,7 @@
         },
         {
           "count": 0,
-          "cumulative_at_least": 2,
+          "cumulative_at_least": 3,
           "cumulative_rate_at_least": 1.0,
           "label": "10-20%",
           "lower": 0.1,
@@ -154,7 +154,7 @@
         },
         {
           "count": 0,
-          "cumulative_at_least": 2,
+          "cumulative_at_least": 3,
           "cumulative_rate_at_least": 1.0,
           "label": "20-30%",
           "lower": 0.2,
@@ -162,7 +162,7 @@
         },
         {
           "count": 0,
-          "cumulative_at_least": 2,
+          "cumulative_at_least": 3,
           "cumulative_rate_at_least": 1.0,
           "label": "30-40%",
           "lower": 0.3,
@@ -170,7 +170,7 @@
         },
         {
           "count": 0,
-          "cumulative_at_least": 2,
+          "cumulative_at_least": 3,
           "cumulative_rate_at_least": 1.0,
           "label": "40-50%",
           "lower": 0.4,
@@ -178,7 +178,7 @@
         },
         {
           "count": 0,
-          "cumulative_at_least": 2,
+          "cumulative_at_least": 3,
           "cumulative_rate_at_least": 1.0,
           "label": "50-60%",
           "lower": 0.5,
@@ -186,16 +186,16 @@
         },
         {
           "count": 1,
-          "cumulative_at_least": 2,
+          "cumulative_at_least": 3,
           "cumulative_rate_at_least": 1.0,
           "label": "60-70%",
           "lower": 0.6,
           "upper": 0.7
         },
         {
-          "count": 0,
-          "cumulative_at_least": 1,
-          "cumulative_rate_at_least": 0.5,
+          "count": 1,
+          "cumulative_at_least": 2,
+          "cumulative_rate_at_least": 0.6666666666666666,
           "label": "70-80%",
           "lower": 0.7,
           "upper": 0.8
@@ -203,7 +203,7 @@
         {
           "count": 0,
           "cumulative_at_least": 1,
-          "cumulative_rate_at_least": 0.5,
+          "cumulative_rate_at_least": 0.3333333333333333,
           "label": "80-90%",
           "lower": 0.8,
           "upper": 0.9
@@ -211,16 +211,16 @@
         {
           "count": 1,
           "cumulative_at_least": 1,
-          "cumulative_rate_at_least": 0.5,
+          "cumulative_rate_at_least": 0.3333333333333333,
           "label": "90-100%",
           "lower": 0.9,
           "upper": 1.0
         }
       ],
       "slug": "gpt-5-5--xhigh--codex--goal-no-internet-codex-no-internet-ablation",
-      "total_calls": 122,
-      "total_cost_usd": 10.578800000000001,
-      "total_wall_clock_hours": 0.3925
+      "total_calls": 195,
+      "total_cost_usd": 14.8397,
+      "total_wall_clock_hours": 0.5802777777777778
     }
   ],
   "programbench_tasks": 200,
@@ -301,9 +301,43 @@
       "score": 0.6661764705882353,
       "task_path": "task/agourlay__zip-password-finder.704700d/",
       "wall_clock_seconds": 708
+    },
+    {
+      "agent": "Codex /goal",
+      "almost_resolved": false,
+      "calls": 73,
+      "compliance": "Codex no-internet ablation",
+      "docker_cpus": "16",
+      "docker_memory": "30g",
+      "error_code": "",
+      "estimated_cost_usd": 4.2609,
+      "evaluator_problem": false,
+      "evidence_path": "evidence/cpx62-nointernet-xhigh-20260515T003932Z-ajeetdsouza-zoxide/ajeetdsouza__zoxide.67ca1bc/manifest.json",
+      "host_machine": "x86_64",
+      "host_profile": "smaller VM: 16 CPU / 30g",
+      "host_system": "Linux",
+      "inference_mode": "no-internet",
+      "instance_id": "ajeetdsouza__zoxide.67ca1bc",
+      "mode": "No internet",
+      "model": "gpt-5.5",
+      "model_display": "GPT 5.5 (xhigh)",
+      "n_resolved_tests": 417,
+      "n_system_errors": 0,
+      "n_tests": 531,
+      "n_warnings": 0,
+      "paper_compliant": false,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "programbench_comparable": false,
+      "reasoning_effort": "xhigh",
+      "resolved": false,
+      "run_name": "cpx62-nointernet-xhigh-20260515T003932Z-ajeetdsouza-zoxide",
+      "run_version": "",
+      "score": 0.7853107344632768,
+      "task_path": "task/ajeetdsouza__zoxide.67ca1bc/",
+      "wall_clock_seconds": 676
     }
   ],
-  "sample_instances": 2,
+  "sample_instances": 3,
   "tasks": [
     {
       "best_model": "GPT 5.5 (xhigh)",
@@ -330,15 +364,15 @@
       "task_path": "task/agourlay__zip-password-finder.704700d/"
     },
     {
-      "best_model": "",
-      "best_score": null,
+      "best_model": "GPT 5.5 (xhigh)",
+      "best_score": 0.7853107344632768,
       "instance_id": "ajeetdsouza__zoxide.67ca1bc",
       "official_best_score": 0.872,
       "official_generated_tests": 531,
       "official_result_count": 13,
       "official_task_url": "https://programbench.com/task/ajeetdsouza__zoxide.67ca1bc/",
-      "result_count": 0,
-      "scored_tests": null,
+      "result_count": 1,
+      "scored_tests": 531,
       "task_path": "task/ajeetdsouza__zoxide.67ca1bc/"
     },
     {
