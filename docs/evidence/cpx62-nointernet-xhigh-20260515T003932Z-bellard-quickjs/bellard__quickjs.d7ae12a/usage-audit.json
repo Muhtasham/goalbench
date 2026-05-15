@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T03:49:56.488962+00:00",
+  "generated_at": "2026-05-15T03:54:16.594589+00:00",
   "notes": [
     "Costs are estimates from local Codex token_count logs, not authoritative billed dollars.",
     "Pricing comes from an official-doc snapshot because there is no supported structured pricing endpoint.",
@@ -9,7 +9,7 @@
   "pricing_file": "local_state/openai_pricing.json",
   "pricing_file_sha256": "953d8f9d9bbd42a3ca9ec35a865a4711fdc11fb9cbc682a8b13acb2fd0ba2924",
   "pricing_snapshot": {
-    "age_hours": 2.2,
+    "age_hours": 2.27,
     "fetched_at": "2026-05-15T01:37:50.839307+00:00",
     "max_age_hours": 24,
     "models": {
@@ -435,17 +435,36 @@
         "$CODEX_SESSIONS/2026/05/15/rollout-2026-05-15T01-05-19-019e292a-9d7d-7d72-9fd8-f222b5b24172.jsonl"
       ],
       "total_tokens": 4968960
+    },
+    {
+      "cached_input_tokens": 5229312,
+      "calls": 94,
+      "estimated_cost_usd": "4.8565",
+      "input_tokens": 5360633,
+      "instance_id": "blake3-team__blake3.15e83a5",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 52842,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 11373,
+      "run_name": "cpx62-nointernet-xhigh-20260515T003932Z-blake3-team-blake3",
+      "run_version": "",
+      "session_logs": [
+        "$CODEX_SESSIONS/2026/05/15/rollout-2026-05-15T01-23-19-019e293b-19aa-7d01-a21b-a024856b4947.jsonl"
+      ],
+      "total_tokens": 5413475
     }
   ],
   "totals": {
-    "cached_input_tokens": 113382400,
-    "calls": 1676,
-    "estimated_cost_usd": 110.494,
-    "input_tokens": 117144885,
+    "cached_input_tokens": 118611712,
+    "calls": 1770,
+    "estimated_cost_usd": 115.3505,
+    "input_tokens": 122505518,
     "long_context_calls": 0,
-    "output_tokens": 1164033,
-    "reasoning_output_tokens": 311063,
-    "total_tokens": 118308918
+    "output_tokens": 1216875,
+    "reasoning_output_tokens": 322436,
+    "total_tokens": 123722393
   },
   "warnings": []
 }
