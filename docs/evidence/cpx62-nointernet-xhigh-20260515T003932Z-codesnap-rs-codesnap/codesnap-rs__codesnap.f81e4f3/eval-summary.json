@@ -1,0 +1,2968 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.14274074700006167
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.11307446200225968
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.12498807600059081
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.12283589299840969
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.08299385899954359
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.0831102070005727
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6178988240026229
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1128129019998596
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1061799279996194
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1182923420019506
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.08728104100009659
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 14.953260666999995
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.0361580300013884
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13400580999950762
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09398272600083146
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11272722300054738
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10210221399756847
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 43.937519364000764
+    },
+    {
+      "branch": "df37316a82f6",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.0240569659981702
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09577388799880282
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.08179156299956958
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12182151700108079
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13084395300029428
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.102908922999632
+    },
+    {
+      "branch": "217acac4c63b",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.029337936000956688
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1214915189993917
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13076589300180785
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1217242080019787
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10053752099702251
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 5.398866555002314
+    },
+    {
+      "branch": "b3bc5b50b15d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.01941307499873801
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09889303599993582
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.08830393799871672
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09402921500077355
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.07790867799849366
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 5.458508633000747
+    },
+    {
+      "branch": "ab33db537207",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.020636450000893092
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12251029499748256
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09964838299856638
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1177233240014175
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12586477200238733
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.2548441809994983
+    },
+    {
+      "branch": "55cce0407622",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.019770653001614846
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1167619170009857
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10510807199898409
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10067112999968231
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12506730500172125
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.324011254000652
+    },
+    {
+      "branch": "30e052a5da7c",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02095586900031776
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11081484099850059
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.08017541899971548
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1011863280000398
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10617263799940702
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 1.9091904509987216
+    },
+    {
+      "branch": "bd56584c6044",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.018514948002120946
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.119370667001931
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10763807200055453
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10966440400079591
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11551687199971639
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 0.05987888800154906
+    },
+    {
+      "branch": "895295541dbb",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.0206579999976384
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.08569423700100742
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10389905699776136
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09629605599911883
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1215774690026592
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 0.12838028199985274
+    },
+    {
+      "branch": "ca3324e7d061",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03555418199903215
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13960191899968777
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11908671800119919
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1203158229982364
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11677573699853383
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 4.384581557998899
+    },
+    {
+      "branch": "fd2dce11b704",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02459537500180886
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10226481299832813
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09974640300060855
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11734429499847465
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10101002800001879
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.326151643999765
+    },
+    {
+      "branch": "49dd1f59d447",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02087583899992751
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12266604400065262
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11856507999982568
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11594770000010612
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09751045099983457
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.353063749000285
+    },
+    {
+      "branch": "52187efe8647",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03599426000073436
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.14381159199911053
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09779278099813382
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12587043100211304
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11014143300053547
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.10988581300262
+    },
+    {
+      "branch": "6545a23056d2",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.01890835700032767
+    }
+  ],
+  "executable_hash": "8679feabd65fe124e87307325eb39409f4681a144373e669d86a7319cc36e273",
+  "failed_tests": [
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_relative_highlight_with_range",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_range_with_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_code_theme",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_large_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_from_code_empty_default_value",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_language_with_file_path",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_all_window_options_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_language_explicit",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_html_output_with_options",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_highlight_and_annotations_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_background_with_styling",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_file_with_different_extensions",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_file_path_for_language_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_large_margins",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_breadcrumbs_enabled",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_start_line_number",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_code_font_family",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_language_auto_detect_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_line_numbers_enabled",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_zero_margins",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_watermark_with_all_options",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_highlight_lines_single_line_json",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_execute_with_multiple_args",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_svg_output_with_options",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_all_code_options_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_scale_factor_one",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_multiline_code_with_special_chars",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_additional_coverage.test_add_delete_lines_with_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_breadcrumbs_separator",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_range.test_range_from_line_to_end",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_line_number_color",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_range.test_range_single_line",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_breadcrumbs_font_family",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_appearance.test_breadcrumbs_color",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_range.test_range_specific_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive_coverage.test_complex_json_highlight",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_code_range.test_range_from_start_to_line",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_configuration.test_config_with_all_options",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_special_characters_in_code",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_code_with_tabs",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_highlighting_and_annotations.test_highlight_range",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_unicode_in_code",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_single_character_code",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_highlighting_and_annotations.test_highlight_range_color",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_highlighting_and_annotations.test_relative_highlight_range",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_file_with_no_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_very_long_code",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_input_sources.test_from_file_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive_coverage.test_svg_with_various_options",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_input_sources.test_from_code_stdin",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive_coverage.test_html_with_various_options",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_input_sources.test_from_code_no_value_uses_stdin",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_input_sources.test_execute_with_skip",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_output_destinations.test_output_to_html",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_highlighting_and_annotations.test_add_line_single",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_highlighting_and_annotations.test_add_line_color",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_highlighting_and_annotations.test_raw_highlight_lines_json",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_highlighting_and_annotations.test_delete_line_multiple",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_highlighting_and_annotations.test_add_line_multiple",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_highlighting_and_annotations.test_delete_line_single",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_highlighting_and_annotations.test_delete_line_color",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_output_destinations.test_image_output_type_default",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_highlighting_and_annotations.test_add_and_delete_lines_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_mac_window_bar_enabled",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_output_destinations.test_output_raw_to_stdout",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_output_destinations.test_output_to_png",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_input_sources.test_from_code_explicit",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_input_sources.test_execute_command",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_window_title",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_border_color",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_styling_options.test_watermark_color",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_styling_options.test_background_hex_color",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_styling_options.test_watermark_text",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_margin_x",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_styling_options.test_background_solid_color",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_styling_options.test_watermark_font_family",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_styling_options.test_scale_factor_high",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_styling_options.test_scale_factor_default",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_styling_options.test_scale_factor_custom",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_mac_window_bar_disabled",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_title_font_family",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_title_color",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_window_border_enabled",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_shadow_radius",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_margin_x_and_y",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_shadow_color",
+      "status": "failure"
+    },
+    {
+      "branch": "ab87cc3978a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_window_appearance.test_margin_y",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_code_min_width_enforcement",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_dimension_value_large_number",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_dimension_value_invalid_non_string_non_number",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_silent_mode_with_first_run_shows_info",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_custom_config_file_with_config_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_margin_x_only",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_config_with_numeric_string_values",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_solid_background_color_string",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_silent_mode_with_execute_command",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected exact error:\n#x1B[31m[ERROR]#x1B[0m key must be a string at line 1 column 3\n\nGot:\n#x1B[31m[ERROR]#x1B[0m expected ident at line 1 column 2",
+      "name": "tests.test_error_handling.test_malformed_config_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Should error on invalid UTF-8",
+      "name": "tests.test_error_handling.test_binary_data_in_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_basic_stdin_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_dimension_value_max_string",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Should fail for invalid theme name",
+      "name": "tests.test_error_handling.test_invalid_theme_name",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected exact error:\n#x1B[31m[ERROR]#x1B[0m The file path is not a file\n\nGot:\n#x1B[31m[ERROR]#x1B[0m [Errno 21] Is a directory: '/workspace'",
+      "name": "tests.test_error_handling.test_from_file_with_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_combined_features_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_gradient_with_multiple_stops_and_max_dimensions",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_code_width_calculation_with_varied_line_lengths",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_default_scale_factor_when_not_specified",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_config_flag_with_nonexistent_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_margin_y_only",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_silent_mode_still_shows_errors",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_gradient_with_exact_boundary_positions",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_medium_size_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_dimension_value_invalid_string_not_max",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output should be valid",
+      "name": "tests.test_error_handling.test_multiple_input_sources_precedence",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_config_with_empty_json_object",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_silent_flag_position_independence",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected exact error:\n#x1B[31m[ERROR]#x1B[0m Invalid range format\n\nGot:\n#x1B[31m[ERROR]#x1B[0m invalid digit found in string",
+      "name": "tests.test_error_handling.test_invalid_range_format_multiple_colons",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output should be valid PNG with content",
+      "name": "tests.test_error_handling.test_very_long_single_line",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_large_image_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_with_background_color_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_config_with_watermark_present",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_config_with_unknown_fields_ignored",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_code_trim_with_no_common_indentation",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_gradient_with_multiple_intermediate_stops",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output should contain command display",
+      "name": "tests.test_error_handling.test_execute_with_skip_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_code_tab_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_no_shadow_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_config_flag_with_invalid_json",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_with_title_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_configuration.test_first_run_creates_default_config",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_config_directory_created_if_missing",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: 13f478c4af6affaa5c0b0aed5fc5124ff2211196d144cc1f5412362637f5560a (911143 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_highlight_custom_color",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: 0361dd4947c930ca66ea3ce27f594588510a82ea3cadfe1ee1241305c0fb8789 (910847 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_highlight_range_simple",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_highlight_ranges.test_relative_highlight_beyond_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_with_margins_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_config_absolute_path_with_spaces",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_code_trim_leading_space",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_with_watermark_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_code_trim_with_empty_lines_preserves_blank_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_png_output_format",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_config_without_watermark_uses_default",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_config_with_explicit_scale_factor",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_config_partial_fails_appropriately",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_config_json_with_trailing_comma",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_config_flag_with_relative_path",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_config_file_location_standard_path",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: fa82a0fee23d5e37d92633f785695a961a039ca9da85a93f550c9f846b019fbd (618027 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_relative_highlight_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: 73f03a5c8a9e0e731e17a0bcb110a5ef49b2ae9ced75ab483a7933d6a35eae6e (910411 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_raw_highlight_lines_multiple_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected exit code 1, got 0",
+      "name": "tests.test_highlight_ranges.test_highlight_before_code_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: 776036f21cdf94a78c47038ffd9fab2bddd79238da4657838e478fcb06fad2d9 (910299 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_highlight_single_line",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_mac_window_style_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_margin_zero_values",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Error message should be '[ERROR] Invalid PNG signature.', got: '[ERROR] Unexpected end of data before image end.'",
+      "name": "tests.test_from_image.test_from_image_invalid_png_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Unexpected failure: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_scale_factor_validation_not_enforced_during_deserialization",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_line_number_length_calculation_large_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_single_line_number_display",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_cli_flag_overrides_config_breadcrumbs",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: f7893a293495396465cc022c27a3deb99577393ef2142c4ee125a6b718977cd5 (484499 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_empty_file_no_highlight",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_config_gaps.test_dimension_value_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: 9e27634f0640d14db8d028d82859b87f573dec9ce4bc705ebe2f6aae354e5aa5 (618139 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_absolute_highlight_range_with_code_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: 2e87ef60efb3c2662a5344131707bc907e5f379cd9049f62d5ae42de79b4ee0a (966819 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_highlight_with_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_silent_mode_suppresses_success_messages",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw3/test_second_run_uses_existing_2/home/.config/codesnap/config.json'",
+      "name": "tests.test_configuration.test_second_run_uses_existing_config",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_configuration.test_multiple_runs_different_homes_isolated",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: 798d1a8121d074006c3a23a30edd19a8d1366be053f56c329f790a519b21f33a (910443 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_highlight_range_from_start",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_from_image.test_from_image_small_image_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: 9dcf0ffefcb4fbc978b19425b42cc573f7128cee63a063794d18d8a509d8b2a2 (910179 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_raw_highlight_single_line_json_format",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_edges_utilities.test_margin_custom_values",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Error should mention 'chunk appeared before IHDR chunk', got: '[ERROR] Unexpected end of data before image end.'",
+      "name": "tests.test_from_image.test_from_image_corrupt_png_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 659947, got 219",
+      "name": "tests.test_input_sources.test_from_file_python_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "pytest hangs showing diff of 700KB+ golden files",
+      "name": "tests.test_input_sources.test_combined_flags_exact_golden",
+      "status": "skipped"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 675447, got 219",
+      "name": "tests.test_input_sources.test_with_line_numbers_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 502231, got 219",
+      "name": "tests.test_input_sources.test_from_code_special_characters_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 548495, got 219",
+      "name": "tests.test_input_sources.test_input_source_precedence_execute_over_file_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 538779, got 219",
+      "name": "tests.test_input_sources.test_execute_simple_command_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: 8360b4ee3b614f498659f59d211897b16519931e737f1efe314bd6cb7c8f396a (992867 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_highlight_with_start_line_number",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: e15399a9a3e4fcff902fad81dbc7330032b999b885dcfb24b17978657b155d99 (907191 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_highlight_with_add_delete_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: ce1e9f7aa5d5dcc91a6ba915057e9e32b9975873fc99d36bd55ba62429c40d30 (496619 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_single_line_file_highlight",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output hash mismatch:\n  Expected: f759010499a420b342f76ceedaf4f4e71439d4531aa38bf4898ca84647e40c5d\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271\n  File sizes: expected=908919 actual=219",
+      "name": "tests.test_highlight_ranges.test_raw_highlight_complex_multi_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_with_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: e0bf2c8f7dd0c42cfd5cd8da23b35456883454db22e9e90c72ea89570bd647ca (910199 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_highlight_range_to_end",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_add_line_range_syntax",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_delete_line_range_syntax",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 693107, got 219",
+      "name": "tests.test_input_sources.test_with_start_line_number_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_with_custom_start_line_number",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "gold-env-limitation: Font rendering produces environment-specific SVG output. Worker produces 979KB (6219b23e...), gold produces 996KB (499c44e1...). See binary_notes.md for details.",
+      "name": "tests.test_highlight_ranges.test_highlight_with_breadcrumbs",
+      "status": "skipped"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 665891, got 219",
+      "name": "tests.test_input_sources.test_with_title_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_add_line_custom_color",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 686103, got 219",
+      "name": "tests.test_input_sources.test_from_file_javascript_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Error message differs. Expected: '\\x1b[31m[ERROR]\\x1b[0m The file path is not a file\\n', got: b\"\\x1b[31m[ERROR]\\x1b[0m [Errno 21] Is a directory: '/tmp/pytest-of-root/pytest-0/popen-gw2/test_from_file_directory_error2/testdir'\\n\"",
+      "name": "tests.test_input_sources.test_from_file_directory_error_message",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 520007, got 219",
+      "name": "tests.test_input_sources.test_execute_with_skip_flag_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_delete_line_custom_color",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: f5c535c87d518e8eaca072e1beca4ef7d8cc17d90054a8149ab823a652800a92 (628919 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_highlight_with_range_and_start_line_number",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_add_even_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_line_modifications.test_from_stdin_with_modifications",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Error message mismatch:\nExpected: '\\x1b[31m[ERROR]\\x1b[0m EOF while parsing a string at line 1 column 13\\n'\nGot:      '\\x1b[31m[ERROR]\\x1b[0m expected ident at line 1 column 2\\n'",
+      "name": "tests.test_highlight_ranges.test_invalid_json_in_raw_highlight_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_with_relative_highlight_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 659947, got 219",
+      "name": "tests.test_input_sources.test_from_file_relative_path_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_invalid_add_color_format_short_hex",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_delete_line_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_delete_range_open_ended_to_end",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 486763, got 219",
+      "name": "tests.test_input_sources.test_from_code_stdin_no_arg_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 533479, got 219",
+      "name": "tests.test_input_sources.test_with_range_selection_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_both_add_and_delete_different_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 615195, got 219",
+      "name": "tests.test_input_sources.test_from_file_rust_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_add_single_line",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_add_range_open_ended_from_start",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 659551, got 219",
+      "name": "tests.test_input_sources.test_with_highlight_range_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output hash mismatch:\n  Expected: 21fdde01ab444dbf63c2070194f1d40c12284dbd3d46629e9a8ccbc342e62455\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271\n  File sizes: expected=910827 actual=219",
+      "name": "tests.test_highlight_ranges.test_overlapping_highlight_ranges_in_json",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_with_highlight_range_feature",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_multiple_separate_delete_ranges",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_with_range_selection_and_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_both_custom_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_with_watermark",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_delete_single_line",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 588499, got 219",
+      "name": "tests.test_input_sources.test_execute_multiple_commands_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 656159, got 219",
+      "name": "tests.test_input_sources.test_from_code_multiline_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Should fail with invalid color",
+      "name": "tests.test_line_numbers_breadcrumbs.test_line_number_color_invalid",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_delete_line_single_as_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_delete_all_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_delete_multiple_lines_separate_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 500487, got 219",
+      "name": "tests.test_input_sources.test_with_language_hint_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_both_add_and_delete_same_line",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 503439, got 219",
+      "name": "tests.test_input_sources.test_from_code_simple_string_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output SVG hash mismatch:\n  Expected: 947d0de3e45fd08a47faa415350f3269cb8ec7e5b23a93bb723334a369e059bf (617327 bytes)\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271 (219 bytes)",
+      "name": "tests.test_highlight_ranges.test_highlight_range_whitespace_only_line",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=843471 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_breadcrumbs_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=802007 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_start_line_number_without_has_line_number",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=843183 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_breadcrumbs_separator_multichar",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_invalid_delete_color_format_invalid_string",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_multiple_separate_add_ranges",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=854855 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_line_numbers_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 659403, got 219",
+      "name": "tests.test_input_sources.test_with_delete_line_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 582519, got 219",
+      "name": "tests.test_input_sources.test_execute_failing_command_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_add_multiple_lines_separate_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=896999 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_both_line_numbers_and_breadcrumbs",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "pytest hangs showing diff of 700KB+ golden files",
+      "name": "tests.test_input_sources.test_with_breadcrumbs_exact_golden",
+      "status": "skipped"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 484499, got 219",
+      "name": "tests.test_input_sources.test_from_file_empty_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=890775 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_breadcrumbs_long_path",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 659667, got 219",
+      "name": "tests.test_input_sources.test_with_add_line_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_delete_line_empty_string",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=802007 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_features_disabled_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=856651 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_line_number_color_custom",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=862015 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_start_line_number_custom",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_input_sources.test_from_code_stdin_dash_exact_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=838999 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_breadcrumbs_color_custom",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_invalid_delete_color_format_no_hash",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output hash mismatch:\n  Expected: 79ff16ea90a7fc9ddf7eefbec5fa3459033dc0f2818f7a057ade9798450ceb1a\n  Got:      64d961c74224b7cbdff5e2788b32ab72bca6bb329a62a922e1273bae80cc0271\n  File sizes: expected=910563 actual=219",
+      "name": "tests.test_highlight_ranges.test_raw_highlight_preserves_order",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_line_modifications.test_delete_odd_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=842735 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_breadcrumbs_separator_custom",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Failed to create HTML:",
+      "name": "tests.test_output_formats.test_html_output_creates_valid_html_with_embedded_image",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Width scaling wrong: 1 != 1 * 10",
+      "name": "tests.test_png_comprehensive.test_png_extreme_scale_factors",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG file too small: 219",
+      "name": "tests.test_output_formats.test_svg_output_creates_valid_svg_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=582583 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_line_numbers_with_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output too small with all chrome: 1x1",
+      "name": "tests.test_png_comprehensive.test_png_all_window_chrome_features_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=554051 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_breadcrumbs_from_code",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=836491 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_breadcrumbs_absolute_path",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=854855 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_line_number_color_default",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Range output should be significantly smaller",
+      "name": "tests.test_png_comprehensive.test_png_code_range_extraction",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Large margins didn't increase size enough: 69 vs 69",
+      "name": "tests.test_png_comprehensive.test_png_custom_margins_affect_output_size",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: HTML generation failed:",
+      "name": "tests.test_png_comprehensive.test_png_html_format_base64_embedding",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Different code produced identical snapshots",
+      "name": "tests.test_output_formats.test_multiple_code_inputs_generate_different_outputs",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "Binary is too slow with large inputs (>30s timeout), performance issue not format issue",
+      "name": "tests.test_output_formats.test_large_code_file_processes_without_crash",
+      "status": "skipped"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_basic_3_to_5",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_start_to_n",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_with_from_code",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_invalid_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_starting_at_1",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_beyond_file_length_succeeds",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=586951 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_range_with_start_line_number",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: PNG file too small: 69",
+      "name": "tests.test_output_formats.test_png_output_creates_valid_png_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: SVG size mismatch: output=219 bytes, golden=844307 bytes",
+      "name": "tests.test_line_numbers_breadcrumbs.test_breadcrumbs_special_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_single_line",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_1_to_1",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_n_to_end",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_last_line_single",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: error: unexpected argument '-' found\n\nUsage: codesnap [OPTIONS] --output <OUTPUT>\n\nFor more information, try '--help'.",
+      "name": "tests.test_range_selection.test_range_with_stdin",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_invalid_multiple_colons",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_ending_at_last_line",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected exit code 1 for bare ':' range",
+      "name": "tests.test_range_selection.test_range_full_file_with_colon",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_large_file_middle_section",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_zero_start_succeeds",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_python_file_extension_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_javascript_file_extension_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_ruby_file_extension_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_with_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_single_line_file_beyond_range",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_explicit_start_end",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_reversed_5_to_3",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_range_selection.test_range_with_execute_command",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Range 1:3 and 3:5 produced identical output",
+      "name": "tests.test_range_selection.test_range_distinctness_different_ranges_different_output",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_c_file_extension_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_cpp_file_extension_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_go_file_extension_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_rust_file_extension_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_markdown_file_extension_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_empty_file_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_language_case_insensitive_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_java_file_extension_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_shell_file_extension_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_manual_language_override_with_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_invalid_language_name_fallback",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_language_case_insensitive_lowercase",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_custom_font_family",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_file_path_for_language_detection_from_code_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Invalid theme should fail",
+      "name": "tests.test_syntax_highlighting.test_invalid_theme_name_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_language_flag_overrides_file_path",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_unknown_file_extension_fallback",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_shebang_detection_no_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_same_code_different_languages_produce_different_output",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_very_long_lines_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_c_header_file_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_multiline_complex_code",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_syntax_highlighting.test_special_characters_and_unicode",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_builtin_theme_candy_python",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_builtin_theme_candy_javascript",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_nonexistent_theme_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_theme_name_case_sensitive",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_invalid_theme_folder_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_very_long_theme_name",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_theme_name_with_special_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_custom_theme_from_folder",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_empty_theme_name_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_mac_window_bar_enabled",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 578859, got 219",
+      "name": "tests.test_watermark.test_basic_watermark",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_theme_name_with_unicode",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 573519, got 219",
+      "name": "tests.test_watermark.test_watermark_custom_color",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 579027, got 219",
+      "name": "tests.test_watermark.test_watermark_unicode_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_theme_name_with_leading_trailing_whitespace",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 580323, got 219",
+      "name": "tests.test_watermark.test_watermark_custom_font_family",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 768887, got 219",
+      "name": "tests.test_watermark.test_watermark_very_long_text",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_themes.test_ysgrifennwr_theme",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 554991, got 219",
+      "name": "tests.test_watermark.test_watermark_empty_string",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 430320, got 69",
+      "name": "tests.test_watermark.test_watermark_png_output",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 566507, got 219",
+      "name": "tests.test_watermark.test_watermark_with_mac_window_bar",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 581871, got 219",
+      "name": "tests.test_watermark.test_watermark_with_title",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 577859, got 219",
+      "name": "tests.test_watermark.test_watermark_with_shadow",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 575139, got 219",
+      "name": "tests.test_watermark.test_watermark_combined_styling",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_border_with_default_color",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Output differs from golden file. Size: expected 572187, got 219",
+      "name": "tests.test_watermark.test_no_watermark_specified",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_border_with_custom_color",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_shadow_custom_radius",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_mac_window_bar_disabled",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_border_color_without_has_border_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_margin_x_100",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_shadow_custom_color",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_margin_y_100",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_margin_asymmetric",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_margin_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_shadow_zero_radius",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_title_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_title_with_custom_color",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_title_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_title_long",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_title_special_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_background_custom",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_background_transparent",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_scale_factor_1",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_scale_factor_2",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_scale_factor_5",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_combination_mac_bar_with_title",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_combination_border_with_shadow",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_combination_all_window_options",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_title_custom_font",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_margin_large",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected exit code 1, got 0",
+      "name": "tests.test_window_chrome.test_scale_factor_zero_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected panic exit code 101, got 0",
+      "name": "tests.test_window_chrome.test_border_color_invalid_format",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected panic exit code 101, got 0",
+      "name": "tests.test_window_chrome.test_title_color_short_hex_format_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError: Expected panic exit code 101, got 0",
+      "name": "tests.test_window_chrome.test_border_color_without_hash_prefix_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_shadow_large_radius",
+      "status": "failure"
+    },
+    {
+      "branch": "df37316a82f6",
+      "message": "AssertionError",
+      "name": "tests.test_window_chrome.test_combination_margins_with_shadow",
+      "status": "failure"
+    },
+    {
+      "branch": "217acac4c63b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestInputSourceFlags.test_from_image_short_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "b3bc5b50b15d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_combined_short_flags_cannot_duplicate_same_option",
+      "status": "failure"
+    },
+    {
+      "branch": "b3bc5b50b15d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_scale_factor_type_and_range_validation[args2-not in 0..=255]",
+      "status": "failure"
+    },
+    {
+      "branch": "b3bc5b50b15d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_scale_factor_type_and_range_validation[args1-not in 0..=255]",
+      "status": "failure"
+    },
+    {
+      "branch": "b3bc5b50b15d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_duplicate_option_rejected_for_from_code",
+      "status": "failure"
+    },
+    {
+      "branch": "ab33db537207",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_handling.test_config_flag_minimal_missing_required_fields_errors",
+      "status": "failure"
+    },
+    {
+      "branch": "30e052a5da7c",
+      "message": "AssertionError",
+      "name": "eval.tests.test_codesnap_io.test_range_changes_output_size_for_svg",
+      "status": "failure"
+    },
+    {
+      "branch": "fd2dce11b704",
+      "message": "AssertionError",
+      "name": "tests.test_basic.TestBasicSnapshotGeneration.test_code_string_to_png",
+      "status": "failure"
+    },
+    {
+      "branch": "fd2dce11b704",
+      "message": "AssertionError",
+      "name": "tests.test_output_types.TestOutputValidation.test_output_file_size_reasonable",
+      "status": "failure"
+    },
+    {
+      "branch": "49dd1f59d447",
+      "message": "AssertionError",
+      "name": "eval.tests.test_customization.test_scale_factor",
+      "status": "failure"
+    },
+    {
+      "branch": "52187efe8647",
+      "message": "AssertionError",
+      "name": "eval.tests.test_codesnap_cli.test_silent_suppresses_success_output",
+      "status": "failure"
+    },
+    {
+      "branch": "52187efe8647",
+      "message": "AssertionError",
+      "name": "eval.tests.test_codesnap_cli.test_from_code_creates_png_and_success_message",
+      "status": "failure"
+    },
+    {
+      "branch": "52187efe8647",
+      "message": "AssertionError",
+      "name": "eval.tests.test_codesnap_cli.test_scale_factor_changes_output",
+      "status": "failure"
+    },
+    {
+      "branch": "52187efe8647",
+      "message": "AssertionError",
+      "name": "eval.tests.test_codesnap_cli.test_from_file_with_range_affects_output_size",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 379,
+    "passed": 470,
+    "skipped": 4
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "ab87cc3978a9",
+    "df37316a82f6",
+    "217acac4c63b",
+    "b3bc5b50b15d",
+    "ab33db537207",
+    "55cce0407622",
+    "30e052a5da7c",
+    "bd56584c6044",
+    "895295541dbb",
+    "ca3324e7d061",
+    "fd2dce11b704",
+    "49dd1f59d447",
+    "52187efe8647",
+    "6545a23056d2"
+  ],
+  "test_records": 853,
+  "warnings": []
+}
