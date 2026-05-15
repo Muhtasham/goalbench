@@ -1,0 +1,2159 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.48426902899882407
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.11237253799845348
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.14845022000008612
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.09913189899816643
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.10162321900133975
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.10311186399849248
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.654113396001776
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1018578980001621
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10203536799963331
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12716238099892507
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09226755499912542
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 6.28886522600078
+    },
+    {
+      "branch": "35a40756148c",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03464481599803548
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11725103900243994
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.08054374000130338
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13134520499806968
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1280673069995828
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 263.02936598299857
+    },
+    {
+      "branch": "92f620e1a32a",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03877843000009307
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12285362500188057
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11331580200203462
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10914468799819588
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.094775423000101
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.4343948570021894
+    },
+    {
+      "branch": "8588dcfdc99f",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.032909503002883866
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13039763500273693
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13743137900019065
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11615253100171685
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.14159282200125745
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.38170369799991
+    },
+    {
+      "branch": "5f67f6add9f2",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.033579820999875665
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.14310252699942794
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12126817099851905
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12692453999989084
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1234081820002757
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.3022147890005726
+    },
+    {
+      "branch": "257e8a0c3e58",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.033667930001684
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13492551799936336
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11851909200049704
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12516383600086556
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13321463499960373
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 7.741923543999292
+    },
+    {
+      "branch": "7923ff901b52",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.0406403329980094
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12177408899879083
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11698479700135067
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12219629799801623
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11462993600071059
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.4235735579968605
+    },
+    {
+      "branch": "dbf3dada8ec0",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.026027480002085213
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13394583099943702
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.08156789500208106
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1281320540001616
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13060902500001248
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.132317539999349
+    },
+    {
+      "branch": "7c5e564eea61",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02295429099831381
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12590399300097488
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09321280899894191
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12800467499982915
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13478244900034042
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.8565543689983315
+    },
+    {
+      "branch": "0dfff12d5006",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.033776169999327976
+    }
+  ],
+  "executable_hash": "1e87ff9ca7134faba6be0ee3715af27de22fd1c2e90d8ba0961dff3d161fb678",
+  "failed_tests": [
+    {
+      "branch": "35a40756148c",
+      "message": "collection failure",
+      "name": "eval.tests.test_tui_advanced",
+      "status": "error"
+    },
+    {
+      "branch": "35a40756148c",
+      "message": "collection failure",
+      "name": "eval.tests.test_tui_pexpect",
+      "status": "error"
+    },
+    {
+      "branch": "35a40756148c",
+      "message": "AssertionError",
+      "name": "eval.tests.test_client_server.test_send_option_with_socket",
+      "status": "failure"
+    },
+    {
+      "branch": "35a40756148c",
+      "message": "AssertionError",
+      "name": "eval.tests.test_client_server.test_get_root_option",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_config.test_write_default_conf_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_config_extended.test_verbs_hjson_contains_default_verbs",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Expected specific error message, got:",
+      "name": "tests.test_config.test_conf_flag_with_nonexistent_file",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Expected parse error message, got:",
+      "name": "tests.test_config.test_conf_flag_with_malformed_file",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_config.test_write_default_conf_doesnt_overwrite",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_initial_tree_display_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_arrow_down_moves_selection",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_panel_state_pop_with_escape",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_focus_enter_on_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: emoji.txt should be visible (contains ASCII 'test')",
+      "name": "tests.test_content_search.test_content_search_utf8_unicode_text",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: file1.txt should be visible (contains 'test')",
+      "name": "tests.test_content_search.test_basic_content_search_exact_match",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_enter_directory_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_command_features.test_verb_partial_match_suggestions",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_focus_with_bang_and_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_select_nonexistent_path",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Date column display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:18:36 2026)",
+      "name": "tests.test_display_flags_behavior.test_dates_flag_shows_date_column",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_focus_bang_opens_new_panel",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_double_escape_to_root",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: No-sizes display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:18:37 2026)",
+      "name": "tests.test_display_flags_behavior.test_no_sizes_flag_hides_size_column",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: No-only-folders display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:18:37 2026)",
+      "name": "tests.test_display_flags_behavior.test_no_only_folders_flag_shows_all_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_navigation_boundary_wrap_at_end",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: lower.txt should be visible",
+      "name": "tests.test_content_search.test_content_regex_case_insensitive_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: starts_with.txt should be visible (^test matches)",
+      "name": "tests.test_content_search.test_content_regex_with_anchors",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_selection_type_file_vs_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: lower.txt should be visible (contains 'test')",
+      "name": "tests.test_content_search.test_content_search_case_sensitive_default",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: No-dates display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:18:46 2026)",
+      "name": "tests.test_display_flags_behavior.test_no_dates_flag_hides_date_column",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_multiple_down_presses_progress_selection",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Permissions display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:18:47 2026)",
+      "name": "tests.test_display_flags_behavior.test_permissions_flag_shows_permission_column",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Git info display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:18:47 2026)",
+      "name": "tests.test_display_flags_behavior.test_show_git_info_flag_displays_git_status",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_focus_relative_path_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_escape_back_to_parent_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_command_features.test_completion_escape_cancels",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_select_followed_by_focus",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: has_content.txt should be visible",
+      "name": "tests.test_content_search.test_content_search_empty_files_excluded",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_focus_nonexistent_path",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Sizes display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:18:56 2026)",
+      "name": "tests.test_display_flags_behavior.test_sizes_flag_shows_size_column",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: No-permissions display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:18:56 2026)",
+      "name": "tests.test_display_flags_behavior.test_no_permissions_flag_hides_permission_column",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: match.md should be visible (.md AND contains 'keyword')",
+      "name": "tests.test_content_search.test_combined_filename_and_content_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: No-git-info display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:18:57 2026)",
+      "name": "tests.test_display_flags_behavior.test_no_show_git_info_flag_hides_git_status",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_help_panel_state",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_back_verb_returns_to_previous_state",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: whole_word.txt should be visible (whole word 'test')",
+      "name": "tests.test_content_search.test_content_regex_word_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_command_features.test_verb_completion_tab_single",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_arrow_up_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Error message mismatch.\nExpected:\nIO Error : No such file or directory (os error 2)\n\nGot:",
+      "name": "tests.test_errors_edge_cases.test_nonexistent_config_file",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Error message mismatch.\nExpected:\nIO Error : No such file or directory (os error 2)\n\nGot:",
+      "name": "tests.test_errors_edge_cases.test_nonexistent_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Hidden files display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:19:05 2026)",
+      "name": "tests.test_display_flags_behavior.test_hidden_flag_shows_hidden_files",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: text.txt should be visible",
+      "name": "tests.test_content_search.test_content_search_binary_file_exclusion",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Verb did not execute or write output",
+      "name": "tests.test_execution_builder.test_file_placeholder_simple_file",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_file_stem_placeholder_without_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_initial_panel_state_tree_view",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_file_placeholder_with_spaces",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: exact.txt should be visible (literal 'test.log')",
+      "name": "tests.test_content_search.test_content_search_special_regex_chars_literal",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Directory path should be visible when no files match",
+      "name": "tests.test_content_search.test_content_search_no_match_shows_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_file_stem_multi_part_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_select_last_command",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_directory_placeholder",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_file_extension_placeholder",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_focus_absolute_path_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_command_mode_space_trigger",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_navigation_up_at_beginning",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_command_features.test_no_completion_for_nonmatching",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_parent_placeholder",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_file_extension_placeholder_no_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw2/test_verb_pattern_file_stem_an2/stem_ext_output.txt'",
+      "name": "tests.test_advanced_verbs.test_verb_pattern_file_stem_and_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_file_name_placeholder",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: No-hidden display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:19:15 2026)",
+      "name": "tests.test_display_flags_behavior.test_no_hidden_flag_hides_hidden_files",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_file_dot_extension_placeholder",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_filter_pattern_application",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_file_stem_placeholder_with_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: file1.txt should be visible (contains '123')",
+      "name": "tests.test_content_search.test_regex_content_search_digit_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_panel_navigation_down_arrow",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_directory_as_target",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_file_dot_extension_no_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_command_features.test_verb_completion_tab_cycling",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_combined_placeholders_and_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_parent_navigation_from_root",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_long_path_placeholder",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_root_placeholder",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: small.txt should be visible",
+      "name": "tests.test_content_search.test_content_search_large_file_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_nested_directory_placeholders",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_execution_pattern_with_no_placeholders",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_argument_placeholder_simple",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_initial_root_placeholder",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_adjacent_placeholders",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_panel_state_stack_multiple_levels",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_argument_placeholder_with_spaces",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Only-folders display mismatch:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Fri May 15 04:19:25 2026)",
+      "name": "tests.test_display_flags_behavior.test_only_folders_flag_shows_only_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_line_placeholder_default",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_panel_state_transition_enter_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_string_execution_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_staging_file_creates_stage_panel",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: first_line.txt should be visible (keyword on line 1)",
+      "name": "tests.test_content_search.test_content_search_multiline_files",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_select_nested_file_path",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_filter_clear_with_escape",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_multiple_placeholders_same_type",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_git_integration.test_non_git_directory_with_git_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_page_down_then_up",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_unicode_filename_placeholders",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_filter_clear",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw2/test_verb_pattern_multiple_sub2/multi_pattern_output.txt'",
+      "name": "tests.test_advanced_verbs.test_verb_pattern_multiple_substitutions",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_select_first_command",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_argument_with_special_chars",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_view_initial_display",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_help_panel_escape_returns_to_tree",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_execution_builder.test_empty_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_command_features.test_help_scroll_down",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_git_integration.test_git_status_with_hidden_combination",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_git_integration.test_git_repo_default_view",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_custom_verb_parent_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_git_integration.test_git_status_flag_filters_to_interesting_files",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_filter_no_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_command_features.test_help_scroll_boundary_bottom",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_advanced_verbs.test_select_absolute_path",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_keybindings.test_help_screen_displays_on_question_mark",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_filter_partial_match",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_git_integration.test_git_repo_show_git_info",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_app_core.test_multiple_files_staged_count_increases",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_git_integration.test_git_ignored_flag_shows_ignored_files",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_navigation_down",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw2/test_verb_pattern_root_expansi2$HOME_output.txt'",
+      "name": "tests.test_advanced_verbs.test_verb_pattern_root_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_enter_to_browse",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_command_features.test_help_scroll_up",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_keybindings.test_escape_exits_help_returns_to_tree_view",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_enter_different_mount",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_git_integration.test_no_git_ignored_flag_hides_ignored_files",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw1/test_verb_pattern_expansion_fi2/pattern_output.txt'",
+      "name": "tests.test_advanced_verbs.test_verb_pattern_expansion_file_name",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_browser_state.test_back_from_filtered_tree",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_system.test_help_filter_changes_displayed_content",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_keybindings.test_help_scroll_with_arrow_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_keybindings.test_help_shows_search_mode_examples",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_no_cycle_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_filter_then_clear_then_navigate",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_sort_by_size_option",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_preview_text_panel",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_toggle_hidden_files",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_escape_back_to_list",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_keybindings.test_help_multiple_help_toggles",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_navigation_up",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_system.test_help_escape_clears_filter_not_help",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_help_panel_state",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_keybindings.test_help_accessible_from_tree_view",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_toggle_dates_option",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_system.test_help_page_down_scrolls_large_amount",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_sort_by_type_dirs_first",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_system.test_help_screen_opens_with_question_mark",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_toggle_tree_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_system.test_help_scrolling_with_arrow_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_up_at_top_cycles",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_toggle_sizes_displays_file_sizes",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_filesystems_panel_state",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_stage_panel_creation",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_enter_then_back_preserves_selection",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_scroll_page_down",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_toggle_permissions_option",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_set_max_depth_limits_tree",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_unstage_removes_from_staging",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_command_features.test_help_scroll_boundary_top",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_filter_by_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_system.test_help_page_up_scrolls_backward",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_fuzzy_matches_non_contiguous",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_toggle_ignore_gitignore_rules",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_trash_panel_state",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_system.test_help_escape_exits_when_no_filter",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_or_operator_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_parentheses_grouping",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_regex_anchors_start",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_fuzzy_case_insensitive_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_regex_pattern_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_fuzzy_non_ascii_unicode",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_system.test_help_up_arrow_scrolls_backward",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_exact_case_sensitive_match",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_panel_state.test_clear_stage_removes_all",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_complex_negation",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_system.test_help_verb_filtering",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_regex_hidden_files",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_rapid_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_empty_pattern_shows_all",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_not_operator_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_chained_or_operators",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_help_system.test_help_search_modes_table_complete",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_regex_with_case_insensitive_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_exact_match_with_path_parts",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Marker should be present in all screens, missing at indices: [0, 1, 2, 3, 4]",
+      "name": "tests.test_filesystems.test_filesystem_multiple_navigation_down",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_exact_case_sensitive_uppercase",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_preview_image_hex.test_hex_preview_repeating_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_preview_image_hex.test_hex_preview_binary_simple",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Expected exit code 1, got 0",
+      "name": "tests.test_remote_control.test_send_to_nonexistent_socket",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_nested_parentheses_complex",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_operator_precedence_left_to_right",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Socket should exist while server is running",
+      "name": "tests.test_remote_control.test_socket_cleanup_on_normal_exit",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_remote_control.test_send_focus_command_changes_server_root",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Sequence should end at /tmp/pytest-of-root/pytest-0/popen-gw11/test_command_sequence_executio2/dir3, got",
+      "name": "tests.test_remote_control.test_command_sequence_execution",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_remote_control.test_send_directory_without_cmd_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_preview_image_hex.test_image_preview_png_red_small",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_preview_image_hex.test_image_preview_svg",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Socket file not created at /tmp/broot-server-test_socket_98.sock",
+      "name": "tests.test_remote_control.test_listen_creates_socket_file",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: /tmp/broot-server-test_stale_105.sock should be a socket, not regular file",
+      "name": "tests.test_remote_control.test_stale_socket_file_is_removed_on_startup",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_pattern_search.test_and_operator_fuzzy_match",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Query 1 returned wrong path",
+      "name": "tests.test_remote_control.test_multiple_sequential_client_connections",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Should fail to connect to exited server",
+      "name": "tests.test_remote_control.test_invalid_command_causes_server_exit",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: /tmp/broot-server-test_reuse_98.sock should be a socket",
+      "name": "tests.test_remote_control.test_listen_auto_creates_random_socket",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Expected state at dir1 or dir2, got",
+      "name": "tests.test_remote_control.test_sequence_with_empty_commands",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Socket should exist at exact path /tmp/broot-server-test_format_check.sock",
+      "name": "tests.test_remote_control.test_socket_path_format",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Root path should be absolute, got ''",
+      "name": "tests.test_remote_control.test_relative_path_resolved_to_absolute",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Should navigate to /tmp/pytest-of-root/pytest-0/popen-gw0/test_focus_nonexistent_path_na2 (nearest parent), got",
+      "name": "tests.test_remote_control.test_focus_nonexistent_path_navigates_to_nearest_parent",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Expected root path /tmp/pytest-of-root/pytest-0/popen-gw9/test_get_root_returns_current_2/server_root, got",
+      "name": "tests.test_remote_control.test_get_root_returns_current_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_remote_control.test_listen_with_same_name_as_existing_process",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Socket should be created at /tmp/broot-server-test-socket_123_105.sock",
+      "name": "tests.test_remote_control.test_special_characters_in_socket_name",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Should report removing the launcher/refused file (output starts with 'Removing')",
+      "name": "tests.test_shell_install.test_set_install_state_undefined",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_preview_image_hex.test_image_preview_png_blue",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Long socket name should still work",
+      "name": "tests.test_remote_control.test_very_long_socket_name",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Failed to navigate to path with spaces: expected /tmp/pytest-of-root/pytest-0/popen-gw1/test_path_with_spaces2/directory with spaces, got",
+      "name": "tests.test_remote_control.test_path_with_spaces",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Error message differs from golden file",
+      "name": "tests.test_shell_install.test_set_install_state_invalid_value",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Failed on deeply nested path: expected /tmp/pytest-of-root/pytest-0/popen-gw13/test_deeply_nested_path2/level0/level1/level2/level3/level4/level5/level6/level7/level8/level9/level10/level11/level12/level13/level14/level15/level16/level17/level18/level19, got",
+      "name": "tests.test_remote_control.test_deeply_nested_path",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Should create exactly one installed file",
+      "name": "tests.test_shell_install.test_set_install_state_version_number_in_filename",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Symlink navigation failed: expected /tmp/pytest-of-root/pytest-0/popen-gw14/test_symlink_handling2/link_to_real or /tmp/pytest-of-root/pytest-0/popen-gw14/test_symlink_handling2/real_directory, got",
+      "name": "tests.test_remote_control.test_symlink_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_shell_install.test_set_install_state_refused_then_installed_file_transitions",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Should remove all installed-vN files, but found: [PosixPath('/tmp/pytest-of-root/pytest-0/popen-gw0/test_set_install_state_multipl2/home/.config/broot/launcher/installed-v1'), PosixPath('/tmp/pytest-of-root/pytest-0/popen-gw0/test_set_install_state_multipl2/home/.config/broot/launcher/installed-v2'), PosixPath('/tmp/pytest-of-root/pytest-0/popen-gw0/test_set_install_state_multipl2/home/.config/broot/launcher/installed-v0')]",
+      "name": "tests.test_shell_install.test_set_install_state_multiple_version_files_cleanup",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Expected exit code 0, got 1",
+      "name": "tests.test_shell_install.test_print_shell_function_nushell",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Failed to handle Unicode path: expected /tmp/pytest-of-root/pytest-0/popen-gw15/test_unicode_in_directory_name2/caf\u00e9_\u2615_\u65e5\u672c\u8a9e, got",
+      "name": "tests.test_remote_control.test_unicode_in_directory_names",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Should create installed state file",
+      "name": "tests.test_shell_install.test_set_install_state_creates_parent_dirs",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Should start with version string 'broot 1.54.0\\n'",
+      "name": "tests.test_shell_install.test_print_shell_function_combined_with_version",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_shell_install.test_print_shell_function_multiple_shells_sequential",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Root should be valid path, got",
+      "name": "tests.test_remote_control.test_cmd_and_get_root_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Expected refused file at /tmp/pytest-of-root/pytest-0/popen-gw12/test_set_install_state_refused2/home/.config/broot/launcher/refused",
+      "name": "tests.test_shell_install.test_set_install_state_refused",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Expected exactly one installed-vN file, found 0: []",
+      "name": "tests.test_shell_install.test_set_install_state_installed",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_navigation_then_filter",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Refused file should exist",
+      "name": "tests.test_shell_install.test_set_install_state_replaces_previous",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: directory should be moved to trash",
+      "name": "tests.test_trash.test_trash_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Should succeed for nushell",
+      "name": "tests.test_shell_install.test_shell_function_all_shells_supported",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_hidden_files_display",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: file should be moved to trash",
+      "name": "tests.test_trash.test_trash_move_file_and_view",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: should show 'Original parent' column header",
+      "name": "tests.test_trash.test_trash_empty_or_minimal_view",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Expected /tmp/pytest-of-root/pytest-0/popen-gw8/test_get_root_without_other_co2/target, got",
+      "name": "tests.test_remote_control.test_get_root_without_other_commands",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_tree_shows_nested_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_trash.test_trash_restore_collision",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Second Down should change screen further",
+      "name": "tests.test_tui_navigation.test_arrow_down_multiple_times",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: file should be in trash",
+      "name": "tests.test_trash.test_trash_permanent_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_search_functionality_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_enter_key_opens_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_directory_vs_file_indication",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: file should be moved to trash",
+      "name": "tests.test_trash.test_trash_restore_file",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_trash.test_trash_sort_by_date",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: file with spaces should be trashed",
+      "name": "tests.test_trash.test_trash_special_filenames",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_multiple_keystrokes_in_search",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_navigation_wraps_at_bottom",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_navigation_wraps_at_top",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_large_directory_tree",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Status bar should show help or navigation hints",
+      "name": "tests.test_tui_navigation.test_status_bar_present",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: file1.txt missing from initial screen",
+      "name": "tests.test_tui_navigation.test_arrow_down_moves_selection",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Server state should be unchanged",
+      "name": "tests.test_remote_control.test_empty_command_string",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError: Down then Up should return to original position",
+      "name": "tests.test_tui_navigation.test_arrow_up_moves_selection_backward",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_initial_tree_display",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_trash.test_trash_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_backspace_in_search",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw1/test_verb_output_clear_empties2/verb_output_clear.txt'",
+      "name": "tests.test_verbs_commands.test_verb_output_clear_empties_file",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_verbs_commands.test_verb_output_write_single_line",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_verbs_commands.test_help_verb_displays_help_content",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_trash.test_trash_purge_all",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw8/test_verb_output_write_multipl2/verb_append.txt'",
+      "name": "tests.test_verbs_commands.test_verb_output_write_multiple_lines_with_newlines",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_filesystems.test_filesystem_filter_navigate_in_results",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_tui_navigation.test_quit_with_ctrl_q",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-root/pytest-0/popen-gw6/test_verb_output_preserves_spe2/special_chars.txt'",
+      "name": "tests.test_verbs_commands.test_verb_output_preserves_special_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "92f620e1a32a",
+      "message": "AssertionError",
+      "name": "tests.test_trash.test_trash_sort_by_size",
+      "status": "failure"
+    },
+    {
+      "branch": "5f67f6add9f2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_arg_parsing_validation.test_enum_suggests_similar_value[args0]",
+      "status": "failure"
+    },
+    {
+      "branch": "5f67f6add9f2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_arg_parsing_validation.test_enum_suggests_similar_value[args1]",
+      "status": "failure"
+    },
+    {
+      "branch": "5f67f6add9f2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_arg_parsing_validation.test_option_rejects_multiple_occurrences",
+      "status": "failure"
+    },
+    {
+      "branch": "5f67f6add9f2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_arg_parsing_validation.test_enum_rejects_invalid_values[args1]",
+      "status": "failure"
+    },
+    {
+      "branch": "5f67f6add9f2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_arg_parsing_validation.test_root_positional_allows_dash_prefixed_value_with_double_dash",
+      "status": "failure"
+    },
+    {
+      "branch": "5f67f6add9f2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_arg_parsing_validation.test_value_flag_accepts_space_and_equals_syntax[args1]",
+      "status": "failure"
+    },
+    {
+      "branch": "7923ff901b52",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_baseline.test_help_matches_recorded_fixture[args0-help_ansi.txt]",
+      "status": "failure"
+    },
+    {
+      "branch": "7923ff901b52",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_usage.test_help_color_no_still_has_ascii_table_borders",
+      "status": "failure"
+    },
+    {
+      "branch": "7923ff901b52",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_usage.test_dash_h_starts_tui_and_fails_without_tty",
+      "status": "failure"
+    },
+    {
+      "branch": "7923ff901b52",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_usage.test_double_dash_treats_next_token_as_root_and_errors_if_missing",
+      "status": "failure"
+    },
+    {
+      "branch": "7923ff901b52",
+      "message": "AssertionError",
+      "name": "eval.tests.test_help_baseline.test_help_matches_recorded_fixture[args1-help_nocolor.txt]",
+      "status": "failure"
+    },
+    {
+      "branch": "dbf3dada8ec0",
+      "message": "AssertionError",
+      "name": "eval.tests.test_io_behavior.test_help_output_panics_on_broken_pipe_regression_guard",
+      "status": "failure"
+    },
+    {
+      "branch": "0dfff12d5006",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli.test_help_exact_matches_frozen_file",
+      "status": "failure"
+    },
+    {
+      "branch": "0dfff12d5006",
+      "message": "subprocess.CalledProcessError: Command '['tmux', 'capture-pane', '-t', 'broot-test-b1fa1bfc47eb4bd9bf1223576926866c', '-p']' returned non-zero exit status 1.",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_hint_line_present",
+      "status": "failure"
+    },
+    {
+      "branch": "0dfff12d5006",
+      "message": "subprocess.CalledProcessError: Command '['tmux', 'capture-pane', '-t', 'broot-test-a9b1b3bca34f40daabf7e6580c082c37', '-p']' returned non-zero exit status 1.",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_launch_renders_root_and_file",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "error": 2,
+    "failure": 282,
+    "passed": 566
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "35a40756148c",
+    "92f620e1a32a",
+    "8588dcfdc99f",
+    "5f67f6add9f2",
+    "257e8a0c3e58",
+    "7923ff901b52",
+    "dbf3dada8ec0",
+    "7c5e564eea61",
+    "0dfff12d5006"
+  ],
+  "test_records": 850,
+  "warnings": []
+}
