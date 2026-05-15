@@ -1388,7 +1388,29 @@ def render_results_sections(data: dict, instances: list[ResultRow]) -> str:
     """
 
 
-def render_html(data: dict) -> str:
+def render_home_results(data: dict, instances: list[ResultRow]) -> str:
+    if not instances:
+        return f"""
+    {render_empty_state()}
+    <p><a href="extended/">See extended results →</a></p>
+        """
+    return f"""
+    <div class="cards">
+      {"".join(render_summary_cards(f"{group['model']} / {group['mode']} / {version_label(str(group.get('run_version', '')))}", group) for group in data["groups"])}
+    </div>
+
+    <h2>Leaderboard</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Avg. est. cost</th><th>Avg. calls</th></tr></thead>
+        <tbody>{render_leaderboard(data["groups"])}</tbody>
+      </table>
+    </div>
+    <p>Compact view of Codex <code>/goal</code> scaffold results. <a href="extended/">See extended results →</a></p>
+    """
+
+
+def render_html(data: dict, extended: bool = False) -> str:
     result_fields = {field.name for field in fields(ResultRow)}
     instances = [
         ResultRow(**{key: value for key, value in row.items() if key in result_fields}) for row in data["rows"]
@@ -1396,20 +1418,29 @@ def render_html(data: dict) -> str:
     nav = f"""
     <nav>
       <a href="./">Leaderboard</a>
+      <a href="extended/">Extended Results</a>
       <a href="task-details.html">Task Details</a>
-      <a href="#run-order">Run Order</a>
       <a href="paper-compliance.md">Compliance</a>
       <a href="runbook.md">Runbook</a>
       <a href="{GOALBENCH_GITHUB}">GitHub</a>
       <a href="{PROGRAMBENCH_EXTENDED}">ProgramBench Extended</a>
     </nav>
     """
+    title = f"Extended Results · {SITE_NAME}" if extended else SITE_NAME
+    question = (
+        "Codex /goal scaffold results by model, mode, task, cost, calls, and latency."
+        if extended
+        else "Can Codex <code>/goal</code> rebuild programs from scratch?"
+    )
+    heading = "Extended Results" if extended else "Long-running Codex on ProgramBench."
+    body = render_results_sections(data, instances) if extended else render_home_results(data, instances)
+    base = '<base href="../">\n  ' if extended else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{SITE_NAME}</title>
+  {base}<title>{title}</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     :root {{
@@ -1614,8 +1645,8 @@ def render_html(data: dict) -> str:
     <div class="brand"><span class="brand-mark">G</span><span>{SITE_NAME}</span></div>
     <div class="hero">
       <div>
-        <p class="question">Can Codex <code>/goal</code> rebuild programs from scratch?</p>
-        <h1>Long-running Codex on ProgramBench.</h1>
+        <p class="question">{question}</p>
+        <h1>{heading}</h1>
         <p class="hero-copy">Given only a compiled binary and its documentation, Codex <code>/goal</code> agents must architect and implement a complete codebase that reproduces the original program's behavior.</p>
       </div>
       <aside class="hero-panel">
@@ -1652,8 +1683,8 @@ def render_html(data: dict) -> str:
       </div>
     </div>
     <p><a href="data/results.json">Download results.json</a> · <a href="data/results.csv">Download results.csv</a></p>
-    {render_run_plan()}
-    {render_results_sections(data, instances)}
+    {render_run_plan() if extended else ""}
+    {body}
 
     <h2>Official Baseline Context</h2>
     <p>For orientation only. ProgramBench's public extended table reports mini-SWE-agent over 200 tasks, sorted by resolved, almost-resolved, then average pass rate.</p>
@@ -1680,7 +1711,12 @@ def build(args: argparse.Namespace) -> None:
     target_ids = read_target_ids(Path(args.target_set).expanduser())
     official_tasks = load_task_baselines(output_dir)
     if args.clean_output:
-        for generated in (output_dir / "run", output_dir / "task", output_dir / "official-run"):
+        for generated in (
+            output_dir / "run",
+            output_dir / "task",
+            output_dir / "official-run",
+            output_dir / "extended",
+        ):
             if generated.exists():
                 shutil.rmtree(generated)
         for generated in (
@@ -1709,6 +1745,8 @@ def build(args: argparse.Namespace) -> None:
     (output_dir / "data" / "results.json").write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
     (output_dir / "data" / "results.csv").write_text(render_csv(rows))
     write_html(output_dir / "index.html", render_html(data))
+    (output_dir / "extended").mkdir(parents=True, exist_ok=True)
+    write_html(output_dir / "extended" / "index.html", render_html(data, extended=True))
     write_html(output_dir / "task-details.html", render_task_details_page())
     for group in data["groups"]:
         run_dir = output_dir / "run" / str(group["slug"])
