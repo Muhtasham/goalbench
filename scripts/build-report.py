@@ -957,6 +957,76 @@ def evidence_link_path(row: ResultRow) -> str:
     return f"evidence/{row.run_name}/{row.instance_id}/manifest.json"
 
 
+def read_public_evidence(row: ResultRow, name: str) -> dict:
+    path = Path("docs") / "evidence" / row.run_name / row.instance_id / name
+    return json.loads(path.read_text()) if path.is_file() else {}
+
+
+def failed_test_reason(name: str) -> str:
+    lowered = name.lower()
+    if "version" in lowered:
+        return "exact version/output mismatch"
+    if "screensaver" in lowered or "interactive" in lowered or "key_" in lowered or "quit" in lowered:
+        return "interactive terminal behavior mismatch"
+    if "tui" in lowered or "screen" in lowered:
+        return "terminal rendering mismatch"
+    return "behavioral mismatch"
+
+
+def render_evidence_highlights(rows: list[ResultRow]) -> str:
+    if not rows:
+        return ""
+    cards = []
+    for row in rows:
+        summary = read_public_evidence(row, "eval-summary.json")
+        if not summary:
+            cards.append(
+                f"""
+      <div class="evidence-card">
+        <h3>{cell(model_display(row))} · <code>{cell(version_label(row.run_version))}</code></h3>
+        <p class="muted">Public eval evidence has not been exported for this row yet.</p>
+      </div>
+                """
+            )
+            continue
+        counts = summary.get("status_counts", {})
+        non_passed = [test for test in summary.get("failed_tests", []) if test.get("status") != "passed"]
+        failures = [test for test in non_passed if test.get("status") != "skipped"]
+        first_failures = failures[:6]
+        reason_text = "No non-passing behavioral tests were reported."
+        if failures:
+            reasons = sorted({failed_test_reason(str(test.get("name", ""))) for test in failures})
+            reason_text = "Likely miss class: " + ", ".join(reasons) + "."
+        elif non_passed:
+            reason_text = "Only skipped tests were reported in public eval evidence."
+        tests = "\n".join(
+            f"""
+          <li><code>{cell(str(test.get("branch", "")))}</code> {cell(str(test.get("name", "")))} <span class="muted">({cell(str(test.get("status", "")))})</span></li>
+            """
+            for test in first_failures
+        )
+        if not tests:
+            tests = '<li class="muted">No failing tests listed.</li>'
+        cards.append(
+            f"""
+      <div class="evidence-card">
+        <h3>{cell(model_display(row))} · <code>{cell(version_label(row.run_version))}</code></h3>
+        <p>{percent(row.score)} from <strong>{row.n_resolved_tests}/{row.n_tests}</strong> ProgramBench-scored tests. Raw public eval statuses: {", ".join(f"{cell(str(key))}: {cell(str(value))}" for key, value in sorted(counts.items())) or "unavailable"}.</p>
+        <p class="muted">{cell(reason_text)}</p>
+        <ul>{tests}</ul>
+        <p>{evidence_links(row, "../../")}</p>
+      </div>
+            """
+        )
+    return f"""
+  <h2>Why Scores Differ</h2>
+  <p class="muted">Official ProgramBench rows are the public mini-SWE-agent submissions. GoalBench rows are separate Codex <code>/goal</code> submissions. Same model label does not mean the same agent, prompt, tool loop, or generated implementation. A GoalBench row is resolved only when the ProgramBench-scored pass rate is exactly 100%.</p>
+  <div class="evidence-grid">
+    {"".join(cards)}
+  </div>
+    """
+
+
 def render_task_detail(instance_id: str, rows: list[ResultRow], official_tasks: dict) -> str:
     matching = sorted([row for row in rows if row.instance_id == instance_id], key=lambda row: row.score, reverse=True)
     best_score = max((row.score for row in matching), default=None)
@@ -1006,6 +1076,11 @@ def render_task_detail(instance_id: str, rows: list[ResultRow], official_tasks: 
     .metric {{ border: 1px solid #d9e0e6; border-radius: 8px; padding: 14px; }}
     .metric strong {{ display: block; font-size: 24px; }}
     .metric span {{ color: #61707d; font-size: 13px; }}
+    .evidence-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 12px; margin: 16px 0; }}
+    .evidence-card {{ border: 1px solid #d9e0e6; border-radius: 8px; padding: 14px; }}
+    .evidence-card h3 {{ margin: 0 0 8px; font-size: 16px; }}
+    .evidence-card ul {{ margin: 8px 0 0; padding-left: 18px; }}
+    .evidence-card li {{ margin: 5px 0; font-size: 13px; }}
     .muted {{ color: #61707d; }}
   </style>
 </head>
@@ -1024,6 +1099,7 @@ def render_task_detail(instance_id: str, rows: list[ResultRow], official_tasks: 
     <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Agent</th><th>Mode</th><th>Score</th><th>Eval</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Evidence</th></tr></thead>
     <tbody>{result_rows}</tbody>
   </table>
+  {render_evidence_highlights(matching)}
   <h2>Official ProgramBench Results by Model</h2>
   <table>
     <thead><tr><th>#</th><th>Model</th><th>Provider</th><th>Score</th><th>Cost</th><th>Calls</th></tr></thead>
