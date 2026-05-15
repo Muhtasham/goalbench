@@ -209,10 +209,13 @@ def manifest_key(manifest_path: Path) -> tuple[str, str]:
 
 
 def selected_manifests(artifacts_dir: Path, wanted: set[tuple[str, str]]) -> list[Path]:
-    manifests = sorted(artifacts_dir.glob("*/*/manifest.json"))
     if not wanted:
-        return manifests
-    return [manifest_path for manifest_path in manifests if manifest_key(manifest_path) in wanted]
+        return []
+    return [
+        manifest_path
+        for manifest_path in sorted(artifacts_dir.glob("*/*/manifest.json"))
+        if manifest_key(manifest_path) in wanted
+    ]
 
 
 def export(args: argparse.Namespace) -> None:
