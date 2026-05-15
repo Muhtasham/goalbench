@@ -140,6 +140,10 @@ def load_baselines(output_dir: Path) -> list[dict]:
     return json.loads(path.read_text())["baselines"] if path.is_file() else BASELINES
 
 
+def write_html(path: Path, content: str) -> None:
+    path.write_text("\n".join(line.rstrip() for line in content.splitlines()) + "\n")
+
+
 def load_task_baselines(output_dir: Path) -> dict:
     path = output_dir / "data" / "programbench-task-baselines.json"
     return json.loads(path.read_text())["tasks"] if path.is_file() else {}
@@ -1489,15 +1493,15 @@ def build(args: argparse.Namespace) -> None:
     (output_dir / "data").mkdir(parents=True, exist_ok=True)
     (output_dir / "data" / "results.json").write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
     (output_dir / "data" / "results.csv").write_text(render_csv(rows))
-    (output_dir / "index.html").write_text(render_html(data))
+    write_html(output_dir / "index.html", render_html(data))
     for group in data["groups"]:
         run_dir = output_dir / "run" / str(group["slug"])
         run_dir.mkdir(parents=True, exist_ok=True)
-        (run_dir / "index.html").write_text(render_run_detail(group, rows))
+        write_html(run_dir / "index.html", render_run_detail(group, rows))
     for task in data["tasks"]:
         task_dir = output_dir / "task" / str(task["instance_id"])
         task_dir.mkdir(parents=True, exist_ok=True)
-        (task_dir / "index.html").write_text(render_task_detail(str(task["instance_id"]), rows, official_tasks))
+        write_html(task_dir / "index.html", render_task_detail(str(task["instance_id"]), rows, official_tasks))
     print(output_dir / "index.html")
     print(output_dir / "data" / "results.json")
     print(output_dir / "data" / "results.csv")

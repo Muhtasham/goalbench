@@ -178,8 +178,8 @@
     <h1>GoalBench</h1>
     <p>Codex <code>/goal</code> scaffold results on ProgramBench tasks. These are scaffold measurements, not official mini-SWE-agent leaderboard submissions.</p>
     <div class="pill-row">
-      <span class="pill">Generated 2026-05-15T15:41:24.760897+00:00</span>
-      <span class="pill">3 evaluated instances</span>
+      <span class="pill">Generated 2026-05-15T16:17:57.491427+00:00</span>
+      <span class="pill">0 evaluated instances</span>
       <span class="pill">200 tasks in full ProgramBench</span>
       <span class="pill">Sorted Resolved → Almost → Avg. pass</span>
     </div>
@@ -206,7 +206,7 @@
       </div>
     </div>
     <p><a href="data/results.json">Download results.json</a> · <a href="data/results.csv">Download results.csv</a></p>
-    
+
     <h2>Recommended Run Order</h2>
     <p>This site keeps each scaffold and mode separate. The intended sequence is:</p>
     <div class="table-wrap">
@@ -221,172 +221,140 @@
         </tbody>
       </table>
     </div>
-    
-    
-    <div class="cards">
-      
-      <section class="summary-card">
-        <div class="summary-title">GPT 5.5 (xhigh) / No internet / unversioned</div>
-        <div class="summary-meta">Codex no-internet ablation · run unversioned</div>
-        <div class="metric-grid">
-          <div><strong>3</strong><span>instances</span></div>
-          <div><strong>0.0%</strong><span>resolved</span></div>
-          <div><strong>33.3%</strong><span>almost</span></div>
-          <div><strong>80.8%</strong><span>avg pass</span></div>
-          <div><strong>$14.84</strong><span>total est. cost</span></div>
-          <div><strong>195</strong><span>total calls</span></div>
-          <div><strong>$4.95</strong><span>est. cost / task</span></div>
-          <div><strong>65.0</strong><span>calls / task</span></div>
+
+
+
+    <section class="empty-state">
+      <h2>Clean Slate</h2>
+      <p>No Codex <code>/goal</code> results are published in this reset yet. The next full run will populate the leaderboard, run-detail pages, task pages, plots, and downloadable JSON/CSV artifacts.</p>
+      <div class="mode-grid">
+        <div class="mode-card">
+          <strong>Primary run</strong>
+          <p><code>configs/full-nointernet-xhigh.json</code> is the headline Noam/Jake run: GPT-5.5 xhigh with Codex <code>/goal</code>, no internet/source lookup, black-box target access.</p>
         </div>
-      </section>
-    
-    </div>
+        <div class="mode-card">
+          <strong>High comparison</strong>
+          <p><code>configs/full-nointernet-high.json</code> keeps the same scaffold and mode, changing only reasoning effort for high-vs-xhigh comparison.</p>
+        </div>
+        <div class="mode-card">
+          <strong>Strict cleanroom variant</strong>
+          <p><code>configs/full-paper-xhigh.json</code> is ProgramBench-style cleanroom for Codex <code>/goal</code>, not a paper baseline reproduction. It needs Linux amd64, 20 CPU / 60g, strict egress, and wrapper-only target access.</p>
+        </div>
+        <div class="mode-card">
+          <strong>Tool-starvation ablation</strong>
+          <p><code>configs/full-localtools-xhigh.json</code> keeps internet/source lookup blocked but allows local binary-analysis/tracing tools. It is intentionally non-compliant.</p>
+        </div>
+        <div class="mode-card">
+          <strong>Open-internet ceiling</strong>
+          <p><code>configs/full-open-xhigh.json</code> allows internet/package tooling and is only a non-compliant ceiling experiment.</p>
+        </div>
+      </div>
+    </section>
+
 
     <h2>Score by Model × Task</h2>
-    <div class="score-matrix">
-      <a class="heat-cell" style="background:#d97706" title="abishekvashok__cmatrix.5c082c6: 97.2%" href="task/abishekvashok__cmatrix.5c082c6/"></a><a class="heat-cell" style="background:#0f766e" title="agourlay__zip-password-finder.704700d: 66.6%" href="task/agourlay__zip-password-finder.704700d/"></a><a class="heat-cell" style="background:#0f766e" title="ajeetdsouza__zoxide.67ca1bc: 78.5%" href="task/ajeetdsouza__zoxide.67ca1bc/"></a>
+    <p>The matrix below mirrors ProgramBench's all-models-by-all-tasks view for this scaffold. Cells are pending until Codex results are published, then link to task pages with per-task detail.</p>
+    <div class="score-matrix pending-matrix">
+      <a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a><a class="heat-cell pending" title="pending"></a>
     </div>
-
-    
     <h2>Behavioral Test Pass Rate Distribution</h2>
-    <p>These plots mirror ProgramBench's run-detail views: a score histogram and a cumulative count by behavioral test pass-rate bucket.</p>
+    <p>The distribution plots are wired into the report. They stay empty until the first evaluated task lands, then render ProgramBench-style cumulative and histogram views.</p>
     <div class="plot-grid">
-      <section class="plot-card">
-        <h3>Histogram</h3>
-        
-      <svg class="plot" viewBox="0 0 520 240" role="img" aria-label="Behavioral test pass rate histogram">
-        <line x1="42" y1="18" x2="42" y2="194" />
-        <line x1="42" y1="194" x2="506" y2="194" />
-        <text x="34" y="22" text-anchor="end">1</text>
-        <text x="34" y="198" text-anchor="end">0</text>
-        <text x="42" y="228">0%</text>
-        <text x="506" y="228" text-anchor="end">100%</text>
-        <text x="260.0" y="228" text-anchor="middle">behavioral test pass rate</text>
-        <text x="12" y="120.0" transform="rotate(-90 12 120.0)" text-anchor="middle">tasks</text>
-        <rect x="44.0" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>0-10% pass: 0 task(s)</title></rect><rect x="90.4" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>10-20% pass: 0 task(s)</title></rect><rect x="136.8" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>20-30% pass: 0 task(s)</title></rect><rect x="183.2" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>30-40% pass: 0 task(s)</title></rect><rect x="229.6" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>40-50% pass: 0 task(s)</title></rect><rect x="276.0" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>50-60% pass: 0 task(s)</title></rect><rect x="322.4" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>60-70% pass: 1 task(s)</title></rect><rect x="368.8" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>70-80% pass: 1 task(s)</title></rect><rect x="415.2" y="194.0" width="42.4" height="0.0" fill="#0f766e"><title>80-90% pass: 0 task(s)</title></rect><rect x="461.6" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>90-100% pass: 1 task(s)</title></rect>
-      </svg>
-    
-      </section>
-      <section class="plot-card">
+
+      <section class="plot-card pending-plot">
         <h3>Cumulative</h3>
-        
-      <svg class="plot" viewBox="0 0 520 240" role="img" aria-label="Behavioral test pass rate cumulative distribution">
-        <line x1="42" y1="18" x2="42" y2="194" />
-        <line x1="42" y1="194" x2="506" y2="194" />
-        <text x="34" y="22" text-anchor="end">3</text>
-        <text x="34" y="198" text-anchor="end">0</text>
-        <text x="42" y="228">0%</text>
-        <text x="506" y="228" text-anchor="end">100%</text>
-        <text x="260.0" y="228" text-anchor="middle">behavioral test pass rate</text>
-        <text x="12" y="120.0" transform="rotate(-90 12 120.0)" text-anchor="middle">tasks</text>
-        <rect x="44.0" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 0% pass: 3 task(s), 100.0%</title></rect><rect x="90.4" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 10% pass: 3 task(s), 100.0%</title></rect><rect x="136.8" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 20% pass: 3 task(s), 100.0%</title></rect><rect x="183.2" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 30% pass: 3 task(s), 100.0%</title></rect><rect x="229.6" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 40% pass: 3 task(s), 100.0%</title></rect><rect x="276.0" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 50% pass: 3 task(s), 100.0%</title></rect><rect x="322.4" y="18.0" width="42.4" height="176.0" fill="#0f766e"><title>&gt;= 60% pass: 3 task(s), 100.0%</title></rect><rect x="368.8" y="76.7" width="42.4" height="117.3" fill="#0f766e"><title>&gt;= 70% pass: 2 task(s), 66.7%</title></rect><rect x="415.2" y="135.3" width="42.4" height="58.7" fill="#0f766e"><title>&gt;= 80% pass: 1 task(s), 33.3%</title></rect><rect x="461.6" y="135.3" width="42.4" height="58.7" fill="#0f766e"><title>&gt;= 90% pass: 1 task(s), 33.3%</title></rect>
-      </svg>
-    
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Cumulative pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">behavioral test pass rate</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
       </section>
-    </div>
-    
 
-    
-    <h2>Efficiency Plots</h2>
-    <p>Each point is one evaluated task. Compute is shown as Codex calls because public results omit raw token logs; cost is estimated from local token logs and a pricing snapshot.</p>
+
+      <section class="plot-card pending-plot">
+        <h3>Histogram</h3>
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Histogram pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">behavioral test pass rate</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
+      </section>
+
+    </div>
+    <h2>Model Comparison</h2>
+    <p>Model comparison plots appear once there are at least two Codex result groups. Each dot will be one task instance, matching ProgramBench's comparison framing.</p>
     <div class="plot-grid">
-      <section class="plot-card">
+
+      <section class="plot-card pending-plot">
+        <h3>Model Comparison</h3>
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Model Comparison pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">comparison score</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
+      </section>
+
+    </div>
+    <h2>Efficiency Plots</h2>
+    <p>The chart slots are wired into the report. They stay empty until the first evaluated task lands, then render ProgramBench-style pass-rate distribution plus pass rate by cost, calls, and latency.</p>
+    <div class="plot-grid">
+
+      <section class="plot-card pending-plot">
         <h3>Pass vs. Est. Cost</h3>
-        
-      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Est. cost (USD)">
-        <line x1="42" y1="18" x2="42" y2="186" />
-        <line x1="42" y1="186" x2="342" y2="186" />
-        <text x="34" y="22" text-anchor="end">100%</text>
-        <text x="34" y="190" text-anchor="end">0%</text>
-        <text x="42" y="212">0</text>
-        <text x="342" y="212" text-anchor="end">$7.45</text>
-        <text x="180.0" y="212" text-anchor="middle">Est. cost (USD)</text>
-        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
-        <circle cx="342.0" cy="22.6" r="5.5" fill="#d97706"><title>abishekvashok__cmatrix.5c082c6: 97.2% pass, est. cost (usd) $7.45, No internet</title></circle><circle cx="167.8" cy="74.1" r="5.5" fill="#be123c"><title>agourlay__zip-password-finder.704700d: 66.6% pass, est. cost (usd) $3.13, No internet</title></circle><circle cx="213.5" cy="54.1" r="5.5" fill="#be123c"><title>ajeetdsouza__zoxide.67ca1bc: 78.5% pass, est. cost (usd) $4.26, No internet</title></circle>
-      </svg>
-    
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass vs. Est. Cost pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">estimated cost</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
       </section>
-      <section class="plot-card">
+
+
+      <section class="plot-card pending-plot">
         <h3>Pass vs. Calls</h3>
-        
-      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Codex calls">
-        <line x1="42" y1="18" x2="42" y2="186" />
-        <line x1="42" y1="186" x2="342" y2="186" />
-        <text x="34" y="22" text-anchor="end">100%</text>
-        <text x="34" y="190" text-anchor="end">0%</text>
-        <text x="42" y="212">0</text>
-        <text x="342" y="212" text-anchor="end">73</text>
-        <text x="180.0" y="212" text-anchor="middle">Codex calls</text>
-        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
-        <circle cx="317.3" cy="22.6" r="5.5" fill="#d97706"><title>abishekvashok__cmatrix.5c082c6: 97.2% pass, codex calls 67, No internet</title></circle><circle cx="268.0" cy="74.1" r="5.5" fill="#be123c"><title>agourlay__zip-password-finder.704700d: 66.6% pass, codex calls 55, No internet</title></circle><circle cx="342.0" cy="54.1" r="5.5" fill="#be123c"><title>ajeetdsouza__zoxide.67ca1bc: 78.5% pass, codex calls 73, No internet</title></circle>
-      </svg>
-    
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass vs. Calls pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">Codex calls</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
       </section>
-      <section class="plot-card">
+
+
+      <section class="plot-card pending-plot">
         <h3>Pass vs. Latency</h3>
-        
-      <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass rate by Wall-clock hours">
-        <line x1="42" y1="18" x2="42" y2="186" />
-        <line x1="42" y1="186" x2="342" y2="186" />
-        <text x="34" y="22" text-anchor="end">100%</text>
-        <text x="34" y="190" text-anchor="end">0%</text>
-        <text x="42" y="212">0</text>
-        <text x="342" y="212" text-anchor="end">0.20h</text>
-        <text x="180.0" y="212" text-anchor="middle">Wall-clock hours</text>
-        <text x="12" y="110.0" transform="rotate(-90 12 110.0)" text-anchor="middle">pass rate</text>
-        <circle cx="340.7" cy="22.6" r="5.5" fill="#d97706"><title>abishekvashok__cmatrix.5c082c6: 97.2% pass, wall-clock hours 0.20h, No internet</title></circle><circle cx="342.0" cy="74.1" r="5.5" fill="#be123c"><title>agourlay__zip-password-finder.704700d: 66.6% pass, wall-clock hours 0.20h, No internet</title></circle><circle cx="328.4" cy="54.1" r="5.5" fill="#be123c"><title>ajeetdsouza__zoxide.67ca1bc: 78.5% pass, wall-clock hours 0.19h, No internet</title></circle>
-      </svg>
-    
+        <svg class="plot" viewBox="0 0 360 220" role="img" aria-label="Pass vs. Latency pending results">
+          <line x1="42" y1="18" x2="42" y2="186" />
+          <line x1="42" y1="186" x2="342" y2="186" />
+          <text x="34" y="22" text-anchor="end">100%</text>
+          <text x="34" y="190" text-anchor="end">0%</text>
+          <text x="192" y="212" text-anchor="middle">wall-clock hours</text>
+          <text x="12" y="110" transform="rotate(-90 12 110)" text-anchor="middle">pass rate</text>
+          <text x="192" y="106" text-anchor="middle">waiting for results</text>
+        </svg>
       </section>
+
     </div>
-    
 
-    <h2>Extended Results</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Avg. est. cost</th><th>Avg. calls</th></tr></thead>
-        <tbody>
-            <tr>
-              <td>1</td>
-              <td><a href="run/gpt-5-5--xhigh--codex--goal-no-internet-codex-no-internet-ablation/">GPT 5.5 (xhigh)</a></td>
-              <td><code>unversioned</code></td>
-              <td>Codex /goal</td>
-              <td>0.0% (0/3)</td>
-              <td>33.3% (1/3)</td>
-              <td>$4.95</td>
-              <td>65.0</td>
-            </tr>
-            </tbody>
-      </table>
-    </div>
-    <p>Columns mirror ProgramBench's extended leaderboard shape: resolved and almost-resolved rates, average estimated API cost per task instance, and average calls per task instance. ProgramBench run-detail pages show total cost and total calls; our run-detail pages do the same. Run versions keep repeated same-config sweeps separate instead of silently merging attempts. Mode and compliance are shown in Run Disclosures and Per-Instance Results so the mirrored metric table stays close to ProgramBench's shape.</p>
 
-    <h2>Run Disclosures</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Mode</th><th>Compliance</th><th>Host profile</th><th>Tasks</th><th>Avg. pass</th><th>Wall</th></tr></thead>
-        <tbody>
-            <tr>
-              <td>1</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td><code>unversioned</code></td>
-              <td>No internet</td>
-              <td>Codex no-internet ablation</td>
-              <td>smaller VM: 16 CPU / 30g</td>
-              <td>3/200</td>
-              <td>80.8%</td>
-              <td>0.58h</td>
-            </tr>
-            </tbody>
-      </table>
-    </div>
-    <p>These disclosure fields are intentionally outside the mirrored metric table because ProgramBench's public leaderboard does not mix scaffold deviations into the metric columns. Rows labeled smaller VM are Codex <code>/goal</code> scaffold experiments, not paper-sized ProgramBench cleanroom runs.</p>
-
-    
-
-    
-
-    
     <h2>Task Details</h2>
     <p>Task pages mirror ProgramBench's per-task view for this scaffold: scored behavioral tests, best score, and results by model/mode. Pending rows are full-run targets waiting for Codex results. The official ProgramBench task page is linked for baseline context.</p>
     <div class="table-wrap">
@@ -398,39 +366,39 @@
           <td><a href="task/abishekvashok__cmatrix.5c082c6/"><code>abishekvashok__cmatrix.5c082c6</code></a></td>
           <td>507</td>
           <td>100.0%</td>
-          <td>97.2%</td>
-          <td>GPT 5.5 (xhigh)</td>
-          <td>1</td>
+          <td>pending</td>
+          <td>pending</td>
+          <td>0</td>
           <td>13</td>
           <td><a href="https://programbench.com/task/abishekvashok__cmatrix.5c082c6/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>2</td>
-          <td><a href="task/ajeetdsouza__zoxide.67ca1bc/"><code>ajeetdsouza__zoxide.67ca1bc</code></a></td>
-          <td>531</td>
-          <td>87.2%</td>
-          <td>78.5%</td>
-          <td>GPT 5.5 (xhigh)</td>
-          <td>1</td>
-          <td>13</td>
-          <td><a href="https://programbench.com/task/ajeetdsouza__zoxide.67ca1bc/">official</a></td>
-        </tr>
-        
-
-        <tr>
-          <td>3</td>
           <td><a href="task/agourlay__zip-password-finder.704700d/"><code>agourlay__zip-password-finder.704700d</code></a></td>
           <td>680</td>
           <td>98.7%</td>
-          <td>66.6%</td>
-          <td>GPT 5.5 (xhigh)</td>
-          <td>1</td>
+          <td>pending</td>
+          <td>pending</td>
+          <td>0</td>
           <td>13</td>
           <td><a href="https://programbench.com/task/agourlay__zip-password-finder.704700d/">official</a></td>
         </tr>
-        
+
+
+        <tr>
+          <td>3</td>
+          <td><a href="task/ajeetdsouza__zoxide.67ca1bc/"><code>ajeetdsouza__zoxide.67ca1bc</code></a></td>
+          <td>531</td>
+          <td>87.2%</td>
+          <td>pending</td>
+          <td>pending</td>
+          <td>0</td>
+          <td>13</td>
+          <td><a href="https://programbench.com/task/ajeetdsouza__zoxide.67ca1bc/">official</a></td>
+        </tr>
+
 
         <tr>
           <td>4</td>
@@ -443,7 +411,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/alecthomas__chroma.8d04def/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>5</td>
@@ -456,7 +424,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/alexpovel__srgn.89f943b/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>6</td>
@@ -469,7 +437,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/altdesktop__i3-style.f93821b/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>7</td>
@@ -482,7 +450,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ammarabouzor__tui-journal.2b4540d/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>8</td>
@@ -495,7 +463,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/anordal__shellharden.6a6ffd4/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>9</td>
@@ -508,7 +476,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/antonmedv__fx.86d0d34/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>10</td>
@@ -521,7 +489,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/antonmedv__walk.bf802ef/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>11</td>
@@ -534,7 +502,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ariga__atlas.6d81150/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>12</td>
@@ -547,7 +515,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/arq5x__bedtools2.dd57059/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>13</td>
@@ -560,7 +528,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/arthursonzogni__json-tui.17a22b6/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>14</td>
@@ -573,7 +541,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ast-grep__ast-grep.dde0fe0/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>15</td>
@@ -586,7 +554,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/astaxie__bat.17d1080/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>16</td>
@@ -599,7 +567,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/astro__deadnix.d590041/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>17</td>
@@ -612,7 +580,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/axodotdev__oranda.27d60c7/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>18</td>
@@ -625,7 +593,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/bellard__quickjs.d7ae12a/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>19</td>
@@ -638,7 +606,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/bensadeh__tailspin.6278437/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>20</td>
@@ -651,7 +619,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/blacknon__hwatch.edfcb62/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>21</td>
@@ -664,7 +632,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/blake3-team__blake3.15e83a5/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>22</td>
@@ -677,7 +645,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/bootandy__dust.62bf1e1/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>23</td>
@@ -690,7 +658,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/boyter__scc.515f91c/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>24</td>
@@ -703,7 +671,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/brocode__fblog.3b54330/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>25</td>
@@ -716,7 +684,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/burntsushi__ripgrep.3b7fd44/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>26</td>
@@ -729,7 +697,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/burntsushi__xsv.f430466/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>27</td>
@@ -742,7 +710,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/byron__dua-cli.8570c15/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>28</td>
@@ -755,7 +723,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/canop__broot.d6c798e/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>29</td>
@@ -768,7 +736,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/canop__rhit.ae90bcb/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>30</td>
@@ -781,7 +749,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/cheat__cheat.b8098dc/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>31</td>
@@ -794,7 +762,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/chirlu__sox.42b3557/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>32</td>
@@ -807,7 +775,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/chmln__handlr.90e78ba/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>33</td>
@@ -820,7 +788,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/chmln__sd.87d1ba5/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>34</td>
@@ -833,7 +801,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/clog-tool__clog-cli.7066cba/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>35</td>
@@ -846,7 +814,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/cmatsuoka__figlet.202a0a8/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>36</td>
@@ -859,7 +827,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/codesnap-rs__codesnap.f81e4f3/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>37</td>
@@ -872,7 +840,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/cordx56__rustowl.655bc5c/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>38</td>
@@ -885,7 +853,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/crowdagger__crowbook.ea214d7/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>39</td>
@@ -898,7 +866,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/cslarsen__jp2a.61d205f/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>40</td>
@@ -911,7 +879,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/cweill__gotests.2a672c5/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>41</td>
@@ -924,7 +892,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/dalance__amber.69a0f52/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>42</td>
@@ -937,7 +905,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/dandavison__delta.acd758f/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>43</td>
@@ -950,7 +918,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/danmar__cppcheck.0a5b103/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>44</td>
@@ -963,7 +931,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/direnv__direnv.02040c7/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>45</td>
@@ -976,7 +944,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/doxygen__doxygen.966d98e/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>46</td>
@@ -989,7 +957,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/drew-alleman__datasurgeon.d257cee/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>47</td>
@@ -1002,7 +970,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ducaale__xh.4a6e44f/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>48</td>
@@ -1015,7 +983,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/duckdb__duckdb.bdb65ec/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>49</td>
@@ -1028,7 +996,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/dundee__gdu.ede21d2/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>50</td>
@@ -1041,7 +1009,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ecumene__rust-sloth.051c559/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>51</td>
@@ -1054,7 +1022,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ekzhang__bore.8e059cd/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>52</td>
@@ -1067,7 +1035,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/eliukblau__pixterm.1a93fd5/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>53</td>
@@ -1080,7 +1048,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/elkowar__pipr.fae0b17/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>54</td>
@@ -1093,7 +1061,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/epistates__treemd.825c6dd/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>55</td>
@@ -1106,7 +1074,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/eradman__entr.8e2e8b4/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>56</td>
@@ -1119,7 +1087,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/esubaalew__run.0fb9dec/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>57</td>
@@ -1132,7 +1100,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/eudoxia0__hashcards.48aa136/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>58</td>
@@ -1145,7 +1113,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/facebook__zstd.1168da0/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>59</td>
@@ -1158,7 +1126,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/facebookresearch__fasttext.1142dc4/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>60</td>
@@ -1171,7 +1139,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ffmpeg__ffmpeg.360a402/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>61</td>
@@ -1184,7 +1152,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/filosottile__age.706dfc1/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>62</td>
@@ -1197,7 +1165,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/foriequal0__git-trim.07c2f50/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>63</td>
@@ -1210,7 +1178,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/gabotechs__dep-tree.60a95a2/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>64</td>
@@ -1223,7 +1191,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ggreer__the_silver_searcher.a61f178/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>65</td>
@@ -1236,7 +1204,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/git-bahn__git-graph.87b4473/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>66</td>
@@ -1249,7 +1217,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/go-critic__go-critic.9aea378/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>67</td>
@@ -1262,7 +1230,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/google__brotli.b3dc9cc/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>68</td>
@@ -1275,7 +1243,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/gromacs__gromacs.665ea4c/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>69</td>
@@ -1288,7 +1256,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/guumaster__hostctl.d6d9699/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>70</td>
@@ -1301,7 +1269,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/hairyhenderson__gomplate.05eb3aa/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>71</td>
@@ -1314,7 +1282,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/halitechallenge__halite.822cfb6/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>72</td>
@@ -1327,7 +1295,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/hatoo__oha.8dc6349/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>73</td>
@@ -1340,7 +1308,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/hooklift__gowsdl.2a06cec/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>74</td>
@@ -1353,7 +1321,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/hpjansson__chafa.dd4d4c1/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>75</td>
@@ -1366,7 +1334,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/htop-dev__htop.523600b/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>76</td>
@@ -1379,7 +1347,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/hush-shell__hush.560c33a/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>77</td>
@@ -1392,7 +1360,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/incu6us__goimports-reviser.81bd549/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>78</td>
@@ -1405,7 +1373,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ip7z__7zip.839151e/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>79</td>
@@ -1418,7 +1386,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ismaelgv__rnr.fc0733b/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>80</td>
@@ -1431,7 +1399,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/isona__dirble.e2dea9f/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>81</td>
@@ -1444,7 +1412,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ivanceras__svgbob.6d00ad9/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>82</td>
@@ -1457,7 +1425,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/jarun__nnn.cb2c535/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>83</td>
@@ -1470,7 +1438,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/jesseduffield__lazygit.1d0db51/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>84</td>
@@ -1483,7 +1451,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/jgm__pandoc.5caad90/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>85</td>
@@ -1496,7 +1464,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/jhspetersson__fselect.c3559ca/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>86</td>
@@ -1509,7 +1477,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/johanneskaufmann__html-to-markdown.3006818/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>87</td>
@@ -1522,7 +1490,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/johnkerl__miller.8d85b46/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>88</td>
@@ -1535,7 +1503,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/jonas__tig.8334123/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>89</td>
@@ -1548,7 +1516,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/jqlang__jq.b33a763/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>90</td>
@@ -1561,7 +1529,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/jrnxf__thokr.09375ef/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>91</td>
@@ -1574,7 +1542,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/junegunn__fzf.b56d614/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>92</td>
@@ -1587,7 +1555,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/kaushiksrini__parqeye.8072121/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>93</td>
@@ -1600,7 +1568,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/kisielk__errcheck.dacab89/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>94</td>
@@ -1613,7 +1581,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/konradsz__igrep.aa75630/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>95</td>
@@ -1626,7 +1594,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ksxgithub__parallel-disk-usage.96978ed/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>96</td>
@@ -1639,7 +1607,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/kyoh86__richgo.313114f/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>97</td>
@@ -1652,7 +1620,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/kyoheiu__felix.95df390/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>98</td>
@@ -1665,7 +1633,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/lfos__calcurse.49180d5/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>99</td>
@@ -1678,7 +1646,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/lh3__seqtk.94e7070/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>100</td>
@@ -1691,7 +1659,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/lua__lua.c6b4848/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>101</td>
@@ -1704,7 +1672,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/luajit__luajit.a553b3d/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>102</td>
@@ -1717,7 +1685,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/lymphatus__caesium-clt.a529b2e/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>103</td>
@@ -1730,7 +1698,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/lz4__lz4.1519f46/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>104</td>
@@ -1743,7 +1711,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/madler__pigz.fe4894f/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>105</td>
@@ -1756,7 +1724,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/mfridman__tparse.2416b4b/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>106</td>
@@ -1769,7 +1737,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/mgdm__htmlq.6e31bc8/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>107</td>
@@ -1782,7 +1750,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/mgechev__revive.201451e/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>108</td>
@@ -1795,7 +1763,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/mibk__dupl.1bf052b/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>109</td>
@@ -1808,7 +1776,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/mikefarah__yq.602586d/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>110</td>
@@ -1821,7 +1789,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/miserlou__loop.209927c/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>111</td>
@@ -1834,7 +1802,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/mkj__dropbear.75f699b/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>112</td>
@@ -1847,7 +1815,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/mookid__diffr.2152742/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>113</td>
@@ -1860,7 +1828,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/multiprocessio__dsq.c3ae0ba/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>114</td>
@@ -1873,7 +1841,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/nachoparker__dutree.44e877d/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>115</td>
@@ -1886,7 +1854,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/naggie__dstask.ff57396/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>116</td>
@@ -1899,7 +1867,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/nikoladucak__caps-log.2cf2d1e/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>117</td>
@@ -1912,7 +1880,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/nikolassv__bartib.6b9b5ce/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>118</td>
@@ -1925,7 +1893,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ninja-build__ninja.cc60300/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>119</td>
@@ -1938,7 +1906,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/noborus__ov.b96c2ba/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>120</td>
@@ -1951,7 +1919,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/noborus__trdsql.d8c5ff6/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>121</td>
@@ -1964,7 +1932,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/nukesor__pueue.8b9d6fe/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>122</td>
@@ -1977,7 +1945,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/nuta__nsh.bdd0702/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>123</td>
@@ -1990,7 +1958,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/o2sh__onefetch.e5958ce/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>124</td>
@@ -2003,7 +1971,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ogham__dog.721440b/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>125</td>
@@ -2016,7 +1984,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/oppiliappan__eva.41ae245/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>126</td>
@@ -2029,7 +1997,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/oppiliappan__statix.e9df54c/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>127</td>
@@ -2042,7 +2010,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/orf__gping.26eb5b9/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>128</td>
@@ -2055,7 +2023,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/osgeo__gdal.0847f12/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>129</td>
@@ -2068,7 +2036,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/osgeo__proj.75d455c/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>130</td>
@@ -2081,7 +2049,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/paradigmxyz__solar.5190d0e/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>131</td>
@@ -2094,7 +2062,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/parcel-bundler__lightningcss.aa2ed1e/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>132</td>
@@ -2107,7 +2075,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/peco__peco.4e58dad/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>133</td>
@@ -2120,7 +2088,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/pemistahl__grex.fa3e8ed/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>134</td>
@@ -2133,7 +2101,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/php__php-src.c891263/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>135</td>
@@ -2146,7 +2114,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/pier-cli__pier.5e1bde9/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>136</td>
@@ -2159,7 +2127,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/pls-rs__pls.4e1ae50/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>137</td>
@@ -2172,7 +2140,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/psampaz__go-mod-outdated.bb79367/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>138</td>
@@ -2185,7 +2153,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/quinn-rs__quinn.bb359cc/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>139</td>
@@ -2198,7 +2166,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/raviqqe__muffet.a882908/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>140</td>
@@ -2211,7 +2179,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/rbakbashev__elfcat.52f8cc7/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>141</td>
@@ -2224,7 +2192,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/rcoh__angle-grinder.9c2fc88/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>142</td>
@@ -2237,7 +2205,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/rhysd__kiro-editor.4157485/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>143</td>
@@ -2250,7 +2218,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/riquito__tuc.16fb471/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>144</td>
@@ -2263,7 +2231,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/robertdavidgraham__masscan.b99d433/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>145</td>
@@ -2276,7 +2244,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/rochacbruno__marmite.7d4bc2d/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>146</td>
@@ -2289,7 +2257,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/rs__curlie.5dfcbb1/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>147</td>
@@ -2302,7 +2270,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/rs__jplot.2a54bcc/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>148</td>
@@ -2315,7 +2283,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/rust-embedded__svd2rust.1760b5e/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>149</td>
@@ -2328,7 +2296,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/rust-ethereum__ethabi.b1710ad/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>150</td>
@@ -2341,7 +2309,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/rust-lang__mdbook.37273ba/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>151</td>
@@ -2354,7 +2322,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/rvben__rumdl.2d75c4d/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>152</td>
@@ -2367,7 +2335,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/samtools__samtools.aa823b5/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>153</td>
@@ -2380,7 +2348,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sayanarijit__xplr.1751065/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>154</td>
@@ -2393,7 +2361,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sclevine__yj.8016400/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>155</td>
@@ -2406,7 +2374,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/segmentio__chamber.5f93f5f/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>156</td>
@@ -2419,7 +2387,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sharkdp__bat.f822bd0/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>157</td>
@@ -2432,7 +2400,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sharkdp__fd.40d8eb3/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>158</td>
@@ -2445,7 +2413,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sharkdp__hexyl.2e26437/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>159</td>
@@ -2458,7 +2426,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sharkdp__hyperfine.327d5f4/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>160</td>
@@ -2471,7 +2439,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sharkdp__pastel.b60e899/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>161</td>
@@ -2484,7 +2452,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/shashwatah__jot.a92aad8/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>162</td>
@@ -2497,7 +2465,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sheepla__pingu.926d475/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>163</td>
@@ -2510,7 +2478,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sibprogrammer__xq.b89f681/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>164</td>
@@ -2523,7 +2491,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sigoden__argc.04a08f1/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>165</td>
@@ -2536,7 +2504,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/simeg__eureka.df3796c/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>166</td>
@@ -2549,7 +2517,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sirwart__ripsecrets.34c9e03/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>167</td>
@@ -2562,7 +2530,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sitkevij__hex.61ae69b/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>168</td>
@@ -2575,7 +2543,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/skeema__skeema.6a76243/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>169</td>
@@ -2588,7 +2556,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sqlite__sqlite.839433d/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>170</td>
@@ -2601,7 +2569,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/sstadick__hck.b66c751/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>171</td>
@@ -2614,7 +2582,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/stacked-git__stgit.430027d/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>172</td>
@@ -2627,7 +2595,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/stathissideris__ditaa.f2286c4/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>173</td>
@@ -2640,7 +2608,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/stranger6667__jsonschema.d52e881/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>174</td>
@@ -2653,7 +2621,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/svenstaro__genact.16f96e3/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>175</td>
@@ -2666,7 +2634,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/svenstaro__miniserve.8449e8b/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>176</td>
@@ -2679,7 +2647,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/tarka__xcp.5e5b448/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>177</td>
@@ -2692,7 +2660,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/thezoraiz__ascii-image-converter.d05a757/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>178</td>
@@ -2705,7 +2673,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/tinycc__tinycc.9b8765d/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>179</td>
@@ -2718,7 +2686,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/tomarrell__wrapcheck.c058da1/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>180</td>
@@ -2731,7 +2699,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/tomnomnom__gron.88a6234/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>181</td>
@@ -2744,7 +2712,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/trasta298__keifu.3331426/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>182</td>
@@ -2757,7 +2725,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/tree-sitter__tree-sitter.5e23cca/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>183</td>
@@ -2770,7 +2738,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/tstack__lnav.ee34494/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>184</td>
@@ -2783,7 +2751,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/tukaani-project__xz.1007bf0/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>185</td>
@@ -2796,7 +2764,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/typst__typst.88356d0/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>186</td>
@@ -2809,7 +2777,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/unhappychoice__gittype.34b72d0/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>187</td>
@@ -2822,7 +2790,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/universal-ctags__ctags.243595e/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>188</td>
@@ -2835,7 +2803,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/wfxr__code-minimap.0ddeea5/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>189</td>
@@ -2848,7 +2816,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/wfxr__csview.8ac4de0/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>190</td>
@@ -2861,7 +2829,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/wgunderwood__tex-fmt.3f1aef6/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>191</td>
@@ -2874,7 +2842,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/wintermute-cell__ngrrram.8ea13c3/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>192</td>
@@ -2887,7 +2855,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/xampprocky__tokei.505d648/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>193</td>
@@ -2900,7 +2868,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/xorg62__tty-clock.f2f847c/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>194</td>
@@ -2913,7 +2881,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/y2z__monolith.8702e66/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>195</td>
@@ -2926,7 +2894,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/yaa110__nomino.f892499/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>196</td>
@@ -2939,7 +2907,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/yassinebridi__serpl.c48a9d7/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>197</td>
@@ -2952,7 +2920,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/yoav-lavi__melody.f4af9b4/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>198</td>
@@ -2965,7 +2933,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/ys-l__flamelens.0b4dc33/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>199</td>
@@ -2978,7 +2946,7 @@
           <td>13</td>
           <td><a href="https://programbench.com/task/zevv__duc.a58fa4e/">official</a></td>
         </tr>
-        
+
 
         <tr>
           <td>200</td>
@@ -2994,75 +2962,8 @@
         </tbody>
       </table>
     </div>
-    
 
-    <h2>Per-Instance Results</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Instance</th><th>Run</th><th>Mode</th><th>Model</th><th>Compliance</th><th>Status</th><th>Eval</th><th>Score</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Host</th><th>Docker</th><th>Evidence</th></tr></thead>
-        <tbody>
-            <tr>
-              <td>1</td>
-              <td><a href="task/abishekvashok__cmatrix.5c082c6/"><code>abishekvashok__cmatrix.5c082c6</code></a></td>
-              <td><code>unversioned</code></td>
-              <td>No internet</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td>Codex no-internet ablation</td>
-              <td><span class="status almost">almost</span></td>
-              <td><span class="status resolved">ok</span></td>
-              <td>97.2%</td>
-              <td>493/507</td>
-              <td>$7.45</td>
-              <td>67</td>
-              <td>0.20h</td>
-              <td>Linux/x86_64</td>
-              <td>16 CPU / 30g</td>
-              <td><a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-abishekvashok-cmatrix/abishekvashok__cmatrix.5c082c6/manifest.json">manifest</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-abishekvashok-cmatrix/abishekvashok__cmatrix.5c082c6/eval.json">eval json</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-abishekvashok-cmatrix/abishekvashok__cmatrix.5c082c6/eval-summary.json">eval summary</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-abishekvashok-cmatrix/abishekvashok__cmatrix.5c082c6/usage-audit.json">usage audit</a></td>
-            </tr>
-            
 
-            <tr>
-              <td>2</td>
-              <td><a href="task/ajeetdsouza__zoxide.67ca1bc/"><code>ajeetdsouza__zoxide.67ca1bc</code></a></td>
-              <td><code>unversioned</code></td>
-              <td>No internet</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td>Codex no-internet ablation</td>
-              <td><span class="status open">open</span></td>
-              <td><span class="status resolved">ok</span></td>
-              <td>78.5%</td>
-              <td>417/531</td>
-              <td>$4.26</td>
-              <td>73</td>
-              <td>0.19h</td>
-              <td>Linux/x86_64</td>
-              <td>16 CPU / 30g</td>
-              <td><a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-ajeetdsouza-zoxide/ajeetdsouza__zoxide.67ca1bc/manifest.json">manifest</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-ajeetdsouza-zoxide/ajeetdsouza__zoxide.67ca1bc/eval.json">eval json</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-ajeetdsouza-zoxide/ajeetdsouza__zoxide.67ca1bc/eval-summary.json">eval summary</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-ajeetdsouza-zoxide/ajeetdsouza__zoxide.67ca1bc/usage-audit.json">usage audit</a></td>
-            </tr>
-            
-
-            <tr>
-              <td>3</td>
-              <td><a href="task/agourlay__zip-password-finder.704700d/"><code>agourlay__zip-password-finder.704700d</code></a></td>
-              <td><code>unversioned</code></td>
-              <td>No internet</td>
-              <td>GPT 5.5 (xhigh)</td>
-              <td>Codex no-internet ablation</td>
-              <td><span class="status open">open</span></td>
-              <td><span class="status resolved">ok</span></td>
-              <td>66.6%</td>
-              <td>453/680</td>
-              <td>$3.13</td>
-              <td>55</td>
-              <td>0.20h</td>
-              <td>Linux/x86_64</td>
-              <td>16 CPU / 30g</td>
-              <td><a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/manifest.json">manifest</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/eval.json">eval json</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/eval-summary.json">eval summary</a> · <a href="evidence/cpx62-nointernet-xhigh-20260515T003932Z-agourlay-zip-password-finder/agourlay__zip-password-finder.704700d/usage-audit.json">usage audit</a></td>
-            </tr>
-            </tbody>
-      </table>
-    </div>
-    
 
     <h2>Official Baseline Context</h2>
     <p>For orientation only. ProgramBench's public extended table reports mini-SWE-agent over 200 tasks, sorted by resolved, almost-resolved, then average pass rate.</p>
@@ -3079,7 +2980,7 @@
           <td>$8.85</td>
           <td>82</td>
         </tr>
-        
+
 
         <tr>
           <td>2</td>
@@ -3090,7 +2991,7 @@
           <td>$3.65</td>
           <td>41</td>
         </tr>
-        
+
 
         <tr>
           <td>3</td>
@@ -3101,7 +3002,7 @@
           <td>$10.96</td>
           <td>159</td>
         </tr>
-        
+
 
         <tr>
           <td>4</td>
@@ -3112,7 +3013,7 @@
           <td>$3.81</td>
           <td>93</td>
         </tr>
-        
+
 
         <tr>
           <td>5</td>
@@ -3123,7 +3024,7 @@
           <td>$11.38</td>
           <td>260</td>
         </tr>
-        
+
 
         <tr>
           <td>6</td>
@@ -3134,7 +3035,7 @@
           <td>$1.21</td>
           <td>19</td>
         </tr>
-        
+
 
         <tr>
           <td>7</td>
@@ -3145,7 +3046,7 @@
           <td>$26.73</td>
           <td>472</td>
         </tr>
-        
+
 
         <tr>
           <td>8</td>
@@ -3156,7 +3057,7 @@
           <td>$0.33</td>
           <td>16</td>
         </tr>
-        
+
 
         <tr>
           <td>9</td>
@@ -3167,7 +3068,7 @@
           <td>$1.51</td>
           <td>94</td>
         </tr>
-        
+
 
         <tr>
           <td>10</td>
@@ -3178,7 +3079,7 @@
           <td>$0.30</td>
           <td>85</td>
         </tr>
-        
+
 
         <tr>
           <td>11</td>
@@ -3189,7 +3090,7 @@
           <td>$0.80</td>
           <td>124</td>
         </tr>
-        
+
 
         <tr>
           <td>12</td>
@@ -3200,7 +3101,7 @@
           <td>$0.04</td>
           <td>18</td>
         </tr>
-        
+
 
         <tr>
           <td>13</td>
