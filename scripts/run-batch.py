@@ -459,7 +459,10 @@ def finalize(args: argparse.Namespace) -> None:
     cleanup_finished(state)
     reconcile_results(state)
     finalized = 0
+    wanted = set(args.instance or [])
     for instance_id, record in list(state["items"].items()):
+        if wanted and instance_id not in wanted:
+            continue
         if record["status"] in FINALIZE_READY or (args.retry_finalize_failed and record["status"] == "finalize_failed"):
             state["items"][instance_id] = finalize_one(args, record)
             save_state(state)
@@ -550,6 +553,7 @@ def main() -> None:
     finalize_parser.add_argument("--eval-timeout-seconds", type=int, default=0)
     finalize_parser.add_argument("--limit", type=int, default=0)
     finalize_parser.add_argument("--retry-finalize-failed", action="store_true")
+    finalize_parser.add_argument("--instance", action="append")
     finalize_parser.set_defaults(func=finalize)
 
     retry_parser = subparsers.add_parser("retry")

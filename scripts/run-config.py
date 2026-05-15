@@ -99,6 +99,7 @@ def command(config: dict[str, Any], args: argparse.Namespace) -> list[str]:
         *option_args("programbench_repo", args.programbench_repo or config.get("programbench_repo")),
         *option_args("eval_timeout_seconds", config.get("eval_timeout_seconds")),
         *option_args("limit", args.limit),
+        *chain.from_iterable(option_args("instance", instance) for instance in args.instance or []),
         *flag_args("strict_paper", bool(config.get("strict_paper"))),
         *flag_args("allow_partial", args.allow_partial),
         *flag_args("retry_finalize_failed", args.retry_finalize_failed),
@@ -115,6 +116,7 @@ def main() -> None:
     parser.add_argument("--allow-partial", action="store_true", help="only applies to finalize")
     parser.add_argument("--retry-finalize-failed", action="store_true", help="only applies to finalize")
     parser.add_argument("--limit", type=int, default=0, help="only applies to finalize")
+    parser.add_argument("--instance", action="append", help="only applies to finalize")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
