@@ -151,6 +151,41 @@ On a paper-sized Linux host, use the `full-*` configs. On the current Hetzner
 Run `high` after the xhigh primary run when you want a direct reasoning-effort
 comparison on the same VM/scaffold.
 
+## Eval Fleet
+
+For full 200-task runs, inference usually finishes before ProgramBench
+evaluation. Keep one coordinator/publisher and use eval-only workers for
+shards. Refer to machines by stable role labels; keep provider IPs and SSH
+targets in local operator notes only.
+
+| Label | Role | Shard | Publishes |
+| --- | --- | ---: | --- |
+| `goalbench-coordinator-1` | coordinator + evaluator | 0 | yes |
+| `goalbench-eval-1` | eval worker | 1 | no |
+| `goalbench-eval-2` | eval worker | 2 | no |
+| `goalbench-eval-3` | eval worker | 3 | no |
+
+Current full-run convention:
+
+- tmux session: `goalbench-eval-shard-<shard>-<run-version>`
+- node log label: `NODE_LABEL=goalbench-eval-<n>` or
+  `NODE_LABEL=goalbench-coordinator-1`
+- worker behavior: finalize assigned instances only, never publish
+- coordinator behavior: merge worker outputs, rebuild the site, and publish
+
+Start an eval shard on a synced host with:
+
+```bash
+RUN_VERSION=<version> NODE_LABEL=goalbench-eval-1 \
+  scripts/start-eval-shard-tmux.sh \
+  configs/cpx62-nointernet-xhigh.json \
+  local_state/batches/cpx62-nointernet-xhigh/<version>/shards/shard-1.txt \
+  1
+```
+
+Workers should only run shard finalizers and rsync results back. The
+coordinator is the only host that rebuilds or publishes the website.
+
 ## Reporting
 
 The report mirrors ProgramBench's public shape:

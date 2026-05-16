@@ -4,3 +4,5 @@ __pycache__/
 .venv/
 runs/
 local_state/
+fleet.local.*
+ops.local/
