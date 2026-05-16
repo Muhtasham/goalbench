@@ -332,9 +332,16 @@ def fetches_external_url(command: str) -> str:
     )
 
 
-def is_inside(path: str, root: Path) -> bool:
+def is_inside(path: str | Path, root: Path) -> bool:
     candidate = Path(path).expanduser()
     return candidate == root or root in candidate.parents
+
+
+def resolve_exec_workdir(workdir: str, session_cwd: Path | None, solution_dir: Path) -> Path:
+    candidate = Path(workdir).expanduser()
+    if not candidate.is_absolute():
+        candidate = (session_cwd or solution_dir) / candidate
+    return candidate.resolve()
 
 
 def find_session_logs(instance_dir: Path, sessions_roots: list[Path]) -> list[Path]:
@@ -450,6 +457,7 @@ def audit_command(
     call: dict,
     output: str,
     solution_dir: Path,
+    session_cwd: Path | None,
     container_name: str,
     allow_local_tools: bool,
 ) -> list[Finding]:
@@ -458,7 +466,7 @@ def audit_command(
         return findings
     command = call["cmd"]
     workdir = call.get("workdir", "")
-    if workdir and not is_inside(workdir, solution_dir):
+    if workdir and not is_inside(resolve_exec_workdir(workdir, session_cwd, solution_dir), solution_dir):
         findings.append(Finding(line_source, f"exec workdir escapes solution dir: {workdir}", command))
     if any(marker in command for marker in HOST_PATH_MARKERS):
         findings.append(Finding(line_source, "command contains private host or evaluator path", command))
@@ -515,6 +523,10 @@ def audit(args: argparse.Namespace) -> None:
     if not logs:
         findings.append(Finding(str(instance_dir), "no Codex JSONL session logs found for solution cwd"))
     blocked_attempts = 0
+    log_cwds = {
+        log: Path((session_meta(log) or {}).get("cwd", "")).expanduser().resolve()
+        for log in logs
+    }
     calls = [(log, line, call, output) for log in logs for line, call, output in exec_calls(log)]
     blocked_attempts = sum(was_blocked(output) for _, _, _, output in calls)
     rejected_attempts = sum(was_rejected(output) for _, _, _, output in calls)
@@ -526,6 +538,7 @@ def audit(args: argparse.Namespace) -> None:
             call,
             output,
             solution_dir,
+            log_cwds.get(log),
             run["container_name"],
             run.get("inference_mode") == "no-internet-local-tools",
         )
