@@ -312,8 +312,8 @@
       </div>
     </div>
     <div class="pill-row">
-      <span class="pill">Generated 2026-05-16T06:42:37.387928+00:00</span>
-      <span class="pill">72 evaluated instances</span>
+      <span class="pill">Generated 2026-05-16T21:41:23.284433+00:00</span>
+      <span class="pill">0 evaluated instances</span>
       <span class="pill">200 tasks in full ProgramBench</span>
       <span class="pill">Sorted Resolved → Almost → Avg. pass</span>
     </div>
@@ -328,54 +328,28 @@
 
 
 
-    <section class="section leaderboard-section">
-      <div class="section-eyebrow">Leaderboard</div>
-      <div class="section-head">
-        <div>
-          <h2>Current Results</h2>
-          <p>Compact view of Codex <code>/goal</code> scaffold results, sorted with the same headline shape as ProgramBench: resolved, almost resolved, then average pass rate.</p>
+    <section class="section">
+
+    <section class="empty-state">
+      <h2>Clean Slate</h2>
+      <p>No Codex <code>/goal</code> results are published in this reset yet. The next full run will populate the leaderboard, run-detail pages, task pages, plots, and downloadable JSON/CSV artifacts.</p>
+      <div class="mode-grid">
+        <div class="mode-card">
+          <strong>Primary run</strong>
+          <p><code>configs/full-nointernet-xhigh.json</code> is the headline GoalBench run: GPT-5.5 xhigh with Codex <code>/goal</code>, no internet/source/package lookup, and black-box target access.</p>
         </div>
-        <a class="button primary" href="extended/">See extended results</a>
-      </div>
-      <div class="table-wrap priority-table">
-        <table>
-          <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Agent</th><th>Resolved</th><th>Almost</th><th>Avg. est. cost</th><th>Avg. calls</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td><a href="run/gpt-5-5--xhigh--no-internet/">GPT 5.5 (xhigh)</a></td>
-              <td><code>not recorded</code></td>
-              <td>Codex /goal</td>
-              <td>0.0% (0/72)</td>
-              <td>2.8% (2/72)</td>
-              <td>$8.44</td>
-              <td>124.0</td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="mode-card">
+          <strong>High comparison</strong>
+          <p><code>configs/full-nointernet-high.json</code> keeps the same scaffold and mode, changing only reasoning effort for high-vs-xhigh comparison.</p>
+        </div>
+        <div class="mode-card">
+          <strong>No internet + local tools</strong>
+          <p><code>configs/full-localtools-xhigh.json</code> is coming soon. It keeps internet/source/package lookup blocked but allows local binary-analysis/tracing tools. It is intentionally non-compliant.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-eyebrow">Run summary</div>
-      <div class="cards">
-
-      <section class="summary-card">
-        <div class="summary-title">GPT 5.5 (xhigh) · No internet</div>
-        <div class="summary-meta">Codex no-internet ablation · smaller VM: 16 CPU / 30g · version not recorded</div>
-        <div class="metric-grid">
-          <div><strong>72</strong><span>instances</span></div>
-          <div><strong>0.0%</strong><span>resolved</span></div>
-          <div><strong>2.8%</strong><span>almost</span></div>
-          <div><strong>56.1%</strong><span>avg pass</span></div>
-          <div><strong>$608</strong><span>total est. cost</span></div>
-          <div><strong>8,929</strong><span>total calls</span></div>
-          <div><strong>$8.44</strong><span>est. cost / task</span></div>
-          <div><strong>124.0</strong><span>calls / task</span></div>
-        </div>
-      </section>
-
-      </div>
+      <p class="link-row"><a class="button primary" href="extended/">See extended results</a></p>
     </section>
 
 
