@@ -1,0 +1,1355 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.15924469000310637
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.11890704900724813
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.17545385799894575
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.11757846499676816
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.13028443900111597
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.12415118599892594
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6139648219977971
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12018414500926156
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11600577399076428
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12926715500361752
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13104052600101568
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.2764313040097477
+    },
+    {
+      "branch": "02019de415b5",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.036199149006279185
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12226071600161958
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11833259399281815
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11547756700019818
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09333112501190044
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.248273881006753
+    },
+    {
+      "branch": "0c3cc937e2da",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.021759773007943295
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1275964730011765
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12298149400157854
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10689034500683192
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10828422900522128
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 1.9698157219972927
+    },
+    {
+      "branch": "8e06264b11b3",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02085332799470052
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12395172999822535
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11432466200494673
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11742141899594571
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11482267000246793
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 71.19601222599158
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03427569998893887
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1303212279890431
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11945408600149676
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12453790400468279
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.135060437998618
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.723566775996005
+    },
+    {
+      "branch": "c58dd0219241",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.032862765991012566
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1250695619964972
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13099750599940307
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11422091900021769
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13180129299871624
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.4429803200036986
+    },
+    {
+      "branch": "8512cdf3b96c",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.029878018991439603
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10493745100393426
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10226904199225828
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10252859100000933
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13163251399237197
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.336228537998977
+    },
+    {
+      "branch": "8c618fb31ebb",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03425405999587383
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12212731598992832
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11629631099640392
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11760972600313835
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13120891599101014
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.719538201999967
+    },
+    {
+      "branch": "db453dfa41da",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02361010700406041
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12816290000046138
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1297858530015219
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11781932500889525
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13307736899878364
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 19.816271427989705
+    },
+    {
+      "branch": "c48776220edb",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.027040232002036646
+    }
+  ],
+  "executable_hash": "42717b6449bd4839154ffc509bba46b4189d066ab0128019edc111e77b60b2a7",
+  "failed_tests": [
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=001 file=001_a.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_001/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[001_001_a.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=002 file=002_addindex.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_002/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[002_002_addindex.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=003 file=003_anchor.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_003/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[003_003_anchor.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=004 file=004_arg.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_004/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[004_004_arg.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=005 file=005_attention.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_005/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[005_005_attention.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=006 file=006_author.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_006/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[006_006_author.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=007 file=007_b.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_007/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[007_007_b.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=010 file=010_c.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_010/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[010_010_c.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "Requires external 'bibtex' executable not available in this environment",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[012_012_cite.dox]",
+      "status": "skipped"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=014 file=014_code.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_014/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[014_014_code.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=017 file=017_copyright.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_017/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[017_017_copyright.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=020 file=020_only.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_020/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[020_020_only.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=023 file=023_e.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_023/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[023_023_e.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=024 file=024_if.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_024/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[024_024_if.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=030 file=030_htmlinclude.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_030/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[030_030_htmlinclude.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=031 file=031_image.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_031/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[031_031_image.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=033 file=033_internal.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_033/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[033_033_internal.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=034 file=034_internal.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_034/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[034_034_internal.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=038 file=038_n.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_038/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[038_038_n.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=043 file=043_page.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_043/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[043_043_page.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=045 file=045_refitem.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_045/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[045_045_refitem.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=050 file=050_verbatim.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_050/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[050_050_verbatim.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=051 file=051_escape.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_051/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[051_051_escape.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=052 file=052_tilde.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_052/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[052_052_tilde.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=053 file=053_tilde.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_053/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[053_053_tilde.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=056 file=056_latexinclude.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_056/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[056_056_latexinclude.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=065 file=065_tilde.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_065/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[065_065_tilde.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=079 file=079_tableofcontents.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_079/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[079_079_tableofcontents.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=109 file=109_htmlcmds.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_109/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[109_109_htmlcmds.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "ffcc3ee94dc7",
+      "message": "AssertionError: runtests.py failed for id=110 file=110_backticks.dox\nstdout:\n1..1\n\n\nstderr:\nTraceback (most recent call last):\n  File \"/workspace/testing/runtests.py\", line 750, in <module>\n    main()\n  File \"/workspace/testing/runtests.py\", line 747, in main\n    sys.exit(testManager.perform_tests())\n  File \"/workspace/testing/runtests.py\", line 621, in perform_tests\n    passed += tester.run(self)\n  File \"/workspace/testing/runtests.py\", line 580, in run\n    return self.perform_test(testmgr)\n  File \"/workspace/testing/runtests.py\", line 562, in perform_test\n    warnings = xopen(self.test_out + \"/warnings.log\",'r',encoding='ISO-8859-1').read()\n  File \"/workspace/testing/runtests.py\", line 24, in xopen\n    return io.open(fname, mode=mode, encoding=encoding)\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/eval/_tmp_test_output/test_output_110/warnings.log'",
+      "name": "eval.tests.test_doxygen_testing_suite_externalized.test_ext_internal_dox_test_via_cli[110_110_backticks.dox]",
+      "status": "failure"
+    },
+    {
+      "branch": "c58dd0219241",
+      "message": "AssertionError: Expected -x output to include resolved $(HOME)",
+      "name": "eval.tests.test_config_env_handling.test_x_noenv_disables_env_substitution",
+      "status": "failure"
+    },
+    {
+      "branch": "c58dd0219241",
+      "message": "AssertionError: Expected OUTPUT_DIRECTORY to resolve $(HOME)",
+      "name": "eval.tests.test_config_env_handling.test_env_var_substitution_in_path_uses_HOME",
+      "status": "failure"
+    },
+    {
+      "branch": "db453dfa41da",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_outputs.test_version_short_exact",
+      "status": "failure"
+    },
+    {
+      "branch": "db453dfa41da",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_outputs.test_version_extended_contains_sqlite_line",
+      "status": "failure"
+    },
+    {
+      "branch": "db453dfa41da",
+      "message": "AssertionError",
+      "name": "eval.tests.test_cli_outputs.test_help_text_starts_and_ends_with_expected_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "db453dfa41da",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_and_run.test_documentation_run_generates_expected_html_files",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw0/test_doxygen_001_test_the___a_2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[001_test the \\\\a and \\\\mainpage commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw3/test_doxygen_007_test_the___b_2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[007_test the \\\\b command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw13/test_doxygen_028_test_the___f_2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[028_test the \\\\f$, \\\\f[, \\\\f], \\\\f{, and \\\\f} commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [016] XML mismatch for 016__copydoc_8c.xml:\n--- expected\n+++ got\n@@ -1,72 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"016__copydoc_8c\" kind=\"file\" language=\"C++\">\n-    <compoundname>016_copydoc.c</compoundname>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"016__copydoc_8c_1af721a79655a3857b98d70fa6ada8a916\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void func</definition>\n-        <argsstring>(int i)</argsstring>\n-        <name>func</name>\n-        <param>\n-          <type>int</type>\n-          <declname>i</declname>\n-        </param>\n-        <briefdescription>\n-          <para>Brief description.</para>\n-        </briefdescription>\n-        <detaileddescription>\n-          <para>Detailed description.</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"6\" declcolumn=\"6\" declfile=\"016_copydoc.c\" declline=\"11\" file=\"016_copydoc.c\" line=\"11\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"016__copydoc_8c_1a119dbcf2f0bc3ec1fbf77fcd35dec6df\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void func_brief</definition>\n-        <argsstring>()</argsstring>\n-        <name>func_brief</name>\n-        <briefdescription>\n-          <para>Brief description.</para>\n-        </briefdescription>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location column=\"6\" declcolumn=\"6\" declfile=\"016_copydoc.c\" declline=\"14\" file=\"016_copydoc.c\" line=\"14\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"016__copydoc_8c_1a3c1e44de2b412b5218b55e216cebb4ac\" inline=\"no\" kind=\"function\" prot=\"public\" \n[truncated 1538 chars]",
+      "name": "tests.test_doxygen.test_doxygen[016_test the \\\\copydoc, \\\\copybrief, \\\\copydetails, and \\\\]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw9/test_doxygen_020_test_the____o2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[020_test the \\\\*only and \\\\end*only commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw14/test_doxygen_030_test_the___ht2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[030_test the \\\\htmlinclude command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw12/test_doxygen_026_test_the___ex2/out/class_test.xml",
+      "name": "tests.test_doxygen.test_doxygen[026_test the \\\\exception, \\\\param, and \\\\tparam commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw1/test_doxygen_003_test___anchor2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[003_test \\\\anchor command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw4/test_doxygen_009_test_the___bu2/out/class_bug.xml",
+      "name": "tests.test_doxygen.test_doxygen[009_test the \\\\bug, \\\\deprecated, \\\\todo, \\\\test, and \\\\xre]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw2/test_doxygen_005_test___attent2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[005_test \\\\attention, \\\\note, \\\\remark, \\\\warning, and \\\\pa]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw11/test_doxygen_024_test_the___if2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[024_test the \\\\if, \\\\ifnot, \\\\elsif, \\\\else, and \\\\endif co]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw10/test_doxygen_022_test_the___do2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[022_test the \\\\dot and \\\\enddot commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw6/test_doxygen_014_test_the___co2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[014_test the \\\\code command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw5/test_doxygen_011_test_the___in2/out/category_integer_07_arithmetic_08.xml",
+      "name": "tests.test_doxygen.test_doxygen[011_test the \\\\interface and \\\\category command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [018] XML mismatch for 018__def_8c.xml:\n--- expected\n+++ got\n@@ -1,122 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"018__def_8c\" kind=\"file\" language=\"C++\">\n-    <compoundname>018_def.c</compoundname>\n-    <sectiondef kind=\"define\">\n-      <memberdef id=\"018__def_8c_1a824c99cb152a3c2e9111a2cb9c34891e\" kind=\"define\" prot=\"public\" static=\"no\">\n-        <name>MACRO</name>\n-        <initializer>42</initializer>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>A macro definition</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location bodyend=\"-1\" bodyfile=\"018_def.c\" bodystart=\"8\" column=\"9\" file=\"018_def.c\" line=\"8\"/>\n-      </memberdef>\n-      <memberdef id=\"018__def_8c_1adc4f42710326718e200d81a0c68cd1f0\" kind=\"define\" prot=\"public\" static=\"no\">\n-        <name>MACRO4</name>\n-        <initializer>2</initializer>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>Another macro definition.</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location bodyend=\"-1\" bodyfile=\"018_def.c\" bodystart=\"21\" column=\"9\" file=\"018_def.c\" line=\"21\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <sectiondef kind=\"enum\">\n-      <memberdef id=\"018__def_8c_1aa57b8491d1d8fc1014dd54bcf83b130a\" kind=\"enum\" prot=\"public\" static=\"no\" strong=\"no\">\n-        <type/>\n-        <name>E</name>\n-        <enumvalue id=\"018__def_8c_1aa57b8491d1d8fc1014dd54bcf83b130aab1710e6a49014ba389d57c8753c530f4\" prot=\"public\">\n-          <name>E1</name>\n-          <briefdescription/>\n-          <detaileddescription/>\n-        </enumvalue>\n-        <enumvalue id=\"018__def_8c_1aa57b8491d1d8fc1014dd54bcf83b130aace9a5783f96994d28bc6ec5c9ece8c80\" prot=\"public\">\n-          <name>E2</name>\n-          <brie\n[truncated 3377 chars]",
+      "name": "tests.test_doxygen.test_doxygen[018_test the \\\\def, \\\\var, \\\\fn, and \\\\typedef commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw15/test_doxygen_032_test_the___in2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[032_test the \\\\include and \\\\includelineno commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [008] XML mismatch for 008__brief_8c.xml:\n--- expected\n+++ got\n@@ -1,13 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"008__brief_8c\" kind=\"file\" language=\"C++\">\n-    <compoundname>008_brief.c</compoundname>\n-    <briefdescription>\n-      <para>A brief description.</para>\n-    </briefdescription>\n-    <detaileddescription>\n-      <para>More details.</para>\n-    </detaileddescription>\n-    <location file=\"008_brief.c\"/>\n-  </compounddef>\n-</doxygen>\n+<compounddef kind=\"file\">\n+  <compoundname>008_brief.c</compoundname>\n+</compounddef>",
+      "name": "tests.test_doxygen.test_doxygen[008_test \\\\brief and \\\\file command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw0/test_doxygen_002_test___addind2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[002_test \\\\addindex command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw5/test_doxygen_013_test_the___cl2/out/class_t1.xml",
+      "name": "tests.test_doxygen.test_doxygen[013_test the \\\\class and \\\\headerfile commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw10/test_doxygen_023_test_the___e_2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[023_test the \\\\e, \\\\em commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw1/test_doxygen_004_test___arg_an2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[004_test \\\\arg and \\\\li commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw14/test_doxygen_031_test_the___im2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[031_test the \\\\image command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw7/test_doxygen_017_test___copyri2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[017_test \\\\copyright and \\\\date commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [015] XML mismatch for 015__cond_8c.xml:\n--- expected\n+++ got\n@@ -1,28 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"015__cond_8c\" kind=\"file\" language=\"C++\">\n-    <compoundname>015_cond.c</compoundname>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"015__cond_8c_1a2521dcda743ec66ad8e030113d6e0c63\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void cond_enabled</definition>\n-        <argsstring>()</argsstring>\n-        <name>cond_enabled</name>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>Function to be shown.</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location bodyend=\"23\" bodyfile=\"015_cond.c\" bodystart=\"21\" column=\"6\" file=\"015_cond.c\" line=\"21\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <briefdescription/>\n-    <detaileddescription>\n-      <para>Text\n-        <emphasis>argument</emphasis>\n-        more text.\n-      </para>\n-    </detaileddescription>\n-    <location file=\"015_cond.c\"/>\n-  </compounddef>\n-</doxygen>\n+<compounddef kind=\"file\">\n+  <compoundname>015_cond.c</compoundname>\n+</compounddef>",
+      "name": "tests.test_doxygen.test_doxygen[015_test the `cond` command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw11/test_doxygen_025_test_the___ex2/out/example_test_8cpp-example.xml",
+      "name": "tests.test_doxygen.test_doxygen[025_test the \\\\example command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw15/test_doxygen_033_test_the___in2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[033_test the \\\\internal and \\\\endinternal commands (1)]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw9/test_doxygen_021_test_the___do2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[021_test the \\\\dontinclude, \\\\skip, \\\\until, \\\\skipline, \\\\]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [029] XML mismatch for 029__hideinit_8c.xml:\n--- expected\n+++ got\n@@ -1,36 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"029__hideinit_8c\" kind=\"file\" language=\"C++\">\n-    <compoundname>029_hideinit.c</compoundname>\n-    <sectiondef kind=\"var\">\n-      <memberdef id=\"029__hideinit_8c_1a799f44203647e4c53bdb0386aa95680f\" kind=\"variable\" mutable=\"no\" prot=\"public\" static=\"no\">\n-        <type>int</type>\n-        <definition>int var1</definition>\n-        <argsstring/>\n-        <name>var1</name>\n-        <initializer>= 10</initializer>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>a variable with initializer visible</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location bodyend=\"-1\" bodyfile=\"029_hideinit.c\" bodystart=\"7\" column=\"5\" file=\"029_hideinit.c\" line=\"7\"/>\n-      </memberdef>\n-      <memberdef id=\"029__hideinit_8c_1ac0da06d47d79ad4b9fb1c0eaf1118c3f\" kind=\"variable\" mutable=\"no\" prot=\"public\" static=\"no\">\n-        <type>int</type>\n-        <definition>int var2</definition>\n-        <argsstring/>\n-        <name>var2</name>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>a variable without initializer visible</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location bodyend=\"-1\" bodyfile=\"029_hideinit.c\" bodystart=\"12\" column=\"5\" file=\"029_hideinit.c\" line=\"12\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <briefdescription/>\n-    <detaileddescription/>\n-    <location file=\"029_hideinit.c\"/>\n-  </compounddef>\n-</doxygen>\n+<compounddef kind=\"file\">\n+  <compoundname>029_hideinit.c</compoundname>\n+</compounddef>",
+      "name": "tests.test_doxygen.test_doxygen[029_test the \\\\hideinitializer command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw2/test_doxygen_006_test_the___au2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[006_test the \\\\author, \\\\since, and \\\\version command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw12/test_doxygen_027_test_the___ex2/out/struct_object.xml",
+      "name": "tests.test_doxygen.test_doxygen[027_test the \\\\extends, \\\\implements, \\\\memberof, \\\\privat]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw8/test_doxygen_019_test_the___de2/out/group__g1.xml",
+      "name": "tests.test_doxygen.test_doxygen[019_test the \\\\defgroup, \\\\addtogroup, and \\\\ingroup comm]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw4/test_doxygen_010_test_the___c_2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[010_test the \\\\c and \\\\p commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw3/test_doxygen_034_test_the___in2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[034_test the \\\\internal and \\\\endinternal commands (2)]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw10/test_doxygen_040_test_the___na2/out/namespace_n_s.xml",
+      "name": "tests.test_doxygen.test_doxygen[040_test the \\\\namespace command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw14/test_doxygen_037_test_the___ms2/out/class_sender.xml",
+      "name": "tests.test_doxygen.test_doxygen[037_test the \\\\msc and \\\\endmsc commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw12/test_doxygen_045_test___refite2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[045_test \\\\refitem, \\\\secreflist, \\\\endsecreflist]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw0/test_doxygen_039_test_the___na2/out/class_test.xml",
+      "name": "tests.test_doxygen.test_doxygen[039_test the \\\\name and \\\\short commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw6/test_doxygen_041_test_the___ov2/out/class_test.xml",
+      "name": "tests.test_doxygen.test_doxygen[041_test the \\\\overload command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [047] XML mismatch for 047__return_8cpp.xml:\n--- expected\n+++ got\n@@ -1,59 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"047__return_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>047_return.cpp</compoundname>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"047__return_8cpp_1aab0ee031d46db05d47213d2625ab6aac\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>int</type>\n-        <definition>int func1</definition>\n-        <argsstring>()</argsstring>\n-        <name>func1</name>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>Test function 1.\n-            <simplesect kind=\"return\">\n-              <para>A integer.</para>\n-            </simplesect>\n-          </para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"5\" declcolumn=\"5\" declfile=\"047_return.cpp\" declline=\"9\" file=\"047_return.cpp\" line=\"9\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"047__return_8cpp_1aa1d4878589351db8276c79f98ed9fb7d\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>int</type>\n-        <definition>int func2</definition>\n-        <argsstring>()</argsstring>\n-        <name>func2</name>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>Test function 2.\n-            <simplesect kind=\"return\">\n-              <para>A integer.</para>\n-            </simplesect>\n-          </para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"5\" declcolumn=\"5\" declfile=\"047_return.cpp\" declline=\"14\" file=\"047_return.cpp\" line=\"14\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"047__return_8cpp_1abee09dd9ed9ce93df5a93\n[truncated 872 chars]",
+      "name": "tests.test_doxygen.test_doxygen[047_test the \\\\result, \\\\return, and \\\\returns commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw9/test_doxygen_046_test_the___re2/out/class_test.xml",
+      "name": "tests.test_doxygen.test_doxygen[046_test the \\\\related, \\\\relatedalso, \\\\see, and \\\\sa com]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [048] XML mismatch for 048__showinit_8c.xml:\n--- expected\n+++ got\n@@ -1,36 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"048__showinit_8c\" kind=\"file\" language=\"C++\">\n-    <compoundname>048_showinit.c</compoundname>\n-    <sectiondef kind=\"var\">\n-      <memberdef id=\"048__showinit_8c_1a799f44203647e4c53bdb0386aa95680f\" kind=\"variable\" mutable=\"no\" prot=\"public\" static=\"no\">\n-        <type>int</type>\n-        <definition>int var1</definition>\n-        <argsstring/>\n-        <name>var1</name>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>a variable with initializer hidden due to MAX_INITIALIZER_LINES</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location bodyend=\"-1\" bodyfile=\"048_showinit.c\" bodystart=\"8\" column=\"5\" file=\"048_showinit.c\" line=\"8\"/>\n-      </memberdef>\n-      <memberdef id=\"048__showinit_8c_1ac0da06d47d79ad4b9fb1c0eaf1118c3f\" kind=\"variable\" mutable=\"no\" prot=\"public\" static=\"no\">\n-        <type>int</type>\n-        <definition>int var2</definition>\n-        <argsstring/>\n-        <name>var2</name>\n-        <initializer>= 20</initializer>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>a variable with initializer visible</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location bodyend=\"-1\" bodyfile=\"048_showinit.c\" bodystart=\"13\" column=\"5\" file=\"048_showinit.c\" line=\"13\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <briefdescription/>\n-    <detaileddescription/>\n-    <location file=\"048_showinit.c\"/>\n-  </compounddef>\n-</doxygen>\n+<compounddef kind=\"file\">\n+  <compoundname>048_showinit.c</compoundname>\n+</compounddef>",
+      "name": "tests.test_doxygen.test_doxygen[048_test the \\\\showinit command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [036] XML mismatch for 036__link_8c.xml:\n--- expected\n+++ got\n@@ -1,35 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"036__link_8c\" kind=\"file\" language=\"C++\">\n-    <compoundname>036_link.c</compoundname>\n-    <innerclass prot=\"public\" refid=\"class_test\">Test</innerclass>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"036__link_8c_1affb6da6cff1b57cdf8efc0123dceac9b\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void func</definition>\n-        <argsstring>(int p)</argsstring>\n-        <name>func</name>\n-        <param>\n-          <type>int</type>\n-          <declname>p</declname>\n-        </param>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>A function</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"6\" declcolumn=\"6\" declfile=\"036_link.c\" declline=\"11\" file=\"036_link.c\" line=\"11\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <briefdescription/>\n-    <detaileddescription>\n-      <para>See\n-        <ref kindref=\"member\" refid=\"036__link_8c_1affb6da6cff1b57cdf8efc0123dceac9b\">the function</ref>\n-        for more info. See the\n-        <ref kindref=\"compound\" refid=\"class_test\">test</ref>\n-        class.\n-      </para>\n-    </detaileddescription>\n-    <location file=\"036_link.c\"/>\n-  </compounddef>\n-</doxygen>\n+<compounddef kind=\"file\">\n+  <compoundname>036_link.c</compoundname>\n+</compounddef>",
+      "name": "tests.test_doxygen.test_doxygen[036_test \\\\link command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw5/test_doxygen_038_test_the___n_2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[038_test the \\\\n command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw15/test_doxygen_044_test_the____p2/out/struct_s.xml",
+      "name": "tests.test_doxygen.test_doxygen[044_test the \\\\(public|protected|private)section comman]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw11/test_doxygen_043_test___page__2/out/mypage.xml",
+      "name": "tests.test_doxygen.test_doxygen[043_test \\\\page, \\\\subpage, \\\\*section, \\\\paragraph, and \\\\]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw8/test_doxygen_042_test_the___pa2/out/namespaceorg_1_1doxygen_1_1_test.xml",
+      "name": "tests.test_doxygen.test_doxygen[042_test the \\\\package command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw2/test_doxygen_049_test_the___sn2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[049_test the \\\\snippet command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [035] XML mismatch for 035__invariant_8c.xml:\n--- expected\n+++ got\n@@ -1,41 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"035__invariant_8c\" kind=\"file\" language=\"C++\">\n-    <compoundname>035_invariant.c</compoundname>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"035__invariant_8c_1a92e32ddd4278ab907422d5aaa34cb796\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void func</definition>\n-        <argsstring>(int p, int *q)</argsstring>\n-        <name>func</name>\n-        <param>\n-          <type>int</type>\n-          <declname>p</declname>\n-        </param>\n-        <param>\n-          <type>int *</type>\n-          <declname>q</declname>\n-        </param>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>\n-            <simplesect kind=\"invariant\">\n-              <para>i+j=p</para>\n-            </simplesect>\n-            <simplesect kind=\"pre\">\n-              <para>p>=0</para>\n-            </simplesect>\n-            <simplesect kind=\"post\">\n-              <para>*q=2^(p+1)</para>\n-            </simplesect>\n-          </para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location bodyend=\"15\" bodyfile=\"035_invariant.c\" bodystart=\"10\" column=\"6\" file=\"035_invariant.c\" line=\"10\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <briefdescription/>\n-    <detaileddescription/>\n-    <location file=\"035_invariant.c\"/>\n-  </compounddef>\n-</doxygen>\n+<compounddef kind=\"file\">\n+  <compoundname>035_invariant.c</compoundname>\n+</compounddef>",
+      "name": "tests.test_doxygen.test_doxygen[035_test \\\\invariant, \\\\pre and \\\\post commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw10/test_doxygen_053_test_____comm2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[053_test \\\\~ command with non default OUTPUT_LANGUAGE]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw14/test_doxygen_052_test_____comm2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[052_test \\\\~ command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw9/test_doxygen_057_test_inline_n2/out/namespacelibrary.xml",
+      "name": "tests.test_doxygen.test_doxygen[057_test inline namespaces]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw1/test_doxygen_059_test_if_A_B__2/out/struct_n_1_1allocator__traits.xml",
+      "name": "tests.test_doxygen.test_doxygen[059_test if A<B>::C within backticks is properly handl]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw3/test_doxygen_050_test___verbat2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[050_test \\\\verbatim and \\\\verbinclude commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw12/test_doxygen_051_test_various_2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[051_test various characters that should be escaped]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw13/test_doxygen_055_test_markdown2/out/md_055__markdown.xml",
+      "name": "tests.test_doxygen.test_doxygen[055_test markdown parsing]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw11/test_doxygen_064_test_linking_2/out/struct_foo.xml",
+      "name": "tests.test_doxygen.test_doxygen[064_test linking to the cast operator with and without]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw5/test_doxygen_063_test__snippet2/out/md_063__main.xml",
+      "name": "tests.test_doxygen.test_doxygen[063_test @snippet{doc} command with raise option]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw15/test_doxygen_060_test_the__det2/out/class_details_c_s_style.xml",
+      "name": "tests.test_doxygen.test_doxygen[060_test the <details> and <summary> commands]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw2/test_doxygen_058_test_strong_e2/out/class_class.xml",
+      "name": "tests.test_doxygen.test_doxygen[058_test strong enum values with the same name in diff]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw7/test_doxygen_062_test__include2/out/md_062__main.xml",
+      "name": "tests.test_doxygen.test_doxygen[062_test @include{doc} command with raise option]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [054] XML mismatch for 054__parblock_8cpp.xml:\n--- expected\n+++ got\n@@ -1,203 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"054__parblock_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>054_parblock.cpp</compoundname>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"054__parblock_8cpp_1a2dd0ac47f42a9994b91d34403be05fe9\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void function</definition>\n-        <argsstring>(int client, int *resource, int parblock, int *test, int p)</argsstring>\n-        <name>function</name>\n-        <param>\n-          <type>int</type>\n-          <declname>client</declname>\n-        </param>\n-        <param>\n-          <type>int *</type>\n-          <declname>resource</declname>\n-        </param>\n-        <param>\n-          <type>int</type>\n-          <declname>parblock</declname>\n-        </param>\n-        <param>\n-          <type>int *</type>\n-          <declname>test</declname>\n-        </param>\n-        <param>\n-          <type>int</type>\n-          <declname>p</declname>\n-        </param>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>call by target-specific code to manage resources required by the client.</para>\n-          <para>\n-            <parameterlist kind=\"param\">\n-              <parameteritem>\n-                <parameternamelist>\n-                  <parametername direction=\"in\">client</parametername>\n-                </parameternamelist>\n-                <parameterdescription>\n-                  <para>ID of client requesting resource.</para>\n-                </parameterdescription>\n-              </parameteritem>\n-              <parameteritem>\n-                <parameternamelist>\n-      \n[truncated 7224 chars]",
+      "name": "tests.test_doxygen.test_doxygen[054_test the \\\\parblock command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw4/test_doxygen_061_test_a_file_w2/out/061___xC3_x9Anicod_xE2_x82_xAC__file_8cpp.xml",
+      "name": "tests.test_doxygen.test_doxygen[061_test a file with unicode characters in the name]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw6/test_doxygen_056_test_the___la2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[056_test the \\\\latexinclude command]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw8/test_doxygen_065_test_____comm2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[065_test \\\\~ command with non default OUTPUT_LANGUAGE w]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw14/test_doxygen_071_test_that_enu2/out/namespace_a_namespace_1_1_0d130315250316227335362355006121037335073327177063.xml",
+      "name": "tests.test_doxygen.test_doxygen[071_test that enum values in anonymous namespaces prod]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [070] XML mismatch for 070__ref__variadic__template_8cpp.xml:\n--- expected\n+++ got\n@@ -1,350 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"070__ref__variadic__template_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>070_ref_variadic_template.cpp</compoundname>\n-    <innerclass prot=\"public\" refid=\"class_test\">Test</innerclass>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"070__ref__variadic__template_8cpp_1affb6da6cff1b57cdf8efc0123dceac9b\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void func</definition>\n-        <argsstring>(int p)</argsstring>\n-        <name>func</name>\n-        <param>\n-          <type>int</type>\n-          <declname>p</declname>\n-        </param>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>A function</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"6\" declcolumn=\"6\" declfile=\"070_ref_variadic_template.cpp\" declline=\"40\" file=\"070_ref_variadic_template.cpp\" line=\"40\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"070__ref__variadic__template_8cpp_1aa7e4936a17759246bce60256cf224e16\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <templateparamlist>\n-          <param>\n-            <type>typename...</type>\n-            <declname>Args</declname>\n-            <defname>Args</defname>\n-          </param>\n-        </templateparamlist>\n-        <type>void</type>\n-        <definition>void func</definition>\n-        <argsstring>(int p, Args &... args)</argsstring>\n-        <name>func</name>\n-        <param>\n-          <type>int</type>\n-          <declname>p</declname>\n-        </param>\n-        <param\n[truncated 13310 chars]",
+      "name": "tests.test_doxygen.test_doxygen[070_test \\\\ref command with a variadic template functio]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [072] XML mismatch for 072__using_8cpp.xml:\n--- expected\n+++ got\n@@ -1,39 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"072__using_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>072_using.cpp</compoundname>\n-    <includes local=\"no\">vector</includes>\n-    <incdepgraph>\n-      <node id=\"1\">\n-        <label>072_using.cpp</label>\n-        <link refid=\"072__using_8cpp\"/>\n-        <childnode refid=\"2\" relation=\"include\"/>\n-      </node>\n-      <node id=\"2\">\n-        <label>vector</label>\n-      </node>\n-    </incdepgraph>\n-    <sectiondef kind=\"typedef\">\n-      <memberdef id=\"072__using_8cpp_1a1b01c504448c96cd2191a5184dd31acf\" kind=\"typedef\" prot=\"public\" static=\"no\">\n-        <templateparamlist>\n-          <param>\n-            <type>class T</type>\n-          </param>\n-        </templateparamlist>\n-        <type>std::vector< T ></type>\n-        <definition>using Vec = std::vector<T></definition>\n-        <argsstring/>\n-        <name>Vec</name>\n-        <briefdescription>\n-          <para>A vector.</para>\n-        </briefdescription>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"-1\" bodyfile=\"072_using.cpp\" bodystart=\"7\" column=\"12\" file=\"072_using.cpp\" line=\"7\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <briefdescription/>\n-    <detaileddescription/>\n-    <location file=\"072_using.cpp\"/>\n-  </compounddef>\n-</doxygen>\n+<compounddef kind=\"file\">\n+  <compoundname>072_using.cpp</compoundname>\n+</compounddef>",
+      "name": "tests.test_doxygen.test_doxygen[072_test template parameters for a type alias]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw10/test_doxygen_066_C__property_i2/out/class_class1.xml",
+      "name": "tests.test_doxygen.test_doxygen[066_C# property initializer]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw5/test_doxygen_075_test_argument2/out/struct_foo.xml",
+      "name": "tests.test_doxygen.test_doxygen[075_test argument matching in particular for unnamed t]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [078] XML mismatch for 078__xml__namespace__members__in__file__scope_8h.xml:\n--- expected\n+++ got\n@@ -1,40 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"078__xml__namespace__members__in__file__scope_8h\" kind=\"file\" language=\"C++\">\n-    <compoundname>078_xml_namespace_members_in_file_scope.h</compoundname>\n-    <innernamespace refid=\"namespace_namespace\">Namespace</innernamespace>\n-    <sectiondef kind=\"enum\">\n-      <memberdef id=\"078__xml__namespace__members__in__file__scope_8h_1add172b93283b1ab7612c3ca6cc5dcfea\" kind=\"enum\" prot=\"public\" static=\"no\" strong=\"yes\">\n-        <type/>\n-        <name>Enum</name>\n-        <qualifiedname>Namespace::Enum</qualifiedname>\n-        <briefdescription>\n-          <para>An enum.</para>\n-        </briefdescription>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"15\" bodyfile=\"078_xml_namespace_members_in_file_scope.h\" bodystart=\"15\" column=\"1\" file=\"078_xml_namespace_members_in_file_scope.h\" line=\"15\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"078__xml__namespace__members__in__file__scope_8h_1a0f1fe1a972c7c4196988a1bdde63ec77\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void Namespace::foo</definition>\n-        <argsstring>()</argsstring>\n-        <name>foo</name>\n-        <qualifiedname>Namespace::foo</qualifiedname>\n-        <briefdescription>\n-          <para>A function.</para>\n-        </briefdescription>\n-        <detaileddescription>\n-          <para>Detailed documentation.</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"6\" declcolumn=\"6\" declfile=\"078_xml_namespace_members_in_f\n[truncated 392 chars]",
+      "name": "tests.test_doxygen.test_doxygen[078_test that namespace members are put to file docs w]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [068] XML mismatch for 068__ref__varargs_8cpp.xml:\n--- expected\n+++ got\n@@ -1,54 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"068__ref__varargs_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>068_ref_varargs.cpp</compoundname>\n-    <innerclass prot=\"public\" refid=\"class_test\">Test</innerclass>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"068__ref__varargs_8cpp_1affb6da6cff1b57cdf8efc0123dceac9b\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void func</definition>\n-        <argsstring>(int p)</argsstring>\n-        <name>func</name>\n-        <param>\n-          <type>int</type>\n-          <declname>p</declname>\n-        </param>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>A function</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"6\" declcolumn=\"6\" declfile=\"068_ref_varargs.cpp\" declline=\"11\" file=\"068_ref_varargs.cpp\" line=\"11\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"068__ref__varargs_8cpp_1a106e01084409028d1b41f5ad83fb82c1\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void func</definition>\n-        <argsstring>(int p,...)</argsstring>\n-        <name>func</name>\n-        <param>\n-          <type>int</type>\n-          <declname>p</declname>\n-        </param>\n-        <param>\n-          <type>...</type>\n-        </param>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>Overloaded function taking variadic arguments</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"6\" declcolumn=\"6\" declfile=\"068_\n[truncated 616 chars]",
+      "name": "tests.test_doxygen.test_doxygen[068_test \\\\ref command with function variadic arguments]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw7/test_doxygen_076_test_all_supp2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[076_test all supported emoji characters]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [073] XML mismatch for 073__typed__enum_8cpp.xml:\n--- expected\n+++ got\n@@ -1,93 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"073__typed__enum_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>073_typed_enum.cpp</compoundname>\n-    <sectiondef kind=\"enum\">\n-      <memberdef id=\"073__typed__enum_8cpp_1aa72902e6181db009a6a84502f81612c2\" kind=\"enum\" prot=\"public\" static=\"no\" strong=\"yes\">\n-        <type>unsigned short</type>\n-        <name>E</name>\n-        <briefdescription>\n-          <para>A strongly-typed enum.</para>\n-        </briefdescription>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"7\" bodyfile=\"073_typed_enum.cpp\" bodystart=\"7\" column=\"1\" file=\"073_typed_enum.cpp\" line=\"7\"/>\n-      </memberdef>\n-      <memberdef id=\"073__typed__enum_8cpp_1a2890437f40d5bcd72710a06cd6a934f5\" kind=\"enum\" prot=\"public\" static=\"no\" strong=\"yes\">\n-        <type>unsigned char</type>\n-        <name>Mem</name>\n-        <enumvalue id=\"073__typed__enum_8cpp_1a2890437f40d5bcd72710a06cd6a934f5a2ad9d63b69c4a10a5cc9cad923133bc4\" prot=\"public\">\n-          <name>Bottom</name>\n-          <initializer>= 0</initializer>\n-          <briefdescription/>\n-          <detaileddescription/>\n-        </enumvalue>\n-        <enumvalue id=\"073__typed__enum_8cpp_1a2890437f40d5bcd72710a06cd6a934f5ac946366be0e03f425017b1a97b4a7fbb\" prot=\"public\">\n-          <name>NotMem</name>\n-          <initializer>= 1U << 0</initializer>\n-          <briefdescription/>\n-          <detaileddescription/>\n-        </enumvalue>\n-        <enumvalue id=\"073__typed__enum_8cpp_1a2890437f40d5bcd72710a06cd6a934f5a165d3d525f6d0cbd55e42cc3058cafcc\" prot=\"public\">\n-          <name>Ptr</name>\n-          <initializer>= 1U << 1</initializer>\n-          <briefdescription/>\n-         \n[truncated 2943 chars]",
+      "name": "tests.test_doxygen.test_doxygen[073_test underlying type and strongness for an enum]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [081] XML mismatch for 081__brief__lists_8h.xml:\n--- expected\n+++ got\n@@ -1,115 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"081__brief__lists_8h\" kind=\"file\" language=\"C++\">\n-    <compoundname>081_brief_lists.h</compoundname>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"081__brief__lists_8h_1a319a01268f470ad2ab65e6838e13cc05\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void c_subr1</definition>\n-        <argsstring>(void)</argsstring>\n-        <name>c_subr1</name>\n-        <param>\n-          <type>void</type>\n-        </param>\n-        <briefdescription>\n-          <para>Just with minus.</para>\n-        </briefdescription>\n-        <detaileddescription>\n-          <para>\n-            <itemizedlist>\n-              <listitem>\n-                <para>Item 1</para>\n-              </listitem>\n-              <listitem>\n-                <para>Item 2</para>\n-              </listitem>\n-            </itemizedlist>\n-          </para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"6\" declcolumn=\"6\" declfile=\"081_brief_lists.h\" declline=\"8\" file=\"081_brief_lists.h\" line=\"8\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"081__brief__lists_8h_1a6724979ae3655ed6eb8b377337119d94\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void c_subr2</definition>\n-        <argsstring>(void)</argsstring>\n-        <name>c_subr2</name>\n-        <param>\n-          <type>void</type>\n-        </param>\n-        <briefdescription>\n-          <para>With minus and hash.</para>\n-        </briefdescription>\n-        <detaileddescription>\n-          <para\n[truncated 2686 chars]",
+      "name": "tests.test_doxygen.test_doxygen[081_Test termination of brief description with lists]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw6/test_doxygen_080_allow_linking2/out/class_interface.xml",
+      "name": "tests.test_doxygen.test_doxygen[080_allow linking to private virtual functions]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw2/test_doxygen_074_test___ref_co2/out/struct_foo.xml",
+      "name": "tests.test_doxygen.test_doxygen[074_test \\\\ref command in combination with const]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [069] XML mismatch for 069__link__variadic__template_8cpp.xml:\n--- expected\n+++ got\n@@ -1,350 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"069__link__variadic__template_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>069_link_variadic_template.cpp</compoundname>\n-    <innerclass prot=\"public\" refid=\"class_test\">Test</innerclass>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"069__link__variadic__template_8cpp_1affb6da6cff1b57cdf8efc0123dceac9b\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void func</definition>\n-        <argsstring>(int p)</argsstring>\n-        <name>func</name>\n-        <param>\n-          <type>int</type>\n-          <declname>p</declname>\n-        </param>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>A function</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"6\" declcolumn=\"6\" declfile=\"069_link_variadic_template.cpp\" declline=\"40\" file=\"069_link_variadic_template.cpp\" line=\"40\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"069__link__variadic__template_8cpp_1aa7e4936a17759246bce60256cf224e16\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <templateparamlist>\n-          <param>\n-            <type>typename...</type>\n-            <declname>Args</declname>\n-            <defname>Args</defname>\n-          </param>\n-        </templateparamlist>\n-        <type>void</type>\n-        <definition>void func</definition>\n-        <argsstring>(int p, Args &... args)</argsstring>\n-        <name>func</name>\n-        <param>\n-          <type>int</type>\n-          <declname>p</declname>\n-        </param>\n-       \n[truncated 13351 chars]",
+      "name": "tests.test_doxygen.test_doxygen[069_test \\\\link command with a variadic template functi]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [067] XML mismatch for 067__link__varargs_8cpp.xml:\n--- expected\n+++ got\n@@ -1,54 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"067__link__varargs_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>067_link_varargs.cpp</compoundname>\n-    <innerclass prot=\"public\" refid=\"class_test\">Test</innerclass>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"067__link__varargs_8cpp_1affb6da6cff1b57cdf8efc0123dceac9b\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void func</definition>\n-        <argsstring>(int p)</argsstring>\n-        <name>func</name>\n-        <param>\n-          <type>int</type>\n-          <declname>p</declname>\n-        </param>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>A function</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"6\" declcolumn=\"6\" declfile=\"067_link_varargs.cpp\" declline=\"11\" file=\"067_link_varargs.cpp\" line=\"11\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"067__link__varargs_8cpp_1a106e01084409028d1b41f5ad83fb82c1\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void func</definition>\n-        <argsstring>(int p,...)</argsstring>\n-        <name>func</name>\n-        <param>\n-          <type>int</type>\n-          <declname>p</declname>\n-        </param>\n-        <param>\n-          <type>...</type>\n-        </param>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>Overloaded function taking variadic arguments</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location column=\"6\" declcolumn=\"6\" declfil\n[truncated 628 chars]",
+      "name": "tests.test_doxygen.test_doxygen[067_test \\\\link command with function variadic argument]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw8/test_doxygen_079_test_TOC_gene2/out/empty.xml",
+      "name": "tests.test_doxygen.test_doxygen[079_test TOC generation for an empty page]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [077] XML mismatch for 077__no__xml__namespace__members__in__file__scope_8h.xml:\n--- expected\n+++ got\n@@ -1,10 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"077__no__xml__namespace__members__in__file__scope_8h\" kind=\"file\" language=\"C++\">\n-    <compoundname>077_no_xml_namespace_members_in_file_scope.h</compoundname>\n-    <innernamespace refid=\"namespace_namespace\">Namespace</innernamespace>\n-    <briefdescription/>\n-    <detaileddescription/>\n-    <location file=\"077_no_xml_namespace_members_in_file_scope.h\"/>\n-  </compounddef>\n-</doxygen>\n+<compounddef kind=\"file\">\n+  <compoundname>077_no_xml_namespace_members_in_file_scope.h</compoundname>\n+</compounddef>",
+      "name": "tests.test_doxygen.test_doxygen[077_test that namespace members are not put to file do]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw14/test_doxygen_082_test_for_decl2/out/namespace_n.xml",
+      "name": "tests.test_doxygen.test_doxygen[082_test for declaration and definition order independ]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [086] XML mismatch for 086__style__tags_8h.xml:\n--- expected\n+++ got\n@@ -1,82 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"086__style__tags_8h\" kind=\"file\" language=\"C++\">\n-    <compoundname>086_style_tags.h</compoundname>\n-    <briefdescription/>\n-    <detaileddescription>\n-      <para>In the following the word tag has the style as indicated before it.\n-        <itemizedlist>\n-          <listitem>\n-            <para>This is a bold\n-              <bold>tag</bold>\n-              .\n-            </para>\n-          </listitem>\n-          <listitem>\n-            <para>This is a\n-              <computeroutput>strong</computeroutput>\n-              bold\n-              <bold>tag</bold>\n-              .\n-            </para>\n-          </listitem>\n-          <listitem>\n-            <para>This is an italic\n-              <emphasis>tag</emphasis>\n-              .\n-            </para>\n-          </listitem>\n-          <listitem>\n-            <para>This is an\n-              <computeroutput>em</computeroutput>\n-              italic\n-              <emphasis>tag</emphasis>\n-              .\n-            </para>\n-          </listitem>\n-          <listitem>\n-            <para>This is a strike through\n-              <strike>tag</strike>\n-              .\n-            </para>\n-          </listitem>\n-          <listitem>\n-            <para>This is a\n-              <computeroutput>s</computeroutput>\n-              strike through\n-              <s>tag</s>\n-              .\n-            </para>\n-          </listitem>\n-          <listitem>\n-            <para>This is an underline\n-              <underline>tag</underline>\n-              .\n-            </para>\n-          </listitem>\n-          <listitem>\n-            <para>This is an\n-              <computeroutput>ins</computeroutput>\n-   \n[truncated 666 chars]",
+      "name": "tests.test_doxygen.test_doxygen[086_test different HTML style tags]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw5/test_doxygen_087_test_visibili2/out/structmymodule_1_1t1.xml",
+      "name": "tests.test_doxygen.test_doxygen[087_test visibility of types in modules]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw15/test_doxygen_089_test_visibili2/out/namespacem1.xml",
+      "name": "tests.test_doxygen.test_doxygen[089_test visibility of variables in modules]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw13/test_doxygen_090_test_differen2/out/namespacemymodule.xml",
+      "name": "tests.test_doxygen.test_doxygen[090_test different variants of interfaces in Fortran]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw1/test_doxygen_083_test_for_decl2/out/namespace_n.xml",
+      "name": "tests.test_doxygen.test_doxygen[083_test for declaration and definition order independ]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw9/test_doxygen_097_test_type_bou2/out/structmymodule_1_1t1.xml",
+      "name": "tests.test_doxygen.test_doxygen[097_test type bound procedures]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [093] XML mismatch for 093__interface__inside__routine_8f90.xml:\n--- expected\n+++ got\n@@ -1,37 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"093__interface__inside__routine_8f90\" kind=\"file\" language=\"Fortran\">\n-    <compoundname>093_interface_inside_routine.f90</compoundname>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"093__interface__inside__routine_8f90_1a017cb3f837c9c8e003a9931b9e1405b1\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>subroutine</type>\n-        <definition>subroutine use_tst</definition>\n-        <argsstring>(interfarg)</argsstring>\n-        <name>use_tst</name>\n-        <param>\n-          <type>external integer function(character(len=*), intent(in) str)</type>\n-          <defname>interfarg</defname>\n-        </param>\n-        <briefdescription>\n-          <para>Test for interface.</para>\n-        </briefdescription>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"17\" bodyfile=\"093_interface_inside_routine.f90\" bodystart=\"8\" column=\"1\" file=\"093_interface_inside_routine.f90\" line=\"7\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"093__interface__inside__routine_8f90_1a5e4d223ee08b0fa3c460f84b5ba36753\" inline=\"no\" kind=\"function\" prot=\"private\" static=\"no\" virt=\"non-virtual\">\n-        <type>subroutine</type>\n-        <definition>subroutine use_tst::inner_routine</definition>\n-        <argsstring/>\n-        <name>inner_routine</name>\n-        <briefdescription/>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"16\" bodyfile=\"093_interface_inside_routine.f90\" bodystart=\"17\" column=\"1\" file=\"093_interface_inside_routine.f90\" line=\"16\"/>\n-      </memberdef>\n-    </sect\n[truncated 255 chars]",
+      "name": "tests.test_doxygen.test_doxygen[093_don't show interfaces inside routines except for a]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [085] XML mismatch for 085__tooltip_8cpp.xml:\n--- expected\n+++ got\n@@ -1,69 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"085__tooltip_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>085_tooltip.cpp</compoundname>\n-    <includes local=\"no\">stdio.h</includes>\n-    <incdepgraph>\n-      <node id=\"1\">\n-        <label>085_tooltip.cpp</label>\n-        <link refid=\"085__tooltip_8cpp\"/>\n-        <childnode refid=\"2\" relation=\"include\"/>\n-      </node>\n-      <node id=\"2\">\n-        <label>stdio.h</label>\n-      </node>\n-    </incdepgraph>\n-    <sectiondef kind=\"define\">\n-      <memberdef id=\"085__tooltip_8cpp_1ace0cca79d3f7e7c96b6edcb1b8d31e66\" kind=\"define\" prot=\"public\" static=\"no\">\n-        <name>FOPEN_MACRO</name>\n-        <param>\n-          <defname>fn</defname>\n-        </param>\n-        <param>\n-          <defname>mod</defname>\n-        </param>\n-        <initializer>if ((\n-          <ref kindref=\"member\" refid=\"085__tooltip_8cpp_1a5cccf7694b5d688466063895f39ee5d1\">unit</ref>\n-          = fopen(fn, mod)) == NULL) \\ { \\ msg(OPEN_ERR,strerror(errno)); \\ }\n-        </initializer>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>a general open macro</para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location bodyend=\"15\" bodyfile=\"085_tooltip.cpp\" bodystart=\"11\" column=\"9\" file=\"085_tooltip.cpp\" line=\"11\"/>\n-      </memberdef>\n-      <memberdef id=\"085__tooltip_8cpp_1a11a2c0486e2bbd915f975a3517817de6\" kind=\"define\" prot=\"public\" static=\"no\">\n-        <name>FCLOSE_MACRO</name>\n-        <initializer>if (fclose(\n-          <ref kindref=\"member\" refid=\"085__tooltip_8cpp_1a5cccf7694b5d688466063895f39ee5d1\">unit</ref>\n-          ) != 0) \\ { \\ msg(CLOSE_ERR,strerror(errno)); \\ }\n-        </initializer>\n-        \n[truncated 1168 chars]",
+      "name": "tests.test_doxygen.test_doxygen[085_test tooltip in XHTML]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw8/test_doxygen_095_test_inherita2/out/structm1_1_1t1.xml",
+      "name": "tests.test_doxygen.test_doxygen[095_test inheritance in Fortran]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw4/test_doxygen_096_test_inherita2/out/structm1_1_1t1.xml",
+      "name": "tests.test_doxygen.test_doxygen[096_test inheritance over namespace works the same in ]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [094] XML mismatch for 094__old__style__fortran__routines_8f90.xml:\n--- expected\n+++ got\n@@ -1,83 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"094__old__style__fortran__routines_8f90\" kind=\"file\" language=\"Fortran\">\n-    <compoundname>094_old_style_fortran_routines.f90</compoundname>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"094__old__style__fortran__routines_8f90_1a87047606bc0524be9dbdd08057b249ce\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>subroutine</type>\n-        <definition>subroutine use_tst2</definition>\n-        <argsstring/>\n-        <name>use_tst2</name>\n-        <briefdescription/>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"8\" bodyfile=\"094_old_style_fortran_routines.f90\" bodystart=\"7\" column=\"1\" file=\"094_old_style_fortran_routines.f90\" line=\"6\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"094__old__style__fortran__routines_8f90_1ac72307beac4d64feba6500b6f2cd4f30\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>subroutine</type>\n-        <definition>subroutine use_tst</definition>\n-        <argsstring/>\n-        <name>use_tst</name>\n-        <briefdescription/>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"13\" bodyfile=\"094_old_style_fortran_routines.f90\" bodystart=\"12\" column=\"1\" file=\"094_old_style_fortran_routines.f90\" line=\"11\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"094__old__style__fortran__routines_8f90_1accaa76d1719e02d60548f808b5d16bcf\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>subroutine</type>\n-        <definition>subroutine us\n[truncated 2765 chars]",
+      "name": "tests.test_doxygen.test_doxygen[094_test old style fortran without modules]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw3/test_doxygen_088_test_visibili2/out/namespacem1.xml",
+      "name": "tests.test_doxygen.test_doxygen[088_test visibility of variables in modules]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw12/test_doxygen_091_test_module_p2/out/namespacemymodule.xml",
+      "name": "tests.test_doxygen.test_doxygen[091_test module procedures with arguments]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [084] XML mismatch for 084__markdown__pre_8f90.xml:\n--- expected\n+++ got\n@@ -1,43 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"084__markdown__pre_8f90\" kind=\"file\" language=\"Fortran\">\n-    <compoundname>084_markdown_pre.f90</compoundname>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"084__markdown__pre_8f90_1aae79d7941f2dce9b2d61fc852f3031d1\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>subroutine</type>\n-        <definition>subroutine subr1</definition>\n-        <argsstring>()</argsstring>\n-        <name>subr1</name>\n-        <briefdescription>\n-          <para>subr1</para>\n-        </briefdescription>\n-        <detaileddescription>\n-          <para>\n-            <preformatted>___________________________</preformatted>\n-          </para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location bodyend=\"9\" bodyfile=\"084_markdown_pre.f90\" bodystart=\"10\" column=\"1\" file=\"084_markdown_pre.f90\" line=\"9\"/>\n-      </memberdef>\n-      <memberdef const=\"no\" explicit=\"no\" id=\"084__markdown__pre_8f90_1a799d06e535f6b6e83331907261cef116\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>subroutine</type>\n-        <definition>subroutine subr2</definition>\n-        <argsstring>()</argsstring>\n-        <name>subr2</name>\n-        <briefdescription>\n-          <para>subr2</para>\n-        </briefdescription>\n-        <detaileddescription>\n-          <para>\n-            <preformatted>___________________________</preformatted>\n-          </para>\n-        </detaileddescription>\n-        <inbodydescription/>\n-        <location bodyend=\"17\" bodyfile=\"084_markdown_pre.f90\" bodystart=\"18\" column=\"1\" file=\"084_markdown_pre.f90\" line=\"17\"/>\n-      \n[truncated 255 chars]",
+      "name": "tests.test_doxygen.test_doxygen[084_test <pre> in Fortran, no translation of markdown]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw0/test_doxygen_092_test_differen2/out/namespacestrings.xml",
+      "name": "tests.test_doxygen.test_doxygen[092_test different variants of interfaces in Fortran]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw15/test_doxygen_102_test_noexcept2/out/class_a.xml",
+      "name": "tests.test_doxygen.test_doxygen[102_test noexcept with expression and nodiscard and co]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [099] XML mismatch for 099__a_8c.xml:\n--- expected\n+++ got\n@@ -1,40 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"099__a_8c\" kind=\"file\" language=\"C++\">\n-    <compoundname>099_a.c</compoundname>\n-    <sectiondef kind=\"enum\">\n-      <memberdef id=\"099__a_8c_1aa57b8491d1d8fc1014dd54bcf83b130a\" kind=\"enum\" prot=\"public\" static=\"no\" strong=\"no\">\n-        <type/>\n-        <name>E</name>\n-        <enumvalue id=\"099__a_8c_1aa57b8491d1d8fc1014dd54bcf83b130aa42a4ade1acd55a49164099104990e09f\" prot=\"public\">\n-          <name>A</name>\n-          <briefdescription>\n-            <para>A in a.c.</para>\n-          </briefdescription>\n-          <detaileddescription/>\n-        </enumvalue>\n-        <enumvalue id=\"099__a_8c_1aa57b8491d1d8fc1014dd54bcf83b130aa3f2a77ecd272aa6d6b5902faa5e5fc68\" prot=\"public\">\n-          <name>B</name>\n-          <briefdescription>\n-            <para>B in a.c.</para>\n-          </briefdescription>\n-          <detaileddescription/>\n-        </enumvalue>\n-        <briefdescription>\n-          <para>\n-            <ref kindref=\"member\" refid=\"099__a_8c_1aa57b8491d1d8fc1014dd54bcf83b130a\">E</ref>\n-            in a.c.\n-          </para>\n-        </briefdescription>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"25\" bodyfile=\"099_a.c\" bodystart=\"15\" column=\"1\" file=\"099_a.c\" line=\"15\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <briefdescription>\n-      <para>a.c</para>\n-    </briefdescription>\n-    <detaileddescription/>\n-    <location file=\"099_a.c\"/>\n-  </compounddef>\n-</doxygen>\n+<compounddef kind=\"file\">\n+  <compoundname>099_a.c</compoundname>\n+</compounddef>",
+      "name": "tests.test_doxygen.test_doxygen[099_test enum field association]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw14/test_doxygen_098_test_abstract2/out/structmymodule_1_1t1.xml",
+      "name": "tests.test_doxygen.test_doxygen[098_test abstract types]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw1/test_doxygen_103_test_if__incl2/out/class_test.xml",
+      "name": "tests.test_doxygen.test_doxygen[103_test if #include inside a class body will include ]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw9/test_doxygen_105_test_type_res2/out/namespacebb.xml",
+      "name": "tests.test_doxygen.test_doxygen[105_test type resolution with combinations of using/na]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw5/test_doxygen_100_test_document2/out/group___a.xml",
+      "name": "tests.test_doxygen.test_doxygen[100_test documentation entry association with groups]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw6/test_doxygen_104_test_typedef_2/out/namespace_root.xml",
+      "name": "tests.test_doxygen.test_doxygen[104_test typedef deduplication that properly considers]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw8/test_doxygen_106_test_implicit2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[106_test implicit and explicit template specialization]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [112] XML mismatch for 112__aliases_8cpp.xml:\n--- expected\n+++ got\n@@ -1,163 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"112__aliases_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>112_aliases.cpp</compoundname>\n-    <sectiondef kind=\"func\">\n-      <memberdef const=\"no\" explicit=\"no\" id=\"112__aliases_8cpp_1a888d87a9f8a6e3e80d5c45e838cc0416\" inline=\"no\" kind=\"function\" prot=\"public\" static=\"no\" virt=\"non-virtual\">\n-        <type>void</type>\n-        <definition>void foo1</definition>\n-        <argsstring>()</argsstring>\n-        <name>foo1</name>\n-        <briefdescription/>\n-        <detaileddescription>\n-          <para>Embedded list</para>\n-          <para>\n-            <itemizedlist>\n-              <listitem>\n-                <para>item1</para>\n-              </listitem>\n-              <listitem>\n-                <para>item2</para>\n-              </listitem>\n-            </itemizedlist>\n-          </para>\n-          <para>Verbatim section includes slashes\n-            <verbatim>/// * item1 /// * item2 ///</verbatim>\n-          </para>\n-          <para>Code section, does not include slashes, but shows comments\n-            <programlisting>\n-              <codeline>\n-                <highlight class=\"normal\">//\n-                  <sp/>\n-                  code\n-                  <sp/>\n-                  comment\n-                </highlight>\n-              </codeline>\n-              <codeline>\n-                <highlight class=\"normal\">int\n-                  <sp/>\n-                  foo();\n-                </highlight>\n-              </codeline>\n-            </programlisting>\n-          </para>\n-          <para>Dot graph, does not include slashes\n-            <dot>// dot comment digraph G { A -> B }</dot>\n-          </para>\n-          <para>\n-         \n[truncated 4035 chars]",
+      "name": "tests.test_doxygen.test_doxygen[112_test multi-line alias expansion in different comme]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [107] XML mismatch for 107__define__in__enums_8cpp.xml:\n--- expected\n+++ got\n@@ -1,71 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"107__define__in__enums_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>107_define_in_enums.cpp</compoundname>\n-    <sectiondef kind=\"define\">\n-      <memberdef id=\"107__define__in__enums_8cpp_1af5306e4b64f0a20303086d3936c64e0c\" kind=\"define\" prot=\"public\" static=\"no\">\n-        <name>ID_A</name>\n-        <param>\n-          <defname>X</defname>\n-        </param>\n-        <initializer>X,</initializer>\n-        <briefdescription/>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"-1\" bodyfile=\"107_define_in_enums.cpp\" bodystart=\"7\" column=\"9\" file=\"107_define_in_enums.cpp\" line=\"7\"/>\n-      </memberdef>\n-      <memberdef id=\"107__define__in__enums_8cpp_1a244e85f8f6926f9cb8e576ad9c797f47\" kind=\"define\" prot=\"public\" static=\"no\">\n-        <name>ID_B</name>\n-        <param>\n-          <defname>X</defname>\n-        </param>\n-        <initializer>X,</initializer>\n-        <briefdescription/>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"-1\" bodyfile=\"107_define_in_enums.cpp\" bodystart=\"13\" column=\"9\" file=\"107_define_in_enums.cpp\" line=\"13\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <sectiondef kind=\"enum\">\n-      <memberdef id=\"107__define__in__enums_8cpp_1a3b98e2dffc6cb06a89dcb0d5c60a0206\" kind=\"enum\" prot=\"public\" static=\"no\" strong=\"no\">\n-        <type/>\n-        <name>A</name>\n-        <enumvalue id=\"107__define__in__enums_8cpp_1a3b98e2dffc6cb06a89dcb0d5c60a0206a6ff26890857c886c86453f0c8078bf95\" prot=\"public\">\n-          <name>A1</name>\n-          <briefdescription/>\n-          <detaileddescription/>\n-        </enumvalue>\n-        <enumvalue i\n[truncated 1648 chars]",
+      "name": "tests.test_doxygen.test_doxygen[107_test use of define inside enums]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [111] XML mismatch for 111__autolink_8cpp.xml:\n--- expected\n+++ got\n@@ -1,159 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"111__autolink_8cpp\" kind=\"file\" language=\"C++\">\n-    <compoundname>111_autolink.cpp</compoundname>\n-    <innerclass prot=\"public\" refid=\"structmy__struct__t\">my_struct_t</innerclass>\n-    <sectiondef kind=\"define\">\n-      <memberdef id=\"111__autolink_8cpp_1a8ef4ab1db0ae388e9407f08fa3a95421\" kind=\"define\" prot=\"public\" static=\"no\">\n-        <name>MY_DEFINE</name>\n-        <initializer>1</initializer>\n-        <briefdescription>\n-          <para>My define.</para>\n-        </briefdescription>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"-1\" bodyfile=\"111_autolink.cpp\" bodystart=\"10\" column=\"9\" file=\"111_autolink.cpp\" line=\"10\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <sectiondef kind=\"enum\">\n-      <memberdef id=\"111__autolink_8cpp_1abf13918d7284a1bed5d7a3b739f4f7da\" kind=\"enum\" prot=\"public\" static=\"no\" strong=\"no\">\n-        <type/>\n-        <name>my_enum_t</name>\n-        <enumvalue id=\"111__autolink_8cpp_1abf13918d7284a1bed5d7a3b739f4f7daaca5528c86ab6f398979a03e811731e42\" prot=\"public\">\n-          <name>ENUM_A</name>\n-          <briefdescription>\n-            <para>A.</para>\n-          </briefdescription>\n-          <detaileddescription/>\n-        </enumvalue>\n-        <briefdescription>\n-          <para>My enum.</para>\n-        </briefdescription>\n-        <detaileddescription/>\n-        <inbodydescription/>\n-        <location bodyend=\"31\" bodyfile=\"111_autolink.cpp\" bodystart=\"29\" column=\"1\" file=\"111_autolink.cpp\" line=\"28\"/>\n-      </memberdef>\n-    </sectiondef>\n-    <sectiondef kind=\"var\">\n-      <memberdef id=\"111__autolink_8cpp_1ab16669b1a4a2c5dc4f8d41107e1295dc\" kind=\"variable\" m\n[truncated 5883 chars]",
+      "name": "tests.test_doxygen.test_doxygen[111_test autolink in various environments]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw7/test_doxygen_113_test_markdown2/out/md_113__markdown__strict.xml",
+      "name": "tests.test_doxygen.test_doxygen[113_test markdown strict setting]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: [101] XML mismatch for 101__static__assert_8c.xml:\n--- expected\n+++ got\n@@ -1,72 +1,4 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<doxygen version=\"\" {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation=\"compound.xsd\" {http://www.w3.org/XML/1998/namespace}lang=\"en-US\">\n-  <compounddef id=\"101__static__assert_8c\" kind=\"file\" language=\"C++\">\n-    <compoundname>101_static_assert.c</compoundname>\n-    <briefdescription/>\n-    <detaileddescription>\n-      <para>\n-        <programlisting filename=\".java\">\n-          <codeline>\n-            <highlight class=\"keyword\">public</highlight>\n-            <highlight class=\"normal\">\n-              <sp/>\n-            </highlight>\n-            <highlight class=\"keyword\">class\n-              <sp/>\n-            </highlight>\n-            <highlight class=\"normal\">static_assert\n-              <sp/>\n-              {\n-            </highlight>\n-          </codeline>\n-          <codeline>\n-            <highlight class=\"normal\">\n-              <sp/>\n-              <sp/>\n-            </highlight>\n-            <highlight class=\"keyword\">public</highlight>\n-            <highlight class=\"normal\">\n-              <sp/>\n-            </highlight>\n-            <highlight class=\"keyword\">static</highlight>\n-            <highlight class=\"normal\">\n-              <sp/>\n-            </highlight>\n-            <highlight class=\"keywordtype\">void</highlight>\n-            <highlight class=\"normal\">\n-              <sp/>\n-              static_assert()\n-              <sp/>\n-              {}\n-            </highlight>\n-          </codeline>\n-          <codeline>\n-            <highlight class=\"normal\">\n-              <sp/>\n-              <sp/>\n-            </highlight>\n-            <highlight class=\"keyword\">public</highlight>\n-            <highlight class=\"normal\">\n-              <sp/>\n-            </highlight>\n-            <highlight class=\"keyword\">static</highlight>\n-            <highlight class=\"normal\">\n-       \n[truncated 617 chars]",
+      "name": "tests.test_doxygen.test_doxygen[101_test static assertions]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw4/test_doxygen_110_test_various_2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[110_test various forms of backtick handling]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw3/test_doxygen_109_test_the_vari2/out/indexpage.xml",
+      "name": "tests.test_doxygen.test_doxygen[109_test the various HTML tags supported by doxygen]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw0/test_doxygen_108_check_that_mo2/out/class_c.xml",
+      "name": "tests.test_doxygen.test_doxygen[108_check that modifiers are correctly parsed with tra]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw14/test_doxygen_115_test_the__req2/out/requirement__r_e_q-001.xml",
+      "name": "tests.test_doxygen.test_doxygen[115_test the @requirement, @satisfies and @verifies co]",
+      "status": "failure"
+    },
+    {
+      "branch": "c48776220edb",
+      "message": "AssertionError: Expected output file not generated: /tmp/pytest-of-root/pytest-0/popen-gw15/test_doxygen_114_test_C__20_co2/out/concept_hashable.xml",
+      "name": "tests.test_doxygen.test_doxygen[114_test C++20 concept with embedded doxygen style com]",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 149,
+    "passed": 101,
+    "skipped": 1
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "02019de415b5",
+    "0c3cc937e2da",
+    "8e06264b11b3",
+    "ffcc3ee94dc7",
+    "c58dd0219241",
+    "8512cdf3b96c",
+    "8c618fb31ebb",
+    "db453dfa41da",
+    "c48776220edb"
+  ],
+  "test_records": 251,
+  "warnings": []
+}

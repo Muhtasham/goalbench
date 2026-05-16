@@ -1,0 +1,5377 @@
+{
+  "error_code": null,
+  "error_details": "",
+  "executable_hash": "6d1efa2a84256e6b89e63d8adc5458b0601e4b3059ebd8e3c71c6e80937245f2",
+  "log": [
+    {
+      "branch": "",
+      "command": "rm -rf /workspace/* /workspace/.[!.]*",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.1201683479885105
+    },
+    {
+      "branch": "",
+      "command": "find /workspace -type f -exec sha256sum {} + 2>/dev/null | grep -E \"^(0fad3f3c8c55c98de87355da7bf454a8a5f83ed4c9ce012a389fee75f92d0511)  \" | cut -c67- | xargs -I% rm -fv %",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.12179536100302357
+    },
+    {
+      "branch": "",
+      "command": "if [ ! -d .git ]; then GIT_AUTHOR_DATE='2000-01-01T00:00:00Z' GIT_COMMITTER_DATE='2000-01-01T00:00:00Z' git -c init.defaultBranch=gold init -q && git -c user.email=gold@local -c user.name=gold -c commit.gpgsign=false add -A && GIT_AUTHOR_DATE='2000-01-01T00:00:00Z' GIT_COMMITTER_DATE='2000-01-01T00:00:00Z' git -c user.email=gold@local -c user.name=gold -c commit.gpgsign=false commit -q --allow-empty -m gold; fi",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.14062852899951395
+    },
+    {
+      "branch": "",
+      "command": "chmod +x ./compile.sh && ./compile.sh",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.1415884640009608
+    },
+    {
+      "branch": "",
+      "command": "mv ./executable /opt/programbench-stashed-executable-do-not-modify",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.11810439800319728
+    },
+    {
+      "branch": "",
+      "command": "sha256sum /opt/programbench-stashed-executable-do-not-modify",
+      "exception_info": "",
+      "output_original_chars": 117,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.12179389099765103
+    },
+    {
+      "branch": "",
+      "command": "pip3 install -q --disable-pip-version-check pytest-rerunfailures",
+      "exception_info": "",
+      "output_original_chars": 222,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6447599210077897
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1250472880055895
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11312532000010833
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11572009899828117
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=signal/--timeout-method=thread/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11606107700208668
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 21651,
+      "output_redacted": true,
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 4.317570162995253
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "command": "docker cp 3b7ff5545610c04959fc3c1becb5dcd0f21c5079ba976573e00cd13f46529507:/workspace/eval/results.xml /tmp/tmpyk_b3xx6.xml",
+      "exception_info": "",
+      "output_original_chars": 14013,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03784415600239299
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13343083200743422
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12114511600520927
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11039307199825998
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=signal/--timeout-method=thread/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1269469899998512
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 217299,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 36.549292996991426
+    },
+    {
+      "branch": "61d5d5110768",
+      "command": "docker cp 730c6c016c5aa1ee0baa4d8ef31ddae628bee706a14b08162d5c0acf37313ec6:/workspace/eval/results.xml /tmp/tmpt8xvzvnr.xml",
+      "exception_info": "",
+      "output_original_chars": 89870,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.035193247997085564
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1095442079968052
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11758019299304578
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11629110900685191
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=signal/--timeout-method=thread/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11741811399406288
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 20172,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 7.362089275004109
+    },
+    {
+      "branch": "2e64897bedc3",
+      "command": "docker cp 3a2bdc3969010199df9e5f6efc36e5d69157b8bf6306f7c167a96c83b6120b81:/workspace/eval/results.xml /tmp/tmpsxzyy7ny.xml",
+      "exception_info": "",
+      "output_original_chars": 10886,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.032283010994433425
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09712007199414074
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12234209399321117
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11808793101226911
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=signal/--timeout-method=thread/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12604971700056922
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 5835,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 1.8571197760029463
+    },
+    {
+      "branch": "314a43fe54ae",
+      "command": "docker cp e8f8ed3e51fc9916469026359073d36d30c7db69292a68e80b32750785425615:/workspace/eval/results.xml /tmp/tmpe8l6aobt.xml",
+      "exception_info": "",
+      "output_original_chars": 3155,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02297850100148935
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11550508299842477
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13514023800962605
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11459606699645519
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=signal/--timeout-method=thread/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12633153599745128
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 6000,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.310569372988539
+    },
+    {
+      "branch": "95e016c28ce7",
+      "command": "docker cp aab36edf24b9c7aace7e49b12fc1377b6d329e9144f2ad269cfe415b02e6346c:/workspace/eval/results.xml /tmp/tmph3wh5yan.xml",
+      "exception_info": "",
+      "output_original_chars": 2735,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.016676407991326414
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12636122600815725
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1238897979928879
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13206417200854048
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=signal/--timeout-method=thread/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11957735600299202
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 13602,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.625340779995895
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "command": "docker cp 9fdae48bddc5fdc1cf0f335af5f4a7fa67f32a2a7cb3bbddb93f57fbe5165822:/workspace/eval/results.xml /tmp/tmpkmu97ib7.xml",
+      "exception_info": "",
+      "output_original_chars": 8349,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03737378999358043
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13324968799133785
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1187555900105508
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1174197149957763
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=signal/--timeout-method=thread/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1268493650131859
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 2485,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.089502328002709
+    },
+    {
+      "branch": "5bbdc4638826",
+      "command": "docker cp 69c813cd42285df820d3a0a54ee366b6a7491c1899d09762d37c7822f0d8ed7c:/workspace/eval/results.xml /tmp/tmp0jt9ue6s.xml",
+      "exception_info": "",
+      "output_original_chars": 1099,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03270547899592202
+    },
+    {
+      "branch": "",
+      "command": "rm -f ./executable && mv /opt/programbench-stashed-executable-do-not-modify ./executable && chmod +x ./executable",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12581240000145044
+    },
+    {
+      "branch": "",
+      "command": "sha256sum ./executable",
+      "exception_info": "",
+      "output_original_chars": 79,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12440373600111343
+    },
+    {
+      "branch": "",
+      "command": "rm -f eval/results.xml results.xml",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13316287798807025
+    },
+    {
+      "branch": "",
+      "command": "test -f eval/run.sh && sed -i 's/--timeout-method=signal/--timeout-method=thread/g' eval/run.sh || true",
+      "exception_info": "",
+      "output_original_chars": 0,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.0986827659944538
+    },
+    {
+      "branch": "",
+      "command": "export PYTEST_ADDOPTS=\"$PYTEST_ADDOPTS --reruns=2 --reruns-delay=1\" && chmod +x ./eval/run.sh && ./eval/run.sh",
+      "exception_info": "",
+      "output_original_chars": 47873,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 7.520864628997515
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "command": "docker cp 334611f3e3ca56712e6e27b1c136ae136e965309924ecf539e6324b043f3cd3f:/workspace/eval/results.xml /tmp/tmp0qcye9um.xml",
+      "exception_info": "",
+      "output_original_chars": 26669,
+      "output_redacted": true,
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.029233683992060833
+    }
+  ],
+  "public_redactions": {
+    "extra_text": "redacted",
+    "log_output": "redacted",
+    "long_extra_text": "truncated to 2000 chars"
+  },
+  "solution_branch": "submission",
+  "test_branch_errors": {},
+  "test_branches": [
+    "f5ab65c66ad6",
+    "61d5d5110768",
+    "2e64897bedc3",
+    "314a43fe54ae",
+    "95e016c28ce7",
+    "1f8845ada8c0",
+    "5bbdc4638826",
+    "65d3ddb6da15"
+  ],
+  "test_results": [
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.019
+      },
+      "name": "eval.tests.test_additional_coverage.test_credit_card_various_formats",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.026
+      },
+      "name": "eval.tests.test_additional_coverage.test_drop_filter_on_same_content",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.024
+      },
+      "name": "eval.tests.test_basic_invocation.test_suppress_stdin_message",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.026
+      },
+      "name": "eval.tests.test_additional_coverage.test_srv_dns_record",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_basic_invocation.test_help_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.027
+      },
+      "name": "eval.tests.test_additional_coverage.test_csv_output_structure",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.026
+      },
+      "name": "eval.tests.test_additional_coverage.test_aws_key_formats",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.035
+      },
+      "name": "eval.tests.test_additional_coverage.test_extraction_without_flags_finds_content",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.091
+      },
+      "name": "eval.tests.test_additional_coverage.test_phone_various_formats",
+      "status": "failure"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "eval.tests.test_basic_invocation.test_version_short_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "eval.tests.test_additional_coverage.test_mac_various_formats",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.046
+      },
+      "name": "eval.tests.test_additional_coverage.test_combination_all_output_flags",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.051
+      },
+      "name": "eval.tests.test_additional_coverage.test_display_with_multiple_files",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.048
+      },
+      "name": "eval.tests.test_additional_coverage.test_file_with_mixed_content",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "eval.tests.test_additional_coverage.test_file_extensions_variety",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_additional_coverage.test_output_file_permissions",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.019
+      },
+      "name": "eval.tests.test_basic_invocation.test_no_arguments_stdin_message",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.026
+      },
+      "name": "eval.tests.test_additional_coverage.test_multiple_hashes_different_types",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.024
+      },
+      "name": "eval.tests.test_additional_coverage.test_line_numbers_multiple_matches",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "eval.tests.test_additional_coverage.test_directory_no_matching_files",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_additional_coverage.test_bitcoin_wallet_formats",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_basic_invocation.test_version_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.019
+      },
+      "name": "eval.tests.test_basic_invocation.test_help_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.025
+      },
+      "name": "eval.tests.test_additional_coverage.test_google_api_key_json",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.028
+      },
+      "name": "eval.tests.test_edge_cases.test_empty_stdin",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.027
+      },
+      "name": "eval.tests.test_additional_coverage.test_url_with_query_params",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_additional_coverage.test_social_security_formats",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.026
+      },
+      "name": "eval.tests.test_additional_coverage.test_timing_with_large_input",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "eval.tests.test_additional_coverage.test_thorough_mode_same_type",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.025
+      },
+      "name": "eval.tests.test_edge_cases.test_repeated_matches",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.019
+      },
+      "name": "eval.tests.test_edge_cases.test_no_matches_found",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_edge_cases.test_multiple_file_types_in_directory",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_edge_cases.test_multiple_newlines",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.019
+      },
+      "name": "eval.tests.test_edge_cases.test_mixed_valid_invalid_emails",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.025
+      },
+      "name": "eval.tests.test_edge_cases.test_binary_data",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_edge_cases.test_whitespace_variations",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "eval.tests.test_edge_cases.test_nested_directories",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.028
+      },
+      "name": "eval.tests.test_edge_cases.test_special_characters",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.026
+      },
+      "name": "eval.tests.test_edge_cases.test_case_sensitivity",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.025
+      },
+      "name": "eval.tests.test_edge_cases.test_file_with_no_extension",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_edge_cases.test_hidden_file",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.025
+      },
+      "name": "eval.tests.test_edge_cases.test_large_number_of_files",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "eval.tests.test_extraction_features.test_email_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_extraction_features.test_ip_address_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_extraction_features.test_email_extraction_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_extraction_features.test_ipv6_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "eval.tests.test_extraction_features.test_ip_address_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_extraction_features.test_ipv6_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "eval.tests.test_extraction_features.test_mac_address_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_extraction_features.test_mac_address_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.026
+      },
+      "name": "eval.tests.test_extraction_features.test_credit_card_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.028
+      },
+      "name": "eval.tests.test_extraction_features.test_credit_card_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.025
+      },
+      "name": "eval.tests.test_extraction_features.test_url_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.025
+      },
+      "name": "eval.tests.test_extraction_features.test_file_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_extraction_features.test_url_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.111
+      },
+      "name": "eval.tests.test_extraction_features.test_phone_extraction",
+      "status": "failure"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.124
+      },
+      "name": "eval.tests.test_extraction_features.test_phone_extraction_long_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.019
+      },
+      "name": "eval.tests.test_extraction_features.test_hash_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.019
+      },
+      "name": "eval.tests.test_extraction_features.test_google_api_key_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_extraction_features.test_bitcoin_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_extraction_features.test_hash_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.019
+      },
+      "name": "eval.tests.test_extraction_features.test_social_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.027
+      },
+      "name": "eval.tests.test_extraction_features.test_bitcoin_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.026
+      },
+      "name": "eval.tests.test_extraction_features.test_dns_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.019
+      },
+      "name": "eval.tests.test_extraction_features.test_multiple_extraction_flags",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_extraction_features.test_social_security_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.026
+      },
+      "name": "eval.tests.test_extraction_features.test_aws_key_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "eval.tests.test_extraction_features.test_dns_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.106
+      },
+      "name": "eval.tests.test_extraction_features.test_aws_long_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_extraction_features.test_all_extraction_types",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_filtering_processing.test_filter_with_ip",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_filtering_processing.test_thorough_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_filtering_processing.test_drop_pattern",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "eval.tests.test_filtering_processing.test_time_measurement",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_filtering_processing.test_thorough_mode",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "eval.tests.test_filtering_processing.test_filter_pattern",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_filtering_processing.test_time_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_filtering_processing.test_thorough_with_clean_and_hide",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.026
+      },
+      "name": "eval.tests.test_filtering_processing.test_clean_and_thorough_combined",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.024
+      },
+      "name": "eval.tests.test_filtering_processing.test_filter_and_drop_combined",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_input_handling.test_file_input_basic",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_input_handling.test_file_input_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_input_handling.test_stdin_input_with_ip",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_input_handling.test_empty_file",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_input_handling.test_stdin_input_with_email",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "eval.tests.test_input_handling.test_directory_input",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.019
+      },
+      "name": "eval.tests.test_input_handling.test_nonexistent_file",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_output_formatting.test_output_to_file",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_input_handling.test_directory_with_display_filename",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_input_handling.test_ignore_flag_with_error",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_output_formatting.test_output_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.292
+      },
+      "name": "eval.tests.test_edge_cases.test_very_long_line",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_edge_cases.test_unicode_input",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.019
+      },
+      "name": "eval.tests.test_output_formatting.test_clean_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "eval.tests.test_output_formatting.test_csv_output",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_output_formatting.test_hide_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_output_formatting.test_display_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_output_formatting.test_display_filename",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_output_formatting.test_combined_output_options",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_output_formatting.test_line_number_display",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_output_formatting.test_display_and_line_combined",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.025
+      },
+      "name": "eval.tests.test_output_formatting.test_line_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.04
+      },
+      "name": "eval.tests.test_output_formatting.test_clean_mode",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_plugin_management.test_plugin_json_exists",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.05
+      },
+      "name": "eval.tests.test_output_formatting.test_hide_identifier",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_plugin_management.test_list_plugins_empty",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_plugin_management.test_update_plugin_invalid",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_plugin_management.test_add_plugin_nonexistent_repo",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "eval.tests.test_plugin_management.test_update_all_plugins",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.028
+      },
+      "name": "eval.tests.test_plugin_management.test_list_plugins_output",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.028
+      },
+      "name": "eval.tests.test_plugin_management.test_remove_plugin_nonexistent",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_plugin_management.test_add_plugin_invalid_url",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.036
+      },
+      "name": "eval.tests.test_additional_coverage.test_ipv6_various_formats",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.031
+      },
+      "name": "eval.tests.test_extraction_features.test_file_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.047
+      },
+      "name": "eval.tests.test_extraction_features.test_google_long_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "f5ab65c66ad6",
+      "extra": {
+        "time": 0.046
+      },
+      "name": "eval.tests.test_filtering_processing.test_drop_with_hash_pattern",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "tests.test_extraction_extended.test_bitcoin_p2pkh_and_p2sh",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.137
+      },
+      "name": "tests.test_extraction_extended.test_social_security_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.132
+      },
+      "name": "tests.test_extraction_basic.test_email_hide_prefix_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.133
+      },
+      "name": "tests.test_extraction_basic.test_ip_special_purpose_addresses",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.139
+      },
+      "name": "tests.test_extraction_basic.test_hash_from_password_dump_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.141
+      },
+      "name": "tests.test_extraction_basic.test_email_with_time_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected 2 lines, got 3",
+        "time": 0.132
+      },
+      "name": "tests.test_extraction_basic.test_no_extraction_flags_shows_first_match_all_types",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.157
+      },
+      "name": "tests.test_extraction_basic.test_url_with_fragments_multiple_per_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.13
+      },
+      "name": "tests.test_extraction_basic.test_email_multiple_formats_per_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "tests.test_extraction_extended.test_bitcoin_not_bech32",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.158
+      },
+      "name": "tests.test_extraction_extended.test_credit_card_clean_with_thorough",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.146
+      },
+      "name": "tests.test_extraction_extended.test_google_keys_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.145
+      },
+      "name": "tests.test_extraction_basic.test_hash_with_drop_regex_by_length",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.124
+      },
+      "name": "tests.test_extraction_extended.test_mac_addresses_not_hyphen_format",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.146
+      },
+      "name": "tests.test_extraction_extended.test_phone_numbers_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.153
+      },
+      "name": "tests.test_extraction_basic.test_ip_validation_extracts_valid_portions",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.121
+      },
+      "name": "tests.test_extraction_basic.test_empty_input_produces_no_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.07
+      },
+      "name": "tests.test_extraction_extended.test_aws_keys_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "tests.test_extraction_extended.test_google_keys_json_context",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.119
+      },
+      "name": "tests.test_extraction_basic.test_no_matches_produces_no_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "tests.test_extraction_extended.test_bitcoin_with_clean_mode",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.106
+      },
+      "name": "tests.test_extraction_extended.test_phone_numbers_clean_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.097
+      },
+      "name": "tests.test_extraction_basic.test_email_in_log_context_suppress_stdin_msg",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.119
+      },
+      "name": "tests.test_extraction_basic.test_email_from_file_input",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.112
+      },
+      "name": "tests.test_extraction_basic.test_email_tld_length_restrictions",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected 8 matches, got 9",
+        "time": 0.125
+      },
+      "name": "tests.test_extraction_basic.test_line_numbers_with_multiple_types_thorough",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.024
+      },
+      "name": "tests.test_extraction_basic.test_output_to_file_multiple_types",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.11
+      },
+      "name": "tests.test_extraction_extended.test_credit_cards_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.104
+      },
+      "name": "tests.test_extraction_extended.test_aws_keys_multiple_prefixes",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.102
+      },
+      "name": "tests.test_extraction_basic.test_hash_multiple_types_same_input",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.106
+      },
+      "name": "tests.test_extraction_basic.test_url_path_depth_variations",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.101
+      },
+      "name": "tests.test_extraction_extended.test_social_security_requires_hyphens",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "tests.test_extraction_basic.test_email_from_directory_all_files",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.089
+      },
+      "name": "tests.test_extraction_basic.test_ip_from_access_log_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.089
+      },
+      "name": "tests.test_extraction_extended.test_dns_srv_records_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.087
+      },
+      "name": "tests.test_extraction_extended.test_aws_with_display_filename",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected 6 matches, got 7",
+        "time": 0.088
+      },
+      "name": "tests.test_extraction_basic.test_combined_extractors_clean_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "tests.test_extraction_basic.test_email_with_display_filename_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected 2 lines, got 3",
+        "time": 0.091
+      },
+      "name": "tests.test_extraction_basic.test_multiple_extractors_stops_at_first_without_thorough",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.12
+      },
+      "name": "tests.test_extraction_extended.test_phone_stdin_with_suppress",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "tests.test_extraction_extended.test_ssn_multiple_on_line_thorough",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.115
+      },
+      "name": "tests.test_extraction_extended.test_phone_with_hide_prefix",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.13
+      },
+      "name": "tests.test_extraction_basic.test_email_thorough_multiple_per_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.137
+      },
+      "name": "tests.test_extraction_basic.test_hash_length_boundaries_exact_match",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.116
+      },
+      "name": "tests.test_extraction_basic.test_email_special_characters_in_local_part",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.028
+      },
+      "name": "tests.test_extraction_extended.test_credit_cards_multiple_formats",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.028
+      },
+      "name": "tests.test_extraction_extended.test_dns_requires_in_keyword",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.107
+      },
+      "name": "tests.test_extraction_basic.test_hash_clean_mode_multiple_per_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.135
+      },
+      "name": "tests.test_extraction_basic.test_url_various_schemes_and_components",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.119
+      },
+      "name": "tests.test_extraction_basic.test_email_with_line_numbers_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.125
+      },
+      "name": "tests.test_extraction_basic.test_ip_various_address_ranges",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.121
+      },
+      "name": "tests.test_extraction_basic.test_nonexistent_file_error_message",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.025
+      },
+      "name": "tests.test_extraction_extended.test_google_clean_extracts_key_only",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected 8 matches (2 per line for 4 patterns), got 9",
+        "time": 0.102
+      },
+      "name": "tests.test_extraction_basic.test_all_types_thorough_default_extractors",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.099
+      },
+      "name": "tests.test_extraction_extended.test_phone_stdin_without_suppress_shows_message",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.096
+      },
+      "name": "tests.test_extraction_extended.test_credit_card_with_drop_filter",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.102
+      },
+      "name": "tests.test_extraction_extended.test_bitcoin_wallets_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.097
+      },
+      "name": "tests.test_file_input.test_file_not_found_error",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.081
+      },
+      "name": "tests.test_file_input.test_large_file_multiple_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.123
+      },
+      "name": "tests.test_extraction_extended.test_mac_addresses_colon_notation",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.096
+      },
+      "name": "tests.test_extraction_extended.test_mac_with_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.119
+      },
+      "name": "tests.test_extraction_basic.test_email_with_filter_regex",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "tests.test_file_input.test_directory_email_extraction",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "tests.test_extraction_extended.test_bitcoin_edge_case_26_chars",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.116
+      },
+      "name": "tests.test_extraction_basic.test_hash_case_insensitive_extraction",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.122
+      },
+      "name": "tests.test_extraction_basic.test_ip_boundary_and_private_ranges",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.093
+      },
+      "name": "tests.test_extraction_basic.test_ignore_flag_suppresses_file_errors",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.095
+      },
+      "name": "tests.test_extraction_basic.test_ip_clean_mode_multiple_per_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.111
+      },
+      "name": "tests.test_extraction_basic.test_email_clean_mode_extracts_only_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.119
+      },
+      "name": "tests.test_extraction_basic.test_url_clean_mode_with_query_parameters",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.117
+      },
+      "name": "tests.test_extraction_extended.test_phone_with_filter_include",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected 6 matches, got 7",
+        "time": 0.116
+      },
+      "name": "tests.test_extraction_basic.test_combined_extractors_hide_prefix_all_types",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "tests.test_file_input.test_very_large_realistic_file",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.082
+      },
+      "name": "tests.test_file_input.test_file_not_found_with_ignore_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.027
+      },
+      "name": "tests.test_file_input.test_directory_with_display_filename_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "tests.test_extraction_extended.test_aws_key_length_constraints",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.097
+      },
+      "name": "tests.test_file_input.test_file_with_crlf_line_endings",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "tests.test_file_input.test_directory_recursive_traversal",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.034
+      },
+      "name": "tests.test_file_input.test_directory_with_many_files",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.083
+      },
+      "name": "tests.test_extraction_extended.test_mac_incomplete_address",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.04
+      },
+      "name": "tests.test_file_input.test_directory_deep_nesting",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.091
+      },
+      "name": "tests.test_file_input.test_file_with_clean_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.088
+      },
+      "name": "tests.test_file_input.test_file_with_no_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.125
+      },
+      "name": "tests.test_filter_drop.test_filter_by_email_domain_clean_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.024
+      },
+      "name": "tests.test_file_input.test_directory_with_mixed_file_types",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.126
+      },
+      "name": "tests.test_file_input.test_empty_file_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.101
+      },
+      "name": "tests.test_filter_drop.test_phone_filter_and_drop_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.129
+      },
+      "name": "tests.test_filter_drop.test_filter_case_insensitive_with_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.048
+      },
+      "name": "tests.test_gap_filling.test_directory_mode_processes_multiple_files",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.128
+      },
+      "name": "tests.test_gap_filling.test_csv_header_hide_display_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.12
+      },
+      "name": "tests.test_filter_drop.test_drop_all_matches_with_wildcard",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.106
+      },
+      "name": "tests.test_gap_filling.test_csv_multiple_extractors_with_display_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.114
+      },
+      "name": "tests.test_gap_filling.test_csv_header_only_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "tests.test_file_input.test_file_with_unicode_content",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.038
+      },
+      "name": "tests.test_gap_filling.test_directory_mixed_file_types",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "tests.test_file_input.test_file_and_directory_flags_combined",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "tests.test_gap_filling.test_directory_mode_with_nested_directories",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.124
+      },
+      "name": "tests.test_file_input.test_single_file_email_extraction",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.02
+      },
+      "name": "tests.test_gap_filling.test_plugin_with_invalid_regex_ignored",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "tests.test_gap_filling.test_csv_thorough_mode_multiple_matches_same_line",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "tests.test_file_input.test_file_with_binary_data_mixed",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.081
+      },
+      "name": "tests.test_gap_filling.test_directory_mode_empty_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.107
+      },
+      "name": "tests.test_filter_drop.test_drop_short_emails_by_length",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "tests.test_gap_filling.test_filter_drop_with_csv_output",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.102
+      },
+      "name": "tests.test_gap_filling.test_csv_data_with_commas_in_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.088
+      },
+      "name": "tests.test_gap_filling.test_ignore_flag_suppresses_file_errors",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Wrong header: ['email: Contact user@example.com for support']",
+        "time": 0.067
+      },
+      "name": "tests.test_output_destinations.test_csv_header_generation_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "tests.test_output_destinations.test_basic_file_output",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.062
+      },
+      "name": "tests.test_file_input.test_file_with_thorough_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.111
+      },
+      "name": "tests.test_output_destinations.test_csv_header_with_line_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.132
+      },
+      "name": "tests.test_output_destinations.test_csv_automatic_detection_from_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.118
+      },
+      "name": "tests.test_filter_drop.test_invalid_regex_drop_panics",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.136
+      },
+      "name": "tests.test_filter_drop.test_filter_no_matches_empty_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.148
+      },
+      "name": "tests.test_filter_drop.test_filter_error_drop_specific_hash",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.128
+      },
+      "name": "tests.test_filter_drop.test_filter_with_escaped_brackets",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "tests.test_gap_filling.test_plugin_duplicate_content_type_builtin_precedence",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.131
+      },
+      "name": "tests.test_gap_filling.test_csv_with_hide_and_multiple_extractors",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.122
+      },
+      "name": "tests.test_file_input.test_file_with_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.115
+      },
+      "name": "tests.test_gap_filling.test_directory_mode_no_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.125
+      },
+      "name": "tests.test_gap_filling.test_csv_header_only_display",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.093
+      },
+      "name": "tests.test_file_input.test_single_file_ip_extraction",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.077
+      },
+      "name": "tests.test_filter_drop.test_filter_error_lines_non_clean_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "tests.test_gap_filling.test_file_not_found_error_message",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "StopIteration",
+        "time": 0.091
+      },
+      "name": "tests.test_gap_filling.test_csv_clean_mode_extracts_only_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.072
+      },
+      "name": "tests.test_gap_filling.test_directory_with_display_flag_shows_filenames",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.087
+      },
+      "name": "tests.test_output_destinations.test_csv_multiple_extraction_types",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.091
+      },
+      "name": "tests.test_gap_filling.test_write_error_disk_full_simulation",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.078
+      },
+      "name": "tests.test_output_destinations.test_csv_header_with_display_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.069
+      },
+      "name": "tests.test_output_destinations.test_output_file_appends_to_existing",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.138
+      },
+      "name": "tests.test_output_destinations.test_output_to_nonexistent_directory_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.126
+      },
+      "name": "tests.test_filter_drop.test_invalid_regex_filter_panics",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.111
+      },
+      "name": "tests.test_filter_drop.test_thorough_mode_with_filter",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.138
+      },
+      "name": "tests.test_filter_drop.test_filter_url_domain_clean_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.141
+      },
+      "name": "tests.test_filter_drop.test_filter_and_drop_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "tests.test_output_destinations.test_non_csv_file_extension_not_csv_mode",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.117
+      },
+      "name": "tests.test_gap_filling.test_csv_header_display_line_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.036
+      },
+      "name": "tests.test_output_destinations.test_suppress_stdin_message_with_output",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.118
+      },
+      "name": "tests.test_gap_filling.test_directory_with_csv_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.137
+      },
+      "name": "tests.test_file_input.test_multiple_extraction_types_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "tests.test_gap_filling.test_multiple_types_in_directory_with_line_numbers",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.125
+      },
+      "name": "tests.test_gap_filling.test_csv_header_only_hide_type",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "IndexError: list index out of range",
+        "time": 0.1
+      },
+      "name": "tests.test_output_destinations.test_csv_output_with_clean_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.109
+      },
+      "name": "tests.test_output_destinations.test_csv_header_with_hide_type_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected 101 lines (1 header + 100 emails), got 100",
+        "time": 0.123
+      },
+      "name": "tests.test_output_destinations.test_large_output_many_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.025
+      },
+      "name": "tests.test_output_destinations.test_csv_no_extension_not_csv_mode",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.072
+      },
+      "name": "tests.test_output_modifiers.test_thorough_mode_extracts_all_matches_same_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.094
+      },
+      "name": "tests.test_output_destinations.test_stdin_input_with_csv_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "tests.test_output_destinations.test_output_file_with_clean_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.066
+      },
+      "name": "tests.test_output_modifiers.test_line_numbers_show_correct_line_position",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.08
+      },
+      "name": "tests.test_output_destinations.test_csv_header_all_flags_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.028
+      },
+      "name": "tests.test_output_destinations.test_output_error_suppressed_with_ignore_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.149
+      },
+      "name": "tests.test_output_modifiers.test_stdin_message_shown_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.118
+      },
+      "name": "tests.test_filter_drop.test_filter_error_ips_from_log",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.148
+      },
+      "name": "tests.test_filter_drop.test_filter_case_sensitive_uppercase_only",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.123
+      },
+      "name": "tests.test_filter_drop.test_drop_http_urls_and_specific_domain",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.104
+      },
+      "name": "tests.test_output_destinations.test_csv_append_behavior",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.126
+      },
+      "name": "tests.test_gap_filling.test_csv_header_hide_line_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.023
+      },
+      "name": "tests.test_output_destinations.test_csv_extension_case_sensitive",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected exactly 1 match without -T, got 2",
+        "time": 0.101
+      },
+      "name": "tests.test_output_modifiers.test_without_thorough_stops_at_first_match",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "tests.test_gap_filling.test_file_read_with_stdin_fallback",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.108
+      },
+      "name": "tests.test_gap_filling.test_csv_header_no_flags_default",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.111
+      },
+      "name": "tests.test_output_destinations.test_no_matches_csv_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Header should have 2 columns, got 1",
+        "time": 0.103
+      },
+      "name": "tests.test_output_destinations.test_csv_parsing_with_python_csv_module",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.101
+      },
+      "name": "tests.test_output_modifiers.test_hide_type_removes_prefix",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.12
+      },
+      "name": "tests.test_output_destinations.test_url_extraction_to_csv",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.098
+      },
+      "name": "tests.test_output_modifiers.test_empty_file_produces_no_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.107
+      },
+      "name": "tests.test_output_destinations.test_csv_multiple_dot_extensions",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.072
+      },
+      "name": "tests.test_output_modifiers.test_display_filename_with_results",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.062
+      },
+      "name": "tests.test_output_modifiers.test_display_filename_and_line_numbers_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.143
+      },
+      "name": "tests.test_output_modifiers.test_clean_thorough_with_ip_addresses",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.154
+      },
+      "name": "tests.test_filter_drop.test_drop_private_ips_in_clean_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.125
+      },
+      "name": "tests.test_output_modifiers.test_hide_type_with_ip_addresses",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.122
+      },
+      "name": "tests.test_filter_drop.test_filter_stdin_with_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.13
+      },
+      "name": "tests.test_output_destinations.test_csv_with_thorough_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.149
+      },
+      "name": "tests.test_output_modifiers.test_clean_hide_line_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.125
+      },
+      "name": "tests.test_output_modifiers.test_clean_mode_email_single_match",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.117
+      },
+      "name": "tests.test_output_modifiers.test_all_flags_combined_complex_scenario",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.106
+      },
+      "name": "tests.test_output_modifiers.test_thorough_mode_deduplicates_same_match",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.124
+      },
+      "name": "tests.test_output_modifiers.test_hide_type_without_clean_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.127
+      },
+      "name": "tests.test_output_modifiers.test_no_matches_produces_no_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.127
+      },
+      "name": "tests.test_output_modifiers.test_without_thorough_extracts_only_first_from_long_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.124
+      },
+      "name": "tests.test_output_modifiers.test_url_extraction_with_clean_thorough",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.109
+      },
+      "name": "tests.test_output_modifiers.test_suppress_stdin_message",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected {'admin@example.com', 'https://example.com', '192.168.1.1'}, got {'Failed to open plugins.json file. PLUGIN_PATH: /home/agent/.DataSurgeon/plugins.json', '192.168.1.1', 'https://example.com', 'admin@example.com'}",
+        "time": 0.089
+      },
+      "name": "tests.test_output_modifiers.test_multi_type_extraction_hide_all_prefixes",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.094
+      },
+      "name": "tests.test_output_destinations.test_hash_extraction_to_csv",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.105
+      },
+      "name": "tests.test_output_modifiers.test_line_numbers_with_full_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw14/test_system_path_plugin_file_l2/home'",
+        "time": 0.006
+      },
+      "name": "tests.test_plugins_basic.test_system_path_plugin_file_loads",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.039
+      },
+      "name": "tests.test_plugins_basic.test_empty_plugins_json_array",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "tests.test_output_modifiers.test_line_numbers_accurate_with_gaps",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.113
+      },
+      "name": "tests.test_output_destinations.test_empty_file_csv_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected {'ip_address: 192.168.1.1', 'email: admin@example.com', 'url: https://example.com'}, got {'Failed to open plugins.json file. PLUGIN_PATH: /home/agent/.DataSurgeon/plugins.json', 'ip_address: 192.168.1.1', 'email: admin@example.com', 'url: https://example.com'}",
+        "time": 0.119
+      },
+      "name": "tests.test_output_modifiers.test_multi_type_extraction_all_types_extracted",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.103
+      },
+      "name": "tests.test_output_modifiers.test_url_extraction_hide_type",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.095
+      },
+      "name": "tests.test_output_modifiers.test_display_with_clean_mode_shows_filename_and_match",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.121
+      },
+      "name": "tests.test_output_modifiers.test_clean_without_thorough_stops_at_first_url",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.101
+      },
+      "name": "tests.test_output_modifiers.test_clean_mode_without_flag_shows_full_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.096
+      },
+      "name": "tests.test_plugins_basic.test_plugin_extraction_with_clean_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.105
+      },
+      "name": "tests.test_plugins_basic.test_plugin_extraction_full_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.081
+      },
+      "name": "tests.test_plugins_basic.test_plugin_with_complex_regex_hex_extraction",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.112
+      },
+      "name": "tests.test_output_modifiers.test_thorough_extracts_all_matches_on_long_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.097
+      },
+      "name": "tests.test_plugins_basic.test_plugin_extraction_hide_prefix",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.088
+      },
+      "name": "tests.test_output_modifiers.test_hide_and_display_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.096
+      },
+      "name": "tests.test_plugins_basic.test_plugin_with_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.097
+      },
+      "name": "tests.test_plugins_basic.test_multiple_plugins_simultaneous_extraction",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "IndexError: list index out of range",
+        "time": 0.114
+      },
+      "name": "tests.test_plugins_basic.test_local_plugin_file_loads_and_lists",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "tests.test_plugins_basic.test_no_plugins_file_builtin_flags_still_work",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected 2 plugins from local file, got 0",
+        "time": 0.165
+      },
+      "name": "tests.test_plugins_basic.test_local_plugin_used_when_system_path_missing",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.137
+      },
+      "name": "tests.test_plugins_basic.test_plugin_with_display_flag_shows_filename",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.103
+      },
+      "name": "tests.test_plugins_basic.test_plugin_output_to_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "tests.test_plugins_basic.test_plugin_argument_not_found_without_plugins_json",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.141
+      },
+      "name": "tests.test_plugins_basic.test_plugin_content_type_used_as_prefix",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.129
+      },
+      "name": "tests.test_plugins_basic.test_plugin_with_invalid_regex_no_crash",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.127
+      },
+      "name": "tests.test_plugins_basic.test_plugin_extraction_with_stdin_input",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.105
+      },
+      "name": "tests.test_plugins_basic.test_plugin_extraction_large_input_multiple_matches_per_line",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw7/test_malformed_json_syntax_err2/home'",
+        "time": 0.005
+      },
+      "name": "tests.test_plugins_errors.test_malformed_json_syntax_error_with_exit",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw11/test_plugin_system_path_priori2/home'",
+        "time": 0.007
+      },
+      "name": "tests.test_plugins_basic.test_plugin_system_path_priority_over_local",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.096
+      },
+      "name": "tests.test_plugins_basic.test_plugin_with_drop_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.116
+      },
+      "name": "tests.test_plugins_basic.test_plugin_no_matches_empty_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.096
+      },
+      "name": "tests.test_plugins_basic.test_plugin_with_filter_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.137
+      },
+      "name": "tests.test_plugins_basic.test_list_multiple_plugins_formatting",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.156
+      },
+      "name": "tests.test_plugins_basic.test_plugin_with_thorough_flag_gets_all_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw12/test_whitespace_only_json_file2/home'",
+        "time": 0.006
+      },
+      "name": "tests.test_plugins_errors.test_whitespace_only_json_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.048
+      },
+      "name": "tests.test_plugins_basic.test_empty_plugins_json_with_extraction_attempt",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw5/test_error_message_consistency2/home'",
+        "time": 0.006
+      },
+      "name": "tests.test_plugins_errors.test_error_message_consistency_across_different_json_errors",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw7/test_multiple_parse_errors_in_2/home'",
+        "time": 0.008
+      },
+      "name": "tests.test_plugins_errors.test_multiple_parse_errors_in_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw15/test_utf8_bom_in_plugins_json_2/home'",
+        "time": 0.006
+      },
+      "name": "tests.test_plugins_errors.test_utf8_bom_in_plugins_json_causes_parse_error",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw8/test_empty_json_file_is_valid2/home'",
+        "time": 0.006
+      },
+      "name": "tests.test_plugins_errors.test_empty_json_file_is_valid",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw2/test_plugin_extraction_with_ma2/home'",
+        "time": 0.007
+      },
+      "name": "tests.test_plugins_errors.test_plugin_extraction_with_malformed_json_shows_error",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.134
+      },
+      "name": "tests.test_plugins_errors.test_local_plugins_json_used_when_no_home",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw12/test_null_byte_in_json_causes_2/home'",
+        "time": 0.008
+      },
+      "name": "tests.test_plugins_errors.test_null_byte_in_json_causes_parse_error",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw1/test_json_object_instead_of_ar2/home'",
+        "time": 0.007
+      },
+      "name": "tests.test_plugins_errors.test_json_object_instead_of_array",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw6/test_missing_required_fields_i2/home'",
+        "time": 0.005
+      },
+      "name": "tests.test_plugins_errors.test_missing_required_fields_in_json",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw9/test_malformed_json_continues_2/home'",
+        "time": 0.007
+      },
+      "name": "tests.test_plugins_errors.test_malformed_json_continues_when_user_declines_exit",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw10/test_parse_error_with_stdin_ex2/home'",
+        "time": 0.007
+      },
+      "name": "tests.test_plugins_errors.test_parse_error_with_stdin_extraction_operation",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw0/test_json_with_extra_unknown_f2/home'",
+        "time": 0.007
+      },
+      "name": "tests.test_plugins_errors.test_json_with_extra_unknown_fields_is_valid",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw13/test_plugins_json_is_directory2/home'",
+        "time": 0.006
+      },
+      "name": "tests.test_plugins_errors.test_plugins_json_is_directory_not_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "IndexError: list index out of range",
+        "time": 0.097
+      },
+      "name": "tests.test_plugins_basic.test_plugin_version_displayed_correctly",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.101
+      },
+      "name": "tests.test_plugins_errors.test_missing_home_environment_variable_causes_panic",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "FileExistsError: [Errno 17] File exists: '/tmp/pytest-of-root/pytest-0/popen-gw3/test_truncated_json_file2/home'",
+        "time": 0.005
+      },
+      "name": "tests.test_plugins_errors.test_truncated_json_file",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.141
+      },
+      "name": "tests.test_plugins_management.test_list_plugins_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.113
+      },
+      "name": "tests.test_plugins_management.test_remove_plugin_by_exact_url",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.029
+      },
+      "name": "tests.test_plugins_management.test_plugins_json_array_structure_preserved",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.14
+      },
+      "name": "tests.test_plugins_management.test_remove_preserves_other_plugins_order",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.137
+      },
+      "name": "tests.test_plugins_management.test_remove_plugin_case_insensitive_url",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.13
+      },
+      "name": "tests.test_plugins_management.test_list_plugins_with_multiple_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.142
+      },
+      "name": "tests.test_plugins_management.test_remove_plugin_trailing_slash_normalization",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "tests.test_plugins_management.test_remove_plugin_preserves_json_validity",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.128
+      },
+      "name": "tests.test_plugins_management.test_remove_url_with_query_parameters",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.134
+      },
+      "name": "tests.test_plugins_management.test_remove_multiple_plugins_same_url",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.105
+      },
+      "name": "tests.test_plugins_management.test_list_plugins_single_entry_formatting",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.115
+      },
+      "name": "tests.test_plugins_management.test_remove_with_http_vs_https_normalization",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.128
+      },
+      "name": "tests.test_plugins_management.test_remove_plugin_not_found",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected 3 plugin entries, got 0",
+        "time": 0.097
+      },
+      "name": "tests.test_plugins_management.test_list_plugins_exact_table_format",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.114
+      },
+      "name": "tests.test_plugins_management.test_plugins_json_created_if_missing_on_list",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "tests.test_plugins_management.test_remove_empty_url_string",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.094
+      },
+      "name": "tests.test_timing_errors.test_timing_flag_with_stdin_suppress",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.219
+      },
+      "name": "tests.test_plugins_management.test_remove_all_plugins_leaves_empty_array",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.081
+      },
+      "name": "tests.test_timing_errors.test_timing_flag_with_empty_input_shows_stdin_msg",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "IndexError: list index out of range",
+        "time": 0.126
+      },
+      "name": "tests.test_plugins_management.test_list_plugins_column_width_calculation",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "tests.test_seed.test_binary_exists",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.127
+      },
+      "name": "tests.test_seed.test_help_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected 4 lines (3 data + 1 timing), got 5",
+        "time": 0.132
+      },
+      "name": "tests.test_timing_errors.test_timing_with_multiple_extractors",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.136
+      },
+      "name": "tests.test_plugins_management.test_plugins_json_with_extra_whitespace",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.138
+      },
+      "name": "tests.test_seed.test_basic_email_extraction_stdin",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.096
+      },
+      "name": "tests.test_plugins_management.test_list_plugins_unicode_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.027
+      },
+      "name": "tests.test_plugins_management.test_plugins_json_permissions_preserved",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.123
+      },
+      "name": "tests.test_plugins_management.test_remove_plugin_with_special_regex_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.123
+      },
+      "name": "tests.test_plugins_management.test_remove_with_www_subdomain_variations",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.09
+      },
+      "name": "tests.test_seed.test_version_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError: Expected 50 plugins listed, got 0",
+        "time": 0.121
+      },
+      "name": "tests.test_plugins_management.test_list_plugins_with_many_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.118
+      },
+      "name": "tests.test_timing_errors.test_file_not_found_specific_error_message",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.108
+      },
+      "name": "tests.test_plugins_management.test_remove_with_mixed_url_schemes",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.106
+      },
+      "name": "tests.test_timing_errors.test_timing_flag_with_file_input",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.094
+      },
+      "name": "tests.test_timing_errors.test_timing_with_thorough_mode_duplicates",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.075
+      },
+      "name": "tests.test_timing_errors.test_timing_with_clean_and_thorough_modes",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "time": 0.033
+      },
+      "name": "tests.test_plugins_management.test_list_plugins_preserves_original_json_field_order",
+      "status": "passed"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.084
+      },
+      "name": "tests.test_timing_errors.test_ignore_does_not_prevent_regex_panic",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.135
+      },
+      "name": "tests.test_timing_errors.test_ignore_flag_suppresses_file_not_found",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.115
+      },
+      "name": "tests.test_timing_errors.test_empty_file_with_timing_shows_only_timing",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.127
+      },
+      "name": "tests.test_timing_errors.test_invalid_drop_regex_causes_panic",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.117
+      },
+      "name": "tests.test_timing_errors.test_file_with_no_newlines_extracts_first_match",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.12
+      },
+      "name": "tests.test_timing_errors.test_ignore_flag_with_timing_shows_timing",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.119
+      },
+      "name": "tests.test_timing_errors.test_directory_extraction_processes_all_files",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.105
+      },
+      "name": "tests.test_timing_errors.test_invalid_utf8_file_produces_no_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.1
+      },
+      "name": "tests.test_timing_errors.test_invalid_filter_regex_causes_panic",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.107
+      },
+      "name": "tests.test_timing_errors.test_filter_with_timing_combines_correctly",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.107
+      },
+      "name": "tests.test_timing_errors.test_drop_regex_excludes_matching_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.097
+      },
+      "name": "tests.test_timing_errors.test_filter_regex_includes_only_matching_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.117
+      },
+      "name": "tests.test_timing_errors.test_output_file_write_error_shows_error_and_exits",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.109
+      },
+      "name": "tests.test_timing_errors.test_binary_data_stdin_produces_no_output",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.078
+      },
+      "name": "tests.test_timing_errors.test_no_matches_produces_empty_output_exit_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.099
+      },
+      "name": "tests.test_timing_errors.test_multiple_lines_no_newline_at_eof",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.815
+      },
+      "name": "tests.test_timing_errors.test_very_long_line_clean_mode_extracts_match",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.123
+      },
+      "name": "tests.test_timing_errors.test_extremely_long_match_in_clean_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.137
+      },
+      "name": "tests.test_timing_errors.test_alternating_valid_invalid_utf8_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "61d5d5110768",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.137
+      },
+      "name": "tests.test_timing_errors.test_drop_and_filter_both_applied_correctly",
+      "status": "failure"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_argparse_validation.test_file_dash_is_treated_as_literal_path_not_stdin",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.032
+      },
+      "name": "eval.tests.test_argparse_validation.test_output_value_forms_write_file[argv2]",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.029
+      },
+      "name": "eval.tests.test_argparse_validation.test_output_value_forms_write_file[argv1]",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.028
+      },
+      "name": "eval.tests.test_argparse_validation.test_file_empty_string_means_read_stdin_and_message_shown",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.095
+      },
+      "name": "eval.tests.test_argparse_validation.test_missing_value_for_option[argv2-a value is required for '--output <output>']",
+      "status": "failure"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.042
+      },
+      "name": "eval.tests.test_argparse_validation.test_output_value_forms_write_file[argv3]",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.091
+      },
+      "name": "eval.tests.test_argparse_validation.test_missing_value_for_option[argv0-a value is required for '--file <file>']",
+      "status": "failure"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.125
+      },
+      "name": "eval.tests.test_argparse_validation.test_unknown_flag_errors[argv1-2-unexpected argument '-Z' found]",
+      "status": "failure"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.046
+      },
+      "name": "eval.tests.test_argparse_validation.test_suppress_hides_reading_stdin_message",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.048
+      },
+      "name": "eval.tests.test_argparse_validation.test_suppress_with_empty_file_still_hides_message",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.13
+      },
+      "name": "eval.tests.test_argparse_validation.test_output_cannot_be_used_multiple_times",
+      "status": "failure"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.125
+      },
+      "name": "eval.tests.test_argparse_validation.test_missing_value_for_option[argv3-a value is required for '--output <output>']",
+      "status": "failure"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.135
+      },
+      "name": "eval.tests.test_argparse_validation.test_unknown_flag_errors[argv2-2-unexpected argument '-Z' found]",
+      "status": "failure"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.117
+      },
+      "name": "eval.tests.test_argparse_validation.test_missing_value_for_option[argv1-a value is required for '--file <file>']",
+      "status": "failure"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.131
+      },
+      "name": "eval.tests.test_argparse_validation.test_unknown_flag_errors[argv0-2-unexpected argument '--nonexistent-flag' found]",
+      "status": "failure"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.128
+      },
+      "name": "eval.tests.test_argparse_validation.test_output_value_forms_write_file[argv0]",
+      "status": "failure"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.038
+      },
+      "name": "eval.tests.test_argparse_validation.test_combined_short_flags_equivalent[argv1]",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "eval.tests.test_argparse_validation.test_clean_and_email_flags_parse_and_run[argv2]",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "eval.tests.test_argparse_validation.test_combined_short_flags_equivalent[argv0]",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.037
+      },
+      "name": "eval.tests.test_argparse_validation.test_clean_and_email_flags_parse_and_run[argv1]",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "time": 0.043
+      },
+      "name": "eval.tests.test_argparse_validation.test_clean_and_email_flags_parse_and_run[argv0]",
+      "status": "passed"
+    },
+    {
+      "branch": "2e64897bedc3",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.116
+      },
+      "name": "eval.tests.test_argparse_validation.test_double_dash_does_not_start_positional_mode_for_this_tool",
+      "status": "failure"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "tests.test_subcommand_dispatch.TestProperFlagUsage.test_update_flag_requires_argument",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.026
+      },
+      "name": "tests.test_subcommand_dispatch.TestFlagNotSubcommandBehavior.test_list_as_standalone_fails",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "tests.test_subcommand_dispatch.TestProperFlagUsage.test_list_flag_works",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.029
+      },
+      "name": "tests.test_subcommand_dispatch.TestNoSubcommandHelp.test_no_subcommand_specific_help[add]",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.027
+      },
+      "name": "tests.test_subcommand_dispatch.TestFlagNotSubcommandBehavior.test_update_as_standalone_fails",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.037
+      },
+      "name": "tests.test_subcommand_dispatch.TestInvalidCommandBehavior.test_double_dash_unknown_option",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.038
+      },
+      "name": "tests.test_subcommand_dispatch.TestNoSubcommands.test_help_shows_no_subcommands",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.047
+      },
+      "name": "tests.test_subcommand_dispatch.TestNoSubcommands.test_version_flag_works",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "tests.test_subcommand_dispatch.TestProperFlagUsage.test_extraction_flags_work",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.049
+      },
+      "name": "tests.test_subcommand_dispatch.TestProperFlagUsage.test_add_flag_requires_argument",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.055
+      },
+      "name": "tests.test_subcommand_dispatch.TestFlagNotSubcommandBehavior.test_remove_as_standalone_fails",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.053
+      },
+      "name": "tests.test_subcommand_dispatch.TestFlagNotSubcommandBehavior.test_add_as_standalone_fails",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.057
+      },
+      "name": "tests.test_subcommand_dispatch.TestProperFlagUsage.test_remove_flag_requires_argument",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.053
+      },
+      "name": "tests.test_subcommand_dispatch.TestInvalidCommandBehavior.test_random_word_not_treated_as_subcommand",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.055
+      },
+      "name": "tests.test_subcommand_dispatch.TestNoSubcommandHelp.test_no_subcommand_specific_help[remove]",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.027
+      },
+      "name": "tests.test_subcommand_dispatch.TestNoSubcommandHelp.test_no_subcommand_specific_help[list]",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.029
+      },
+      "name": "tests.test_subcommand_dispatch.TestNoCommandRouting.test_all_functionality_in_single_invocation",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.067
+      },
+      "name": "tests.test_subcommand_dispatch.TestNoSubcommands.test_main_help_equals_only_help",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.029
+      },
+      "name": "tests.test_subcommand_dispatch.TestNoSubcommandHelp.test_no_subcommand_specific_help[update]",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.024
+      },
+      "name": "tests.test_subcommand_dispatch.TestArchitectureDocumentation.test_architecture_is_flag_based",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.028
+      },
+      "name": "tests.test_subcommand_dispatch.TestNoSubcommandHelp.test_no_subcommand_specific_help[scan]",
+      "status": "passed"
+    },
+    {
+      "branch": "314a43fe54ae",
+      "extra": {
+        "time": 0.022
+      },
+      "name": "tests.test_subcommand_dispatch.TestNoSubcommandHelp.test_no_subcommand_specific_help[extract]",
+      "status": "passed"
+    },
+    {
+      "branch": "95e016c28ce7",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "eval.tests.test_env_config_plugins.test_home_env_var_unset_falls_back_to_default_home_path",
+      "status": "passed"
+    },
+    {
+      "branch": "95e016c28ce7",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.133
+      },
+      "name": "eval.tests.test_env_config_plugins.test_local_plugins_json_takes_precedence_over_home_location",
+      "status": "failure"
+    },
+    {
+      "branch": "95e016c28ce7",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.13
+      },
+      "name": "eval.tests.test_env_config_plugins.test_home_env_var_controls_plugin_file_path_when_listing_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "95e016c28ce7",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.141
+      },
+      "name": "eval.tests.test_env_config_plugins.test_malformed_plugins_json_prompts_and_exits_on_yes",
+      "status": "failure"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_executable_exists_and_is_executable",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_help_usage.test_help_has_options_section_header",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.027
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-C]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.028
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-h]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.027
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-V]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--line]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--version]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.041
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--ignore]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.05
+      },
+      "name": "eval.tests.test_help_usage.test_help_goes_to_stdout_not_stderr",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--help]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--list]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.047
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-l]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-f]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--file]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_ends_with_newline",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.043
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-T]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--directory]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--thorough]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.051
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--output]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--add]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.053
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--filter]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--display]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--update]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-o]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--clean]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.06
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-D]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.061
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--remove]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.0
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--suppress]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--drop]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.021
+      },
+      "name": "eval.tests.test_help_usage.test_help_exits_zero",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "message": "AssertionError: Expected leading Note: line",
+        "time": 0.043
+      },
+      "name": "eval.tests.test_help_usage.test_help_has_note_line",
+      "status": "failure"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--time]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-X]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--hide]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--phone]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-S]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-p]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-t]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-i]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--ip-addr]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-c]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--mac-addr]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--url]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-u]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--aws]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-a]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-e]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--email]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--hash]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-H]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.002
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--dns]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--ipv6-addr]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.002
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-6]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.002
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--credit-card]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.002
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-m]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--bitcoin]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-F]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.002
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--files]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-b]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--google]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.002
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-g]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-d]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[--social]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_documents_flag[-s]",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.113
+      },
+      "name": "eval.tests.test_help_usage.test_baseline_help_output_matches_fixture_exactly",
+      "status": "failure"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.043
+      },
+      "name": "eval.tests.test_help_usage.test_help_precedes_invalid_flag_and_still_exits_zero",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.044
+      },
+      "name": "eval.tests.test_help_usage.test_help_after_double_dash_is_treated_as_argument_and_errors",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.053
+      },
+      "name": "eval.tests.test_help_usage.test_short_help_matches_long_help_exactly",
+      "status": "passed"
+    },
+    {
+      "branch": "1f8845ada8c0",
+      "extra": {
+        "time": 0.001
+      },
+      "name": "eval.tests.test_help_usage.test_help_has_usage_line",
+      "status": "passed"
+    },
+    {
+      "branch": "5bbdc4638826",
+      "extra": {
+        "time": 0.03
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_option_must_be_prefixed_with_dash_add_requires_flag",
+      "status": "passed"
+    },
+    {
+      "branch": "5bbdc4638826",
+      "extra": {
+        "time": 0.03
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_unknown_subcommand_is_error_and_mentions_unexpected_argument",
+      "status": "passed"
+    },
+    {
+      "branch": "5bbdc4638826",
+      "extra": {
+        "time": 0.041
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_help_does_not_list_subcommands",
+      "status": "passed"
+    },
+    {
+      "branch": "5bbdc4638826",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_version_flag_works",
+      "status": "passed"
+    },
+    {
+      "branch": "5bbdc4638826",
+      "extra": {
+        "time": 0.045
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_no_subcommand_shows_usage_or_note",
+      "status": "passed"
+    },
+    {
+      "branch": "5bbdc4638826",
+      "extra": {
+        "time": 0.046
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_git_style_subcommand_is_not_supported_list",
+      "status": "passed"
+    },
+    {
+      "branch": "5bbdc4638826",
+      "extra": {
+        "time": 0.048
+      },
+      "name": "eval.tests.test_subcommand_dispatch.test_help_flag_works",
+      "status": "passed"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.132
+      },
+      "name": "eval.tests.test_executable_behavior.test_ip_clean_thorough_dedupes_identical_match_on_line",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.142
+      },
+      "name": "eval.tests.test_executable_behavior.test_hide_flag_removes_identifier_prefix",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.098
+      },
+      "name": "eval.tests.test_executable_behavior.test_stdin_banner_suppressed_with_S",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.113
+      },
+      "name": "eval.tests.test_executable_behavior.test_display_flag_with_stdin_has_blank_file_field",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "time": 0.064
+      },
+      "name": "eval.tests.test_executable_behavior.test_help_exact",
+      "status": "passed"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.121
+      },
+      "name": "eval.tests.test_executable_behavior.test_email_clean_thorough_emits_each_match_on_one_line",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.128
+      },
+      "name": "eval.tests.test_executable_behavior.test_email_default_not_clean_emits_full_line",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.14
+      },
+      "name": "eval.tests.test_executable_behavior.test_file_input_display_line_exact",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.152
+      },
+      "name": "eval.tests.test_executable_behavior.test_stdin_banner_present_when_not_suppressed",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.134
+      },
+      "name": "eval.tests.test_executable_behavior.test_extractors_single_match_clean[args2-url https://example.com/x?y=1\\n-url: https://example.com/x?y=1\\n]",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.114
+      },
+      "name": "eval.tests.test_executable_behavior.test_extractors_single_match_clean[args1-mac aa:bb:cc:dd:ee:ff\\n-mac_address: aa:bb:cc:dd:ee:ff\\n]",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.153
+      },
+      "name": "eval.tests.test_executable_behavior.test_unknown_flag_errors",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.15
+      },
+      "name": "eval.tests.test_executable_behavior.test_ip_clean_thorough_emits_multiple_different_ips_one_line",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.133
+      },
+      "name": "eval.tests.test_executable_behavior.test_extractors_single_match_clean[args0-ip6 2001:db8::1\\n-ipv6_address: 2001:db8\\n]",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "time": 0.068
+      },
+      "name": "eval.tests.test_executable_behavior.test_version_exact",
+      "status": "passed"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.14
+      },
+      "name": "eval.tests.test_executable_behavior.test_line_numbers_formatting_for_ip_clean",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.092
+      },
+      "name": "eval.tests.test_executable_behavior.test_extractors_single_match_clean[args3-cc 4111 1111 1111 1111\\n-credit_card: 4111 1111 1111 1111\\n]",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.082
+      },
+      "name": "eval.tests.test_executable_behavior.test_extractors_single_match_clean[args4-btc 1BoatSLRHtKNngkdXEeobR76b53LETtpyT\\n-bitcoin_wallet: 1BoatSLRHtKNngkdXEeobR76b53LETtpyT\\n]",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.117
+      },
+      "name": "eval.tests.test_executable_behavior.test_missing_file_errors_and_exit_code",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.129
+      },
+      "name": "eval.tests.test_executable_behavior.test_extractors_single_match_clean[args7-dns _sip._tcp.example.com\\n-]",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.137
+      },
+      "name": "eval.tests.test_executable_behavior.test_extractors_single_match_clean[args9-md5 d41d8cd98f00b204e9800998ecf8427e\\n-hashes: d41d8cd98f00b204e9800998ecf8427e\\n]",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.128
+      },
+      "name": "eval.tests.test_executable_behavior.test_csv_output_basic_header_and_rows",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.102
+      },
+      "name": "eval.tests.test_executable_behavior.test_duplicate_thorough_flag_errors",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.114
+      },
+      "name": "eval.tests.test_executable_behavior.test_missing_file_ignore_suppresses_message_but_exit_code_unchanged",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.077
+      },
+      "name": "eval.tests.test_executable_behavior.test_directory_recursive_search_with_display",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.123
+      },
+      "name": "eval.tests.test_executable_behavior.test_extractors_single_match_clean[args6-google private_key_id: 0123456789abcdef\\n-]",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.102
+      },
+      "name": "eval.tests.test_executable_behavior.test_extractors_single_match_clean[args8-ssn 123-45-6789\\n-social_security: 123-45-6789\\n]",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.092
+      },
+      "name": "eval.tests.test_executable_behavior.test_csv_output_with_display_and_line_columns",
+      "status": "failure"
+    },
+    {
+      "branch": "65d3ddb6da15",
+      "extra": {
+        "message": "AssertionError",
+        "time": 0.111
+      },
+      "name": "eval.tests.test_executable_behavior.test_extractors_single_match_clean[args5-aws AKIAIOSFODNN7EXAMPLE\\n-]",
+      "status": "failure"
+    }
+  ],
+  "warnings": []
+}

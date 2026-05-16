@@ -1,0 +1,1933 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.17624849200365134
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.13161971600493416
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.14545046299463138
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.13585650699678808
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.111572548004915
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.11485956399701536
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6517249519965844
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12470883999776561
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12181238298944663
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.14404543100681622
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12968105700565502
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 5.785769285008428
+    },
+    {
+      "branch": "6af5af3937e4",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03479935199720785
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.14439268100250047
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13026982500741724
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10421185499581043
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09911919699516147
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 40.00730255499366
+    },
+    {
+      "branch": "642420bd4df9",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03832772700116038
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12885016700602137
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12553060200298205
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12071980400651228
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09998976699716877
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.6584172980074072
+    },
+    {
+      "branch": "660164a15a44",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03609805701125879
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12972258299123496
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10458701800962444
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.08700575699913315
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.107578294002451
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.664403147995472
+    },
+    {
+      "branch": "8a3a462ef617",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.024384080010349862
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13268002100812737
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11000007399707101
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12323090400604997
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10611129101016559
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.4575887700048042
+    },
+    {
+      "branch": "06702977bf06",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.037599481001961976
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09801999699266162
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11911062299623154
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12478455700329505
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11831887699372601
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 7.915534347994253
+    },
+    {
+      "branch": "591597c191de",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.025649454997619614
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.118432376999408
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09339490899583325
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11464304399851244
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1199254199891584
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.77774863599916
+    },
+    {
+      "branch": "edffe8618591",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.027111688003060408
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11569898000743706
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11306550200970378
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12116711500857491
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13454762499895878
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.7772268670087215
+    },
+    {
+      "branch": "6fddbf3ce693",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02675232000183314
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13283006400160957
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09563752000394743
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11485550399811473
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10855167299450841
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.842014163004933
+    },
+    {
+      "branch": "581e95e0e35a",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03795954000088386
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11309209199680481
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11671438699704595
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11431444699701387
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12486862001242116
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.5625813840015326
+    },
+    {
+      "branch": "6dc5eb5d8d9e",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.0353737719997298
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1333141820068704
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11370303099101875
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09845378799946047
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12472107099893037
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.350465019000694
+    },
+    {
+      "branch": "7555036308a6",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.025146648011286743
+    }
+  ],
+  "executable_hash": "9cdb50dbe205575fbcc9a657a366c8e2c6dbabf8765a2ba7ac1e522f18db732b",
+  "failed_tests": [
+    {
+      "branch": "6af5af3937e4",
+      "message": "AssertionError",
+      "name": "tests.test_exec.test_exec_with_dotenv_in_envrc",
+      "status": "failure"
+    },
+    {
+      "branch": "6af5af3937e4",
+      "message": "AssertionError",
+      "name": "tests.test_stdlib_usage.test_source_env_function",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_basic_current_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_missing_cache_dir_causes_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_cmd_edge_cases.test_allow_migration_from_old_location",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_check_required_parent_traversal_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_large_envrc_file",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_updates_hash_when_file_changes",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dotenv.test_unclosed_quote_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: stderr: #x1B[31mdirenv: error .envrc file not found#x1B[0m",
+      "name": "tests.test_allow_deny.test_allow_dotenv_file_when_enabled",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_exec.test_exec_path_modification",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_allow_only_uses_first_path_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: allow should fail when required file doesn't exist",
+      "name": "tests.test_cmd_edge_cases.test_allow_required_file_missing",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_log_format_dash_clears_format",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_dump_to_file_output",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_allow_symlink_resolution",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_cmd_edge_cases.test_exec_with_envrc_loading_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_exec.test_exec_nonexistent_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_missing_data_dir_causes_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_check_required_file_allowed_after_allow",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dotenv.test_variable_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_envrc_with_special_characters_in_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_envrc_takes_precedence_over_dotenv",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_deny_basic_current_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_cmd_edge_cases.test_allow_required_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_allow_with_directory_path_finds_envrc",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_with_directory_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_cmd_edge_cases.test_exec_nonexistent_directory_stat_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_check_required_with_three_or_more_files_grammar",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_warn_timeout_in_toml_file",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_check_required_file_not_allowed",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_exec.test_exec_with_file_as_command",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_exec.test_exec_command_not_found",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_cmd_edge_cases.test_edit_detects_editor_in_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dotenv.test_colon_separator",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_check_required_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_invalid_toml_syntax_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_deny_envrc_with_special_characters_in_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_with_relative_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_cmd_edge_cases.test_deny_cleans_up_required_files",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_check_required_with_subdirectory_files",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_with_explicit_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: Expected hash 7d97c4772ce1667a51f8d252835f2b831fc2d95fc67b66d73ab92e2ed6566008 based on real path /tmp/pytest-of-root/pytest-0/popen-gw5/test_allow_absolute_path_with_2/real/.envrc, got ['e0c7d23fe2803ab22d96b61093e28db8ae5e418e1d4d4dbb0948137b9ee9c7ba']",
+      "name": "tests.test_cmd_edge_cases.test_allow_absolute_path_with_symlink",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_deny_with_directory_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_invalid_warn_timeout_in_toml_causes_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_check_required_different_shells",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_exec.test_exec_with_cd_in_envrc",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_exec.test_exec_with_file_and_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: exec should fail when bash not in PATH",
+      "name": "tests.test_cmd_edge_cases.test_exec_with_empty_path_environment",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: Expected at least 10 hex escape sequences for unicode chars, got 0",
+      "name": "tests.test_export.test_export_unicode_values",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_invalid_log_filter_regex_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_check_required_missing_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_follows_symlinks",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_allow_required_files_in_subdirectories",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_with_nested_directory_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_cmd_edge_cases.test_exec_command_not_found",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_deny_with_explicit_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_searches_up_directory_tree",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dotenv.test_basic_parsing",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export_fetchurl_edges.test_fetchurl_http_404_status_code_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_missing_home_and_xdg_dirs_causes_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export_fetchurl_edges.test_fetchurl_non_200_status_codes",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export.test_export_variable_name_edge_cases",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_invalid_warn_timeout_env_var_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_deny_removes_allow_entry",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_check_required_single_file_grammar",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_check_required_unknown_shell",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_multiple_different_envrc_files",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_deny_searches_up_directory_tree",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dotenv.test_multiline_values",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_alias_permit",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_cmd_edge_cases.test_exec_file_as_command_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_hook.test_hook_tcsh_complete_output",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "Ruby not available",
+      "name": "tests.test_harvest.test_ruby_layout_scenario",
+      "status": "skipped"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: #x1B[31mdirenv: error unknown target shell '-bash'#x1B[0m",
+      "name": "tests.test_hook.test_hook_shell_name_with_leading_dash",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export_fetchurl_edges.test_fetchurl_invalid_sri_hash_format",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: export failed: #x1B[31mdirenv: error $HOME/allowed_area/project/.envrc is blocked. Run `direnv allow` to approve its content#x1B[0m",
+      "name": "tests.test_config_gaps.test_config_tilde_expansion_in_whitelist_prefix",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export_fetchurl_edges.test_fetchurl_with_valid_sri_hash_success",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_deny_removes_allowed_required_files",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_removes_deny_entry",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export_fetchurl_edges.test_export_unload_when_outside_envrc_tree",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dotenv.test_escape_sequences",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_alias_grant",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_with_explicit_envrc_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_with_required_files_single",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_hook.test_hook_murex_complete_output",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export.test_export_dash_prefix_in_shell_name",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_check_required_missing_envrc_arg",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: #x1B[31mdirenv: error unknown target shell '/bin/bash'#x1B[0m",
+      "name": "tests.test_hook.test_hook_shell_name_with_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_prune_comprehensive.test_prune_removes_outdated_hash_in_allowed_required",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export_fetchurl_edges.test_fetchurl_creates_cas_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: export failed: #x1B[31mdirenv: error $HOME/exact_project/.envrc is blocked. Run `direnv allow` to approve its content#x1B[0m",
+      "name": "tests.test_config_gaps.test_config_tilde_expansion_in_whitelist_exact",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_allow_multiple_required_files_individually_tracked",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dotenv.test_unicode_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_prune_comprehensive.test_prune_with_multiple_outdated_and_current_hashes",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_migration_from_old_config_location",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: stderr: #x1B[31mdirenv: error .envrc file not found#x1B[0m",
+      "name": "tests.test_allow_deny.test_allow_with_explicit_dotenv_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_deny_alias_block",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export_fetchurl_edges.test_export_revert_error_with_corrupted_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_with_required_files_multiple",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_and_config.test_config_whitelist_exact_path_env_suffix",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_exec_command_with_slash_not_found",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: #x1B[31mdirenv: error unknown target shell '-/bin/fish'#x1B[0m",
+      "name": "tests.test_hook.test_hook_shell_name_with_dash_and_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_prune_comprehensive.test_prune_removes_required_entry_for_deleted_file",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export_fetchurl_edges.test_fetchurl_cache_hit_avoids_network_call",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: allow file should contain path to .envrc, got: 2d64cc779e6c6b4e137d835fd858c313f0049fe2b610aad2077fcb6be40dab13",
+      "name": "tests.test_rc_and_config.test_rc_allow_creates_allow_file_with_hash",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_skip_dotenv_deprecation_warning",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_check_required_file_changed_content",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: export failed: #x1B[31mdirenv: error /tmp/pytest-of-root/pytest-0/popen-gw4/test_config_toml_whitelist_pre2/whitelisted_area/deep/nested/subproject/.envrc is blocked. Run `direnv allow` to approve its content#x1B[0m",
+      "name": "tests.test_rc_and_config.test_config_toml_whitelist_prefix_subdirs",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_multiple_times_is_idempotent",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_required_file_not_exists",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_empty_envrc_file",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_deny_alias_disallow",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export_fetchurl_edges.test_fetchurl_large_file_and_permissions",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_check_required_missing_file_path_arg",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_and_config.test_config_load_dotenv_enabled_finds_env_files",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_exec_command_with_slash_not_executable",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_prune_comprehensive.test_prune_with_multiple_valid_and_orphaned_required_dirs",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_and_config.test_config_expandtildepath_home_substitution",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export_fetchurl_edges.test_fetchurl_hash_validation_mismatch",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_toml_fallback_to_config_toml",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: export failed: #x1B[31mdirenv: error /tmp/pytest-of-root/pytest-0/popen-gw4/test_config_whitelist_exact_pa2/exact_match/.envrc is blocked. Run `direnv allow` to approve its content#x1B[0m",
+      "name": "tests.test_rc_and_config.test_config_whitelist_exact_path_directory_form",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_allow_required_file_nonexistent_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_deny_removes_required_files_tracking",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_deny_without_prior_allow",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_check_required_unknown_shell",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_gaps.test_rc_allow_creates_allow_file_with_path_content",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_deny_alias_revoke",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_gaps.test_large_envrc_for_io_copy_in_filehash",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_exec_command_with_slash_found",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: Orphaned entry 7eb416a2f79c38cc48aad186b44a4651d91a604d9e08b0941ac784e63ac585bc was not removed",
+      "name": "tests.test_prune_comprehensive.test_prune_with_large_number_of_files",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_and_config.test_config_toml_backward_compatibility_top_level",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: HOME unset should use call setenv('HOME',v:null)",
+      "name": "tests.test_remaining_shells.test_vim_export_with_unset_v_null",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_gaps.test_filehash_with_fd_open_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_export_fetchurl_edges.test_fetchurl_underscore_to_slash_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_config_gaps.test_config_direnv_toml_takes_precedence_over_config_toml",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: export failed: #x1B[31mdirenv: error /tmp/pytest-of-root/pytest-0/popen-gw4/test_config_whitelist_exact_pa5/exact_with_suffix/.envrc is blocked. Run `direnv allow` to approve its content#x1B[0m",
+      "name": "tests.test_rc_and_config.test_config_whitelist_exact_path_envrc_suffix",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_dump_check_required.test_dump_tcsh_format",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_allow_deny.test_allow_required_files_with_subdirectory_paths",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_check_required_parent_traversal_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_gaps.test_load_dotenv_finds_dot_env_file",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_gaps.test_rc_deny_creates_deny_file_with_path_content",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_default_value_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_comment_lines_ignored",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_exec_command_found_in_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_prune_comprehensive.test_prune_with_nested_path_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: Allow files should contain their respective paths",
+      "name": "tests.test_rc_and_config.test_rc_filehash_includes_path_and_content",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_remaining_shells.test_json_export_with_null_values",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_fetchurl_http_404_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_remaining_shells.test_pwsh_unset_variable_syntax",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_bash_output_format",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_log_status_variant_with_dash",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_check_required_missing_files_produce_export_and_message",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_gaps.test_rc_deny_removes_existing_allow_file",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_colon_separator",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_gaps.test_allowed_checks_whitelist_exact_before_prefix",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_single_vs_double_quotes",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_log_all_combinations_of_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_self_referencing_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_prune_comprehensive.test_prune_preserves_updated_envrc_with_new_hash",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_exec_directory_not_executable",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary_commands.test_apply_dump_too_many_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_json_output_parseable",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_log_error_variant_with_dash",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_dotted_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_exec_command_not_found_empty_path",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary_commands.test_watch_list_invalid_format",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_pwd_set_to_env_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_gaps.test_rc_content_hash_changes_when_file_modified",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_fetchurl_cas_directory_creation",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary_commands.test_show_dump_invalid_data",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_multiline_quoted_values",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: Tab character not properly escaped in TAB_VAR",
+      "name": "tests.test_shell_exporters.test_fish_export_special_characters_escaping",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_shell_exporters.test_systemd_export_special_character_quoting",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_exec_empty_path_element_searches_dot",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: Tab not escaped in TAB_VAR",
+      "name": "tests.test_shell_exporters.test_tcsh_export_special_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_variable_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_edit_missing_editor_env_var",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_shell_exporters.test_systemd_export_edge_case_quoting",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_misc_gaps.test_exec_command_not_found_nonexistent_paths",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_shell_gha.test_gha_dump_invalid_keys_skipped_with_warning",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_gaps.test_rcfromenv_with_nonexistent_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_fetchurl_underscore_replacement_in_hash",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: stderr: #x1B[31mdirenv: error HTTP Error 404: Not Found#x1B[0m\n, stdout:",
+      "name": "tests.test_secondary.test_fetchurl_cache_hit_with_sri_hash",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_secondary.test_dotenv_unclosed_quote_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_sri.test_fetchurl_url_with_slash_in_base64",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_shell_exporters.test_tcsh_dump_syntax",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_prune_comprehensive.test_prune_removes_orphaned_allowed_required_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_status.test_status_envrc_loaded_plain",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: Expected at least 2 watch lines, got 0",
+      "name": "tests.test_status.test_status_multiple_watches_display",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_gaps.test_rc_allow_times_update_error_after_allow_write",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_status.test_status_watch_timestamp_format",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError: Control character 0x01 not hex-escaped",
+      "name": "tests.test_shell_exporters.test_tcsh_export_control_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_stdlib_contains_shell_options_and_comments",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_prune_removes_orphaned_allow_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_stdlib_contains_env_strictness_function",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_prune_with_multiple_orphaned_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_prune_mixed_valid_and_orphaned_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_sri.test_non_200_status_error",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_reload_finds_envrc_in_parent_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_prune_handles_nonexistent_allow_dir",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_stdlib_length_substantial",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_reload_with_symlink_to_envrc",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_watch_dir_gaps.test_watch_dir_nonexistent_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "name": "tests.test_status.test_status_json_single_dash_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_rc_gaps.test_rc_deny_stat_error_on_allow_check",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_prune_removes_outdated_hash_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_reload_touches_envrc",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_reload_only_touches_envrc_not_env",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_utilities.test_prune_with_modified_file_content",
+      "status": "failure"
+    },
+    {
+      "branch": "642420bd4df9",
+      "message": "AssertionError",
+      "name": "tests.test_watch_dir_gaps.test_watch_dir_malformed_direnv_watches",
+      "status": "failure"
+    },
+    {
+      "branch": "591597c191de",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_TestExport_ok_via_dotenv_systemd_expected_escaping_subset",
+      "status": "failure"
+    },
+    {
+      "branch": "591597c191de",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_TestDotEnvExported_via_dotenv_systemd",
+      "status": "failure"
+    },
+    {
+      "branch": "591597c191de",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_TestShellDetection_via_hook_bash_succeeds",
+      "status": "failure"
+    },
+    {
+      "branch": "591597c191de",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_TestBashEscape_via_dotenv_bash_quoting",
+      "status": "failure"
+    },
+    {
+      "branch": "591597c191de",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_TestDotEnvPlain_via_dotenv_systemd",
+      "status": "failure"
+    },
+    {
+      "branch": "591597c191de",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_TestDotEnvMixedMultiline_via_dotenv_systemd",
+      "status": "failure"
+    },
+    {
+      "branch": "591597c191de",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_TestDotEnvYAML_via_dotenv_systemd",
+      "status": "failure"
+    },
+    {
+      "branch": "591597c191de",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_TestVariableExpansion_via_dotenv_systemd_envvar_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "591597c191de",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_TestDotEnvMultiline_via_dotenv_systemd",
+      "status": "failure"
+    },
+    {
+      "branch": "591597c191de",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_TestVariableExpansionWithDefaults_via_dotenv_systemd_defaults",
+      "status": "failure"
+    },
+    {
+      "branch": "591597c191de",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_TestDotEnvNestedJSON_via_dotenv_systemd_preserves_json",
+      "status": "failure"
+    },
+    {
+      "branch": "edffe8618591",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_handling.test_direnv_toml_warn_timeout_loaded_from_direnv_toml",
+      "status": "failure"
+    },
+    {
+      "branch": "edffe8618591",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_handling.test_direnv_log_format_from_toml_applies_to_log_command",
+      "status": "failure"
+    },
+    {
+      "branch": "edffe8618591",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_handling.test_malformed_toml_config_exits_nonzero_and_mentions_parse_error",
+      "status": "failure"
+    },
+    {
+      "branch": "edffe8618591",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_handling.test_whitelist_prefix_expands_tilde_to_home_in_status_output",
+      "status": "failure"
+    },
+    {
+      "branch": "edffe8618591",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_handling.test_invalid_direnv_warn_timeout_logs_error_and_keeps_toml_value",
+      "status": "failure"
+    },
+    {
+      "branch": "edffe8618591",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_handling.test_whitelist_exact_adds_envrc_suffix_when_missing",
+      "status": "failure"
+    },
+    {
+      "branch": "edffe8618591",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_handling.test_log_format_dash_in_toml_disables_output",
+      "status": "failure"
+    },
+    {
+      "branch": "edffe8618591",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_handling.test_direnv_log_format_env_overrides_toml",
+      "status": "failure"
+    },
+    {
+      "branch": "6dc5eb5d8d9e",
+      "message": "test_block_revokes_authorization depends on allow_then_export",
+      "name": "eval.tests.test_envrc_allow_block_export.test_block_revokes_authorization",
+      "status": "skipped"
+    },
+    {
+      "branch": "6dc5eb5d8d9e",
+      "message": "test_export_json_contains_added_var depends on allow_then_export",
+      "name": "eval.tests.test_envrc_allow_block_export.test_export_json_contains_added_var",
+      "status": "skipped"
+    }
+  ],
+  "status_counts": {
+    "failure": 229,
+    "passed": 741,
+    "skipped": 3
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "6af5af3937e4",
+    "642420bd4df9",
+    "660164a15a44",
+    "8a3a462ef617",
+    "06702977bf06",
+    "591597c191de",
+    "edffe8618591",
+    "6fddbf3ce693",
+    "581e95e0e35a",
+    "6dc5eb5d8d9e",
+    "7555036308a6"
+  ],
+  "test_records": 973,
+  "warnings": []
+}
