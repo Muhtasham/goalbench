@@ -217,7 +217,7 @@ scripts/run-sweep.sh --config configs/local-mac-smoke-xhigh.json</code></pre>
 <pre><code>uv run python scripts/run-config.py finalize configs/full-nointernet-xhigh.json \
   --programbench-repo /path/to/ProgramBench</code></pre>
 <p>That run is labeled <code>no-internet</code>: it blocks external lookup and target binary analysis, but still discloses that the scaffold is Codex <code>/goal</code>, not mini-SWE-agent.</p>
-<p>For the banteg-style “tool-starved” criticism, run the no-internet local-tools ablation separately:</p>
+<p>For the “tool-starved” criticism, run the no-internet local-tools ablation separately:</p>
 <pre><code>uv run python scripts/run-config.py watch configs/full-localtools-xhigh.json</code></pre>
 <p>Future split: if this ablation becomes important, split it into <code>base VM tools only</code> and <code>preinstalled reverse-engineering toolbox</code> variants. Keep both clearly non-compliant and separate from the primary no-internet result.</p>
 <p>The committed full-run configs all use <code>gpt-5.5</code>, 20 CPUs, 60GB RAM, and <code>max_parallel=10</code>. There are separate <code>high</code> and <code>xhigh</code> configs for the public no-internet track. Lower parallelism on smaller VMs with <code>scripts/run-sweep.sh --max-parallel N</code> or <code>MAX_PARALLEL=N scripts/start-sweep-tmux.sh ...</code>. Do not mix reasoning modes in one batch.</p>

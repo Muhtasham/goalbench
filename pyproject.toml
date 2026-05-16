@@ -1,7 +1,7 @@
 [project]
 name = "goalbench"
 version = "0.1.0"
-description = "Harness for running Codex goal mode against ProgramBench cleanroom tasks"
+description = "Harness for running Codex goal mode against ProgramBench no-internet tasks"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []

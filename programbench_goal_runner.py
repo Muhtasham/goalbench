@@ -14,10 +14,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 DEFAULT_ROOT = Path.home() / "pb-goal-runs"
-PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal.md"
 NO_INTERNET_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal_no_internet.md"
 LOCAL_TOOLS_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal_local_tools.md"
-OPEN_PROMPT_TEMPLATE = Path(__file__).parent / "prompts" / "programbench_goal_open.md"
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_REASONING_EFFORT = "xhigh"
 DEFAULT_INFERENCE_MODE = "no-internet"
@@ -25,7 +23,6 @@ NO_INTERNET_MODES = {"no-internet", "no-internet-local-tools"}
 MODE_RUN_SEGMENTS = {
     "no-internet": "nointernet",
     "no-internet-local-tools": "localtools",
-    "open-internet": "open",
 }
 BLOCKED_ALWAYS_TOOLS = (
     "brew",
@@ -369,8 +366,6 @@ def prepare(args: argparse.Namespace) -> None:
     codex_user = args.codex_user.strip()
     if args.inference_mode in NO_INTERNET_MODES and not args.strict_egress:
         raise SystemExit(f"{args.inference_mode} mode requires --strict-egress")
-    if args.strict_egress and args.inference_mode == "open-internet":
-        raise SystemExit("strict egress is incompatible with open-internet mode")
     if args.strict_egress and not args.model.startswith("gpt-"):
         raise SystemExit("strict OpenAI egress is only supported for OpenAI/Codex model runs")
     if args.strict_egress and platform.system() != "Linux":
@@ -393,10 +388,9 @@ def prepare(args: argparse.Namespace) -> None:
     guard_dir = instance_dir / "guard-bin"
     helper_dir = instance_dir / "helper-bin"
     cache_dir = instance_dir / "tool-caches"
-    cleanroom_mode = args.inference_mode == "no-internet"
+    primary_no_internet_mode = args.inference_mode == "no-internet"
     local_tools_mode = args.inference_mode == "no-internet-local-tools"
-    no_internet_mode = args.inference_mode in {"no-internet", "no-internet-local-tools"}
-    tool_env = list(TOOL_CACHE_ENV) if cleanroom_mode else list(LOCAL_TOOLS_OFFLINE_ENV) if local_tools_mode else []
+    tool_env = list(LOCAL_TOOLS_OFFLINE_ENV) if local_tools_mode else list(TOOL_CACHE_ENV)
     container_name = f"pb-goal-{slug(prepared_run_name)}-{slug(args.instance_id)}"
     session_name = f"pb-goal-{slug(prepared_run_name)}-{slug(args.instance_id)}"
     image = image_name(args.instance_id)
@@ -440,18 +434,12 @@ def prepare(args: argparse.Namespace) -> None:
             "with the behavioral probe matrix, target-vs-local comparisons, known gaps, and stopping rationale. "
             "Do not mark the goal complete merely because package-submission succeeds.\n"
         )
-        if cleanroom_mode
+        if primary_no_internet_mode
         else (
             "No-internet local-tools research mode: this is not ProgramBench-compliant and must not be reported as a "
             "no-internet benchmark result. Do not use internet, package registries, public source, external docs, or "
             "ProgramBench tests. Local installed tools, binary-analysis tools, tracing tools, and agent-created tools "
             f"are allowed. Probe the target executable at /workspace/executable with {target_command}.\n"
-        )
-        if local_tools_mode
-        else (
-            "Open-internet research mode: this is not ProgramBench-comparable and must not be reported as a public "
-            "benchmark result. You may use internet/package tooling to solve the task, but still write a packageable "
-            f"solution and probe the target executable at /workspace/executable with {target_command}.\n"
         )
     )
     prompt_template = (
@@ -459,7 +447,6 @@ def prepare(args: argparse.Namespace) -> None:
         or {
             "no-internet": NO_INTERNET_PROMPT_TEMPLATE,
             "no-internet-local-tools": LOCAL_TOOLS_PROMPT_TEMPLATE,
-            "open-internet": OPEN_PROMPT_TEMPLATE,
         }[args.inference_mode]
     )
     prompt_template_path = Path(prompt_template).expanduser()
@@ -517,10 +504,8 @@ def prepare(args: argparse.Namespace) -> None:
 
     network_check = (
         f'test "$(docker inspect {shlex.quote(container_name)} --format \'{{{{.HostConfig.NetworkMode}}}}\')" = "none"'
-        if no_internet_mode
-        else "echo 'open-internet mode: target container network is intentionally not no-internet-compliant'"
     )
-    network_arg = "--network none" if no_internet_mode else "--network bridge"
+    network_arg = "--network none"
     write_executable(
         instance_dir / "start-target.sh",
         f"""#!/usr/bin/env bash
@@ -580,13 +565,11 @@ docker exec -u agent {shlex.quote(container_name)} bash -lc '
     base_codex_env = (
         f"PATH={shlex.quote(str(guard_dir))}:$PATH GIT_CEILING_DIRECTORIES={shlex.quote(str(instance_dir))} "
         f"{tool_cache_exports(cache_dir)}"
-        if cleanroom_mode
+        if primary_no_internet_mode
         else (
             f"PATH={shlex.quote(str(guard_dir))}:$PATH GIT_CEILING_DIRECTORIES={shlex.quote(str(instance_dir))} "
             f"{local_tools_offline_exports()}"
         )
-        if local_tools_mode
-        else f"PATH={shlex.quote(str(helper_dir))}:$PATH GIT_CEILING_DIRECTORIES={shlex.quote(str(instance_dir))}"
     )
     codex_env = " ".join(value for value in (base_codex_env, proxy_exports(args.strict_egress)) if value)
     codex_command = f"sudo -H -u {shlex.quote(codex_user)} codex" if codex_user else "codex"
@@ -734,7 +717,7 @@ def main() -> None:
     prepare_parser.add_argument("--docker-memory", default="60g")
     prepare_parser.add_argument(
         "--inference-mode",
-        choices=["no-internet", "no-internet-local-tools", "open-internet"],
+        choices=["no-internet", "no-internet-local-tools"],
         default=DEFAULT_INFERENCE_MODE,
     )
     prepare_parser.add_argument(
@@ -766,7 +749,7 @@ def main() -> None:
     batch_parser.add_argument("--docker-memory", default="60g")
     batch_parser.add_argument(
         "--inference-mode",
-        choices=["no-internet", "no-internet-local-tools", "open-internet"],
+        choices=["no-internet", "no-internet-local-tools"],
         default=DEFAULT_INFERENCE_MODE,
     )
     batch_parser.add_argument(

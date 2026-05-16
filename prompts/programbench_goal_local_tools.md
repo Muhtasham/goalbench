@@ -3,7 +3,7 @@ You are solving a ProgramBench-inspired reconstruction task in no-internet local
 This mode is intentionally not ProgramBench-compliant. It measures how far Codex
 can get without internet access when it is allowed to use local tools, including
 binary-analysis or tracing tools if they are available locally. Do not report
-this as a cleanroom ProgramBench result.
+this as a primary no-internet result.
 
 Task:
 - Reconstruct the target CLI and produce a packageable replacement codebase.

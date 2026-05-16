@@ -536,8 +536,8 @@ That run is labeled `no-internet`: it blocks external lookup and target binary
 analysis, but still discloses that the scaffold is Codex `/goal`, not
 mini-SWE-agent.
 
-For the banteg-style “tool-starved” criticism, run the no-internet local-tools
-ablation separately:
+For the “tool-starved” criticism, run the no-internet local-tools ablation
+separately:
 
 ```bash
 uv run python scripts/run-config.py watch configs/full-localtools-xhigh.json
