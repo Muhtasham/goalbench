@@ -1,0 +1,1191 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 1.1462814059923403
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.11372792700421996
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.14648693200433627
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.11091291799675673
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.11659419600619003
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.12007345299934968
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.7232506259897491
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.08232963501359336
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12758681300329044
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11005173000739887
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09799258700513747
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 15.25076299799548
+    },
+    {
+      "branch": "c2599e7591b2",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.026739678010926582
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.107604058997822
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10844228698988445
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09632095300185028
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.08767417501076125
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 5.8162767340108985
+    },
+    {
+      "branch": "d014dc54f718",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.0371465479984181
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12632847799977753
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12299878000339959
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12603553901135456
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11670385400066152
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 69.47487706399988
+    },
+    {
+      "branch": "f4db9bade42b",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.029424856998957694
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09113874999457039
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10488572799658868
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.08646639800281264
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10496803700516466
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.3446618219895754
+    },
+    {
+      "branch": "4de4727adf7f",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.019674654002301395
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1087160619936185
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09774447500240058
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11192318100074772
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1151314589951653
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.508726715008379
+    },
+    {
+      "branch": "1108111f6267",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.022769952993257903
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12719287099025678
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11139542300952598
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11692361099994741
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.08970806498837192
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.2799193849932635
+    },
+    {
+      "branch": "eba9b739385d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.024146017007296905
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.09944961800647434
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11849891499150544
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12151357300172094
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1286595959973056
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.141005336001399
+    },
+    {
+      "branch": "1348ea81d136",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.017693492001853883
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12196834100177512
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11803162700380199
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10795403498923406
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10597249299462419
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.1327753469959134
+    },
+    {
+      "branch": "becd061accb4",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.015249190997565165
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.08255441300570965
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.07236437199753709
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.0696320629940601
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.07501342199975625
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.1836245260055875
+    },
+    {
+      "branch": "6ac475511579",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.020915938992402516
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10674128899700008
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10381146099825855
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12987145100487396
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10778473599930294
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 17.040931153998827
+    },
+    {
+      "branch": "2340a3323717",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02429279599164147
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11123348199180327
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12776652799220756
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10797880499740131
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1293852520029759
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.257782215005136
+    },
+    {
+      "branch": "dc305c27a9ba",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02938548599195201
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10463790700305253
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09653066900500562
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1122012679988984
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09449071598646697
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 17.612879225998768
+    },
+    {
+      "branch": "6f2d18f2fb17",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.01858253899263218
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.07711875198583584
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09149161800451111
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12205156999698374
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10266252400469966
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.1707188919972396
+    },
+    {
+      "branch": "9bcc06cbc2d0",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.01921107599628158
+    }
+  ],
+  "executable_hash": "f5ae189f0047c7299bdcc0187a217bb099728ee50a79ea4bc08538c623ab0f00",
+  "failed_tests": [
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_launches_with_tmux",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_i_alias",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_displays_percentages",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_with_current_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_deeply_nested",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_with_no_entry_check",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_multiple_paths",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_with_subdirectories",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_shows_file_listing",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_displays_sizes",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_with_apparent_size",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_shows_total_size",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_version_in_header",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_empty_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_special_chars_in_filename",
+      "status": "failure"
+    },
+    {
+      "branch": "c2599e7591b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tmux.test_interactive_with_large_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "Running as root, can't test permission errors",
+      "name": "eval.tests.test_error_cases.test_aggregate_with_permission_denied",
+      "status": "skipped"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "Running as root, can't test permission errors",
+      "name": "eval.tests.test_error_cases.test_mixed_readable_unreadable_files",
+      "status": "skipped"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "AssertionError",
+      "name": "eval.tests.test_error_cases.test_log_file_invalid_path",
+      "status": "failure"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "Running as root, can't test permission errors",
+      "name": "eval.tests.test_input_handling.test_no_permission_handling",
+      "status": "skipped"
+    },
+    {
+      "branch": "d014dc54f718",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tui.test_interactive_mode_launches_in_tmux",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate.test_aggregate_directory_with_subdirectories_only",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate.test_aggregate_single_directory_sorted_by_size",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate_advanced.test_ignore_dirs_multiple_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Expected size for directory tree:      86016 b level0",
+      "name": "tests.test_aggregate_advanced.test_deep_directory_hierarchy",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Expected subdir1 to show 0 b when ignored, got:       4096 b subdir1",
+      "name": "tests.test_aggregate_advanced.test_ignore_dirs_flag_skips_traversed_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate_advanced.test_multiple_roots_all_valid",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_edge_cases.test_empty_directory_no_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_creates_new_file",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_invalid_path_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_with_aggregate_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_appends_to_existing_file",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_records_thread_count",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_with_format",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate.test_aggregate_empty_directory_shows_zero_bytes",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_records_all_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_overwrite_vs_append_multiple_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_aggregate.test_aggregate_multiple_paths_default_sorted",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "Cannot test permission denied when running as root",
+      "name": "tests.test_aggregate_advanced.test_permission_denied_error_handling",
+      "status": "skipped"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_contains_ignore_dirs",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Expected 0 b for symlink, got:       4096 b /tmp/pytest-of-root/pytest-0/popen-gw8/test_symlink_handling2/link.txt",
+      "name": "tests.test_aggregate_advanced.test_symlink_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_aggregate",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_aggregate_no_sort",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_no_total",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_no_subcommand",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_some_not_existing",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot for format metric",
+      "name": "tests.test_harvest.test_format_variants[metric]",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot for format mb",
+      "name": "tests.test_harvest.test_format_variants[mb]",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot for format binary",
+      "name": "tests.test_harvest.test_format_variants[binary]",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_log_file_with_threads",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError",
+      "name": "tests.test_global_flags.test_threads_default_value_logged",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_no_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_aggregate_subcommand_no_sorting",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_no_sort",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_statistics",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot",
+      "name": "tests.test_harvest.test_multiple_paths_broken_link",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot for format bytes",
+      "name": "tests.test_harvest.test_format_variants[bytes]",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "AssertionError: Output doesn't match golden snapshot for format mib",
+      "name": "tests.test_harvest.test_format_variants[mib]",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_sort_139963236786592', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_interactive_sort_toggle",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_no_check_137440070256096', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_interactive_no_entry_check_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_help_132172089006432', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_interactive_help_toggle",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_basic_launch_125193140044896', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_interactive_basic_launch",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_page_nav_131303752483648', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_page_navigation_ctrl_d_ctrl_u",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_delete_multi_136568569937728', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_delete_multiple_marked_files",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_search_case_128406445607616', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_search_glob_case_sensitivity_toggle",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_left_nav_127183150007584', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_interactive_left_back_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_unmark_134420856919456', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_unmark_files_before_deletion",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_delete_dir_126153755467616', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_delete_directory_with_contents",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_mixed_130262240189632', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_delete_mixed_files_and_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_nav_131603594516352', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_delete_navigation_after_deletion",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_subdir_129708125705248', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_mark_and_delete_from_subdirectory",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_trash_130928200047232', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_trash_file_with_ctrl_t",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_empty_129724550419488', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_empty_directory_after_deleting_all",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_search_glob_basic_132241505814752', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_search_glob_basic_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_delete_single_137440067654304', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_delete_single_marked_file",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_cursor_139963234677184', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_interactive_cursor_movement_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_multi_dir_131303750436320', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_multiple_directories_launch",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_home_end_125193137392512', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_navigation_home_end_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_mark_132172086042368', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_interactive_marking_items",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_no_match_136568570147168', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_search_glob_no_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_pgkeys_130262238508416', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_page_down_up_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_count_128406442949984', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_display_toggle_count_column",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_both_cols_131603591943488', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_display_toggle_both_columns",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_wildcard_126153753418272', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_search_glob_wildcard_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_mtime_127183148400896', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_display_toggle_mtime_column",
+      "status": "failure"
+    },
+    {
+      "branch": "f4db9bade42b",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/tui2cli', '-n', 'test_toggle_all_134420855291328', 'stop']' timed out after 5 seconds",
+      "name": "tests.test_interactive.test_toggle_all_items_with_a_key",
+      "status": "failure"
+    },
+    {
+      "branch": "1108111f6267",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_unknown_flag_errors[args1-must_contain1]",
+      "status": "failure"
+    },
+    {
+      "branch": "2340a3323717",
+      "message": "AssertionError",
+      "name": "eval.tests.test_tui_interactive.test_initial_screen_has_header_and_footer",
+      "status": "failure"
+    },
+    {
+      "branch": "2340a3323717",
+      "message": "test_help_pane_toggles_with_question_mark depends on test_initial_screen_has_header_and_footer",
+      "name": "eval.tests.test_tui_interactive.test_help_pane_toggles_with_question_mark",
+      "status": "skipped"
+    },
+    {
+      "branch": "2340a3323717",
+      "message": "test_navigation_j_moves_selection_and_does_not_crash depends on test_initial_screen_has_header_and_footer",
+      "name": "eval.tests.test_tui_interactive.test_navigation_j_moves_selection_and_does_not_crash",
+      "status": "skipped"
+    },
+    {
+      "branch": "2340a3323717",
+      "message": "test_unbound_key_is_ignored_gracefully depends on test_initial_screen_has_header_and_footer",
+      "name": "eval.tests.test_tui_interactive.test_unbound_key_is_ignored_gracefully",
+      "status": "skipped"
+    },
+    {
+      "branch": "2340a3323717",
+      "message": "test_quit_with_q_returns_to_shell_prompt depends on test_initial_screen_has_header_and_footer",
+      "name": "eval.tests.test_tui_interactive.test_quit_with_q_returns_to_shell_prompt",
+      "status": "skipped"
+    },
+    {
+      "branch": "6f2d18f2fb17",
+      "message": "test_interactive_help_overlay_and_quit depends on test_interactive_starts_and_renders",
+      "name": "eval.tests.test_interactive_tui.test_interactive_help_overlay_and_quit",
+      "status": "skipped"
+    },
+    {
+      "branch": "6f2d18f2fb17",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive_tui.test_interactive_starts_and_renders",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 85,
+    "passed": 908,
+    "skipped": 9
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "c2599e7591b2",
+    "d014dc54f718",
+    "f4db9bade42b",
+    "4de4727adf7f",
+    "1108111f6267",
+    "eba9b739385d",
+    "1348ea81d136",
+    "becd061accb4",
+    "6ac475511579",
+    "2340a3323717",
+    "dc305c27a9ba",
+    "6f2d18f2fb17",
+    "9bcc06cbc2d0"
+  ],
+  "test_records": 1002,
+  "warnings": []
+}

@@ -1,0 +1,603 @@
+{
+  "generated_at": "2026-05-16T01:47:16.424354+00:00",
+  "notes": [
+    "Costs are estimates from local Codex token_count logs, not authoritative billed dollars.",
+    "Pricing comes from an official-doc snapshot because there is no supported structured pricing endpoint.",
+    "reasoning_output_tokens is preserved for audit only; it is not added separately to output_tokens.",
+    "long_context_calls counts Codex calls whose last_token_usage.input_tokens exceeded the pricing threshold."
+  ],
+  "pricing_file": "local_state/openai_pricing.json",
+  "pricing_file_sha256": "e23f4e8815e5112ba51cd8ff75375c3737eaa0dd484d8b5e2a1d5c2b4a6b24cc",
+  "pricing_snapshot": {
+    "age_hours": 7.53,
+    "fetched_at": "2026-05-15T18:15:27.458192+00:00",
+    "max_age_hours": 24,
+    "models": {
+      "gpt-5": {
+        "cached_input_usd_per_mtok": 0.125,
+        "input_usd_per_mtok": 1.25,
+        "long_context_cached_input_multiplier": null,
+        "long_context_input_multiplier": null,
+        "long_context_input_threshold_tokens": null,
+        "long_context_output_multiplier": null,
+        "output_usd_per_mtok": 10.0,
+        "source_url": "https://developers.openai.com/api/docs/models/gpt-5"
+      },
+      "gpt-5.4": {
+        "cached_input_usd_per_mtok": 0.25,
+        "input_usd_per_mtok": 2.5,
+        "long_context_cached_input_multiplier": 2.0,
+        "long_context_input_multiplier": 2.0,
+        "long_context_input_threshold_tokens": 272000,
+        "long_context_output_multiplier": 1.5,
+        "output_usd_per_mtok": 15.0,
+        "source_url": "https://developers.openai.com/api/docs/models/gpt-5.4"
+      },
+      "gpt-5.5": {
+        "cached_input_usd_per_mtok": 0.5,
+        "input_usd_per_mtok": 5.0,
+        "long_context_cached_input_multiplier": 2.0,
+        "long_context_input_multiplier": 2.0,
+        "long_context_input_threshold_tokens": 272000,
+        "long_context_output_multiplier": 1.5,
+        "output_usd_per_mtok": 30.0,
+        "source_url": "https://developers.openai.com/api/docs/models/gpt-5.5"
+      }
+    },
+    "notes": [
+      "OpenAI does not currently expose a supported structured pricing endpoint for these model price cards.",
+      "Prices are standard API text token rates per 1M tokens.",
+      "Codex subscription billing and fast-mode multipliers may differ from these API rates.",
+      "Reasoning output tokens are diagnostic and are not added on top of output_tokens.",
+      "When model docs expose a long-context threshold, costs apply that multiplier per Codex token_count call."
+    ],
+    "pricing_api_endpoint": null,
+    "source": "OpenAI model documentation pricing cards",
+    "source_type": "official_docs_scrape"
+  },
+  "rows": [
+    {
+      "cached_input_tokens": 11300608,
+      "calls": 82,
+      "estimated_cost_usd": "8.1737",
+      "input_tokens": 11524765,
+      "instance_id": "abishekvashok__cmatrix.5c082c6",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 46754,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 13144,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-abishekvashok-cmatrix",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T16-57-48-019e2c92-a53b-7812-9636-f39cd624617e.jsonl"
+      ],
+      "total_tokens": 11571519
+    },
+    {
+      "cached_input_tokens": 3705600,
+      "calls": 78,
+      "estimated_cost_usd": "4.3789",
+      "input_tokens": 3872762,
+      "instance_id": "agourlay__zip-password-finder.704700d",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 56344,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 14803,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-agourlay-zip-password-finder",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T16-57-55-019e2c92-c041-7112-9ce3-4cb5ffcc7e15.jsonl"
+      ],
+      "total_tokens": 3929106
+    },
+    {
+      "cached_input_tokens": 12445184,
+      "calls": 140,
+      "estimated_cost_usd": "9.8093",
+      "input_tokens": 12644805,
+      "instance_id": "ajeetdsouza__zoxide.67ca1bc",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 86286,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 19256,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-ajeetdsouza-zoxide",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T16-58-03-019e2c92-dea7-7972-9e9e-188838a063b2.jsonl"
+      ],
+      "total_tokens": 12731091
+    },
+    {
+      "cached_input_tokens": 28845952,
+      "calls": 217,
+      "estimated_cost_usd": "17.8437",
+      "input_tokens": 29101289,
+      "instance_id": "alecthomas__chroma.8d04def",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 71468,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 20659,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-alecthomas-chroma",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T16-58-11-019e2c92-fd5d-7730-884e-3bb0c2ed7cdb.jsonl"
+      ],
+      "total_tokens": 29172757
+    },
+    {
+      "cached_input_tokens": 8389120,
+      "calls": 100,
+      "estimated_cost_usd": "6.6623",
+      "input_tokens": 8529001,
+      "instance_id": "alexpovel__srgn.89f943b",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 58946,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 18113,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-alexpovel-srgn",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T16-58-18-019e2c93-1bf2-70c1-97e8-0dc86a7f57f6.jsonl"
+      ],
+      "total_tokens": 8587947
+    },
+    {
+      "cached_input_tokens": 5589504,
+      "calls": 96,
+      "estimated_cost_usd": "5.7008",
+      "input_tokens": 5818936,
+      "instance_id": "altdesktop__i3-style.f93821b",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 58629,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 13781,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-altdesktop-i3-style",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T16-58-26-019e2c93-3a7b-7f03-9b1e-7e8e924fbbd9.jsonl"
+      ],
+      "total_tokens": 5877565
+    },
+    {
+      "cached_input_tokens": 7799424,
+      "calls": 83,
+      "estimated_cost_usd": "6.6688",
+      "input_tokens": 7986374,
+      "instance_id": "ammarabouzor__tui-journal.2b4540d",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 61144,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 14941,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-ammarabouzor-tui-journal",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T16-58-34-019e2c93-5834-74c3-b2ff-92d9d7ff90d7.jsonl"
+      ],
+      "total_tokens": 8047518
+    },
+    {
+      "cached_input_tokens": 11556480,
+      "calls": 147,
+      "estimated_cost_usd": "9.1134",
+      "input_tokens": 11755489,
+      "instance_id": "anordal__shellharden.6a6ffd4",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 78003,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 19208,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-anordal-shellharden",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T16-58-42-019e2c93-76bf-7730-a044-c77eb555fa1b.jsonl"
+      ],
+      "total_tokens": 11833492
+    },
+    {
+      "cached_input_tokens": 6466816,
+      "calls": 106,
+      "estimated_cost_usd": "5.2710",
+      "input_tokens": 6570087,
+      "instance_id": "antonmedv__fx.86d0d34",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 50708,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 15114,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-antonmedv-fx",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T16-58-50-019e2c93-959c-78f0-aa99-78a963d5ef01.jsonl"
+      ],
+      "total_tokens": 6620795
+    },
+    {
+      "cached_input_tokens": 6773248,
+      "calls": 104,
+      "estimated_cost_usd": "6.6875",
+      "input_tokens": 7027112,
+      "instance_id": "antonmedv__walk.bf802ef",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 67719,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 22191,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-antonmedv-walk",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T16-58-57-019e2c93-b432-7dd2-88c6-79845ed558d2.jsonl"
+      ],
+      "total_tokens": 7094831
+    },
+    {
+      "cached_input_tokens": 10909952,
+      "calls": 134,
+      "estimated_cost_usd": "8.7652",
+      "input_tokens": 11144277,
+      "instance_id": "ariga__atlas.6d81150",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 71287,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 13818,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-ariga-atlas",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-29-50-019e2caf-f6d6-73c1-9fe4-0075beedcf87.jsonl"
+      ],
+      "total_tokens": 11215564
+    },
+    {
+      "cached_input_tokens": 14369792,
+      "calls": 149,
+      "estimated_cost_usd": "10.5547",
+      "input_tokens": 14539866,
+      "instance_id": "arq5x__bedtools2.dd57059",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 83046,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 14191,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-arq5x-bedtools2",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-29-57-019e2cb0-15cd-7e70-b2fc-bf0886c8d2e1.jsonl"
+      ],
+      "total_tokens": 14622912
+    },
+    {
+      "cached_input_tokens": 9018880,
+      "calls": 112,
+      "estimated_cost_usd": "7.9781",
+      "input_tokens": 9274706,
+      "instance_id": "arthursonzogni__json-tui.17a22b6",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 72985,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 25895,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-arthursonzogni-json-tui",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-30-05-019e2cb0-3350-7821-8e1c-7d89e17cc730.jsonl"
+      ],
+      "total_tokens": 9347691
+    },
+    {
+      "cached_input_tokens": 16797824,
+      "calls": 164,
+      "estimated_cost_usd": "13.5573",
+      "input_tokens": 17186447,
+      "instance_id": "ast-grep__ast-grep.dde0fe0",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 106555,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 15540,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-ast-grep-ast-grep",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-30-13-019e2cb0-50ee-76a2-b4d8-e7a422ece27a.jsonl"
+      ],
+      "total_tokens": 17293002
+    },
+    {
+      "cached_input_tokens": 11317888,
+      "calls": 152,
+      "estimated_cost_usd": "8.6778",
+      "input_tokens": 11591767,
+      "instance_id": "astaxie__bat.17d1080",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 54151,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 16483,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-astaxie-bat",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-30-20-019e2cb0-6f70-7682-9b8a-a1e2ba8a3653.jsonl"
+      ],
+      "total_tokens": 11645918
+    },
+    {
+      "cached_input_tokens": 9970560,
+      "calls": 125,
+      "estimated_cost_usd": "8.6752",
+      "input_tokens": 10201384,
+      "instance_id": "astro__deadnix.d590041",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 84527,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 31634,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-astro-deadnix",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-30-28-019e2cb0-8cd4-76c1-8851-c04181983ce0.jsonl"
+      ],
+      "total_tokens": 10285911
+    },
+    {
+      "cached_input_tokens": 8531456,
+      "calls": 105,
+      "estimated_cost_usd": "7.1038",
+      "input_tokens": 8726149,
+      "instance_id": "axodotdev__oranda.27d60c7",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 60478,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 14844,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-axodotdev-oranda",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-30-36-019e2cb0-aabc-7b00-8c03-a23d59686d55.jsonl"
+      ],
+      "total_tokens": 8786627
+    },
+    {
+      "cached_input_tokens": 14243072,
+      "calls": 187,
+      "estimated_cost_usd": "11.2329",
+      "input_tokens": 14561056,
+      "instance_id": "bellard__quickjs.d7ae12a",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 82051,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 22035,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-bellard-quickjs",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-30-43-019e2cb0-c8e1-74f0-9dab-beb07c4689c0.jsonl"
+      ],
+      "total_tokens": 14643107
+    },
+    {
+      "cached_input_tokens": 10813952,
+      "calls": 144,
+      "estimated_cost_usd": "8.6156",
+      "input_tokens": 11061598,
+      "instance_id": "bensadeh__tailspin.6278437",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 65679,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 19477,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-bensadeh-tailspin",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-30-51-019e2cb0-e6f1-7f01-b67d-d8cf248dabc1.jsonl"
+      ],
+      "total_tokens": 11127277
+    },
+    {
+      "cached_input_tokens": 7075712,
+      "calls": 105,
+      "estimated_cost_usd": "6.3646",
+      "input_tokens": 7228546,
+      "instance_id": "blacknon__hwatch.edfcb62",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 68754,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 17916,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-blacknon-hwatch",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-37-06-019e2cb6-a07f-70c1-ae0a-4699bccfcb9f.jsonl"
+      ],
+      "total_tokens": 7297300
+    },
+    {
+      "cached_input_tokens": 4466688,
+      "calls": 80,
+      "estimated_cost_usd": "4.6054",
+      "input_tokens": 4638194,
+      "instance_id": "blake3-team__blake3.15e83a5",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 50484,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 15882,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-blake3-team-blake3",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-54-35-019e2cc6-a332-77b1-9675-6ad290ea16cd.jsonl"
+      ],
+      "total_tokens": 4688678
+    },
+    {
+      "cached_input_tokens": 11143552,
+      "calls": 105,
+      "estimated_cost_usd": "8.8384",
+      "input_tokens": 11332741,
+      "instance_id": "bootandy__dust.62bf1e1",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 77356,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 24855,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-bootandy-dust",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-54-43-019e2cc6-c178-7e92-a3b1-2c10054508be.jsonl"
+      ],
+      "total_tokens": 11410097
+    },
+    {
+      "cached_input_tokens": 25203200,
+      "calls": 224,
+      "estimated_cost_usd": "16.6934",
+      "input_tokens": 25500460,
+      "instance_id": "boyter__scc.515f91c",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 86849,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 26437,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-boyter-scc",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-54-51-019e2cc6-e052-7943-a261-4b19cb28e3f9.jsonl"
+      ],
+      "total_tokens": 25587309
+    },
+    {
+      "cached_input_tokens": 9398656,
+      "calls": 129,
+      "estimated_cost_usd": "7.8926",
+      "input_tokens": 9607796,
+      "instance_id": "brocode__fblog.3b54330",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 71585,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 16912,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-brocode-fblog",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-54-59-019e2cc6-ff61-7063-babd-58cbb0a2bfe9.jsonl"
+      ],
+      "total_tokens": 9679381
+    },
+    {
+      "cached_input_tokens": 11148672,
+      "calls": 121,
+      "estimated_cost_usd": "9.2250",
+      "input_tokens": 11457411,
+      "instance_id": "burntsushi__ripgrep.3b7fd44",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 70232,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 15981,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-burntsushi-ripgrep",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-55-07-019e2cc7-1e4e-71e1-9263-0868befc014c.jsonl"
+      ],
+      "total_tokens": 11527643
+    },
+    {
+      "cached_input_tokens": 12808960,
+      "calls": 166,
+      "estimated_cost_usd": "9.0700",
+      "input_tokens": 12948281,
+      "instance_id": "burntsushi__xsv.f430466",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 65632,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 17885,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-burntsushi-xsv",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-56-16-019e2cc8-2cf6-7231-b657-0b5ee71bd501.jsonl"
+      ],
+      "total_tokens": 13013913
+    },
+    {
+      "cached_input_tokens": 7178496,
+      "calls": 102,
+      "estimated_cost_usd": "6.5061",
+      "input_tokens": 7374544,
+      "instance_id": "byron__dua-cli.8570c15",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 64554,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 18428,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-byron-dua-cli",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-57-26-019e2cc9-3e17-7463-b9a2-0f3cd6dc5b62.jsonl"
+      ],
+      "total_tokens": 7439098
+    },
+    {
+      "cached_input_tokens": 8057984,
+      "calls": 87,
+      "estimated_cost_usd": "6.4023",
+      "input_tokens": 8198670,
+      "instance_id": "canop__broot.d6c798e",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 55664,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 15564,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-canop-broot",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-58-36-019e2cca-4fef-7932-9ffe-a502a1b24f1f.jsonl"
+      ],
+      "total_tokens": 8254334
+    }
+  ],
+  "totals": {
+    "cached_input_tokens": 305327232,
+    "calls": 3544,
+    "estimated_cost_usd": 241.0678,
+    "input_tokens": 311404513,
+    "long_context_calls": 0,
+    "output_tokens": 1927870,
+    "reasoning_output_tokens": 514987,
+    "total_tokens": 313332383
+  },
+  "warnings": []
+}

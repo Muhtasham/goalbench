@@ -118,7 +118,7 @@
       "source": "https://programbench.com/extended/"
     }
   ],
-  "generated_at": "2026-05-16T01:47:40.031266+00:00",
+  "generated_at": "2026-05-16T01:48:47.619199+00:00",
   "groups": [
     {
       "agent": "Codex /goal",
@@ -1128,7 +1128,7 @@
       "error_code": "",
       "estimated_cost_usd": 6.5061,
       "evaluator_problem": false,
-      "evidence_path": "",
+      "evidence_path": "evidence/cpx62-nointernet-xhigh-20260515T165741Z-byron-dua-cli/byron__dua-cli.8570c15/manifest.json",
       "host_machine": "x86_64",
       "host_profile": "smaller VM: 16 CPU / 30g",
       "host_system": "Linux",
