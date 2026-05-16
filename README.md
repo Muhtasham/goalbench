@@ -52,6 +52,102 @@ container, tmux transcript, and `submission.tar.gz`. `max_parallel` controls
 how many Codex task sessions are active at once; evaluation is run
 sequentially by default for cleaner results.
 
+## Run Lifecycle
+
+The runner separates inference, packaging, evaluation, and publishing. Codex is
+only active during inference; ProgramBench scoring happens afterward.
+
+```text
+1. Prepare task
+   programbench_goal_runner.py prepare <instance>
+     ├─ create per-task run directory
+     ├─ write GOAL_PROMPT.md and GOAL_OBJECTIVE.txt
+     ├─ create solution/ as the only useful Codex workspace
+     ├─ create guard-bin/ wrappers for blocked tools
+     ├─ create start-target.sh, start-codex-goal.sh, package-submission.sh
+     └─ record run.json metadata
+
+2. Start black-box target
+   start-target.sh
+     └─ docker run programbench/<instance> with source removed
+
+3. Start Codex /goal
+   start-codex-goal.sh
+     ├─ trust only solution/ in Codex config
+     ├─ tmux new-session -c solution/
+     ├─ codex --enable goals --disable plugins --disable apps \
+     │       -m gpt-5.5 -c model_reasoning_effort=<high|xhigh> \
+     │       -C solution/ --yolo --no-alt-screen
+     ├─ send "/goal <objective>"
+     └─ paste GOAL_PROMPT.md
+
+4. Package submission
+   package-submission.sh
+     └─ tar solution/ into submission.tar.gz
+
+5. Evaluate
+   eval-submission.sh ../ProgramBench
+     └─ ProgramBench evaluates submission.tar.gz with its Docker evaluator
+
+6. Publish
+   build-report.py + privacy-scan.py
+     └─ publish sanitized metrics/evidence only
+```
+
+### Strict Egress
+
+No-internet-style modes run Codex as a dedicated non-root user, then apply a
+UID-scoped Linux egress guard to that user. Root/coordinator still needs normal
+network access for setup, Git, Docker, and publishing; the Codex task user does
+not.
+
+```text
+root / coordinator user
+  ├─ starts tmux and Docker target containers
+  ├─ can pull repo updates and publish GitHub Pages
+  └─ runs ProgramBench evaluation
+
+codex_user
+  ├─ runs Codex CLI inside solution/
+  ├─ sees guard-bin/ first on PATH
+  ├─ can connect to OpenAI/Codex endpoints for model calls
+  └─ cannot fetch GitHub/source/package/internet content
+
+iptables owner rules
+  ├─ match only codex_user UID
+  ├─ allow loopback
+  ├─ allow DNS needed for the allowlist mode
+  ├─ allow HTTPS to resolved OpenAI/Codex allowlist IPs
+  └─ reject the rest
+```
+
+The stricter proxy mode narrows this further: `codex_user` can only reach a
+local loopback proxy, and that proxy is responsible for OpenAI/Codex outbound
+traffic. In both modes, cleanroom enforcement also happens above the network
+layer through `guard-bin/`, target wrapper commands, and the post-run audit.
+
+### Sharded Evaluation
+
+ProgramBench evaluation is usually slower than Codex inference, so full runs can
+ship completed submissions to eval-only machines. Workers never publish.
+
+```text
+goalbench-coordinator-1
+  ├─ owns Codex credentials
+  ├─ runs all /goal inference
+  ├─ writes local_state/ and ~/pb-goal-runs/
+  ├─ creates shard files after inference
+  ├─ may evaluate shard 0, if needed
+  ├─ rsyncs worker eval outputs back
+  └─ publishes the final site once
+
+goalbench-eval-1..N
+  ├─ receive copied run artifacts
+  ├─ run start-eval-shard-tmux.sh for assigned instances
+  ├─ run ProgramBench evaluator sequentially
+  └─ do not run Codex inference or publish
+```
+
 ## Quick Setup
 
 Use a Linux `amd64` VM for serious runs. ProgramBench publishes task images for
