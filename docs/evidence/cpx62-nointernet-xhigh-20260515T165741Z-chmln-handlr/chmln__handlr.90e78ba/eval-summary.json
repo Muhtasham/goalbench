@@ -1,0 +1,1190 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.14076946199929807
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.12403664700104855
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.13814091200765688
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.13356519999797456
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.12317680999694858
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.11281010099628475
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.683911286003422
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1254207019956084
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.129237216009642
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.122676892002346
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13863929000217468
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 6.5876427390030585
+    },
+    {
+      "branch": "ef68f5cfbae5",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.0337710280000465
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10888585599604994
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.0863675639993744
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12204856400785502
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11935224499029573
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 6.290551827012678
+    },
+    {
+      "branch": "3023c86fbab3",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.025412980990950018
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11029863999283407
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10504598999978043
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10587533800571691
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12044205100391991
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 25.446777588003897
+    },
+    {
+      "branch": "08a92821049f",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03708058600022923
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11550564999924973
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11142597599246074
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12411804699513596
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11094101799244527
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.332243044991628
+    },
+    {
+      "branch": "685a7a45a873",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.034566045011160895
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13177627699042205
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10888760599482339
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1019576219987357
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12431153599754907
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.604174081003293
+    },
+    {
+      "branch": "1baede95cff7",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.035834091002470814
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13379302799876314
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12562049100233708
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11832984900684096
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11921847600024194
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.3225047180021647
+    },
+    {
+      "branch": "e39f8fa9d672",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.022330722989863716
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12084790899825748
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12068924999039154
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1188933170051314
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12075234000803903
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.170457376007107
+    },
+    {
+      "branch": "1e5591fef973",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.020892287997412495
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10203751199878752
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1256105809879955
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13133512799686287
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1356677920121001
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.876674739003647
+    },
+    {
+      "branch": "3ddc627ae7eb",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03615147899836302
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.137603973998921
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12442058499436826
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11856419801188167
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.14571712299948558
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 5.572311485011596
+    },
+    {
+      "branch": "7a2c25964028",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03861330900690518
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13884656899608672
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1272941439965507
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12810093100415543
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12366361799649894
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.3436053049954353
+    },
+    {
+      "branch": "c085a3ecefe3",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03965124499518424
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1369819960091263
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13152693799929693
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13004738299059682
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12325502000749111
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.3657956600072794
+    },
+    {
+      "branch": "82d6adef335c",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.0321343550021993
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13815300198621117
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1326899329869775
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12421811600506771
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1231273410085123
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.232006400008686
+    },
+    {
+      "branch": "7f0cdc78441a",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.033636178995948285
+    }
+  ],
+  "executable_hash": "18f7fa9942715dbcc49c63b42c04b525589872b4ec8f6612e6f08b2bd8289c12",
+  "failed_tests": [
+    {
+      "branch": "ef68f5cfbae5",
+      "message": "AssertionError",
+      "name": "eval.tests.test_autocomplete.test_autocomplete_mimes",
+      "status": "failure"
+    },
+    {
+      "branch": "ef68f5cfbae5",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive_coverage.test_autocomplete_desktop_files_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "ef68f5cfbae5",
+      "message": "AssertionError",
+      "name": "eval.tests.test_autocomplete.test_autocomplete_desktop_files",
+      "status": "failure"
+    },
+    {
+      "branch": "ef68f5cfbae5",
+      "message": "AssertionError",
+      "name": "eval.tests.test_final_coverage_push.test_open_with_handler_that_spawns_process",
+      "status": "failure"
+    },
+    {
+      "branch": "ef68f5cfbae5",
+      "message": "AssertionError",
+      "name": "eval.tests.test_final_coverage_push.test_launch_with_no_terminal_available",
+      "status": "failure"
+    },
+    {
+      "branch": "ef68f5cfbae5",
+      "message": "AssertionError",
+      "name": "eval.tests.test_more_edge_cases.test_autocomplete_empty_output",
+      "status": "failure"
+    },
+    {
+      "branch": "ef68f5cfbae5",
+      "message": "AssertionError",
+      "name": "eval.tests.test_open_launch.test_open_text_file",
+      "status": "failure"
+    },
+    {
+      "branch": "ef68f5cfbae5",
+      "message": "AssertionError",
+      "name": "eval.tests.test_open_launch.test_open_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "ef68f5cfbae5",
+      "message": "AssertionError",
+      "name": "eval.tests.test_set_get_unset.test_set_by_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "ef68f5cfbae5",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive_coverage.test_autocomplete_mimes_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3023c86fbab3",
+      "message": "AssertionError",
+      "name": "eval.tests.test_autocomplete.test_autocomplete_desktop_files",
+      "status": "failure"
+    },
+    {
+      "branch": "3023c86fbab3",
+      "message": "AssertionError",
+      "name": "eval.tests.test_autocomplete.test_autocomplete_mimes",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_includes_text_types",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_both_flags_desktop_takes_precedence",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_help_flag_works",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_has_scheme_handlers",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_flag_alone_works",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_includes_common_extensions",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_count_is_consistent",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_add.test_add_same_handler_twice",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_full_output",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_config.test_config_filters_invalid_mime_types",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_config_with_invalid_toml_causes_panic",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_includes_application_types",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_flag_order_d_then_m",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_version_flag_works",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_includes_mime_types_from_mime_db",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_output_matches_golden_exactly",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_has_inode_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_desktop_files_has_filename_and_name",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_without_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_has_custom_mime_types",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_multiple_files_field_code",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_long_argument_list",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_mime_type_and_single_arg",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_config_advanced.test_selector_join_with_newlines",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: Should reject desktop file with empty Exec",
+      "name": "tests.test_launch.test_launch_with_empty_exec_field",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_has_all_four_custom_types",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_output_format_one_per_line",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_no_empty_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_includes_video_types",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_stderr_is_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_extensions_section_comes_first",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_extensions_have_leading_dot",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_very_long_single_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_complex_field_code_substitution",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_wildcard_mime_type",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_special_characters_in_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_unicode_in_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_multiple_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_list.test_list_many_handlers_truncation",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_desktop_files_no_duplicate_filenames",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_desktop_files_format",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_includes_audio_types",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_extensions_valid_format",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_custom_mimes_in_correct_section",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_desktop_files_stderr_is_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: Launch took 2.033705472946167s, should return immediately not wait for handler",
+      "name": "tests.test_launch.test_launch_returns_immediately_handler_runs_in_background",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_handler_for_scheme_handler",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_urls_as_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_mime_types.test_wildcard_pattern_audio_star",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_mime_types.test_application_wildcard",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_launch.test_launch_with_uppercase_u_field_code",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_mime_types.test_unset_specific_with_wildcard_present",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_no_flags_produces_no_output",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_invalid_flag_produces_error",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_mime_types_valid_format",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_mimes_includes_image_types",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_autocomplete_desktop_flag_alone_works",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_list.test_list_malformed_mime_in_config_skipped",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: Open failed with stderr: Error: Io(Os { code: 2, kind: NotFound, message: \"No such file or directory\" })\n, stdout:",
+      "name": "tests.test_open.test_open_single_text_file",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: Open multiple files failed: Error: Io(Os { code: 2, kind: NotFound, message: \"No such file or directory\" })",
+      "name": "tests.test_open.test_open_multiple_files_same_handler_batching",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_mime_types.test_wildcard_pattern_video_star",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: Open directory failed: Error: Io(Os { code: 2, kind: NotFound, message: \"No such file or directory\" })",
+      "name": "tests.test_open.test_open_directory_mime_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: File URL open failed: Error: Io(Os { code: 2, kind: NotFound, message: \"No such file or directory\" })",
+      "name": "tests.test_open.test_open_file_url_scheme",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_mime_types.test_text_wildcard",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_set_get_unset.test_empty_exec_field_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_set_get_unset.test_config_rejects_trailing_whitespace_in_section_header",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_user_edge_cases.test_autocomplete_desktop_files_no_tab_in_json_handler",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: error: Found argument 'autocomplete' which wasn't expected, or isn't valid in this context\n\nIf you tried to supply `autocomplete` as a PATTERN use `-- autocomplete`\n\nUSAGE:\n    executable <SUBCOMMAND>\n\nFor more information try --help",
+      "name": "tests.test_user_edge_cases.test_autocomplete_mimes_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_user_edge_cases.test_list_handlers_format_precise",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: Open multiple types failed: Error: Io(Os { code: 2, kind: NotFound, message: \"No such file or directory\" })",
+      "name": "tests.test_open.test_open_multiple_files_different_handlers",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_user_edge_cases.test_get_handler_specific_overrides_wildcard",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: Should find wildcard handler: Error: Io(Os { code: 2, kind: NotFound, message: \"No such file or directory\" })",
+      "name": "tests.test_user_edge_cases.test_get_handler_wildcard_fallback",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: error: Found argument 'autocomplete' which wasn't expected, or isn't valid in this context\n\nIf you tried to supply `autocomplete` as a PATTERN use `-- autocomplete`\n\nUSAGE:\n    executable <SUBCOMMAND>\n\nFor more information try --help",
+      "name": "tests.test_user_edge_cases.test_list_handlers_autocomplete",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: Handler should appear once, appeared 3 times",
+      "name": "tests.test_user_edge_cases.test_add_duplicate_handler_is_idempotent",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: Open multiple files failed: Error: Io(Os { code: 2, kind: NotFound, message: \"No such file or directory\" })",
+      "name": "tests.test_open.test_open_multiple_files_without_batch_support",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: Open shell script failed: Error: Io(Os { code: 2, kind: NotFound, message: \"No such file or directory\" })",
+      "name": "tests.test_open.test_open_file_with_extension_mime_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError: Open mixed types failed: Error: Io(Os { code: 2, kind: NotFound, message: \"No such file or directory\" })",
+      "name": "tests.test_open.test_open_mixed_urls_and_files",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_user_edge_cases.test_autocomplete_desktop_no_duplicates",
+      "status": "failure"
+    },
+    {
+      "branch": "08a92821049f",
+      "message": "AssertionError",
+      "name": "tests.test_user_edge_cases.test_wildcard_doesnt_match_empty_subtype",
+      "status": "failure"
+    },
+    {
+      "branch": "685a7a45a873",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestListSubcommand.test_list_combined_flags_reverse",
+      "status": "failure"
+    },
+    {
+      "branch": "685a7a45a873",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestListSubcommand.test_list_combined_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "1baede95cff7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_combined_short_flags_equivalent_to_separate",
+      "status": "failure"
+    },
+    {
+      "branch": "3ddc627ae7eb",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized_rs_like.test_ext_desktop_entry_complex_exec_parses_mimetypes_via_autocomplete_list",
+      "status": "failure"
+    },
+    {
+      "branch": "3ddc627ae7eb",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized_rs_like.test_ext_user_apps_wildcard_mimes_resolution_via_set_get",
+      "status": "failure"
+    },
+    {
+      "branch": "7a2c25964028",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env.test_malformed_config_panics_and_exits_nonzero",
+      "status": "failure"
+    },
+    {
+      "branch": "7f0cdc78441a",
+      "message": "test_list_contains_mapping depends on test_add_keeps_default_first",
+      "name": "eval.tests.test_add_list.test_list_contains_mapping",
+      "status": "skipped"
+    },
+    {
+      "branch": "7f0cdc78441a",
+      "message": "test_unset_removes_and_get_fails depends on test_set_writes_mimeapps_list",
+      "name": "eval.tests.test_set_get_unset.test_unset_removes_and_get_fails",
+      "status": "skipped"
+    },
+    {
+      "branch": "7f0cdc78441a",
+      "message": "test_list_all_shows_added_associations depends on test_add_keeps_default_first",
+      "name": "eval.tests.test_add_list.test_list_all_shows_added_associations",
+      "status": "skipped"
+    },
+    {
+      "branch": "7f0cdc78441a",
+      "message": "test_get_returns_handler depends on test_set_writes_mimeapps_list",
+      "name": "eval.tests.test_set_get_unset.test_get_returns_handler",
+      "status": "skipped"
+    }
+  ],
+  "status_counts": {
+    "failure": 97,
+    "passed": 805,
+    "skipped": 4
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "ef68f5cfbae5",
+    "3023c86fbab3",
+    "08a92821049f",
+    "685a7a45a873",
+    "1baede95cff7",
+    "e39f8fa9d672",
+    "1e5591fef973",
+    "3ddc627ae7eb",
+    "7a2c25964028",
+    "c085a3ecefe3",
+    "82d6adef335c",
+    "7f0cdc78441a"
+  ],
+  "test_records": 906,
+  "warnings": []
+}
