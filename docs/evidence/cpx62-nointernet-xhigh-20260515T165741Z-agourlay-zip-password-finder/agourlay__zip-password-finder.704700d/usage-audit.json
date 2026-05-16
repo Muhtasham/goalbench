@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T00:10:40.805232+00:00",
+  "generated_at": "2026-05-16T00:24:25.215140+00:00",
   "notes": [
     "Costs are estimates from local Codex token_count logs, not authoritative billed dollars.",
     "Pricing comes from an official-doc snapshot because there is no supported structured pricing endpoint.",
@@ -9,7 +9,7 @@
   "pricing_file": "local_state/openai_pricing.json",
   "pricing_file_sha256": "e23f4e8815e5112ba51cd8ff75375c3737eaa0dd484d8b5e2a1d5c2b4a6b24cc",
   "pricing_snapshot": {
-    "age_hours": 5.92,
+    "age_hours": 6.15,
     "fetched_at": "2026-05-15T18:15:27.458192+00:00",
     "max_age_hours": 24,
     "models": {
@@ -473,17 +473,36 @@
         "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-54-43-019e2cc6-c178-7e92-a3b1-2c10054508be.jsonl"
       ],
       "total_tokens": 11410097
+    },
+    {
+      "cached_input_tokens": 25203200,
+      "calls": 224,
+      "estimated_cost_usd": "16.6934",
+      "input_tokens": 25500460,
+      "instance_id": "boyter__scc.515f91c",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 86849,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 26437,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-boyter-scc",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T17-54-51-019e2cc6-e052-7943-a261-4b19cb28e3f9.jsonl"
+      ],
+      "total_tokens": 25587309
     }
   ],
   "totals": {
-    "cached_input_tokens": 231531264,
-    "calls": 2715,
-    "estimated_cost_usd": 185.2784,
-    "input_tokens": 236317351,
+    "cached_input_tokens": 256734464,
+    "calls": 2939,
+    "estimated_cost_usd": 201.9718,
+    "input_tokens": 261817811,
     "long_context_calls": 0,
-    "output_tokens": 1513354,
-    "reasoning_output_tokens": 403780,
-    "total_tokens": 237830705
+    "output_tokens": 1600203,
+    "reasoning_output_tokens": 430217,
+    "total_tokens": 263418014
   },
   "warnings": []
 }

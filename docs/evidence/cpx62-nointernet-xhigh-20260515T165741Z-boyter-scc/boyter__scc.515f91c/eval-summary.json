@@ -1,0 +1,1551 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.10265318299934734
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.13613493400043808
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.07404643400514033
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.07478611101396382
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.07511173000966664
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6221012049936689
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.07088584500888828
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.07083977600268554
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.06998276000376791
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.08242846099892631
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 114.91698015399743
+    },
+    {
+      "branch": "06dabfabaea7",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.035598681002738886
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12376896799833048
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1094532330025686
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.06771383600425906
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10642103500140365
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 661.2288389239984
+    },
+    {
+      "branch": "06dabfabaea7",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02652912501071114
+    }
+  ],
+  "executable_hash": "b71a17435750fbed8c54f599756fe79e8f2f10625480f314430f42a96464d92b",
+  "failed_tests": [
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_multilanguage_aggregation_accuracy",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_file_only_comments",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_percent_with_character_count_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_complexity_default_enabled",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_no_duplicates_short_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_dryness_short_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_large_java_file_with_javadoc",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_directory_with_minified_files",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_file_with_mixed_content",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_empty_file_percent_shows_nan",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_classification.test_marker_beyond_1000_bytes_not_detected",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_sort_by_complexity",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_classification.test_generated_default_no_markers",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_multilanguage_directory_comprehensive",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_classification.test_multiple_custom_markers",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_classification.test_generated_csv_format_includes_marker",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_no_duplicates_with_uloc",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_complex_docstring_and_quote_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_no_duplicates_long_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_character_count_short_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_dryness_long_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_ambiguous_m_extension_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_directory_with_multiple_languages",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_large_file_over_2000_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_classification.test_generated_with_gen_flag_adds_markers",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_cost_comparison_shows_both",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_classification.test_minified_default_no_markers",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_classification.test_minified_wide_format_includes_marker",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_by_file_flag_shows_individual_files",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_complexity_calculation_cpp",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_sort_by_blanks",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_debug_and_ci_combination_exact",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_character_count_long_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_character_count_combined_with_percent",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_minified_javascript_long_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_percent_short_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_custom_config",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_by_file_with_percent",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_trace_mode_exact_output",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_preset_local",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_cocomo_with_larger_project",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_classification.test_min_gen_z_flag_detects_both",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_trace_and_ci_combination_exact",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_core_counting.test_include_ext_filter_single_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_mixed_line_endings_handled",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_classification.test_minified_with_min_flag_adds_markers",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_classification.test_minified_by_file_format_includes_marker",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_sort_by_comments",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_uloc_short_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_wide_with_no_complexity_still_shows_complexity",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_preset_with_price_overrides",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_percent_long_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_wide_with_percent",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_verbose_mode_shows_warnings_exact",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_custom_prices",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_high_complexity_scaling",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_verbose_without_warnings_produces_normal_output",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_nonexistent_flags_file_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_single_line_file",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_duplicate_file_args_counted_once",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_verbose_mode_with_include_symlinks_shows_processing",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_sort_by_files_default",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_sloccount_format",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_large_project_cocomo",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_with_cost_comparison",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_sort_invalid_option_defaults_to_files",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_sort_by_name",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_uloc_and_dryness_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_uloc_long_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_verbose_mode_symlink_warning_exact",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_cycles_override",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_ci_mode_versus_normal_separator_difference",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_unicode_filenames_handled",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_debug_shows_include_symlinks_flag_state",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_symlinks_included",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_multiple_exclude_file_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_enabled",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_multiple_exclude_dir_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_by_file_output",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_invalid_preset_fallback",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_cycles_decimal_override",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_trace_timestamp_format_rfc3339",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_by_file_with_sorting",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_ci_mode_exact_output",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_sort_by_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_review_time",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_invalid_regex_in_not_match_continues",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_debug_shows_configuration_and_timing",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_file_with_no_final_newline_counts_correctly",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_trace_mode_short_flag_t",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_extension_filter_case_sensitive",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_multiple_not_match_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_preset_large",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_wide_output_short_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_format_json2_exact_output_match",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_wide_flag_adds_complexity_ratio",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_debug_timestamp_format_rfc3339",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_cost.test_locomo_all_flags_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_normal_mode_uses_unicode_box_drawing",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_wide_with_character_count",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_file_exactly_at_large_line_threshold",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_sort_by_code",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_trace_shows_line_by_line_and_timing",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_very_long_line_10k_chars",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_invalid_flag_exclude_shows_usage",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_verbose_mode_short_flag_v",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_exclude_dir_with_trailing_slash",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_analysis.test_wide_output_long_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_large_file_50k_lines_counted",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_format_multi_tabular_json_to_stdout",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "KeyError: 'Filename'",
+      "name": "tests.test_formats.test_by_file_csv_sort_by_name",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_flags_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_warn_timestamp_format_rfc3339",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_debug_and_verbose_combination_exact",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_debug_mode_exact_output",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_format_html_produces_valid_html_document",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_not_match_complex_regex_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_broken_symlink_file_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_format_sql_insert_exact_output_match",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_format_wide_exact_output_match",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_format_html_table_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_nonexistent_directory_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_size_unit_xkcd_imaginary_shrug_output",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_format_multi_wide_yaml_to_stdout",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_format_multi_csv_json2_to_stdout",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "KeyError: 'Filename'",
+      "name": "tests.test_formats.test_by_file_csv_sort_by_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_percent_flag_adds_percentages",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_by_file_csv_sort_by_blanks",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_trace_multiline_comment_state_transitions",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_format_csv_stream_exact_output_match",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_wide_format_ci_uses_ascii_borders",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_format_multi_htmltable_sql",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_multiple_not_match_flags_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_locomo_enables_complexity_despite_no_complexity_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "examples/denylist directory does not exist",
+      "name": "tests.test_harvest.test_denylist_gitignore",
+      "status": "skipped"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AttributeError: 'NoneType' object has no attribute 'tbody'",
+      "name": "tests.test_formats.test_format_html_contains_language_data",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_json2_locomo_estimates_present",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_tabular_no_hborder_removes_horizontal_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_by_file_json_includes_file_details",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_size_unit_xkcd_bakers_nine_bits_per_byte",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "KeyError: 'Filename'",
+      "name": "tests.test_formats.test_by_file_csv_sort_by_code",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_size_unit_xkcd_intel_pentium_fpu_calculation",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_debug_no_complexity_flag_reflected",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "KeyError: 'Filename'",
+      "name": "tests.test_formats.test_by_file_csv_sort_by_bytes",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_cost_comparison_shows_both_cocomo_and_locomo",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Multiple file output should exactly match golden file",
+      "name": "tests.test_harvest.test_multiple_file_arguments_go",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Output should exactly match golden file for examples directory scan",
+      "name": "tests.test_harvest.test_no_directory_specified_succeeds",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Output should exactly match golden file for regex ignore pattern",
+      "name": "tests.test_harvest.test_regular_expression_ignore",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_multiple_invalid_regexes_in_not_match",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Generated file flagging output should exactly match golden file",
+      "name": "tests.test_harvest.test_flagged_as_gen",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_by_file_csv_produces_per_file_rows",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_sql_locomo_metadata_table_inserted",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_size_unit_xkcd_kb_leap_year_message",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "KeyError: 'Filename'",
+      "name": "tests.test_formats.test_by_file_csv_sort_by_comments",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_debug.test_debug_wide_flag_reflected",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_no_duplicates_csv_format",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Expected 11 rows, got 6",
+      "name": "tests.test_formats.test_by_file_html_includes_file_rows",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_size_unit_xkcd_drive_shrinking_calculation",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_uloc_unique_lines_of_code_calculation",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Should produce exact output when all files excluded by byte threshold",
+      "name": "tests.test_harvest.test_no_large_byte_test",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Multiple directory output should exactly match golden file",
+      "name": "tests.test_harvest.test_multiple_directory_specified",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Shared extension output should exactly match golden file (tests Coq, Verilog, and V detection)",
+      "name": "tests.test_harvest.test_shared_extension_all_languages",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Output should exactly match golden file for processor directory",
+      "name": "tests.test_harvest.test_directory_specified_succeeds",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Minified file flagging output should exactly match golden file",
+      "name": "tests.test_harvest.test_flagged_as_min",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_locomo_cocomo_embedded_html_format",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_min_gen_csv_exclude_dir",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_size_unit_xkcd_kelly_compromise_calculation",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_by_file_openmetrics_per_file_metrics",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Should produce exact output when all files excluded by line threshold",
+      "name": "tests.test_harvest.test_no_large_line_test",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_by_file_with_percent_and_sort",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Single combined regex and multiple separate regexes should produce identical results",
+      "name": "tests.test_harvest.test_multiple_regex_equivalence",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_wide_format_with_character_stats",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_formats.test_format_wide_with_uloc_shows_both_metrics",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_multiple_directories_wide_format_sorted",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_json_no_size_no_cocomo",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_cost_comparison_with_locomo",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: CI mode output should exactly match golden file",
+      "name": "tests.test_harvest.test_ci_param",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Output should exactly match golden file (after filtering DEBUG lines)",
+      "name": "tests.test_harvest.test_multiple_options",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_dryness_uloc_percent_sort_code",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_uloc_without_duplicates",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_empty_results_wide_format",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_sql_insert_format_with_project_name",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_json_byfile_sort_complexity_nococomo",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_remapping.test_shared_extension_coq_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_remapping.test_shared_extension_vlang_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_sloccount_format_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_min_gen_with_no_min_gen_include_ext_wide",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_html_table_byfile_sorted_by_complexity",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_csv_stream_include_ext_multiple_dirs",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_remapping.test_remap_pattern_case_sensitivity",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_no_hborder_with_formats",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_verbose_with_ci_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_format_multi_with_output_flag_interaction",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_size_unit_with_formats",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_remapping.test_remap_1000_byte_inspection_limit_within",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_remapping.test_remap_1000_byte_inspection_limit_beyond",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_remapping.test_shared_extension_verilog_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_remapping.test_shared_extension_mixed_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: no suggestion found in stderr",
+      "name": "tests.test_result_processing.test_similar_flag_version_typo",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: no suggestion found in stderr",
+      "name": "tests.test_result_processing.test_similar_flag_format_typo",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: should have exactly one Usage: line",
+      "name": "tests.test_result_processing.test_similar_flag_no_match_below_threshold",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: no suggestion found in stderr",
+      "name": "tests.test_result_processing.test_similar_flag_locom_typo",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: no suggestion found in stderr",
+      "name": "tests.test_result_processing.test_similar_flag_one_char_difference",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: no suggestion found in stderr",
+      "name": "tests.test_result_processing.test_similar_flags_alphabetical_tiebreaker_exact_ratio",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: no suggestion found in stderr",
+      "name": "tests.test_result_processing.test_similar_flag_sorting_by_ratio_descending",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_remapping.test_remap_unknown_overrides_shebang",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: file or directory could not be read: @/tmp/pytest-of-root/pytest-0/popen-gw10/test_at_file_empty_lines_and_w2/flags_with_blanks.txt",
+      "name": "tests.test_special.test_at_file_empty_lines_and_whitespace",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: file or directory could not be read: @/tmp/pytest-of-root/pytest-0/popen-gw14/test_at_file_basic_flag_readin2/flags.txt",
+      "name": "tests.test_special.test_at_file_basic_flag_reading",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_file_gc_count_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: no suggestion found in stderr",
+      "name": "tests.test_result_processing.test_similar_flag_help_typo",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_worker_configuration_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: no suggestion found in stderr",
+      "name": "tests.test_result_processing.test_similar_flags_multiple_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_analyze_call",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Expected 2 response lines, got 1",
+      "name": "tests.test_special.test_mcp_analyze_with_by_file_option",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_sort_by_complexity",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_sort_by_blank",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_sort_by_comment",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: no suggestion found in stderr",
+      "name": "tests.test_result_processing.test_similar_flag_short_vs_long_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_no_duplicates_parameter",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_at_file_nonexistent_returns_error",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_locomo_parameter",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_at_file_must_be_only_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_initialize_handshake",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_nonexistent_path_error",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_sort_by_name",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_sort_by_bytes",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_sort_by_code",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_exclude_ext_parameter",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_include_ext_parameter",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_no_min_gen_parameter",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_locomo_preset_parameter",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError",
+      "name": "tests.test_special.test_mcp_limit_unlimited",
+      "status": "failure"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "failed on setup with \"worker 'gw17' crashed while running 'tests/test_harvest.py::test_concurrency_no_issues'\"",
+      "name": "tests.test_harvest.test_concurrency_no_issues",
+      "status": "error"
+    },
+    {
+      "branch": "06dabfabaea7",
+      "message": "AssertionError: Single file output should exactly match golden file",
+      "name": "tests.test_harvest.test_file_specified",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "error": 1,
+    "failure": 232,
+    "passed": 242,
+    "skipped": 1
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "06dabfabaea7"
+  ],
+  "test_records": 476,
+  "warnings": []
+}
