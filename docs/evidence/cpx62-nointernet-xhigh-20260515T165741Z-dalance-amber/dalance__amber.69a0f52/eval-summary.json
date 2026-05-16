@@ -1,0 +1,3638 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.16052085200499278
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.13046404199849349
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.14738839599885978
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.1299638939963188
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.13106787999277003
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.1201509270031238
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6385387979971711
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13751602900447324
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12485177000053227
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1237346950074425
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12222772899258416
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 10.927677013009088
+    },
+    {
+      "branch": "12565bd8e77e",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02223951500491239
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1339765000011539
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12915718500153162
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11939904899918474
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12138119200244546
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 104.89173991099233
+    },
+    {
+      "branch": "72a39496391b",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.0379329110000981
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12574087300163228
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13778713300416712
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12207177600066643
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12688111899478827
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.248136563008302
+    },
+    {
+      "branch": "637103d0c48c",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.020042151998495683
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12915984200662933
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13587059899873566
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1310355549940141
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1249869960010983
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.1902675879973685
+    },
+    {
+      "branch": "a9b17933254a",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.026128340992727317
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11484735998965334
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12113949800550472
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1113710719946539
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11928070499561727
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.174960367003223
+    },
+    {
+      "branch": "1c21fab78b73",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03498597099678591
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13756826300232206
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10324101899459492
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11002866600756533
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1272091880091466
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.236895733003621
+    },
+    {
+      "branch": "75e236706598",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.020540850004181266
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13617880699166562
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1152678090002155
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11290336601086892
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12437067698920146
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.2010768499894766
+    },
+    {
+      "branch": "c210af0c2517",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.041494688994134776
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12621710098756012
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12131920800311491
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1265326900029322
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11788897900260054
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 23.042685936001362
+    },
+    {
+      "branch": "c2324775415c",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.04095807998965029
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10125187599624041
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12448466599744279
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11382099200272933
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1323453490040265
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 6.528571074013598
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.026287430999218486
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.14490532600029837
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12495287499041297
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13725411200721283
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12236047298938502
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.581832228010171
+    },
+    {
+      "branch": "42cc3d87770f",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03827941000054125
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12976552799227647
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13181864999933168
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12269181199371815
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13714638199598994
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.7139058289903915
+    },
+    {
+      "branch": "256e7bf0179a",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.024100157999782823
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13531879799847957
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11800629801291507
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12188594399776775
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12727293600619305
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 6.352527119001024
+    },
+    {
+      "branch": "a8301849ac1b",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.027059506988734938
+    }
+  ],
+  "executable_hash": "49b706c7c624a099a928af05f9212971a1d3a59dc79c76a3325ac1efd50e47ba",
+  "failed_tests": [
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_key_from_empty_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_successful_replacement_exit_code",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_no_color_output",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_binary_file_skipped_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_key_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_no_recursive_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_regex_named_capture_groups",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_directory_recursive_search",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_single_file_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_non_interactive_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_regex_search_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_skipped_output",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_statistics_output",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_empty_file_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_no_skip_gitignore",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_gitignore_respected",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_no_matches_found_behavior",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_skip_vcs_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_recursive_directory_default",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_key_from_nonexistent_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_binary_file_with_binary_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_case_sensitive_matching",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_rep_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_file_output_enabled",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_multiple_file_paths",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_literal_search_default",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_current_directory_default",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_verbose_output",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_regex_capture_groups",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_no_skip_vcs_processes_vcs_dirs",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_binary_detection_null_bytes",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_symlink_following",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_size_per_thread_option",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_overlapping_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_no_newline_at_eof",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_max_threads_option",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_bin_check_bytes_option",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_fixed_order_output",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_file_modified_in_place",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_very_long_line",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_empty_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_unicode_content",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_multiline_content",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_special_characters_in_keyword",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_newline_in_replacement_via_escape",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_preserve_time_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_no_preserve_time_updates_timestamp",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_asterisk_in_literal_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_crlf_line_endings",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_mixed_line_endings",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_plus_in_literal_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_whitespace_in_keyword",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_dot_in_literal_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_multiple_matches_in_line",
+      "status": "failure"
+    },
+    {
+      "branch": "12565bd8e77e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_comprehensive.test_large_file_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_ambr_testability.test_no_match_scenario",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_no_skip_vcs_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 'file is empty' error, got: ''",
+      "name": "tests.test_cli_config.test_key_from_file_empty_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected exact error 'Error: file not found @ \"/tmp/pytest-of-root/pytest-0/popen-gw11/test_not_found_error_from_keyw2/does_not_exist.txt\"\\n', got ''",
+      "name": "tests.test_error_paths.test_not_found_error_from_keyword_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_ambr_edge.test_key_from_file_empty_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "IndexError: list index out of range",
+      "name": "tests.test_ambr_edge.test_statistics_output_structure_complete",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Binary exits with code 0 even for invalid regex",
+      "name": "tests.test_errors.test_regex_unclosed_group",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\n'Skip (.gitignore): \"./ignored_file.txt\"'\nGot:\n\"error: Found argument '--skip-gitignore' which wasn't expected, or isn't valid in this context\\n\\nUSAGE:\\n    executable <KEYWORD> <REPLACEMENT> --no-interactive --skipped\\n\\nFor more information try --help\"",
+      "name": "tests.test_ambr_edge.test_skipped_gitignore_files_info_message",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Missing 'Statistics' section header with thread count",
+      "name": "tests.test_cli_config.test_combined_flags_regex_and_statistics",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_no_symlink_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Statistics must show exactly 4 threads with correct formatting",
+      "name": "tests.test_ambr_edge.test_multiple_threads_with_large_workload",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_literal_backslash_in_keyword",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Should exit 0 for empty regex, got 1",
+      "name": "tests.test_errors.test_empty_keyword_regex",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_regex_word_boundaries",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "Times out due to binary behavior - needs investigation",
+      "name": "tests.test_errors.test_key_from_file_permission_denied",
+      "status": "skipped"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Found unreplaced 'keyword' in output",
+      "name": "tests.test_cli_config.test_size_per_thread_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_rep_from_file_permission_denied",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 'bar content\\n', got 'foo content\\n'",
+      "name": "tests.test_error_paths.test_directory_as_target_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_basic_replacement_no_interactive",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_ambr_edge.test_key_from_file_nonexistent_error",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Command failed:",
+      "name": "tests.test_ambr_testability.test_basic_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\n'Statistics\\n  Max threads: <NUM_CPUS>\\n\\n  Consumed time ( busy / total )\\n    Find     : Ts / T.Ts\\n    Sort     : Ts / T.Ts\\n    Replace  : Ts / T.Ts'\nGot:\n''",
+      "name": "tests.test_ambr_edge.test_statistics_with_verbose_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_skip_gitignore_default_behavior",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Binary exits with code 0 for invalid regex",
+      "name": "tests.test_errors.test_regex_invalid_escape_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_concurrent_file_access",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_binary_flag_skips_binary_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_ambr_edge.test_config_file_loading_valid_toml",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_single_file_path_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 'file not found' error, got: ''",
+      "name": "tests.test_cli_config.test_key_from_file_missing_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Missing 'Statistics' section header with thread count",
+      "name": "tests.test_cli_config.test_no_color_flag_suppresses_ansi_codes",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_very_long_keyword",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Should report 'Error: file is empty @' error, got:",
+      "name": "tests.test_errors.test_key_from_file_directory_instead_of_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_combined_flags_preserve_time_and_binary",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected exact error 'Error: file is empty @ \"/dev/null\"\\n', got ''",
+      "name": "tests.test_error_paths.test_read_from_special_device_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_ambr_testability.test_regex_replacement_with_captures",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "Binary panics on --max-threads 0 (index out of bounds) - not fixable",
+      "name": "tests.test_errors.test_max_threads_zero",
+      "status": "skipped"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_very_long_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_multiple_files_in_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_ambr_edge.test_rep_from_file_nonexistent_error",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_multiple_path_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\n'Statistics\\n  Max threads: <NUM_CPUS>\\n\\n  Consumed time ( busy / total )\\n    Find     : Ts / T.Ts\\n    Sort     : Ts / T.Ts\\n    Replace  : Ts / T.Ts'\nGot:\n''",
+      "name": "tests.test_ambr_edge.test_statistics_with_single_thread",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Missing 'Statistics' section header with thread count",
+      "name": "tests.test_cli_config.test_statistics_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_ambr_edge.test_config_file_invalid_toml",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_binary_flag_enables_binary_search",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Binary exits with code 0 for invalid regex",
+      "name": "tests.test_errors.test_regex_unclosed_bracket",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_no_skip_gitignore_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_max_threads_very_large",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_verbose_flag_shows_additional_info",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Binary exits with code 0 for this case",
+      "name": "tests.test_errors.test_rep_from_file_directory_instead_of_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected exact error 'Error: file is empty @ \"/tmp/pytest-of-root/pytest-0/popen-gw11/test_empty_keyword_file2/empty.txt\"\\n', got ''",
+      "name": "tests.test_error_paths.test_empty_keyword_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_ambr_testability.test_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\n'Statistics\\n  Max threads: <NUM_CPUS>\\n\\n  Consumed time ( busy / total )\\n    Find     : Ts / T.Ts\\n    Sort     : Ts / T.Ts\\n    Replace  : Ts / T.Ts'\nGot:\n''",
+      "name": "tests.test_ambr_edge.test_statistics_with_high_thread_count",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_keyword_with_null_byte",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_ambr_edge.test_key_from_file_valid_nonempty",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_ambr_edge.test_config_file_missing",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_no_paths_defaults_to_current_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Binary exits with code 0 for invalid backreference",
+      "name": "tests.test_errors.test_regex_backreference_to_nonexistent_group",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_no_recursive_only_immediate_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 'Max threads: 2' in output, got:",
+      "name": "tests.test_cli_config.test_max_threads_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_key_from_file_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_no_recursive_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_skipped_flag_reports_skipped_files",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_all_vcs_directories_skipped",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_empty_replacement_string",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_preserve_time_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 'Error: File name too long (os error' in stderr, got ''",
+      "name": "tests.test_error_paths.test_very_long_path_error",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Failed:",
+      "name": "tests.test_ambr_testability.test_binary_file_skip",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_ambr_edge.test_rep_from_file_valid_content",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\n'Statistics\\n  Max threads: <NUM_CPUS>\\n\\n  Consumed time ( busy / total )\\n    Find     : Ts / T.Ts\\n    Sort     : Ts / T.Ts\\n    Replace  : Ts / T.Ts'\nGot:\n''",
+      "name": "tests.test_ambr_edge.test_statistics_zero_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_keyword_with_control_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_regex_flag_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Binary exits with code 0 for invalid regex",
+      "name": "tests.test_errors.test_regex_invalid_repetition",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_ambr_edge.test_no_paths_defaults_to_current_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_recursive_default_behavior",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_rep_from_file_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_no_symlink_skips_symlinked_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_vcs_directory_nested_in_regular_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_no_parent_ignore_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_no_skip_vcs_processes_all_vcs_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "Permission tests don't work as root",
+      "name": "tests.test_error_paths.test_permission_denied_error",
+      "status": "skipped"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "Permission tests don't work as root",
+      "name": "tests.test_error_paths.test_permission_denied_from_file",
+      "status": "skipped"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_very_small_file_single_byte",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_file_just_above_mmap_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_gitignore_with_comments_and_blank_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "Binary hangs with empty keyword in literal mode",
+      "name": "tests.test_errors.test_empty_keyword_literal",
+      "status": "skipped"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\n'Statistics\\n  Max threads: <NUM_CPUS>\\n\\n  Consumed time ( busy / total )\\n    Find     : Ts / T.Ts\\n    Sort     : Ts / T.Ts\\n    Replace  : Ts / T.Ts'\nGot:\n''",
+      "name": "tests.test_ambr_edge.test_statistics_with_regex_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_errors.test_backslash_escape_in_literal_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\n'Skip (vcs file)  : \"./.git\"'\nGot:\n\"error: Found argument '--skip-vcs' which wasn't expected, or isn't valid in this context\\n\\nUSAGE:\\n    executable <KEYWORD> <REPLACEMENT> --no-interactive --skipped\\n\\nFor more information try --help\"",
+      "name": "tests.test_ambr_edge.test_skipped_vcs_files_info_message",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 150000 lines of 'REPLACED here\\n', got different content",
+      "name": "tests.test_ambr_edge.test_large_file_triggers_mmap_path",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_skip_vcs_default_behavior",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_regex_flag_capture_groups",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_nested_gitignore_patterns_override_parent",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_both_key_and_rep_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\nXbcdefghijklmnopqrstuvwxyz\nXXXXXXXX\nxyz\nbXbXbX\n\nActual:\nabcdefghijklmnopqrstuvwxyz\naaaaaaaa\nxyz\nbababa",
+      "name": "tests.test_matcher_edge.test_tbm_single_character_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_no_recursive_with_symlink_to_subdir",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_combined_flags_no_recursive_and_ignore_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: File should be modified when --binary flag is used",
+      "name": "tests.test_cli_config.test_bin_check_bytes_parameter",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 'replaced', got: test",
+      "name": "tests.test_gap_filling.test_empty_file_zero_bytes",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_preserve_time_default_updates_timestamp",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 'replaced', got: test",
+      "name": "tests.test_gap_filling.test_binary_check_bytes_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_symlink_to_file_followed_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_broken_symlink",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected .git/config to be processed with --no-skip-vcs, got: git config content",
+      "name": "tests.test_harvest.test_pipeline_finder_no_skip_vcs",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 7 'a' /tmp/pytest-of-root/pytest-3/popen-gw12/test_empty_keyword_literal0/workspace/test.txtments, got: abcabcaaaaabc",
+      "name": "tests.test_harvest.test_matcher_single_char_multiple_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_matcher_edge.test_tbm_tiny_file_smaller_than_thread_size",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected TBM to find all 'abc' matches and /tmp/pytest-of-root/pytest-3/popen-gw12/test_empty_keyword_literal0/workspace/test.txt, got: abcabcaaaaabc",
+      "name": "tests.test_harvest.test_tbm_matcher",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_no_skip_gitignore_processes_all_files",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\nI love COFFEE au lait.\nThe COFFEE is closed.\n\nActual:\nI love caf\u00e9 au lait.\nThe caf\u00e9 is closed.",
+      "name": "tests.test_matcher_edge.test_tbm_utf8_char_boundary_detection_cafe",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_matcher_edge.test_quicksearch_single_thread_vs_multithread",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_gitignore_root_vs_anywhere_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_empty_files_skipped",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_matcher_edge.test_tbm_binary_file_with_all_byte_values",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 'replaced content', got: test content",
+      "name": "tests.test_gap_filling.test_file_with_binary_content_skip",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_symlink_to_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_interactive_state_transition_n_then_y",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_broken_symlink_skipped_gracefully",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_file_with_exact_8192_bytes_content",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: ambs.rs /tmp/pytest-of-root/pytest-3/popen-gw12/test_empty_keyword_literal0/workspace/test.txtment failed, got: This is the amber batch tool",
+      "name": "tests.test_harvest.test_pipeline_matcher_finds_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 3 'abc' /tmp/pytest-of-root/pytest-3/popen-gw12/test_empty_keyword_literal0/workspace/test.txtments at positions 0-3, 3-6, 10-13, got: abcabcbbbaabc",
+      "name": "tests.test_harvest.test_matcher_three_char_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_matcher_edge.test_tbm_pattern_at_file_boundaries",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\n\u79c1\u306f\u30d7\u30ed\u30b0\u30e9\u30de\u30fc\u3067\u3059\n\u65e5\u672c\u8a9eTEST\n\nActual:\n\u79c1\u306f\u30d7\u30ed\u30b0\u30e9\u30de\u30fc\u3067\u3059\n\u65e5\u672c\u8a9e\u30c6\u30b9\u30c8",
+      "name": "tests.test_matcher_edge.test_tbm_utf8_japanese_multi_byte",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_gitignore_wildcard_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_combined_no_recursive_no_symlink",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Long pattern replacement failed",
+      "name": "tests.test_matcher_edge.test_tbm_long_pattern_near_limit",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_parent_gitignore_respected_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_matcher_edge.test_tbm_many_matches_in_small_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 'replaced', got: test",
+      "name": "tests.test_gap_filling.test_file_with_low_bytes_binary_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_cli_config.test_symlink_default_follows",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_symlink_to_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_column_flag_shows_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_mixed_vcs_and_gitignore_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_vcs_directory_skip",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: ambs.rs should be modified, got: This is the amber batch tool",
+      "name": "tests.test_harvest.test_pipeline_matcher_no_match_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 1 'aaa' /tmp/pytest-of-root/pytest-3/popen-gw12/test_empty_keyword_literal0/workspace/test.txtment, got: abcabcaaaaabc",
+      "name": "tests.test_harvest.test_matcher_non_overlapping_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\nHello EARTH world\nEmoji test #x1F680 here\n\nActual:\nHello #x1F30D world\nEmoji test #x1F680 here",
+      "name": "tests.test_matcher_edge.test_tbm_utf8_emoji_four_byte",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_gitignore_directory_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_matcher_edge.test_tbm_multithread_search_correctness",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_whitespace_in_gitignore_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_no_parent_ignore_disables_parent_gitignore",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\nXXXX\nabababab\nabcabcabc\n\nActual:\naaaa\nabababab\nabcabcabc",
+      "name": "tests.test_matcher_edge.test_tbm_overlapping_matches_non_greedy",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\nXXXX bbbb XXXX cccc XXXX\n\nActual:\naaaa bbbb aaaa cccc aaaa",
+      "name": "tests.test_matcher_edge.test_tbm_pattern_all_same_character",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_file_not_binary_with_byte_above_threshold",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\nREPLACED rest of line\n\nActual:\npattern rest of line",
+      "name": "tests.test_matcher_edge.test_tbm_pattern_at_exact_file_start_position_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_nested_directory_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_gitignore_pattern_with_trailing_slash",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_multiple_levels_of_gitignore",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: File 0 not processed correctly: content0 with pattern",
+      "name": "tests.test_harvest.test_pipeline_sorter_output_order",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected full string /tmp/pytest-of-root/pytest-3/popen-gw12/test_empty_keyword_literal0/workspace/test.txtment, got: abcabcaaaaabc",
+      "name": "tests.test_harvest.test_matcher_full_string_match",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_matcher_edge.test_tbm_thread_boundary_patterns_found",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: SSE replacement differs from expected:\nExpected:\nThe quick brown REPLACED jumps over the lazy dog.\nThe quick brown REPLACED jumps over the lazy dog.\nA REPLACED and a wolf met in the forest.\nFoxes are clever animals.\naaaaabbbbb\naaaaa\nbbbbbb\ntest test test test test\n\nActual:\nThe quick brown fox jumps over the lazy dog.\nThe quick brown fox jumps over the lazy dog.\nA fox and a wolf met in the forest.\nFoxes are clever animals.\naaaaabbbbb\naaaaa\nbbbbbb\ntest test test test test",
+      "name": "tests.test_matchers.test_sse_matcher_produces_identical_output",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_matcher_edge.test_tbm_single_thread_forced_path",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_hidden_files_and_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_matcher_edge.test_tbm_file_exactly_size_per_thread",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_deeply_nested_gitignore_files",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\ncommon common common\nFOUND is here\nanother FOUND match\n\nActual:\ncommon common common\npattern# is here\nanother pattern# match",
+      "name": "tests.test_matcher_edge.test_tbm_pattern_ending_with_rare_character",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_file_size_at_mmap_boundary_8192_bytes",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_matcher_edge.test_tbm_thread_end_boundary_break_condition",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_mixed_files_and_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 'replacedcontent', got: testcontent",
+      "name": "tests.test_gap_filling.test_file_starting_with_null_byte",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_multiple_patterns_same_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: d00.t should NOT be ignored (doesn't match d[0-9].t)",
+      "name": "tests.test_harvest.test_ignore_git_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected no-match output, got: ''",
+      "name": "tests.test_harvest.test_matcher_no_match_ascii",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\nb'start\\nmiddle\\nREPLACED'\nActual:\nb'start\\nmiddle\\nend'",
+      "name": "tests.test_matcher_edge.test_tbm_pattern_at_file_end_no_trailing_newline",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Regex replacement differs:\nExpected:\nThe quick brown REPLACED jumps over the lazy dog.\nThe quick brown REPLACED jumps over the lazy dog.\nA REPLACED and a wolf met in the forest.\nREPLACEDes are clever animals.\naaaaabbbbb\naaaaa\nbbbbbb\ntest test test test test\n\nActual:\nThe quick brown fox jumps over the lazy dog.\nThe quick brown fox jumps over the lazy dog.\nA fox and a wolf met in the forest.\nFoxes are clever animals.\naaaaabbbbb\naaaaa\nbbbbbb\ntest test test test test",
+      "name": "tests.test_matchers.test_regex_matcher_with_regex_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\nXXXbXXXcXXXdXXX\nabcabcabcabc\n\nActual:\naaabaaacaaadaaa\nabcabcabcabc",
+      "name": "tests.test_matcher_edge.test_tbm_repeating_character_pattern_md2_calculation",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_multibyte_boundaries.test_long_multibyte_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Original overlapping pattern should be replaced",
+      "name": "tests.test_matchers.test_overlapping_pattern_matching",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Pattern in large file should be replaced",
+      "name": "tests.test_matchers.test_large_file_search_correctness",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\nX\nb\nX\nc\nX\n\nActual:\na\nb\na\nc\na",
+      "name": "tests.test_matcher_edge.test_tbm_very_short_lines_single_char",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: File content mismatch:\nExpected: 'no REPLACED at end'\nActual: 'no newline at end'",
+      "name": "tests.test_matchers.test_file_without_trailing_newline",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 3 prompts for 3 matches, got 0",
+      "name": "tests.test_interactive.test_interactive_multiple_prompts_same_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\nMATCH\nabcxyz\nMATCH\nxbcdef\n\nActual:\nabcdef\nabcxyz\nabcdef\nxbcdef",
+      "name": "tests.test_matcher_edge.test_tbm_memcmp_mismatch_early_exit",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_gitignore_in_subdirectory",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 'replaced', got: test",
+      "name": "tests.test_gap_filling.test_file_with_only_low_bytes",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: ao should NOT be ignored (no .o extension)",
+      "name": "tests.test_harvest.test_ignore_git_directory_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 4 '\u3042' /tmp/pytest-of-root/pytest-3/popen-gw12/test_empty_keyword_literal0/workspace/test.txtments, got: abcabc\u3042\u3044\u3046\u3048\u304aa\u3042\u3042\u3042aaaabc",
+      "name": "tests.test_harvest.test_matcher_utf8_multibyte",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_deep_directory_hierarchy",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Price pattern should be replaced",
+      "name": "tests.test_matchers.test_regex_escaped_dollar_sign",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Japanese pattern should be replaced",
+      "name": "tests.test_matchers.test_unicode_pattern_matching_all_matchers",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_multibyte_boundaries.test_mixed_multibyte_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 1 replacement, got 0",
+      "name": "tests.test_matchers.test_regex_anchor_start_of_line",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected:\nI love COFFEE au lait.\nBest COFFEE in town.\nAnother COFFEE here.\n\nActual:\nI love caf\u00e9 au lait.\nBest caf\u00e9 in town.\nAnother caf\u00e9 here.",
+      "name": "tests.test_matcher_edge.test_quicksearch_utf8_matches_tbm",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Pattern should be replaced in both cases",
+      "name": "tests.test_matchers.test_mmap_bytes_threshold_produces_identical_results",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: File content mismatch:\nExpected:\nTest REPLACED test TeSt\nUPPER lower MiXeD\n\nActual:\nTest TEST test TeSt\nUPPER lower MiXeD",
+      "name": "tests.test_matchers.test_case_sensitive_matching_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_row_flag_shows_byte_offsets",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: File content mismatch:\nExpected:\nThe quick brown REPLACED jumps over the lazy dog.\nThe quick brown REPLACED jumps over the lazy dog.\nA REPLACED and a wolf met in the forest.\nFoxes are clever animals.\naaaaabbbbb\naaaaa\nbbbbbb\ntest test test test test\n\nActual:\nThe quick brown fox jumps over the lazy dog.\nThe quick brown fox jumps over the lazy dog.\nA fox and a wolf met in the forest.\nFoxes are clever animals.\naaaaabbbbb\naaaaa\nbbbbbb\ntest test test test test",
+      "name": "tests.test_matchers.test_quicksearch_default_matcher_simple_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_circular_symlink",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_deeply_nested_gitignore_inheritance",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected regex digit /tmp/pytest-of-root/pytest-3/popen-gw12/test_empty_keyword_literal0/workspace/test.txtment, got: abc123def456ghi",
+      "name": "tests.test_harvest.test_regex_matcher",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected no-match output (VCS skipped), got: ''",
+      "name": "tests.test_harvest.test_pipeline_finder_default_skips_vcs",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_filtering.test_many_files_in_single_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: MARKER in long line should be replaced",
+      "name": "tests.test_matchers.test_long_line_matching",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_column_flag_shows_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_multibyte_boundaries.test_multibyte_at_match_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_broken_symlink_canonicalize_failure",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected 1 replacement, got 0",
+      "name": "tests.test_matchers.test_regex_anchor_end_of_line",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: All 'aaaa' occurrences should be replaced",
+      "name": "tests.test_matchers.test_repeated_pattern_all_occurrences",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Case-insensitive replacement differs:\nExpected:\nREPLACED REPLACED REPLACED REPLACED\nUPPER lower MiXeD\n\nActual:\nTest TEST test TeSt\nUPPER lower MiXeD",
+      "name": "tests.test_matchers.test_regex_case_insensitive_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: TBM replacement differs from expected:\nExpected:\nThe quick brown REPLACED jumps over the lazy dog.\nThe quick brown REPLACED jumps over the lazy dog.\nA REPLACED and a wolf met in the forest.\nFoxes are clever animals.\naaaaabbbbb\naaaaa\nbbbbbb\ntest test test test test\n\nActual:\nThe quick brown fox jumps over the lazy dog.\nThe quick brown fox jumps over the lazy dog.\nA fox and a wolf met in the forest.\nFoxes are clever animals.\naaaaabbbbb\naaaaa\nbbbbbb\ntest test test test test",
+      "name": "tests.test_matchers.test_tbm_matcher_produces_identical_output",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_gap_filling.test_permission_denied_on_file_read",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_multibyte_boundaries.test_utf8_2byte_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_multibyte_boundaries.test_partial_multibyte_no_match",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_default_includes_filename",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_symlink_deduplication_prevents_double_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Digit sequences should be replaced",
+      "name": "tests.test_matchers.test_regex_character_class_digits",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_all_response_replaces_remaining",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Literal '$100' should be replaced",
+      "name": "tests.test_matchers.test_literal_dollar_sign_matching",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_column_with_multiple_matches_per_line",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_column_row_multiple_lines_different_positions",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_without_preserve_time_updates_timestamps",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_no_file_with_column_and_row",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_no_file_with_column_only",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_multibyte_boundaries.test_utf8_3byte_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_multibyte_boundaries.test_ascii_within_multibyte_text",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_n_response_skips_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Email should be replaced",
+      "name": "tests.test_matchers.test_regex_complex_email_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_invalid_key_continues_prompting",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: After 'q', expected exactly 1 prompt, got 0",
+      "name": "tests.test_interactive.test_interactive_quit_stops_immediately",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_row_flag_shows_byte_offsets",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_carriage_return_accepts_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_capital_y_accepts_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_multibyte_boundaries.test_utf8_4byte_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_multibyte_boundaries.test_multibyte_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_space_key_accepts_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_capital_q_exits",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_short_filename_header_padding",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_column_and_row_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_column_and_row_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_row_flag_shows_character_positions",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_capital_n_skips_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_mixed_responses_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_no_file_flag_suppresses_filename",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_whitespace_class",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_regex_replacement_with_capture_groups",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_preserve_time_flag_maintains_timestamps",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_quit_response_exits",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_no_color_flag_strips_ansi_codes",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_capital_a_replaces_all",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_digit_class",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_multiple_symlinks_to_same_file_processed_once",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_character_class_range",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_large_file_multiline_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_line_start_anchor",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_row_with_utf8_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_plus_quantifier",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_file_open_error_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_column_with_multiline_file_varying_newlines",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_no_file_with_row_only",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_exact_count_quantifier",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_single_capture_dollar_notation",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_word_class",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: After 'a', should only see 1 prompt, got 0",
+      "name": "tests.test_interactive.test_interactive_all_replaces_remaining_without_prompts",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_negated_character_class",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_nested_capture_groups",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_line_end_anchor",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_star_quantifier",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_newline_accepts_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_range_quantifier",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_single_capture_braces_notation",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_mixed_named_and_numbered_captures",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_column_with_match_at_line_start",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_substitution_preserves_non_matching_text",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_named_capture_dollar_notation",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_word_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_column_and_row_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_question_quantifier",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_alternation",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_multiple_captures",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_substitution_with_literal_dollar",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_empty_capture_group",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_named_capture_braces_notation",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_capture_with_text_prefix_suffix",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_escaped_metacharacter",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_default_includes_color_codes",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_unicode_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_case_sensitive_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_overlapping_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Positive control failed: 'foo bar baz'",
+      "name": "tests.test_regex.test_regex_lookahead_limitation",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_special_chars_in_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_combined_column_row_no_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_row_with_varying_match_positions",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_column_only_without_row",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_dot_metacharacter",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_match_at_file_start",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_replacer.test_interactive_column_flag_shows_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_multiple_lines_multiline_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Missing line 2 match",
+      "name": "tests.test_interactive.test_interactive_with_column_row_complex_positions",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_non_capturing_group",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_greedy_vs_lazy_quantifier",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Positive control failed: 'apple banana cherry'",
+      "name": "tests.test_regex.test_regex_backreference_in_pattern_limitation",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_multiline_pattern_with_anchors",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_capturing_entire_match",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_pattern_with_pipe_in_character_class",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_newline_in_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_very_long_line_with_match",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_tab_character",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_alternation_with_empty_alternative",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_multiple_matches_same_file",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_binary_file_skipped_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_files_without_matches_unchanged",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_no_file_flag_omits_filenames",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_empty_pattern_matches_between_chars",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_large_capture_group_number",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Expected LF-only, got b'windows\\r\\nlinux\\n'",
+      "name": "tests.test_regex.test_regex_carriage_return_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_basic_fixed_string_single_file_single_match",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_regex.test_regex_very_long_match",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_multiple_files_replaced",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_case_sensitive_matching",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_preserve_time_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_verbose_flag_shows_skipped_files",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_empty_file_skipped",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_recursive_directory_traversal",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_no_recursive_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_output.test_verbose_with_gitignored_files",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_row_only_without_column",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_multiple_matches_same_line_different_positions",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_pipeline_printer.test_match_at_file_end",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_partial_word_match",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_large_file_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_match_at_file_start",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_match_at_file_end",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Output doesn't match golden file.\nExpected:\neval/test_resources/test_interactive/enter_test.txt: foo -> bar\nReplace keyword? [Y]es/[n]o/[a]ll/[q]uit:\nGot:",
+      "name": "tests.test_interactive.test_interactive_enter_key_defaults_to_yes",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_no_trailing_newline_preserved",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_interactive_mode_yes_response",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: interactive mode must show replacement prompt",
+      "name": "tests.test_replace_core.test_interactive_mode_no_response",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_binary_file_processed_with_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: interactive mode must show replacement prompt",
+      "name": "tests.test_replace_core.test_interactive_mode_quit_response",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_replacement_with_keyword_string",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_vcs_directories_skipped_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_vcs_directories_processed_with_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_gitignore_respected",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_no_file_flag_minimal_header",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_gitignore_disabled_with_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_direct_file_path_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Line 0 mismatch: ''",
+      "name": "tests.test_output.test_statistics_with_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_multiple_path_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_empty_replacement_string",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_many_small_files",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_whitespace_in_keyword_and_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_single_character_keyword",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_newline_in_content_preserved",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_special_characters_in_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_unicode_content_preserved",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_single_character_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_very_long_keyword",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_very_long_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_file_with_only_keyword",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_deeply_nested_directories",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_sse_matcher.test_sse_repeated_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_sse_matcher.test_sse_multiple_matches_per_line",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_interactive_mode_all_response",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_replacement_longer_than_keyword",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_adjacent_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_sse_matcher.test_sse_matcher_simple_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_replacement_shorter_than_keyword",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: SSE matcher did not perform replacement",
+      "name": "tests.test_sse_matcher.test_sse_matches_default_matcher",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: SSE matcher did not perform replacement",
+      "name": "tests.test_sse_matcher.test_sse_matches_tbm_matcher",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_sse_matcher.test_sse_single_byte_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: SSE matcher did not perform replacement (expected xyz->Ryz pattern)",
+      "name": "tests.test_sse_matcher.test_sse_single_byte_matches_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_sse_matcher.test_sse_utf8_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Output doesn't match golden file.\nExpected:\neval/test_resources/test_interactive/space_test.txt: foo -> bar\nReplace keyword? [Y]es/[n]o/[a]ll/[q]uit:\nGot:",
+      "name": "tests.test_interactive.test_interactive_space_key_defaults_to_yes",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: SSE matcher did not perform replacement",
+      "name": "tests.test_sse_matcher.test_sse_utf8_matches_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_replace_core.test_symlink_followed_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_escape_tab_in_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: SSE matcher did not perform replacement on repeated 'aa'",
+      "name": "tests.test_sse_matcher.test_sse_repeated_characters_matches_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: SSE matcher did not perform replacement",
+      "name": "tests.test_sse_matcher.test_sse_multiple_per_line_matches_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_escaped_backslash_before_n",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_key_from_file_empty_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_long_replacement_with_many_escapes",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_carriage_return_newline_combination",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_multiple_backslashes_in_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_rep_from_file_with_actual_content",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_sse_matcher.test_sse_case_sensitive_matching",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: SSE matcher did not perform replacement",
+      "name": "tests.test_sse_matcher.test_sse_case_sensitive_matches_default",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_backslash_at_end_of_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_escape_newline_in_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_escape_carriage_return_in_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_escape_backslash_in_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_multiple_escape_sequences_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_key_from_file_not_found_error",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_rep_from_file_not_found_error",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_escape_sequences_with_regular_text",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_newline_carriage_return_combination",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_key_from_file_with_actual_content",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_rep_from_file_with_newline_content",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_key_from_file_with_special_chars",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Interactive prompt mismatch.\nExpected (normalized): /tmp/test_tui_capture/f.txt:testcontent->NEWcontentReplacekeyword?[Y]es/[n]o/[a]ll/[q]uit:\nGot (normalized): Paneisdead(status1,SatMay1602:34:572026)\nRaw screen:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Sat May 16 02:34:57 2026)",
+      "name": "tests.test_util.test_interactive_mode_terminal_state_no",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_escape_sequences_in_multiline_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_empty_replacement_string",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError: Interactive prompt mismatch.\nExpected (normalized): /tmp/test_tui_capture/f.txt:testcontent->NEWcontentReplacekeyword?[Y]es/[n]o/[a]ll/[q]uit:\nGot (normalized): Paneisdead(status1,SatMay1602:34:592026)\nRaw screen:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Sat May 16 02:34:59 2026)",
+      "name": "tests.test_util.test_interactive_mode_terminal_state_quit",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_interactive_mode_terminal_state_all",
+      "status": "failure"
+    },
+    {
+      "branch": "72a39496391b",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_interactive_mode_terminal_state_yes",
+      "status": "failure"
+    },
+    {
+      "branch": "637103d0c48c",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestConflictingFlags.test_regex_and_no_regex",
+      "status": "failure"
+    },
+    {
+      "branch": "c2324775415c",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_pipeline_finder_default_skips_vcs",
+      "status": "failure"
+    },
+    {
+      "branch": "c2324775415c",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_pipeline_finder_not_skip_vcs_includes_git_config",
+      "status": "failure"
+    },
+    {
+      "branch": "c2324775415c",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_ignore_gitignore_skips_patterns_and_allows_exceptions",
+      "status": "failure"
+    },
+    {
+      "branch": "c2324775415c",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_pipeline_matcher_finds_keyword_in_some_files_and_not_others",
+      "status": "failure"
+    },
+    {
+      "branch": "c2324775415c",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_matcher_counts_multiple_occurrences_and_unicode_via_prompts",
+      "status": "failure"
+    },
+    {
+      "branch": "c2324775415c",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized.test_ext_pipeline_sorter_fixed_order_guarantee_by_paths_order",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_no_skip_gitignore",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_flags.test_statistics",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_binary_file_include",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_empty_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_flags.test_no_recursive",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_binary_file_skip",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_flags.test_column_row_output",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_vcs_skip",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_flags.test_no_file",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_gitignore_skip",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_flags.test_no_symlink_real",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_replace.test_basic_replace",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_flags.test_no_symlink",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_replace.test_regex_replace",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_replace.test_recursive_replace",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_flags.test_preserve_time",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_replace.test_regex_capture_replace",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_flags.test_skipped_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_performance.test_many_files",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive.test_interactive_replace_yes",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_replace.test_key_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_replace.test_special_chars_replace",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_replace.test_rep_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_performance.test_large_file",
+      "status": "failure"
+    },
+    {
+      "branch": "1081f3f7c1d4",
+      "message": "AssertionError",
+      "name": "eval.tests.test_replace.test_unicode_replace",
+      "status": "failure"
+    },
+    {
+      "branch": "42cc3d87770f",
+      "message": "AssertionError",
+      "name": "eval.tests.test_ambr_cli.test_help_matches_golden",
+      "status": "failure"
+    },
+    {
+      "branch": "256e7bf0179a",
+      "message": "AssertionError: File /tmp/pytest-of-root/pytest-0/popen-gw5/test_key_and_rep_from_file2/kr/t.txt content mismatch: got='hello world hello\\n' expected='hi world hi\\n'\nstdout=''\nstderr=''\nrc=1",
+      "name": "eval.tests.test_ambr.test_key_and_rep_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "256e7bf0179a",
+      "message": "AssertionError: File /tmp/pytest-of-root/pytest-0/popen-gw4/test_regex_replace_with_captur2/r.txt content mismatch: got='aaa bbb\\n' expected='aaa bbb aaa bbb\\n'\nstdout=''\nstderr=''\nrc=1",
+      "name": "eval.tests.test_ambr.test_regex_replace_with_captures",
+      "status": "failure"
+    },
+    {
+      "branch": "256e7bf0179a",
+      "message": "OSError: [Errno 5] Input/output error",
+      "name": "eval.tests.test_ambr.test_interactive_replace_all_via_stdin",
+      "status": "failure"
+    },
+    {
+      "branch": "256e7bf0179a",
+      "message": "AssertionError: File /tmp/pytest-of-root/pytest-0/popen-gw9/test_unicode_replacement2/u.txt content mismatch: got='caf\u00e9 foo\\n' expected='caf\u00e9 \u0431\\n'\nstdout=''\nstderr=''\nrc=1",
+      "name": "eval.tests.test_ambr.test_unicode_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "256e7bf0179a",
+      "message": "AssertionError: File /tmp/pytest-of-root/pytest-0/popen-gw6/test_binary_skipped_by_default2/b/t.txt content mismatch: got='foo\\n' expected='bar\\n'\nstdout=''\nstderr=''\nrc=1",
+      "name": "eval.tests.test_ambr.test_binary_skipped_by_default",
+      "status": "failure"
+    },
+    {
+      "branch": "256e7bf0179a",
+      "message": "AssertionError: File /tmp/pytest-of-root/pytest-0/popen-gw2/test_non_interactive_replace2/repo/file.txt content mismatch: got='foo bar foo\\n' expected='baz bar baz\\n'\nstdout=''\nstderr=''\nrc=1",
+      "name": "eval.tests.test_ambr.test_non_interactive_replace",
+      "status": "failure"
+    },
+    {
+      "branch": "256e7bf0179a",
+      "message": "AssertionError: File /tmp/pytest-of-root/pytest-0/popen-gw7/test_preserve_time_flag2/p/t.txt content mismatch: got='keepme foo\\n' expected='keepme bar\\n'\nstdout=''\nstderr=''\nrc=1",
+      "name": "eval.tests.test_ambr.test_preserve_time_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchFlags.test_row_flag_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchBasic.test_simple_search_runs_without_error",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchBasic.test_search_no_crash_on_no_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchFlags.test_no_color_flag_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchFlags.test_binary_flag_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: './target/release/ambs'",
+      "name": "eval.tests.test_amber.TestAmbsHelp.test_help_output",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchEdgeCases.test_unicode_content_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchEdgeCases.test_empty_file_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchEdgeCases.test_max_threads_option_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchEdgeCases.test_special_characters_literal_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchEdgeCases.test_size_per_thread_option_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchEdgeCases.test_line_by_match_flag_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchEdgeCases.test_statistics_flag_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchRegex.test_regex_no_match_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchEdgeCases.test_skipped_flag_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchFlags.test_no_recursive_flag_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchBasic.test_search_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: './target/release/ambs'",
+      "name": "eval.tests.test_amber.TestAmbsHelp.test_version_output",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchFlags.test_column_flag_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchRegex.test_regex_search_runs",
+      "status": "failure"
+    },
+    {
+      "branch": "a8301849ac1b",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/target/release/ambs'",
+      "name": "eval.tests.test_search.TestSearchFlags.test_no_file_flag_runs",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 504,
+    "passed": 276,
+    "skipped": 5
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "12565bd8e77e",
+    "72a39496391b",
+    "637103d0c48c",
+    "a9b17933254a",
+    "1c21fab78b73",
+    "75e236706598",
+    "c210af0c2517",
+    "c2324775415c",
+    "1081f3f7c1d4",
+    "42cc3d87770f",
+    "256e7bf0179a",
+    "a8301849ac1b"
+  ],
+  "test_records": 785,
+  "warnings": []
+}

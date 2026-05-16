@@ -1,0 +1,4404 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.29606721800519153
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.1291527489956934
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.1556983880000189
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.13825736699800473
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.11891918400942814
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.13103825200232677
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6614051799988374
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1286257900064811
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1070913239964284
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1141256590053672
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11224375601159409
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 90.98848012900271
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03696000300988089
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13626138199470006
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12186680099694058
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12336538599629421
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12955495400819927
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 6.5199821410060395
+    },
+    {
+      "branch": "e0d0c8beca51",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03802793999784626
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13350965098652523
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12027972600481007
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10759626000071876
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13859615399269387
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.663657808006974
+    },
+    {
+      "branch": "7a224fd708d6",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03203610899799969
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11636918000294827
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09834763100661803
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09222248299920466
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13355741099803708
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.213470563001465
+    },
+    {
+      "branch": "a0002accf5d3",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03553851800097618
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.14156596300017554
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12394812398997601
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11975412801257335
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11831072199856862
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 4.320719440001994
+    },
+    {
+      "branch": "9a72bf2b5f74",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.029562568000983447
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12199658999452367
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11139583699696232
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11662778801110107
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1054743669956224
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 0.13582085199595895
+    },
+    {
+      "branch": "c38555181625",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.026104830001713708
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13566984300268814
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12337357499927748
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12082247399666812
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10712301099556498
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.260869798003114
+    },
+    {
+      "branch": "fa8c1600628e",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02038985000399407
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1331868410052266
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12064583499159198
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1268237230106024
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13385477900737897
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.2511643239995465
+    },
+    {
+      "branch": "d999389a8dce",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03573534700262826
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1322797540051397
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12237466800434049
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12117342300189193
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.118942410001182
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.396427700005006
+    },
+    {
+      "branch": "37cdad8ab074",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02293680100410711
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13611976100946777
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12009578599827364
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.125462668002001
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11083875800250098
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.569922258000588
+    },
+    {
+      "branch": "57d88096f3b4",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.023459889998775907
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1322315949946642
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1262762350088451
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1281259680108633
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1314807570015546
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.331846285989741
+    },
+    {
+      "branch": "04c395e0b5dc",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03320037499361206
+    }
+  ],
+  "executable_hash": "b4327e0cba06d7ba938f92559c8bd0db67322b3662b83c6b7adafc76bab1b7ae",
+  "failed_tests": [
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_paging_with_color_preservation",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_delta_as_pager_fatal_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_mixed_text_and_ansi",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_args_with_lowercase_u_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_overline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_format_no_placeholders",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_hidden_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_custom_unified_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_accumulated_attributes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_with_italic_style",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_csi_clear_sequences_stripped",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_combined_all_options",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_unicode_box",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_rgb_foreground_color",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_stat.test_relative_paths_from_src_subdir",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_commit_meta.test_merge_commit_with_styling",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_with_background_color",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_unicode_box_underline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_binary_content_through_pager",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_underline_with_subparameters",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_unicode_content",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_args_with_uppercase_U_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_osc_window_title_stripped",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_underoverline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_args_without_leading_dash",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_nonexistent_pager_fallback_to_stdout",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_ansi_with_cjk_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_fixed_foreground_color",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_strikethrough_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_commit_meta.test_multiline_commit_message",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_commit_meta.test_numeric_only_sha_with_hyperlinks",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_stat.test_relative_paths_from_lib_subdir",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_very_long_line",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_black_foreground",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_pager_with_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_args_with_U0_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_cursor_movement_no_sgr_style",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_hunk_header_decoration_underline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_box_underline_narrow_width",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_multiple_args",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_dimmed_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_format_author_commit",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_rgb_background_color",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_ansi_with_emoji",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_zero_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_commit_meta.test_commit_style_bold_yellow",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_malformed_diff_args",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_stat.test_relative_paths_from_nested_subdir",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_purple_foreground",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_navigate_mode_with_pager",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_format_timestamp_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_misc_csi_sequences_stripped",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_truncate_long_line_with_indicator",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_unusual_author_names",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_blink_slow_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_with_combined_styles",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_box_underline_width_shorter_than_text",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_empty_args",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_fixed_background_color",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_args_with_U5_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_box_with_underline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_commit_meta.test_commit_decoration_style_box",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_stat.test_relative_paths_with_hyperlinks",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_basic_comparison",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_nested_sgr_codes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_args_with_U7_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_truncate_preserves_ansi_codes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_box_bold",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_renamed_file_with_old_filename",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_long_filename_box",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_white_foreground",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_combined_attributes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_timestamp_custom_output_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_with_ansi_color_styles",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_pager_option_overrides_env_precedence",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_paging_never_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_commit_meta.test_commit_decoration_style_underline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_stat.test_relative_paths_custom_align_width",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_stat.test_diff_stat_followed_by_patch",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_with_dev_null",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_sequential_style_changes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_green_background",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_args_without_leading_dash_gets_prefixed",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_non_sgr_csi_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_truncate_double_width_character",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_box_underline_bold",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_code_with_tabs",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_palette_custom_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_with_rgb_color_styles",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_none",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_lessutfchardef_preservation",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_paging_always_with_pager_env_var",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_commit_meta.test_commit_with_hyperlinks",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_stat.test_relative_paths_small_align_width",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_basic_output",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Error message must match. Got: #x1B[1m#x1B[31merror:#x1B[0m unexpected argument '#x1B[33msrc/#x1B[0m' found\n\n#x1B[1m#x1B[4mUsage:#x1B[0m #x1B[1mexecutable#x1B[0m [OPTIONS] [MINUS_FILE] [PLUS_FILE]\n\nFor more information, try '#x1B[1m--help#x1B[0m'.",
+      "name": "tests.test_external_subcommands.test_rg_with_pattern_and_multiple_args",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_separator_custom_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_rgb_foreground_and_background",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_process_substitution_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_yellow_background",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_empty_and_whitespace_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_with_named_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_underline_width_fixed",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_csi_erase_in_line",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_truncate_at_double_width_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_raw_box",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_paging_always_with_delta_pager_env_var",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Numeric env var config must be parsed and applied correctly",
+      "name": "tests.test_git_config_gaps.test_git_config_env_var_with_numeric_values",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: git show failed: #x1B[1m#x1B[31merror:#x1B[0m unexpected argument '#x1B[33mHEAD:config.json#x1B[0m' found\n\n#x1B[1m#x1B[4mUsage:#x1B[0m #x1B[1mexecutable#x1B[0m [OPTIONS] [MINUS_FILE] [PLUS_FILE]\n\nFor more information, try '#x1B[1m--help#x1B[0m'.",
+      "name": "tests.test_git_config_gaps.test_git_show_json_syntax_highlighting",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_args_unclosed_single_quote",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_cat_file_with_delta_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_with_context_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_process_substitution_with_u_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_malformed_escape_sequences",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_code_style_syntax",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_blue_background",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_timestamp_time_only_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_with_bold_underline_styles",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_truncate_with_csi_sequences",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_overline_width_variable",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_osc_hyperlink_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_box_underline_variable_width",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_bat_output_gaps.test_paging_always_with_pager_option",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Multiple config settings must be applied together correctly",
+      "name": "tests.test_git_config_gaps.test_git_config_multiple_settings_combination",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: git show failed: #x1B[1m#x1B[31merror:#x1B[0m unexpected argument '#x1B[33mHEAD:math.js#x1B[0m' found\n\n#x1B[1m#x1B[4mUsage:#x1B[0m #x1B[1mexecutable#x1B[0m [OPTIONS] [MINUS_FILE] [PLUS_FILE]\n\nFor more information, try '#x1B[1m--help#x1B[0m'.",
+      "name": "tests.test_git_config_gaps.test_git_show_javascript_syntax_highlighting",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_args_unclosed_double_quote",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Error message must match. Got:",
+      "name": "tests.test_external_subcommands.test_rg_just_command",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_ripgrep_json_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_max_syntax_highlighting_length_uses_truncate_str_short",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_process_substitution_with_U_space",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_format_complex_with_alignment",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_purple_background",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_incomplete_256color_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_unified_context_u",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_empty_sgr_parameters",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_separator_empty_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_underline_bold",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: stderr: #x1B[1m#x1B[31merror:#x1B[0m unexpected argument '#x1B[33m--oneline#x1B[0m' found\n\n  #x1B[32mtip:#x1B[0m to pass '#x1B[33m--oneline#x1B[0m' as a value, use '#x1B[32m-- --oneline#x1B[0m'\n\n#x1B[1m#x1B[4mUsage:#x1B[0m #x1B[1mexecutable#x1B[0m [OPTIONS] [MINUS_FILE] [PLUS_FILE]\n\nFor more information, try '#x1B[1m--help#x1B[0m'.",
+      "name": "tests.test_external_subcommands.test_git_log_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_show_function_with_decorations",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: git show failed: #x1B[1m#x1B[31merror:#x1B[0m unexpected argument '#x1B[33mHEAD~1:hello.py#x1B[0m' found\n\n#x1B[1m#x1B[4mUsage:#x1B[0m #x1B[1mexecutable#x1B[0m [OPTIONS] [MINUS_FILE] [PLUS_FILE]\n\nFor more information, try '#x1B[1m--help#x1B[0m'.",
+      "name": "tests.test_git_config_gaps.test_git_show_with_revision_head_tilde",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: No hyperlink found in output: b'commit 9bc3de8 did something\\r\\n\\r\\n'",
+      "name": "tests.test_git_remote_urls.test_github_https_url_auto_detected",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_status_output_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_branch_command",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_ripgrep_json_with_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_separator_style_with_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_cyan_background",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_with_whitespace_in_args",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_process_substitution_with_U0",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_show_output_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_overline_bold",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_italic_text_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_fixed_foreground_colon_separator",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_incomplete_rgb_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_mixed_valid_invalid_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_without_line_numbers_no_n_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: git show on nonexistent file must fail with exit 128, got: 2",
+      "name": "tests.test_git_config_gaps.test_git_show_nonexistent_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_delta_flags_before_git_subcommand",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_config_list",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: No hyperlink found in output: b'commit 6f08f89 fixed bug\\r\\n\\r\\n'",
+      "name": "tests.test_git_remote_urls.test_github_ssh_url_auto_detected",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_with_color",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_file_decoration_underoverline_bold",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_diff_with_refs",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_args_invalid_unified_context_suffix",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_color_recycling_with_multiple_authors",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_rgb_foreground_colon_separator",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_and_syntect.test_diff_large_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_blink_fast_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_white_background",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_single_color_palette",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_only_reset_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_json_file_syntax",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: git show with invalid revision must fail with exit 128, got: 2",
+      "name": "tests.test_git_config_gaps.test_git_show_invalid_revision",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_show_with_side_by_side",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_with_dash_flags_directly_after",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: No hyperlink found for URL without .git: b'commit 48f14f5\\r\\n\\r\\n'",
+      "name": "tests.test_git_remote_urls.test_github_url_without_git_suffix",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_commit_decoration_overline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_reverse_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_process_substitution_invalid_Ux_suffix",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_gaps.test_alternating_single_char_styles",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_fixed_background_colon_separator",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_format_with_truncation",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected (after normalization): '(\\x1b[38;5;15mbrightwhite\\x1b[0m)\\x1b[38;5;15mBright White\\x1b[0m\\n', got: '(\\x1b[97m\\x1b[97m\\x1b[0m)\\x1b[97mBright White\\x1b[0m\\n'",
+      "name": "tests.test_ansi_iterator.test_bright_white_foreground",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_blame.test_blame_palette_rgb_hex_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_rev_parse_plain_output",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_with_function_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_context_zero_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Error message must match. Got: git diff: error: Could not access 'rg'",
+      "name": "tests.test_external_subcommands.test_rg_missing_executable",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_rg_with_multiple_delta_options",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Global config settings must be applied correctly",
+      "name": "tests.test_git_config_gaps.test_git_config_from_global_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected at least 4 highlighted submatches, found 0",
+      "name": "tests.test_grep.test_ripgrep_json_multiple_submatches",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: No hyperlink found for GitLab: b'commit 20a83b7 update\\r\\n\\r\\n'",
+      "name": "tests.test_git_remote_urls.test_gitlab_https_url_auto_detected",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_ansi_iterator.test_rgb_background_colon_separator",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_diff_subcommand.test_diff_empty_diff_args",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_draw_decorations.test_commit_decoration_underoverline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected (after normalization): '(\\x1b[48;5;15mnormal brightwhite\\x1b[0m)\\x1b[48;5;15mBright White BG\\x1b[0m\\n', got: '(\\x1b[107m\\x1b[107m\\x1b[0m)\\x1b[107mBright White BG\\x1b[0m\\n'",
+      "name": "tests.test_ansi_iterator.test_bright_white_background",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected 'added: file' marker for empty file",
+      "name": "tests.test_harvest.test_added_empty_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Binary file marker should appear for qux",
+      "name": "tests.test_harvest.test_binary_files_differ_after_other",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Code line starting with -- should be preserved",
+      "name": "tests.test_harvest.test_triple_dash_at_beginning_of_line_in_code",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_function_context_W_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Tabs should be expanded in delta output",
+      "name": "tests.test_grep.test_git_grep_tabs_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should contain code content",
+      "name": "tests.test_harvest.test_hunk_header_style_underline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_log_with_graph",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Local config settings (side-by-side + line-numbers) must be applied",
+      "name": "tests.test_git_config_gaps.test_git_config_from_local_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_subcommand_with_name",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_ripgrep_output_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_without_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: No hyperlink found for GitLab with groups: b'commit 55ece02\\r\\n\\r\\n'",
+      "name": "tests.test_git_remote_urls.test_gitlab_with_groups",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_hunk_header_style_box_raw",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should contain code content",
+      "name": "tests.test_harvest.test_commit_style_omit",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Missing modified label",
+      "name": "tests.test_harvest.test_binary_files_differ",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_show_function_p_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Rename marker should appear exactly once with correct formatting",
+      "name": "tests.test_harvest.test_renamed_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show file removal marker",
+      "name": "tests.test_harvest.test_file_removal_in_log_output",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should contain code content",
+      "name": "tests.test_harvest.test_multiple_files_in_single_commit",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_case_variations",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show added file",
+      "name": "tests.test_harvest.test_whitespace_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_hunk_header_decoration_style_none",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: git show failed: #x1B[1m#x1B[31merror:#x1B[0m unexpected argument '#x1B[33mHEAD:hello.py#x1B[0m' found\n\n#x1B[1m#x1B[4mUsage:#x1B[0m #x1B[1mexecutable#x1B[0m [OPTIONS] [MINUS_FILE] [PLUS_FILE]\n\nFor more information, try '#x1B[1m--help#x1B[0m'.",
+      "name": "tests.test_git_config_gaps.test_git_show_python_syntax_highlighting",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_log_with_color_option",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_custom_match_styles",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Environment variable config must be applied (Git 2.31 format)",
+      "name": "tests.test_git_config_gaps.test_git_config_env_var_git_2_31_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Match line should use : separator",
+      "name": "tests.test_grep.test_git_grep_separator_keep_option",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: No hyperlink found for SourceHut: b'commit 3e2e0dc\\r\\n\\r\\n'",
+      "name": "tests.test_git_remote_urls.test_sourcehut_url_auto_detected",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_navigate_with_function_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Missing added label",
+      "name": "tests.test_harvest.test_binary_file_added",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Copy marker should appear exactly once with correct formatting",
+      "name": "tests.test_harvest.test_copied_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_grep_with_multiple_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_hunk_header_decoration_style_empty_string",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Hunk markers should be present",
+      "name": "tests.test_harvest.test_hunk_header_style_raw_no_decoration",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hunk_gaps.test_simple_unified_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should contain code content",
+      "name": "tests.test_harvest.test_file_style_omit",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: git show failed: #x1B[1m#x1B[31merror:#x1B[0m unexpected argument '#x1B[33mHEAD:script.sh#x1B[0m' found\n\n#x1B[1m#x1B[4mUsage:#x1B[0m #x1B[1mexecutable#x1B[0m [OPTIONS] [MINUS_FILE] [PLUS_FILE]\n\nFor more information, try '#x1B[1m--help#x1B[0m'.",
+      "name": "tests.test_git_config_gaps.test_git_show_bash_syntax_highlighting",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should report rg not found. Got: #x1B[1m#x1B[31merror:#x1B[0m unexpected argument '#x1B[33msrc/#x1B[0m' found\n\n#x1B[1m#x1B[4mUsage:#x1B[0m #x1B[1mexecutable#x1B[0m [OPTIONS] [MINUS_FILE] [PLUS_FILE]\n\nFor more information, try '#x1B[1m--help#x1B[0m'.",
+      "name": "tests.test_external_subcommands.test_rg_with_delta_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show merge conflict ancestor label",
+      "name": "tests.test_harvest.test_diff_with_merge_conflict_is_not_truncated",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show filename",
+      "name": "tests.test_harvest.test_file_mode_change_unexpected_bits",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Environment variable config must be applied (Git 2.32+ format)",
+      "name": "tests.test_git_config_gaps.test_git_config_env_var_git_2_32_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_before_context_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected empty output, got: '{\"type\":\"summary\",\"data\":{\"elapsed_total\":{\"human\":\"0.000010s\",\"nanos\":10000,\"secs\":0},\"stats\":{\"elapsed\":{\"human\":\"0.000010s\",\"nanos\":10000,\"secs\":0},\"bytes_printed\":0,\"bytes_searched\":1000,\"matched_lines\":0,\"matches\":0,\"searches\":10,\"searches_with_match\":0}}}\\n'",
+      "name": "tests.test_grep.test_ripgrep_json_empty_results",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: No hyperlink found for Codeberg: b'commit 04e59ae\\r\\n\\r\\n'",
+      "name": "tests.test_git_remote_urls.test_codeberg_url_auto_detected",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_separator_keep_with_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Missing removed label",
+      "name": "tests.test_harvest.test_binary_file_removed",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_show_function_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show git's help or error message",
+      "name": "tests.test_external_subcommands.test_git_only_no_subcommand",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_file_with_long_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hunk_gaps.test_combined_diff_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_hunk_header_style_none",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should contain code content",
+      "name": "tests.test_harvest.test_hunk_header_decoration_style_omit",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show removed file indicator",
+      "name": "tests.test_harvest.test_file_deleted_without_preimage",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Numeric config settings must be applied correctly",
+      "name": "tests.test_git_config_gaps.test_git_config_numeric_value_from_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should contain function definition",
+      "name": "tests.test_harvest.test_full_filename_used_to_detect_language",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_hunk_header_style_raw_no_decoration_with_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_after_context_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should pass through git diff's error exit code",
+      "name": "tests.test_main_errors.test_git_diff_invalid_option_exit_code",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_special_characters_in_path",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: 7-char hash should be hyperlinked: b'See commit b355145 for details\\r\\n\\r\\n'",
+      "name": "tests.test_git_remote_urls.test_short_commit_hash_hyperlinked",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_file_without_extension",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Hyperlinks should be generated with specified format",
+      "name": "tests.test_harvest.test_hyperlinks_commit_link_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_multiple_delta_flags_before_git",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_classic_output_type_override",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hunk_gaps.test_empty_hunk",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show first file deletion",
+      "name": "tests.test_harvest.test_files_deleted_without_preimage",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hunk_gaps.test_large_hunk_exceeds_buffer",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_ripgrep_json_multiple_files_interleaved",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_left_right_column_styles",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_empty_format_strings",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_multiple_matches_same_line",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_basic_three_way_merge_conflict",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should pass through git's exit code 129",
+      "name": "tests.test_main_errors.test_git_subcommand_unknown_option",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_side_by_side_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_custom_begin_end_symbols",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_with_long_filename",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_file_with_hyphens_in_path",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_external_subcommands.test_git_with_multiple_dash_c_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should contain code content",
+      "name": "tests.test_harvest.test_commit_style_colored_input_color_is_stripped_under_normal",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hyperlinks.test_commit_hyperlinks_custom_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_basic_multifile_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_filename_with_spaces",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show mode change",
+      "name": "tests.test_harvest.test_file_mode_change_with_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hunk_gaps.test_three_way_merge_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_with_side_by_side_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_only_placeholders",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: missing begin conflict bar",
+      "name": "tests.test_merge_conflict.test_basic_merge_conflict_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_main_errors.test_rg_command_not_found",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep.test_git_grep_ripgrep_format_with_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_with_raw_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_multiple_sequential_conflicts_same_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_with_large_hunk_number",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_without_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_multiple_hunks_in_single_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hunk_gaps.test_raw_style_for_minus_plus",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_added_and_removed_files",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hyperlinks.test_numeric_only_commit_hash_not_hyperlinked",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_minimal_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_ripgrep_format_with_navigate",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_basic_display",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_combined_column_and_line_styles",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should indicate file was renamed",
+      "name": "tests.test_harvest.test_file_mode_change_with_rename",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_two_way_merge_conflict_without_ancestral",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: git diff exits 1 when files differ",
+      "name": "tests.test_main_errors.test_git_diff_with_valid_files",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_binary_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_json_syntax_highlighting",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_word_level_highlighting",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_with_special_character_labels",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_tabs_expanded",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_empty_labels_no_markers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hunk_gaps.test_mixed_prefix_combined_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_alignment_variations",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hyperlinks.test_long_file_path_hyperlinks",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_renamed_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_six_digit_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_custom_format_strings",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_ripgrep_format_multiple_files_blank_separator",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show mode change gaining executable bit",
+      "name": "tests.test_harvest.test_file_mode_change_gain_executable_bit",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_multiple_conflicts_in_single_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_main_errors.test_git_diff_stderr_multiline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_mixed_file_types",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_malformed_conflict_missing_end_marker",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_disabled_with_color_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_with_unicode_labels",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_ripgrep_json_tabs_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_with_hyperlinks",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hunk_gaps.test_zero_style_raw",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_without_flag_no_markers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_wrapped_zero_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_custom_styles",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_custom_file_modified_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hyperlinks.test_file_path_with_spaces_hyperlinks",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_before_context_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show mode change losing executable bit",
+      "name": "tests.test_harvest.test_file_mode_change_lose_executable_bit",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_empty_conflict_section",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_regex_special_characters_in_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_label_with_tab_character",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_markers_without_commit_names",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: begin bar too short or missing",
+      "name": "tests.test_merge_conflict.test_merge_conflict_structural_components",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_with_custom_width",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_ripgrep_json_section_separator",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_side_by_side_with_wrapping",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hyperlinks.test_renamed_file_hyperlinks",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_large_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_side_by_side_odd_width_with_ansi_fill",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_copied_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hyperlinks.test_file_hyperlinks_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_custom_hunk_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_large_merge_conflict",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_after_context_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_regex_escaping_with_pipe_character",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_multiple_hunks_very_far_apart",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_mixed_empty_and_non_empty_labels",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_markers_in_wrong_order",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_single_line_with_word_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_with_file_header_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_ripgrep_json_empty_submatches",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_disabled",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_custom_file_added_removed_labels",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_multiple_hunks",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hyperlinks.test_binary_file_hyperlinks",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_custom_labels_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hyperlinks.test_custom_file_link_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should exit with error code 2 when no themes found",
+      "name": "tests.test_main_errors.test_show_themes_no_themes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_slash_in_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_very_long_line",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_regex_escaping_with_parentheses",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_context_lines_only_hunk",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_commit_names_with_whitespace",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_regex_escaping_with_question_mark",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_both_sides_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_combined_side_by_side_and_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_ripgrep_json_no_line_number",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hyperlinks.test_commit_hyperlinks_short_hash",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_with_side_by_side",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_wide_format_strings",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_custom_file_renamed_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should list many languages",
+      "name": "tests.test_main_errors.test_list_languages",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hyperlinks.test_hyperlinks_side_by_side",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_equals_sign_in_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_custom_context_line_style",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_line_numbers.test_line_numbers_unequal_additions_deletions",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_regex_escaping_with_caret_and_dollar",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_regex_escaping_with_plus_and_asterisk",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_labels_with_unicode",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_options_edge_cases.test_invalid_style_option_exact_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_at_file_start",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_only_additions",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_grep_gaps.test_git_grep_custom_match_styles",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_with_very_long_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_with_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_hyphen_in_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_custom_file_copied_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_hyperlinks.test_hyperlinks_with_line_numbers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should exit with error code 2",
+      "name": "tests.test_main_errors.test_diff_args_parse_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_multiple_files_same_name_different_dirs",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_options_edge_cases.test_git_config_line_numbers_with_cli_override",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_regex_escaping_with_backslash",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_regex_escaping_with_curly_braces",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_empty_hunk_label_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_path_utils.test_path_with_tab_character",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should have side-by-side formatted lines",
+      "name": "tests.test_options_edge_cases.test_delta_features_env_var_replaces_git_config",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_unicode_content",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_only_commit_markers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_colon_in_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_only_file_removed_label_customized",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_with_commit_message",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_with_tab_in_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_options_edge_cases.test_width_negative_exceeds_terminal",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_very_large_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_path_utils.test_file_transformation_sed_style",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_path_utils.test_path_transformation_multiple_substitutions",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_very_long_custom_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_label_with_multiple_regex_special_chars",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_with_commit_message",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_options_edge_cases.test_delta_features_env_var_plus_prefix_adds_to_git_config",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_path_utils.test_relative_paths_with_file_transformation",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_path_utils.test_file_transformation_with_capture_groups",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_merge_conflict.test_merge_conflict_long_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_zero_line_context",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_only_file_renamed_label_customized",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate.test_navigate_incompatible_with_color_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_added_removed_renamed_custom_labels",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_underscore_in_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_options_edge_cases.test_width_expression_negative_result",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_empty_file_addition",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_regex_replacement.test_basic_sed_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected dark-theme with --dark flag",
+      "name": "tests.test_show_themes.test_show_themes_dark_flag_filters_dark_themes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected built-in sample with empty stdin",
+      "name": "tests.test_show_themes_gaps.test_stdin_empty_uses_builtin_sample",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_options_edge_cases.test_nested_custom_features_in_git_config",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_only_file_added_label_customized",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_multiple_commits",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_regex_replacement.test_multiple_flags_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_show_themes_gaps.test_show_themes_empty_theme_name",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_regex_replacement.test_U_flag_swap_greed",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_regex_format_with_all_labels",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected non-zero exit code when no themes found",
+      "name": "tests.test_show_themes.test_show_themes_exit_code_on_no_themes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_file_copied_operation",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_file_copied_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_permission_change_only",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_number_only_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should produce empty output when no themes match --dark filter, got: dark\t1337\ndark\tColdark-Cold\ndark\tColdark-Dark\ndark\tDarkNeon\ndark\tDracula\ndark\tMonokai Extended\ndark\tMonokai Extended Bright\ndark\tMonokai Extended Origin\ndark\tNord\ndark\tOneHalfDark\ndark\tSolarized (dark",
+      "name": "tests.test_show_themes_gaps.test_show_themes_with_only_light_themes_and_dark_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_regex_replacement.test_g_flag_global_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected dark-one theme",
+      "name": "tests.test_show_themes_gaps.test_multiple_dark_themes_shown_with_dark_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_without_commit_only_files",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show themes for one mode only (dark or light), not both or neither",
+      "name": "tests.test_show_themes.test_show_themes_default_uses_computed_color_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_basic_side_by_side_modification",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected theme name in output",
+      "name": "tests.test_show_themes_gaps.test_show_themes_with_very_large_custom_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected 'PREFIX-src/main.rs', got: \nsrc/main.rs\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\u2500\u2500\u2500\u2510\n1: \u2502\n\u2500\u2500\u2500\u2518\nfn main() {\n    println!(\"Hello, world!\");\n    println!(\"Hello, Delta!\");\n}",
+      "name": "tests.test_regex_replacement.test_empty_pattern_matches_start",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected Unicode theme name in output",
+      "name": "tests.test_show_themes_gaps.test_show_themes_with_unicode_theme_name",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_regex_replacement.test_x_flag_ignore_whitespace_in_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_with_regex_special_chars_in_all_labels",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_label_with_leading_and_trailing_spaces",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_with_no_newline_at_eof_markers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected solarized-dark theme in output",
+      "name": "tests.test_show_themes.test_show_themes_displays_themes_from_global_config",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_complex_rename_with_modifications",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_label_containing_quotes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should produce empty output when no themes match --light filter, got: dark\t1337\ndark\tColdark-Cold\ndark\tColdark-Dark\ndark\tDarkNeon\ndark\tDracula\ndark\tMonokai Extended\ndark\tMonokai Extended Bright\ndark\tMonokai Extended Origin\ndark\tNord\ndark\tOneHalfDark\ndark\tSolarized (dark",
+      "name": "tests.test_show_themes_gaps.test_show_themes_with_only_dark_themes_and_light_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_regex_replacement.test_i_flag_case_insensitive",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected 4 themes, found 0",
+      "name": "tests.test_show_themes.test_show_themes_alphabetical_order",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_regex_construction_order",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_additions",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_regex_replacement.test_anchor_start_of_string",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected light-one theme",
+      "name": "tests.test_show_themes_gaps.test_multiple_light_themes_shown_with_light_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_show_themes_gaps.test_show_themes_single_theme_shows_correctly",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_show_themes_gaps.test_show_themes_with_malformed_diff_continues_to_next_theme",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: m flag should not break replacement: \nsrc/main.rs\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\u2500\u2500\u2500\u2510\n1: \u2502\n\u2500\u2500\u2500\u2518\nfn main() {\n    println!(\"Hello, world!\");\n    println!(\"Hello, Delta!\");\n}",
+      "name": "tests.test_regex_replacement.test_m_and_s_flags_accepted",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_unicode_content",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_ampersand_in_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_gaps.test_navigate_binary_file_with_textconv",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_label_containing_single_quotes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_with_tabs",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected built-in sample diff commit hash",
+      "name": "tests.test_show_themes.test_show_themes_displays_sample_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_show_themes_gaps.test_show_themes_writer_output_with_multiple_themes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_regex_replacement.test_capture_groups_in_replacement",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_deletions",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected custom diff filename in output",
+      "name": "tests.test_show_themes.test_show_themes_accepts_stdin_as_custom_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_regex_replacement.test_anchor_end_of_string",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_single_line_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_show_themes_gaps.test_theme_without_dark_or_light_flag_not_shown",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Should show themes for exactly one color mode (dark XOR light)",
+      "name": "tests.test_show_themes_gaps.test_show_themes_mixed_dark_light_without_flag_shows_matching_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Missing theme-000",
+      "name": "tests.test_show_themes_gaps.test_show_themes_with_many_themes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected non-zero exit when no themes found",
+      "name": "tests.test_show_themes.test_show_themes_no_themes_error",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_empty_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_navigate_edge_cases.test_navigate_with_semicolon_in_label",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_new_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_line_fill_method_spaces",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_mixed_changes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected light-theme with --light flag",
+      "name": "tests.test_show_themes.test_show_themes_light_flag_filters_light_themes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_narrow_width",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_show_themes_gaps.test_show_themes_stdin_read_error_fallback",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_with_width_constraint",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_unbalanced_deletions",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_no_newline_at_eof",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected bold ANSI formatting on theme title, got: dark\t1337\ndark\tColdark-Cold\ndark\tColdark-Dark\ndark\tDarkNeon\ndark\tDracula\ndark\tMonokai Extended\ndark\tMonokai Extended Bright\ndark\tMonokai Extended Origin\ndark\tNord\ndark\tOneHalfDark\ndark\tSolarized (dark",
+      "name": "tests.test_show_themes_gaps.test_theme_title_formatting_with_bold_ansi",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Output doesn't match golden file",
+      "name": "tests.test_show_themes_gaps.test_stdin_custom_diff_replaces_builtin_sample",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_show_themes_gaps.test_show_themes_alphabetical_case_insensitive",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected exact message, got:",
+      "name": "tests.test_show_themes.test_show_themes_no_themes_error_exact_message",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected theme header in output",
+      "name": "tests.test_show_themes_gaps.test_show_themes_with_null_bytes_in_diff",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_wrapping_multiline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_line_fill_method_ansi",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_invalid_utf8_mixed_with_valid_multibyte",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_deleted_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_keep_plus_minus_markers",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_truncation_at_exact_char_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_emoji_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_invalid_utf8_exactly_at_truncation_point",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_binary_file",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_unbalanced_additions",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_base16_theme_basic_terminal_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_color_only_mode_applies_diff_highlighting",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_color_name_red_equals_fixed_1",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_color_rgb_encoding",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_color_name_yellow_equals_fixed_3",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_color_name_cyan_equals_fixed_6",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_multiple_hunks",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_invalid_utf8_no_truncation",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_very_long_lines_with_wrapping",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_no_wrapping",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_trailing_whitespace",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_truncation_mid_multibyte_char",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_large_hunk_multiple_changes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_invalid_utf8_truncation_at_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_truncation_at_exact_line_length",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_only_context_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_base16_256_theme_extended_palette",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_true_color_never_uses_256_color_palette",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_color_name_green_equals_fixed_2",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_style_equality_different_attributes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_color_name_blue_equals_fixed_4",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_color_name_white_equals_fixed_7",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_style_equality_different_background",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_with_context_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_valid_utf8_truncation_preserves_char_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_special_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 111: invalid start byte",
+      "name": "tests.test_small_utilities.test_all_invalid_utf8_bytes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_reverse_attribute_swaps_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_side_by_side.test_side_by_side_custom_line_number_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_invalid_utf8_at_line_start",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_ansi_theme_terminal_color_palette",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_hidden_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_default_theme_rgb_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_small_utilities.test_true_color_always_emits_rgb",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_blink_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_color_name_purple_equals_fixed_5",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_color_foreground_background",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_color_fixed_above_16",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_style_equality_none_vs_some_foreground",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_decoration_overline_style",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_bright_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_decoration_box_style",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_decoration_box_with_overline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_decoration_box_underoverline_style",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_single_attribute_reverse",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_single_attribute_blink",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_strikethrough_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_special_keyword_omit",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_style_with_all_16_color_equivalences",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_special_keyword_syntax",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_dim_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_256_color_codes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_hex_color_specifications",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_special_keyword_normal",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_multiple_attributes_bold_italic_underline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_decoration_box_with_underline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_decoration_underline_style",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_foreground_and_background_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_decoration_underoverline_style",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_color_equality_different_none_patterns",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_single_attribute_hidden",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_single_attribute_strike",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_combined_attributes_bold_italic_underline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_bright_color",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_special_keyword_raw",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_plus_style_dim",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_edge_cases.test_rgb_color_specification",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_complex_style_combination",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_plus_style_bold_red",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_dim_attribute",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_color_name_black",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_color_code_equivalence",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_style_with_numeric_foreground_background",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_style_with_reverse_and_color",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_decoration_style_underline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_decoration_style_box",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_decoration_style_overline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_decoration_style_box_overline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_decoration_style_raw_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_decoration_style_box_underline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_decoration_style_underline_overline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_style_parsing.test_decoration_style_syntax_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_subcommands.test_show_syntax_themes_with_light_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_subcommands.test_show_config_with_options",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Must show pager setting",
+      "name": "tests.test_subcommands.test_show_config_with_pager_setting",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Must reject conflicting --dark and --light flags",
+      "name": "tests.test_subcommands.test_show_syntax_themes_with_both_dark_and_light",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_subcommands.test_list_syntax_themes_human_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_dirty_submodule",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_submodule_sha_change",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: First line must be 'Light syntax themes:', got 'dark\\t1337'",
+      "name": "tests.test_subcommands.test_list_syntax_themes_human_format_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_multiple_submodules",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_removed_submodule",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Must have 'Syntax theme:' headers",
+      "name": "tests.test_subcommands.test_show_syntax_themes_output_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Machine and human formats must list the same themes. Missing in human: {'Coldark-Dark', 'Dracula', 'Monokai Extended Light', 'Sublime Snazzy', 'base16', 'Nord', 'Solarized (dark)', 'gruvbox-dark', 'DarkNeon', 'zenburn', 'Solarized (light)', 'GitHub', 'Monokai Extended Origin', '1337', 'Monokai Extended', 'Monokai Extended Bright', 'OneHalfLight', 'TwoDark', 'gruvbox-light', 'Coldark-Cold', 'ansi', 'OneHalfDark', 'Visual Studio Dark+', 'base16-256'}, Missing in machine: set()",
+      "name": "tests.test_subcommands.test_list_syntax_themes_machine_vs_human_consistency",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_mixed_submodule_and_code_changes",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Expected at least 50 color hex values, got 15",
+      "name": "tests.test_subcommands.test_show_colors_contains_many_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_submodule_untracked_content_message",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_subcommands.test_show_syntax_themes_with_dark_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Must use custom input when provided",
+      "name": "tests.test_subcommands.test_show_syntax_themes_custom_input",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_submodule_with_side_by_side",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError: Must show navigate = true",
+      "name": "tests.test_subcommands.test_show_config_with_navigate",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_ansi_color_blue_magenta",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_ansi_color_purple_synonym",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_submodule_log_format",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_short_sha_submodule",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_uppercase_sha_submodule",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_submodule_custom_minus_plus_styles",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_ansi_color_numbers_fixed",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_submodule_only_minus_line",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_submodule_in_subdirectory",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_submodule_very_long_path",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_css_color_names",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_malformed_submodule_commit_line",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_submodule_with_wide_width",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_submodule.test_submodule_with_narrow_width",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_ansi_color_black_red",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_ansi_color_green_yellow",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_ansi_color_cyan_white",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_font_style_bold",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_font_style_underline",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_font_style_italic",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_background_color_conversion",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_font_style_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_no_foreground_color_uses_default",
+      "status": "failure"
+    },
+    {
+      "branch": "3c702ddd0c23",
+      "message": "AssertionError",
+      "name": "tests.test_syntect_edge_cases.test_rgb_color_conversion",
+      "status": "failure"
+    },
+    {
+      "branch": "e0d0c8beca51",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestMutuallyExclusiveFlags.test_light_and_dark_conflict",
+      "status": "failure"
+    },
+    {
+      "branch": "e0d0c8beca51",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestBooleanFlags.test_combined_short_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "e0d0c8beca51",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestFlagOrdering.test_repeated_flag_error",
+      "status": "failure"
+    },
+    {
+      "branch": "e0d0c8beca51",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argument_parsing.TestMutuallyExclusiveFlags.test_dark_and_light_conflict",
+      "status": "failure"
+    },
+    {
+      "branch": "7a224fd708d6",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_rejects_repeated_single_value_option_features",
+      "status": "failure"
+    },
+    {
+      "branch": "7a224fd708d6",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_combined_short_flags_supported_for_n_and_s",
+      "status": "failure"
+    },
+    {
+      "branch": "7a224fd708d6",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_rejects_repeated_single_value_option_width",
+      "status": "failure"
+    },
+    {
+      "branch": "9a72bf2b5f74",
+      "message": "AssertionError",
+      "name": "tests.test_subcommand_dispatch.TestExternalSubcommands.test_rg_subcommand_recognized",
+      "status": "failure"
+    },
+    {
+      "branch": "fa8c1600628e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized_delta.test_ext_file_modified_label_option_changes_header_text",
+      "status": "failure"
+    },
+    {
+      "branch": "fa8c1600628e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_externalized_delta.test_ext_navigate_creates_less_history_file_when_pager_is_less",
+      "status": "failure"
+    },
+    {
+      "branch": "d999389a8dce",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_behavior.test_gitconfig_features_enable_builtin_raw_feature",
+      "status": "failure"
+    },
+    {
+      "branch": "d999389a8dce",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_behavior.test_malformed_config_specified_via_config_flag_errors",
+      "status": "failure"
+    },
+    {
+      "branch": "d999389a8dce",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_behavior.test_home_gitconfig_is_loaded_and_affects_output",
+      "status": "failure"
+    },
+    {
+      "branch": "d999389a8dce",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env_behavior.test_env_delta_features_plus_adds_to_gitconfig_features",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 644,
+    "passed": 544
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "3c702ddd0c23",
+    "e0d0c8beca51",
+    "7a224fd708d6",
+    "a0002accf5d3",
+    "9a72bf2b5f74",
+    "c38555181625",
+    "fa8c1600628e",
+    "d999389a8dce",
+    "37cdad8ab074",
+    "57d88096f3b4",
+    "04c395e0b5dc"
+  ],
+  "test_records": 1188,
+  "warnings": []
+}
