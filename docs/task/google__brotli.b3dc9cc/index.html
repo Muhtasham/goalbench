@@ -128,8 +128,8 @@
     <div class="metric-grid">
       <div class="metric"><strong>441</strong><span>generated behavioral tests</span></div>
       <div class="metric"><strong>95.5%</strong><span>official best score</span></div>
-      <div class="metric"><strong>pending</strong><span>Codex best score</span></div>
-      <div class="metric"><strong>0</strong><span>Codex result rows</span></div>
+      <div class="metric"><strong>1.4%</strong><span>Codex best score</span></div>
+      <div class="metric"><strong>1</strong><span>Codex result rows</span></div>
     </div>
     <h2>Codex Results by Model</h2>
     <div class="table-wrap">
@@ -137,11 +137,53 @@
         <thead><tr><th>#</th><th>Model</th><th>Run</th><th>Agent</th><th>Mode</th><th>Score</th><th>Eval</th><th>Tests</th><th>Est. cost</th><th>Calls</th><th>Wall</th><th>Evidence</th></tr></thead>
         <tbody>
         <tr>
-          <td colspan="11">No Codex results published for this task yet.</td>
+          <td>1</td>
+          <td>GPT 5.5 (xhigh)</td>
+          <td><code>not recorded</code></td>
+          <td>Codex /goal</td>
+          <td>No internet</td>
+          <td>1.4%</td>
+          <td><span class="status resolved">ok</span></td>
+          <td>6/441</td>
+          <td>$8.28</td>
+          <td>127</td>
+          <td>0.34h</td>
+          <td><a href="../../evidence/cpx62-nointernet-xhigh-20260515T165741Z-google-brotli/google__brotli.b3dc9cc/manifest.json">manifest</a> · <a href="../../evidence/cpx62-nointernet-xhigh-20260515T165741Z-google-brotli/google__brotli.b3dc9cc/eval.json">eval json</a> · <a href="../../evidence/cpx62-nointernet-xhigh-20260515T165741Z-google-brotli/google__brotli.b3dc9cc/eval-summary.json">eval summary</a> · <a href="../../evidence/cpx62-nointernet-xhigh-20260515T165741Z-google-brotli/google__brotli.b3dc9cc/usage-audit.json">usage audit</a></td>
         </tr>
         </tbody>
       </table>
     </div>
+
+  <h2>Why Scores Differ</h2>
+  <p class="muted">Official ProgramBench rows are the public mini-SWE-agent submissions. GoalBench rows are separate Codex <code>/goal</code> submissions. Same model label does not mean the same agent, prompt, tool loop, or generated implementation. A GoalBench row is resolved only when the ProgramBench-scored pass rate is exactly 100%.</p>
+  <div class="evidence-grid">
+
+      <div class="evidence-card">
+        <h3>GPT 5.5 (xhigh) · <code>not recorded</code></h3>
+        <p>1.4% from <strong>6/441</strong> ProgramBench-scored tests. Raw public eval statuses: failure: 597, passed: 9.</p>
+        <p class="muted">Likely miss class: behavioral mismatch, exact version/output mismatch.</p>
+        <ul>
+          <li><code>f8d762f9e408</code> eval.tests.test_brotli.TestBasicInvocation.test_invalid_option_long_format_help_to_stdout <span class="muted">(failure)</span></li>
+
+
+          <li><code>f8d762f9e408</code> eval.tests.test_brotli.TestBasicInvocation.test_no_args_with_piped_stdin <span class="muted">(failure)</span></li>
+
+
+          <li><code>f8d762f9e408</code> eval.tests.test_brotli.TestStdinInput.test_compress_from_explicit_dash_stdin <span class="muted">(failure)</span></li>
+
+
+          <li><code>f8d762f9e408</code> eval.tests.test_brotli.TestBasicInvocation.test_help_mentions_coalesced_options <span class="muted">(failure)</span></li>
+
+
+          <li><code>f8d762f9e408</code> eval.tests.test_brotli.TestStdinInput.test_decompress_empty_compressed_stdin <span class="muted">(failure)</span></li>
+
+
+          <li><code>f8d762f9e408</code> eval.tests.test_brotli.TestRoundTrip.test_roundtrip_text <span class="muted">(failure)</span></li>
+            </ul>
+        <p><a href="../../evidence/cpx62-nointernet-xhigh-20260515T165741Z-google-brotli/google__brotli.b3dc9cc/manifest.json">manifest</a> · <a href="../../evidence/cpx62-nointernet-xhigh-20260515T165741Z-google-brotli/google__brotli.b3dc9cc/eval.json">eval json</a> · <a href="../../evidence/cpx62-nointernet-xhigh-20260515T165741Z-google-brotli/google__brotli.b3dc9cc/eval-summary.json">eval summary</a> · <a href="../../evidence/cpx62-nointernet-xhigh-20260515T165741Z-google-brotli/google__brotli.b3dc9cc/usage-audit.json">usage audit</a></p>
+      </div>
+
+  </div>
 
     <h2>Official ProgramBench Results by Model</h2>
     <div class="table-wrap">
