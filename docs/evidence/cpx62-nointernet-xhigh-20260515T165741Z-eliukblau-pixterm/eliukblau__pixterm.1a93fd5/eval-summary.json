@@ -1,0 +1,871 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.1895147379982518
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.12490564098698087
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.1193530229938915
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.14278241099964362
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.1313590179925086
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.09072365700558294
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6423995960067259
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1286175999994157
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11345337399689015
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1167882759909844
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1152009299985366
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.792513941996731
+    },
+    {
+      "branch": "150646b24a3d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02006430400069803
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12287457099591848
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11508073900768068
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12096263498824555
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12144811500911601
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 43.62393393999082
+    },
+    {
+      "branch": "c0ff9908837a",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.029242641001474112
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10252383799524978
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1294510230072774
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13353607399039902
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11679790398920886
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.504532036007731
+    },
+    {
+      "branch": "26004c9a724b",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.029290221005794592
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11837449799349997
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12858441499702167
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11441498799831606
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10040786101308186
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.2898305730050197
+    },
+    {
+      "branch": "af55be9f1fd1",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.031316784996306524
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12665726800332777
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12166849999630358
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09794237599999178
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11643001199990977
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.3124576059926767
+    },
+    {
+      "branch": "219c01638c48",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03566522400069516
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12899227099842392
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12370340400957502
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1156308630015701
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13070893700933084
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.5231170510087395
+    },
+    {
+      "branch": "255c602eb27e",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.028391492000082508
+    }
+  ],
+  "executable_hash": "19aeff2869022f050832a7e79fb5cbb417e8aa24e0cef459268a24972f94b5be",
+  "failed_tests": [
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_dithering.test_gradient_chars_dithering_shows_progression",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_ansimage_api.test_file_not_found_error",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_ansimage_api.test_scale_mode_fit_preserves_aspect",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_ansimage_api.test_directory_instead_of_file",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_dithering.test_dithering_respects_terminal_size_cols",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Red matte not applied to background",
+      "name": "tests.test_dithering.test_matte_color_becomes_background_in_dithering_blocks",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: bri_025: expected '.', got [' ', ' ', ' ', ' ']",
+      "name": "tests.test_dithering.test_dithering_mode_2_all_10_brightness_levels",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should succeed with WebP",
+      "name": "tests.test_errors.test_webp_format",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should succeed with JPEG",
+      "name": "tests.test_errors.test_jpeg_format",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should indicate PNG data incomplete",
+      "name": "tests.test_errors.test_truncated_png",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Brightness 24 should be '.', got [' ', ' ', ' ', ' ']",
+      "name": "tests.test_dithering.test_chars_mode_all_boundary_thresholds",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should mention file not found",
+      "name": "tests.test_errors.test_nonexistent_image_file",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should report unknown format for directory",
+      "name": "tests.test_errors.test_directory_as_input",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_go_output.test_go_flag_with_matte_color",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_go_output.test_go_flag_multicolor_image_color_accuracy",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_ansimage_api.test_corrupt_png_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_ansimage_api.test_combined_all_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Blue matte not applied",
+      "name": "tests.test_dithering.test_matte_color_with_different_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Brightness 205 should be \u2588, got ['\u2593', '\u2593', '\u2593', '\u2593']",
+      "name": "tests.test_dithering.test_blocks_mode_boundary_brightness_204",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_ansimage_api.test_url_404_not_found",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should succeed with TIFF",
+      "name": "tests.test_errors.test_tiff_format",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Brightness 48 should be ' ', got ['\u2591', '\u2591', '\u2591', '\u2591']",
+      "name": "tests.test_dithering.test_blocks_mode_all_boundary_thresholds",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: bri_100: expected '\u2591', got ['\u2592', '\u2592', '\u2592', '\u2592']",
+      "name": "tests.test_dithering.test_dithering_mode_1_all_5_brightness_levels",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should have icon ANSI sequences",
+      "name": "tests.test_info_display.test_credits_flag_tty_contains_contributors_after_icon",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_info_display.test_credits_flag_tty_output_with_icon",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_rendering_basic.test_jpeg_format_support",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_rendering_basic.test_scale_mode_fit_preserves_aspect_ratio",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_rendering_basic.test_vertical_gradient_rendering",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_go_output.test_go_flag_with_gradient_image",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_rendering_basic.test_webp_format_support",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_rendering_basic.test_rgb_gradient_all_channels",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_rendering_basic.test_combined_scale_fit_and_matte_color",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_info_display.test_error_includes_specific_error_message",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Brightness 231 should be #, got ['&', '&', '&', '&']",
+      "name": "tests.test_dithering.test_chars_mode_boundary_brightness_230",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_scaling.test_method2_fit_tall_image",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_scaling.test_method2_fit_wide_image",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Missing ANSI 24-bit background color sequences",
+      "name": "tests.test_info_display.test_credits_flag_tty_contains_ansi_escape_sequences",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_scaling.test_method2_extreme_wide_image",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_scaling.test_tiny_terminal_method2",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_rendering_basic.test_horizontal_gradient_rendering",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_rendering_basic.test_checkerboard_pattern_multi_color",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_scaling.test_scale_method_with_matte_color",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_ansimage_api.test_url_500_server_error",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_go_output.test_go_flag_with_scale_method_fit",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_rendering_basic.test_tiff_format_support",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_scaling.test_minimum_terminal_size_method2",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_scaling.test_scale_with_zero_terminal_rows",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_piped_default_terminal_size",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_scaling.test_method2_fit_square_image",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_minimum_valid_terminal_size_2x2",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_extremely_wide_terminal_300x2",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_terminal_cols_zero_uses_default",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_extremely_tall_terminal_2x500",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_only_terminal_cols_specified",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_terminal_size_with_dithering_mode_2",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_scaling.test_very_tall_terminal_method2",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_terminal_size_with_dithering_mode_1",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_rendering_basic.test_two_color_horizontal_split_upper_lower_blocks",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_small_valid_size_3x3",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_terminal_flags_reversed_order",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_scaling.test_method1_fill_center_crop_verification",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_ansimage_api.test_url_connection_refused",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_explicit_terminal_size_small",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_terminal_rows_zero_uses_default",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_terminal_size_with_scale_method_1_fill",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_large_terminal_size_200x100",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_terminal_size_with_scale_method_2_fit",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_only_terminal_rows_specified",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_standard_terminal_size_80x24",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_terminal_size_with_all_flags_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_medium_terminal_size_100x50",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_very_wide_short_terminal_150x3",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_url_loading.test_http_gif_format",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should report ErrImageDownloadFailed for 404 status",
+      "name": "tests.test_url_loading.test_http_404_error",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_terminal_size.test_scale_fit_respects_terminal_size_bounds",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_url_loading.test_http_transparent_png_with_matte",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_url_loading.test_http_png_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should include the invalid domain",
+      "name": "tests.test_url_loading.test_invalid_domain_error",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: HTTP JPEG load failed: [PIXTERM ERROR] 2026/05/16 03:59:37 image: unknown format",
+      "name": "tests.test_url_loading.test_http_jpeg_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_url_loading.test_http_with_scale_fit",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_url_loading.test_http_with_dithering_blocks",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should show it attempted HTTPS request, got:    ___  _____  ____\n  / _ \\/  _/ |/_/ /____ ______ _      Made with love by Eliuk Blau\n / ___// /_>  </ __/ -_) __/  ' \\ https://github.com/eliukblau/pixterm\n/_/  /___/_/|_|\\__/\\__/_/ /_/_/_/                1.3.2\n\n[PIXTERM ERROR] 2026/05/16 03:59:36 <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1007)>",
+      "name": "tests.test_url_loading.test_https_protocol_attempt",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_url_loading.test_http_with_dithering_chars",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_url_loading.test_http_redirect_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should indicate missing host error, got:    ___  _____  ____\n  / _ \\/  _/ |/_/ /____ ______ _      Made with love by Eliuk Blau\n / ___// /_>  </ __/ -_) __/  ' \\ https://github.com/eliukblau/pixterm\n/_/  /___/_/|_|\\__/\\__/_/ /_/_/_/                1.3.2\n\n[PIXTERM ERROR] 2026/05/16 03:59:38 <urlopen error no host given>",
+      "name": "tests.test_url_loading.test_http_url_malformed",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError: Should indicate connection refused error, got:    ___  _____  ____\n  / _ \\/  _/ |/_/ /____ ______ _      Made with love by Eliuk Blau\n / ___// /_>  </ __/ -_) __/  ' \\ https://github.com/eliukblau/pixterm\n/_/  /___/_/|_|\\__/\\__/_/ /_/_/_/                1.3.2\n\n[PIXTERM ERROR] 2026/05/16 03:59:38 <urlopen error [Errno 111] Connection refused>",
+      "name": "tests.test_url_loading.test_http_connection_refused",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_url_loading.test_http_with_scale_fill",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_url_loading.test_http_large_image",
+      "status": "failure"
+    },
+    {
+      "branch": "c0ff9908837a",
+      "message": "AssertionError",
+      "name": "tests.test_url_loading.test_http_combined_flags_url",
+      "status": "failure"
+    },
+    {
+      "branch": "255c602eb27e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_pixterm_rendering.test_classic_mode_exact_output_for_fixture",
+      "status": "failure"
+    },
+    {
+      "branch": "255c602eb27e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_pixterm_cli.test_nonexistent_file_errors",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "failure": 91,
+    "passed": 367
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "150646b24a3d",
+    "c0ff9908837a",
+    "26004c9a724b",
+    "af55be9f1fd1",
+    "219c01638c48",
+    "255c602eb27e"
+  ],
+  "test_records": 458,
+  "warnings": []
+}

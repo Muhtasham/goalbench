@@ -1,0 +1,1460 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.1488650149985915
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.11588685400784016
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.10021017699909862
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.13069368600554299
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.12826987700827885
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.1299039890000131
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.660604364995379
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10984577899216674
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.115818965001381
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11148324199893977
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.120476295996923
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 4.165711754001677
+    },
+    {
+      "branch": "4e26fc9205c7",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02514672100369353
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13731877099780831
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11778599700483028
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.0995363090041792
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11993739899480715
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 6.179350349993911
+    },
+    {
+      "branch": "718b6511c1b3",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03671792498789728
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12324311600241344
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12108063400955871
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12639020298956893
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13716319100058172
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 53.91506584099261
+    },
+    {
+      "branch": "df8f7c36037c",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.029204064994701184
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12281074699421879
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11946950000128709
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1197258689935552
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10515432601096109
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 7.614039305000915
+    },
+    {
+      "branch": "a892469c7f5b",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03488125299918465
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12999565900827292
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11511624699051026
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09553418400173541
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11750311800278723
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 5.392425380996428
+    },
+    {
+      "branch": "f20665bb95a9",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03873657800431829
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1282915349875111
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11829556500015315
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1265309320006054
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10382800101069734
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 4.289682178001385
+    },
+    {
+      "branch": "d97b17dc00b0",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.021703454011003487
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10724571799801197
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12209509901003912
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1245987299917033
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12978597899200395
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 1.9825889070052654
+    },
+    {
+      "branch": "5fa0c2f7c077",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.029356294995523058
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13071840500924736
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1118818600079976
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12696309000602923
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12489030799770262
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.460890358997858
+    },
+    {
+      "branch": "dbf551c8a629",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.01930790398910176
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12101875399821438
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13376395299565047
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.13367913299589418
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.09982095700979698
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.260199177006143
+    },
+    {
+      "branch": "739aa5214d1e",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02082123800937552
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.0926694649970159
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10588870299397968
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.07654036799794994
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11801411600026768
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.465456083999015
+    },
+    {
+      "branch": "1d7e34d37f1f",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.037448192000738345
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10988554799405392
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1081871839996893
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12778512699878775
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12297754500468727
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 13.514911625999957
+    },
+    {
+      "branch": "b9bc81cc2e4c",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.02686435400391929
+    }
+  ],
+  "executable_hash": "837fcb22af8a48fbb865cfae5eed2aad44ab607294d705eb3fc929cd9878dcc3",
+  "failed_tests": [
+    {
+      "branch": "4e26fc9205c7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_color_modes.test_stl_default_yellow",
+      "status": "failure"
+    },
+    {
+      "branch": "4e26fc9205c7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_input_files.test_single_stl_file",
+      "status": "failure"
+    },
+    {
+      "branch": "4e26fc9205c7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_input_files.test_stl_part_file",
+      "status": "failure"
+    },
+    {
+      "branch": "4e26fc9205c7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_input_files.test_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "4e26fc9205c7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_webify_mode.test_webify_html_spans",
+      "status": "failure"
+    },
+    {
+      "branch": "4e26fc9205c7",
+      "message": "AssertionError",
+      "name": "eval.tests.test_webify_mode.test_webify_rgb_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "718b6511c1b3",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_stl_with_rotations",
+      "status": "failure"
+    },
+    {
+      "branch": "718b6511c1b3",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_multiple_stl_files",
+      "status": "failure"
+    },
+    {
+      "branch": "718b6511c1b3",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_obj_and_stl_mixed",
+      "status": "failure"
+    },
+    {
+      "branch": "718b6511c1b3",
+      "message": "AssertionError",
+      "name": "eval.tests.test_input_handling.test_single_stl_file",
+      "status": "failure"
+    },
+    {
+      "branch": "718b6511c1b3",
+      "message": "AssertionError",
+      "name": "eval.tests.test_input_handling.test_multiple_obj_files",
+      "status": "failure"
+    },
+    {
+      "branch": "718b6511c1b3",
+      "message": "AssertionError",
+      "name": "eval.tests.test_rotations.test_rotation_negative_values_error",
+      "status": "failure"
+    },
+    {
+      "branch": "718b6511c1b3",
+      "message": "AssertionError",
+      "name": "eval.tests.test_edge_cases.test_stl_with_no_color",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (239) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_file_formats.test_stl_simple_cube",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_coverage_push.test_malformed_stl_parse_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_file_formats.test_no_color_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (238) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/part.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_file_formats.test_stl_complex_part",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_coverage_push.test_obj_with_vertex_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: \nthread 'main' (247) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_coverage_push.test_multiple_stl_obj_mixed",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_coverage_push.test_webify_html_output_structure",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_file_formats.test_invalid_extension_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_file_formats.test_custom_height",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: \nthread 'main' (250) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_coverage_push.test_stl_file_coverage",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_file_formats.test_obj_simple_cube",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_coverage_push.test_large_dimensions",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_small_dimensions_10x10",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Error message mismatch.\nExpected:\n\nthread 'main' (PID) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [empty.stl] couldn't load, stl_io couldnt parse STL. failed to fill whole buffer\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n\nGot:\n\nthread 'main' (PID) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [empty.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_file_formats.test_empty_stl_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_cube_black_white_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_gaps_context_geometry.test_model_with_materials_color_rendering",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Ferris model output doesn't match expected rendering",
+      "name": "tests.test_file_formats.test_obj_complex_ferris",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with: \nthread 'main' (326) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_image_basic.test_multiple_input_files",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_coverage_push.test_black_white_mode_image",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_gaps_context_geometry.test_rotation_parameters_transform_application",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_coverage_push.test_extreme_rotation_values",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_very_wide_aspect_ratio",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with: \nthread 'main' (330) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_image_basic.test_stl_format_support",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_tiny_dimensions_2x2",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_gaps_context_geometry.test_webify_mode_shorthand_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_suzy_model_medium_complexity",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_ferris_model_wider_render",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_bw_mode_width_only",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_gaps_context_geometry.test_large_dimension_buffer_allocation",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_gaps_context_geometry.test_extreme_aspect_ratio_1x100_cube",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_gaps_context_geometry.test_overlapping_triangles_z_buffer",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_pikachu_high_poly_model",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (387) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_gaps_context_geometry.test_stl_format_mesh_conversion",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with: \nthread 'main' (388) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/part.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_image_basic.test_part_stl_with_bw_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_single_axis_z_rotation_pi_half",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_width_only_defaults_height",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_skull_model_larger_dimensions",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_single_axis_x_rotation_pi_half",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (390) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_gaps_context_geometry.test_multiple_input_meshes_combined_bounding_box",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_very_tall_aspect_ratio",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: error: Found argument '-x=-1.5708' which wasn't expected, or isn't valid in this context\n\nUSAGE:\n    executable image [FLAGS] [OPTIONS] -w <width>\n\nFor more information try --help",
+      "name": "tests.test_image_rotation.test_negative_rotation_value",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_very_large_rotation_value",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_long_form_yaw_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_ferris_bw_medium_size",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_combined_xyz_rotation",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_rotation_2pi_full_circle",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_cube_basic_color_render",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_very_small_rotation_value",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_gaps_context_geometry.test_webify_mode_html_output",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_odd_dimensions",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_rotation_zero_value",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_x_rotation_pi",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_long_form_pitch_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_gaps_context_geometry.test_complex_model_large_mesh",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_rotation_with_no_color_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_long_form_roll_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_combined_xy_rotation",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_single_axis_y_rotation_pi_half",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_rotation_with_complex_model",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_rotation_changes_output_from_baseline",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_basic.test_large_dimensions_100x50",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_webify.test_webify_complex_model_ferris",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: \nthread 'main' (509) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_image_rotation.test_stl_format_with_rotation",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_webify.test_webify_requires_width_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_missing_rotation_value",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_webify.test_webify_small_dimensions_multiple_frames",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_rotation.test_rotation_with_explicit_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_webify.test_webify_basic_single_frame",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_webify.test_webify_frame_count_zero_generates_one_frame",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_webify.test_webify_with_rotation_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_webify.test_webify_ten_frames",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_webify.test_webify_with_no_color_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: \nthread 'main' (578) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_image_webify.test_webify_with_stl_model",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_image_webify.test_webify_differs_from_normal_image_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Expected (127, 127, 127) from Kd 0.5, got {(0, 0, 0), (1, 1, 1)}",
+      "name": "tests.test_materials_colors.test_color_precision_boundary_values",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Different models should produce different color sets",
+      "name": "tests.test_materials_colors.test_different_models_different_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Should use Kd not Ka/Ks",
+      "name": "tests.test_materials_colors.test_material_with_ambient_and_specular_properties",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (599) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_obj_and_stl_mixed_formats",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_materials_colors.test_cube_obj_loads_materials_renders_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (641) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/ferris.obj /workspace/models/skull.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_three_obj_files",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: \nthread 'main' (683) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_materials_colors.test_stl_file_renders_with_default_yellow_color",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_materials_colors.test_pikachu_seven_materials_all_colors_present",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Red material color missing with -b flag",
+      "name": "tests.test_materials_colors.test_black_white_mode_still_outputs_ansi_codes",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Expected (127, 76, 51) from both materials",
+      "name": "tests.test_materials_colors.test_multiple_materials_same_color_deduplicated_correctly",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Expected (254, 254, 254) from Kd 0.999",
+      "name": "tests.test_materials_colors.test_material_color_with_extreme_kd_values",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Default view should show red",
+      "name": "tests.test_materials_colors.test_color_with_rotation_reveals_different_faces",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Expected failure for missing .mtl file",
+      "name": "tests.test_materials_colors.test_obj_without_mtl_file_panics_with_expected_message",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Expected (163, 26, 23) from Red material conversion",
+      "name": "tests.test_materials_colors.test_color_rgb_values_match_mtl_diffuse_conversion",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Alpha material color (25, 229, 25) not found, materials may be mis-ordered",
+      "name": "tests.test_materials_colors.test_obj_material_ordering_preserved",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (697) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/ferris.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_two_obj_files_space_separated",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (710) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.stl /workspace/models/part.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_two_stl_files",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError",
+      "name": "tests.test_materials_colors.test_ferris_multi_material_renders_distinct_colors",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (770) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/cube.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_duplicate_files",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (778) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/ferris.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_multi_file_with_rotation",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (885) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/ferris.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_multi_file_output_non_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (892) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/ferris.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_multi_file_no_color_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (895) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/ferris.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_multi_file_multi_axis_rotation",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (893) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/Pikachu.obj /workspace/models/skull.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_complex_models_multiple_files",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (894) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/ferris.obj /workspace/models/skull.obj /workspace/models/suzy.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_four_files",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (896) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/cube.stl] couldn't load, couldn't determine filename extension. \"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_stl_after_obj_uses_correct_loader",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Multi-file failed: \nthread 'main' (915) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/ferris.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_multi_file_differs_from_single_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: First run failed: \nthread 'main' (908) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/ferris.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_multi_file_deterministic",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (899) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/ferris.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_height_parameter_with_multi_file",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Failed with stderr: \nthread 'main' (904) panicked at src/inputs.rs:126:39:\ncalled `Result::unwrap()` on an `Err` value: \"filename: [/workspace/models/cube.obj /workspace/models/ferris.obj] couldn't load, tobj couldnt load/parse OBJ. open file failed\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "name": "tests.test_multi_file.test_multi_file_webify_produces_javascript",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Should fail to create TUI session when binary exits immediately on error",
+      "name": "tests.test_tui_basic.test_tui_missing_file_error",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: No final frame captured after clean exit",
+      "name": "tests.test_tui_basic.test_tui_quit_with_ctrl_c",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Expected >100 rendering characters, got 0: {'%': 0, '+': 0, '=': 0, '.': 0, '-': 0, '*': 0, '#': 0}",
+      "name": "tests.test_tui_basic.test_tui_startup_with_cube_model",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Complex model: Expected at least 8 non-empty lines, got 2",
+      "name": "tests.test_tui_basic.test_tui_with_complex_model",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Screen appears mostly blank, only 2 non-empty lines",
+      "name": "tests.test_tui_basic.test_tui_screen_not_blank_after_startup",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Ferris not rendering properly, only 2 chars",
+      "name": "tests.test_tui_interactions.test_keyboard_interaction_with_ferris_model",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Initial render appears broken, only 2 rendering chars",
+      "name": "tests.test_tui_interactions.test_arrow_keys_dont_crash",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Animation not updating: two snapshots 1 second apart are identical",
+      "name": "tests.test_tui_basic.test_tui_animation_updates",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: App crashed or stopped rendering after spam, only 2 chars",
+      "name": "tests.test_tui_interactions.test_rapid_key_spam_no_crash",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Rendering stopped after letter/number keys, only 2 chars",
+      "name": "tests.test_tui_interactions.test_letter_and_number_keys_ignored",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Rendering broken after Enter keys, only 2 chars",
+      "name": "tests.test_tui_interactions.test_enter_key_no_effect",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Animation appears paused after space key (should continue)",
+      "name": "tests.test_tui_interactions.test_space_key_no_pause",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Rendering broken after special keys, only 2 chars",
+      "name": "tests.test_tui_interactions.test_special_keys_escape_tab_backspace",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Rendering broken after function keys, only 2 chars",
+      "name": "tests.test_tui_interactions.test_function_keys_dont_crash",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Rendering broken after mixed key sequence, only 2 chars",
+      "name": "tests.test_tui_interactions.test_mixed_key_sequence_no_side_effects",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: STL: Expected >100 rendering characters, got 4",
+      "name": "tests.test_tui_basic.test_tui_with_stl_model",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: No final frame captured after clean exit",
+      "name": "tests.test_tui_basic.test_tui_quit_with_q_key",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Rendering broken after alternating navigation, only 2 chars",
+      "name": "tests.test_tui_interactions.test_alternating_navigation_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: Rendering broken after non-ASCII input handling, only 2 chars",
+      "name": "tests.test_tui_interactions.test_non_ascii_input_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "df8f7c36037c",
+      "message": "AssertionError: App stopped after non-quit Ctrl sequences, only 2 chars",
+      "name": "tests.test_tui_interactions.test_multiple_ctrl_sequences_dont_accumulate",
+      "status": "failure"
+    },
+    {
+      "branch": "a892469c7f5b",
+      "message": "AssertionError: expected runtime Error: on stderr, got: \"error: Found argument '--' which wasn't expected, or isn't valid in this context\\n\\nUSAGE:\\n    executable [FLAGS] [OPTIONS] <input filename(s)>... [SUBCOMMAND]\\n\\nFor more information try --help\\n\"",
+      "name": "eval.tests.test_argparse_validation.test_double_dash_with_only_input_runs_default_renderer",
+      "status": "failure"
+    },
+    {
+      "branch": "a892469c7f5b",
+      "message": "AssertionError: expected \"subcommand 'image' wasn't recognized\" in stderr, got: \"error: Found argument '--' which wasn't expected, or isn't valid in this context\\n\\nUSAGE:\\n    executable [FLAGS] [OPTIONS] <input filename(s)>... [SUBCOMMAND]\\n\\nFor more information try --help\\n\"",
+      "name": "eval.tests.test_argparse_validation.test_double_dash_makes_subcommand_unrecognized",
+      "status": "failure"
+    },
+    {
+      "branch": "a892469c7f5b",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_image_accepts_width_value_forms_and_flag_order[argv1]",
+      "status": "failure"
+    },
+    {
+      "branch": "a892469c7f5b",
+      "message": "AssertionError: expected \"Found argument '-w'\" in stderr, got: \"error: Found argument '-bx' which wasn't expected, or isn't valid in this context\\n\\nUSAGE:\\n    executable [FLAGS] [OPTIONS] <input filename(s)>... [SUBCOMMAND]\\n\\nFor more information try --help\\n\"",
+      "name": "eval.tests.test_argparse_validation.test_b_flag_does_not_combine_with_other_shorts",
+      "status": "failure"
+    },
+    {
+      "branch": "a892469c7f5b",
+      "message": "AssertionError: expected clap error on stderr, got: ''",
+      "name": "eval.tests.test_argparse_validation.test_roll_negative_value_is_not_accepted_by_arg_parser",
+      "status": "failure"
+    },
+    {
+      "branch": "f20665bb95a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_image_subcommand.test_invalid_subcommand_yields_nonzero_and_message",
+      "status": "failure"
+    },
+    {
+      "branch": "f20665bb95a9",
+      "message": "AssertionError",
+      "name": "eval.tests.test_image_subcommand.test_image_outputs_expected_number_of_lines",
+      "status": "failure"
+    },
+    {
+      "branch": "d97b17dc00b0",
+      "message": "AssertionError",
+      "name": "eval.tests.test_subcommand_dispatch.TestUnknownSubcommand.test_unknown_subcommand_with_file_attempts_tui",
+      "status": "failure"
+    },
+    {
+      "branch": "1d7e34d37f1f",
+      "message": "test_rotation_flags_change_output depends on image_snapshot_small_exact",
+      "name": "eval.tests.test_image_rendering.test_rotation_flags_change_output",
+      "status": "skipped"
+    },
+    {
+      "branch": "1d7e34d37f1f",
+      "message": "test_image_newline_count_for_h10 depends on image_snapshot_small_exact",
+      "name": "eval.tests.test_image_rendering.test_image_newline_count_for_h10",
+      "status": "skipped"
+    },
+    {
+      "branch": "1d7e34d37f1f",
+      "message": "test_image_contains_ansi_csi_sequences depends on image_snapshot_small_exact",
+      "name": "eval.tests.test_image_rendering.test_image_contains_ansi_csi_sequences",
+      "status": "skipped"
+    },
+    {
+      "branch": "1d7e34d37f1f",
+      "message": "AssertionError",
+      "name": "eval.tests.test_errors.test_image_invalid_dimensions_error[args3]",
+      "status": "failure"
+    },
+    {
+      "branch": "b9bc81cc2e4c",
+      "message": "failed on setup with \"AssertionError\"",
+      "name": "eval.tests.test_tui_sloth.test_tui_launch_renders_first_frame",
+      "status": "error"
+    },
+    {
+      "branch": "b9bc81cc2e4c",
+      "message": "test_tui_rotation_changes_frame_with_keypress depends on test_tui_launch_renders_first_frame",
+      "name": "eval.tests.test_tui_sloth.test_tui_rotation_changes_frame_with_keypress",
+      "status": "skipped"
+    },
+    {
+      "branch": "b9bc81cc2e4c",
+      "message": "test_tui_ignores_random_keys_without_exiting depends on test_tui_launch_renders_first_frame",
+      "name": "eval.tests.test_tui_sloth.test_tui_ignores_random_keys_without_exiting",
+      "status": "skipped"
+    },
+    {
+      "branch": "b9bc81cc2e4c",
+      "message": "test_tui_quits_on_q depends on test_tui_launch_renders_first_frame",
+      "name": "eval.tests.test_tui_sloth.test_tui_quits_on_q",
+      "status": "skipped"
+    }
+  ],
+  "status_counts": {
+    "error": 1,
+    "failure": 146,
+    "passed": 301,
+    "skipped": 6
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "4e26fc9205c7",
+    "718b6511c1b3",
+    "df8f7c36037c",
+    "a892469c7f5b",
+    "f20665bb95a9",
+    "d97b17dc00b0",
+    "5fa0c2f7c077",
+    "dbf551c8a629",
+    "739aa5214d1e",
+    "1d7e34d37f1f",
+    "b9bc81cc2e4c"
+  ],
+  "test_records": 454,
+  "warnings": []
+}
