@@ -1,0 +1,2312 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.13943656199262477
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.10547441701055504
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.14642989399726503
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.13434797400259413
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.12046188900421839
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.0921944299916504
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6420139149995521
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11010024200368207
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.06955368400667794
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09257261600578204
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12317704000452068
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 8.4453063270048
+    },
+    {
+      "branch": "aac649a5af1e",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03319513500900939
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13279175299976487
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.13021503899653908
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12822939400211908
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12175447000481654
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 37.8164519790007
+    },
+    {
+      "branch": "85b4c88cddb2",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03110042899788823
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13316324299375992
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11393764299282338
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11374666399206035
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10476918698986992
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 372.8577810620045
+    },
+    {
+      "branch": "93267c5d44be",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.037169607006944716
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13561663999280427
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.135904359005508
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.1212045829888666
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13176157099951524
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 5.4827739049942465
+    },
+    {
+      "branch": "3c7355007e0d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.034832025005016476
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.14631363700027578
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1323260589997517
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12606240800232626
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13773705299536232
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.231964901991887
+    },
+    {
+      "branch": "1504a0a08723",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.01791607600171119
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12450415200146381
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09632201799831819
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11410516301111784
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11269397899741307
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.2374495309923077
+    },
+    {
+      "branch": "c6718de56a8d",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03627851000055671
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.14048210300097708
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11845985100080725
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12501129000156652
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13208095901063643
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 155.71893287700368
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.025463430007221177
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13056003100064117
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09270345899858512
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12072322198946495
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11454543098807335
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.317794243004755
+    },
+    {
+      "branch": "47883c3e9c0f",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.030716403998667374
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13203587599855382
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.0676766380056506
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.0803410869993968
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1123382980003953
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 7.576439766999101
+    },
+    {
+      "branch": "9f722bf32901",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03103854200162459
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11683448299299926
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09899458900326863
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.08719453499361407
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12037837199750356
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.253075873013586
+    },
+    {
+      "branch": "81f113c84b6e",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03506017899781
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11450495000462979
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11087905100430362
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.08995722699910402
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.07069741800660267
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.349101971994969
+    },
+    {
+      "branch": "a2237d29f6ee",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.028872738999780267
+    }
+  ],
+  "executable_hash": "5e5ffc233b70d7caf61c2f2c17fe8659195e7351dafe12b9792609ab9d4af25f",
+  "failed_tests": [
+    {
+      "branch": "aac649a5af1e",
+      "message": "subprocess.CalledProcessError: Command '['tmux', 'send-keys', '-t', 'pipr_test_arrows', '-l', 'x']' returned non-zero exit status 1.",
+      "name": "eval.tests.test_tui_interaction.test_tui_arrow_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "aac649a5af1e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_tui_interaction.test_tui_text_input",
+      "status": "failure"
+    },
+    {
+      "branch": "aac649a5af1e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_tui_interaction.test_tui_ctrl_a_ctrl_e",
+      "status": "failure"
+    },
+    {
+      "branch": "aac649a5af1e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_tui_interaction.test_tui_ctrl_u_clear",
+      "status": "failure"
+    },
+    {
+      "branch": "aac649a5af1e",
+      "message": "AssertionError",
+      "name": "eval.tests.test_tui_interaction.test_tui_backspace",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_cli_args.test_in_file_multiline_content",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_cli_args.test_in_file_combined_with_out_file_roundtrip",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_with_special_chars_in_word",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_single_word_command_shows_resolved_templates",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_navigation_at_bottom_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_navigation.test_delete_last_entry_list_becomes_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_navigation_arrow_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_multiple_deletions_undo_stack",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_down_key_cycles_forward",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_delete_single_entry",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_cursor_between_words_on_space",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_false_command_non_zero_exit",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_large_stdin_through_pipeline",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_stdin_piping_to_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_mixed_navigation_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_cli_args.test_in_file_empty_file",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_cli_args.test_in_file_trailing_newlines_preserved",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_on_empty_input_no_menu_appears",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected to access only cmd5-cmd9 (5 entries), but got: cmd[]",
+      "name": "tests.test_commandlist_edge_cases.test_max_size_enforcement_on_load",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_multiple_times_on_same_word",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_escape_closes_window",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_bookmarks_basic_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_navigation.test_delete_with_cursor_adjustment",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_navigation_vim_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_cli_args.test_in_file_special_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_undo_deletion",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_up_key_cycles_backward",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_multiword_command_cursor_on_first_word",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_command_execution_with_enter_key",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_with_quoted_string",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_with_pipe_in_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_cli_args.test_in_file_precedence_over_default",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_backspace_deletes",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_navigation.test_pageup_and_g_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_navigation_pageup_pagedown",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_bookmarks_enter_selection",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_exit_with_non_zero_code",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_large_stderr_on_command_failure",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_empty_list",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_multiword_command_cursor_on_second_word",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_stderr_shown_separately",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Bookmark not added to file after first Ctrl+S",
+      "name": "tests.test_commandlist_edge_cases.test_bookmark_toggle_remove",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_inline_comment_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_stdin_multiline_input_to_grep",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_bookmarks_escape_closes_window",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_timeout_handling_sleep_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_tab_forward_wrap_around",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_with_path_as_word",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_navigation_g_G_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_bookmarks_delete_and_undo",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_navigation.test_unhandled_key_default_case",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_menu_escape_closes_without_executing",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_delete_until_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected to start with cmd1, cmd2, cmd3 in history, got: []",
+      "name": "tests.test_commandlist_edge_cases.test_max_size_enforcement_during_runtime",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Bookmark not added in cycle 1",
+      "name": "tests.test_commandlist_edge_cases.test_bookmark_toggle_multiple_cycles",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_delete_at_different_positions",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_large_output_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_navigation.test_pagedown_boundary_jump_to_end",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_template.test_f5_with_long_word",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_command_replacement_kills_previous",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_exit_with_stderr_output",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_enter_selection",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_bookmarks_empty_list",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_unsafe_command_rm_blocked",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_window.test_history_navigation_at_top_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_finish_hook.test_finish_hook_multiline_command_raw_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_finish_hook.test_finish_hook_with_special_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_navigation.test_pagedown_forward_jump",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_large_output_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_command_timeout_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_enter_inserts_selected_completion",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_environment_variable_access",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Menu should be open",
+      "name": "tests.test_help_viewer_execution.test_f5_help_viewer_escape_closes_menu",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_cache_command_part_workflow",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_autoeval_mode_toggle_during_typing",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_navigation.test_down_arrow_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_commandlist_edge_cases.test_bookmark_toggle_empty_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_unsafe_command_mv_blocked",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: finish_hook did not create output file",
+      "name": "tests.test_finish_hook.test_finish_hook_simple_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_help_viewer_execution.test_f5_help_viewer_execution_with_log_verification",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_unsafe_rm_command_blocked",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_command_not_found_error",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_very_long_single_line_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_command_with_special_shell_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_autoeval_mode_executes_on_typing",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_delete_bookmark_and_undo",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_escape_closes_menu_without_inserting",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_help_viewer_menu",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: finish_hook did not run for empty command",
+      "name": "tests.test_finish_hook.test_finish_hook_empty_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Output should be displayed",
+      "name": "tests.test_help_viewer_execution.test_f6_output_viewer_execution_with_stdin",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_list_navigation.test_undo_deletion_u_key",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_unsafe_command_dd_blocked",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected exactly cmd3, cmd4, cmd5 (3 most recent unique entries), got: []",
+      "name": "tests.test_commandlist_edge_cases.test_max_size_with_consecutive_duplicates",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_finish_hook.test_finish_hook_multiline_command_default_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_comment_lines_ignored",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_command_with_mixed_stdout_stderr_success",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_quit_from_history_browser",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_clear_command_ctrl_x",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Help viewer command was not executed",
+      "name": "tests.test_help_viewer_execution.test_f5_help_viewer_with_different_word",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_finish_hook.test_finish_hook_with_arguments",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_persistence_after_quit",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_bookmark_history_workflow",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_multiline_command_execution",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_unsafe_mv_command_blocked",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_large_output_capture",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_execution.test_pipeline_execution",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_safe_ls_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_autocomplete.test_multiple_backward_cycles",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_raw_mode_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_snippet_insertion_workflow",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_rapid_mode_toggling",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_manual_execution_with_enter",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_unsafe_command_with_space",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_initial_screen_no_isolation",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Command was not executed before exit",
+      "name": "tests.test_finish_hook.test_no_finish_hook_configured",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_pipeline_with_error_in_first_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_history_navigation_with_ctrl_p_n",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Menu should show 'm:' option",
+      "name": "tests.test_help_viewer_execution.test_f5_help_viewer_with_multiple_viewers",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_tab_autocomplete_menu",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor_hardening.test_ctrl_h_backspace",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor_hardening.test_delete_at_end_joins_next_line",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor.test_ctrl_a_ctrl_e_home_end",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor_hardening.test_up_down_multiline_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_command_evaluation_errors.test_empty_command_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_unsafe_dd_command_blocked",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor_hardening.test_alt_enter_newline",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_safe_cat_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_command_error_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_f5_help_viewer_menu",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor.test_ctrl_w_delete_word_back",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor.test_multiline_delete_join",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_ctrl_v_snippets_menu",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor_hardening.test_delete_at_end_of_last_line",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor.test_delete_mid_line",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_safe_echo_command_autoeval",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_f3_toggle_paranoid_history_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor_hardening.test_goleft_wrap_to_previous_line",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor_hardening.test_goto_line_cursor_adjustment",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_ctrl_p_history_previous",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor_hardening.test_backspace_at_empty_line",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_f6_output_viewer_menu",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor_hardening.test_left_at_start_of_first_line",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor.test_multiline_backspace_join",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_f7_cache_command_part",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_ctrl_x_clear_input",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window_gaps.test_f7_cache_command_error",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window_gaps.test_f5_help_viewer_no_word",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor.test_ctrl_w_on_empty_line",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_alt_enter_multiline_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor.test_ctrl_w_word_boundaries",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor_hardening.test_multibyte_char_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "State isolation issue - TODO",
+      "name": "tests.test_main_window_gaps.test_history_prev_empty",
+      "status": "skipped"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "State isolation issue - TODO",
+      "name": "tests.test_main_window_gaps.test_history_prev_at_oldest",
+      "status": "skipped"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_multiline_command_execution",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_isolation.test_pipeline_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor_hardening.test_goright_wrap_to_next_line",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_f2_toggle_autoeval_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_autocomplete_empty_results",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_output_file.test_raw_mode_with_mixed_line_endings",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window_gaps.test_autocomplete_empty_word",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_lineeditor.test_ctrl_u_clear_line",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window_gaps.test_autocomplete_closes_on_other_key",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_ctrl_n_history_next",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_ctrl_s_bookmark_toggle",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_bookmarks_file_format",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_output_file.test_multiline_default_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_backtab_autocomplete_backward_cycle",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window_gaps.test_key_select_menu_escape_closes",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_output_file.test_command_modification_before_exit",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_unicode_in_history_and_bookmarks",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window.test_autocomplete_tilde_expansion",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_simple_history_file_format",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_output_file.test_multiline_raw_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected 1 occurrence of duplicate command, found 0",
+      "name": "tests.test_persistence.test_history_entry_deduplication",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_empty_history_file_loads_without_error",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_main_window_gaps.test_autocomplete_no_matches",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: History file was not created",
+      "name": "tests.test_persistence.test_missing_history_file_creates_new",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_max_size_enforcement_removes_oldest",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_max_size_enforcement_truncates_on_load",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_serialization_round_trip_format",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_output_file.test_unicode_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_multiline_command_bookmark",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_multiline_history_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_bookmark_toggle_adds_and_removes",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_very_long_command_line",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected 'abXc' in screen (cursor at offset 2), got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_cursor_middle",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_mixed_single_and_multiline_entries",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected spaces preserved, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_with_leading_trailing_spaces",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected sed pattern in screen, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_sed_replace_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_consecutive_different_commands_all_saved",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected Unicode chars in screen, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_unicode_content",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected pipe chain, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_pipe_chain",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected line1 in screen (multiline snippet), got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_multiline_with_cursor",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected awk command with $3, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_awk_print_field",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected 'aXbc' in screen (first || at offset 1), got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_multiple_markers_first_wins",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_bookmark_with_no_file_creates_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected 'abcX' in screen (cursor at end), got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_cursor_at_end",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_persistence.test_special_characters_in_commands",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected 'abcX' in screen (cursor at end by default), got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_no_marker",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected 'X' alone in command field, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_empty_string",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected find command, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_find_exec_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected echo with 'test', got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_special_chars_quotes_backslash",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected 'X' alone after inserting '||' snippet, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_only_marker",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected jq filter, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_jq_filter",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected xargs pattern, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_xargs_pattern",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected tar command, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_tar_extract",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected sed chain with sort, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_long_sed_chain",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected curl POST command, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_curl_post_json",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected columns with tabs, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_tab_character",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected echo with backslash, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_backslash_escaping",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_text_input_and_autoeval",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_in_file_flag_loads_content",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_enter_key_executes_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_ctrl_a_moves_cursor_to_start",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_ctrl_u_clears_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected long text (many a's) in screen, got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_very_long_text",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_f1_shows_help_window",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_startup_no_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_f2_toggles_autoeval_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_multiline_input_with_insert_key",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_ctrl_e_moves_cursor_to_end",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_ctrl_b_shows_bookmarks_window",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_navigation_ctrl_p_basic",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_raw_mode_keeps_newlines",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_f4_shows_history_window",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_arrow_keys_for_cursor_movement",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_basic.test_backspace_deletes_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_paranoid_mode_toggle_f3",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_navigation_ctrl_p_multiple",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_browser_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_browser_f4_open",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_empty_no_crash_ctrl_p",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError: Expected 'Xabc' in screen (cursor at offset 0), got: \n \u250c Command [Autoeval] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n \u2502                                                                            \u2502\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n \u250c Output [+] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500Help:   F1\u2500\u2500\u2518",
+      "name": "tests.test_snippets.test_snippet_cursor_at_start",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_navigation_ctrl_n_forward",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_browser_select_with_enter",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_browser_escape_cancel",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_word_at_idx_autocomplete_partial_path",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_browser_G_jump_bottom",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_browser_undo_delete",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_navigation_end_boundary",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_split_strings_at_offset_cache_simple_pipe",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_browser_vim_keys_j_down",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_browser_g_jump_top",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_browser_vim_keys_k_up",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_window_states.test_history_browser_enter_loads_entry",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_word_at_idx_autocomplete_single_match",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_split_strings_at_offset_at_end",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_get_full_char_at_with_utf8_multibyte",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_tui_history.test_history_browser_delete_entry",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_window_states.test_history_browser_escape_to_main",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_split_strings_at_offset_multiline_command",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_split_strings_at_offset_at_start",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_window_states.test_bookmarks_browser_enter_loads_bookmark",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_word_at_idx_empty_input",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_word_at_idx_with_multiple_spaces",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_window_states.test_help_window_escape_to_main",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_util.test_split_strings_at_offset_empty_vec",
+      "status": "failure"
+    },
+    {
+      "branch": "93267c5d44be",
+      "message": "AssertionError",
+      "name": "tests.test_window_states.test_bookmarks_browser_escape_to_main",
+      "status": "failure"
+    },
+    {
+      "branch": "3c7355007e0d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_missing_required_value_for_option_exits_1_and_reports_which[args0-Argument to option 'default' missing]",
+      "status": "failure"
+    },
+    {
+      "branch": "3c7355007e0d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_unknown_long_option_errors_and_exit_code_1",
+      "status": "failure"
+    },
+    {
+      "branch": "3c7355007e0d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_missing_required_value_for_option_exits_1_and_reports_which[args1-Argument to option 'd' missing]",
+      "status": "failure"
+    },
+    {
+      "branch": "3c7355007e0d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_missing_required_value_for_option_exits_1_and_reports_which[args3-Argument to option 'o' missing]",
+      "status": "failure"
+    },
+    {
+      "branch": "3c7355007e0d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_missing_required_value_for_option_exits_1_and_reports_which[args2-Argument to option 'out-file' missing]",
+      "status": "failure"
+    },
+    {
+      "branch": "3c7355007e0d",
+      "message": "AssertionError",
+      "name": "eval.tests.test_argparse_validation.test_missing_required_value_for_option_exits_1_and_reports_which[args4-Argument to option 'in-file' missing]",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: TUI should still be functional",
+      "name": "eval.tests.test_tui_advanced.test_tui_paranoid_history_mode_f3",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Ctrl+A should move to start",
+      "name": "eval.tests.test_tui_advanced.test_tui_ctrl_a_moves_to_start",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Ctrl+E should move to end",
+      "name": "eval.tests.test_tui_advanced.test_tui_ctrl_e_moves_to_end",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Sed substitution should work",
+      "name": "eval.tests.test_tui_advanced.test_tui_sed_command",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Awk should extract second field",
+      "name": "eval.tests.test_tui_advanced.test_tui_awk_command",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Backspace should delete",
+      "name": "eval.tests.test_tui_advanced.test_tui_backspace",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Multi-word command should work",
+      "name": "eval.tests.test_tui_advanced.test_tui_word_navigation",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Typed text should appear in command field",
+      "name": "eval.tests.test_tui_basics.test_tui_accepts_text_input",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Command output should appear in output field",
+      "name": "eval.tests.test_tui_basics.test_tui_executes_command_in_autoeval",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Help screen should be visible",
+      "name": "eval.tests.test_tui_basics.test_tui_opens_help_with_f1",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Command field should be visible",
+      "name": "eval.tests.test_tui_basics.test_tui_closes_help_with_f1",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Piped command output should be visible",
+      "name": "eval.tests.test_tui_basics.test_tui_pipe_commands",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: File content should be visible",
+      "name": "eval.tests.test_tui_basics.test_tui_with_file_input",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Grep result should be visible",
+      "name": "eval.tests.test_tui_basics.test_tui_grep_command",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: TUI should still be running",
+      "name": "eval.tests.test_tui_basics.test_tui_handles_random_keys",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Long command should be visible",
+      "name": "eval.tests.test_tui_edge_cases.test_tui_very_long_command",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: TUI should handle alphanumeric",
+      "name": "eval.tests.test_tui_edge_cases.test_tui_special_characters",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Quoted strings should work",
+      "name": "eval.tests.test_tui_edge_cases.test_tui_quotes_in_command",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: Rapid typing should be handled",
+      "name": "eval.tests.test_tui_edge_cases.test_tui_rapid_typing",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "AssertionError: TUI should handle rapid F1",
+      "name": "eval.tests.test_tui_edge_cases.test_tui_rapid_key_presses",
+      "status": "failure"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "failed on setup with \"file /workspace/eval/tests/test_tui_edge_cases.py, line 150\n  def test_tui_multiple_pipes(tui):\nE       fixture 'tui' not found\n>       available fixtures: TestServer, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, clear_env, config_file, doctest_namespace, home_path, home_user_name, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, server, session, session_params, subtests, testrun_uid, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, tmux, user_path, worker_id, zshrc\n>       use 'pytest --fixtures [testpath]' for help on them.\n\n/workspace/eval/tests/test_tui_edge_cases.py:150\"",
+      "name": "eval.tests.test_tui_edge_cases.test_tui_multiple_pipes",
+      "status": "error"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "failed on setup with \"file /workspace/eval/tests/test_tui_edge_cases.py, line 159\n  def test_tui_ampersand_in_command(tui):\nE       fixture 'tui' not found\n>       available fixtures: TestServer, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, clear_env, config_file, doctest_namespace, home_path, home_user_name, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, server, session, session_params, subtests, testrun_uid, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, tmux, user_path, worker_id, zshrc\n>       use 'pytest --fixtures [testpath]' for help on them.\n\n/workspace/eval/tests/test_tui_edge_cases.py:159\"",
+      "name": "eval.tests.test_tui_edge_cases.test_tui_ampersand_in_command",
+      "status": "error"
+    },
+    {
+      "branch": "998c15d7d6c1",
+      "message": "failed on setup with \"file /workspace/eval/tests/test_tui_edge_cases.py, line 167\n  def test_tui_semicolon_in_command(tui):\nE       fixture 'tui' not found\n>       available fixtures: TestServer, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, clear_env, config_file, doctest_namespace, home_path, home_user_name, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, server, session, session_params, subtests, testrun_uid, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, tmux, user_path, worker_id, zshrc\n>       use 'pytest --fixtures [testpath]' for help on them.\n\n/workspace/eval/tests/test_tui_edge_cases.py:167\"",
+      "name": "eval.tests.test_tui_edge_cases.test_tui_semicolon_in_command",
+      "status": "error"
+    },
+    {
+      "branch": "9f722bf32901",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env.test_config_file_created_at_home_dotconfig_when_xdg_config_home_unset",
+      "status": "failure"
+    },
+    {
+      "branch": "9f722bf32901",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env.test_autoeval_mode_default_false_hides_autoeval_in_ui_title",
+      "status": "failure"
+    },
+    {
+      "branch": "9f722bf32901",
+      "message": "AssertionError",
+      "name": "eval.tests.test_config_env.test_config_file_created_at_xdg_config_home_on_startup",
+      "status": "failure"
+    }
+  ],
+  "status_counts": {
+    "error": 3,
+    "failure": 290,
+    "passed": 540,
+    "skipped": 2
+  },
+  "test_branch_errors": {},
+  "test_branches": [
+    "aac649a5af1e",
+    "85b4c88cddb2",
+    "93267c5d44be",
+    "3c7355007e0d",
+    "1504a0a08723",
+    "c6718de56a8d",
+    "998c15d7d6c1",
+    "47883c3e9c0f",
+    "9f722bf32901",
+    "81f113c84b6e",
+    "a2237d29f6ee"
+  ],
+  "test_records": 835,
+  "warnings": []
+}

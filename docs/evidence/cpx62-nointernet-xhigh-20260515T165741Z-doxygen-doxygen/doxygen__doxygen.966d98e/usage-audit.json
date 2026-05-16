@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T04:00:31.191424+00:00",
+  "generated_at": "2026-05-16T04:42:46.597183+00:00",
   "notes": [
     "Costs are estimates from local Codex token_count logs, not authoritative billed dollars.",
     "Pricing comes from an official-doc snapshot because there is no supported structured pricing endpoint.",
@@ -9,7 +9,7 @@
   "pricing_file": "local_state/openai_pricing.json",
   "pricing_file_sha256": "e23f4e8815e5112ba51cd8ff75375c3737eaa0dd484d8b5e2a1d5c2b4a6b24cc",
   "pricing_snapshot": {
-    "age_hours": 9.75,
+    "age_hours": 10.46,
     "fetched_at": "2026-05-15T18:15:27.458192+00:00",
     "max_age_hours": 24,
     "models": {
@@ -1043,17 +1043,74 @@
         "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T18-55-31-019e2cfe-697e-79e0-9d47-8f1d163ae119.jsonl"
       ],
       "total_tokens": 15646490
+    },
+    {
+      "cached_input_tokens": 4385280,
+      "calls": 72,
+      "estimated_cost_usd": "4.5222",
+      "input_tokens": 4573568,
+      "instance_id": "elkowar__pipr.fae0b17",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 46272,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 14842,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-elkowar-pipr",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T18-56-42-019e2cff-7f21-7812-a2e2-c831e3c3a4a2.jsonl"
+      ],
+      "total_tokens": 4619840
+    },
+    {
+      "cached_input_tokens": 23261184,
+      "calls": 184,
+      "estimated_cost_usd": "16.6665",
+      "input_tokens": 23734866,
+      "instance_id": "epistates__treemd.825c6dd",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 88918,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 19416,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-epistates-treemd",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T18-56-50-019e2cff-9e2e-7693-9f9d-e96f05ced12e.jsonl"
+      ],
+      "total_tokens": 23823784
+    },
+    {
+      "cached_input_tokens": 6276352,
+      "calls": 90,
+      "estimated_cost_usd": "6.4025",
+      "input_tokens": 6462308,
+      "instance_id": "eradman__entr.8e2e8b4",
+      "long_context_calls": 0,
+      "model": "gpt-5.5",
+      "output_tokens": 77817,
+      "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "reasoning_effort": "xhigh",
+      "reasoning_output_tokens": 19792,
+      "run_name": "cpx62-nointernet-xhigh-20260515T165741Z-eradman-entr",
+      "run_version": "",
+      "session_logs": [
+        "/home/codex-runner/.codex/sessions/2026/05/15/rollout-2026-05-15T19-00-08-019e2d02-a46d-7de1-8ba6-18517d0fb5e0.jsonl"
+      ],
+      "total_tokens": 6540125
     }
   ],
   "totals": {
-    "cached_input_tokens": 552060928,
-    "calls": 6410,
-    "estimated_cost_usd": 436.4518,
-    "input_tokens": 562719737,
+    "cached_input_tokens": 585983744,
+    "calls": 6756,
+    "estimated_cost_usd": 464.043,
+    "input_tokens": 597490479,
     "long_context_calls": 0,
-    "output_tokens": 3559234,
-    "reasoning_output_tokens": 1012087,
-    "total_tokens": 566278971
+    "output_tokens": 3772241,
+    "reasoning_output_tokens": 1066137,
+    "total_tokens": 601262720
   },
   "warnings": []
 }

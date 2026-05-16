@@ -1,0 +1,1648 @@
+{
+  "error_code": null,
+  "error_details": null,
+  "evaluator_log_steps": [
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "wipe_workspace",
+      "wall_time": 0.11262888400233351
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "remove_hashed_files",
+      "wall_time": 0.11823659601213876
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "seed_git",
+      "wall_time": 0.12365149699326139
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "compile",
+      "wall_time": 0.33756404400628526
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "copy_executable",
+      "wall_time": 0.12067550799110904
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "hash_executable",
+      "wall_time": 0.1257678799884161
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "install_rerunfailures",
+      "wall_time": 0.6275265369913541
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13501923900912516
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11396270000841469
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11833717500849161
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12825969199184328
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 16.388707008998608
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.025706884000101127
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11972737999167293
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12589700899843592
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11465428699739277
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11882846300431993
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 30.70038152601046
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03792025300208479
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12926724799035583
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12666074601293076
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11521878499479499
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.13778220899985172
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 135.866798078001
+    },
+    {
+      "branch": "98c8763e38d2",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.038959088997216895
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12320318599813618
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12060555499920156
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10610558300686534
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1254655890079448
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 801.7290969439928
+    },
+    {
+      "branch": "98c8763e38d2",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03827315999660641
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.11727629099914338
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1209157090052031
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11854811701050494
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.10964800699730404
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.290674804986338
+    },
+    {
+      "branch": "b302f6e95c77",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.025710432993946597
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.12922741098736878
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12525151400768664
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12250258299172856
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1261291609989712
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.375133787994855
+    },
+    {
+      "branch": "365dd4330326",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03394017499522306
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.10911947900603991
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.10051016799116042
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11330966500099748
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12686659800237976
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 2.0866990009963047
+    },
+    {
+      "branch": "41fb392f5ccd",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03367756500665564
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1183369469945319
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11960373300826177
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11393057300301734
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11154113001248334
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "run_tests",
+      "wall_time": 114.97819078000612
+    },
+    {
+      "branch": "fb66298e51b2",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.036609576010960154
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1320694299938623
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.12799295500735752
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12634353000612464
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12515991399413906
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 23.85690999100916
+    },
+    {
+      "branch": "a603a1c0c055",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.035702078996109776
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13833705899014603
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.106858265993651
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.10163156400085427
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.1236372990097152
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 34.10989964699547
+    },
+    {
+      "branch": "a603a1c0c055",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.03514731000177562
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.13415311300195754
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1176054590032436
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11219695799809415
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11919491400476545
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 7.101231157997972
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "results_read",
+      "wall_time": 0.03482076099317055
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.139098826010013
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.1271512669918593
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.09712529899843503
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.11177444999339059
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 7.1742059200041695
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 1,
+      "step": "results_read",
+      "wall_time": 0.030273416996351443
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1342523929924937
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.11550060599984135
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.11890468500496354
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.14578711400099564
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.1829563310020603
+    },
+    {
+      "branch": "81a205a18540",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.024525297005311586
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "restore_executable",
+      "wall_time": 0.1386806280061137
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "verify_executable_hash",
+      "wall_time": 0.09744991800107528
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "clean_stale_results",
+      "wall_time": 0.12948149899602868
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "patch_timeout_method",
+      "wall_time": 0.12537144300586078
+    },
+    {
+      "branch": "",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "run_tests",
+      "wall_time": 3.3062933900073403
+    },
+    {
+      "branch": "89cd9b86383b",
+      "exception_info": "",
+      "returncode": 0,
+      "step": "results_read",
+      "wall_time": 0.029257130998303182
+    }
+  ],
+  "executable_hash": "8f4811c7719155cf41b9c06b9905b9a63f06e1cf9c30ae7ee3ea5bc780f9970b",
+  "failed_tests": [
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "AssertionError",
+      "name": "tests.test_execution_modes.test_shell_variable_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "AssertionError",
+      "name": "tests.test_output_options.test_file_path_substitution_with_shell_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "AssertionError",
+      "name": "tests.test_environment_variables.test_entr_restart_signal_env_var",
+      "status": "failure"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "AssertionError",
+      "name": "tests.test_event_handling.test_file_attribute_change_detection",
+      "status": "failure"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "AssertionError",
+      "name": "tests.test_directory_watching.test_directory_watch_incompatible_with_restart",
+      "status": "failure"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "AssertionError",
+      "name": "tests.test_restart_mode.test_restart_error_handling",
+      "status": "failure"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "AssertionError",
+      "name": "tests.test_signal_handling.test_child_process_group_in_restart_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "AssertionError",
+      "name": "tests.test_restart_mode.test_restart_with_c_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/executable', '-r', '-n', '/tmp/tmp41kuiapc/counter.sh']' timed out after 3 seconds",
+      "name": "tests.test_restart_mode.test_restart_with_long_running_process",
+      "status": "failure"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "",
+      "name": "tests.test_environment_variables.test_empty_restart_signal",
+      "status": "not_run"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "",
+      "name": "tests.test_environment_variables.test_invalid_restart_signal",
+      "status": "not_run"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "",
+      "name": "tests.test_environment_variables.test_kill_signal_rejected",
+      "status": "not_run"
+    },
+    {
+      "branch": "aa2ac39b58a8",
+      "message": "",
+      "name": "tests.test_status_formatting.test_status_script_incompatible_with_restart",
+      "status": "not_run"
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "message": "AssertionError",
+      "name": "tests.test_core_execution.test_placeholder_multiple_times",
+      "status": "failure"
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "message": "AssertionError",
+      "name": "tests.test_environment.test_env_restart_signal_invalid_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "message": "AssertionError",
+      "name": "tests.test_environment.test_env_restart_signal_invalid_name",
+      "status": "failure"
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "message": "AssertionError",
+      "name": "tests.test_environment.test_env_restart_signal_kill",
+      "status": "failure"
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "message": "AssertionError",
+      "name": "tests.test_environment.test_env_restart_signal_numeric",
+      "status": "failure"
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "message": "AssertionError",
+      "name": "tests.test_status_filter.test_status_filter_incompatible_with_restart",
+      "status": "failure"
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "message": "AssertionError",
+      "name": "tests.test_strengthened.test_env_restart_signal_invalid_empty_strong",
+      "status": "failure"
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "message": "AssertionError",
+      "name": "tests.test_strengthened.test_env_restart_signal_invalid_name_strong",
+      "status": "failure"
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "message": "AssertionError",
+      "name": "tests.test_strengthened.test_env_restart_signal_kill_strong",
+      "status": "failure"
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "message": "AssertionError",
+      "name": "tests.test_strengthened.test_env_restart_signal_numeric_strong",
+      "status": "failure"
+    },
+    {
+      "branch": "bcc0b83fd418",
+      "message": "AssertionError",
+      "name": "tests.test_strengthened.test_status_filter_incompatible_with_restart_strong",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_placeholder_only_replaces_first_occurrence",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_double_c_flag_clears_scrollback_too",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_conflicting_flags_r_and_x_rejected",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_shell_flag_sets_dollar_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Expected command to run once, got 2 times",
+      "name": "tests.test_directory_watching.test_add_file_to_watched_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Expected command to run once for subdirectory creation",
+      "name": "tests.test_directory_watching.test_add_subdirectory_to_watched_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Expected one trigger from inode change, got 2",
+      "name": "tests.test_directory_watching.test_modify_file_in_watched_directory_with_d_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Expected command to run once",
+      "name": "tests.test_directory_watching.test_directory_with_many_files",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Expected exit code 1 for directory removal, got 2",
+      "name": "tests.test_directory_watching.test_watch_directory_then_remove_it",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_entr_gaps.test_multiple_substitution_placeholders_only_first_replaced",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_shell_flag_with_single_argument",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_entr_gaps.test_invalid_restart_signal_name",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_ev_trace_output",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Command should not run for hidden dir with single -d, but got 1 executions",
+      "name": "tests.test_directory_watching.test_hidden_directory_with_single_d_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_entr_restart_signal_invalid",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_filter_multiple_exit_codes",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_filter_exit_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_script_uses_basename",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_pager_set_to_bin_cat",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_filter_custom_script",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_directory_watching.test_remove_file_from_watched_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Hidden file addition with -d triggered: 2 times",
+      "name": "tests.test_directory_watching.test_hidden_file_with_single_d_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_cli.test_multiple_conflicting_x_r_order_independent",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: EV_TRACE should output open_max value",
+      "name": "tests.test_entr_gaps.test_ev_trace_shows_event_details",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Expected trigger for symlink addition",
+      "name": "tests.test_directory_watching.test_symlink_in_watched_directory",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Expected command to run once for subdirectory removal",
+      "name": "tests.test_directory_watching.test_remove_subdirectory",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_filter_exit_nonzero",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_filter_with_shell_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_filter_with_restart_flag_error",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_filter_common_signals",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Delete and recreation should trigger command once, got: ''",
+      "name": "tests.test_file_watching.test_file_deletion_and_recreation_triggers_command",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_directory_watching.test_watching_directory_with_combination_flags",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: With -a flag, each modification should trigger execution, got: 'run\\nrun\\nrun\\nrun\\nrun\\nrun\\n'",
+      "name": "tests.test_file_watching.test_aggressive_flag_prevents_consolidation",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_filter_exit_custom_code",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Expected trigger with -d -d for hidden file, got 2",
+      "name": "tests.test_directory_watching.test_hidden_file_with_double_d_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_entr_restart_signal_case_sensitive",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_empty_entr_status_script_uses_default",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_directory_watching.test_directory_permissions_readable",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_entr_gaps.test_double_clear_flag_cc_full_screen_clear",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_filter_signal_termination",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Modifying target should not trigger when watching symlink, got: 'run\\n'",
+      "name": "tests.test_file_watching.test_watching_symlink_does_not_follow_to_target",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_directory_watching.test_empty_directory_watching",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_filter_different_signals",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Rename operations should trigger command, got: ''",
+      "name": "tests.test_file_watching.test_rename_operation_triggers_reopen",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exec_on_startup_and_file_change",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Should contain clear scrollback code with -cc",
+      "name": "tests.test_file_watching.test_clear_flag_double_c_clears_scrollback",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Expected trigger for hidden file with -d -d",
+      "name": "tests.test_directory_watching.test_double_d_flag_with_existing_hidden_files",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/executable', '-n', '-x', '/tmp/pytest-of-root/pytest-0/popen-gw10/test_status_filter_single_x_fa2/exit_zero.sh']' timed out after 5 seconds",
+      "name": "tests.test_env_status.test_status_filter_single_x_fails",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exec_when_file_made_executable",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Should run only once (events during execution are dropped), got: 'run\\nrun\\n'",
+      "name": "tests.test_file_watching.test_multiple_modifications_during_command_execution_consolidated",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exec_when_vim_writes",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_watch_and_exec_overwritten_program",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exec_single_utility_two_files_simultaneous",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exec_command_non_interactive_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_watches_operate_on_running_executable",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "subprocess.TimeoutExpired: Command '['./executable', '-n', 'echo']' timed out after 5 seconds",
+      "name": "tests.test_harvest.test_invalid_signal_kill",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_terminate_subprocesses_custom_signal_restart",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "subprocess.TimeoutExpired: Command '['./executable', '-n', 'echo']' timed out after 5 seconds",
+      "name": "tests.test_harvest.test_invalid_signal_empty",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exec_using_utility_substitution",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_utility_crash_entr_continues",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exec_command_background_stdin_closed",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_respond_to_events_while_utility_running",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "Symlink watching behavior varies",
+      "name": "tests.test_harvest.test_exec_when_symlink_changed",
+      "status": "skipped"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_placeholder_in_shell_command",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_restart_server_when_file_modified",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exit_no_action_restart_dirwatch_combined",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exec_using_shell_option",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exec_using_first_file_to_change",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_terminate_subprocesses_terminal_closed",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_double_clear_with_shell_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exec_when_file_opened_write_then_closed",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_space_key_triggers_execution",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_harvest.test_exec_when_stash_reverted",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_multiple_space_presses_trigger_multiple_executions",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_uppercase_Q_does_not_quit",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_aggressive_flag_with_space",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_combined_flags_interactive",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_directory_watch_with_interactive",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_env_status.test_status_script_creates_default",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Expected exit code 0 for SIGHUP, got 129",
+      "name": "tests.test_signals.test_restart_mode_sighup_cleanup",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_terminal_state_restoration_on_exit",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_space_and_q_rapid_sequence",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_integration.test_restart_mode_with_status_filter",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_empty_command_with_space",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_signals.test_postpone_mode_sigint",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_q_key_quits_entr",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: entr did not respond to SIGINT",
+      "name": "tests.test_signals.test_custom_restart_signal_hup",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_custom_status_script_nested_dir_created",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_filter_exit_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_rapid_q_key_presses",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_filter_with_signal_termination",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "subprocess.TimeoutExpired: Command '['./executable', '-n', 'echo']' timed out after 5 seconds",
+      "name": "tests.test_harvest.test_invalid_signal_zero",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Process should have restarted with new PID",
+      "name": "tests.test_interactive.test_restart_flag_with_interactive_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Expected exit code 0 for SIGINT, got 130",
+      "name": "tests.test_signals.test_restart_mode_sigint_cleanup",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_filter_exit_1",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: entr did not respond to SIGINT",
+      "name": "tests.test_signals.test_child_receives_sigterm_not_sigkill_on_restart",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_other_keys_do_not_trigger",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_filter_command_name_extraction",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_filter_exit_255",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_interactive.test_postpone_flag_with_space_key",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "subprocess.TimeoutExpired: Command '['/workspace/executable', '-n', '-r', 'echo', 'test']' timed out after 5 seconds",
+      "name": "tests.test_signals.test_invalid_restart_signal_errors_immediately",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_xdirname_with_filename_only",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Found 1 zombie processes",
+      "name": "tests.test_signals.test_zombie_prevention_multiple_restarts",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_filter_with_shell_mode",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_xdirname_with_nested_path",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_filter_with_stderr_output",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_script_with_special_chars_in_path",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_directory_creation_permissions",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_file_creation_permissions",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_script_not_recreated_if_exists",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_filter_preserves_stdout_from_command",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_filter_sigint",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_filter_with_sigkill",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_custom_status_script_via_env",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_empty_entr_status_script_env_uses_default",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: Processes still alive after restart (should be terminated or zombie): [(3012, 'sleeping', 'sleep')]",
+      "name": "tests.test_signals.test_restart_signal_sent_to_process_group",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError",
+      "name": "tests.test_status_gaps.test_status_script_creation_message",
+      "status": "failure"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "failed on setup with \"worker 'gw17' crashed while running 'tests/test_signals.py::test_custom_restart_signal_with_sig_prefix'\"",
+      "name": "tests.test_signals.test_custom_restart_signal_with_sig_prefix",
+      "status": "error"
+    },
+    {
+      "branch": "98c8763e38d2",
+      "message": "AssertionError: iteration 0: unexpected stdout",
+      "name": "tests.test_status_gaps.test_status_filter_rapid_successive_invocations",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive.test_space_triggers_immediate_execution",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive.test_space_triggers_multiple_executions",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError: Should execute after space press",
+      "name": "eval.tests.test_interactive.test_space_with_postpone_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError: Should have restarted process",
+      "name": "eval.tests.test_interactive.test_space_with_restart_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive.test_clear_screen_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError: Expected at least 3 executions, got 1",
+      "name": "eval.tests.test_interactive.test_rapid_space_presses",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError: Should have exited cleanly",
+      "name": "eval.tests.test_interactive.test_invalid_keys_ignored",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive.test_all_events_flag",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive.test_quit_after_first_execution",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError: Process should have restarted",
+      "name": "eval.tests.test_interactive.test_restart_flag_with_long_process",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive.test_space_with_postpone_and_restart",
+      "status": "failure"
+    },
+    {
+      "branch": "fb66298e51b2",
+      "message": "AssertionError",
+      "name": "eval.tests.test_interactive.test_space_then_quit",
+      "status": "failure"
+    },
+    {
+      "branch": "a603a1c0c055",
+      "message": "AssertionError",
+      "name": "eval.tests.test_system_externalized.test_ext_status_script_incompatible_with_restart",
+      "status": "failure"
+    },
+    {
+      "branch": "a603a1c0c055",
+      "message": "AssertionError",
+      "name": "eval.tests.test_system_externalized.test_ext_one_shot_exec_cat_first_changed_file",
+      "status": "failure"
+    },
+    {
+      "branch": "a603a1c0c055",
+      "message": "failed on setup with \"worker 'gw18' crashed while running 'eval/tests/test_system_externalized.py::test_ext_install_default_status_script'\"",
+      "name": "eval.tests.test_system_externalized.test_ext_install_default_status_script",
+      "status": "error"
+    },
+    {
+      "branch": "85e09b688d6c",
+      "message": "",
+      "name": "eval.tests.test_env_and_config.test_config_status_script_env_override_path_created",
+      "status": "not_run"
+    },
+    {
+      "branch": "85e09b688d6c",
+      "message": "",
+      "name": "eval.tests.test_env_and_config.test_env_entr_restart_signal_invalid_rejected",
+      "status": "not_run"
+    },
+    {
+      "branch": "85e09b688d6c",
+      "message": "",
+      "name": "eval.tests.test_env_and_config.test_env_entr_restart_signal_usr1_current_behavior_is_error",
+      "status": "not_run"
+    },
+    {
+      "branch": "85e09b688d6c",
+      "message": "",
+      "name": "eval.tests.test_env_and_config.test_env_pager_default_is_set_to_cat_when_unset",
+      "status": "not_run"
+    }
+  ],
+  "status_counts": {
+    "error": 2,
+    "failure": 151,
+    "not_run": 8,
+    "passed": 520,
+    "skipped": 1
+  },
+  "test_branch_errors": {
+    "85e09b688d6c": [
+      {
+        "error_code": "results_read_failed",
+        "error_details": "Error response from daemon: Could not find the file /workspace/eval/results.xml in container bf250f745a35e949f07a84f769c8bdce7a2e23472b3d4c482ebb4d800337cdc7"
+      }
+    ]
+  },
+  "test_branches": [
+    "aa2ac39b58a8",
+    "bcc0b83fd418",
+    "98c8763e38d2",
+    "b302f6e95c77",
+    "365dd4330326",
+    "41fb392f5ccd",
+    "fb66298e51b2",
+    "a603a1c0c055",
+    "85e09b688d6c",
+    "81a205a18540",
+    "89cd9b86383b"
+  ],
+  "test_records": 682,
+  "warnings": []
+}
