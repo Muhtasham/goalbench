@@ -118,7 +118,7 @@
       "source": "https://programbench.com/extended/"
     }
   ],
-  "generated_at": "2026-05-17T05:54:19.445150+00:00",
+  "generated_at": "2026-05-17T05:55:51.595814+00:00",
   "groups": [
     {
       "agent": "Codex /goal",
@@ -134,7 +134,7 @@
       "model": "GPT 5.5 (xhigh)",
       "resolved": 0,
       "resolved_rate": 0.0,
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score_distribution": [
         {
           "count": 18,
@@ -217,7 +217,7 @@
           "upper": 1.0
         }
       ],
-      "slug": "gpt-5-5--xhigh--no-internet",
+      "slug": "gpt-5-5--xhigh--no-internet-20260516t081309z",
       "total_calls": 23234,
       "total_cost_usd": 397.6669,
       "total_wall_clock_hours": 75.30333333333333
@@ -263,7 +263,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-abishekvashok-cmatrix",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9940828402366864,
       "task_path": "task/abishekvashok__cmatrix.5c082c6/",
       "wall_clock_seconds": 778
@@ -297,7 +297,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-agourlay-zip-password-finder",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6735294117647059,
       "task_path": "task/agourlay__zip-password-finder.704700d/",
       "wall_clock_seconds": 1109
@@ -331,7 +331,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ajeetdsouza-zoxide",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7853107344632768,
       "task_path": "task/ajeetdsouza__zoxide.67ca1bc/",
       "wall_clock_seconds": 1554
@@ -365,7 +365,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-alecthomas-chroma",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.16500994035785288,
       "task_path": "task/alecthomas__chroma.8d04def/",
       "wall_clock_seconds": 1311
@@ -399,7 +399,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-alexpovel-srgn",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7143628509719222,
       "task_path": "task/alexpovel__srgn.89f943b/",
       "wall_clock_seconds": 1349
@@ -433,7 +433,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-altdesktop-i3-style",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8775510204081632,
       "task_path": "task/altdesktop__i3-style.f93821b/",
       "wall_clock_seconds": 1187
@@ -467,7 +467,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ammarabouzor-tui-journal",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.08624376336421953,
       "task_path": "task/ammarabouzor__tui-journal.2b4540d/",
       "wall_clock_seconds": 1151
@@ -501,7 +501,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-anordal-shellharden",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8429223744292238,
       "task_path": "task/anordal__shellharden.6a6ffd4/",
       "wall_clock_seconds": 1353
@@ -535,7 +535,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-antonmedv-fx",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.4943820224719101,
       "task_path": "task/antonmedv__fx.86d0d34/",
       "wall_clock_seconds": 2036
@@ -569,7 +569,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-antonmedv-walk",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.676595744680851,
       "task_path": "task/antonmedv__walk.bf802ef/",
       "wall_clock_seconds": 900
@@ -603,7 +603,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ariga-atlas",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6229135053110774,
       "task_path": "task/ariga__atlas.6d81150/",
       "wall_clock_seconds": 1825
@@ -637,7 +637,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-arq5x-bedtools2",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.41690408357075026,
       "task_path": "task/arq5x__bedtools2.dd57059/",
       "wall_clock_seconds": 1154
@@ -671,7 +671,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-arthursonzogni-json-tui",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9139072847682119,
       "task_path": "task/arthursonzogni__json-tui.17a22b6/",
       "wall_clock_seconds": 1575
@@ -705,7 +705,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ast-grep-ast-grep",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.3526077097505669,
       "task_path": "task/ast-grep__ast-grep.dde0fe0/",
       "wall_clock_seconds": 1241
@@ -739,7 +739,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-astaxie-bat",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8295142071494043,
       "task_path": "task/astaxie__bat.17d1080/",
       "wall_clock_seconds": 1204
@@ -773,7 +773,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-astro-deadnix",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8687707641196013,
       "task_path": "task/astro__deadnix.d590041/",
       "wall_clock_seconds": 1384
@@ -807,7 +807,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-axodotdev-oranda",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.4367666232073012,
       "task_path": "task/axodotdev__oranda.27d60c7/",
       "wall_clock_seconds": 1392
@@ -841,7 +841,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-bellard-quickjs",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.0,
       "task_path": "task/bellard__quickjs.d7ae12a/",
       "wall_clock_seconds": 1690
@@ -875,7 +875,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-bensadeh-tailspin",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.4113821138211382,
       "task_path": "task/bensadeh__tailspin.6278437/",
       "wall_clock_seconds": 859
@@ -909,7 +909,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-blacknon-hwatch",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7962598425196851,
       "task_path": "task/blacknon__hwatch.edfcb62/",
       "wall_clock_seconds": 1285
@@ -943,7 +943,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-blake3-team-blake3",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9721792890262752,
       "task_path": "task/blake3-team__blake3.15e83a5/",
       "wall_clock_seconds": 1224
@@ -977,7 +977,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-bootandy-dust",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.761986301369863,
       "task_path": "task/bootandy__dust.62bf1e1/",
       "wall_clock_seconds": 1610
@@ -1011,7 +1011,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-boyter-scc",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5452586206896551,
       "task_path": "task/boyter__scc.515f91c/",
       "wall_clock_seconds": 1191
@@ -1045,7 +1045,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-brocode-fblog",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.013292433537832311,
       "task_path": "task/brocode__fblog.3b54330/",
       "wall_clock_seconds": 1093
@@ -1079,7 +1079,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-burntsushi-ripgrep",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8054162487462387,
       "task_path": "task/burntsushi__ripgrep.3b7fd44/",
       "wall_clock_seconds": 1443
@@ -1113,7 +1113,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-burntsushi-xsv",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8857868020304569,
       "task_path": "task/burntsushi__xsv.f430466/",
       "wall_clock_seconds": 1650
@@ -1147,7 +1147,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-byron-dua-cli",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8787023977433004,
       "task_path": "task/byron__dua-cli.8570c15/",
       "wall_clock_seconds": 1851
@@ -1181,7 +1181,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-canop-broot",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.608534322820037,
       "task_path": "task/canop__broot.d6c798e/",
       "wall_clock_seconds": 982
@@ -1215,7 +1215,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-canop-rhit",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6487148102815178,
       "task_path": "task/canop__rhit.ae90bcb/",
       "wall_clock_seconds": 834
@@ -1249,7 +1249,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-cheat-cheat",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5555555555555556,
       "task_path": "task/cheat__cheat.b8098dc/",
       "wall_clock_seconds": 1402
@@ -1283,7 +1283,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-chirlu-sox",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.2778702163061564,
       "task_path": "task/chirlu__sox.42b3557/",
       "wall_clock_seconds": 1254
@@ -1317,7 +1317,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-chmln-handlr",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9016620498614959,
       "task_path": "task/chmln__handlr.90e78ba/",
       "wall_clock_seconds": 1258
@@ -1351,7 +1351,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-chmln-sd",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9592592592592593,
       "task_path": "task/chmln__sd.87d1ba5/",
       "wall_clock_seconds": 1852
@@ -1385,7 +1385,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-clog-tool-clog-cli",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.08695652173913043,
       "task_path": "task/clog-tool__clog-cli.7066cba/",
       "wall_clock_seconds": 1248
@@ -1419,7 +1419,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-cmatsuoka-figlet",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.36811926605504586,
       "task_path": "task/cmatsuoka__figlet.202a0a8/",
       "wall_clock_seconds": 1870
@@ -1453,7 +1453,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-codesnap-rs-codesnap",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7688266199649737,
       "task_path": "task/codesnap-rs__codesnap.f81e4f3/",
       "wall_clock_seconds": 1100
@@ -1487,7 +1487,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-cordx56-rustowl",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7215619694397284,
       "task_path": "task/cordx56__rustowl.655bc5c/",
       "wall_clock_seconds": 1611
@@ -1521,7 +1521,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-crowdagger-crowbook",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5415117719950434,
       "task_path": "task/crowdagger__crowbook.ea214d7/",
       "wall_clock_seconds": 1219
@@ -1555,7 +1555,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-cslarsen-jp2a",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5530903328050714,
       "task_path": "task/cslarsen__jp2a.61d205f/",
       "wall_clock_seconds": 1396
@@ -1589,7 +1589,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-cweill-gotests",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6915422885572139,
       "task_path": "task/cweill__gotests.2a672c5/",
       "wall_clock_seconds": 1360
@@ -1623,7 +1623,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-dalance-amber",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.23185840707964603,
       "task_path": "task/dalance__amber.69a0f52/",
       "wall_clock_seconds": 912
@@ -1657,7 +1657,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-dandavison-delta",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.33473684210526317,
       "task_path": "task/dandavison__delta.acd758f/",
       "wall_clock_seconds": 1375
@@ -1691,7 +1691,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-danmar-cppcheck",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.05174035747883349,
       "task_path": "task/danmar__cppcheck.0a5b103/",
       "wall_clock_seconds": 1018
@@ -1725,7 +1725,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-direnv-direnv",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6419316843345112,
       "task_path": "task/direnv__direnv.02040c7/",
       "wall_clock_seconds": 917
@@ -1759,7 +1759,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-doxygen-doxygen",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.36681222707423583,
       "task_path": "task/doxygen__doxygen.966d98e/",
       "wall_clock_seconds": 1059
@@ -1793,7 +1793,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-drew-alleman-datasurgeon",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.46613545816733065,
       "task_path": "task/drew-alleman__datasurgeon.d257cee/",
       "wall_clock_seconds": 1101
@@ -1827,7 +1827,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ducaale-xh",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5397096498719044,
       "task_path": "task/ducaale__xh.4a6e44f/",
       "wall_clock_seconds": 1820
@@ -1861,7 +1861,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-duckdb-duckdb",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.18123893805309735,
       "task_path": "task/duckdb__duckdb.bdb65ec/",
       "wall_clock_seconds": 1535
@@ -1895,7 +1895,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-dundee-gdu",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7691645133505599,
       "task_path": "task/dundee__gdu.ede21d2/",
       "wall_clock_seconds": 1079
@@ -1929,7 +1929,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ecumene-rust-sloth",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5842105263157895,
       "task_path": "task/ecumene__rust-sloth.051c559/",
       "wall_clock_seconds": 1447
@@ -1963,7 +1963,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ekzhang-bore",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8350253807106599,
       "task_path": "task/ekzhang__bore.8e059cd/",
       "wall_clock_seconds": 1543
@@ -1997,7 +1997,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-eliukblau-pixterm",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8674418604651163,
       "task_path": "task/eliukblau__pixterm.1a93fd5/",
       "wall_clock_seconds": 2211
@@ -2031,7 +2031,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-elkowar-pipr",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5752380952380952,
       "task_path": "task/elkowar__pipr.fae0b17/",
       "wall_clock_seconds": 1167
@@ -2065,7 +2065,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-epistates-treemd",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5602294455066922,
       "task_path": "task/epistates__treemd.825c6dd/",
       "wall_clock_seconds": 1816
@@ -2099,7 +2099,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-eradman-entr",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7559726962457338,
       "task_path": "task/eradman__entr.8e2e8b4/",
       "wall_clock_seconds": 1143
@@ -2133,7 +2133,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-esubaalew-run",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8226072607260726,
       "task_path": "task/esubaalew__run.0fb9dec/",
       "wall_clock_seconds": 880
@@ -2167,7 +2167,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-eudoxia0-hashcards",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5662414131501472,
       "task_path": "task/eudoxia0__hashcards.48aa136/",
       "wall_clock_seconds": 1321
@@ -2201,7 +2201,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-facebook-zstd",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.1521099116781158,
       "task_path": "task/facebook__zstd.1168da0/",
       "wall_clock_seconds": 1188
@@ -2235,7 +2235,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-facebookresearch-fasttext",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8108974358974359,
       "task_path": "task/facebookresearch__fasttext.1142dc4/",
       "wall_clock_seconds": 852
@@ -2269,7 +2269,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ffmpeg-ffmpeg",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.13901639344262295,
       "task_path": "task/ffmpeg__ffmpeg.360a402/",
       "wall_clock_seconds": 1021
@@ -2303,7 +2303,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-filosottile-age",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.0,
       "task_path": "task/filosottile__age.706dfc1/",
       "wall_clock_seconds": 1379
@@ -2337,7 +2337,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-foriequal0-git-trim",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6954813359528488,
       "task_path": "task/foriequal0__git-trim.07c2f50/",
       "wall_clock_seconds": 1015
@@ -2371,7 +2371,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-gabotechs-dep-tree",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7479768786127168,
       "task_path": "task/gabotechs__dep-tree.60a95a2/",
       "wall_clock_seconds": 1358
@@ -2405,7 +2405,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ggreer-the_silver_searcher",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.4541832669322709,
       "task_path": "task/ggreer__the_silver_searcher.a61f178/",
       "wall_clock_seconds": 1062
@@ -2439,7 +2439,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-git-bahn-git-graph",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8732394366197183,
       "task_path": "task/git-bahn__git-graph.87b4473/",
       "wall_clock_seconds": 1325
@@ -2473,7 +2473,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-go-critic-go-critic",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5557809330628803,
       "task_path": "task/go-critic__go-critic.9aea378/",
       "wall_clock_seconds": 1538
@@ -2507,7 +2507,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-google-brotli",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9115646258503401,
       "task_path": "task/google__brotli.b3dc9cc/",
       "wall_clock_seconds": 1410
@@ -2541,7 +2541,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-gromacs-gromacs",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.0321285140562249,
       "task_path": "task/gromacs__gromacs.665ea4c/",
       "wall_clock_seconds": 1224
@@ -2575,7 +2575,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-guumaster-hostctl",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7050428163653664,
       "task_path": "task/guumaster__hostctl.d6d9699/",
       "wall_clock_seconds": 1458
@@ -2609,7 +2609,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-hairyhenderson-gomplate",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.02050580997949419,
       "task_path": "task/hairyhenderson__gomplate.05eb3aa/",
       "wall_clock_seconds": 1261
@@ -2643,7 +2643,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-halitechallenge-halite",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8727272727272727,
       "task_path": "task/halitechallenge__halite.822cfb6/",
       "wall_clock_seconds": 1423
@@ -2677,7 +2677,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-hatoo-oha",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8398220244716351,
       "task_path": "task/hatoo__oha.8dc6349/",
       "wall_clock_seconds": 1268
@@ -2711,7 +2711,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-hooklift-gowsdl",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8107416879795396,
       "task_path": "task/hooklift__gowsdl.2a06cec/",
       "wall_clock_seconds": 1407
@@ -2745,7 +2745,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-hpjansson-chafa",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.1755567063697566,
       "task_path": "task/hpjansson__chafa.dd4d4c1/",
       "wall_clock_seconds": 1634
@@ -2779,7 +2779,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-htop-dev-htop",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8023088023088023,
       "task_path": "task/htop-dev__htop.523600b/",
       "wall_clock_seconds": 897
@@ -2813,7 +2813,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-hush-shell-hush",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.16402997502081598,
       "task_path": "task/hush-shell__hush.560c33a/",
       "wall_clock_seconds": 1582
@@ -2847,7 +2847,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-incu6us-goimports-reviser",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7719298245614035,
       "task_path": "task/incu6us__goimports-reviser.81bd549/",
       "wall_clock_seconds": 1101
@@ -2881,7 +2881,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ip7z-7zip",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.3883029721955896,
       "task_path": "task/ip7z__7zip.839151e/",
       "wall_clock_seconds": 1066
@@ -2915,7 +2915,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ismaelgv-rnr",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9414348462664714,
       "task_path": "task/ismaelgv__rnr.fc0733b/",
       "wall_clock_seconds": 1223
@@ -2949,7 +2949,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-isona-dirble",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7827298050139275,
       "task_path": "task/isona__dirble.e2dea9f/",
       "wall_clock_seconds": 1682
@@ -2983,7 +2983,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ivanceras-svgbob",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.4724576271186441,
       "task_path": "task/ivanceras__svgbob.6d00ad9/",
       "wall_clock_seconds": 1282
@@ -3017,7 +3017,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-jarun-nnn",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9832285115303984,
       "task_path": "task/jarun__nnn.cb2c535/",
       "wall_clock_seconds": 812
@@ -3051,7 +3051,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-jesseduffield-lazygit",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5426900584795321,
       "task_path": "task/jesseduffield__lazygit.1d0db51/",
       "wall_clock_seconds": 1795
@@ -3085,7 +3085,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-jgm-pandoc",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.16947207345065035,
       "task_path": "task/jgm__pandoc.5caad90/",
       "wall_clock_seconds": 2048
@@ -3119,7 +3119,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-jhspetersson-fselect",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6170144462279293,
       "task_path": "task/jhspetersson__fselect.c3559ca/",
       "wall_clock_seconds": 1685
@@ -3153,7 +3153,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-johanneskaufmann-html-to-markdown",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9163841807909604,
       "task_path": "task/johanneskaufmann__html-to-markdown.3006818/",
       "wall_clock_seconds": 1352
@@ -3187,7 +3187,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-johnkerl-miller",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.23666051786568285,
       "task_path": "task/johnkerl__miller.8d85b46/",
       "wall_clock_seconds": 1512
@@ -3221,7 +3221,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-jonas-tig",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8392181588902901,
       "task_path": "task/jonas__tig.8334123/",
       "wall_clock_seconds": 825
@@ -3255,7 +3255,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-jqlang-jq",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9005433887699654,
       "task_path": "task/jqlang__jq.b33a763/",
       "wall_clock_seconds": 907
@@ -3289,7 +3289,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-jrnxf-thokr",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6359550561797753,
       "task_path": "task/jrnxf__thokr.09375ef/",
       "wall_clock_seconds": 2829
@@ -3323,7 +3323,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-junegunn-fzf",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7836383207750269,
       "task_path": "task/junegunn__fzf.b56d614/",
       "wall_clock_seconds": 1862
@@ -3357,7 +3357,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-kaushiksrini-parqeye",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6638830897703549,
       "task_path": "task/kaushiksrini__parqeye.8072121/",
       "wall_clock_seconds": 1176
@@ -3391,7 +3391,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-kisielk-errcheck",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.530791788856305,
       "task_path": "task/kisielk__errcheck.dacab89/",
       "wall_clock_seconds": 1243
@@ -3425,7 +3425,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-konradsz-igrep",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7532467532467533,
       "task_path": "task/konradsz__igrep.aa75630/",
       "wall_clock_seconds": 1490
@@ -3459,7 +3459,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ksxgithub-parallel-disk-usage",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.839924670433145,
       "task_path": "task/ksxgithub__parallel-disk-usage.96978ed/",
       "wall_clock_seconds": 1149
@@ -3493,7 +3493,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-kyoh86-richgo",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.21245421245421245,
       "task_path": "task/kyoh86__richgo.313114f/",
       "wall_clock_seconds": 1077
@@ -3527,7 +3527,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-kyoheiu-felix",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7749003984063745,
       "task_path": "task/kyoheiu__felix.95df390/",
       "wall_clock_seconds": 958
@@ -3561,7 +3561,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-lfos-calcurse",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6996996996996997,
       "task_path": "task/lfos__calcurse.49180d5/",
       "wall_clock_seconds": 1089
@@ -3595,7 +3595,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-lh3-seqtk",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7249417249417249,
       "task_path": "task/lh3__seqtk.94e7070/",
       "wall_clock_seconds": 1470
@@ -3629,7 +3629,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-lua-lua",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7137518684603886,
       "task_path": "task/lua__lua.c6b4848/",
       "wall_clock_seconds": 1187
@@ -3663,7 +3663,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-luajit-luajit",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6926188068756319,
       "task_path": "task/luajit__luajit.a553b3d/",
       "wall_clock_seconds": 1467
@@ -3697,7 +3697,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-lymphatus-caesium-clt",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.928695652173913,
       "task_path": "task/lymphatus__caesium-clt.a529b2e/",
       "wall_clock_seconds": 1251
@@ -3731,7 +3731,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-lz4-lz4",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8268716577540107,
       "task_path": "task/lz4__lz4.1519f46/",
       "wall_clock_seconds": 2106
@@ -3765,7 +3765,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-madler-pigz",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.924187725631769,
       "task_path": "task/madler__pigz.fe4894f/",
       "wall_clock_seconds": 1429
@@ -3799,7 +3799,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-mfridman-tparse",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8164705882352942,
       "task_path": "task/mfridman__tparse.2416b4b/",
       "wall_clock_seconds": 1611
@@ -3833,7 +3833,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-mgdm-htmlq",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9298969072164949,
       "task_path": "task/mgdm__htmlq.6e31bc8/",
       "wall_clock_seconds": 1323
@@ -3867,7 +3867,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-mgechev-revive",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.002751031636863824,
       "task_path": "task/mgechev__revive.201451e/",
       "wall_clock_seconds": 1072
@@ -3901,7 +3901,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-mibk-dupl",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8981233243967829,
       "task_path": "task/mibk__dupl.1bf052b/",
       "wall_clock_seconds": 1162
@@ -3935,7 +3935,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-mikefarah-yq",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.342,
       "task_path": "task/mikefarah__yq.602586d/",
       "wall_clock_seconds": 1596
@@ -3969,7 +3969,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-miserlou-loop",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7718309859154929,
       "task_path": "task/miserlou__loop.209927c/",
       "wall_clock_seconds": 1377
@@ -4003,7 +4003,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-mkj-dropbear",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.47050147492625366,
       "task_path": "task/mkj__dropbear.75f699b/",
       "wall_clock_seconds": 1144
@@ -4037,7 +4037,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-mookid-diffr",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8844884488448845,
       "task_path": "task/mookid__diffr.2152742/",
       "wall_clock_seconds": 1640
@@ -4071,7 +4071,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-multiprocessio-dsq",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7380073800738007,
       "task_path": "task/multiprocessio__dsq.c3ae0ba/",
       "wall_clock_seconds": 1522
@@ -4105,7 +4105,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-nachoparker-dutree",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7457098283931357,
       "task_path": "task/nachoparker__dutree.44e877d/",
       "wall_clock_seconds": 1057
@@ -4139,7 +4139,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-naggie-dstask",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.43740219092331767,
       "task_path": "task/naggie__dstask.ff57396/",
       "wall_clock_seconds": 1551
@@ -4173,7 +4173,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-nikoladucak-caps-log",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.4863883847549909,
       "task_path": "task/nikoladucak__caps-log.2cf2d1e/",
       "wall_clock_seconds": 1002
@@ -4207,7 +4207,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-nikolassv-bartib",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9349030470914127,
       "task_path": "task/nikolassv__bartib.6b9b5ce/",
       "wall_clock_seconds": 1906
@@ -4241,7 +4241,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ninja-build-ninja",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7496522948539638,
       "task_path": "task/ninja-build__ninja.cc60300/",
       "wall_clock_seconds": 1525
@@ -4275,7 +4275,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-noborus-ov",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7756202804746494,
       "task_path": "task/noborus__ov.b96c2ba/",
       "wall_clock_seconds": 1918
@@ -4309,7 +4309,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-noborus-trdsql",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6791158536585366,
       "task_path": "task/noborus__trdsql.d8c5ff6/",
       "wall_clock_seconds": 1495
@@ -4343,7 +4343,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-nukesor-pueue",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.2006269592476489,
       "task_path": "task/nukesor__pueue.8b9d6fe/",
       "wall_clock_seconds": 1122
@@ -4377,7 +4377,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-nuta-nsh",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8028527763627101,
       "task_path": "task/nuta__nsh.bdd0702/",
       "wall_clock_seconds": 1158
@@ -4411,7 +4411,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-o2sh-onefetch",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7427101200686106,
       "task_path": "task/o2sh__onefetch.e5958ce/",
       "wall_clock_seconds": 1244
@@ -4445,7 +4445,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ogham-dog",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.3576923076923077,
       "task_path": "task/ogham__dog.721440b/",
       "wall_clock_seconds": 1111
@@ -4479,7 +4479,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-oppiliappan-eva",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8937568455640745,
       "task_path": "task/oppiliappan__eva.41ae245/",
       "wall_clock_seconds": 1497
@@ -4513,7 +4513,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-oppiliappan-statix",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8061349693251534,
       "task_path": "task/oppiliappan__statix.e9df54c/",
       "wall_clock_seconds": 1568
@@ -4547,7 +4547,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-orf-gping",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6814159292035398,
       "task_path": "task/orf__gping.26eb5b9/",
       "wall_clock_seconds": 1313
@@ -4581,7 +4581,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-osgeo-gdal",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.15220700152207,
       "task_path": "task/osgeo__gdal.0847f12/",
       "wall_clock_seconds": 1662
@@ -4615,7 +4615,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-osgeo-proj",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.3058845647678135,
       "task_path": "task/osgeo__proj.75d455c/",
       "wall_clock_seconds": 1520
@@ -4649,7 +4649,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-paradigmxyz-solar",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.06471183013144591,
       "task_path": "task/paradigmxyz__solar.5190d0e/",
       "wall_clock_seconds": 1586
@@ -4683,7 +4683,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-parcel-bundler-lightningcss",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5487977369165488,
       "task_path": "task/parcel-bundler__lightningcss.aa2ed1e/",
       "wall_clock_seconds": 1382
@@ -4717,7 +4717,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-peco-peco",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5661764705882353,
       "task_path": "task/peco__peco.4e58dad/",
       "wall_clock_seconds": 1210
@@ -4751,7 +4751,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-pemistahl-grex",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.913109756097561,
       "task_path": "task/pemistahl__grex.fa3e8ed/",
       "wall_clock_seconds": 2351
@@ -4785,7 +4785,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-php-php-src",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.011268197088465845,
       "task_path": "task/php__php-src.c891263/",
       "wall_clock_seconds": 1284
@@ -4819,7 +4819,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-pier-cli-pier",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.09971098265895954,
       "task_path": "task/pier-cli__pier.5e1bde9/",
       "wall_clock_seconds": 1236
@@ -4853,7 +4853,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-pls-rs-pls",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6746987951807228,
       "task_path": "task/pls-rs__pls.4e1ae50/",
       "wall_clock_seconds": 805
@@ -4887,7 +4887,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-psampaz-go-mod-outdated",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8807017543859649,
       "task_path": "task/psampaz__go-mod-outdated.bb79367/",
       "wall_clock_seconds": 890
@@ -4921,7 +4921,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-quinn-rs-quinn",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6417624521072797,
       "task_path": "task/quinn-rs__quinn.bb359cc/",
       "wall_clock_seconds": 1415
@@ -4955,7 +4955,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-raviqqe-muffet",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9283276450511946,
       "task_path": "task/raviqqe__muffet.a882908/",
       "wall_clock_seconds": 1445
@@ -4989,7 +4989,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-rbakbashev-elfcat",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8847517730496454,
       "task_path": "task/rbakbashev__elfcat.52f8cc7/",
       "wall_clock_seconds": 1292
@@ -5023,7 +5023,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-rcoh-angle-grinder",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.33716814159292036,
       "task_path": "task/rcoh__angle-grinder.9c2fc88/",
       "wall_clock_seconds": 2073
@@ -5057,7 +5057,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-rhysd-kiro-editor",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8991596638655462,
       "task_path": "task/rhysd__kiro-editor.4157485/",
       "wall_clock_seconds": 1421
@@ -5091,7 +5091,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-riquito-tuc",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9239130434782609,
       "task_path": "task/riquito__tuc.16fb471/",
       "wall_clock_seconds": 2330
@@ -5125,7 +5125,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-robertdavidgraham-masscan",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5229501765398196,
       "task_path": "task/robertdavidgraham__masscan.b99d433/",
       "wall_clock_seconds": 1337
@@ -5159,7 +5159,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-rochacbruno-marmite",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5479041916167665,
       "task_path": "task/rochacbruno__marmite.7d4bc2d/",
       "wall_clock_seconds": 1072
@@ -5193,7 +5193,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-rs-curlie",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.12553495007132667,
       "task_path": "task/rs__curlie.5dfcbb1/",
       "wall_clock_seconds": 1290
@@ -5227,7 +5227,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-rs-jplot",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8627787307032591,
       "task_path": "task/rs__jplot.2a54bcc/",
       "wall_clock_seconds": 1297
@@ -5261,7 +5261,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-rust-embedded-svd2rust",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7445652173913043,
       "task_path": "task/rust-embedded__svd2rust.1760b5e/",
       "wall_clock_seconds": 1949
@@ -5295,7 +5295,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-rust-ethereum-ethabi",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9468405215646941,
       "task_path": "task/rust-ethereum__ethabi.b1710ad/",
       "wall_clock_seconds": 1385
@@ -5329,7 +5329,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-rust-lang-mdbook",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6032315978456014,
       "task_path": "task/rust-lang__mdbook.37273ba/",
       "wall_clock_seconds": 1570
@@ -5363,7 +5363,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-rvben-rumdl",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.42775436484045753,
       "task_path": "task/rvben__rumdl.2d75c4d/",
       "wall_clock_seconds": 1330
@@ -5397,7 +5397,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-samtools-samtools",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.18666666666666668,
       "task_path": "task/samtools__samtools.aa823b5/",
       "wall_clock_seconds": 1488
@@ -5431,7 +5431,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sayanarijit-xplr",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6348448687350835,
       "task_path": "task/sayanarijit__xplr.1751065/",
       "wall_clock_seconds": 1027
@@ -5465,7 +5465,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sclevine-yj",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.020860495436766623,
       "task_path": "task/sclevine__yj.8016400/",
       "wall_clock_seconds": 2773
@@ -5499,7 +5499,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-segmentio-chamber",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8049199084668193,
       "task_path": "task/segmentio__chamber.5f93f5f/",
       "wall_clock_seconds": 1301
@@ -5533,7 +5533,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sharkdp-bat",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5969962453066333,
       "task_path": "task/sharkdp__bat.f822bd0/",
       "wall_clock_seconds": 1333
@@ -5567,7 +5567,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sharkdp-fd",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7927125506072874,
       "task_path": "task/sharkdp__fd.40d8eb3/",
       "wall_clock_seconds": 1702
@@ -5601,7 +5601,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sharkdp-hexyl",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9426048565121413,
       "task_path": "task/sharkdp__hexyl.2e26437/",
       "wall_clock_seconds": 1661
@@ -5635,7 +5635,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sharkdp-hyperfine",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.0,
       "task_path": "task/sharkdp__hyperfine.327d5f4/",
       "wall_clock_seconds": 1029
@@ -5669,7 +5669,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sharkdp-pastel",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9201077199281867,
       "task_path": "task/sharkdp__pastel.b60e899/",
       "wall_clock_seconds": 2180
@@ -5703,7 +5703,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-shashwatah-jot",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9069148936170213,
       "task_path": "task/shashwatah__jot.a92aad8/",
       "wall_clock_seconds": 1167
@@ -5737,7 +5737,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sheepla-pingu",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8955613577023499,
       "task_path": "task/sheepla__pingu.926d475/",
       "wall_clock_seconds": 725
@@ -5771,7 +5771,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sibprogrammer-xq",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8611111111111112,
       "task_path": "task/sibprogrammer__xq.b89f681/",
       "wall_clock_seconds": 981
@@ -5805,7 +5805,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sigoden-argc",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.004020100502512563,
       "task_path": "task/sigoden__argc.04a08f1/",
       "wall_clock_seconds": 1649
@@ -5839,7 +5839,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-simeg-eureka",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9156976744186046,
       "task_path": "task/simeg__eureka.df3796c/",
       "wall_clock_seconds": 959
@@ -5873,7 +5873,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sirwart-ripsecrets",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8854337152209493,
       "task_path": "task/sirwart__ripsecrets.34c9e03/",
       "wall_clock_seconds": 1121
@@ -5907,7 +5907,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sitkevij-hex",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9854191980558931,
       "task_path": "task/sitkevij__hex.61ae69b/",
       "wall_clock_seconds": 1296
@@ -5941,7 +5941,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-skeema-skeema",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.781615925058548,
       "task_path": "task/skeema__skeema.6a76243/",
       "wall_clock_seconds": 878
@@ -5975,7 +5975,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sqlite-sqlite",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.01102560307828918,
       "task_path": "task/sqlite__sqlite.839433d/",
       "wall_clock_seconds": 1477
@@ -6009,7 +6009,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-sstadick-hck",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9614035087719298,
       "task_path": "task/sstadick__hck.b66c751/",
       "wall_clock_seconds": 1840
@@ -6043,7 +6043,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-stacked-git-stgit",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.48118279569892475,
       "task_path": "task/stacked-git__stgit.430027d/",
       "wall_clock_seconds": 1489
@@ -6077,7 +6077,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-stathissideris-ditaa",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.3284072249589491,
       "task_path": "task/stathissideris__ditaa.f2286c4/",
       "wall_clock_seconds": 953
@@ -6111,7 +6111,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-stranger6667-jsonschema",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.009205591544493692,
       "task_path": "task/stranger6667__jsonschema.d52e881/",
       "wall_clock_seconds": 1556
@@ -6145,7 +6145,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-svenstaro-genact",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.34913793103448276,
       "task_path": "task/svenstaro__genact.16f96e3/",
       "wall_clock_seconds": 1639
@@ -6179,7 +6179,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-svenstaro-miniserve",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9506578947368421,
       "task_path": "task/svenstaro__miniserve.8449e8b/",
       "wall_clock_seconds": 1504
@@ -6213,7 +6213,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-thezoraiz-ascii-image-converter",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7698924731182796,
       "task_path": "task/thezoraiz__ascii-image-converter.d05a757/",
       "wall_clock_seconds": 1517
@@ -6247,7 +6247,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-tinycc-tinycc",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.17795753286147623,
       "task_path": "task/tinycc__tinycc.9b8765d/",
       "wall_clock_seconds": 1060
@@ -6281,7 +6281,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-tomarrell-wrapcheck",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5354166666666667,
       "task_path": "task/tomarrell__wrapcheck.c058da1/",
       "wall_clock_seconds": 1018
@@ -6315,7 +6315,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-tomnomnom-gron",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8839285714285714,
       "task_path": "task/tomnomnom__gron.88a6234/",
       "wall_clock_seconds": 1361
@@ -6349,7 +6349,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-trasta298-keifu",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.3931297709923664,
       "task_path": "task/trasta298__keifu.3331426/",
       "wall_clock_seconds": 927
@@ -6383,7 +6383,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-tree-sitter-tree-sitter",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.4407467532467532,
       "task_path": "task/tree-sitter__tree-sitter.5e23cca/",
       "wall_clock_seconds": 1302
@@ -6417,7 +6417,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-tstack-lnav",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.12626262626262627,
       "task_path": "task/tstack__lnav.ee34494/",
       "wall_clock_seconds": 1381
@@ -6451,7 +6451,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-tukaani-project-xz",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.9205673758865248,
       "task_path": "task/tukaani-project__xz.1007bf0/",
       "wall_clock_seconds": 1347
@@ -6485,7 +6485,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-typst-typst",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.35788863109048724,
       "task_path": "task/typst__typst.88356d0/",
       "wall_clock_seconds": 1876
@@ -6519,7 +6519,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-unhappychoice-gittype",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6788124156545209,
       "task_path": "task/unhappychoice__gittype.34b72d0/",
       "wall_clock_seconds": 1176
@@ -6553,7 +6553,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-universal-ctags-ctags",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.08237378210806023,
       "task_path": "task/universal-ctags__ctags.243595e/",
       "wall_clock_seconds": 1266
@@ -6587,7 +6587,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-wfxr-code-minimap",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.987220447284345,
       "task_path": "task/wfxr__code-minimap.0ddeea5/",
       "wall_clock_seconds": 1352
@@ -6621,7 +6621,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-wfxr-csview",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.982089552238806,
       "task_path": "task/wfxr__csview.8ac4de0/",
       "wall_clock_seconds": 900
@@ -6655,7 +6655,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-wgunderwood-tex-fmt",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7516483516483516,
       "task_path": "task/wgunderwood__tex-fmt.3f1aef6/",
       "wall_clock_seconds": 1113
@@ -6689,7 +6689,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-wintermute-cell-ngrrram",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7326732673267327,
       "task_path": "task/wintermute-cell__ngrrram.8ea13c3/",
       "wall_clock_seconds": 1281
@@ -6723,7 +6723,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-xampprocky-tokei",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6065573770491803,
       "task_path": "task/xampprocky__tokei.505d648/",
       "wall_clock_seconds": 1462
@@ -6757,7 +6757,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-xorg62-tty-clock",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8185053380782918,
       "task_path": "task/xorg62__tty-clock.f2f847c/",
       "wall_clock_seconds": 1228
@@ -6791,7 +6791,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-y2z-monolith",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.6171107994389902,
       "task_path": "task/y2z__monolith.8702e66/",
       "wall_clock_seconds": 1054
@@ -6825,7 +6825,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-yaa110-nomino",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7667731629392971,
       "task_path": "task/yaa110__nomino.f892499/",
       "wall_clock_seconds": 1540
@@ -6859,7 +6859,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-yassinebridi-serpl",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.5067264573991032,
       "task_path": "task/yassinebridi__serpl.c48a9d7/",
       "wall_clock_seconds": 1355
@@ -6893,7 +6893,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-yoav-lavi-melody",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.7908713692946058,
       "task_path": "task/yoav-lavi__melody.f4af9b4/",
       "wall_clock_seconds": 1840
@@ -6927,7 +6927,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-ys-l-flamelens",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.25892857142857145,
       "task_path": "task/ys-l__flamelens.0b4dc33/",
       "wall_clock_seconds": 766
@@ -6961,7 +6961,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-zevv-duc",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.8707093821510298,
       "task_path": "task/zevv__duc.a58fa4e/",
       "wall_clock_seconds": 1624
@@ -6995,7 +6995,7 @@
       "reasoning_effort": "xhigh",
       "resolved": false,
       "run_name": "cpx62-nointernet-xhigh-20260516T081309Z-zk-org-zk",
-      "run_version": "",
+      "run_version": "20260516T081309Z",
       "score": 0.17328519855595667,
       "task_path": "task/zk-org__zk.10d93d5/",
       "wall_clock_seconds": 1068
