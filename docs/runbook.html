@@ -198,6 +198,15 @@ scripts/run-sweep.sh --skip-watch --publish</code></pre>
 <p>For long runs, prefer incremental finalize/reporting so each completed task is packaged, evaluated, summarized, and optionally published without waiting for the whole batch:</p>
 <pre><code>scripts/run-sweep.sh --incremental-finalize --publish
 INCREMENTAL_FINALIZE=1 PUBLISH=1 scripts/start-sweep-tmux.sh configs/full-miniswecompat-xhigh.json</code></pre>
+<h3>Retry and scoring policy</h3>
+<p>Do not continue failed Codex sessions by pasting a follow-up into the same tmux session. That changes the <code>/goal</code> condition being measured.</p>
+<p>Only one retry class is allowed: <code>session_failed_before_goal_done</code>. Use it when the Codex tmux session exits before <code>/goal</code> completion and before a submission is produced. A retry starts from a fresh solution directory, keeps the prior attempt in <code>attempt_history</code>, and is capped by <code>--max-attempts</code>:</p>
+<pre><code>uv run python scripts/run-config.py retry configs/cpx62-miniswecompat-xhigh.json \
+  --failed \
+  --max-attempts 2</code></pre>
+<p>Do not retry low scores, valid evaluations, or audit violations. If Codex reaches <code>/goal</code> completion, produces <code>submission.tar.gz</code>, passes audit, and gets an eval result, that result is scored even when it is bad. If Codex exits normally without a submission, report it as no-submission/zero or disclose it separately in the denominator.</p>
+<p>Before scoring/publishing a current run, <code>scripts/run-sweep.sh</code> runs <code>scripts/validate-run-gates.py</code>. Each published row must have:</p>
+<ul><li><code>CODEX_INITIAL_PROMPT.md</code> beginning with <code>/goal</code></li><li>a tmux transcript showing <code>/goal</code></li><li><code>run.json</code> with model, reasoning effort, inference mode, and strict egress</li><li><code>submission.tar.gz</code></li><li>a passing audit marker</li><li>a ProgramBench eval JSON</li></ul>
 <p>The public site intentionally publishes sanitized manifests, eval summaries, usage audits, and score CSV/JSON. It does not publish submission tarballs by default; those stay in the VM run root as private backups and can be archived separately if needed.</p>
 <p>The tmux helper uses the same defaults without publishing:</p>
 <pre><code>scripts/start-sweep-tmux.sh configs/nointernet-xhigh.json

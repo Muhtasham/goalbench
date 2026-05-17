@@ -1746,11 +1746,9 @@ def render_empty_state() -> str:
 
 def render_tweet_embed() -> str:
     return """
-    <section class="tweet-section" aria-label="Request tweet">
-      <div class="tweet-card">
-        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Would love to see the performance of 5.5 with /goal on ProgramBench!</p>&mdash; Noam Brown (@polynoamial) <a href="https://twitter.com/polynoamial/status/2054258259280994341?ref_src=twsrc%5Etfw">May 12, 2026</a></blockquote>
-      </div>
-    </section>
+    <aside class="tweet-card" aria-label="Request tweet">
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Would love to see the performance of 5.5 with /goal on ProgramBench!</p>&mdash; Noam Brown (@polynoamial) <a href="https://twitter.com/polynoamial/status/2054258259280994341?ref_src=twsrc%5Etfw">May 12, 2026</a></blockquote>
+    </aside>
     """
 
 
@@ -2215,13 +2213,31 @@ def render_html(data: dict, extended: bool = False) -> str:
     }}
     .mode-card strong {{ display: block; margin-bottom: 6px; }}
     .mode-card p {{ margin: 0; font-size: 13px; }}
-    .tweet-section {{ margin: 0 0 28px; overflow: hidden; }}
+    .method-notes-grid {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+      gap: 28px;
+      align-items: start;
+    }}
+    .method-notes-copy h2 {{ margin-top: 0; }}
+    .method-notes-copy p:last-child {{ margin-bottom: 0; }}
     .tweet-card {{
       display: flex;
       justify-content: center;
+      justify-self: end;
+      width: 100%;
+      max-width: 420px;
       min-height: 0;
+      overflow: hidden;
+      border-left: 3px solid var(--accent);
+      padding: 2px 0 2px 18px;
     }}
-    .tweet-card .twitter-tweet {{ margin: 0 auto !important; }}
+    .tweet-card .twitter-tweet {{ margin: 0 !important; max-width: 100% !important; }}
+    .tweet-card blockquote {{
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.55;
+    }}
     .plot-grid {{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -2263,6 +2279,8 @@ def render_html(data: dict, extended: bool = False) -> str:
       .topbar {{ align-items: flex-start; flex-direction: column; margin-bottom: 26px; }}
       .nav-links {{ justify-content: flex-start; }}
       .section-head {{ align-items: flex-start; flex-direction: column; }}
+      .method-notes-grid {{ grid-template-columns: 1fr; gap: 18px; }}
+      .tweet-card {{ justify-self: stretch; max-width: 550px; }}
       .metric-grid {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
       header, main {{ padding-left: 16px; padding-right: 16px; }}
     }}
@@ -2288,7 +2306,6 @@ def render_html(data: dict, extended: bool = False) -> str:
   <main>
     {render_run_plan() if extended else ""}
     {body}
-    {render_tweet_embed()}
 
     <section class="section">
       <div class="section-eyebrow">Modes</div>
@@ -2331,10 +2348,15 @@ def render_html(data: dict, extended: bool = False) -> str:
     </section>
 
     <section class="section">
-    <h2>Method Notes</h2>
-    <p>GoalBench reports separate Codex <code>/goal</code> runs, not official mini-SWE-agent leaderboard submissions. Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Primary metric is fully resolved instances. Almost resolved follows ProgramBench's displayed threshold of at least 95% behavioral tests passing. Scoring is computed through ProgramBench's own <code>EvaluationResult</code> and <code>InstanceEvalSummary</code> logic after active-branch and ignored-test filtering. Resolved means the ProgramBench behavioral test pass rate is exactly 100%; evaluator warnings/errors are disclosed separately in evidence artifacts.</p>
-    <p>The headline track is GPT-5.5 xhigh with Codex <code>/goal</code> in mini-SWE-compatible no-internet mode. Local-tools runs are intentionally non-compliant and reported separately once available. The current Hetzner <code>cpx62</code> runner is a 16 CPU / 30g VM. All no-internet-style rows require strict host egress and wrapper-only target access. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Estimated cost comes from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths. See <a href="task-details.html">Task Details</a> and the <a href="runbook.html">runbook</a> for setup and mode details.</p>
-    <p>Sources: <a href="https://programbench.com/extended/">ProgramBench extended results</a>, <a href="https://programbench.com/run/gpt-5-5-xhigh/">GPT 5.5 xhigh run detail</a>, and this repository's generated CSV summaries.</p>
+      <div class="method-notes-grid">
+        <div class="method-notes-copy">
+          <h2>Method Notes</h2>
+          <p>GoalBench reports separate Codex <code>/goal</code> runs, not official mini-SWE-agent leaderboard submissions. Metrics use ProgramBench's resolved, almost-resolved, average pass rate, cost, and calls shape. Primary metric is fully resolved instances. Almost resolved follows ProgramBench's displayed threshold of at least 95% behavioral tests passing. Scoring is computed through ProgramBench's own <code>EvaluationResult</code> and <code>InstanceEvalSummary</code> logic after active-branch and ignored-test filtering. Resolved means the ProgramBench behavioral test pass rate is exactly 100%; evaluator warnings/errors are disclosed separately in evidence artifacts.</p>
+          <p>The headline track is GPT-5.5 xhigh with Codex <code>/goal</code> in mini-SWE-compatible no-internet mode. Local-tools runs are intentionally non-compliant and reported separately once available. The current Hetzner <code>cpx62</code> runner is a 16 CPU / 30g VM. All no-internet-style rows require strict host egress and wrapper-only target access. Public evidence manifests include sanitized eval summaries and package contents. Raw Codex session logs and submission tarballs stay local by default. Estimated cost comes from Codex token logs and the locally refreshed OpenAI model pricing snapshot; it is not authoritative billing. The committed data omits local session-log paths. See <a href="task-details.html">Task Details</a> and the <a href="runbook.html">runbook</a> for setup and mode details.</p>
+          <p>Sources: <a href="https://programbench.com/extended/">ProgramBench extended results</a>, <a href="https://programbench.com/run/gpt-5-5-xhigh/">GPT 5.5 xhigh run detail</a>, and this repository's generated CSV summaries.</p>
+        </div>
+        {render_tweet_embed()}
+      </div>
     </section>
   </main>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
