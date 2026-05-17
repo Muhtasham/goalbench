@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import shutil
 from collections import Counter
 from pathlib import Path
@@ -15,9 +16,30 @@ MAX_FAILED_TESTS = 80
 MAX_PUBLIC_TEST_RESULTS = 120
 MAX_LOG_STEPS = 120
 MAX_PACKAGE_FILES = 250
+SECRET_PATTERNS = (
+    (re.compile(r"\b(?:sk|pk|rk)_(?:live|test)_[A-Za-z0-9]{8,}\b"), "[redacted-stripe-key]"),
+    (re.compile(r"\bwhsec_[A-Za-z0-9]{8,}\b"), "[redacted-stripe-webhook-secret]"),
+)
+
+
+def redact_secrets(value: str) -> str:
+    for pattern, replacement in SECRET_PATTERNS:
+        value = pattern.sub(replacement, value)
+    return value
+
+
+def redact_json(value):
+    if isinstance(value, str):
+        return redact_secrets(value)
+    if isinstance(value, list):
+        return [redact_json(item) for item in value]
+    if isinstance(value, dict):
+        return {key: redact_json(item) for key, item in value.items()}
+    return value
 
 
 def truncate(value: str, limit: int = MAX_TEXT_CHARS) -> str:
+    value = redact_secrets(value)
     return value if len(value) <= limit else value[:limit] + f"\n[truncated {len(value) - limit} chars]"
 
 
@@ -55,18 +77,18 @@ def eval_summary(eval_json: dict) -> dict:
         "failed_tests": failures[:MAX_FAILED_TESTS],
         "failed_tests_omitted": max(0, len(failures) - MAX_FAILED_TESTS),
         "error_code": eval_json.get("error_code"),
-        "error_details": eval_json.get("error_details"),
+        "error_details": redact_json(eval_json.get("error_details")),
         "test_branches": eval_json.get("test_branches", []),
-        "test_branch_errors": eval_json.get("test_branch_errors", {}),
+        "test_branch_errors": redact_json(eval_json.get("test_branch_errors", {})),
         "executable_hash": eval_json.get("executable_hash"),
-        "warnings": eval_json.get("warnings", []),
+        "warnings": redact_json(eval_json.get("warnings", [])),
         "evaluator_log_steps": [
             {
                 "step": entry.get("step", ""),
                 "branch": entry.get("branch", ""),
                 "returncode": entry.get("returncode"),
                 "wall_time": entry.get("wall_time"),
-                "exception_info": entry.get("exception_info", ""),
+                "exception_info": truncate(entry.get("exception_info", "")),
             }
             for entry in eval_json.get("log", [])[:MAX_LOG_STEPS]
         ],
@@ -98,9 +120,9 @@ def public_eval(eval_json: dict) -> dict:
         "log_entries_omitted": max(0, len(eval_json.get("log", [])) - MAX_LOG_STEPS),
         "solution_branch": eval_json.get("solution_branch"),
         "test_branches": eval_json.get("test_branches", []),
-        "test_branch_errors": eval_json.get("test_branch_errors", {}),
+        "test_branch_errors": redact_json(eval_json.get("test_branch_errors", {})),
         "executable_hash": eval_json.get("executable_hash"),
-        "warnings": eval_json.get("warnings", []),
+        "warnings": redact_json(eval_json.get("warnings", [])),
         "public_redactions": {
             "extra_text": "redacted",
             "log_output": "redacted",
@@ -115,10 +137,10 @@ def public_usage_audit(usage_audit: dict, instance_id: str) -> dict:
         "pricing_snapshot": usage_audit.get("pricing_snapshot", {}),
         "row": next((row for row in usage_audit.get("rows", []) if row.get("instance_id") == instance_id), {}),
         "totals": usage_audit.get("totals", {}),
-        "warnings_for_instance": [
-            warning for warning in usage_audit.get("warnings", []) if warning.startswith(f"{instance_id}:")
-        ],
-        "notes": usage_audit.get("notes", []),
+        "warnings_for_instance": redact_json(
+            [warning for warning in usage_audit.get("warnings", []) if warning.startswith(f"{instance_id}:")]
+        ),
+        "notes": redact_json(usage_audit.get("notes", [])),
     }
 
 
@@ -169,11 +191,11 @@ def public_manifest(manifest: dict, eval_summary_path: str, eval_json_path: str)
         "metrics": scrub_metrics(manifest.get("metrics", {})),
         "eval": {
             "test_records": manifest["eval"]["test_records"],
-            "failed_tests": manifest["eval"]["failed_tests"][:MAX_FAILED_TESTS],
+            "failed_tests": redact_json(manifest["eval"]["failed_tests"][:MAX_FAILED_TESTS]),
             "failed_tests_omitted": max(0, len(manifest["eval"]["failed_tests"]) - MAX_FAILED_TESTS),
-            "error_code": manifest["eval"]["error_code"],
-            "test_branch_errors": manifest["eval"]["test_branch_errors"],
-            "warnings": manifest["eval"]["warnings"],
+            "error_code": redact_json(manifest["eval"]["error_code"]),
+            "test_branch_errors": redact_json(manifest["eval"]["test_branch_errors"]),
+            "warnings": redact_json(manifest["eval"]["warnings"]),
             "summary_path": eval_summary_path,
             "public_eval_path": eval_json_path,
         },
