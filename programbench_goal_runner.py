@@ -494,6 +494,7 @@ def prepare(args: argparse.Namespace) -> None:
             {
                 "instance_id": args.instance_id,
                 "run_name": prepared_run_name,
+                "run_version": args.run_version,
                 "image": image,
                 "container_name": container_name,
                 "session_name": session_name,
