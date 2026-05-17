@@ -102,23 +102,23 @@ class Finding:
 
 def session_meta(path: Path) -> dict | None:
     return next(
-        (
-            event["payload"]
-            for event in (json.loads(line) for line in path.read_text(errors="replace").splitlines())
-            if event.get("type") == "session_meta"
-        ),
+        (event["payload"] for event in jsonl_events(path) if event.get("type") == "session_meta"),
         None,
     )
 
 
+def jsonl_events(path: Path) -> list[dict]:
+    events = []
+    for line in path.read_text(errors="replace").splitlines():
+        try:
+            events.append(json.loads(line))
+        except json.JSONDecodeError:
+            continue
+    return events
+
+
 def exec_calls(path: Path) -> list[tuple[int, dict, str]]:
-    events = [
-        (n, event, event.get("payload", {}))
-        for n, event in enumerate(
-            (json.loads(line) for line in path.read_text(errors="replace").splitlines()),
-            start=1,
-        )
-    ]
+    events = [(n, event, event.get("payload", {})) for n, event in enumerate(jsonl_events(path), start=1)]
     calls = [
         (n, payload["call_id"], json.loads(payload["arguments"]))
         for n, event, payload in events
@@ -143,15 +143,18 @@ def was_rejected(output: str) -> bool:
 
 
 def uses_tool(command: str, tool: str) -> bool:
-    try:
-        lexer = shlex.shlex(command, posix=True, punctuation_chars=True)
-        lexer.whitespace_split = True
-        lexer.commenters = ""
-        tokens = list(lexer)
-    except ValueError:
-        path = r"(?:/(?:bin|usr/bin|usr/local/bin|opt/homebrew/bin)/)?"
-        return bool(re.search(rf"(^|[\s;&|()]){path}{re.escape(tool)}([\s;&|()]|$)", command))
-    return any(Path(token).name == tool for token in tokens if "=" not in token)
+    for segment in command_segments(command):
+        try:
+            tokens = shlex.split(segment)
+        except ValueError:
+            path = r"(?:/(?:bin|usr/bin|usr/local/bin|opt/homebrew/bin)/)?"
+            if re.search(rf"^\s*{path}{re.escape(tool)}([\s()]|$)", segment):
+                return True
+            continue
+        index = command_token_index(tokens)
+        if index is not None and Path(tokens[index]).name == tool:
+            return True
+    return False
 
 
 def uses_binary_analysis_on_target(command: str, tool: str) -> bool:
@@ -237,14 +240,23 @@ def segment_inspects_parent_directory(segment: str) -> bool:
     if tool not in {"cat", "find", "grep", "head", "ls", "rg", "sed", "tail", "wc"}:
         return False
     skip_next = False
+    skip_output_redirect = False
     for token in tokens[1:]:
         if skip_next:
             skip_next = False
+            continue
+        if skip_output_redirect:
+            skip_output_redirect = False
             continue
         if tool == "rg" and token in {"-g", "--glob"}:
             skip_next = True
             continue
         if tool == "rg" and (token.startswith("--glob=") or token.startswith("-g")):
+            continue
+        if token in {">", ">>", "1>", "1>>", "2>", "2>>", "&>", "&>>"}:
+            skip_output_redirect = True
+            continue
+        if re.match(r"^(?:\d|&)?>>?", token):
             continue
         if token.startswith("-"):
             continue
