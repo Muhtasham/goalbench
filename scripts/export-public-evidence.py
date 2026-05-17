@@ -61,7 +61,8 @@ def failed_tests(eval_json: dict) -> list[dict]:
             "name": result["name"],
             "branch": result.get("branch", ""),
             "status": result["status"],
-            "message": truncate(result.get("extra", {}).get("message", "")),
+            "message_redacted": "message" in result.get("extra", {}),
+            "message_chars": len(str(result.get("extra", {}).get("message", ""))),
         }
         for result in eval_json.get("test_results", [])
         if result["status"] != "passed"
@@ -77,7 +78,8 @@ def eval_summary(eval_json: dict) -> dict:
         "failed_tests": failures[:MAX_FAILED_TESTS],
         "failed_tests_omitted": max(0, len(failures) - MAX_FAILED_TESTS),
         "error_code": eval_json.get("error_code"),
-        "error_details": redact_json(eval_json.get("error_details")),
+        "error_details_redacted": bool(eval_json.get("error_details")),
+        "error_details_chars": len(str(eval_json.get("error_details") or "")),
         "test_branches": eval_json.get("test_branches", []),
         "test_branch_errors": redact_json(eval_json.get("test_branch_errors", {})),
         "executable_hash": eval_json.get("executable_hash"),
@@ -88,7 +90,8 @@ def eval_summary(eval_json: dict) -> dict:
                 "branch": entry.get("branch", ""),
                 "returncode": entry.get("returncode"),
                 "wall_time": entry.get("wall_time"),
-                "exception_info": truncate(entry.get("exception_info", "")),
+                "exception_info_redacted": bool(entry.get("exception_info")),
+                "exception_info_chars": len(str(entry.get("exception_info", ""))),
             }
             for entry in eval_json.get("log", [])[:MAX_LOG_STEPS]
         ],
@@ -115,7 +118,8 @@ def public_eval(eval_json: dict) -> dict:
         "test_results_policy": "non-passed records only, capped for public artifact size",
         "test_results_omitted": max(0, len(non_passed) - len(public_results)),
         "error_code": eval_json.get("error_code"),
-        "error_details": truncate(eval_json.get("error_details") or ""),
+        "error_details_redacted": bool(eval_json.get("error_details")),
+        "error_details_chars": len(str(eval_json.get("error_details") or "")),
         "log": [public_log_entry(entry) for entry in eval_json.get("log", [])[:MAX_LOG_STEPS]],
         "log_entries_omitted": max(0, len(eval_json.get("log", [])) - MAX_LOG_STEPS),
         "solution_branch": eval_json.get("solution_branch"),
@@ -145,9 +149,10 @@ def public_usage_audit(usage_audit: dict, instance_id: str) -> dict:
 
 
 def public_extra(extra: dict) -> dict:
-    allowed = {key: extra[key] for key in ("time", "message") if key in extra}
-    if "message" in allowed:
-        allowed["message"] = truncate(str(allowed["message"]))
+    allowed = {key: extra[key] for key in ("time",) if key in extra}
+    if "message" in extra:
+        allowed["message_redacted"] = True
+        allowed["message_chars"] = len(str(extra["message"]))
     return allowed
 
 
@@ -158,7 +163,8 @@ def public_log_entry(entry: dict) -> dict:
         "command": entry.get("command", ""),
         "wall_time": entry.get("wall_time"),
         "returncode": entry.get("returncode"),
-        "exception_info": truncate(entry.get("exception_info", "")),
+        "exception_info_redacted": bool(entry.get("exception_info")),
+        "exception_info_chars": len(str(entry.get("exception_info", ""))),
         "output_redacted": "output" in entry,
         "output_original_chars": len(str(entry.get("output", ""))) if "output" in entry else 0,
     }
