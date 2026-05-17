@@ -46,6 +46,14 @@ def run_version(config: dict[str, Any]) -> str:
     return os.environ.get("RUN_VERSION") or str(config.get("run_version") or "")
 
 
+def programbench_repo(config: dict[str, Any], args: argparse.Namespace) -> str:
+    for candidate in (args.programbench_repo, config.get("programbench_repo"), os.environ.get("PROGRAMBENCH_REPO")):
+        if candidate:
+            return str(candidate)
+    sibling = REPO.parent / "ProgramBench"
+    return str(sibling) if (sibling / "src" / "programbench").is_dir() else ""
+
+
 def common_watch_args(config: dict[str, Any], args: argparse.Namespace) -> list[str]:
     names = (
         "run_root",
@@ -96,7 +104,7 @@ def command(config: dict[str, Any], args: argparse.Namespace) -> list[str]:
         "--batch-name",
         config["batch_name"],
         *option_args("run_version", run_version(config)),
-        *option_args("programbench_repo", args.programbench_repo or config.get("programbench_repo")),
+        *option_args("programbench_repo", programbench_repo(config, args)),
         *option_args("eval_timeout_seconds", config.get("eval_timeout_seconds")),
         *option_args("limit", args.limit),
         *chain.from_iterable(option_args("instance", instance) for instance in args.instance or []),
