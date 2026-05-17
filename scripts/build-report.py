@@ -32,6 +32,7 @@ BRAND_SLASH_PATHS = """
   <path d="M37.5 43.5h13v8.25h-13z" fill="#f6c453"/>
 """.strip()
 TAG_RE = re.compile(r"<[^>]+>")
+RUN_VERSION_RE = re.compile(r"\d{8}T\d{6}Z")
 
 
 @dataclass
@@ -367,13 +368,20 @@ def as_float(value: str) -> float:
     return float(value) if value else 0.0
 
 
+def inferred_run_version(row: dict) -> str:
+    if row.get("run_version", ""):
+        return row["run_version"]
+    match = RUN_VERSION_RE.search(row["run_name"])
+    return match.group(0) if match else ""
+
+
 def read_results(path: Path) -> list[ResultRow]:
     with path.open(newline="") as f:
         return [
             ResultRow(
                 instance_id=row["instance_id"],
                 run_name=row["run_name"],
-                run_version=row.get("run_version", ""),
+                run_version=inferred_run_version(row),
                 model=row["model"],
                 reasoning_effort=row["reasoning_effort"],
                 inference_mode=row["inference_mode"],
